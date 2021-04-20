@@ -1,0 +1,54 @@
+tabs:
+  commitmentsspending: "CommitmentsSpending"
+  flows: "Flows"
+  activitytotals: "ActivityTotals"
+
+
+googlesheets:
+  prod: "https://docs.google.com/spreadsheets/d/1VRZkobs5fjdbgdopPeD-6De0xJTuZmH-Ce7DSjbkFtc/edit"
+  scratch: "https://docs.google.com/spreadsheets/d/1oq8_s12occt-oJk_ALgA5TGGY2xsjvhBVvLMhcRygrw/edit"
+
+json:
+  filepath: "dataforviz.json"
+
+fallback_dir: "fallback_data"
+
+dportal:
+  url: "http://d-portal.org/dquery?form=xml&sql=%s"
+  query: |
+"SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
+    SELECT DISTINCT aid FROM xson WHERE
+    (
+        root='/iati-activities/iati-activity/humanitarian-scope' AND
+        xson->>'@type'='1' AND
+        xson->>'@vocabulary'='1-2' AND
+        xson->>'@code'='EP-2020-000012-001'
+    ) OR (
+        root='/iati-activities/iati-activity/humanitarian-scope' AND
+        xson->>'@type'='2' AND
+        xson->>'@vocabulary'='2-1' AND
+        xson->>'@code'='HCOVD20'
+    ) OR (
+        root='/iati-activities/iati-activity/tag' AND
+        xson->>'@vocabulary'='99' AND
+        xson->>'@vocabulary-uri' IS NULL AND
+        UPPER(xson->>'@code')='COVID-19'
+    ) OR (
+        root='/iati-activities/iati-activity/title/narrative' AND
+        to_tsvector('simple', xson->>'') @@ to_tsquery('simple','COVID | CORONAVIRUS')
+    ) OR (
+        root='/iati-activities/iati-activity/description/narrative' AND
+        to_tsvector('simple', xson->>'') @@ to_tsquery('simple','COVID | CORONAVIRUS')
+    ) OR (
+        root='/iati-activities/iati-activity/transaction/description/narrative' AND
+        to_tsvector('simple', xson->>'') @@ to_tsquery('simple','COVID | CORONAVIRUS')
+    ) OR (
+        root='/iati-activities/iati-activity/sector' AND
+        xson->>'@code'='12264' AND
+        (xson->>'@vocabulary'='1' OR xson->>'@vocabulary'='' OR xson->>'@vocabulary' IS NULL)
+    ) OR (
+        root='/iati-activities/iati-activity/transaction/sector' AND
+        xson->>'@code'='12264' AND
+        (xson->>'@vocabulary'='1' OR xson->>'@vocabulary'='' OR xson->>'@vocabulary' IS NULL)
+    )
+){}"
