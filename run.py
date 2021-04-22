@@ -37,7 +37,7 @@ def parse_args():
     parser.add_argument('-nj', '--nojson', default=False, action='store_true', help='Do not update json')
     parser.add_argument('-sd', '--saved_dir', default='saved_data', help='Saved data folder')
     parser.add_argument('-sv', '--save', default=False, action='store_true', help='Save downloaded data')
-    parser.add_argument('-us', '--use_saved', default=False, action='store_true', help='Use saved data')
+    parser.add_argument('-usv', '--use_saved', default=False, action='store_true', help='Use saved data')
     parser.add_argument('-dp', '--dportal_params', default='', help='Parameters for DPortal query (eg. limit X, offset Y')
     args = parser.parse_args()
     return args
@@ -49,13 +49,6 @@ def main(excel_path, gsheet_auth, updatesheets, updatetabs, nojson, saved_dir, s
     with temp_dir() as temp_folder:
         with Download(user_agent='HDX-IATI-COVID19') as downloader:
             retriever = Retrieve(downloader, configuration['fallback_dir'], saved_dir, temp_folder, save, use_saved)
-            updatesheets = args.updatespreadsheets
-            if updatesheets is None:
-                updatesheets = getenv('UPDATESHEETS')
-            if updatesheets:
-                updatesheets = updatesheets.split(',')
-            else:
-                updatesheets = None
             tabs = configuration['tabs']
             if updatetabs is None:
                 updatetabs = list(tabs.keys())
@@ -76,7 +69,7 @@ def main(excel_path, gsheet_auth, updatesheets, updatetabs, nojson, saved_dir, s
             else:
                 jsonout = JsonOutput(configuration, updatetabs)
             outputs = {'gsheets': gsheets, 'excel': excelout, 'json': jsonout}
-            start(configuration, downloader, outputs, updatetabs, dportal_params)
+            start(configuration, retriever, outputs, updatetabs, dportal_params)
             jsonout.save()
             excelout.save()
 
