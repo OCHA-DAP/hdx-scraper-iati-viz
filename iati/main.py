@@ -1,73 +1,103 @@
 # -*- coding: utf-8 -*-
 import logging
+from os import mkdir
+from os.path import join
+from shutil import rmtree
 from urllib.parse import quote
 
-from diterator import XMLIterator
+import hxl
+from hdx.utilities.dictandlist import write_list_to_csv
+from hdx.utilities.saver import save_json
 
-from iati.activities import Activities
-from iati.utils import unpack_key
+from iati.activities import process_activities
+from iati.fxrates import FXRates
+from iati.utils import TRANSACTION_HEADERS, TRANSACTIONS_JSON, TRANSACTIONS_CSV, FLOWS_JSON, FLOWS_CSV, FLOW_HEADERS
 
 logger = logging.getLogger(__name__)
 
 
-def retrieve_activities(configuration, retriever, dportal_params):
+def retrieve_dportal(configuration, retriever, dportal_params):
     """
     Downloads activity data from D-Portal. Filters them and returns a
     list of activities.
     """
     dportal_configuration = configuration['dportal']
-    url = dportal_configuration['url'] % quote(dportal_configuration['query'].format(dportal_params))
-    filename = 'dportal.xml'
-    dportal_path = retriever.retrieve_file(url, filename, 'D-Portal activities', False)
-    return XMLIterator(dportal_path)
+    base_filename = dportal_configuration['filename']
+    dportal_limit = dportal_configuration['limit']
+    n = 0
+    dont_exit = True
+    while dont_exit:
+        if dportal_params:
+            params = dportal_params
+            dont_exit = False
+        else:
+            offset = n * dportal_limit
+            params = f'LIMIT {dportal_limit} OFFSET {offset}'
+            logger.info(f'OFFSET {offset}')
+        url = dportal_configuration['url'] % quote(dportal_configuration['query'].format(params))
+        filename = base_filename.format(n)
+        text = retriever.retrieve_text(url, filename, 'D-Portal activities', False)
+        if '<iati-activity' in text:
+            n += 1
+            yield text
+        else:
+            # If the result doesn't contain any IATI activities, we're done
+            dont_exit = False
 
 
 def should_ignore_activity(activity):
     return False
 
 
-#
-# Postprocessing
-#
-
-def postprocess_accumulators (accumulators):
-    """ Unpack the accumulators into a usable data structure """
-    rows = []
-    for key in sorted(accumulators.keys()):
-        value = accumulators[key]
-        parts = unpack_key(key)
-        parts["net"] = accumulators[key]["net"]
-        parts["total"] = accumulators[key]["total"]
-        rows.append(parts)
-    return rows
-
-def postprocess_activity_counts (activity_counts):
-    result = {}
-    for key in activity_counts.keys():
-        result[key] = []
-        for entry in sorted(activity_counts[key].keys()):
-            result[key].append({
-                key: entry[0],
-                "is_humanitarian": entry[1],
-                "is_strict": entry[2],
-                "activities": len(activity_counts[key][entry]),
-            })
-    return result
-
-
-def start(configuration, retriever, outputs, tabs, dportal_params):
+def start(configuration, retriever, outputs, tabs, dportal_params, temp_folder):
     def update_tab(name, data):
         logger.info('Updating tab: %s' % name)
         for output in outputs.values():
             output.update_tab(name, data)
 
-    activities = Activities()
-    for no_activities, activity in enumerate(retrieve_activities(configuration, retriever, dportal_params)):
-        if should_ignore_activity(activity):
-            continue
-        activities.process_activity(activity)
-    logger.info(f'Processed {no_activities} activities')
-    commitments_spending = postprocess_accumulators(activities.accumulators)
-    activity_counts = postprocess_activity_counts(activities.activity_counts)
-    update_tab('commitmentsspending', commitments_spending)
-    update_tab('activitytotals', activity_counts)
+    fx = FXRates(configuration['fxrates'], retriever)
+    output_dir = join(temp_folder, 'output_data')
+    rmtree(output_dir, ignore_errors=True)
+    mkdir(output_dir)
+    generator = retrieve_dportal(configuration, retriever, dportal_params)
+    # Build the accumulators from the IATI activities and transactions
+    transactions, flows = process_activities(generator)
+    logger.info(f'Processed {len(transactions)} transactions')
+    logger.info(f'Processed {len(flows)} flows')
+
+    #
+    # Write transactions
+    #
+
+    # Add headers and sort the transactions.
+    transactions = TRANSACTION_HEADERS + sorted(transactions)
+
+    # Write the JSON
+    save_json(transactions, join(output_dir, TRANSACTIONS_JSON))
+
+    # Write the CSV
+    write_list_to_csv(join(output_dir, TRANSACTIONS_CSV), transactions)
+
+    #
+    # Prepare and write flows
+    #
+
+    # Add headers and aggregate
+    flows = hxl.data(FLOW_HEADERS + flows).count(
+        FLOW_HEADERS[1][:-1], # make a list of patterns from all but the last column of the hashtag row
+        aggregators="sum(#value+total) as Total money#value+total"
+    ).cache()
+
+    # Write the JSON
+    with open(join(output_dir, FLOWS_JSON), "w") as output:
+        for line in flows.gen_json():
+            print(line, file=output, end="")
+
+    # Write the CSV
+    with open(join(output_dir, FLOWS_CSV), "w") as output:
+        for line in flows.gen_csv():
+            print(line, file=output, end="")
+
+# end
+#    update_tab('commitmentsspending', commitments_spending)
+#    update_tab('activitytotals', activity_counts)

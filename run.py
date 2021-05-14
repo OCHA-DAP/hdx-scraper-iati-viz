@@ -69,7 +69,7 @@ def main(excel_path, gsheet_auth, updatesheets, updatetabs, nojson, saved_dir, s
             else:
                 jsonout = JsonOutput(configuration, updatetabs)
             outputs = {'gsheets': gsheets, 'excel': excelout, 'json': jsonout}
-            start(configuration, retriever, outputs, updatetabs, dportal_params)
+            start(configuration, retriever, outputs, updatetabs, dportal_params, temp_folder)
             jsonout.save()
             excelout.save()
 
