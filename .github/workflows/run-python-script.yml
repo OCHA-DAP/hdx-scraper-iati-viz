@@ -12,26 +12,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-#    - uses: actions/checkout@v2
-#    - name: Set up Python 3.x
-#      uses: actions/setup-python@v2
-#      with:
-#        python-version: 3.8
-#    - name: Install dependencies
-#      run: |
-#        python -m pip install --upgrade pip
-#        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-#    - name: Run script
-#      run: |
-#        python run.py
-#    - name: Deploy 🚀
-#      uses: JamesIves/github-pages-deploy-action@3.6.2
-#      with:
-#        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#        BRANCH: gh-pages
-#        FOLDER: output
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.x
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Run script
+      env:
+        GSHEET_AUTH: ${{ secrets.GSHEET_AUTH }}
+        UPDATESHEETS: ${{ secrets.UPDATESHEETS }}
+      run: |
+        python run.py
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@3.6.2
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: output
     - name: Send mail
-#      if: failure()
+      if: failure()
       uses: dawidd6/action-send-mail@v2
       with:
         server_address: ${{secrets.EMAIL_SERVER}}

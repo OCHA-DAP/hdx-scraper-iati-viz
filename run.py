@@ -48,6 +48,9 @@ def main(excel_path, gsheet_auth, updatesheets, updatetabs, nojson, saved_dir, s
     configuration = Configuration.read()
     with temp_dir() as temp_folder:
         with Download(user_agent='HDX-IATI-COVID19') as downloader:
+            tabs = configuration['tabs']
+            gsheets = GoogleSheets(configuration, gsheet_auth, updatesheets, tabs, updatetabs)
+            logger.info('GSheet worked!')
             retriever = Retrieve(downloader, configuration['fallback_dir'], saved_dir, temp_folder, save, use_saved)
             tabs = configuration['tabs']
             if updatetabs is None:

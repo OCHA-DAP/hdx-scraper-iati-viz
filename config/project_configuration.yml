@@ -16,7 +16,7 @@ json:
 
 dportal:
   filename: "dportal_{}.xml"
-  limit: 100
+  limit: 1000
   url: "http://d-portal.org/dquery?form=xml&sql=%s"
   query: "
 SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND
