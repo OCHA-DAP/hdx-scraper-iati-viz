@@ -2,8 +2,9 @@
 import argparse
 import logging
 from datetime import datetime
-from os import getenv
+from os import getenv, mkdir
 from os.path import join
+from shutil import rmtree
 
 from hdx.facades.keyword_arguments import facade
 from hdx.hdx_configuration import Configuration
@@ -13,7 +14,6 @@ from hdx.scraper.jsonoutput import JsonOutput
 from hdx.scraper.nooutput import NoOutput
 from hdx.utilities.downloader import Download
 from hdx.utilities.easy_logging import setup_logging
-from hdx.utilities.path import temp_dir
 from hdx.utilities.retriever import Retrieve
 
 from iati.main import start
@@ -46,36 +46,34 @@ def parse_args():
 def main(excel_path, gsheet_auth, updatesheets, updatetabs, nojson, saved_dir, save, use_saved, dportal_params, **ignore):
     logger.info('##### hdx-scraper-iati-viz version %.1f ####' % VERSION)
     configuration = Configuration.read()
-    with temp_dir() as temp_folder:
-        with Download(user_agent='HDX-IATI-COVID19') as downloader:
-            tabs = configuration['tabs']
+    output_dir = configuration['output_dir']
+    rmtree(output_dir, ignore_errors=True)
+    mkdir(output_dir)
+    with Download(user_agent='HDX-IATI-COVID19') as downloader:
+        retriever = Retrieve(downloader, configuration['fallback_dir'], saved_dir, output_dir, save, use_saved)
+        tabs = configuration['tabs']
+        if updatetabs is None:
+            updatetabs = list(tabs.keys())
+            logger.info('Updating all tabs')
+        else:
+            logger.info('Updating only these tabs: %s' % updatetabs)
+        noout = NoOutput(updatetabs)
+        if excel_path:
+            excelout = ExcelOutput(excel_path, tabs, updatetabs)
+        else:
+            excelout = noout
+        if gsheet_auth:
             gsheets = GoogleSheets(configuration, gsheet_auth, updatesheets, tabs, updatetabs)
-            logger.info('GSheet worked!')
-            return
-            retriever = Retrieve(downloader, configuration['fallback_dir'], saved_dir, temp_folder, save, use_saved)
-            tabs = configuration['tabs']
-            if updatetabs is None:
-                updatetabs = list(tabs.keys())
-                logger.info('Updating all tabs')
-            else:
-                logger.info('Updating only these tabs: %s' % updatetabs)
-            noout = NoOutput(updatetabs)
-            if excel_path:
-                excelout = ExcelOutput(excel_path, tabs, updatetabs)
-            else:
-                excelout = noout
-            if gsheet_auth:
-                gsheets = GoogleSheets(configuration, gsheet_auth, updatesheets, tabs, updatetabs)
-            else:
-                gsheets = noout
-            if nojson:
-                jsonout = noout
-            else:
-                jsonout = JsonOutput(configuration, updatetabs)
-            outputs = {'gsheets': gsheets, 'excel': excelout, 'json': jsonout}
-            start(configuration, retriever, outputs, updatetabs, dportal_params, temp_folder)
-            jsonout.save()
-            excelout.save()
+        else:
+            gsheets = noout
+        if nojson:
+            jsonout = noout
+        else:
+            jsonout = JsonOutput(configuration, updatetabs)
+        outputs = {'gsheets': gsheets, 'excel': excelout, 'json': jsonout}
+        start(configuration, retriever, outputs, updatetabs, dportal_params, output_dir)
+        jsonout.save()
+        excelout.save()
 
 
 if __name__ == '__main__':

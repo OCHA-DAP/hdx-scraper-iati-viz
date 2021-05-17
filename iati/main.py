@@ -49,16 +49,13 @@ def should_ignore_activity(activity):
     return False
 
 
-def start(configuration, retriever, outputs, tabs, dportal_params, temp_folder):
+def start(configuration, retriever, outputs, tabs, dportal_params, output_dir):
     def update_tab(name, data):
         logger.info('Updating tab: %s' % name)
         for output in outputs.values():
             output.update_tab(name, data)
 
     fx = FXRates(configuration['fxrates'], retriever)
-    output_dir = join(temp_folder, 'output_data')
-    rmtree(output_dir, ignore_errors=True)
-    mkdir(output_dir)
     generator = retrieve_dportal(configuration, retriever, dportal_params)
     # Build the accumulators from the IATI activities and transactions
     transactions, flows = process_activities(generator)

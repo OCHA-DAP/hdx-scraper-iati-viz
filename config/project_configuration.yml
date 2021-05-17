@@ -13,6 +13,7 @@ googlesheets:
 json:
   filepath: "dataforviz.json"
 
+output_dir: output
 
 dportal:
   filename: "dportal_{}.xml"
