@@ -9,6 +9,8 @@ import diterator
 #
 # Business-logic functions
 #
+from hdx.location.country import Country
+
 from iati.utils import get_org_name, convert_to_usd, get_sector_group_name, get_country_name
 
 

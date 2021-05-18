@@ -4,6 +4,7 @@
 #
 import re
 
+from hdx.location.country import Country
 from hdx.utilities.loader import load_json
 
 
@@ -75,10 +76,9 @@ def get_sector_group_name(code):
 
 
 def get_country_name(code):
-    country_info = load_json("data/countries.json")
-    for info in country_info["data"]:
-        if info["iso2"] == code:
-            return info["label"]["default"]
+    countryname = Country.get_country_name_from_iso2(code)
+    if countryname:
+        return countryname
     return "(Unspecified country)"
 
 
