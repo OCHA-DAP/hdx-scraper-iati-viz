@@ -8,21 +8,6 @@ from hdx.location.country import Country
 from hdx.utilities.loader import load_json
 
 
-#
-# Global variables
-#
-
-json_files = {}
-""" Cache for loaded JSON files """
-
-org_names = None
-""" Map from IATI identifiers to organisation names """
-
-
-#
-# Utility functions
-#
-
 def clean_string(s):
     """ Normalise whitespace in a single, and remove any punctuation at the start/end """
     s = re.sub(r'^\W*(\w.*)\W*$', r'\1', s)
@@ -30,21 +15,27 @@ def clean_string(s):
     return s.strip()
 
 
+#
+# Global variables
+#
+org_data = load_json("data/IATIOrganisationIdentifier.json")
+org_names = {}
+""" Map from IATI identifiers to organisation names """
+# Prime with org identifiers from code4iati
+for entry in org_data["data"]:
+    code = clean_string(entry["code"]).lower()
+    org_names[code] = clean_string(entry["name"])
+sector_info = load_json("data/dac3-sector-map.json")
+
+
+#
+# Utility functions
+#
 def get_org_name(org, default_org):
     """ Standardise organisation names
     For now, use the first name found for an identifier.
     Later, we can reference the registry.
     """
-    global org_names
-
-    # Prime with org identifiers from code4iati
-    if org_names is None:
-        map = load_json("data/IATIOrganisationIdentifier.json")
-        org_names = {}
-        for entry in map["data"]:
-            code = clean_string(entry["code"]).lower()
-            org_names[code] = clean_string(entry["name"])
-
     name = None if org is None or org.name is None else clean_string(str(org.name))
     ref = None if org is None or org.ref is None else clean_string(str(org.ref)).lower()
 
@@ -67,7 +58,6 @@ def get_org_name(org, default_org):
 def get_sector_group_name(code):
     """ Look up a group name for a 3- or 5-digit sector code.
     """
-    sector_info = load_json("data/dac3-sector-map.json")
     code = code[:3]
     if code in sector_info:
         return sector_info.get(code)["dac-group"]
