@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import argparse
 import logging
+from datetime import datetime
 from os import getenv, mkdir
 from os.path import join
 from shutil import rmtree
@@ -41,7 +42,8 @@ def main(saved_dir, save, use_saved, dportal_params, **ignore):
     mkdir(output_dir)
     with Download() as downloader:
         retriever = Retrieve(downloader, configuration['fallback_dir'], saved_dir, output_dir, save, use_saved)
-        start(configuration, retriever, dportal_params)
+        this_month = datetime.utcnow().isoformat()[:7]
+        start(configuration, this_month, retriever, dportal_params)
 
 
 if __name__ == '__main__':

@@ -32,7 +32,8 @@ class TestIATI:
             with Download(user_agent='test') as downloader:
                 retriever = Retrieve(downloader, tempdir, fixtures_dir, tempdir, save=False, use_saved=True)
                 configuration['outputs']['folder'] = tempdir
-                start(configuration, retriever, dportal_params=None)
+                this_month = '2021-05'
+                start(configuration, this_month, retriever, dportal_params=None)
                 filename = 'flows.csv'
                 expected_file = join(fixtures_dir, filename)
                 actual_file = join(tempdir, filename)

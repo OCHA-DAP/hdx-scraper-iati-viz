@@ -101,7 +101,16 @@ outputs:
       - "#x_transaction_direction"
       - "#value+total"
 
-default_org: "(unspecified org)"
+lookups:
+  org_data: "data/IATIOrganisationIdentifier.json"
+  sector_data: "data/dac3-sector-map.json"
+  default_org: "(unspecified org)"
+  default_sector: "(Unspecified sector)"
+  default_country: "(Unspecified country)"
+
+calculate_splits:
+  default_sector: "99999"
+  default_country: "XX"
 
 transaction_type_info:
   "1":

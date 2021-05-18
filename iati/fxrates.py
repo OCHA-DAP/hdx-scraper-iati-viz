@@ -30,4 +30,3 @@ class FXRates:
                 logger.exception(f'Currency {currency} is invalid!')
                 return 0
         return value / fx_rate
-

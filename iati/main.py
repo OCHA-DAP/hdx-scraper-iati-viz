@@ -1,14 +1,18 @@
 # -*- coding: utf-8 -*-
 import logging
+from io import StringIO
 from os.path import join
 from urllib.parse import quote
 
+import diterator
 import hxl
 from hdx.utilities.dictandlist import write_list_to_csv
 from hdx.utilities.saver import save_json
 
-from iati.activities import process_activities
+from iati.activity import Activity
+from iati.calculatesplits import CalculateSplits
 from iati.fxrates import FXRates
+from iati.lookups import Lookups
 
 logger = logging.getLogger(__name__)
 
@@ -46,11 +50,25 @@ def should_ignore_activity(activity):
     return False
 
 
-def start(configuration, retriever, dportal_params):
+def start(configuration, this_month, retriever, dportal_params):
     fx = FXRates(configuration['fxrates'], retriever)
     generator = retrieve_dportal(configuration, retriever, dportal_params)
     # Build the accumulators from the IATI activities and transactions
-    transactions, flows = process_activities(configuration, generator)
+    Lookups.setup(configuration)
+    CalculateSplits.setup(configuration)
+    transactions = list()
+    flows = list()
+    for text in generator:
+        for dactivity in diterator.XMLIterator(StringIO(text)):
+            activity = Activity(configuration, this_month, dactivity)
+
+            if not activity.should_process():
+                continue
+
+            activity_transactions, activity_flows = activity.process()
+            transactions.extend(activity_transactions)
+            flows.extend(activity_flows)
+
     logger.info(f'Processed {len(transactions)} transactions')
     logger.info(f'Processed {len(flows)} flows')
 
@@ -82,16 +100,16 @@ def start(configuration, retriever, dportal_params):
     hxltags = flows_configuration['hxltags']
     rows = [headers, hxltags]
     flows = hxl.data(rows + flows).count(
-        rows[1][:-1], # make a list of patterns from all but the last column of the hashtag row
-        aggregators="sum(#value+total) as Total money#value+total"
+        rows[1][:-1],  # make a list of patterns from all but the last column of the hashtag row
+        aggregators='sum(#value+total) as Total money#value+total'
     ).cache()
 
     # Write the JSON
-    with open(join(output_dir, flows_configuration['json']), "w") as output:
+    with open(join(output_dir, flows_configuration['json']), 'w') as output:
         for line in flows.gen_json():
             print(line, file=output, end="")
 
     # Write the CSV
-    with open(join(output_dir, flows_configuration['csv']), "w") as output:
+    with open(join(output_dir, flows_configuration['csv']), 'w') as output:
         for line in flows.gen_csv():
             print(line, file=output, end="")
