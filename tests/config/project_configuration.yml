@@ -1,18 +1,5 @@
 fallback_dir: "fallback_data"
 
-tabs:
-  commitmentsspending: "CommitmentsSpending"
-  flows: "Flows"
-  activitytotals: "ActivityTotals"
-
-
-googlesheets:
-  prod: "https://docs.google.com/spreadsheets/d/1VRZkobs5fjdbgdopPeD-6De0xJTuZmH-Ce7DSjbkFtc/edit"
-  scratch: "https://docs.google.com/spreadsheets/d/1oq8_s12occt-oJk_ALgA5TGGY2xsjvhBVvLMhcRygrw/edit"
-
-json:
-  filepath: "dataforviz.json"
-
 output_dir: output
 
 dportal:
