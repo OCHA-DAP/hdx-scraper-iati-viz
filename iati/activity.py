@@ -103,13 +103,7 @@ class Activity:
             value = transaction.calculate_value()
 
             # Set the net (new money) factors based on the type (commitments or spending)
-            if type_info['direction'] == 'outgoing':
-                if type_info['classification'] == 'commitments':
-                    net_value = value * commitment_factor
-                else:
-                    net_value = value * spending_factor
-            else:
-                net_value = None
+            net_value = transaction.get_net_value(commitment_factor, spending_factor)
 
             # transaction status defaults to activity
             if dtransaction.humanitarian is None:

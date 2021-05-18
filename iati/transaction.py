@@ -47,3 +47,4 @@ class Transaction:
                 return self.value * commitment_factor
             else:
                 return self.value * spending_factor
+        return None
