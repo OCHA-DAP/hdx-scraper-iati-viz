@@ -1,7 +1,5 @@
 fallback_dir: "fallback_data"
 
-output_dir: output
-
 dportal:
   filename: "dportal_{}.xml"
   limit: 1000
@@ -49,3 +47,80 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND
 fxrates:
   rates_url: "https://codeforiati.org/exchangerates-scraper/consolidated.csv"
   fallback_rates_url: "https://api.exchangerate.host/latest?base=usd"
+
+outputs:
+  folder: output
+  transactions:
+    json: "transactions.json"
+    csv: "transactions.csv"
+    headers:
+      - "Month"
+      - "Reporting org"
+      - "Reporting org type"
+      - "Sector"
+      - "Recipient country"
+      - "Humanitarian?"
+      - "Strict?"
+      - "Transaction type"
+      - "Activity id"
+      - "Net money"
+      - "Total money"
+    hxltags:
+      - "#date+month"
+      - "#org+name"
+      - "#org+type"
+      - "#sector"
+      - "#country"
+      - "#indicator+bool+humanitarian"
+      - "#indicator+bool+strict"
+      - "#x_transaction_type"
+      - "#activity+code"
+      - "#value+net"
+      - "#value+total"
+  flows:
+    json: "flows.json"
+    csv: "flows.csv"
+    headers:
+      - "Reporting org"
+      - "Reporting org type"
+      - "Provider org"
+      - "Receiver org"
+      - "Humanitarian?"
+      - "Strict?"
+      - "Transaction type"
+      - "Transaction direction"
+      - "Total money"
+    hxltags:
+      - "#org+name+reporting"
+      - "#org+reporting+type"
+      - "#org+name+provider"
+      - "#org+name+receiver"
+      - "#indicator+bool+humanitarian"
+      - "#indicator+bool+strict"
+      - "#x_transaction_type"
+      - "#x_transaction_direction"
+      - "#value+total"
+
+default_org: "(unspecified org)"
+
+transaction_type_info:
+  "1":
+    label: "Incoming Funds"
+    classification: "spending"
+    direction: "incoming"
+  "2":
+    label: "Outgoing Commitment"
+    classification: "commitments"
+    direction: "outgoing"
+  "3":
+    label: "Disbursement"
+    classification: "spending"
+    direction: "outgoing"
+  "4":
+    label: "Expenditure"
+    classification: "spending"
+    direction: "outgoing"
+  "11":
+    label: "Incoming Commitment"
+    classification: "commitments"
+    direction: "incoming"

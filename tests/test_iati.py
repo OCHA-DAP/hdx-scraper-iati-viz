@@ -31,7 +31,8 @@ class TestIATI:
         with temp_dir('TestIATIViz', delete_on_success=True, delete_on_failure=False) as tempdir:
             with Download(user_agent='test') as downloader:
                 retriever = Retrieve(downloader, tempdir, fixtures_dir, tempdir, save=False, use_saved=True)
-                start(configuration, retriever, dportal_params=None, output_dir=tempdir)
+                configuration['outputs']['folder'] = tempdir
+                start(configuration, retriever, dportal_params=None)
                 filename = 'flows.csv'
                 expected_file = join(fixtures_dir, filename)
                 actual_file = join(tempdir, filename)

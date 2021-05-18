@@ -9,7 +9,6 @@ from hdx.utilities.saver import save_json
 
 from iati.activities import process_activities
 from iati.fxrates import FXRates
-from iati.utils import TRANSACTION_HEADERS, TRANSACTIONS_JSON, TRANSACTIONS_CSV, FLOWS_JSON, FLOWS_CSV, FLOW_HEADERS
 
 logger = logging.getLogger(__name__)
 
@@ -47,43 +46,52 @@ def should_ignore_activity(activity):
     return False
 
 
-def start(configuration, retriever, dportal_params, output_dir):
+def start(configuration, retriever, dportal_params):
     fx = FXRates(configuration['fxrates'], retriever)
     generator = retrieve_dportal(configuration, retriever, dportal_params)
     # Build the accumulators from the IATI activities and transactions
-    transactions, flows = process_activities(generator)
+    transactions, flows = process_activities(configuration, generator)
     logger.info(f'Processed {len(transactions)} transactions')
     logger.info(f'Processed {len(flows)} flows')
 
+    outputs_configuration = configuration['outputs']
+    output_dir = outputs_configuration['folder']
     #
     # Write transactions
     #
+    transactions_configuration = outputs_configuration['transactions']
 
     # Add headers and sort the transactions.
-    transactions = TRANSACTION_HEADERS + sorted(transactions)
+    headers = transactions_configuration['headers']
+    hxltags = transactions_configuration['hxltags']
+    transactions = [headers, hxltags] + sorted(transactions)
 
     # Write the JSON
-    save_json(transactions, join(output_dir, TRANSACTIONS_JSON))
+    save_json(transactions, join(output_dir, transactions_configuration['json']))
 
     # Write the CSV
-    write_list_to_csv(join(output_dir, TRANSACTIONS_CSV), transactions)
+    write_list_to_csv(join(output_dir, transactions_configuration['csv']), transactions)
 
     #
     # Prepare and write flows
     #
+    flows_configuration = outputs_configuration['flows']
 
     # Add headers and aggregate
-    flows = hxl.data(FLOW_HEADERS + flows).count(
-        FLOW_HEADERS[1][:-1], # make a list of patterns from all but the last column of the hashtag row
+    headers = flows_configuration['headers']
+    hxltags = flows_configuration['hxltags']
+    rows = [headers, hxltags]
+    flows = hxl.data(rows + flows).count(
+        rows[1][:-1], # make a list of patterns from all but the last column of the hashtag row
         aggregators="sum(#value+total) as Total money#value+total"
     ).cache()
 
     # Write the JSON
-    with open(join(output_dir, FLOWS_JSON), "w") as output:
+    with open(join(output_dir, flows_configuration['json']), "w") as output:
         for line in flows.gen_json():
             print(line, file=output, end="")
 
     # Write the CSV
-    with open(join(output_dir, FLOWS_CSV), "w") as output:
+    with open(join(output_dir, flows_configuration['csv']), "w") as output:
         for line in flows.gen_csv():
             print(line, file=output, end="")

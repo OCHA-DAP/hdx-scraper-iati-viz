@@ -9,8 +9,7 @@ import diterator
 #
 # Business-logic functions
 #
-from iati.utils import get_org_name, TRANSACTION_TYPE_INFO, convert_to_usd, get_sector_group_name, get_country_name, \
-    DEFAULT_ORG
+from iati.utils import get_org_name, convert_to_usd, get_sector_group_name, get_country_name
 
 
 def make_country_splits(entity, default_splits=None, default_country="XX"):
@@ -126,7 +125,7 @@ def sum_transactions(transactions, types):
     return total
 
 
-def process_activities(generator):
+def process_activities(configuration, generator):
 
     transactions = list()
 
@@ -135,6 +134,9 @@ def process_activities(generator):
     activities_seen = set()
 
     this_month = datetime.utcnow().isoformat()[:7]
+
+    default_org = configuration['default_org']
+    transaction_type_info = configuration['transaction_type_info']
 
     for text in generator:
         for activity in diterator.XMLIterator(StringIO(text)):
@@ -150,7 +152,7 @@ def process_activities(generator):
                 continue
 
             # Get the reporting-org name and C19 strictness at activity level
-            org = get_org_name(activity.reporting_org)
+            org = get_org_name(activity.reporting_org, default_org)
             org_type = str(activity.reporting_org.type)
             activity_strict = is_activity_strict(activity)
 
@@ -193,7 +195,6 @@ def process_activities(generator):
             #
             # Walk through the activity's transactions one-by-one, and split by country/sector
             #
-
             for transaction in activity.transactions:
 
                 month = transaction.date[:7]
@@ -202,8 +203,8 @@ def process_activities(generator):
                     continue
 
                 type = transaction.type
-                if type in TRANSACTION_TYPE_INFO:
-                    type_info = TRANSACTION_TYPE_INFO[type]
+                if type in transaction_type_info:
+                    type_info = transaction_type_info[type]
                 else:
                     # skip transaction types that don't interest us
                     continue
@@ -267,12 +268,12 @@ def process_activities(generator):
                     # Add to flows
                     #
                     if type_info["direction"] == "incoming":
-                        provider = get_org_name(transaction.provider_org)
+                        provider = get_org_name(transaction.provider_org, default_org)
                         receiver = None
                     else:
                         provider = None
-                        receiver = get_org_name(transaction.receiver_org)
-                    if org != provider and org != receiver and org != DEFAULT_ORG:
+                        receiver = get_org_name(transaction.receiver_org, default_org)
+                    if org != provider and org != receiver and org != default_org:
                         # ignore internal transactions or unknown reporting orgs
                         flows.append([
                             org,

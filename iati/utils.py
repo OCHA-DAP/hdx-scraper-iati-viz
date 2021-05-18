@@ -2,108 +2,10 @@
 #
 # Utility functions
 #
-import json
 import re
 
 from hdx.utilities.loader import load_json
 
-
-#
-# Constants
-#
-
-DEFAULT_ORG = "(unspecified org)"
-
-TRANSACTIONS_JSON = "transactions.json"
-
-TRANSACTIONS_CSV = "transactions.csv"
-
-TRANSACTION_HEADERS = [
-    [
-        "Month",
-        "Reporting org",
-        "Reporting org type",
-        "Sector",
-        "Recipient country",
-        "Humanitarian?",
-        "Strict?",
-        "Transaction type",
-        "Activity id",
-        "Net money",
-        "Total money"
-    ],
-    [
-        "#date+month",
-        "#org+name",
-        "#org+type",
-        "#sector",
-        "#country",
-        "#indicator+bool+humanitarian",
-        "#indicator+bool+strict",
-        "#x_transaction_type",
-        "#activity+code",
-        "#value+net",
-        "#value+total"
-    ],
-]
-
-
-FLOWS_JSON = "flows.json"
-
-FLOWS_CSV = "flows.csv"
-
-FLOW_HEADERS = [
-    [
-        "Reporting org",
-        "Reporting org type",
-        "Provider org",
-        "Receiver org",
-        "Humanitarian?",
-        "Strict?",
-        "Transaction type",
-        "Transaction direction",
-        "Total money",
-    ],
-    [
-        "#org+name+reporting",
-        "#org+reporting+type",
-        "#org+name+provider",
-        "#org+name+receiver",
-        "#indicator+bool+humanitarian",
-        "#indicator+bool+strict",
-        "#x_transaction_type",
-        "#x_transaction_direction",
-        "#value+total"
-    ],
-]
-
-TRANSACTION_TYPE_INFO = {
-    "1": {
-        "label": "Incoming Funds",
-        "classification": "spending",
-        "direction": "incoming",
-    },
-    "2": {
-        "label": "Outgoing Commitment",
-        "classification": "commitments",
-        "direction": "outgoing",
-    },
-    "3": {
-        "label": "Disbursement",
-        "classification": "spending",
-        "direction": "outgoing",
-    },
-    "4": {
-        "label": "Expenditure",
-        "classification": "spending",
-        "direction": "outgoing",
-    },
-    "11": {
-        "label": "Incoming Commitment",
-        "classification": "commitments",
-        "direction": "incoming",
-    },
-}
 
 #
 # Global variables
@@ -120,23 +22,14 @@ org_names = None
 # Utility functions
 #
 
-def load_json (filename):
-    """ Load a JSON file if not already in memory, then return it """
-    global json_files
-    if not filename in json_files:
-        with open(filename, "r") as input:
-            json_files[filename] = json.load(input)
-    return json_files[filename]
-
-
-def clean_string (s):
+def clean_string(s):
     """ Normalise whitespace in a single, and remove any punctuation at the start/end """
     s = re.sub(r'^\W*(\w.*)\W*$', r'\1', s)
     s = re.sub(r'\s+', ' ', s)
     return s.strip()
 
 
-def get_org_name (org):
+def get_org_name(org, default_org):
     """ Standardise organisation names
     For now, use the first name found for an identifier.
     Later, we can reference the registry.
@@ -167,10 +60,10 @@ def get_org_name (org):
         return name
 
     # We can't figure out anything
-    return DEFAULT_ORG
+    return default_org
 
 
-def get_sector_group_name (code):
+def get_sector_group_name(code):
     """ Look up a group name for a 3- or 5-digit sector code.
     """
     sector_info = load_json("data/dac3-sector-map.json")
@@ -181,7 +74,7 @@ def get_sector_group_name (code):
         return "(Unspecified sector)"
 
 
-def get_country_name (code):
+def get_country_name(code):
     country_info = load_json("data/countries.json")
     for info in country_info["data"]:
         if info["iso2"] == code:
@@ -189,7 +82,7 @@ def get_country_name (code):
     return "(Unspecified country)"
 
 
-def convert_to_usd (value, source_currency, isodate):
+def convert_to_usd(value, source_currency, isodate):
     # FIXME not using date
     source_currency = source_currency.upper().strip()
     if value != 0.0 and source_currency != "USD":
