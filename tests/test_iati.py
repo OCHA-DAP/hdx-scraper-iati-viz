@@ -3,8 +3,6 @@ from os.path import join
 import pytest
 from hdx.hdx_configuration import Configuration
 from hdx.hdx_locations import Locations
-from hdx.scraper.jsonoutput import JsonOutput
-from hdx.scraper.nooutput import NoOutput
 from hdx.utilities.compare import assert_files_same
 from hdx.utilities.downloader import Download
 from hdx.utilities.path import temp_dir
@@ -33,11 +31,7 @@ class TestIATI:
         with temp_dir('TestIATIViz', delete_on_success=True, delete_on_failure=False) as tempdir:
             with Download(user_agent='test') as downloader:
                 retriever = Retrieve(downloader, tempdir, fixtures_dir, tempdir, save=False, use_saved=True)
-                tabs = configuration['tabs']
-                noout = NoOutput(tabs)
-                jsonout = JsonOutput(configuration, tabs)
-                outputs = {'gsheets': noout, 'excel': noout, 'json': jsonout}
-                start(configuration, retriever, outputs, tabs, dportal_params=None, output_dir=tempdir)
+                start(configuration, retriever, dportal_params=None, output_dir=tempdir)
                 filename = 'flows.csv'
                 expected_file = join(fixtures_dir, filename)
                 actual_file = join(tempdir, filename)

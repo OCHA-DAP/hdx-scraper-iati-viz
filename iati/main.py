@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 import logging
-from os import mkdir
 from os.path import join
-from shutil import rmtree
 from urllib.parse import quote
 
 import hxl
@@ -49,12 +47,7 @@ def should_ignore_activity(activity):
     return False
 
 
-def start(configuration, retriever, outputs, tabs, dportal_params, output_dir):
-    def update_tab(name, data):
-        logger.info('Updating tab: %s' % name)
-        for output in outputs.values():
-            output.update_tab(name, data)
-
+def start(configuration, retriever, dportal_params, output_dir):
     fx = FXRates(configuration['fxrates'], retriever)
     generator = retrieve_dportal(configuration, retriever, dportal_params)
     # Build the accumulators from the IATI activities and transactions
@@ -94,7 +87,3 @@ def start(configuration, retriever, outputs, tabs, dportal_params, output_dir):
     with open(join(output_dir, FLOWS_CSV), "w") as output:
         for line in flows.gen_csv():
             print(line, file=output, end="")
-
-# end
-#    update_tab('commitmentsspending', commitments_spending)
-#    update_tab('activitytotals', activity_counts)
