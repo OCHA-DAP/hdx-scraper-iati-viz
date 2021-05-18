@@ -10,7 +10,7 @@ class Activity:
     activities_seen = set()
 
     def __init__(self, configuration, this_month, dactivity):
-        self.transaction_type_info = configuration['transaction_type_info']
+        self.configuration = configuration
         self.this_month = this_month
         self.dactivity = dactivity
 
@@ -92,22 +92,15 @@ class Activity:
         # Walk through the activity's transactions one-by-one, and split by country/sector
         #
         for dtransaction in self.dactivity.transactions:
-            transaction = Transaction(dtransaction)
+            transaction = Transaction(self.configuration, self.this_month, dtransaction)
 
-            month = dtransaction.date[:7]
-            if month < '2020-01' or month > self.this_month or not dtransaction.value:
-                # Skip transactions with no values or with out-of-range months
+            if not transaction.should_process():
                 continue
 
-            type = dtransaction.type
-            if type in self.transaction_type_info:
-                type_info = self.transaction_type_info[type]
-            else:
-                # skip transaction types that don't interest us
-                continue
+            type_info = transaction.get_type_info()
 
             # Convert the transaction value to USD
-            value = convert_to_usd(dtransaction.value, dtransaction.currency, dtransaction.date)
+            value = transaction.calculate_value()
 
             # Set the net (new money) factors based on the type (commitments or spending)
             if type_info['direction'] == 'outgoing':
@@ -146,7 +139,7 @@ class Activity:
                     if type_info['direction'] == 'outgoing' and (net_money != 0 or total_money != 0):
                         # add to transactions
                         transactions.append([
-                            month,
+                            transaction.get_month(),
                             org,
                             org_type,
                             sector_name,
