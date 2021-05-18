@@ -108,6 +108,8 @@ class Activity:
                     net_value = value * commitment_factor
                 else:
                     net_value = value * spending_factor
+            else:
+                net_value = None
 
             # transaction status defaults to activity
             if dtransaction.humanitarian is None:
@@ -132,25 +134,26 @@ class Activity:
                     # Add to transactions
                     #
 
-                    net_money = int(round(net_value * country_percentage * sector_percentage))
                     total_money = int(round(value * country_percentage * sector_percentage))
+                    if type_info['direction'] == 'outgoing':
+                        net_money = int(round(net_value * country_percentage * sector_percentage))
 
-                    # Fill in only if we end up with a non-zero value
-                    if type_info['direction'] == 'outgoing' and (net_money != 0 or total_money != 0):
-                        # add to transactions
-                        transactions.append([
-                            transaction.get_month(),
-                            org,
-                            org_type,
-                            sector_name,
-                            country_name,
-                            1 if is_humanitarian else 0,
-                            1 if is_strict else 0,
-                            type_info['classification'],
-                            self.dactivity.identifier,
-                            net_money,
-                            total_money,
-                        ])
+                        # Fill in only if we end up with a non-zero value
+                        if net_money != 0 or total_money != 0:
+                            # add to transactions
+                            transactions.append([
+                                transaction.get_month(),
+                                org,
+                                org_type,
+                                sector_name,
+                                country_name,
+                                1 if is_humanitarian else 0,
+                                1 if is_strict else 0,
+                                type_info['classification'],
+                                self.dactivity.identifier,
+                                net_money,
+                                total_money,
+                            ])
 
                 #
                 # Add to flows
