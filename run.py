@@ -36,7 +36,7 @@ def parse_args():
 def main(saved_dir, save, use_saved, dportal_params, **ignore):
     logger.info('##### hdx-scraper-iati-viz version %.1f ####' % VERSION)
     configuration = Configuration.read()
-    output_dir = configuration['outputs']['output_dir']
+    output_dir = configuration['outputs']['folder']
     rmtree(output_dir, ignore_errors=True)
     mkdir(output_dir)
     with Download() as downloader:
