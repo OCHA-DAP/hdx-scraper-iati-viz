@@ -48,3 +48,6 @@ class Transaction:
             else:
                 return self.value * spending_factor
         return None
+
+    def humanitarian(self):
+        return self.dtransaction.humanitarian

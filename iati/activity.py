@@ -44,6 +44,9 @@ class Activity:
                 total += convert_to_usd(transaction.value, transaction.currency, transaction.date)
         return total
 
+    def humanitarian(self):
+        return self.dactivity.humanitarian
+
     def process(self):
         transactions = list()
         flows = list()
@@ -106,10 +109,11 @@ class Activity:
             net_value = transaction.get_net_value(commitment_factor, spending_factor)
 
             # transaction status defaults to activity
-            if dtransaction.humanitarian is None:
-                is_humanitarian = self.dactivity.humanitarian
+            transaction_humanitarian = transaction.humanitarian()
+            if transaction_humanitarian is None:
+                is_humanitarian = self.humanitarian()
             else:
-                is_humanitarian = dtransaction.humanitarian
+                is_humanitarian = transaction_humanitarian
             is_strict = activity_strict or transaction.is_strict()
 
             # Make the splits for the transaction (default to activity splits)

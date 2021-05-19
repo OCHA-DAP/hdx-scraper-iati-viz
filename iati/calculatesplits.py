@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 
 class CalculateSplits:
+    default_sector = None
+    default_country = None
+
     @classmethod
     def setup(cls, configuration):
         splits_configuration = configuration['calculate_splits']
@@ -8,7 +11,7 @@ class CalculateSplits:
         cls.default_country = splits_configuration['default_country']
 
     @classmethod
-    def make_country_splits(cls, entity, default_splits=None, default_country='XX'):
+    def make_country_splits(cls, entity, default_splits=None, default_country=None):
         """ Generate recipient-country splits by percentage for an activity or transaction
         FIXME - if there's no percentage for a country, default to 100% (could overcount)
         If there are no countries, assign 1.0 (100%) to the default provided.
@@ -28,10 +31,12 @@ class CalculateSplits:
             return default_splits
         else:
             # default to 100% for unknown country
+            if default_country is None:
+                return {cls.default_country: 1.0}
             return {default_country: 1.0}
 
     @classmethod
-    def make_sector_splits(cls, entity, default_splits=None, default_sector='99999'):
+    def make_sector_splits(cls, entity, default_splits=None, default_sector=None):
         """ Generate sector splits by percentage for an activity or transaction
         FIXME - if there's no percentage for a sector, default to 100% (could overcount)
         If there are no sectors, assign 1.0 (100%) to the default provided.
@@ -58,4 +63,6 @@ class CalculateSplits:
             return default_splits
         else:
             # default to 100% for unknown sector
+            if default_sector is None:
+                return {cls.default_sector: 1.0}
             return {default_sector: 1.0}
