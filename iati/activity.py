@@ -13,24 +13,6 @@ class Activity:
         self.configuration = configuration
         self.this_month = this_month
         self.dactivity = dactivity
-        self.identifier = dactivity.identifier
-
-    def should_process(self):
-        # Don't use the same activity twice
-        if self.identifier in self.activities_seen:
-            return False
-        self.activities_seen.add(self.identifier)
-
-        # Skip activities from a secondary reporter (should have been filtered out already)
-        if self.dactivity.secondary_reporter:
-            return False
-        return True
-
-    def get_reporting_org(self):
-        return Lookups.get_org_name(self.dactivity.reporting_org)
-
-    def get_org_type(self):
-        return str(self.dactivity.reporting_org.type)
 
     def is_strict(self):
         return True if (
@@ -40,11 +22,28 @@ class Activity:
             is_c19_narrative(self.dactivity.title.narratives)
         ) else False
 
-    def make_country_splits(self):
-        return CalculateSplits.make_country_splits(self.dactivity)
+    def setup(self):
+        # Don't use the same activity twice
+        identifier = self.dactivity.identifier
+        if identifier in self.activities_seen:
+            return False
+        self.activities_seen.add(identifier)
 
-    def make_sector_splits(self):
-        return CalculateSplits.make_sector_splits(self.dactivity)
+        # Skip activities from a secondary reporter (should have been filtered out already)
+        if self.dactivity.secondary_reporter:
+            return False
+
+        self.identifier = identifier
+        # Get the reporting-org name and C19 strictness at activity level
+        self.org = Lookups.get_org_name(self.dactivity.reporting_org)
+        self.org_type = str(self.dactivity.reporting_org.type)
+        self.activity_strict = self.is_strict()
+        self.humanitarian = self.dactivity.humanitarian
+        # Figure out default country/sector percentage splits at the activity level
+        self.country_splits = CalculateSplits.make_country_splits(self.dactivity)
+        self.sector_splits = CalculateSplits.make_sector_splits(self.dactivity)
+        self.transactions = [Transaction(self.configuration, self.this_month, x) for x in self.dactivity.transactions]
+        return True
 
     @staticmethod
     def sum_transactions(transactions, types):
@@ -56,21 +55,9 @@ class Activity:
                 total += convert_to_usd(transaction.value, transaction.currency, transaction.date)
         return total
 
-    def humanitarian(self):
-        return self.dactivity.humanitarian
-
     def process(self):
         transactions = list()
         flows = list()
-
-        # Get the reporting-org name and C19 strictness at activity level
-        org = self.get_reporting_org()
-        org_type = self.get_org_type()
-        activity_strict = self.is_strict()
-
-        # Figure out default country/sector percentage splits at the activity level
-        activity_country_splits = self.make_country_splits()
-        activity_sector_splits = self.make_sector_splits()
 
         #
         # Figure out how to factor new money
@@ -106,9 +93,7 @@ class Activity:
         #
         # Walk through the activity's transactions one-by-one, and split by country/sector
         #
-        for dtransaction in self.dactivity.transactions:
-            transaction = Transaction(self.configuration, self.this_month, dtransaction)
-
+        for transaction in self.transactions:
             if not transaction.should_process():
                 continue
 
@@ -121,14 +106,14 @@ class Activity:
             # transaction status defaults to activity
             transaction_humanitarian = transaction.humanitarian()
             if transaction_humanitarian is None:
-                is_humanitarian = self.humanitarian()
+                is_humanitarian = self.humanitarian
             else:
                 is_humanitarian = transaction_humanitarian
-            is_strict = activity_strict or transaction.is_strict()
+            is_strict = self.activity_strict or transaction.is_strict()
 
             # Make the splits for the transaction (default to activity splits)
-            country_splits = transaction.make_country_splits(activity_country_splits)
-            sector_splits = transaction.make_sector_splits(activity_sector_splits)
+            country_splits = transaction.make_country_splits(self.country_splits)
+            sector_splits = transaction.make_sector_splits(self.sector_splits)
 
             classification, direction = transaction.get_classification_direction()
 
@@ -153,8 +138,8 @@ class Activity:
                             # add to transactions
                             transactions.append([
                                 transaction.get_month(),
-                                org,
-                                org_type,
+                                self.org,
+                                self.org_type,
                                 sector_name,
                                 country_name,
                                 1 if is_humanitarian else 0,
@@ -169,11 +154,11 @@ class Activity:
                 # Add to flows
                 #
                 provider, receiver = transaction.get_provider_receiver()
-                if org != provider and org != receiver and org != Lookups.default_org:
+                if self.org != provider and self.org != receiver and self.org != Lookups.default_org:
                     # ignore internal transactions or unknown reporting orgs
                     flows.append([
-                        org,
-                        org_type,
+                        self.org,
+                        self.org_type,
                         provider,
                         receiver,
                         1 if is_humanitarian else 0,

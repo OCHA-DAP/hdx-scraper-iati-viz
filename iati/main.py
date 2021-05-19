@@ -62,7 +62,7 @@ def start(configuration, this_month, retriever, dportal_params):
         for dactivity in diterator.XMLIterator(StringIO(text)):
             activity = Activity(configuration, this_month, dactivity)
 
-            if not activity.should_process():
+            if not activity.setup():
                 continue
 
             activity_transactions, activity_flows = activity.process()
