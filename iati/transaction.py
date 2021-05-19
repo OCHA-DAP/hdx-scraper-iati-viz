@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from iati.calculatesplits import CalculateSplits
 from iati.covidchecks import has_c19_sector, is_c19_narrative
 from iati.utils import convert_to_usd
 
@@ -51,3 +52,10 @@ class Transaction:
 
     def humanitarian(self):
         return self.dtransaction.humanitarian
+
+    def make_country_splits(self, activity_country_splits):
+        return CalculateSplits.make_country_splits(self.dtransaction, activity_country_splits)
+
+    def make_sector_splits(self, activity_sector_splits):
+        return CalculateSplits.make_sector_splits(self.dtransaction, activity_sector_splits)
+
