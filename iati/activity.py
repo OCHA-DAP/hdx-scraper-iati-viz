@@ -26,6 +26,9 @@ class Activity:
             return False
         return True
 
+    def get_reporting_org(self):
+        return Lookups.get_org_name(self.dactivity.reporting_org)
+
     def get_org_type(self):
         return str(self.dactivity.reporting_org.type)
 
@@ -61,7 +64,7 @@ class Activity:
         flows = list()
 
         # Get the reporting-org name and C19 strictness at activity level
-        org = Lookups.get_org_name(self.dactivity.reporting_org)
+        org = self.get_reporting_org()
         org_type = self.get_org_type()
         activity_strict = self.is_strict()
 
@@ -109,8 +112,6 @@ class Activity:
             if not transaction.should_process():
                 continue
 
-            type_info = transaction.get_type_info()
-
             # Convert the transaction value to USD
             value = transaction.calculate_value()
 
@@ -128,6 +129,8 @@ class Activity:
             # Make the splits for the transaction (default to activity splits)
             country_splits = transaction.make_country_splits(activity_country_splits)
             sector_splits = transaction.make_sector_splits(activity_sector_splits)
+
+            classification, direction = transaction.get_classification_direction()
 
             # Apply the country and sector percentage splits to the transaction
             # generate multiple split transactions
@@ -156,7 +159,7 @@ class Activity:
                                 country_name,
                                 1 if is_humanitarian else 0,
                                 1 if is_strict else 0,
-                                type_info['classification'],
+                                classification,
                                 self.identifier,
                                 net_money,
                                 total_money,
@@ -165,12 +168,7 @@ class Activity:
                 #
                 # Add to flows
                 #
-                if type_info['direction'] == 'incoming':
-                    provider = Lookups.get_org_name(dtransaction.provider_org)
-                    receiver = None
-                else:
-                    provider = None
-                    receiver = Lookups.get_org_name(dtransaction.receiver_org)
+                provider, receiver = transaction.get_provider_receiver()
                 if org != provider and org != receiver and org != Lookups.default_org:
                     # ignore internal transactions or unknown reporting orgs
                     flows.append([
@@ -180,8 +178,8 @@ class Activity:
                         receiver,
                         1 if is_humanitarian else 0,
                         1 if is_strict else 0,
-                        type_info['classification'],
-                        type_info['direction'],
+                        classification,
+                        direction,
                         total_money
                     ])
         return transactions, flows

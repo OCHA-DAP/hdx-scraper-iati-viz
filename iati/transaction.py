@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
 from iati.calculatesplits import CalculateSplits
 from iati.covidchecks import has_c19_sector, is_c19_narrative
+from iati.lookups import Lookups
 from iati.utils import convert_to_usd
 
 
 class Transaction:
     def __init__(self, configuration, this_month, dtransaction):
-        self.transaction_type_info = configuration['transaction_type_info']
         self.this_month = this_month
         self.dtransaction = dtransaction
+        self.transaction_type_info = configuration['transaction_type_info'].get(dtransaction.type)
         self.value = None
         self.month = None
 
@@ -24,7 +25,7 @@ class Transaction:
             # Skip transactions with no values or with out-of-range months
             return False
 
-        if self.dtransaction.type not in self.transaction_type_info:
+        if self.transaction_type_info is None:
             # skip transaction types that don't interest us
             return False
         return True
@@ -32,8 +33,8 @@ class Transaction:
     def get_month(self):
         return self.month
 
-    def get_type_info(self):
-        return self.transaction_type_info[self.dtransaction.type]
+    def get_classification_direction(self):
+        return self.transaction_type_info['classification'], self.transaction_type_info['direction']
 
     def calculate_value(self):
         # Convert the transaction value to USD
@@ -41,10 +42,9 @@ class Transaction:
         return self.value
 
     def get_net_value(self, commitment_factor, spending_factor):
-        type_info = self.get_type_info()
         # Set the net (new money) factors based on the type (commitments or spending)
-        if type_info['direction'] == 'outgoing':
-            if type_info['classification'] == 'commitments':
+        if self.transaction_type_info['direction'] == 'outgoing':
+            if self.transaction_type_info['classification'] == 'commitments':
                 return self.value * commitment_factor
             else:
                 return self.value * spending_factor
@@ -59,3 +59,11 @@ class Transaction:
     def make_sector_splits(self, activity_sector_splits):
         return CalculateSplits.make_sector_splits(self.dtransaction, activity_sector_splits)
 
+    def get_provider_receiver(self):
+        if self.transaction_type_info['direction'] == 'incoming':
+            provider = Lookups.get_org_name(self.dtransaction.provider_org)
+            receiver = None
+        else:
+            provider = None
+            receiver = Lookups.get_org_name(self.dtransaction.receiver_org)
+        return provider, receiver
