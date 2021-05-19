@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
+import json
 import logging
 from io import StringIO
 from os.path import join
 from urllib.parse import quote
 
 import diterator
-import hxl
-from hdx.utilities.dictandlist import write_list_to_csv
-from hdx.utilities.saver import save_json
+import unicodecsv
 
 from iati.activity import Activity
 from iati.calculatesplits import CalculateSplits
@@ -46,8 +45,26 @@ def retrieve_dportal(configuration, retriever, dportal_params):
             dont_exit = False
 
 
-def should_ignore_activity(activity):
-    return False
+def write(configuration, configuration_key, rows):
+    output_dir = configuration['folder']
+    file_configuration = configuration[configuration_key]
+    headers = file_configuration['headers']
+    hxltags = file_configuration['hxltags']
+
+    with open(join(output_dir, file_configuration['csv']), 'wb') as output_csv:
+        writer = unicodecsv.writer(output_csv, encoding='utf-8')
+        writer.writerow(headers)
+        writer.writerow(hxltags)
+        with open(join(output_dir, file_configuration['json']), 'w') as output_json:
+            output_json.write('[')
+
+            def write_row(inrow, ending):
+                writer.writerow(inrow)
+                row = {hxltag: inrow[i] for i, hxltag in enumerate(hxltags)}
+                output_json.write(json.dumps(row, indent=None, separators=(',', ':')) + ending)
+
+            [write_row(row, ',\n') for row in rows[:-1]]
+            write_row(rows[-1], ']')
 
 
 def start(configuration, this_month, retriever, dportal_params):
@@ -73,43 +90,18 @@ def start(configuration, this_month, retriever, dportal_params):
     logger.info(f'Processed {len(flows)} flows')
 
     outputs_configuration = configuration['outputs']
-    output_dir = outputs_configuration['folder']
     #
     # Write transactions
     #
-    transactions_configuration = outputs_configuration['transactions']
-
-    # Add headers and sort the transactions.
-    headers = transactions_configuration['headers']
-    hxltags = transactions_configuration['hxltags']
-    transactions = [headers, hxltags] + sorted(transactions)
-
-    # Write the JSON
-    save_json(transactions, join(output_dir, transactions_configuration['json']))
-
-    # Write the CSV
-    write_list_to_csv(join(output_dir, transactions_configuration['csv']), transactions)
+    write(outputs_configuration, 'transactions', sorted(transactions))
 
     #
     # Prepare and write flows
     #
-    flows_configuration = outputs_configuration['flows']
-
-    # Add headers and aggregate
-    headers = flows_configuration['headers']
-    hxltags = flows_configuration['hxltags']
-    rows = [headers, hxltags]
-    flows = hxl.data(rows + flows).count(
-        rows[1][:-1],  # make a list of patterns from all but the last column of the hashtag row
-        aggregators='sum(#value+total) as Total money#value+total'
-    ).cache()
-
-    # Write the JSON
-    with open(join(output_dir, flows_configuration['json']), 'w') as output:
-        for line in flows.gen_json():
-            print(line, file=output, end="")
-
-    # Write the CSV
-    with open(join(output_dir, flows_configuration['csv']), 'w') as output:
-        for line in flows.gen_csv():
-            print(line, file=output, end="")
+    combined_flows = dict()
+    combined_cols = dict()
+    for flow in flows:
+        key = '|'.join([str(col) for col in flow[:-1]])
+        combined_flows[key] = combined_flows.get(key, 0) + flow[-1]
+        combined_cols[key] = flow[:-1]
+    write(outputs_configuration, 'flows', [combined_cols[key]+[combined_flows[key]] for key in sorted(combined_flows)])
