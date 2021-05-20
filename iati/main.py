@@ -101,7 +101,8 @@ def start(configuration, this_month, retriever, dportal_params):
     combined_flows = dict()
     combined_cols = dict()
     for flow in flows:
-        key = '|'.join([str(col) for col in flow[:-1]])
+        cols = flow[:-1]
+        key = '|'.join([str(col) for col in cols])
         combined_flows[key] = combined_flows.get(key, 0) + flow[-1]
-        combined_cols[key] = flow[:-1]
+        combined_cols[key] = cols
     write(outputs_configuration, 'flows', [combined_cols[key]+[combined_flows[key]] for key in sorted(combined_flows)])
