@@ -44,10 +44,6 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND
     ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {}
 )"
 
-fxrates:
-  rates_url: "https://codeforiati.org/exchangerates-scraper/consolidated.csv"
-  fallback_rates_url: "https://api.exchangerate.host/latest?base=usd"
-
 outputs:
   folder: output
   transactions:
@@ -107,6 +103,8 @@ lookups:
   default_org: "(unspecified org)"
   default_sector: "(Unspecified sector)"
   default_country: "(Unspecified country)"
+  rates_url: "https://codeforiati.org/exchangerates-scraper/consolidated.csv"
+  fallback_rates_url: "https://api.exchangerate.host/latest?base=usd"
 
 calculate_splits:
   default_sector: "99999"

@@ -10,7 +10,6 @@ import unicodecsv
 
 from iati.activity import Activity
 from iati.calculatesplits import CalculateSplits
-from iati.fxrates import FXRates
 from iati.lookups import Lookups
 
 logger = logging.getLogger(__name__)
@@ -68,11 +67,10 @@ def write(configuration, configuration_key, rows):
 
 
 def start(configuration, this_month, retriever, dportal_params):
-    fx = FXRates(configuration['fxrates'], retriever)
     generator = retrieve_dportal(configuration, retriever, dportal_params)
     # Build the accumulators from the IATI activities and transactions
-    Lookups.setup(configuration)
-    CalculateSplits.setup(configuration)
+    Lookups.setup(configuration['lookups'], retriever)
+    CalculateSplits.setup(configuration['calculate_splits'])
     transactions = list()
     flows = list()
     for text in generator:

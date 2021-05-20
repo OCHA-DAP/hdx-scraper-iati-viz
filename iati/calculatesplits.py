@@ -6,9 +6,8 @@ class CalculateSplits:
 
     @classmethod
     def setup(cls, configuration):
-        splits_configuration = configuration['calculate_splits']
-        cls.default_sector = splits_configuration['default_sector']
-        cls.default_country = splits_configuration['default_country']
+        cls.default_sector = configuration['default_sector']
+        cls.default_country = configuration['default_country']
 
     @classmethod
     def make_country_splits(cls, entity, default_splits=None, default_country=None):

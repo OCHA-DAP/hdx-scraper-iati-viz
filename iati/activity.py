@@ -3,7 +3,6 @@ from iati.calculatesplits import CalculateSplits
 from iati.covidchecks import has_c19_scope, has_c19_tag, has_c19_sector, is_c19_narrative
 from iati.lookups import Lookups
 from iati.transaction import Transaction
-from iati.utils import convert_to_usd
 
 
 class Activity:
@@ -52,7 +51,7 @@ class Activity:
             if transaction.value is None:
                 continue
             elif transaction.type in types:
-                total += convert_to_usd(transaction.value, transaction.currency, transaction.date)
+                total += Lookups.get_value_in_usd(transaction.value, transaction.currency, transaction.date)
         return total
 
     def process(self):

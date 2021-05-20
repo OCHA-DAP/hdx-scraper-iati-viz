@@ -2,7 +2,6 @@
 from iati.calculatesplits import CalculateSplits
 from iati.covidchecks import has_c19_sector, is_c19_narrative
 from iati.lookups import Lookups
-from iati.utils import convert_to_usd
 
 
 class Transaction:
@@ -38,7 +37,7 @@ class Transaction:
 
     def calculate_value(self):
         # Convert the transaction value to USD
-        self.value = convert_to_usd(self.dtransaction.value, self.dtransaction.currency, self.dtransaction.date)
+        self.value = Lookups.get_value_in_usd(self.dtransaction.value, self.dtransaction.currency, self.dtransaction.date)
         return self.value
 
     def get_net_value(self, commitment_factor, spending_factor):
