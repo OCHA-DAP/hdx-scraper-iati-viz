@@ -71,8 +71,8 @@ def start(configuration, this_month, retriever, dportal_params):
     # Build the accumulators from the IATI activities and transactions
     Lookups.setup(configuration['lookups'], retriever)
     CalculateSplits.setup(configuration['calculate_splits'])
+    flows = dict()
     transactions = list()
-    flows = list()
     for text in generator:
         for dactivity in diterator.XMLIterator(StringIO(text)):
             activity = Activity(configuration, this_month, dactivity)
@@ -80,9 +80,7 @@ def start(configuration, this_month, retriever, dportal_params):
             if not activity.setup():
                 continue
 
-            activity.process()
-            flows.extend(activity.get_flows())
-            transactions.extend(activity.get_transactions())
+            activity.process(flows, transactions)
 
     logger.info(f'Processed {len(flows)} flows')
     logger.info(f'Processed {len(transactions)} transactions')
@@ -92,14 +90,7 @@ def start(configuration, this_month, retriever, dportal_params):
     #
     # Prepare and write flows
     #
-    combined_flows = dict()
-    combined_cols = dict()
-    for flow in flows:
-        cols = flow[:-1]
-        key = '|'.join([str(col) for col in cols])
-        combined_flows[key] = combined_flows.get(key, 0) + flow[-1]
-        combined_cols[key] = cols
-    write(outputs_configuration, 'flows', [combined_cols[key]+[combined_flows[key]] for key in sorted(combined_flows)])
+    write(outputs_configuration, 'flows', [list(key)+[int(round(flows[key]))] for key in sorted(flows)])
 
     #
     # Write transactions

@@ -12,8 +12,6 @@ class Activity:
         self.configuration = configuration
         self.this_month = this_month
         self.dactivity = dactivity
-        self.output_flows = list()
-        self.output_transactions = list()
 
     def is_strict(self):
         return True if (
@@ -86,14 +84,16 @@ class Activity:
             spending_factor = 0.0
         return commitment_factor, spending_factor
 
-    def add_to_flows(self, transaction, value, is_humanitarian, is_strict, classification, direction):
+    def add_to_flows(self, out_flows, transaction, value, is_humanitarian, is_strict, classification, direction):
         provider, receiver = transaction.get_provider_receiver()
         if self.org != provider and self.org != receiver and self.org != Lookups.default_org:
+            key = (self.org, self.org_type, provider, receiver, is_humanitarian, is_strict, classification,
+                   direction)
             # ignore internal transactions or unknown reporting orgs
-            self.output_flows.append([self.org, self.org_type, provider, receiver, is_humanitarian, is_strict,
-                                      classification, direction, int(round(value))])
+            out_flows[key] = out_flows.get(key, 0) + value
 
-    def generate_split_transactions(self, transaction, value, net_value, is_humanitarian, is_strict, classification):
+    def generate_split_transactions(self, out_transactions, transaction, value, net_value, is_humanitarian, is_strict,
+                                    classification):
         # Make the splits for the transaction (default to activity splits)
         country_splits = transaction.make_country_splits(self.country_splits)
         sector_splits = transaction.make_sector_splits(self.sector_splits)
@@ -116,11 +116,11 @@ class Activity:
 
                     if net_money != 0 or total_money != 0:
                         # add to transactions
-                        self.output_transactions.append([transaction.get_month(), self.org, self.org_type,
-                                                         sector_name, country_name, is_humanitarian, is_strict,
-                                                         classification, self.identifier, net_money, total_money])
+                        out_transactions.append([transaction.get_month(), self.org, self.org_type, sector_name,
+                                                 country_name, is_humanitarian, is_strict, classification,
+                                                 self.identifier, net_money, total_money])
 
-    def process(self):
+    def process(self, out_flows, out_transactions):
         commitment_factor, spending_factor = self.factor_new_money()
         #
         # Walk through the activity's transactions one-by-one, and split by country/sector
@@ -141,11 +141,6 @@ class Activity:
 
             classification, direction = transaction.get_classification_direction()
 
-            self.add_to_flows(transaction, value, is_humanitarian, is_strict, classification, direction)
-            self.generate_split_transactions(transaction, value, net_value, is_humanitarian, is_strict, classification)
-
-    def get_flows(self):
-        return self.output_flows
-
-    def get_transactions(self):
-        return self.output_transactions
+            self.add_to_flows(out_flows, transaction, value, is_humanitarian, is_strict, classification, direction)
+            self.generate_split_transactions(out_transactions, transaction, value, net_value, is_humanitarian, is_strict,
+                                             classification)
