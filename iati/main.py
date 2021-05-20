@@ -80,14 +80,15 @@ def start(configuration, this_month, retriever, dportal_params):
             if not activity.setup():
                 continue
 
-            activity_flows, activity_transactions = activity.process()
-            flows.extend(activity_flows)
-            transactions.extend(activity_transactions)
+            activity.process()
+            flows.extend(activity.get_flows())
+            transactions.extend(activity.get_transactions())
 
     logger.info(f'Processed {len(flows)} flows')
     logger.info(f'Processed {len(transactions)} transactions')
 
     outputs_configuration = configuration['outputs']
+
     #
     # Prepare and write flows
     #

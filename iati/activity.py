@@ -12,6 +12,8 @@ class Activity:
         self.configuration = configuration
         self.this_month = this_month
         self.dactivity = dactivity
+        self.output_flows = list()
+        self.output_transactions = list()
 
     def is_strict(self):
         return True if (
@@ -85,9 +87,6 @@ class Activity:
         return commitment_factor, spending_factor
 
     def process(self):
-        transactions = list()
-        flows = list()
-
         commitment_factor, spending_factor = self.factor_new_money()
         #
         # Walk through the activity's transactions one-by-one, and split by country/sector
@@ -115,7 +114,7 @@ class Activity:
             provider, receiver = transaction.get_provider_receiver()
             if self.org != provider and self.org != receiver and self.org != Lookups.default_org:
                 # ignore internal transactions or unknown reporting orgs
-                flows.append([
+                self.output_flows.append([
                     self.org,
                     self.org_type,
                     provider,
@@ -153,7 +152,7 @@ class Activity:
                         # Fill in only if we end up with a non-zero value
                         if net_money != 0 or total_money != 0:
                             # add to transactions
-                            transactions.append([
+                            self.output_transactions.append([
                                 transaction.get_month(),
                                 self.org,
                                 self.org_type,
@@ -166,4 +165,9 @@ class Activity:
                                 net_money,
                                 total_money,
                             ])
-        return flows, transactions
+
+    def get_flows(self):
+        return self.output_flows
+
+    def get_transactions(self):
+        return self.output_transactions
