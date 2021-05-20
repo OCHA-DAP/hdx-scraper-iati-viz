@@ -99,9 +99,6 @@ class Activity:
             # Convert the transaction value to USD
             value = transaction.get_value()
 
-            # Set the net (new money) factors based on the type (commitments or spending)
-            net_value = transaction.get_net_value(commitment_factor, spending_factor)
-
             # transaction status defaults to activity
             transaction_humanitarian = transaction.humanitarian()
             if transaction_humanitarian is None:
@@ -110,11 +107,32 @@ class Activity:
                 is_humanitarian = transaction_humanitarian
             is_strict = self.activity_strict or transaction.is_strict()
 
+            classification, direction = transaction.get_classification_direction()
+
+            #
+            # Add to flows
+            #
+            provider, receiver = transaction.get_provider_receiver()
+            if self.org != provider and self.org != receiver and self.org != Lookups.default_org:
+                # ignore internal transactions or unknown reporting orgs
+                flows.append([
+                    self.org,
+                    self.org_type,
+                    provider,
+                    receiver,
+                    1 if is_humanitarian else 0,
+                    1 if is_strict else 0,
+                    classification,
+                    direction,
+                    int(round(value))
+                ])
+
+            # Set the net (new money) factors based on the type (commitments or spending)
+            net_value = transaction.get_net_value(commitment_factor, spending_factor)
+
             # Make the splits for the transaction (default to activity splits)
             country_splits = transaction.make_country_splits(self.country_splits)
             sector_splits = transaction.make_sector_splits(self.sector_splits)
-
-            classification, direction = transaction.get_classification_direction()
 
             # Apply the country and sector percentage splits to the transaction
             # generate multiple split transactions
@@ -148,22 +166,4 @@ class Activity:
                                 net_money,
                                 total_money,
                             ])
-
-            #
-            # Add to flows
-            #
-            provider, receiver = transaction.get_provider_receiver()
-            if self.org != provider and self.org != receiver and self.org != Lookups.default_org:
-                # ignore internal transactions or unknown reporting orgs
-                flows.append([
-                    self.org,
-                    self.org_type,
-                    provider,
-                    receiver,
-                    1 if is_humanitarian else 0,
-                    1 if is_strict else 0,
-                    classification,
-                    direction,
-                    int(round(value))
-                ])
-        return transactions, flows
+        return flows, transactions

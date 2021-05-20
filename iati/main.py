@@ -80,19 +80,14 @@ def start(configuration, this_month, retriever, dportal_params):
             if not activity.setup():
                 continue
 
-            activity_transactions, activity_flows = activity.process()
-            transactions.extend(activity_transactions)
+            activity_flows, activity_transactions = activity.process()
             flows.extend(activity_flows)
+            transactions.extend(activity_transactions)
 
-    logger.info(f'Processed {len(transactions)} transactions')
     logger.info(f'Processed {len(flows)} flows')
+    logger.info(f'Processed {len(transactions)} transactions')
 
     outputs_configuration = configuration['outputs']
-    #
-    # Write transactions
-    #
-    write(outputs_configuration, 'transactions', sorted(transactions))
-
     #
     # Prepare and write flows
     #
@@ -104,3 +99,8 @@ def start(configuration, this_month, retriever, dportal_params):
         combined_flows[key] = combined_flows.get(key, 0) + flow[-1]
         combined_cols[key] = cols
     write(outputs_configuration, 'flows', [combined_cols[key]+[combined_flows[key]] for key in sorted(combined_flows)])
+
+    #
+    # Write transactions
+    #
+    write(outputs_configuration, 'transactions', sorted(transactions))
