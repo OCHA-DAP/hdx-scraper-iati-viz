@@ -44,29 +44,23 @@ class Activity:
         self.transactions = [Transaction(self.configuration, self.this_month, x) for x in self.dactivity.transactions]
         return True
 
-    @staticmethod
-    def sum_transactions(transactions, types):
+    def sum_transactions(self, types):
         total = 0
-        for transaction in transactions:
-            if transaction.value is None:
-                continue
-            elif transaction.type in types:
-                total += Lookups.get_value_in_usd(transaction.value, transaction.currency, transaction.date)
+        for transaction in self.transactions:
+            if transaction.get_type() in types:
+                total += transaction.get_value()
         return total
 
-    def process(self):
-        transactions = list()
-        flows = list()
-
+    def factor_new_money(self):
         #
         # Figure out how to factor new money
         #
 
         # Total up the 4 kinds of transactions (with currency conversion to USD)
-        incoming_funds = self.sum_transactions(self.dactivity.transactions, ['1'])
-        outgoing_commitments = self.sum_transactions(self.dactivity.transactions, ['2'])
-        spending = self.sum_transactions(self.dactivity.transactions, ['3', '4'])
-        incoming_commitments = self.sum_transactions(self.dactivity.transactions, ['11'])
+        incoming_funds = self.sum_transactions(['1'])
+        outgoing_commitments = self.sum_transactions(['2'])
+        spending = self.sum_transactions(['3', '4'])
+        incoming_commitments = self.sum_transactions(['11'])
 
         # Figure out total incoming money (never less than zero)
         incoming = max(incoming_commitments, incoming_funds)
@@ -88,7 +82,13 @@ class Activity:
             spending_factor = (spending - incoming) / spending
         else:
             spending_factor = 0.0
+        return commitment_factor, spending_factor
 
+    def process(self):
+        transactions = list()
+        flows = list()
+
+        commitment_factor, spending_factor = self.factor_new_money()
         #
         # Walk through the activity's transactions one-by-one, and split by country/sector
         #
@@ -97,7 +97,7 @@ class Activity:
                 continue
 
             # Convert the transaction value to USD
-            value = transaction.calculate_value()
+            value = transaction.get_value()
 
             # Set the net (new money) factors based on the type (commitments or spending)
             net_value = transaction.get_net_value(commitment_factor, spending_factor)

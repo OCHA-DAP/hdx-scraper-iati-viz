@@ -35,10 +35,14 @@ class Transaction:
     def get_classification_direction(self):
         return self.transaction_type_info['classification'], self.transaction_type_info['direction']
 
-    def calculate_value(self):
-        # Convert the transaction value to USD
-        self.value = Lookups.get_value_in_usd(self.dtransaction.value, self.dtransaction.currency, self.dtransaction.date)
+    def get_value(self):
+        if self.value is None:
+            # Convert the transaction value to USD
+            self.value = Lookups.get_value_in_usd(self.dtransaction.value, self.dtransaction.currency, self.dtransaction.date)
         return self.value
+
+    def get_type(self):
+        return self.dtransaction.type
 
     def get_net_value(self, commitment_factor, spending_factor):
         # Set the net (new money) factors based on the type (commitments or spending)
