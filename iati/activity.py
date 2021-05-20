@@ -142,5 +142,5 @@ class Activity:
             classification, direction = transaction.get_classification_direction()
 
             self.add_to_flows(out_flows, transaction, value, is_humanitarian, is_strict, classification, direction)
-            self.generate_split_transactions(out_transactions, transaction, value, net_value, is_humanitarian, is_strict,
-                                             classification)
+            self.generate_split_transactions(out_transactions, transaction, value, net_value, is_humanitarian,
+                                             is_strict, classification)
