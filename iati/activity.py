@@ -149,21 +149,21 @@ class Activity:
                                 total_money,
                             ])
 
-                #
-                # Add to flows
-                #
-                provider, receiver = transaction.get_provider_receiver()
-                if self.org != provider and self.org != receiver and self.org != Lookups.default_org:
-                    # ignore internal transactions or unknown reporting orgs
-                    flows.append([
-                        self.org,
-                        self.org_type,
-                        provider,
-                        receiver,
-                        1 if is_humanitarian else 0,
-                        1 if is_strict else 0,
-                        classification,
-                        direction,
-                        total_money
-                    ])
+            #
+            # Add to flows
+            #
+            provider, receiver = transaction.get_provider_receiver()
+            if self.org != provider and self.org != receiver and self.org != Lookups.default_org:
+                # ignore internal transactions or unknown reporting orgs
+                flows.append([
+                    self.org,
+                    self.org_type,
+                    provider,
+                    receiver,
+                    1 if is_humanitarian else 0,
+                    1 if is_strict else 0,
+                    classification,
+                    direction,
+                    int(round(value))
+                ])
         return transactions, flows
