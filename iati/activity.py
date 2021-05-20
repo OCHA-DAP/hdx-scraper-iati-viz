@@ -38,7 +38,7 @@ class Activity:
         # Get the reporting-org name and C19 strictness at activity level
         self.org = Lookups.get_org_name(self.dactivity.reporting_org)
         self.org_type = str(self.dactivity.reporting_org.type)
-        self.activity_strict = self.is_strict()
+        self.strict = self.is_strict()
         self.humanitarian = self.dactivity.humanitarian
         # Figure out default country/sector percentage splits at the activity level
         self.country_splits = CalculateSplits.make_country_splits(self.dactivity)
@@ -50,7 +50,7 @@ class Activity:
         total = 0
         for transaction in self.transactions:
             if transaction.get_type() in types:
-                total += transaction.get_value()
+                total += transaction.get_usd_value()
         return total
 
     def factor_new_money(self):
@@ -86,6 +86,40 @@ class Activity:
             spending_factor = 0.0
         return commitment_factor, spending_factor
 
+    def add_to_flows(self, transaction, value, is_humanitarian, is_strict, classification, direction):
+        provider, receiver = transaction.get_provider_receiver()
+        if self.org != provider and self.org != receiver and self.org != Lookups.default_org:
+            # ignore internal transactions or unknown reporting orgs
+            self.output_flows.append([self.org, self.org_type, provider, receiver, is_humanitarian, is_strict,
+                                      classification, direction, int(round(value))])
+
+    def generate_split_transactions(self, transaction, value, net_value, is_humanitarian, is_strict, classification):
+        # Make the splits for the transaction (default to activity splits)
+        country_splits = transaction.make_country_splits(self.country_splits)
+        sector_splits = transaction.make_sector_splits(self.sector_splits)
+
+        # Apply the country and sector percentage splits to the transaction
+        # generate multiple split transactions
+        for country, country_percentage in country_splits.items():
+            for sector, sector_percentage in sector_splits.items():
+
+                sector_name = Lookups.get_sector_group_name(sector)
+                country_name = Lookups.get_country_name(country)
+
+                #
+                # Add to transactions
+                #
+
+                if net_value is not None:
+                    total_money = int(round(value * country_percentage * sector_percentage))
+                    net_money = int(round(net_value * country_percentage * sector_percentage))
+
+                    if net_money != 0 or total_money != 0:
+                        # add to transactions
+                        self.output_transactions.append([transaction.get_month(), self.org, self.org_type,
+                                                         sector_name, country_name, is_humanitarian, is_strict,
+                                                         classification, self.identifier, net_money, total_money])
+
     def process(self):
         commitment_factor, spending_factor = self.factor_new_money()
         #
@@ -96,75 +130,19 @@ class Activity:
                 continue
 
             # Convert the transaction value to USD
-            value = transaction.get_value()
+            value = transaction.get_usd_value()
+
+            # Set the net (new money) factors based on the type (commitments or spending)
+            net_value = transaction.get_usd_net_value(commitment_factor, spending_factor)
 
             # transaction status defaults to activity
-            transaction_humanitarian = transaction.humanitarian()
-            if transaction_humanitarian is None:
-                is_humanitarian = self.humanitarian
-            else:
-                is_humanitarian = transaction_humanitarian
-            is_strict = self.activity_strict or transaction.is_strict()
+            is_humanitarian = transaction.is_humanitarian(self.humanitarian)
+            is_strict = transaction.is_strict(self.strict)
 
             classification, direction = transaction.get_classification_direction()
 
-            #
-            # Add to flows
-            #
-            provider, receiver = transaction.get_provider_receiver()
-            if self.org != provider and self.org != receiver and self.org != Lookups.default_org:
-                # ignore internal transactions or unknown reporting orgs
-                self.output_flows.append([
-                    self.org,
-                    self.org_type,
-                    provider,
-                    receiver,
-                    1 if is_humanitarian else 0,
-                    1 if is_strict else 0,
-                    classification,
-                    direction,
-                    int(round(value))
-                ])
-
-            # Set the net (new money) factors based on the type (commitments or spending)
-            net_value = transaction.get_net_value(commitment_factor, spending_factor)
-
-            # Make the splits for the transaction (default to activity splits)
-            country_splits = transaction.make_country_splits(self.country_splits)
-            sector_splits = transaction.make_sector_splits(self.sector_splits)
-
-            # Apply the country and sector percentage splits to the transaction
-            # generate multiple split transactions
-            for country, country_percentage in country_splits.items():
-                for sector, sector_percentage in sector_splits.items():
-
-                    sector_name = Lookups.get_sector_group_name(sector)
-                    country_name = Lookups.get_country_name(country)
-
-                    #
-                    # Add to transactions
-                    #
-
-                    total_money = int(round(value * country_percentage * sector_percentage))
-                    if net_value is not None:
-                        net_money = int(round(net_value * country_percentage * sector_percentage))
-
-                        # Fill in only if we end up with a non-zero value
-                        if net_money != 0 or total_money != 0:
-                            # add to transactions
-                            self.output_transactions.append([
-                                transaction.get_month(),
-                                self.org,
-                                self.org_type,
-                                sector_name,
-                                country_name,
-                                1 if is_humanitarian else 0,
-                                1 if is_strict else 0,
-                                classification,
-                                self.identifier,
-                                net_money,
-                                total_money,
-                            ])
+            self.add_to_flows(transaction, value, is_humanitarian, is_strict, classification, direction)
+            self.generate_split_transactions(transaction, value, net_value, is_humanitarian, is_strict, classification)
 
     def get_flows(self):
         return self.output_flows
