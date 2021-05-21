@@ -44,6 +44,41 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND
     ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {}
 )"
 
+lookups:
+  org_data: "data/IATIOrganisationIdentifier.json"
+  sector_data: "data/dac3-sector-map.json"
+  rates_url: "https://codeforiati.org/exchangerates-scraper/consolidated.csv"
+  fallback_rates_url: "https://api.exchangerate.host/latest?base=usd"
+  default_org: "(unspecified org)"
+  default_sector: "(Unspecified sector)"
+  default_country: "(Unspecified country)"
+
+calculate_splits:
+  default_sector: "99999"
+  default_country: "XX"
+
+transaction_type_info:
+  "1":
+    label: "Incoming Funds"
+    classification: "spending"
+    direction: "incoming"
+  "2":
+    label: "Outgoing Commitment"
+    classification: "commitments"
+    direction: "outgoing"
+  "3":
+    label: "Disbursement"
+    classification: "spending"
+    direction: "outgoing"
+  "4":
+    label: "Expenditure"
+    classification: "spending"
+    direction: "outgoing"
+  "11":
+    label: "Incoming Commitment"
+    classification: "commitments"
+    direction: "incoming"
+
 outputs:
   folder: output
   transactions:
@@ -97,37 +132,3 @@ outputs:
       - "#x_transaction_direction"
       - "#value+total"
 
-lookups:
-  org_data: "data/IATIOrganisationIdentifier.json"
-  sector_data: "data/dac3-sector-map.json"
-  rates_url: "https://codeforiati.org/exchangerates-scraper/consolidated.csv"
-  fallback_rates_url: "https://api.exchangerate.host/latest?base=usd"
-  default_org: "(unspecified org)"
-  default_sector: "(Unspecified sector)"
-  default_country: "(Unspecified country)"
-
-calculate_splits:
-  default_sector: "99999"
-  default_country: "XX"
-
-transaction_type_info:
-  "1":
-    label: "Incoming Funds"
-    classification: "spending"
-    direction: "incoming"
-  "2":
-    label: "Outgoing Commitment"
-    classification: "commitments"
-    direction: "outgoing"
-  "3":
-    label: "Disbursement"
-    classification: "spending"
-    direction: "outgoing"
-  "4":
-    label: "Expenditure"
-    classification: "spending"
-    direction: "outgoing"
-  "11":
-    label: "Incoming Commitment"
-    classification: "commitments"
-    direction: "incoming"

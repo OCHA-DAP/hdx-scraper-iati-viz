@@ -6,8 +6,6 @@ from iati.transaction import Transaction
 
 
 class Activity:
-    activities_seen = set()
-
     def __init__(self, configuration, this_month, dactivity):
         self.configuration = configuration
         self.this_month = this_month
@@ -22,18 +20,8 @@ class Activity:
         ) else False
 
     def setup(self):
-        # Don't use the same activity twice
-        identifier = self.dactivity.identifier
-        if identifier in self.activities_seen:
-            return False
-        self.activities_seen.add(identifier)
-
-        # Skip activities from a secondary reporter (should have been filtered out already)
-        if self.dactivity.secondary_reporter:
-            return False
-
-        self.identifier = identifier
         # Get the reporting-org name and C19 strictness at activity level
+        self.identifier = self.dactivity.identifier
         self.org = Lookups.get_org_name(self.dactivity.reporting_org)
         self.org_type = str(self.dactivity.reporting_org.type)
         self.strict = self.is_strict()
