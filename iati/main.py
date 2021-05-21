@@ -68,9 +68,10 @@ def write(configuration, configuration_key, rows):
 
 def start(configuration, this_month, retriever, dportal_params):
     generator = retrieve_dportal(configuration, retriever, dportal_params)
-    # Build the accumulators from the IATI activities and transactions
     Lookups.setup(configuration['lookups'], retriever)
     CalculateSplits.setup(configuration['calculate_splits'])
+
+    # Build the accumulators from the IATI activities and transactions
     flows = dict()
     transactions = list()
     for text in generator:
