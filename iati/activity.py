@@ -72,25 +72,29 @@ class Activity:
         totals = self.sum_transactions_by_type()
 
         # Figure out total incoming money (never less than zero)
-        incoming = max(totals['incoming commitments'], totals['incoming spending'])
+        incoming = max(totals.get('incoming commitments', 0), totals.get('incoming spending', 0))
         if incoming < 0:
             incoming = 0
 
         # Factor to apply to outgoing commitments for net new money
         if incoming == 0:
             self.commitment_factor = 1.0
-        elif totals['outgoing commitments'] > incoming:
-            self.commitment_factor = (totals['outgoing commitments'] - incoming) / totals['outgoing commitments']
         else:
-            self.commitment_factor = 0.0
+            outgoing_commitments = totals.get('outgoing commitments', 0)
+            if outgoing_commitments > incoming:
+                self.commitment_factor = (outgoing_commitments - incoming) / outgoing_commitments
+            else:
+                self.commitment_factor = 0.0
 
         # Factor to apply to outgoing spending for net new money
         if incoming == 0:
             self.spending_factor = 1.0
-        elif totals['outgoing spending'] > incoming:
-            self.spending_factor = (totals['outgoing spending'] - incoming) / totals['outgoing spending']
         else:
-            self.spending_factor = 0.0
+            spending = totals.get('outgoing spending', 0)
+            if spending > incoming:
+               self.spending_factor = (spending - incoming) / spending
+            else:
+                self.spending_factor = 0.0
 
     def add_to_flows(self, out_flows, transaction):
         provider, receiver = transaction.get_provider_receiver()
