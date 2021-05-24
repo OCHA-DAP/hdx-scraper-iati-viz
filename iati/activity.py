@@ -123,7 +123,7 @@ class Activity:
 
                     if net_money != 0 or total_money != 0:
                         # add to transactions
-                        out_transactions.append([transaction.get_month(), self.org, self.org_type, sector_name,
+                        out_transactions.append([transaction.month, self.org, self.org_type, sector_name,
                                                  country_name, transaction.is_humanitarian, transaction.is_strict,
                                                  transaction.classification, self.identifier, net_money, total_money])
 

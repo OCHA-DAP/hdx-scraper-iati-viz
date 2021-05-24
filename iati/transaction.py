@@ -25,8 +25,8 @@ class Transaction:
 
     def process(self, activity):
         if self.value:
-            month = self.dtransaction.date[:7]
-            if month < '2020-01' or month > activity.this_month:
+            self.month = self.dtransaction.date[:7]
+            if self.month < '2020-01' or self.month > activity.this_month:
                 # Skip transactions with out-of-range months
                 return False
         else:
@@ -35,8 +35,8 @@ class Transaction:
         # Set the net (new money) factors based on the type (commitments or spending)
         self.net_value = self.get_usd_net_value(activity.commitment_factor, activity.spending_factor)
         # transaction status defaults to activity
-        self.is_humanitarian = self.is_humanitarian(self, activity.humanitarian)
-        self.is_strict = self.is_strict(self, activity.strict)
+        self.is_humanitarian = self.is_humanitarian(activity.humanitarian)
+        self.is_strict = self.is_strict(activity.strict)
         return True
 
     def get_usd_net_value(self, commitment_factor, spending_factor):
