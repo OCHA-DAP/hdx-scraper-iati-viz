@@ -44,6 +44,9 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND
     ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {}
 )"
 
+excluded_orgs:
+  - "CZ-ICO-25755277" # People in Need: https://iatiregistry.org/publisher/pin
+
 lookups:
   org_data: "data/IATIOrganisationIdentifier.json"
   sector_data: "data/dac3-sector-map.json"

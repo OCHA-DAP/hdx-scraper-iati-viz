@@ -5,43 +5,44 @@ from iati.lookups import Lookups
 
 
 class Transaction:
-    def __init__(self, configuration, this_month, dtransaction):
-        self.this_month = this_month
+    def __init__(self, transaction_type_info, dtransaction):
+        self.classification = transaction_type_info['classification']
+        self.direction = transaction_type_info['direction']
         self.dtransaction = dtransaction
-        self.transaction_type_info = configuration['transaction_type_info'].get(dtransaction.type)
-        self.value = None
-        self.month = None
+        # Convert the transaction value to USD
+        self.value = Lookups.get_value_in_usd(dtransaction.value, dtransaction.currency, dtransaction.date)
 
-    def should_process(self):
-        self.month = self.dtransaction.date[:7]
-        if self.month < '2020-01' or self.month > self.this_month or not self.dtransaction.value:
-            # Skip transactions with no values or with out-of-range months
+    @staticmethod
+    def get_transaction(configuration, dtransaction):
+        # We're not interested in transactions that have no value
+        if not dtransaction.value:
+            return None
+        # We're only interested in some transaction types
+        transaction_type_info = configuration['transaction_type_info'].get(dtransaction.type)
+        if not transaction_type_info:
+            return None
+        return Transaction(transaction_type_info, dtransaction)
+
+    def process(self, activity):
+        if self.value:
+            month = self.dtransaction.date[:7]
+            if month < '2020-01' or month > activity.this_month:
+                # Skip transactions with out-of-range months
+                return False
+        else:
             return False
 
-        if self.transaction_type_info is None:
-            # skip transaction types that don't interest us
-            return False
+        # Set the net (new money) factors based on the type (commitments or spending)
+        self.net_value = self.get_usd_net_value(activity.commitment_factor, activity.spending_factor)
+        # transaction status defaults to activity
+        self.is_humanitarian = self.is_humanitarian(self, activity.humanitarian)
+        self.is_strict = self.is_strict(self, activity.strict)
         return True
-
-    def get_type(self):
-        return self.dtransaction.type
-
-    def get_month(self):
-        return self.month
-
-    def get_classification_direction(self):
-        return self.transaction_type_info['classification'], self.transaction_type_info['direction']
-
-    def get_usd_value(self):
-        if self.value is None:
-            # Convert the transaction value to USD
-            self.value = Lookups.get_value_in_usd(self.dtransaction.value, self.dtransaction.currency, self.dtransaction.date)
-        return self.value
 
     def get_usd_net_value(self, commitment_factor, spending_factor):
         # Set the net (new money) factors based on the type (commitments or spending)
-        if self.transaction_type_info['direction'] == 'outgoing':
-            if self.transaction_type_info['classification'] == 'commitments':
+        if self.direction == 'outgoing':
+            if self.classification == 'commitments':
                 return self.value * commitment_factor
             else:
                 return self.value * spending_factor
@@ -69,7 +70,7 @@ class Transaction:
         return CalculateSplits.make_sector_splits(self.dtransaction, activity_sector_splits)
 
     def get_provider_receiver(self):
-        if self.transaction_type_info['direction'] == 'incoming':
+        if self.direction == 'incoming':
             provider = Lookups.get_org_name(self.dtransaction.provider_org)
             receiver = ''
         else:
