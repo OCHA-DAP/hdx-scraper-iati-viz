@@ -23,10 +23,10 @@ class Transaction:
             return None
         return Transaction(transaction_type_info, dtransaction)
 
-    def process(self, activity):
+    def process(self, this_month, activity):
         if self.value:
             self.month = self.dtransaction.date[:7]
-            if self.month < '2020-01' or self.month > activity.this_month:
+            if self.month < '2020-01' or self.month > this_month:
                 # Skip transactions with out-of-range months
                 return False
         else:

@@ -6,12 +6,26 @@ from iati.transaction import Transaction
 
 
 class Activity:
-    def __init__(self, configuration, this_month, dactivity):
-        self.configuration = configuration
-        self.this_month = this_month
+    def __init__(self, configuration, dactivity):
         self.dactivity = dactivity
+        self.identifier = dactivity.identifier
+        # Get the reporting-org name and C19 strictness at activity level
+        self.org = Lookups.get_org_name(dactivity.reporting_org)
+        self.org_type = str(dactivity.reporting_org.type)
+        self.strict = self.is_strict()
+        self.humanitarian = dactivity.humanitarian
+        # Figure out default country/sector percentage splits at the activity level
+        self.country_splits = CalculateSplits.make_country_splits(dactivity)
+        self.sector_splits = CalculateSplits.make_sector_splits(dactivity)
+        self.transactions = list()
+        for dtransaction in self.dactivity.transactions:
+            transaction = Transaction.get_transaction(configuration, dtransaction)
+            if not transaction:
+                continue
+            self.transactions.append(transaction)
 
-    def should_ignore(self):
+    @staticmethod
+    def get_activity(configuration, dactivity):
         """
         We exclude activities from certain sorts of organisations
         where the data is very poor quality. We also exclude hierarchy=1
@@ -22,39 +36,22 @@ class Activity:
         #     return True
         # if activity.find("participating-org[@role='IMPLEMENTING']") is not None:
         #     return True
-        # if any(x in self.dactivity.participating_orgs_by_role for x in ['Implementing', 'IMPLEMENTING']):
-        #     return True
-        # reporting_org_ref = self.dactivity.reporting_org.ref
+        # if any(x in dactivity.participating_orgs_by_role for x in ['Implementing', 'IMPLEMENTING']):
+        #     return None
+        # reporting_org_ref = dactivity.reporting_org.ref
         # # Filter out UNDP and DFID activities that have children (i.e. filter out h=1)
         # if reporting_org_ref in ['XM-DAC-41114', 'GB-GOV-1']:
         #     # and activity.find(
         #     #     "related-activity[@type='2']") is not None:
-        #     return True
+        #     return None
         # if reporting_org_ref in self.configuration['excluded_orgs']:
-        #     return True
-        return False
+        #     return None
+        return Activity(configuration, dactivity)
 
     def is_strict(self):
         return True if (has_c19_scope(self.dactivity.humanitarian_scopes) or has_c19_tag(self.dactivity.tags) or
                         has_c19_sector(self.dactivity.sectors) or is_c19_narrative(self.dactivity.title.narratives)) \
             else False
-
-    def setup(self):
-        self.identifier = self.dactivity.identifier
-        # Get the reporting-org name and C19 strictness at activity level
-        self.org = Lookups.get_org_name(self.dactivity.reporting_org)
-        self.org_type = str(self.dactivity.reporting_org.type)
-        self.strict = self.is_strict()
-        self.humanitarian = self.dactivity.humanitarian
-        # Figure out default country/sector percentage splits at the activity level
-        self.country_splits = CalculateSplits.make_country_splits(self.dactivity)
-        self.sector_splits = CalculateSplits.make_sector_splits(self.dactivity)
-        self.transactions = list()
-        for dtransaction in self.dactivity.transactions:
-            transaction = Transaction.get_transaction(self.configuration, dtransaction)
-            if not transaction:
-                continue
-            self.transactions.append(transaction)
 
     def sum_transactions_by_type(self):
         totals = dict()
@@ -131,12 +128,12 @@ class Activity:
                                                  country_name, transaction.is_humanitarian, transaction.is_strict,
                                                  transaction.classification, self.identifier, net_money, total_money])
 
-    def process(self, out_flows, out_transactions):
+    def process(self, this_month, out_flows, out_transactions):
         self.factor_new_money()
         #
         # Walk through the activity's transactions one-by-one, and split by country/sector
         #
         for transaction in self.transactions:
-            if transaction.process(self):
+            if transaction.process(this_month, self):
                 self.add_to_flows(out_flows, transaction)
                 self.generate_split_transactions(out_transactions, transaction)

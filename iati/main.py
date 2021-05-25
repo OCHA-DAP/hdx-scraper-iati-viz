@@ -76,11 +76,10 @@ def start(configuration, this_month, retriever, dportal_params):
     transactions = list()
     for text in generator:
         for dactivity in diterator.XMLIterator(StringIO(text)):
-            activity = Activity(configuration, this_month, dactivity)
-            if activity.should_ignore():
+            activity = Activity.get_activity(configuration, dactivity)
+            if not activity:
                 continue
-            activity.setup()
-            activity.process(flows, transactions)
+            activity.process(this_month, flows, transactions)
 
     logger.info(f'Processed {len(flows)} flows')
     logger.info(f'Processed {len(transactions)} transactions')
