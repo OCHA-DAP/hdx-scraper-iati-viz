@@ -134,6 +134,7 @@ class Activity:
         # Walk through the activity's transactions one-by-one, and split by country/sector
         #
         for transaction in self.transactions:
-            if transaction.process(this_month, self):
-                self.add_to_flows(out_flows, transaction)
-                self.generate_split_transactions(out_transactions, transaction)
+            if not transaction.process(this_month, self):
+                continue
+            self.add_to_flows(out_flows, transaction)
+            self.generate_split_transactions(out_transactions, transaction)
