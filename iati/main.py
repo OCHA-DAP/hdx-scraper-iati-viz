@@ -44,17 +44,20 @@ def retrieve_dportal(configuration, retriever, dportal_params):
             dont_exit = False
 
 
-def write(configuration, configuration_key, rows):
+def write(today, configuration, configuration_key, rows):
     output_dir = configuration['folder']
     file_configuration = configuration[configuration_key]
     headers = file_configuration['headers']
     hxltags = file_configuration['hxltags']
 
+    metadata = {'#date+run': today, f'#meta+{configuration_key}+num': len(rows)}
+    metadata_json = json.dumps(metadata, indent=None, separators=(',', ':'))
     with open(join(output_dir, file_configuration['csv']), 'wb') as output_csv:
         writer = unicodecsv.writer(output_csv, encoding='utf-8')
         writer.writerow(headers)
         writer.writerow(hxltags)
         with open(join(output_dir, file_configuration['json']), 'w') as output_json:
+            output_json.write(f'{{"metadata":{metadata_json},"data":')
             output_json.write('[')
 
             def write_row(inrow, ending):
@@ -64,9 +67,10 @@ def write(configuration, configuration_key, rows):
 
             [write_row(row, ',\n') for row in rows[:-1]]
             write_row(rows[-1], ']')
+            output_json.write('}')
 
 
-def start(configuration, this_month, retriever, dportal_params):
+def start(configuration, today, retriever, dportal_params):
     generator = retrieve_dportal(configuration, retriever, dportal_params)
     Lookups.setup(configuration['lookups'], retriever)
     CalculateSplits.setup(configuration['calculate_splits'])
@@ -79,7 +83,7 @@ def start(configuration, this_month, retriever, dportal_params):
             activity = Activity.get_activity(configuration, dactivity)
             if not activity:
                 continue
-            activity.process(this_month, flows, transactions)
+            activity.process(today[:7], flows, transactions)
 
     logger.info(f'Processed {len(flows)} flows')
     logger.info(f'Processed {len(transactions)} transactions')
@@ -89,9 +93,9 @@ def start(configuration, this_month, retriever, dportal_params):
     #
     # Prepare and write flows
     #
-    write(outputs_configuration, 'flows', [list(key)+[int(round(flows[key]))] for key in sorted(flows)])
+    write(today, outputs_configuration, 'flows', [list(key)+[int(round(flows[key]))] for key in sorted(flows)])
 
     #
     # Write transactions
     #
-    write(outputs_configuration, 'transactions', sorted(transactions))
+    write(today, outputs_configuration, 'transactions', sorted(transactions))

@@ -18,7 +18,7 @@ setup_logging()
 logger = logging.getLogger()
 
 
-VERSION = 1.0
+VERSION = 2.0
 
 
 def parse_args():
@@ -42,8 +42,8 @@ def main(saved_dir, save, use_saved, dportal_params, **ignore):
     mkdir(output_dir)
     with Download() as downloader:
         retriever = Retrieve(downloader, configuration['fallback_dir'], saved_dir, output_dir, save, use_saved)
-        this_month = datetime.utcnow().isoformat()[:7]
-        start(configuration, this_month, retriever, dportal_params)
+        today = datetime.utcnow().isoformat()
+        start(configuration, today, retriever, dportal_params)
 
 
 if __name__ == '__main__':
