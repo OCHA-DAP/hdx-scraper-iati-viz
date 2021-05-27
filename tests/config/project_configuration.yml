@@ -97,6 +97,9 @@ outputs:
       - "#x_transaction_direction"
       - "#value+total"
 
+excluded_orgs:
+  - "CZ-ICO-25755277" # People in Need: https://iatiregistry.org/publisher/pin
+
 lookups:
   org_data: "data/IATIOrganisationIdentifier.json"
   sector_data: "data/dac3-sector-map.json"
