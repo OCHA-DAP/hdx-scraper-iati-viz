@@ -6,7 +6,10 @@ from iati.transaction import Transaction
 
 
 class Activity:
-    def __init__(self, configuration, dactivity):
+    def __init__(self, dactivity):
+        """
+        Use the get_activity static method to construct
+        """
         self.dactivity = dactivity
         self.identifier = dactivity.identifier
         # Get the reporting-org name and C19 strictness at activity level
@@ -18,11 +21,16 @@ class Activity:
         self.country_splits = CalculateSplits.make_country_splits(dactivity)
         self.sector_splits = CalculateSplits.make_sector_splits(dactivity)
         self.transactions = list()
+
+    def add_transactions(self, configuration):
+        skipped = 0
         for dtransaction in self.dactivity.transactions:
             transaction = Transaction.get_transaction(configuration, dtransaction)
             if not transaction:
+                skipped += 1
                 continue
             self.transactions.append(transaction)
+        return skipped
 
     @staticmethod
     def get_activity(configuration, dactivity):
@@ -35,12 +43,14 @@ class Activity:
         reporting_org_ref = dactivity.reporting_org.ref
         # Filter out certain orgs
         if reporting_org_ref in filters_configuration['reporting_orgs']:
-            return None
+            return None, len(dactivity.transactions)
         # Filter out eg. UNDP and DFID activities that have children (i.e. filter out h=1)
         if reporting_org_ref in filters_configuration['reporting_orgs_with_children']:
             if '2' in dactivity.related_activities_by_type:
-                return None
-        return Activity(configuration, dactivity)
+                return None, len(dactivity.transactions)
+        activity = Activity(dactivity)
+        skipped = activity.add_transactions(configuration)
+        return activity, skipped
 
     def is_strict(self):
         return True if (has_c19_scope(self.dactivity.humanitarian_scopes) or has_c19_tag(self.dactivity.tags) or
@@ -127,8 +137,11 @@ class Activity:
         #
         # Walk through the activity's transactions one-by-one, and split by country/sector
         #
+        skipped = 0
         for transaction in self.transactions:
             if not transaction.process(this_month, self):
+                skipped += 1
                 continue
             self.add_to_flows(out_flows, transaction)
             self.generate_split_transactions(out_transactions, transaction)
+        return skipped

@@ -6,6 +6,9 @@ from iati.lookups import Lookups
 
 class Transaction:
     def __init__(self, transaction_type_info, dtransaction):
+        """
+        Use the get_transaction static method to construct
+        """
         self.classification = transaction_type_info['classification']
         self.direction = transaction_type_info['direction']
         self.dtransaction = dtransaction

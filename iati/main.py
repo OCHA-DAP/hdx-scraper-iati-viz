@@ -44,21 +44,22 @@ def retrieve_dportal(configuration, retriever, dportal_params):
             dont_exit = False
 
 
-def write(today, configuration, configuration_key, rows):
+def write(today, configuration, configuration_key, rows, skipped=None):
     output_dir = configuration['folder']
     file_configuration = configuration[configuration_key]
     headers = file_configuration['headers']
     hxltags = file_configuration['hxltags']
 
     metadata = {'#date+run': today, f'#meta+{configuration_key}+num': len(rows)}
+    if skipped is not None:
+        metadata[f'#meta+{configuration_key}+skipped+num'] = skipped
     metadata_json = json.dumps(metadata, indent=None, separators=(',', ':'))
     with open(join(output_dir, file_configuration['csv']), 'wb') as output_csv:
         writer = unicodecsv.writer(output_csv, encoding='utf-8')
         writer.writerow(headers)
         writer.writerow(hxltags)
         with open(join(output_dir, file_configuration['json']), 'w') as output_json:
-            output_json.write(f'{{"metadata":{metadata_json},"data":')
-            output_json.write('[')
+            output_json.write(f'{{"metadata":{metadata_json},"data":[\n')
 
             def write_row(inrow, ending):
                 writer.writerow(inrow)
@@ -78,12 +79,14 @@ def start(configuration, today, retriever, dportal_params):
     # Build the accumulators from the IATI activities and transactions
     flows = dict()
     transactions = list()
+    all_skipped = 0
     for text in generator:
         for dactivity in diterator.XMLIterator(StringIO(text)):
-            activity = Activity.get_activity(configuration, dactivity)
+            activity, skipped = Activity.get_activity(configuration, dactivity)
+            all_skipped += skipped
             if not activity:
                 continue
-            activity.process(today[:7], flows, transactions)
+            all_skipped += activity.process(today[:7], flows, transactions)
 
     logger.info(f'Processed {len(flows)} flows')
     logger.info(f'Processed {len(transactions)} transactions')
@@ -98,4 +101,4 @@ def start(configuration, today, retriever, dportal_params):
     #
     # Write transactions
     #
-    write(today, outputs_configuration, 'transactions', sorted(transactions))
+    write(today, outputs_configuration, 'transactions', sorted(transactions), all_skipped)
