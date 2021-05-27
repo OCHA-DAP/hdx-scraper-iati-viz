@@ -50,9 +50,6 @@ filters:
   reporting_orgs_with_children:  # where hierarchy=1
     - "XM-DAC-41114"  # UNDP
     - "GB-GOV-1"  # FCDO
-  participating_org_roles:
-    - "Implementing"
-    - "IMPLEMENTING"
 
 lookups:
   org_data: "data/IATIOrganisationIdentifier.json"

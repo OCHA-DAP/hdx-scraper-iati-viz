@@ -38,13 +38,8 @@ class Activity:
             return None
         # Filter out eg. UNDP and DFID activities that have children (i.e. filter out h=1)
         if reporting_org_ref in filters_configuration['reporting_orgs_with_children']:
-            related_activities = dactivity.node.getElementsByTagName('related-activity')
-            for related_activity in related_activities:
-                if related_activity.getAttribute('type') == '2':
-                    return None
-        # Filter out some strange UNOPS data
-        if any(x in dactivity.participating_orgs_by_role for x in filters_configuration['participating_org_roles']):
-            return None
+            if '2' in dactivity.related_activities_by_type:
+                return None
         return Activity(configuration, dactivity)
 
     def is_strict(self):
