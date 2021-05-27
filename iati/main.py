@@ -90,6 +90,7 @@ def start(configuration, today, retriever, dportal_params):
 
     logger.info(f'Processed {len(flows)} flows')
     logger.info(f'Processed {len(transactions)} transactions')
+    logger.info(f'Skipped {all_skipped} transactions')
 
     outputs_configuration = configuration['outputs']
 
