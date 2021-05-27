@@ -31,19 +31,20 @@ class Activity:
         where the data is very poor quality. We also exclude hierarchy=1
         activities for UNDP (XM-DAC-41114) and FCDO (GB-GOV-1).
         """
-        # # Filter out some strange UNOPS data
-        # if any(x in dactivity.participating_orgs_by_role for x in ['Implementing', 'IMPLEMENTING']):
-        #     return None
-        # reporting_org_ref = dactivity.reporting_org.ref
-        # # Filter out UNDP and DFID activities that have children (i.e. filter out h=1)
-        # if reporting_org_ref in ['XM-DAC-41114', 'GB-GOV-1']:
-        #     related_activities = dactivity.node.getElementsByTagName('related-activity')
-        #     for related_activity in related_activities:
-        #         if related_activity.getAttribute('type') == '2':
-        #             return None
-        # # Filter out certain orgs
-        # if reporting_org_ref in configuration['excluded_orgs']:
-        #     return None
+        filters_configuration = configuration['filters']
+        reporting_org_ref = dactivity.reporting_org.ref
+        # Filter out certain orgs
+        if reporting_org_ref in filters_configuration['reporting_orgs']:
+            return None
+        # Filter out eg. UNDP and DFID activities that have children (i.e. filter out h=1)
+        if reporting_org_ref in filters_configuration['reporting_orgs_with_children']:
+            related_activities = dactivity.node.getElementsByTagName('related-activity')
+            for related_activity in related_activities:
+                if related_activity.getAttribute('type') == '2':
+                    return None
+        # Filter out some strange UNOPS data
+        if any(x in dactivity.participating_orgs_by_role for x in filters_configuration['participating_org_roles']):
+            return None
         return Activity(configuration, dactivity)
 
     def is_strict(self):
