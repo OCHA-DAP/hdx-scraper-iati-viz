@@ -1,417 +1,216 @@
 Reporting org,Reporting org type,Provider org,Receiver org,Humanitarian?,Strict?,Transaction type,Transaction direction,Total money
 #org+name+reporting,#org+reporting+type,#org+name+provider,#org+name+receiver,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_type,#x_transaction_direction,#value+total
-Bill and Melinda Gates Foundation,60,,Duke University,0,1,commitments,outgoing,1351153
-Bill and Melinda Gates Foundation,60,,Duke University,0,1,spending,outgoing,2400000
-Centre de recherches pour le développement international,15,,Bénéficiaire(s) non spécifié(s) -- Réservoir,0,0,commitments,outgoing,702440
-Centre de recherches pour le développement international,15,,Canada. Parlement,0,0,commitments,outgoing,510304
-Centre de recherches pour le développement international,15,,Canada. Parlement,0,1,commitments,outgoing,9328
-Centre de recherches pour le développement international,15,,"Centro de Política Digital para América Latina, A. C.",0,0,commitments,outgoing,414063
-Centre de recherches pour le développement international,15,,"Centro de Política Digital para América Latina, A. C.",0,0,spending,outgoing,105031
-Centre de recherches pour le développement international,15,,Group of Analysis for Development,0,0,commitments,outgoing,108780
-Centre de recherches pour le développement international,15,,Group of Analysis for Development,0,0,spending,outgoing,103334
-Centre de recherches pour le développement international,15,,Kivu International Ltd,0,0,commitments,outgoing,286996
-Centre de recherches pour le développement international,15,,Kivu International Ltd,0,0,spending,outgoing,114940
-Centre de recherches pour le développement international,15,,"Namati, Inc.",0,0,commitments,outgoing,743045
-Centre de recherches pour le développement international,15,,"Namati, Inc.",0,0,spending,outgoing,42739
-Centre de recherches pour le développement international,15,,Nasionale Navorsingstigting,0,1,commitments,outgoing,3001969
-Centre de recherches pour le développement international,15,,Nasionale Navorsingstigting,0,1,spending,outgoing,2802703
-Centre de recherches pour le développement international,15,,Open Data Watch Inc.,0,0,commitments,outgoing,263545
-Centre de recherches pour le développement international,15,,Open Data Watch Inc.,0,0,spending,outgoing,245092
-Centre de recherches pour le développement international,15,,SUMMA,0,0,commitments,outgoing,354631
-Centre de recherches pour le développement international,15,,SUMMA,0,0,spending,outgoing,137799
-Centre de recherches pour le développement international,15,,Sistema de Integración Centroamericana,0,0,commitments,outgoing,288470
-Centre de recherches pour le développement international,15,,Sistema de Integración Centroamericana,0,0,spending,outgoing,79307
-Centre de recherches pour le développement international,15,,The Governing Council of the University of Toronto,0,1,commitments,outgoing,1048882
-Centre de recherches pour le développement international,15,,The Governing Council of the University of Toronto,0,1,spending,outgoing,515270
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,(unspecified org),0,0,spending,outgoing,29
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,(unspecified org),0,1,spending,outgoing,644795
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,ADB RMTF,0,1,spending,outgoing,3271440
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Action Against Hunger (UK),1,1,commitments,outgoing,3704100
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Action Against Hunger (UK),1,1,spending,outgoing,3755523
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,British Red Cross,0,0,commitments,outgoing,46947300
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,British Red Cross,0,0,spending,outgoing,47417600
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,CANADEM,0,0,commitments,outgoing,1194021
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,CANADEM,0,0,spending,outgoing,630451
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,CARE International UK,1,1,commitments,outgoing,3703926
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,CARE International UK,1,1,spending,outgoing,3761826
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Christian Aid,1,1,commitments,outgoing,2865193
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Christian Aid,1,1,spending,outgoing,2898197
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Correction,1,0,spending,outgoing,6204
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Correction,1,1,commitments,outgoing,3963782
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Correction,1,1,spending,outgoing,1575779
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Crown Agents Bank,0,0,commitments,outgoing,48924000
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Crown Agents Bank,0,0,spending,outgoing,48912389
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Customer,0,0,spending,outgoing,79440
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Customer,1,1,spending,outgoing,-172927
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Danish Refugee Council,0,1,commitments,outgoing,2466400
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Danish Refugee Council,0,1,spending,outgoing,2093940
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Enterprise LSE Ltd,1,0,spending,outgoing,102575
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Ethical Trading Initiative,0,1,commitments,outgoing,681087
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Ethical Trading Initiative,0,1,spending,outgoing,345742
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Fjelltopp,0,1,spending,outgoing,96045
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,GOAL,1,1,commitments,outgoing,4283332
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,GOAL,1,1,spending,outgoing,4412882
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,IMC Worldwide,0,0,commitments,outgoing,398152
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,IMC Worldwide,0,0,spending,outgoing,411967
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,INTERNATIONAL DEVELOPMENT AGENCY,0,0,commitments,outgoing,8829300
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,INTERNATIONAL DEVELOPMENT AGENCY,0,0,spending,outgoing,8738450
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,INTERNATIONAL DEVELOPMENT AGENCY,0,1,commitments,outgoing,6551084
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,INTERNATIONAL DEVELOPMENT AGENCY,0,1,spending,outgoing,3572977
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,International Committee of the Red Cross,0,1,commitments,outgoing,21255100
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,International Committee of the Red Cross,0,1,spending,outgoing,20989900
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,International Organization for Migration (IOM),0,1,commitments,outgoing,505438
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,International Organization for Migration (IOM),0,1,spending,outgoing,516967
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,National Aid Fund,0,1,spending,outgoing,6368000
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,National University of Singapore,0,1,spending,outgoing,41187
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Norwegian Refugee Council,1,1,commitments,outgoing,3704100
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Norwegian Refugee Council,1,1,spending,outgoing,3846600
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Palladium International Ltd (UK),0,0,commitments,outgoing,964661
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Palladium International Ltd (UK),0,0,spending,outgoing,861072
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Palladium International Ltd (UK),1,0,commitments,outgoing,59631
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Palladium International Ltd (UK),1,0,spending,outgoing,68675
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Pan American Health Organisation,0,0,commitments,outgoing,3699000
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Pan American Health Organisation,0,0,spending,outgoing,3841740
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Passport Immigration and Citizenship Agency (PICA),0,0,spending,outgoing,433485
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Pitcairn Islands Office,0,0,commitments,outgoing,1115400
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Pitcairn Islands Office,0,0,spending,outgoing,1143717
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,RedR,0,0,commitments,outgoing,67548
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,RedR,0,0,spending,outgoing,46467
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Social Fund for Development,0,1,spending,outgoing,10801631
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Solidarity Response Fund NPC,0,0,spending,outgoing,2794032
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,St Helena Government,0,0,commitments,outgoing,3632836
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,St Helena Government,0,0,spending,outgoing,3767186
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,The Boston Consulting Group UK LLP,0,1,spending,outgoing,5066525
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,The Ministry of National Security,0,1,spending,outgoing,686507
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Titan Airways,0,0,spending,outgoing,234106
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Tristan da Cunha Government,0,0,commitments,outgoing,799440
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Tristan da Cunha Government,0,0,spending,outgoing,282645
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,UK - Ministry of Defence,1,1,commitments,outgoing,991732
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,UK - Ministry of Defence,1,1,spending,outgoing,1039701
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,UK-Med,0,0,commitments,outgoing,1894325
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,UK-Med,0,0,spending,outgoing,1172113
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,UNITED NATIONS POPULATION FUND,0,1,commitments,outgoing,12467000
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,UNITED NATIONS POPULATION FUND,0,1,spending,outgoing,12430000
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,United Nations Children's Fund (UNICEF),0,0,commitments,outgoing,31721450
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,United Nations Children's Fund (UNICEF),0,0,spending,outgoing,31604880
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,United Nations High Commissioner for Refugees (UNHCR),0,0,commitments,outgoing,7088750
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,United Nations High Commissioner for Refugees (UNHCR),0,0,spending,outgoing,7011900
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,United Nations High Commissioner for Refugees (UNHCR),0,1,commitments,outgoing,24934000
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,United Nations High Commissioner for Refugees (UNHCR),0,1,spending,outgoing,25052000
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,United Nations Office for Project Services (UNOPS),0,1,commitments,outgoing,1343167
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,United Nations Office for Project Services (UNOPS),0,1,spending,outgoing,1351000
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,United Nations Office for the Coordination of Humanitarian Affairs (OCHA),1,1,commitments,outgoing,2425800
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,United Nations Office for the Coordination of Humanitarian Affairs (OCHA),1,1,spending,outgoing,4939200
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Violence Prevention Alliance,0,0,commitments,outgoing,356608
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,Violence Prevention Alliance,0,0,spending,outgoing,354010
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,World Food Programme (WFP),0,1,commitments,outgoing,20045704
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,World Food Programme (WFP),0,1,spending,outgoing,19863354
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,World Food Programme (WFP),1,0,commitments,outgoing,45803
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,World Food Programme (WFP),1,0,spending,outgoing,45940
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,World Food Programme (WFP),1,1,commitments,outgoing,5351200
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,World Food Programme (WFP),1,1,spending,outgoing,5341200
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,World Health Organization (WHO),0,0,commitments,outgoing,87502500
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,World Health Organization (WHO),0,0,spending,outgoing,85880500
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,World Health Organization (WHO),0,1,commitments,outgoing,390728
-DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),10,,World Health Organization (WHO),0,1,spending,outgoing,415752
-"Department of Business, Energy and Industrial Strategy",10,,Royal Academy of Engineering,0,0,commitments,outgoing,695314
-"Department of Business, Energy and Industrial Strategy",10,,Royal Academy of Engineering,0,0,spending,outgoing,410990
-"Department of Business, Energy and Industrial Strategy",10,,"Royal Holloway, Univ of London",0,1,commitments,outgoing,312183
-"Department of Business, Energy and Industrial Strategy",10,,University of Huddersfield,0,1,commitments,outgoing,211784
-Direction-Générale Coopération au Développement et Aide humanitaire,10,,BIO - Belgian Investment Company for Developing Countries - BIO,0,1,spending,outgoing,36806844
-Direction-Générale Coopération au Développement et Aide humanitaire,10,,Coalition for Epidemic Preparedness Innovations (CEPI,0,1,spending,outgoing,5432000
-Direction-Générale Coopération au Développement et Aide humanitaire,10,,Commitment,0,0,commitments,outgoing,3490742
-Direction-Générale Coopération au Développement et Aide humanitaire,10,,Commitment,0,0,spending,outgoing,2384850
-Direction-Générale Coopération au Développement et Aide humanitaire,10,,Commitment,0,1,commitments,outgoing,56536460
-Direction-Générale Coopération au Développement et Aide humanitaire,10,,Commitment,0,1,spending,outgoing,11931498
-Direction-Générale Coopération au Développement et Aide humanitaire,10,,Commitment,1,0,commitments,outgoing,8156870
-Direction-Générale Coopération au Développement et Aide humanitaire,10,,Commitment,1,0,spending,outgoing,7769100
-Direction-Générale Coopération au Développement et Aide humanitaire,10,,Commitment,1,1,commitments,outgoing,21347050
-Direction-Générale Coopération au Développement et Aide humanitaire,10,,Commitment,1,1,spending,outgoing,15920500
-Direction-Générale Coopération au Développement et Aide humanitaire,10,,Enabel - the Belgian development agency,0,0,spending,outgoing,5966327
-Direction-Générale Coopération au Développement et Aide humanitaire,10,,General / not specified ***,0,0,spending,outgoing,1134874
-Direction-Générale Coopération au Développement et Aide humanitaire,10,,Integrated Regional Information Networks (IRIN),1,0,spending,outgoing,178455
-Direction-Générale Coopération au Développement et Aide humanitaire,10,,International Federation of Red Cross and Red Crescent Societies,1,1,spending,outgoing,5721000
+ABAAD- Resource Center for Gender Equality,22,,(unspecified org),1,0,spending,outgoing,1112742
+ADD International,21,,(unspecified org),0,0,spending,outgoing,2178
+ADD International,21,,(unspecified org),0,1,spending,outgoing,165845
+ADD International,21,(unspecified org),,0,0,spending,incoming,97065
+ADD International,21,(unspecified org),,0,1,commitments,incoming,162156
+ADD International,21,(unspecified org),,0,1,spending,incoming,131689
+Bill and Melinda Gates Foundation (BMGF),60,,"AbMax Biotechnology Co., Ltd.",0,1,commitments,outgoing,100000
+Bill and Melinda Gates Foundation (BMGF),60,,"AbMax Biotechnology Co., Ltd.",0,1,spending,outgoing,100000
+Bill and Melinda Gates Foundation (BMGF),60,,African Field Epidemiology Network,0,1,commitments,outgoing,3000000
+Bill and Melinda Gates Foundation (BMGF),60,,African Field Epidemiology Network,0,1,spending,outgoing,3000000
+Bill and Melinda Gates Foundation (BMGF),60,,Asian Venture Philanthropy Network Limited,0,1,commitments,outgoing,466292
+Bill and Melinda Gates Foundation (BMGF),60,,Asian Venture Philanthropy Network Limited,0,1,spending,outgoing,466292
+Bill and Melinda Gates Foundation (BMGF),60,,Beth Israel Deaconess Medical Center Inc.,0,1,commitments,outgoing,4352365
+Bill and Melinda Gates Foundation (BMGF),60,,Beth Israel Deaconess Medical Center Inc.,0,1,spending,outgoing,4352365
+Bill and Melinda Gates Foundation (BMGF),60,,BioCrucible Ltd,0,1,commitments,outgoing,4971165
+Bill and Melinda Gates Foundation (BMGF),60,,BioCrucible Ltd,0,1,spending,outgoing,4971165
+Bill and Melinda Gates Foundation (BMGF),60,,CanSino Biologics Inc.,0,1,commitments,outgoing,400000
+Bill and Melinda Gates Foundation (BMGF),60,,CanSino Biologics Inc.,0,1,spending,outgoing,400000
+Bill and Melinda Gates Foundation (BMGF),60,,Charité - Universitätsmedizin Berlin,0,1,commitments,outgoing,249550
+Bill and Melinda Gates Foundation (BMGF),60,,Charité - Universitätsmedizin Berlin,0,1,spending,outgoing,249550
+Bill and Melinda Gates Foundation (BMGF),60,,China CDC,0,1,commitments,outgoing,600000
+Bill and Melinda Gates Foundation (BMGF),60,,China CDC,0,1,spending,outgoing,600000
+Bill and Melinda Gates Foundation (BMGF),60,,China National Biotech Group Company Limited,0,1,commitments,outgoing,400000
+Bill and Melinda Gates Foundation (BMGF),60,,China National Biotech Group Company Limited,0,1,spending,outgoing,400000
+Bill and Melinda Gates Foundation (BMGF),60,,Fred Hutchinson Cancer Research Center,0,1,commitments,outgoing,899997
+Bill and Melinda Gates Foundation (BMGF),60,,Fred Hutchinson Cancer Research Center,0,1,spending,outgoing,374177
+Bill and Melinda Gates Foundation (BMGF),60,,Guangzhou Institute of Respiratory Health,0,1,commitments,outgoing,199653
+Bill and Melinda Gates Foundation (BMGF),60,,Guangzhou Institute of Respiratory Health,0,1,spending,outgoing,199653
+Bill and Melinda Gates Foundation (BMGF),60,,Indian Institute of Science,0,1,commitments,outgoing,39600
+Bill and Melinda Gates Foundation (BMGF),60,,Indian Institute of Science,0,1,spending,outgoing,39600
+Bill and Melinda Gates Foundation (BMGF),60,,Ipas Development Foundation,0,0,commitments,outgoing,1362436
+Bill and Melinda Gates Foundation (BMGF),60,,Ipas Development Foundation,0,0,spending,outgoing,900000
+Bill and Melinda Gates Foundation (BMGF),60,,"Just-Evotec Biologics, Inc.",0,1,commitments,outgoing,1944053
+Bill and Melinda Gates Foundation (BMGF),60,,"Just-Evotec Biologics, Inc.",0,1,spending,outgoing,1944053
+Bill and Melinda Gates Foundation (BMGF),60,,La Jolla Institute for Immunology,0,1,commitments,outgoing,1730875
+Bill and Melinda Gates Foundation (BMGF),60,,La Jolla Institute for Immunology,0,1,spending,outgoing,1730875
+Bill and Melinda Gates Foundation (BMGF),60,,"LakePharma, Inc.",0,0,commitments,outgoing,1060303
+Bill and Melinda Gates Foundation (BMGF),60,,"LakePharma, Inc.",0,0,spending,outgoing,1060303
+Bill and Melinda Gates Foundation (BMGF),60,,LumiraDx UK Limited,0,1,commitments,outgoing,17000000
+Bill and Melinda Gates Foundation (BMGF),60,,LumiraDx UK Limited,0,1,spending,outgoing,17000000
+Bill and Melinda Gates Foundation (BMGF),60,,"Macro-Eyes, Inc.",0,1,commitments,outgoing,711349
+Bill and Melinda Gates Foundation (BMGF),60,,"Macro-Eyes, Inc.",0,1,spending,outgoing,711349
+Bill and Melinda Gates Foundation (BMGF),60,,Massachusetts Institute of Technology,0,1,commitments,outgoing,100000
+Bill and Melinda Gates Foundation (BMGF),60,,Massachusetts Institute of Technology,0,1,spending,outgoing,100000
+Bill and Melinda Gates Foundation (BMGF),60,,Mediana LLC,0,1,commitments,outgoing,300000
+Bill and Melinda Gates Foundation (BMGF),60,,Mediana LLC,0,1,spending,outgoing,300000
+Bill and Melinda Gates Foundation (BMGF),60,,National University of Singapore,0,0,commitments,outgoing,171597
+Bill and Melinda Gates Foundation (BMGF),60,,National University of Singapore,0,0,spending,outgoing,171597
+Bill and Melinda Gates Foundation (BMGF),60,,Nigeria Centre for Disease Control,0,1,commitments,outgoing,1138565
+Bill and Melinda Gates Foundation (BMGF),60,,Nigeria Centre for Disease Control,0,1,spending,outgoing,825000
+Bill and Melinda Gates Foundation (BMGF),60,,Northeastern University,0,1,commitments,outgoing,157929
+Bill and Melinda Gates Foundation (BMGF),60,,Northeastern University,0,1,spending,outgoing,157929
+Bill and Melinda Gates Foundation (BMGF),60,,Piramal Swasthya Management and Research Institute,0,1,commitments,outgoing,2000000
+Bill and Melinda Gates Foundation (BMGF),60,,Piramal Swasthya Management and Research Institute,0,1,spending,outgoing,2000000
+Bill and Melinda Gates Foundation (BMGF),60,,Rommelag,0,1,commitments,outgoing,3383156
+Bill and Melinda Gates Foundation (BMGF),60,,Rommelag,0,1,spending,outgoing,3383156
+Bill and Melinda Gates Foundation (BMGF),60,,"Shanghai ZJ Bio-Tech Co., Ltd.",0,1,commitments,outgoing,100000
+Bill and Melinda Gates Foundation (BMGF),60,,"Shanghai ZJ Bio-Tech Co., Ltd.",0,1,spending,outgoing,100000
+Bill and Melinda Gates Foundation (BMGF),60,,Sino Biological Inc.,0,1,commitments,outgoing,200000
+Bill and Melinda Gates Foundation (BMGF),60,,Sino Biological Inc.,0,1,spending,outgoing,200000
+Bill and Melinda Gates Foundation (BMGF),60,,Solutions Journalism Network Inc,0,0,commitments,outgoing,1664250
+Bill and Melinda Gates Foundation (BMGF),60,,Solutions Journalism Network Inc,0,0,spending,outgoing,700000
+Bill and Melinda Gates Foundation (BMGF),60,,The Aurum Institute NPC,0,1,commitments,outgoing,1499999
+Bill and Melinda Gates Foundation (BMGF),60,,The Aurum Institute NPC,0,1,spending,outgoing,1017062
+Bill and Melinda Gates Foundation (BMGF),60,,The Third People‘s Hospital of Shenzhen,0,1,commitments,outgoing,500000
+Bill and Melinda Gates Foundation (BMGF),60,,The Third People‘s Hospital of Shenzhen,0,1,spending,outgoing,500000
+Bill and Melinda Gates Foundation (BMGF),60,,"Vital Strategies, Inc.",0,1,commitments,outgoing,999450
+Bill and Melinda Gates Foundation (BMGF),60,,"Vital Strategies, Inc.",0,1,spending,outgoing,999450
+Bill and Melinda Gates Foundation (BMGF),60,,World Health Organization,0,1,commitments,outgoing,7078178
+Bill and Melinda Gates Foundation (BMGF),60,,World Health Organization,0,1,spending,outgoing,7078178
+Bill and Melinda Gates Foundation (BMGF),60,,World Health Organization Regional Office for Africa,0,1,commitments,outgoing,2500000
+Bill and Melinda Gates Foundation (BMGF),60,,World Health Organization Regional Office for Africa,0,1,spending,outgoing,2500000
+Bill and Melinda Gates Foundation (BMGF),60,,Xiamen University,0,1,commitments,outgoing,600000
+Bill and Melinda Gates Foundation (BMGF),60,,Xiamen University,0,1,spending,outgoing,600000
+Bill and Melinda Gates Foundation (BMGF),60,,Xi’an Jiaotong University,0,1,commitments,outgoing,100000
+Bill and Melinda Gates Foundation (BMGF),60,,Xi’an Jiaotong University,0,1,spending,outgoing,100000
 Fondation Hirondelle,21,,(unspecified org),1,1,spending,outgoing,265650
-Fondation Hirondelle,21,(unspecified org),,1,1,commitments,incoming,354200
-Fondation Hirondelle,21,(unspecified org),,1,1,spending,incoming,152793
-GOVERNMENT OF GERMANY,10,,(unspecified org),0,0,commitments,outgoing,350934495
-GOVERNMENT OF GERMANY,10,,(unspecified org),0,0,spending,outgoing,287043343
-GOVERNMENT OF GERMANY,10,,(unspecified org),0,1,commitments,outgoing,76126332
-GOVERNMENT OF GERMANY,10,,(unspecified org),0,1,spending,outgoing,33427330
-GOVERNMENT OF GERMANY,10,EU-EU,,0,0,spending,incoming,11138000
-GOVERNMENT OF SWITZERLAND,10,,(unspecified org),0,0,commitments,outgoing,5575764
-GOVERNMENT OF SWITZERLAND,10,,(unspecified org),0,0,spending,outgoing,4597189
-GOVERNMENT OF SWITZERLAND,10,,(unspecified org),0,1,commitments,outgoing,267615939
-GOVERNMENT OF SWITZERLAND,10,,(unspecified org),0,1,spending,outgoing,41027484
-Inter-American Development Bank,40,,(unspecified org),0,0,commitments,outgoing,726200000
-Inter-American Development Bank,40,,(unspecified org),0,0,spending,outgoing,726200000
-Inter-American Development Bank,40,,(unspecified org),0,1,commitments,outgoing,1659060000
-Inter-American Development Bank,40,,(unspecified org),0,1,spending,outgoing,1344229786
-International Federation of Red Cross and Red Crescent Societies,90,,(unspecified org),1,1,spending,outgoing,132240227
-International Federation of Red Cross and Red Crescent Societies,90,Airbus Corporate Foundation (Employees of Airbus),,1,1,spending,incoming,14669
-International Federation of Red Cross and Red Crescent Societies,90,Alter Domus Participations S.ar.l,,1,1,spending,incoming,244852
-International Federation of Red Cross and Red Crescent Societies,90,American Red Cross,,1,1,spending,incoming,11147904
-International Federation of Red Cross and Red Crescent Societies,90,Andorran Red Cross,,1,1,spending,incoming,18249
-International Federation of Red Cross and Red Crescent Societies,90,Asian Football Confederation,,1,1,spending,incoming,217535
-International Federation of Red Cross and Red Crescent Societies,90,Australian Government,,1,1,spending,incoming,34288
-International Federation of Red Cross and Red Crescent Societies,90,Australian Red Cross,,1,1,spending,incoming,2475530
-International Federation of Red Cross and Red Crescent Societies,90,Austrian Red Cross,,1,1,spending,incoming,1611486
-International Federation of Red Cross and Red Crescent Societies,90,Bahrain Red Crescent Society,,1,1,spending,incoming,22622
-International Federation of Red Cross and Red Crescent Societies,90,BeiGene,,1,1,spending,incoming,11424
-International Federation of Red Cross and Red Crescent Societies,90,Belgian Federal Government,,1,1,spending,incoming,1080257
-International Federation of Red Cross and Red Crescent Societies,90,Boston Scientfic,,1,1,spending,incoming,237273
-International Federation of Red Cross and Red Crescent Societies,90,Bristol-Myers Squibb Company,,1,1,spending,incoming,512125
-International Federation of Red Cross and Red Crescent Societies,90,British Red Cross,,1,1,spending,incoming,54067468
-International Federation of Red Cross and Red Crescent Societies,90,Charities Aid Foundation,,1,1,spending,incoming,123377
-International Federation of Red Cross and Red Crescent Societies,90,Coca Cola Foundation,,1,1,spending,incoming,2732456
-International Federation of Red Cross and Red Crescent Societies,90,Coca-Cola,,1,1,spending,incoming,214533
-International Federation of Red Cross and Red Crescent Societies,90,Danish Red Cross,,1,1,spending,incoming,584335
-International Federation of Red Cross and Red Crescent Societies,90,EU-DG SANTE,,1,1,spending,incoming,94
-International Federation of Red Cross and Red Crescent Societies,90,Electrolux Food Foundation,,1,1,spending,incoming,599
-International Federation of Red Cross and Red Crescent Societies,90,Ericsson,,1,1,spending,incoming,202133
-International Federation of Red Cross and Red Crescent Societies,90,Estonia Government,,1,1,spending,incoming,30011
-International Federation of Red Cross and Red Crescent Societies,90,European Commission - DG ECHO,,1,1,spending,incoming,5846396
-International Federation of Red Cross and Red Crescent Societies,90,European Investment Bank Institute,,1,1,spending,incoming,178519
-International Federation of Red Cross and Red Crescent Societies,90,FIA Foundation,,1,1,spending,incoming,1202441
-International Federation of Red Cross and Red Crescent Societies,90,Finnish Red Cross,,1,1,spending,incoming,3303520
-International Federation of Red Cross and Red Crescent Societies,90,French Red Cross,,1,1,spending,incoming,1197651
-International Federation of Red Cross and Red Crescent Societies,90,German Government,,1,1,spending,incoming,8637726
-International Federation of Red Cross and Red Crescent Societies,90,German Red Cross,,1,1,spending,incoming,5476
-International Federation of Red Cross and Red Crescent Societies,90,Goldman Sachs,,1,1,spending,incoming,750865
-International Federation of Red Cross and Red Crescent Societies,90,Great Britain - Private Donors,,1,1,spending,incoming,22
-International Federation of Red Cross and Red Crescent Societies,90,ICRC,,1,1,spending,incoming,48114
-International Federation of Red Cross and Red Crescent Societies,90,IQVIA Inc,,1,1,spending,incoming,32868
-International Federation of Red Cross and Red Crescent Societies,90,Icelandic Red Cross,,1,1,spending,incoming,298141
-International Federation of Red Cross and Red Crescent Societies,90,Irish Government,,1,1,spending,incoming,1070847
-International Federation of Red Cross and Red Crescent Societies,90,Islamic Committee of the International Crescent,,1,1,spending,incoming,10914
-International Federation of Red Cross and Red Crescent Societies,90,Islamic Development Bank IsDB,,1,1,spending,incoming,387936
-International Federation of Red Cross and Red Crescent Societies,90,Italian Government Bilateral Emergency Fund,,1,1,spending,incoming,734863
-International Federation of Red Cross and Red Crescent Societies,90,Italian Red Cross,,1,1,spending,incoming,69630
-International Federation of Red Cross and Red Crescent Societies,90,Italy - Private Donors,,1,1,spending,incoming,14
-International Federation of Red Cross and Red Crescent Societies,90,Japan - Private Donors,,1,1,spending,incoming,47518
-International Federation of Red Cross and Red Crescent Societies,90,Japanese Government,,1,1,spending,incoming,24709855
-International Federation of Red Cross and Red Crescent Societies,90,Japanese Red Cross Society,,1,1,spending,incoming,100288
-International Federation of Red Cross and Red Crescent Societies,90,Johnson & Johnson foundation,,1,1,spending,incoming,2752799
-International Federation of Red Cross and Red Crescent Societies,90,Kaspersky Lab,,1,1,spending,incoming,16966
-International Federation of Red Cross and Red Crescent Societies,90,Kenya - Private Donors,,1,1,spending,incoming,2305
-International Federation of Red Cross and Red Crescent Societies,90,Kuwait Red Crescent Society,,1,1,spending,incoming,109905
-International Federation of Red Cross and Red Crescent Societies,90,Lithuania Government,,1,1,spending,incoming,119150
-International Federation of Red Cross and Red Crescent Societies,90,London Stock Exchange Group (LSEG),,1,1,spending,incoming,1339654
-International Federation of Red Cross and Red Crescent Societies,90,Marriott International Inc.,,1,1,spending,incoming,8378
-International Federation of Red Cross and Red Crescent Societies,90,Medtronic Foundation,,1,1,spending,incoming,7237
-International Federation of Red Cross and Red Crescent Societies,90,Morgan Stanley,,1,1,spending,incoming,30083
-International Federation of Red Cross and Red Crescent Societies,90,Nestle,,1,1,spending,incoming,3540498
-International Federation of Red Cross and Red Crescent Societies,90,Netherlands - Private Donors,,1,1,spending,incoming,3847
-International Federation of Red Cross and Red Crescent Societies,90,New Balance,,1,1,spending,incoming,25883
-International Federation of Red Cross and Red Crescent Societies,90,New Zealand Government,,1,1,spending,incoming,344588
-International Federation of Red Cross and Red Crescent Societies,90,New Zealand Red Cross,,1,1,spending,incoming,64472
-International Federation of Red Cross and Red Crescent Societies,90,Norwegian Red Cross,,1,1,spending,incoming,1842599
-International Federation of Red Cross and Red Crescent Societies,90,Novartis,,1,1,spending,incoming,130190
-International Federation of Red Cross and Red Crescent Societies,90,Olympus Corporation,,1,1,spending,incoming,200411
-International Federation of Red Cross and Red Crescent Societies,90,On Line donations,,1,1,spending,incoming,32409
-International Federation of Red Cross and Red Crescent Societies,90,PPG Coatings (HongKong) Co.Ltd,,1,1,spending,incoming,110186
-International Federation of Red Cross and Red Crescent Societies,90,PPG Industries Europe Sarl,,1,1,spending,incoming,326723
-International Federation of Red Cross and Red Crescent Societies,90,Procter & Gamble,,1,1,spending,incoming,552669
-International Federation of Red Cross and Red Crescent Societies,90,Qatar Red Crescent Society,,1,1,spending,incoming,10243
-International Federation of Red Cross and Red Crescent Societies,90,Red Crescent Society of Turkmenistan,,1,1,spending,incoming,3318
-International Federation of Red Cross and Red Crescent Societies,90,Red Cross Society of China,,1,1,spending,incoming,1074558
-International Federation of Red Cross and Red Crescent Societies,90,Red Cross of Monaco,,1,1,spending,incoming,179202
-International Federation of Red Cross and Red Crescent Societies,90,Red Cross of Viet Nam,,1,1,spending,incoming,33007
-International Federation of Red Cross and Red Crescent Societies,90,Republic of Korea - Private Donors,,1,1,spending,incoming,12991
-International Federation of Red Cross and Red Crescent Societies,90,Siemens Gamesa Renewable Energy,,1,1,spending,incoming,101079
-International Federation of Red Cross and Red Crescent Societies,90,Singapore Red Cross Society,,1,1,spending,incoming,2642991
-International Federation of Red Cross and Red Crescent Societies,90,Société Générale Foundation,,1,1,spending,incoming,1224771
-International Federation of Red Cross and Red Crescent Societies,90,Spanish Government,,1,1,spending,incoming,642939
-International Federation of Red Cross and Red Crescent Societies,90,Supreme Master Ching Hai,,1,1,spending,incoming,1150058
-International Federation of Red Cross and Red Crescent Societies,90,Swedish Red Cross,,1,1,spending,incoming,970443
-International Federation of Red Cross and Red Crescent Societies,90,Swiss Government,,1,1,spending,incoming,5994797
-International Federation of Red Cross and Red Crescent Societies,90,Swiss Red Cross,,1,1,spending,incoming,2433602
-International Federation of Red Cross and Red Crescent Societies,90,Switzerland - Private Donors,,1,1,spending,incoming,2941
-International Federation of Red Cross and Red Crescent Societies,90,T1 Entertainment & Sports,,1,1,spending,incoming,12291
-International Federation of Red Cross and Red Crescent Societies,90,Taiwan Red Cross Organisation,,1,1,spending,incoming,69181
-International Federation of Red Cross and Red Crescent Societies,90,Telekom Austria AG,,1,1,spending,incoming,24417
-International Federation of Red Cross and Red Crescent Societies,90,The Burberry Foundation,,1,1,spending,incoming,114381
-International Federation of Red Cross and Red Crescent Societies,90,The Canadian Red Cross Society,,1,1,spending,incoming,16824682
-International Federation of Red Cross and Red Crescent Societies,90,The Netherlands Red Cross,,1,1,spending,incoming,25801242
-International Federation of Red Cross and Red Crescent Societies,90,The Republic of Cyprus,,1,1,spending,incoming,33086
-International Federation of Red Cross and Red Crescent Societies,90,The Republic of Korea National Red Cross,,1,1,spending,incoming,1093173
-International Federation of Red Cross and Red Crescent Societies,90,The Republic of the Philippines,,1,1,spending,incoming,106475
-International Federation of Red Cross and Red Crescent Societies,90,Thermo Fisher Scientific,,1,1,spending,incoming,799
-International Federation of Red Cross and Red Crescent Societies,90,Tokyo Electron Limited (TEL),,1,1,spending,incoming,1022770
-International Federation of Red Cross and Red Crescent Societies,90,Tory Burch UK,,1,1,spending,incoming,13092
-International Federation of Red Cross and Red Crescent Societies,90,Turkish Red Crescent Society,,1,1,spending,incoming,22622
-International Federation of Red Cross and Red Crescent Societies,90,UNICEF - United Nations Children's Fund,,1,1,spending,incoming,33956
-International Federation of Red Cross and Red Crescent Societies,90,UPS foundation,,1,1,spending,incoming,55882
-International Federation of Red Cross and Red Crescent Societies,90,Unidentified donor,,1,1,spending,incoming,64043
-International Federation of Red Cross and Red Crescent Societies,90,United States - Private Donors,,1,1,spending,incoming,1205
-International Federation of Red Cross and Red Crescent Societies,90,United States Government - PRM,,1,1,spending,incoming,286089
-International Federation of Red Cross and Red Crescent Societies,90,United States Government - USAID,,1,1,spending,incoming,14493472
-International Federation of Red Cross and Red Crescent Societies,90,Université de Management de Suisse,,1,1,spending,incoming,61014
-International Federation of Red Cross and Red Crescent Societies,90,Vanguard,,1,1,spending,incoming,128
-International Federation of Red Cross and Red Crescent Societies,90,WHO - World Health Organization,,1,1,spending,incoming,109780
-International Federation of Red Cross and Red Crescent Societies,90,West Coast University,,1,1,spending,incoming,49094
-International Federation of Red Cross and Red Crescent Societies,90,World Bank,,1,1,spending,incoming,31745
-International Federation of Red Cross and Red Crescent Societies,90,YourCause LLC,,1,1,spending,incoming,311
-Irish Aid,10,,World Health Organization (WHO),0,1,spending,outgoing,547500
-Multilateral Investment Fund (MIF),40,,(unspecified org),0,0,commitments,outgoing,12450000
-Multilateral Investment Fund (MIF),40,,(unspecified org),0,0,spending,outgoing,4850000
-Multilateral Investment Fund (MIF),40,,(unspecified org),0,1,commitments,outgoing,600000
-Multilateral Investment Fund (MIF),40,,(unspecified org),0,1,spending,outgoing,150000
+Fondation Hirondelle,21,Danish Refugee Council,,1,1,commitments,incoming,354200
+Fondation Hirondelle,21,Danish Refugee Council,,1,1,spending,incoming,152793
+"Foreign, Commonwealth and Development Office",10,,Action Against Hunger (UK),1,1,commitments,outgoing,3704100
+"Foreign, Commonwealth and Development Office",10,,Action Against Hunger (UK),1,1,spending,outgoing,3755523
+"Foreign, Commonwealth and Development Office",10,,BBC Media Action,0,0,commitments,outgoing,759192
+"Foreign, Commonwealth and Development Office",10,,BBC Media Action,0,0,spending,outgoing,302222
+"Foreign, Commonwealth and Development Office",10,,British Red Cross,0,0,commitments,outgoing,46947300
+"Foreign, Commonwealth and Development Office",10,,British Red Cross,0,0,spending,outgoing,47417600
+"Foreign, Commonwealth and Development Office",10,,CANADEM,0,0,commitments,outgoing,1194021
+"Foreign, Commonwealth and Development Office",10,,CANADEM,0,0,spending,outgoing,630451
+"Foreign, Commonwealth and Development Office",10,,Centre for Employment Initiatives,0,1,commitments,outgoing,134526
+"Foreign, Commonwealth and Development Office",10,,Centre for Employment Initiatives,0,1,spending,outgoing,56155
+"Foreign, Commonwealth and Development Office",10,,Correction,0,0,spending,outgoing,-88379
+"Foreign, Commonwealth and Development Office",10,,Correction,1,0,spending,outgoing,6204
+"Foreign, Commonwealth and Development Office",10,,Correction,1,1,commitments,outgoing,3963782
+"Foreign, Commonwealth and Development Office",10,,Correction,1,1,spending,outgoing,1814722
+"Foreign, Commonwealth and Development Office",10,,Danish Refugee Council,0,1,commitments,outgoing,2466400
+"Foreign, Commonwealth and Development Office",10,,Danish Refugee Council,0,1,spending,outgoing,2093940
+"Foreign, Commonwealth and Development Office",10,,Enterprise LSE Ltd,1,0,spending,outgoing,102575
+"Foreign, Commonwealth and Development Office",10,,Ethical Trading Initiative,0,1,commitments,outgoing,681087
+"Foreign, Commonwealth and Development Office",10,,Ethical Trading Initiative,0,1,spending,outgoing,345742
+"Foreign, Commonwealth and Development Office",10,,Fjelltopp,0,1,spending,outgoing,96045
+"Foreign, Commonwealth and Development Office",10,,GOAL,1,1,commitments,outgoing,4283332
+"Foreign, Commonwealth and Development Office",10,,GOAL,1,1,spending,outgoing,4412882
+"Foreign, Commonwealth and Development Office",10,,GiveDirectly,0,0,commitments,outgoing,6316907
+"Foreign, Commonwealth and Development Office",10,,GiveDirectly,0,0,spending,outgoing,6607360
+"Foreign, Commonwealth and Development Office",10,,International Bank for Reconstruction and Development (IBRD),0,0,commitments,outgoing,5556800
+"Foreign, Commonwealth and Development Office",10,,International Bank for Reconstruction and Development (IBRD),0,0,spending,outgoing,5489200
+"Foreign, Commonwealth and Development Office",10,,International Committee of the Red Cross,0,1,commitments,outgoing,21255100
+"Foreign, Commonwealth and Development Office",10,,International Committee of the Red Cross,0,1,spending,outgoing,20989900
+"Foreign, Commonwealth and Development Office",10,,International Organization for Migration (IOM),0,1,commitments,outgoing,1806538
+"Foreign, Commonwealth and Development Office",10,,International Organization for Migration (IOM),0,1,spending,outgoing,1823217
+"Foreign, Commonwealth and Development Office",10,,National University of Singapore,0,1,spending,outgoing,41187
+"Foreign, Commonwealth and Development Office",10,,Palladium International Ltd (UK),0,0,commitments,outgoing,964661
+"Foreign, Commonwealth and Development Office",10,,Palladium International Ltd (UK),0,0,spending,outgoing,861072
+"Foreign, Commonwealth and Development Office",10,,Palladium International Ltd (UK),1,0,commitments,outgoing,59631
+"Foreign, Commonwealth and Development Office",10,,Palladium International Ltd (UK),1,0,spending,outgoing,68675
+"Foreign, Commonwealth and Development Office",10,,Pitcairn Islands Office,0,0,commitments,outgoing,1115400
+"Foreign, Commonwealth and Development Office",10,,Pitcairn Islands Office,0,0,spending,outgoing,1143717
+"Foreign, Commonwealth and Development Office",10,,RedR,0,0,commitments,outgoing,67548
+"Foreign, Commonwealth and Development Office",10,,RedR,0,0,spending,outgoing,46467
+"Foreign, Commonwealth and Development Office",10,,SELCO Foundation,0,0,spending,outgoing,337248
+"Foreign, Commonwealth and Development Office",10,,Social Fund for Development,0,1,spending,outgoing,10801631
+"Foreign, Commonwealth and Development Office",10,,St Helena Government,0,0,commitments,outgoing,3632836
+"Foreign, Commonwealth and Development Office",10,,St Helena Government,0,0,spending,outgoing,3767186
+"Foreign, Commonwealth and Development Office",10,,Titan Airways,0,0,spending,outgoing,234106
+"Foreign, Commonwealth and Development Office",10,,Tristan da Cunha Government,0,0,commitments,outgoing,799440
+"Foreign, Commonwealth and Development Office",10,,Tristan da Cunha Government,0,0,spending,outgoing,282645
+"Foreign, Commonwealth and Development Office",10,,UK-Med,0,0,commitments,outgoing,1894325
+"Foreign, Commonwealth and Development Office",10,,UK-Med,0,0,spending,outgoing,1172113
+"Foreign, Commonwealth and Development Office",10,,UK-Med,1,1,commitments,outgoing,972139
+"Foreign, Commonwealth and Development Office",10,,UK-Med,1,1,spending,outgoing,452611
+"Foreign, Commonwealth and Development Office",10,,United Nations Children's Fund (UNICEF),0,0,commitments,outgoing,24580500
+"Foreign, Commonwealth and Development Office",10,,United Nations Children's Fund (UNICEF),0,0,spending,outgoing,24511500
+"Foreign, Commonwealth and Development Office",10,,United Nations Children's Fund (UNICEF),0,1,commitments,outgoing,2534240
+"Foreign, Commonwealth and Development Office",10,,United Nations Children's Fund (UNICEF),0,1,spending,outgoing,15641526
+"Foreign, Commonwealth and Development Office",10,,United Nations Children's Fund (UNICEF),1,0,commitments,outgoing,1307677
+"Foreign, Commonwealth and Development Office",10,,United Nations Children's Fund (UNICEF),1,0,spending,outgoing,1296499
+"Foreign, Commonwealth and Development Office",10,,United Nations Children's Fund (UNICEF),1,1,commitments,outgoing,8576043
+"Foreign, Commonwealth and Development Office",10,,United Nations Children's Fund (UNICEF),1,1,spending,outgoing,8539927
+"Foreign, Commonwealth and Development Office",10,,United Nations High Commissioner for Refugees (UNHCR),0,1,commitments,outgoing,24934000
+"Foreign, Commonwealth and Development Office",10,,United Nations High Commissioner for Refugees (UNHCR),0,1,spending,outgoing,25052000
+"Foreign, Commonwealth and Development Office",10,,United Nations High Commissioner for Refugees (UNHCR),1,1,commitments,outgoing,10438470
+"Foreign, Commonwealth and Development Office",10,,United Nations High Commissioner for Refugees (UNHCR),1,1,spending,outgoing,10764040
+"Foreign, Commonwealth and Development Office",10,,United Nations Office for the Coordination of Humanitarian Affairs (OCHA),1,1,commitments,outgoing,2425800
+"Foreign, Commonwealth and Development Office",10,,United Nations Office for the Coordination of Humanitarian Affairs (OCHA),1,1,spending,outgoing,4939200
+"Foreign, Commonwealth and Development Office",10,,United Nations Population Fund (UNFPA),0,1,commitments,outgoing,12467000
+"Foreign, Commonwealth and Development Office",10,,United Nations Population Fund (UNFPA),0,1,spending,outgoing,12430000
+"Foreign, Commonwealth and Development Office",10,,United States Agency for International Development (USAID),0,1,commitments,outgoing,621800
+"Foreign, Commonwealth and Development Office",10,,United States Agency for International Development (USAID),0,1,spending,outgoing,609700
+"Foreign, Commonwealth and Development Office",10,,World Food Programme (WFP),0,1,commitments,outgoing,18700500
+"Foreign, Commonwealth and Development Office",10,,World Food Programme (WFP),0,1,spending,outgoing,18450380
+"Foreign, Commonwealth and Development Office",10,,World Health Organization (WHO),0,0,commitments,outgoing,87502500
+"Foreign, Commonwealth and Development Office",10,,World Health Organization (WHO),0,0,spending,outgoing,85880500
+HelpAge International,21,,(unspecified org),0,1,spending,outgoing,25040
+HelpAge International,21,,(unspecified org),1,0,spending,outgoing,310715
+HelpAge International,21,,(unspecified org),1,1,spending,outgoing,436621
+HelpAge International,21,,"African Woman's AIDS Working Group (AFRIWAG), Tanzania",1,0,spending,outgoing,23496
+HelpAge International,21,,"Good Samaritan Social Service Trust, Tanzania",1,0,spending,outgoing,12181
+HelpAge International,21,,"Jumuhia ya Wazee (JUWAZA), Zanzibar",1,0,spending,outgoing,19066
+HelpAge International,21,,MAPERECE - Magu Poverty focus on Older People's Rehabilitation Center (Tanzania),1,0,spending,outgoing,23935
+HelpAge International,21,,"MOROPEO - Morogoro Elderly Peoples Organisation, Tanzania",1,0,spending,outgoing,14913
+HelpAge International,21,,"Relief to Development Society, Tanzania",1,0,spending,outgoing,14431
+HelpAge International,21,,"Saidia Wazee Dodoma, Tanzania",1,0,spending,outgoing,14872
+HelpAge International,21,,"Smart Youth Effort For Advanced Community, Tanzania",1,0,spending,outgoing,7910
+HelpAge International,21,Age International,,1,0,spending,incoming,414697
+HelpAge International,21,Age International,,1,1,spending,incoming,561803
+HelpAge International,21,HelpAge Canada,,0,1,spending,incoming,21328
+Oxfam Novib,21,,Center for Education Promotion and CEPEW,0,0,spending,outgoing,16862
+PARADIGM INITIATIVE,21,,(unspecified org),1,0,spending,outgoing,-189449
+PARADIGM INITIATIVE,21,,(unspecified org),1,1,spending,outgoing,-46691
+PARADIGM INITIATIVE,21,(unspecified org),,1,0,spending,incoming,395662
+Practical Action,21,,(unspecified org),0,0,spending,outgoing,375675
+Practical Action,21,,(unspecified org),0,1,spending,outgoing,15592
+Practical Action,21,AECF (Africa Enterprise Challenge Fund),,0,1,spending,incoming,18100
+Practical Action,21,Bill and Melinda Gates Foundation (BMGF),,0,0,spending,incoming,6241
+Practical Action,21,Bill and Melinda Gates Foundation (BMGF),,0,1,spending,incoming,0
+Practical Action,21,Poul Due Jensen Foundation (Grundfos),,0,1,spending,incoming,348389
+Save The Children UK,21,,(unspecified org),0,0,spending,outgoing,57605
+Save The Children UK,21,,(unspecified org),1,0,spending,outgoing,10876
+Save The Children UK,21,,(unspecified org),1,1,commitments,outgoing,204930
+Save The Children UK,21,,(unspecified org),1,1,spending,outgoing,5127555
+Save The Children UK,21,(unspecified org),,0,0,spending,incoming,2458548
+Save The Children UK,21,(unspecified org),,0,1,spending,incoming,-59397
+Save The Children UK,21,(unspecified org),,1,0,spending,incoming,109990
+Save The Children UK,21,(unspecified org),,1,1,spending,incoming,5704749
+Swiss Agency for Development and Cooperation (SDC),10,,(unspecified org),0,0,commitments,outgoing,6524752
+Swiss Agency for Development and Cooperation (SDC),10,,(unspecified org),0,0,spending,outgoing,5404789
+Swiss Agency for Development and Cooperation (SDC),10,,(unspecified org),0,1,commitments,outgoing,268238041
+Swiss Agency for Development and Cooperation (SDC),10,,(unspecified org),0,1,spending,outgoing,41553895
 Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,,(unspecified org),1,0,spending,outgoing,143252
-Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,GOVERNMENT OF NETHERLANDS,,0,1,spending,incoming,1198000
-The Global Alliance for Improved Nutrition,21,,(unspecified org),0,0,spending,outgoing,6893177
-Unitaid,40,,(unspecified org),0,1,spending,outgoing,172532
-Unitaid,40,,Barcelona Institute for Global Health (ISGLOBAL),0,0,spending,outgoing,1264228
-Unitaid,40,,Barcelona Institute for Global Health (ISGlobal),0,0,spending,outgoing,4610001
-Unitaid,40,,Foundation for Innovative New Diagnostic,0,0,spending,outgoing,2000000
-Unitaid,40,,Foundation for Innovative New Diagnostics (FIND),0,0,spending,outgoing,5162594
-Unitaid,40,,ISGLOBAL,0,0,spending,outgoing,600000
-Unitaid,40,,Institut Bouisson Bertrand (IBB),0,0,spending,outgoing,315000
-Unitaid,40,,MTV Staying Alive Foundation,0,0,spending,outgoing,300000
-Unitaid,40,,PATH,0,0,spending,outgoing,1371000
-Unitaid,40,,Partners in Health,0,0,spending,outgoing,1453609
-Unitaid,40,,Program for Appropriate Technology in Health,0,0,spending,outgoing,634786
-Unitaid,40,,Staying Alive Foundation,0,0,spending,outgoing,802000
-Unitaid,40,,Staying Alive Foundation MTV Shuga,0,0,spending,outgoing,945000
-Unitaid,40,,Stichting Wemos,0,0,spending,outgoing,139067
-Unitaid,40,,UNICEF,0,1,spending,outgoing,4000000
-Unitaid,40,,University of New South Wales,0,0,spending,outgoing,935000
-Unitaid,40,,University of New South Wales on behalf of the Kirby Institute,0,0,spending,outgoing,219232
-Unitaid,40,,WEMOS,0,0,spending,outgoing,558000
-Unitaid,40,,Wemos,0,0,commitments,outgoing,697067
-United Nations Development Programme,40,,(unspecified org),0,0,commitments,outgoing,1122221
-United Nations Development Programme,40,,(unspecified org),0,0,spending,outgoing,269097
-United Nations Development Programme,40,,(unspecified org),0,1,commitments,outgoing,333285194
-United Nations Development Programme,40,,(unspecified org),0,1,spending,outgoing,75343013
-United Nations Development Programme,40,,(unspecified org),1,1,commitments,outgoing,160853962
-United Nations Development Programme,40,,(unspecified org),1,1,spending,outgoing,51307099
-United Nations Development Programme,40,,Government of Argentina,0,1,spending,outgoing,1869
-United Nations Development Programme,40,,Government of Central African Republic,0,1,spending,outgoing,1828049
-United Nations Development Programme,40,,Government of China,0,1,spending,outgoing,675315
-United Nations Development Programme,40,,Government of Egypt,0,1,spending,outgoing,534215
-United Nations Development Programme,40,,Government of El Salvador,1,1,spending,outgoing,83708
-United Nations Development Programme,40,,Government of Jamaica,0,1,spending,outgoing,41169
-United Nations Development Programme,40,,Government of Lao People's Democratic Republ,0,1,spending,outgoing,524944
-United Nations Development Programme,40,,Government of Libya,1,1,spending,outgoing,6514
-United Nations Development Programme,40,,Government of Mali,0,1,spending,outgoing,353517
-United Nations Development Programme,40,,Government of Prog for Palestinian People,0,1,spending,outgoing,418285
-United Nations Development Programme,40,,Government of Sao Tome and Principe,0,1,spending,outgoing,34416
-United Nations Development Programme,40,,Government of Turkmenistan,0,1,spending,outgoing,278026
-United Nations Development Programme,40,,Government of Uruguay,0,1,spending,outgoing,15357
-United Nations Development Programme,40,,Government of Viet Nam,0,1,spending,outgoing,6580436
-United Nations Development Programme,40,,Government of Yemen,1,1,spending,outgoing,59829109
-United Nations Development Programme,40,,Government of Zimbabwe,0,1,spending,outgoing,8000776
-United Nations Development Programme,40,,UN Agency,0,1,spending,outgoing,163997
-United Nations Development Programme,40,ARG-GOBIERNO,,0,1,commitments,incoming,89084
-United Nations Development Programme,40,Austrian Development Agency,,0,1,commitments,incoming,2200221
-United Nations Development Programme,40,Austrian Development Agency,,0,1,spending,incoming,108582
-United Nations Development Programme,40,BOL-MINISTERIO DE SALUD Y PREV,,1,1,commitments,incoming,9552111
-United Nations Development Programme,40,BOL-MINISTERIO DE SALUD Y PREV,,1,1,spending,incoming,11943652
-United Nations Development Programme,40,CHI-MINISTERIO DE PLANIFICACIO,,0,1,commitments,incoming,534147
-United Nations Development Programme,40,CHI-MINISTERIO DE PLANIFICACIO,,0,1,spending,incoming,95777
-United Nations Development Programme,40,CPR-THE GOVERMENT OF KOREA,,1,1,commitments,incoming,1741141
-United Nations Development Programme,40,CPR-THE GOVERMENT OF KOREA,,1,1,spending,incoming,693000
-United Nations Development Programme,40,DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID),,0,1,commitments,incoming,1654328
-United Nations Development Programme,40,"Department of Foreign Affairs, Trade and Development",,0,1,commitments,incoming,3623623
-United Nations Development Programme,40,"Department of Foreign Affairs, Trade and Development",,0,1,spending,incoming,30941
-United Nations Development Programme,40,EUROPEAN COMMISSION,,0,1,commitments,incoming,218841
-United Nations Development Programme,40,EUROPEAN COMMISSION,,1,1,commitments,incoming,2631715
-United Nations Development Programme,40,EUROPEAN COMMISSION,,1,1,spending,incoming,-389466
-United Nations Development Programme,40,Egypt - Ministry of State for Environmental Affairs,,0,1,commitments,incoming,3691083
-United Nations Development Programme,40,"Empresa Eléctrica Provincial Galápagos, Ecuador",,0,1,commitments,incoming,1940
-United Nations Development Programme,40,"Empresa Eléctrica Provincial Galápagos, Ecuador",,0,1,spending,incoming,1868
-United Nations Development Programme,40,Foreign & Commonwealth Office,,0,1,commitments,incoming,55989
-United Nations Development Programme,40,Foreign & Commonwealth Office,,1,1,commitments,incoming,965252
-United Nations Development Programme,40,Foreign & Commonwealth Office,,1,1,spending,incoming,965251
-United Nations Development Programme,40,Forest Carbon Partnership Facility Trustee,,0,1,commitments,incoming,3124796
-United Nations Development Programme,40,"GLOBAL FUND TO FIGHT AIDS, TUBERCULOSIS",,0,1,commitments,incoming,19250048
-United Nations Development Programme,40,"GLOBAL FUND TO FIGHT AIDS, TUBERCULOSIS",,0,1,spending,incoming,-3948223
-United Nations Development Programme,40,GOBIERNO AUTONOMO DESCENTRALIZADO DE LA PROVINCIA DEL CARCHI,,0,1,commitments,incoming,110
-United Nations Development Programme,40,GOVERNMENT OF AUSTRALIA,,0,1,commitments,incoming,7445332
-United Nations Development Programme,40,GOVERNMENT OF AUSTRALIA,,0,1,spending,incoming,7274651
-United Nations Development Programme,40,GOVERNMENT OF AUSTRALIA,,1,1,commitments,incoming,26582
-United Nations Development Programme,40,GOVERNMENT OF AUSTRALIA,,1,1,spending,incoming,22279
-United Nations Development Programme,40,GOVERNMENT OF CANADA,,0,1,commitments,incoming,4944234
-United Nations Development Programme,40,GOVERNMENT OF CHINA,,0,1,commitments,incoming,1680699
-United Nations Development Programme,40,GOVERNMENT OF CHINA,,0,1,spending,incoming,279916
-United Nations Development Programme,40,GOVERNMENT OF FINLAND,,0,1,commitments,incoming,24331
-United Nations Development Programme,40,GOVERNMENT OF FINLAND,,0,1,spending,incoming,24411
-United Nations Development Programme,40,GOVERNMENT OF GERMANY,,1,1,commitments,incoming,22528438
-United Nations Development Programme,40,GOVERNMENT OF GERMANY,,1,1,spending,incoming,2389486
-United Nations Development Programme,40,GOVERNMENT OF ITALY,,1,1,commitments,incoming,981730
-United Nations Development Programme,40,GOVERNMENT OF ITALY,,1,1,spending,incoming,542888
-United Nations Development Programme,40,GOVERNMENT OF JAPAN,,0,1,commitments,incoming,3942523
-United Nations Development Programme,40,GOVERNMENT OF JAPAN,,1,1,commitments,incoming,4779516
-United Nations Development Programme,40,GOVERNMENT OF LIBYAN ARAB JAMAHIRIYA,,1,1,commitments,incoming,6473208
-United Nations Development Programme,40,GOVERNMENT OF MAURITIUS,,1,1,commitments,incoming,29640
-United Nations Development Programme,40,GOVERNMENT OF NETHERLANDS,,0,1,commitments,incoming,345410
-United Nations Development Programme,40,GOVERNMENT OF NETHERLANDS,,1,1,commitments,incoming,500303
-United Nations Development Programme,40,GOVERNMENT OF NORWAY,,1,1,commitments,incoming,1947042
-United Nations Development Programme,40,GOVERNMENT OF NORWAY,,1,1,spending,incoming,519697
-United Nations Development Programme,40,GOVERNMENT OF PANAMA,,0,1,commitments,incoming,19084784
-United Nations Development Programme,40,GOVERNMENT OF RUSSIAN FEDERATION,,0,1,commitments,incoming,1435104
-United Nations Development Programme,40,GOVERNMENT OF SAUDI ARABIA,,0,1,commitments,incoming,21485007
-United Nations Development Programme,40,GOVERNMENT OF SAUDI ARABIA,,0,1,spending,incoming,7886900
-United Nations Development Programme,40,GOVERNMENT OF SLOVAK REPUBLIC,,0,1,commitments,incoming,544741
-United Nations Development Programme,40,GOVERNMENT OF SWITZERLAND,,0,1,commitments,incoming,1285390
-United Nations Development Programme,40,GOVERNMENT OF SWITZERLAND,,0,1,spending,incoming,100000
-United Nations Development Programme,40,GOVERNMENT OF SWITZERLAND,,1,1,commitments,incoming,308568
-United Nations Development Programme,40,GOVERNMENT OF TURKEY,,0,1,commitments,incoming,646039
-United Nations Development Programme,40,GOVERNMENT OF TURKMENISTAN,,0,1,commitments,incoming,1370596
-United Nations Development Programme,40,GOVERNMENT OF TURKMENISTAN,,0,1,spending,incoming,705444
-United Nations Development Programme,40,GOVERNMENT OF TURKMENISTAN,,1,1,commitments,incoming,835653
-United Nations Development Programme,40,GOVERNMENT OF TURKMENISTAN,,1,1,spending,incoming,655268
-United Nations Development Programme,40,GOVERNMENT OF UNITED ARAB EMIRATES,,0,1,commitments,incoming,277013
-United Nations Development Programme,40,GOVERNMENT OF ZIMBABWE,,0,1,commitments,incoming,1013719
-United Nations Development Programme,40,Global Environment Fund Truste,,0,1,commitments,incoming,16922949
-United Nations Development Programme,40,Global Environment Fund Truste,,1,1,commitments,incoming,1146079
-United Nations Development Programme,40,Haifu International Finance Holding Group Limited (HIFC),,0,1,commitments,incoming,1806572
-United Nations Development Programme,40,INTERNATIONAL DEVELOPMENT AGENCY,,1,1,commitments,incoming,89634647
-United Nations Development Programme,40,INTERNATIONAL DEVELOPMENT AGENCY,,1,1,spending,incoming,952128
-United Nations Development Programme,40,INTERNATIONAL ORGANIZATION FOR MIGRATION,,0,1,commitments,incoming,7444
-United Nations Development Programme,40,Irish Aid,,0,1,commitments,incoming,349056
-United Nations Development Programme,40,Irish Aid,,0,1,spending,incoming,126159
-United Nations Development Programme,40,KOREA INTERN. COOPERATION AGENCY (KOICA),,0,1,commitments,incoming,15757605
-United Nations Development Programme,40,Korea Environment Corporation,,0,1,commitments,incoming,177721
-United Nations Development Programme,40,MDTFO CAR UN Window,,0,1,commitments,incoming,23408
-United Nations Development Programme,40,MDTFO/JP_UNDG_HAITI_RECONSTRUC,,0,1,commitments,incoming,8498079
-United Nations Development Programme,40,"MINISTRY OF COMMERCE, CHINA",,0,1,commitments,incoming,1322420
-United Nations Development Programme,40,"MINISTRY OF FOREIGN AFFAIRS, NORWAY",,0,1,commitments,incoming,2292731
-United Nations Development Programme,40,"MINISTRY OF FOREIGN AFFAIRS, NORWAY",,0,1,spending,incoming,-163949
-United Nations Development Programme,40,MINISTRY OF HEALTH OF TURKMENISTAN,,0,1,commitments,incoming,8085760
-United Nations Development Programme,40,MINISTRY OF HEALTH OF TURKMENISTAN,,0,1,spending,incoming,5473480
-United Nations Development Programme,40,MONTREAL PROTOCOL,,0,1,commitments,incoming,23720
-United Nations Development Programme,40,MPTFO - Joint SDG Fund (previously known as The Joint Fund for the 2030 Agenda),,0,1,commitments,incoming,17000
-United Nations Development Programme,40,MPTFO - Joint SDG Fund (previously known as The Joint Fund for the 2030 Agenda),,0,1,spending,incoming,17000
-United Nations Development Programme,40,MPTFO-Spotlight Initiative Fund (SIF00),,1,1,commitments,incoming,2154603
-United Nations Development Programme,40,MPTFO-UN COVID-19 Response & Recovery Fund,,0,0,commitments,incoming,229996
-United Nations Development Programme,40,MPTFO-UN COVID-19 Response & Recovery Fund,,0,0,spending,incoming,229996
-United Nations Development Programme,40,MPTFO-UN COVID-19 Response & Recovery Fund,,0,1,commitments,incoming,119915
-United Nations Development Programme,40,MPTFO-UN COVID-19 Response & Recovery Fund,,0,1,spending,incoming,127500
-United Nations Development Programme,40,MPTFO-UN Haiti Cholera Response MPTF,,0,1,commitments,incoming,116621
-United Nations Development Programme,40,"Ministry of Finance, Slovak Republic",,0,1,commitments,incoming,4540351
-United Nations Development Programme,40,NON-GOVERNMENTAL ORGANIZATION,,1,1,commitments,incoming,12616
-United Nations Development Programme,40,NON-GOVERNMENTAL ORGANIZATION,,1,1,spending,incoming,12616
-United Nations Development Programme,40,Nam Teun 2 Power Company Ltd,,0,1,commitments,incoming,105411
-United Nations Development Programme,40,PAN-GOVERNMENT,,0,1,commitments,incoming,38903948
-United Nations Development Programme,40,PAN-GOVERNMENT,,0,1,spending,incoming,7824194
-United Nations Development Programme,40,PAR-GOBIERNO DEL PARAGUAY,,0,1,commitments,incoming,5549810
-United Nations Development Programme,40,PAR-GOBIERNO DEL PARAGUAY,,0,1,spending,incoming,1439011
-United Nations Development Programme,40,Peacebuilding Fund,,0,1,commitments,incoming,2170462
-United Nations Development Programme,40,Tencent Holdings Limited,,0,1,commitments,incoming,9600
-United Nations Development Programme,40,UN Tr Fund for Human Security,,0,1,commitments,incoming,342050
-United Nations Development Programme,40,UNDP Funding Windows,,0,0,commitments,incoming,515600
-United Nations Development Programme,40,UNITED NATIONS POPULATION FUND,,1,1,commitments,incoming,48522
-United Nations Development Programme,40,UNITED NATIONS POPULATION FUND,,1,1,spending,incoming,30000
-United Nations Development Programme,40,URU-AGENCIA URUGUAYA DE COOPERACION INTERNACIONAL,,1,1,commitments,incoming,2027797
-United Nations Development Programme,40,URU-AGENCIA URUGUAYA DE COOPERACION INTERNACIONAL,,1,1,spending,incoming,1592067
-United Nations Development Programme,40,US International Narcotics and Law Enforcement Affairs,,0,1,commitments,incoming,6099708
-United Nations Development Programme,40,US International Narcotics and Law Enforcement Affairs,,1,1,commitments,incoming,639
-United Nations Development Programme,40,United Nations Mission for Justice Support in Haiti,,0,1,commitments,incoming,104826
-World Bank Trust Funds (WBTF),40,,JORDAN,0,1,spending,outgoing,24163903
-World Bank Trust Funds (WBTF),40,,"MOLDOVA, REPUBLIC OF",0,0,spending,outgoing,273030
-World Bank Trust Funds (WBTF),40,,UKRAINE,0,0,spending,outgoing,899694
-World Bank Trust Funds (WBTF),40,Jordan Inclusive Growth and Economic Opportunities Multi-Donor Trust Fund,,0,1,commitments,incoming,24170000
-World Bank Trust Funds (WBTF),40,Multi Donor Programmatic Trust Fund for Europe and Central Asia Region Capacity Development,,0,0,commitments,incoming,1172724
-World Bank Trust Funds (WBTF),40,Partnership for Support to the Implementation of Ugandaâ€™s National Development Plans,,0,0,commitments,incoming,320000
-World Bank Trust Funds (WBTF),40,Strengthening Mozambique's Social Protection System Multi-Donor Trust Fund,,0,1,commitments,incoming,26200000
+Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,Netherlands - Ministry of Foreign Affairs,,0,1,spending,incoming,1198000
+United Nations Development Programme,40,,(unspecified org),0,0,commitments,outgoing,1906598
+United Nations Development Programme,40,,(unspecified org),0,0,spending,outgoing,1430
+United Nations Development Programme,40,,(unspecified org),0,1,commitments,outgoing,2480378
+United Nations Development Programme,40,,(unspecified org),0,1,spending,outgoing,8229
+United Nations Development Programme,40,ALCALDIA DE CHIA,,0,0,commitments,incoming,194
+United Nations Development Programme,40,AYUDA EN ACCION MEXICO,,0,0,commitments,incoming,144506
+United Nations Development Programme,40,BRITISH EMBASSY,,0,1,commitments,incoming,12000
+United Nations Development Programme,40,BRITISH EMBASSY,,0,1,spending,incoming,11999
+United Nations Development Programme,40,FOOD AND AGRICULTURE ORGANIZATION OF THE UNITED NATIONS,,0,1,commitments,incoming,69940
+United Nations Development Programme,40,FOOD AND AGRICULTURE ORGANIZATION OF THE UNITED NATIONS,,0,1,spending,incoming,69940
+United Nations Development Programme,40,Foreign & Commonwealth Office,,0,1,commitments,incoming,3077
+United Nations Development Programme,40,GOBIERNO DEL ESTADO DE MORELOS,,0,0,commitments,incoming,4080
+United Nations Development Programme,40,"GOVERNMENT OF CAMEROON, REPUBLIC OF",,0,1,commitments,incoming,1820714
+United Nations Development Programme,40,"GOVERNMENT OF CAMEROON, REPUBLIC OF",,0,1,spending,incoming,1820714
+United Nations Development Programme,40,Gobierno del Estado de Chiapas,,0,0,commitments,incoming,28152
+United Nations Development Programme,40,International Development Research Centre,,0,0,commitments,incoming,1
+United Nations Development Programme,40,International Development Research Centre,,0,0,spending,incoming,417045
+United Nations Development Programme,40,MPTFO - Joint SDG Fund (previously known as The Joint Fund for the 2030 Agenda),,0,1,commitments,incoming,140899
+United Nations Development Programme,40,MPTFO - Joint SDG Fund (previously known as The Joint Fund for the 2030 Agenda),,0,1,spending,incoming,150762
+United Nations Development Programme,40,UNITED NATIONS FOUNDATION,,0,0,commitments,incoming,604559
+United Nations Development Programme,40,UNITED NATIONS FOUNDATION,,0,0,spending,incoming,368317
+United Nations Development Programme,40,World Vision,,0,0,commitments,incoming,193987
+United Nations Development Programme,40,Z Zurich Foundation,,0,0,commitments,incoming,3619
+Women's Fund Asia,23,,(unspecified org),0,0,spending,outgoing,101581
+Women's Fund Asia,23,,(unspecified org),0,1,spending,outgoing,28363

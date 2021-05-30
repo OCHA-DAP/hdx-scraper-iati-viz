@@ -5,9 +5,7 @@ dportal:
   limit: 1000
   url: "http://d-portal.org/dquery?form=xml&sql=%s"
   query: "
-SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND
-    (xson->>'/reporting-org@secondary-reporter'='0' OR xson->>'/reporting-org@secondary-reporter'='' OR
-    xson->>'/reporting-org@secondary-reporter' IS NULL) AND aid IN (
+SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
     SELECT aid FROM xson WHERE
     (
         root='/iati-activities/iati-activity/humanitarian-scope' AND

@@ -35,10 +35,13 @@ class Activity:
     @staticmethod
     def get_activity(configuration, dactivity):
         """
-        We exclude activities from certain sorts of organisations
-        where the data is very poor quality. We also exclude hierarchy=1
-        activities for UNDP (XM-DAC-41114) and FCDO (GB-GOV-1).
+        We exclude activities from secondary reporters and certain sorts
+        of organisations where the data is very poor quality. We also
+        exclude hierarchy=1 activities for UNDP (XM-DAC-41114) and FCDO (GB-GOV-1).
         """
+        # Skip activities from a secondary reporter
+        if dactivity.secondary_reporter:
+            return None, len(dactivity.transactions)
         filters_configuration = configuration['filters']
         reporting_org_ref = dactivity.reporting_org.ref
         # Filter out certain orgs
