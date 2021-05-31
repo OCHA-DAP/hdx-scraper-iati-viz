@@ -3,6 +3,7 @@ import logging
 import re
 
 import exchangerates
+import hxl
 from hdx.location.country import Country
 from hdx.utilities.dateparse import parse_date
 from hdx.utilities.loader import load_json
@@ -26,6 +27,8 @@ class Lookups:
     default_country = None
     fx_rates = None
     fallback_rates = None
+    filter_reporting_orgs = list()
+    filter_reporting_orgs_children = list()
 
     @classmethod
     def setup(cls, configuration, retriever):
@@ -45,6 +48,21 @@ class Lookups:
         rjson = retriever.retrieve_json(configuration['fallback_rates_url'], 'fallbackrates.json',
                                         'fallback exchange rates', True)
         cls.fallback_rates = rjson['rates']
+        for row in hxl.data(configuration['filters_url']):
+            org_id = row.get('#org+reporting+id')
+            if org_id:
+                cls.filter_reporting_orgs.append(org_id)
+            org_id = row.get('#org+reporting_children+id')
+            if org_id:
+                cls.filter_reporting_orgs_children.append(org_id)
+
+    @classmethod
+    def is_filter_reporting_orgs(cls, orgid):
+        return True if orgid in cls.filter_reporting_orgs else False
+
+    @classmethod
+    def is_filter_reporting_orgs_children(cls, orgid):
+        return True if orgid in cls.filter_reporting_orgs_children else False
 
     @classmethod
     def get_org_name(cls, org):

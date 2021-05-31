@@ -42,13 +42,12 @@ class Activity:
         # Skip activities from a secondary reporter
         if dactivity.secondary_reporter:
             return None, len(dactivity.transactions)
-        filters_configuration = configuration['filters']
         reporting_org_ref = dactivity.reporting_org.ref
         # Filter out certain orgs
-        if reporting_org_ref in filters_configuration['reporting_orgs']:
+        if Lookups.is_filter_reporting_orgs(reporting_org_ref):
             return None, len(dactivity.transactions)
         # Filter out eg. UNDP and DFID activities that have children (i.e. filter out h=1)
-        if reporting_org_ref in filters_configuration['reporting_orgs_with_children']:
+        if Lookups.is_filter_reporting_orgs_children(reporting_org_ref):
             if '2' in dactivity.related_activities_by_type:
                 return None, len(dactivity.transactions)
         activity = Activity(dactivity)
@@ -125,15 +124,14 @@ class Activity:
                 # Add to transactions
                 #
 
-                if transaction.net_value is not None:
-                    total_money = int(round(transaction.value * country_percentage * sector_percentage))
-                    net_money = int(round(transaction.net_value * country_percentage * sector_percentage))
+                total_money = int(round(transaction.value * country_percentage * sector_percentage))
+                net_money = int(round(transaction.net_value * country_percentage * sector_percentage))
 
-                    if net_money != 0 or total_money != 0:
-                        # add to transactions
-                        out_transactions.append([transaction.month, self.org, self.org_type, sector_name,
-                                                 country_name, transaction.is_humanitarian, transaction.is_strict,
-                                                 transaction.classification, self.identifier, net_money, total_money])
+                if total_money != 0:
+                    # add to transactions
+                    out_transactions.append([transaction.month, self.org, self.org_type, sector_name,
+                                             country_name, transaction.is_humanitarian, transaction.is_strict,
+                                             transaction.classification, self.identifier, net_money, total_money])
 
     def process(self, this_month, out_flows, out_transactions):
         self.factor_new_money()
@@ -146,5 +144,8 @@ class Activity:
                 skipped += 1
                 continue
             self.add_to_flows(out_flows, transaction)
+            if transaction.net_value is None:
+                skipped += 1
+                continue
             self.generate_split_transactions(out_transactions, transaction)
         return skipped

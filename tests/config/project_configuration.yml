@@ -95,14 +95,9 @@ outputs:
       - "#x_transaction_direction"
       - "#value+total"
 
-filters:
-  reporting_orgs:
-    - "CZ-ICO-25755277" # People in Need: https://iatiregistry.org/publisher/pin
-  reporting_orgs_with_children:  # where hierarchy=1
-    - "XM-DAC-41114"  # UNDP
-    - "GB-GOV-1"  # FCDO
 
 lookups:
+  filters_url: "https://github.com/OCHA-DAP/hdx-scraper-iati-viz/raw/main/tests/config/IATI%20Explorer%20Filters%20-%20Skipped%20Activities.csv"
   org_data: "data/IATIOrganisationIdentifier.json"
   sector_data: "data/dac3-sector-map.json"
   default_org: "(unspecified org)"
