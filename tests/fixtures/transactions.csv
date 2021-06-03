@@ -1,7 +1,7 @@
 Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,Strict?,Transaction type,Activity id,Net money,Total money
 #date+month,#org+name,#org+type,#sector,#country,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_type,#activity+code,#value+net,#value+total
-2020-01,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005765,3000000,3000000
-2020-01,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005765,3000000,3000000
+2020-01,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005765,3000000,3000000
+2020-01,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005765,3000000,3000000
 2020-01,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-19734
 2020-01,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-5525
 2020-01,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-2969
@@ -9,14 +9,14 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2020-01,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,1,spending,NG-CAC-30547-CSSOFE1,0,-13342
 2020-01,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,1,spending,NG-CAC-30547-CSSOFE1,0,-8607
 2020-01,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,0,spending,LK-DRC-GA139-LFS1.2,5000,5000
-2020-02,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005948,39600,39600
-2020-02,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005948,39600,39600
-2020-02,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,commitments,DAC-1601-INV-005839,50000,50000
-2020-02,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,commitments,DAC-1601-INV-005840,250000,250000
-2020-02,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,commitments,DAC-1601-INV-006080,199653,199653
-2020-02,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,spending,DAC-1601-INV-005839,50000,50000
-2020-02,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,spending,DAC-1601-INV-005840,250000,250000
-2020-02,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,spending,DAC-1601-INV-006080,199653,199653
+2020-02,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005948,39600,39600
+2020-02,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005948,39600,39600
+2020-02,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-005839,50000,50000
+2020-02,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-005840,250000,250000
+2020-02,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-006080,199653,199653
+2020-02,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-005839,50000,50000
+2020-02,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-005840,250000,250000
+2020-02,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-006080,199653,199653
 2020-02,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,0,commitments,GB-GOV-1-301150-104,59631,59631
 2020-02,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,commitments,GB-GOV-1-301150-101,6467000,6467000
 2020-02,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,commitments,GB-GOV-1-301150-103,964661,964661
@@ -30,30 +30,30 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2020-02,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,0,spending,LK-DRC-GA139-LFS1.2,2500,2500
 2020-02,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,0,spending,LK-DRC-GA139-LFS1.2,2500,2500
 2020-02,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,0,spending,LK-DRC-GA139-LFS1.2,2500,2500
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005971,249550,249550
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006008,2500000,2500000
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006010,157929,157929
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006131,2381967,2381967
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006133,1730875,1730875
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006200,7000000,7000000
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005971,249550,249550
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006008,2500000,2500000
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006010,157929,157929
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006131,2381967,2381967
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006133,1730875,1730875
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006200,7000000,7000000
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,commitments,DAC-1601-INV-005834,300000,300000
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,commitments,DAC-1601-INV-006104,50000,50000
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,commitments,DAC-1601-INV-006105,100000,100000
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,commitments,DAC-1601-INV-006106,50000,50000
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,spending,DAC-1601-INV-005834,300000,300000
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,spending,DAC-1601-INV-006104,50000,50000
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,spending,DAC-1601-INV-006105,100000,100000
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,spending,DAC-1601-INV-006106,50000,50000
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,Ethiopia,0,1,commitments,DAC-1601-INV-005999,229874,229874
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,Ethiopia,0,1,spending,DAC-1601-INV-005999,229874,229874
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,Nigeria,0,1,commitments,DAC-1601-INV-005999,119934,119934
-2020-03,Bill and Melinda Gates Foundation (BMGF),60,Health,Nigeria,0,1,spending,DAC-1601-INV-005999,119934,119934
+2020-03,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005971,249550,249550
+2020-03,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006008,2500000,2500000
+2020-03,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006010,157929,157929
+2020-03,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006131,2381967,2381967
+2020-03,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006133,1730875,1730875
+2020-03,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006200,7000000,7000000
+2020-03,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005971,249550,249550
+2020-03,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006008,2500000,2500000
+2020-03,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006010,157929,157929
+2020-03,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006131,2381967,2381967
+2020-03,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006133,1730875,1730875
+2020-03,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006200,7000000,7000000
+2020-03,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-005834,300000,300000
+2020-03,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-006104,50000,50000
+2020-03,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-006105,100000,100000
+2020-03,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-006106,50000,50000
+2020-03,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-005834,300000,300000
+2020-03,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-006104,50000,50000
+2020-03,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-006105,100000,100000
+2020-03,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-006106,50000,50000
+2020-03,Bill and Melinda Gates Foundation,60,Health,Ethiopia,0,1,commitments,DAC-1601-INV-005999,229874,229874
+2020-03,Bill and Melinda Gates Foundation,60,Health,Ethiopia,0,1,spending,DAC-1601-INV-005999,229874,229874
+2020-03,Bill and Melinda Gates Foundation,60,Health,Nigeria,0,1,commitments,DAC-1601-INV-005999,119934,119934
+2020-03,Bill and Melinda Gates Foundation,60,Health,Nigeria,0,1,spending,DAC-1601-INV-005999,119934,119934
 2020-03,"Foreign, Commonwealth and Development Office",10,Disaster Prevention & Preparedness,Malawi,1,1,commitments,GB-GOV-1-300150-103,184838,184838
 2020-03,"Foreign, Commonwealth and Development Office",10,Disaster Prevention & Preparedness,Malawi,1,1,spending,GB-GOV-1-300150-103,187344,187344
 2020-03,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,0,spending,GB-GOV-1-301150-104,13817,13817
@@ -76,14 +76,14 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2020-03,Save The Children UK,21,Unallocated / Unspecified,(Unspecified country),0,1,commitments,GB-COH-213890-82690119,485024,485024
 2020-03,Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,Emergency Response,Iraq,1,0,spending,CH-FDJP-CHE106823242-2019723a,0,238603
 2020-03,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,0,spending,LK-DRC-GA139-LFS1.2,84058,84058
-2020-04,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,0,commitments,DAC-1601-INV-004259,1060303,1060303
-2020-04,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,0,spending,DAC-1601-INV-004259,530152,530152
-2020-04,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005779,737323,737323
-2020-04,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005779,737323,737323
-2020-04,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,commitments,DAC-1601-INV-005837,200000,200000
-2020-04,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,commitments,DAC-1601-INV-005838,200000,200000
-2020-04,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,spending,DAC-1601-INV-005837,200000,200000
-2020-04,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,spending,DAC-1601-INV-005838,200000,200000
+2020-04,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,0,commitments,DAC-1601-INV-004259,1060303,1060303
+2020-04,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,0,spending,DAC-1601-INV-004259,530152,530152
+2020-04,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005779,737323,737323
+2020-04,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005779,737323,737323
+2020-04,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-005837,200000,200000
+2020-04,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-005838,200000,200000
+2020-04,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-005837,200000,200000
+2020-04,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-005838,200000,200000
 2020-04,"Foreign, Commonwealth and Development Office",10,Disaster Prevention & Preparedness,Malawi,1,1,commitments,GB-GOV-1-300150-103,183597,183597
 2020-04,"Foreign, Commonwealth and Development Office",10,Education,(Unspecified country),0,1,spending,GB-GOV-1-300402-105,6167500,6167500
 2020-04,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,0,spending,GB-GOV-1-301150-104,54858,54858
@@ -111,10 +111,10 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2020-04,Save The Children UK,21,Education,Ethiopia,1,1,commitments,GB-COH-213890-82604710,0,239821
 2020-04,Save The Children UK,21,Education,Ethiopia,1,1,commitments,GB-COH-213890-82604710,0,239821
 2020-04,Save The Children UK,21,Health,Thailand,1,1,commitments,GB-COH-213890-82604768,0,158751
-2020-05,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,commitments,DAC-1601-INV-005832,300000,300000
-2020-05,Bill and Melinda Gates Foundation (BMGF),60,Health,China,0,1,spending,DAC-1601-INV-005832,300000,300000
-2020-05,Bill and Melinda Gates Foundation (BMGF),60,Health,India,0,1,commitments,DAC-1601-INV-005925,466292,466292
-2020-05,Bill and Melinda Gates Foundation (BMGF),60,Health,India,0,1,spending,DAC-1601-INV-005925,466292,466292
+2020-05,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-005832,300000,300000
+2020-05,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-005832,300000,300000
+2020-05,Bill and Melinda Gates Foundation,60,Health,India,0,1,commitments,DAC-1601-INV-005925,466292,466292
+2020-05,Bill and Melinda Gates Foundation,60,Health,India,0,1,spending,DAC-1601-INV-005925,466292,466292
 2020-05,"Foreign, Commonwealth and Development Office",10,Disaster Prevention & Preparedness,Malawi,1,1,spending,GB-GOV-1-300150-103,183893,183893
 2020-05,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,1,commitments,GB-GOV-1-301150-118,1426962,1426962
 2020-05,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,1,commitments,GB-GOV-1-301150-119,1713333,1713333
@@ -156,15 +156,15 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2020-05,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-16485
 2020-05,Save The Children UK,21,Health,United Republic of Tanzania,1,1,commitments,GB-COH-213890-82604730,0,319807
 2020-05,Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,Emergency Response,Iraq,1,0,spending,CH-FDJP-CHE106823242-2019723a,0,143252
-2020-06,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,0,spending,DAC-1601-INV-004259,530152,530152
-2020-06,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006124,711349,711349
-2020-06,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006124,579783,579783
-2020-06,Bill and Melinda Gates Foundation (BMGF),60,Health,India,0,0,commitments,DAC-1601-INV-005598,18876,18876
-2020-06,Bill and Melinda Gates Foundation (BMGF),60,Health,India,0,0,spending,DAC-1601-INV-005598,18876,18876
-2020-06,Bill and Melinda Gates Foundation (BMGF),60,Health,South Africa,0,1,commitments,DAC-1601-INV-004598,750000,750000
-2020-06,Bill and Melinda Gates Foundation (BMGF),60,Health,South Africa,0,1,spending,DAC-1601-INV-004598,508531,508531
-2020-06,Bill and Melinda Gates Foundation (BMGF),60,Population Policies/Programmes & Reproductive Health,South Africa,0,1,commitments,DAC-1601-INV-004598,750000,750000
-2020-06,Bill and Melinda Gates Foundation (BMGF),60,Population Policies/Programmes & Reproductive Health,South Africa,0,1,spending,DAC-1601-INV-004598,508531,508531
+2020-06,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,0,spending,DAC-1601-INV-004259,530152,530152
+2020-06,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006124,711349,711349
+2020-06,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006124,579783,579783
+2020-06,Bill and Melinda Gates Foundation,60,Health,India,0,0,commitments,DAC-1601-INV-005598,18876,18876
+2020-06,Bill and Melinda Gates Foundation,60,Health,India,0,0,spending,DAC-1601-INV-005598,18876,18876
+2020-06,Bill and Melinda Gates Foundation,60,Health,South Africa,0,1,commitments,DAC-1601-INV-004598,750000,750000
+2020-06,Bill and Melinda Gates Foundation,60,Health,South Africa,0,1,spending,DAC-1601-INV-004598,508531,508531
+2020-06,Bill and Melinda Gates Foundation,60,Population Policies/Programmes & Reproductive Health,South Africa,0,1,commitments,DAC-1601-INV-004598,750000,750000
+2020-06,Bill and Melinda Gates Foundation,60,Population Policies/Programmes & Reproductive Health,South Africa,0,1,spending,DAC-1601-INV-004598,508531,508531
 2020-06,"Foreign, Commonwealth and Development Office",10,Disaster Prevention & Preparedness,Malawi,1,0,commitments,GB-GOV-1-300150-105,1242293,1242293
 2020-06,"Foreign, Commonwealth and Development Office",10,Disaster Prevention & Preparedness,Malawi,1,0,spending,GB-GOV-1-300150-105,1231674,1231674
 2020-06,"Foreign, Commonwealth and Development Office",10,Disaster Prevention & Preparedness,Malawi,1,1,commitments,GB-GOV-1-300150-103,1003731,1003731
@@ -215,8 +215,8 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2020-06,Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,Emergency Response,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,69400
 2020-06,Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,Health,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,17350
 2020-06,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,0,spending,LK-DRC-GA139-LFS1.2,24,24
-2020-07,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005779,4233842,4233842
-2020-07,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005779,3055000,3055000
+2020-07,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005779,4233842,4233842
+2020-07,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005779,3055000,3055000
 2020-07,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,1356,2931
 2020-07,Fondation Hirondelle,21,Communications,Sierra Leone,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,2712,5862
 2020-07,Fondation Hirondelle,21,Communications,Uganda,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,2712,5862
@@ -248,14 +248,14 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2020-07,Save The Children UK,21,Health,Nepal,1,1,commitments,GB-COH-213890-82604802,39504,325780
 2020-07,Save The Children UK,21,Health,Nepal,1,1,commitments,GB-COH-213890-82604802,39504,325780
 2020-07,Save The Children UK,21,Other Social Infrastructure & Services,Nepal,1,1,commitments,GB-COH-213890-82604802,39504,325780
-2020-08,Bill and Melinda Gates Foundation (BMGF),60,Government & Civil Society,Kenya,0,0,commitments,DAC-1601-INV-004537,682342,682342
-2020-08,Bill and Melinda Gates Foundation (BMGF),60,Government & Civil Society,Kenya,0,0,spending,DAC-1601-INV-004537,287000,287000
-2020-08,Bill and Melinda Gates Foundation (BMGF),60,Government & Civil Society,Nigeria,0,0,commitments,DAC-1601-INV-004537,981908,981908
-2020-08,Bill and Melinda Gates Foundation (BMGF),60,Government & Civil Society,Nigeria,0,0,spending,DAC-1601-INV-004537,413000,413000
-2020-08,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-003687,78178,78178
-2020-08,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005371,300000,300000
-2020-08,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-003687,78178,78178
-2020-08,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005371,150000,150000
+2020-08,Bill and Melinda Gates Foundation,60,Government & Civil Society,Kenya,0,0,commitments,DAC-1601-INV-004537,682342,682342
+2020-08,Bill and Melinda Gates Foundation,60,Government & Civil Society,Kenya,0,0,spending,DAC-1601-INV-004537,287000,287000
+2020-08,Bill and Melinda Gates Foundation,60,Government & Civil Society,Nigeria,0,0,commitments,DAC-1601-INV-004537,981908,981908
+2020-08,Bill and Melinda Gates Foundation,60,Government & Civil Society,Nigeria,0,0,spending,DAC-1601-INV-004537,413000,413000
+2020-08,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-003687,78178,78178
+2020-08,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005371,300000,300000
+2020-08,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-003687,78178,78178
+2020-08,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005371,150000,150000
 2020-08,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,262,565
 2020-08,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,1300,2809
 2020-08,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,2854,6169
@@ -335,16 +335,16 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2020-08,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,1,spending,LK-DRC-GA139-LFS1.2,5890,5890
 2020-09,ADD International,21,Other Multisector,Bangladesh,0,1,spending,GB-COH-294860-PR9915,4022,70200
 2020-09,ADD International,21,Other Multisector,United Republic of Tanzania,0,1,spending,GB-COH-294860-PR9916,0,6925
-2020-09,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-004954,100000,100000
-2020-09,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006131,1970398,1970398
-2020-09,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006135,1944053,1944053
-2020-09,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-004954,100000,100000
-2020-09,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006131,1970398,1970398
-2020-09,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006135,1944053,1944053
-2020-09,Bill and Melinda Gates Foundation (BMGF),60,Health,India,0,1,commitments,DAC-1601-INV-005924,1000000,1000000
-2020-09,Bill and Melinda Gates Foundation (BMGF),60,Health,India,0,1,commitments,DAC-1601-INV-005924,1000000,1000000
-2020-09,Bill and Melinda Gates Foundation (BMGF),60,Health,India,0,1,spending,DAC-1601-INV-005924,1000000,1000000
-2020-09,Bill and Melinda Gates Foundation (BMGF),60,Health,India,0,1,spending,DAC-1601-INV-005924,1000000,1000000
+2020-09,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-004954,100000,100000
+2020-09,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006131,1970398,1970398
+2020-09,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006135,1944053,1944053
+2020-09,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-004954,100000,100000
+2020-09,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006131,1970398,1970398
+2020-09,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006135,1944053,1944053
+2020-09,Bill and Melinda Gates Foundation,60,Health,India,0,1,commitments,DAC-1601-INV-005924,1000000,1000000
+2020-09,Bill and Melinda Gates Foundation,60,Health,India,0,1,commitments,DAC-1601-INV-005924,1000000,1000000
+2020-09,Bill and Melinda Gates Foundation,60,Health,India,0,1,spending,DAC-1601-INV-005924,1000000,1000000
+2020-09,Bill and Melinda Gates Foundation,60,Health,India,0,1,spending,DAC-1601-INV-005924,1000000,1000000
 2020-09,"Foreign, Commonwealth and Development Office",10,Emergency Response,Yemen,1,1,commitments,GB-GOV-1-300417-110,972139,972139
 2020-09,"Foreign, Commonwealth and Development Office",10,Emergency Response,Yemen,1,1,spending,GB-GOV-1-300417-110,38766,38766
 2020-09,"Foreign, Commonwealth and Development Office",10,Emergency Response,Yemen,1,1,spending,GB-GOV-1-300417-110,82173,82173
@@ -395,14 +395,14 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2020-09,Save The Children UK,21,Unallocated / Unspecified,United Kingdom of Great Britain and Northern Ireland,1,1,spending,GB-COH-213890-82604830,5962,193815
 2020-09,Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,Emergency Response,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,200732
 2020-09,Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,Health,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,50183
-2020-10,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-001933,3383156,3383156
-2020-10,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-003438,17000000,17000000
-2020-10,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-004949,602998,602998
-2020-10,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-001933,3383156,3383156
-2020-10,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-003438,17000000,17000000
-2020-10,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-004949,250699,250699
-2020-10,Bill and Melinda Gates Foundation (BMGF),60,Population Policies/Programmes & Reproductive Health,(Unspecified country),0,1,commitments,DAC-1601-INV-004949,296999,296999
-2020-10,Bill and Melinda Gates Foundation (BMGF),60,Population Policies/Programmes & Reproductive Health,(Unspecified country),0,1,spending,DAC-1601-INV-004949,123478,123478
+2020-10,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-001933,3383156,3383156
+2020-10,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-003438,17000000,17000000
+2020-10,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-004949,602998,602998
+2020-10,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-001933,3383156,3383156
+2020-10,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-003438,17000000,17000000
+2020-10,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-004949,250699,250699
+2020-10,Bill and Melinda Gates Foundation,60,Population Policies/Programmes & Reproductive Health,(Unspecified country),0,1,commitments,DAC-1601-INV-004949,296999,296999
+2020-10,Bill and Melinda Gates Foundation,60,Population Policies/Programmes & Reproductive Health,(Unspecified country),0,1,spending,DAC-1601-INV-004949,123478,123478
 2020-10,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,261,564
 2020-10,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,1371,2963
 2020-10,Fondation Hirondelle,21,Communications,Sierra Leone,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,522,1128
@@ -451,9 +451,9 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2020-10,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1805
 2020-10,HelpAge International,21,Emergency Response,Viet Nam,1,1,spending,GB-COH-1762840-VIE082-UN03-01,280,3326
 2020-11,ABAAD- Resource Center for Gender Equality,22,Government & Civil Society,Lebanon,1,0,spending,LB-MOI-497-XM-DAC-7-PPR-4000003882,1112742,1112742
-2020-11,Bill and Melinda Gates Foundation (BMGF),60,Health,Nigeria,0,1,commitments,DAC-1601-INV-005914,1138565,1138565
-2020-11,Bill and Melinda Gates Foundation (BMGF),60,Health,Nigeria,0,1,spending,DAC-1601-INV-005914,825000,825000
-2020-11,Bill and Melinda Gates Foundation (BMGF),60,Population Policies/Programmes & Reproductive Health,India,0,0,commitments,DAC-1601-INV-005891,896799,896799
+2020-11,Bill and Melinda Gates Foundation,60,Health,Nigeria,0,1,commitments,DAC-1601-INV-005914,1138565,1138565
+2020-11,Bill and Melinda Gates Foundation,60,Health,Nigeria,0,1,spending,DAC-1601-INV-005914,825000,825000
+2020-11,Bill and Melinda Gates Foundation,60,Population Policies/Programmes & Reproductive Health,India,0,0,commitments,DAC-1601-INV-005891,896799,896799
 2020-11,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,1297,2804
 2020-11,Fondation Hirondelle,21,Communications,Sierra Leone,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,2595,5608
 2020-11,Fondation Hirondelle,21,Communications,Uganda,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,2595,5608
@@ -492,7 +492,7 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2020-11,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-29838
 2020-12,ADD International,21,Other Multisector,Bangladesh,0,1,spending,GB-COH-294860-PR9915,4664,81398
 2020-12,ADD International,21,Other Multisector,United Republic of Tanzania,0,1,spending,GB-COH-294860-PR9916,0,7322
-2020-12,Bill and Melinda Gates Foundation (BMGF),60,Population Policies/Programmes & Reproductive Health,India,0,0,spending,DAC-1601-INV-005891,250000,250000
+2020-12,Bill and Melinda Gates Foundation,60,Population Policies/Programmes & Reproductive Health,India,0,0,spending,DAC-1601-INV-005891,250000,250000
 2020-12,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,136,294
 2020-12,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,681,1471
 2020-12,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,711,1538
@@ -731,7 +731,7 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2020-12,Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,Emergency Response,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,688268
 2020-12,Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,Health,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,172067
 2021-01,ADD International,21,Education,Bangladesh,0,0,spending,GB-COH-294860-PR9917,0,2178
-2021-01,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006124,131566,131566
+2021-01,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006124,131566,131566
 2021-01,"Foreign, Commonwealth and Development Office",10,Education,South Africa,0,1,commitments,GB-GOV-1-300310-110,65918,65918
 2021-01,"Foreign, Commonwealth and Development Office",10,Education,South Africa,0,1,commitments,GB-GOV-1-300310-110,68608,68608
 2021-01,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,1,spending,GB-GOV-1-301150-119,306764,306764
@@ -751,7 +751,7 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2021-01,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-119,383455,383455
 2021-01,"Foreign, Commonwealth and Development Office",10,Other Multisector,South Sudan,1,0,spending,GB-GOV-1-300708-117,6204,6204
 2021-02,ADD International,21,Education,Bangladesh,0,0,spending,GB-COH-294860-PR9917,0,3868
-2021-02,Bill and Melinda Gates Foundation (BMGF),60,Population Policies/Programmes & Reproductive Health,India,0,0,commitments,DAC-1601-INV-005891,465637,465637
+2021-02,Bill and Melinda Gates Foundation,60,Population Policies/Programmes & Reproductive Health,India,0,0,commitments,DAC-1601-INV-005891,465637,465637
 2021-02,"Foreign, Commonwealth and Development Office",10,Banking & Financial Services,India,0,0,spending,GB-GOV-1-300110-117,-26405,-26405
 2021-02,"Foreign, Commonwealth and Development Office",10,Banking & Financial Services,India,0,0,spending,GB-GOV-1-300110-117,26405,26405
 2021-02,"Foreign, Commonwealth and Development Office",10,Education,South Africa,0,1,spending,GB-GOV-1-300310-110,9523,9523
@@ -767,8 +767,8 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2021-02,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,Kenya,0,0,spending,GB-GOV-1-300143-104,289933,289933
 2021-02,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,Yemen,0,1,spending,GB-GOV-1-300527-104,2894231,2894231
 2021-03,ADD International,21,Education,Bangladesh,0,0,spending,GB-COH-294860-PR9917,0,3581
-2021-03,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005371,150000,150000
-2021-03,Bill and Melinda Gates Foundation (BMGF),60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005779,1178842,1178842
+2021-03,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005371,150000,150000
+2021-03,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005779,1178842,1178842
 2021-03,"Foreign, Commonwealth and Development Office",10,Banking & Financial Services,India,0,0,spending,GB-GOV-1-300110-117,26206,26206
 2021-03,"Foreign, Commonwealth and Development Office",10,Business & Other Services,(Unspecified country),0,1,spending,GB-GOV-1-300805-103,67156,67156
 2021-03,"Foreign, Commonwealth and Development Office",10,Business & Other Services,(Unspecified country),0,1,spending,GB-GOV-1-300805-103,112316,112316
@@ -837,7 +837,7 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2021-03,Save The Children UK,21,Other Social Infrastructure & Services,Nepal,1,1,spending,GB-COH-213890-82604802,6192,89766
 2021-03,Save The Children UK,21,Population Policies/Programmes & Reproductive Health,Ethiopia,0,0,spending,GB-COH-213890-82604850,0,14249
 2021-03,United Nations Development Programme,40,Unallocated / Unspecified,Bolivia (Plurinational State of),0,1,spending,XM-DAC-41114-OUTPUT-00126462,0,286
-2021-04,Bill and Melinda Gates Foundation (BMGF),60,Population Policies/Programmes & Reproductive Health,India,0,0,spending,DAC-1601-INV-005891,650000,650000
+2021-04,Bill and Melinda Gates Foundation,60,Population Policies/Programmes & Reproductive Health,India,0,0,spending,DAC-1601-INV-005891,650000,650000
 2021-04,Oxfam Novib,21,Government & Civil Society,Viet Nam,0,0,spending,NL-KVK-27108436-A-05001-22:VN,0,16862
 2021-04,United Nations Development Programme,40,Disaster Prevention & Preparedness,Cameroon,0,1,commitments,XM-DAC-41114-OUTPUT-00126699,0,1820714
 2021-04,United Nations Development Programme,40,General Budget Support,Brazil,0,1,commitments,XM-DAC-41114-OUTPUT-00126999,0,69940

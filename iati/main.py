@@ -76,17 +76,25 @@ def start(configuration, today, retriever, dportal_params):
     Lookups.setup(configuration['lookups'], retriever)
     CalculateSplits.setup(configuration['calculate_splits'])
 
+    # Build org name lookup
+    dactivities = list()
+    for text in generator:
+        for dactivity in diterator.XMLIterator(StringIO(text)):
+            dactivities.append(dactivity)
+            Activity.add_all_reporting_org_names_to_lookup(dactivity)
+    for dactivity in dactivities:
+        Activity.add_all_participating_org_names_to_lookup(dactivity)
+
     # Build the accumulators from the IATI activities and transactions
     flows = dict()
     transactions = list()
     all_skipped = 0
-    for text in generator:
-        for dactivity in diterator.XMLIterator(StringIO(text)):
-            activity, skipped = Activity.get_activity(configuration, dactivity)
-            all_skipped += skipped
-            if not activity:
-                continue
-            all_skipped += activity.process(today[:7], flows, transactions)
+    for dactivity in dactivities:
+        activity, skipped = Activity.get_activity(configuration, dactivity)
+        all_skipped += skipped
+        if not activity:
+            continue
+        all_skipped += activity.process(today[:7], flows, transactions)
 
     logger.info(f'Processed {len(flows)} flows')
     logger.info(f'Processed {len(transactions)} transactions')

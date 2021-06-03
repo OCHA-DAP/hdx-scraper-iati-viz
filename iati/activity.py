@@ -22,6 +22,15 @@ class Activity:
         self.sector_splits = CalculateSplits.make_sector_splits(dactivity)
         self.transactions = list()
 
+    @staticmethod
+    def add_all_reporting_org_names_to_lookup(dactivity):
+        Lookups.get_org_name(dactivity.reporting_org)
+
+    @staticmethod
+    def add_all_participating_org_names_to_lookup(dactivity):
+        for org in dactivity.participating_orgs:
+            Lookups.get_org_name(org)
+
     def add_transactions(self, configuration):
         skipped = 0
         for dtransaction in self.dactivity.transactions:
@@ -99,9 +108,13 @@ class Activity:
             else:
                 self.spending_factor = 0.0
 
-    def add_to_flows(self, out_flows, transaction):
+    def add_to_flows(self, out_flows, transaction, funder, implementer):
         provider, receiver = transaction.get_provider_receiver()
         if self.org != provider and self.org != receiver and self.org != Lookups.default_org:
+            # if funder and provider == Lookups.default_org:
+            #     provider = funder
+            # if implementer and receiver == Lookups.default_org:
+            #     receiver = implementer
             key = (self.org, self.org_type, provider, receiver, transaction.is_humanitarian, transaction.is_strict,
                    transaction.classification, transaction.direction)
             # ignore internal transactions or unknown reporting orgs
@@ -133,17 +146,35 @@ class Activity:
                                              country_name, transaction.is_humanitarian, transaction.is_strict,
                                              transaction.classification, self.identifier, net_money, total_money])
 
+    def get_funder_implementer(self):
+        funder = None
+        implementer = None
+        participating_orgs_by_role = self.dactivity.participating_orgs_by_role
+        for role in participating_orgs_by_role:
+            if role not in ('1', '4'):
+                continue
+            participating_orgs = participating_orgs_by_role[role]
+            if len(participating_orgs) != 1:
+                continue
+            orgname = Lookups.get_org_name(participating_orgs[0])
+            if role == '1':
+                funder = orgname
+            else:
+                implementer = orgname
+        return funder, implementer
+
     def process(self, this_month, out_flows, out_transactions):
         self.factor_new_money()
         #
         # Walk through the activity's transactions one-by-one, and split by country/sector
         #
+        funder, implementer = self.get_funder_implementer()
         skipped = 0
         for transaction in self.transactions:
             if not transaction.process(this_month, self):
                 skipped += 1
                 continue
-            self.add_to_flows(out_flows, transaction)
+            self.add_to_flows(out_flows, transaction, funder, implementer)
             if transaction.net_value is None:
                 skipped += 1
                 continue
