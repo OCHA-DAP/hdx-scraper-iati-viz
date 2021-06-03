@@ -1,8 +1,5 @@
 Reporting org,Reporting org type,Provider org,Receiver org,Humanitarian?,Strict?,Transaction type,Transaction direction,Total money
 #org+name+reporting,#org+reporting+type,#org+name+provider,#org+name+receiver,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_type,#x_transaction_direction,#value+total
-ABAAD- Resource Center for Gender Equality,22,,ABAAD- Resource Center for Gender Equality,1,0,spending,outgoing,1112742
-ADD International,21,,ADD International,0,0,spending,outgoing,2178
-ADD International,21,,ADD International,0,1,spending,outgoing,165845
 ADD International,21,Sightsavers,,0,0,spending,incoming,97065
 ADD International,21,Sightsavers,,0,1,commitments,incoming,162156
 ADD International,21,Sightsavers,,0,1,spending,incoming,131689
@@ -155,9 +152,6 @@ HelpAge International,21,,(unspecified org),1,0,spending,outgoing,65968
 HelpAge International,21,,(unspecified org),1,1,spending,outgoing,13148
 HelpAge International,21,,"African Woman's AIDS Working Group (AFRIWAG), Tanzania",1,0,spending,outgoing,23496
 HelpAge International,21,,"Good Samaritan Social Service Trust, Tanzania",1,0,spending,outgoing,12181
-HelpAge International,21,,HelpAge International,0,1,spending,outgoing,25040
-HelpAge International,21,,HelpAge International,1,0,spending,outgoing,244747
-HelpAge International,21,,HelpAge International,1,1,spending,outgoing,423473
 HelpAge International,21,,"Jumuhia ya Wazee (JUWAZA), Zanzibar",1,0,spending,outgoing,19066
 HelpAge International,21,,MAPERECE - Magu Poverty focus on Older People's Rehabilitation Center (Tanzania),1,0,spending,outgoing,23935
 HelpAge International,21,,"MOROPEO - Morogoro Elderly Peoples Organisation, Tanzania",1,0,spending,outgoing,14913
@@ -168,11 +162,7 @@ HelpAge International,21,Age International,,1,0,spending,incoming,414697
 HelpAge International,21,Age International,,1,1,spending,incoming,561803
 HelpAge International,21,HelpAge Canada,,0,1,spending,incoming,21328
 Oxfam Novib,21,,Center for Education Promotion and CEPEW,0,0,spending,outgoing,16862
-PARADIGM INITIATIVE,21,,PARADIGM INITIATIVE,1,0,spending,outgoing,-189449
-PARADIGM INITIATIVE,21,,PARADIGM INITIATIVE,1,1,spending,outgoing,-46691
 PARADIGM INITIATIVE,21,GOVERNMENT OF NETHERLANDS,,1,0,spending,incoming,395662
-Practical Action,21,,Practical Action,0,0,spending,outgoing,375675
-Practical Action,21,,Practical Action,0,1,spending,outgoing,15592
 Practical Action,21,AECF (Africa Enterprise Challenge Fund),,0,1,spending,incoming,18100
 Practical Action,21,Bill and Melinda Gates Foundation,,0,0,spending,incoming,6241
 Practical Action,21,Bill and Melinda Gates Foundation,,0,1,spending,incoming,0
@@ -180,7 +170,6 @@ Practical Action,21,Poul Due Jensen Foundation (Grundfos),,0,1,spending,incoming
 Save The Children UK,21,,Save The Children International,0,0,spending,outgoing,57605
 Save The Children UK,21,,Save The Children International,1,0,spending,outgoing,10876
 Save The Children UK,21,,Save The Children International,1,1,spending,outgoing,5127555
-Save The Children UK,21,,Save The Children UK,1,1,commitments,outgoing,204930
 Save The Children UK,21,Education Cannot Wait,,0,1,spending,incoming,-59397
 Save The Children UK,21,Education Cannot Wait,,1,1,spending,incoming,1446283
 Save The Children UK,21,"Foreign, Commonwealth and Development Office",,1,1,spending,incoming,3711057
@@ -210,12 +199,7 @@ Swiss Agency for Development and Cooperation (SDC),10,,World Food Programme (WFP
 Swiss Agency for Development and Cooperation (SDC),10,,World Food Programme (WFP),0,0,spending,outgoing,1809750
 Swiss Agency for Development and Cooperation (SDC),10,,World Food Programme (WFP),0,1,commitments,outgoing,5259586
 Swiss Agency for Development and Cooperation (SDC),10,,World Food Programme (WFP),0,1,spending,outgoing,5259586
-Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,,Terre des hommes - Aide à l'enfance dans le monde - Fondation,1,0,spending,outgoing,143252
 Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,GOVERNMENT OF NETHERLANDS,,0,1,spending,incoming,1198000
-United Nations Development Programme,40,,United Nations Development Programme,0,0,commitments,outgoing,1906598
-United Nations Development Programme,40,,United Nations Development Programme,0,0,spending,outgoing,1430
-United Nations Development Programme,40,,United Nations Development Programme,0,1,commitments,outgoing,2480378
-United Nations Development Programme,40,,United Nations Development Programme,0,1,spending,outgoing,8229
 United Nations Development Programme,40,ALCALDIA DE CHIA,,0,0,commitments,incoming,194
 United Nations Development Programme,40,AYUDA EN ACCION MEXICO,,0,0,commitments,incoming,144506
 United Nations Development Programme,40,BRITISH EMBASSY,,0,1,commitments,incoming,12000
