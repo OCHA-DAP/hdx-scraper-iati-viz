@@ -111,10 +111,10 @@ class Activity:
     def add_to_flows(self, out_flows, transaction, funder, implementer):
         provider, receiver = transaction.get_provider_receiver()
         if self.org != provider and self.org != receiver and self.org != Lookups.default_org:
-            # if funder and provider == Lookups.default_org:
-            #     provider = funder
-            # if implementer and receiver == Lookups.default_org:
-            #     receiver = implementer
+            if funder and provider == Lookups.default_org:
+                provider = funder
+            if implementer and receiver == Lookups.default_org:
+                receiver = implementer
             key = (self.org, self.org_type, provider, receiver, transaction.is_humanitarian, transaction.is_strict,
                    transaction.classification, transaction.direction)
             # ignore internal transactions or unknown reporting orgs
