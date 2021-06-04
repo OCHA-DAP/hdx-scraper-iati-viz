@@ -20,7 +20,8 @@ def clean_string(s):
 
 
 class Lookups:
-    org_names = dict()
+    org_ref_to_name = dict()
+    org_names_to_ref = dict()
     default_org = None
     sector_info = None
     default_sector = None
@@ -38,7 +39,9 @@ class Lookups:
         # Prime with org identifiers from code4iati
         for entry in org_data['data']:
             code = clean_string(entry['code']).lower()
-            cls.org_names[code] = clean_string(entry['name'])
+            name = clean_string(entry['name'])
+            cls.org_ref_to_name[code] = name
+            cls.org_names_to_ref[name] = code
         cls.sector_info = load_json(configuration['sector_data'])
         cls.default_org = configuration['default_org']
         cls.default_sector = configuration['default_sector']
@@ -73,18 +76,28 @@ class Lookups:
         name = None if org is None or org.name is None else clean_string(str(org.name))
         ref = None if org is None or org.ref is None else clean_string(str(org.ref)).lower()
 
-        # We have a ref and an existing match
-        if ref and ref in cls.org_names:
-            # existing match
-            return cls.org_names[ref]
-
-        # No existing match, but we have a name
-        if name:
-            if ref is not None:
-                # if there's a ref, save it for future matching
-                cls.org_names[ref] = name
+        if ref:
+            if name:
+                cur_ref = cls.org_names_to_ref.get(name)
+                if cur_ref:
+                    second_preferred_name = cls.org_ref_to_name.get(cur_ref)
+                    if not second_preferred_name:
+                        cls.org_ref_to_name[cur_ref] = name
+                else:
+                    cls.org_names_to_ref[name] = ref
+                    second_preferred_name = None
+                preferred_name = cls.org_ref_to_name.get(ref)
+                if preferred_name:
+                    return preferred_name
+                cls.org_ref_to_name[ref] = name
+                if second_preferred_name:
+                    return second_preferred_name
+                return name
+            preferred_name = cls.org_ref_to_name.get(ref)
+            if preferred_name:
+                return preferred_name
+        elif name:
             return name
-
         # We can't figure out anything
         return cls.default_org
 
