@@ -1,8 +1,5 @@
 Reporting org,Reporting org type,Provider org,Receiver org,Humanitarian?,Strict?,Transaction type,Transaction direction,Total money
 #org+name+reporting,#org+reporting+type,#org+name+provider,#org+name+receiver,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_type,#x_transaction_direction,#value+total
-ABAAD- Resource Center for Gender Equality,22,,ABAAD- Resource Center for Gender Equality,1,0,spending,outgoing,1112742
-ADD International,21,,ADD International,0,0,spending,outgoing,2178
-ADD International,21,,ADD International,0,1,spending,outgoing,165845
 ADD International,21,Sightsavers,,0,0,spending,incoming,97065
 ADD International,21,Sightsavers,,0,1,commitments,incoming,162156
 ADD International,21,Sightsavers,,0,1,spending,incoming,131689
@@ -74,7 +71,7 @@ AECID Spanish Agency for International Development Cooperation,10,,COMUNIDAD ETE
 AECID Spanish Agency for International Development Cooperation,10,,COMUNIDAD ETEA COMPAÑIA DE JESUS PROVINCIA BETICA,0,1,spending,outgoing,366900
 AECID Spanish Agency for International Development Cooperation,10,,CONCYTEC,0,1,commitments,outgoing,89822
 AECID Spanish Agency for International Development Cooperation,10,,CONCYTEC,0,1,spending,outgoing,90015
-AECID Spanish Agency for International Development Cooperation,10,,CONEMUND,0,1,commitments,outgoing,1227712
+AECID Spanish Agency for International Development Cooperation,10,,CONEMUND,0,1,commitments,outgoing,1247163
 AECID Spanish Agency for International Development Cooperation,10,,CONEMUND,0,1,spending,outgoing,1352442
 AECID Spanish Agency for International Development Cooperation,10,,COPADE - Fundación Comercio para el,0,1,commitments,outgoing,465948
 AECID Spanish Agency for International Development Cooperation,10,,COPADE - Fundación Comercio para el,0,1,spending,outgoing,513287
@@ -170,11 +167,13 @@ AECID Spanish Agency for International Development Cooperation,10,,MINISTERIO DE
 AECID Spanish Agency for International Development Cooperation,10,,MINISTERIO DE SALUD DE MOZAMBIQUE,0,1,spending,outgoing,1208022
 AECID Spanish Agency for International Development Cooperation,10,,MINISTERIO DE SALUD DE NÍGER,0,1,commitments,outgoing,1110207
 AECID Spanish Agency for International Development Cooperation,10,,MINISTERIO DE SALUD DE NÍGER,0,1,spending,outgoing,1184000
+AECID Spanish Agency for International Development Cooperation,10,,MINISTERIO PLANIFICACION Y COOP. IN,0,1,commitments,outgoing,374713
+AECID Spanish Agency for International Development Cooperation,10,,MINISTERIO PLANIFICACION Y COOP. IN,0,1,spending,outgoing,382188
 AECID Spanish Agency for International Development Cooperation,10,,MOVIMIENTO POR LA PAZ EL DESARME Y LA LIBERTAD,0,1,commitments,outgoing,895632
 AECID Spanish Agency for International Development Cooperation,10,,MOVIMIENTO POR LA PAZ EL DESARME Y LA LIBERTAD,0,1,spending,outgoing,986625
 AECID Spanish Agency for International Development Cooperation,10,,MUNDUKIDE FUNDAZIOA,0,1,commitments,outgoing,662894
 AECID Spanish Agency for International Development Cooperation,10,,MUNDUKIDE FUNDAZIOA,0,1,spending,outgoing,730241
-AECID Spanish Agency for International Development Cooperation,10,,MinAgricAmbiente,0,0,commitments,outgoing,333062
+AECID Spanish Agency for International Development Cooperation,10,,MinAgricAmbiente,0,0,commitments,outgoing,365820
 AECID Spanish Agency for International Development Cooperation,10,,MinAgricAmbiente,0,0,spending,outgoing,366900
 AECID Spanish Agency for International Development Cooperation,10,,Ministerio Artesania,0,1,commitments,outgoing,444083
 AECID Spanish Agency for International Development Cooperation,10,,Ministerio Artesania,0,1,spending,outgoing,478000
@@ -186,16 +185,18 @@ AECID Spanish Agency for International Development Cooperation,10,,Ministerio de
 AECID Spanish Agency for International Development Cooperation,10,,Ministerio de Finanzas palestino,0,1,spending,outgoing,1166600
 AECID Spanish Agency for International Development Cooperation,10,,Ministerio de Salud Bolivia,0,1,commitments,outgoing,222041
 AECID Spanish Agency for International Development Cooperation,10,,Ministerio de Salud Bolivia,0,1,spending,outgoing,233540
-AECID Spanish Agency for International Development Cooperation,10,,Ministerio de Salud Jordano,0,1,commitments,outgoing,333062
+AECID Spanish Agency for International Development Cooperation,10,,Ministerio de Salud Jordano,0,1,commitments,outgoing,357030
 AECID Spanish Agency for International Development Cooperation,10,,Ministerio de Salud Jordano,0,1,spending,outgoing,357030
 AECID Spanish Agency for International Development Cooperation,10,,Ministerio de Salud de Malí,0,1,commitments,outgoing,585324
 AECID Spanish Agency for International Development Cooperation,10,,Ministerio de Salud de Malí,0,1,spending,outgoing,623754
-AECID Spanish Agency for International Development Cooperation,10,,Ministerio de la Mujer y poblacione,0,1,commitments,outgoing,2173731
-AECID Spanish Agency for International Development Cooperation,10,,Ministerio de la Mujer y poblacione,0,1,spending,outgoing,2335760
+AECID Spanish Agency for International Development Cooperation,10,,Ministerio de la Mujer y poblacione,0,1,commitments,outgoing,1923159
+AECID Spanish Agency for International Development Cooperation,10,,Ministerio de la Mujer y poblacione,0,1,spending,outgoing,4439863
 AECID Spanish Agency for International Development Cooperation,10,,Ministerio de la Mujer y poblacione,1,1,commitments,outgoing,20678411
 AECID Spanish Agency for International Development Cooperation,10,,Ministerio de la Mujer y poblacione,1,1,spending,outgoing,22007850
 AECID Spanish Agency for International Development Cooperation,10,,Ministerio del Ambiente de Perú,0,1,commitments,outgoing,118310
 AECID Spanish Agency for International Development Cooperation,10,,Ministerio del Ambiente de Perú,0,1,spending,outgoing,118310
+AECID Spanish Agency for International Development Cooperation,10,,Municipio de Rihab,0,0,commitments,outgoing,334662
+AECID Spanish Agency for International Development Cooperation,10,,Municipio de Rihab,0,0,spending,outgoing,330908
 AECID Spanish Agency for International Development Cooperation,10,,NAZIOARTEKO ELKARTASUNA - SI,0,1,commitments,outgoing,427464
 AECID Spanish Agency for International Development Cooperation,10,,NAZIOARTEKO ELKARTASUNA - SI,0,1,spending,outgoing,470893
 AECID Spanish Agency for International Development Cooperation,10,,NSTITUTO DE ESTUDIOS SOBRE CONFLICT,1,1,commitments,outgoing,86048
@@ -228,7 +229,7 @@ AECID Spanish Agency for International Development Cooperation,10,,RWDS,0,1,comm
 AECID Spanish Agency for International Development Cooperation,10,,RWDS,0,1,spending,outgoing,233320
 AECID Spanish Agency for International Development Cooperation,10,,SECRETARIA GENERAL DEL SICA,0,1,commitments,outgoing,555104
 AECID Spanish Agency for International Development Cooperation,10,,SECRETARIA GENERAL DEL SICA,0,1,spending,outgoing,597400
-AECID Spanish Agency for International Development Cooperation,10,,SEGIB. Secretaría General Iberoamer,0,0,commitments,outgoing,277552
+AECID Spanish Agency for International Development Cooperation,10,,SEGIB. Secretaría General Iberoamer,0,0,commitments,outgoing,305900
 AECID Spanish Agency for International Development Cooperation,10,,SEGIB. Secretaría General Iberoamer,0,0,spending,outgoing,305750
 AECID Spanish Agency for International Development Cooperation,10,,SOLIDARIDAD EDUCACION Y DESARROLLO,0,1,commitments,outgoing,173524
 AECID Spanish Agency for International Development Cooperation,10,,SOLIDARIDAD EDUCACION Y DESARROLLO,0,1,spending,outgoing,191154
@@ -240,8 +241,8 @@ AECID Spanish Agency for International Development Cooperation,10,,UPM-CENTRO IN
 AECID Spanish Agency for International Development Cooperation,10,,UPM-CENTRO INNOVAC TECNO (itdUPM),0,1,spending,outgoing,494063
 AECID Spanish Agency for International Development Cooperation,10,,Union l´action Féministe Section,0,1,commitments,outgoing,388573
 AECID Spanish Agency for International Development Cooperation,10,,Union l´action Féministe Section,0,1,spending,outgoing,412685
-AECID Spanish Agency for International Development Cooperation,10,,Universidad de Nouakchott,0,1,commitments,outgoing,102266
-AECID Spanish Agency for International Development Cooperation,10,,Universidad de Nouakchott,0,1,spending,outgoing,109597
+AECID Spanish Agency for International Development Cooperation,10,,Universidad de Nouakchott,0,1,commitments,outgoing,227808
+AECID Spanish Agency for International Development Cooperation,10,,Universidad de Nouakchott,0,1,spending,outgoing,233163
 AECID Spanish Agency for International Development Cooperation,10,,VETERINARIOS SIN FRONTERAS - VETERMON,0,1,commitments,outgoing,902747
 AECID Spanish Agency for International Development Cooperation,10,,VETERINARIOS SIN FRONTERAS - VETERMON,0,1,spending,outgoing,994463
 AECID Spanish Agency for International Development Cooperation,10,,VOLUNTARIADO INTERNACIONAL PARA EL,0,1,commitments,outgoing,320880
@@ -355,8 +356,8 @@ AFD,10,,URGENCE REHABILITATION DEVELOPPEMENT,0,0,spending,outgoing,489138
 AICS - Italian Agency for Cooperation and Development,10,,(unspecified org),0,1,commitments,outgoing,17208215
 AICS - Italian Agency for Cooperation and Development,10,,Amref Health Africa in Canada,0,1,commitments,outgoing,179591
 AICS - Italian Agency for Cooperation and Development,10,,Amref Health Africa in Canada,0,1,spending,outgoing,177879
-AICS - Italian Agency for Cooperation and Development,10,,Arbetsförmedlingen,0,0,commitments,outgoing,3796589
-AICS - Italian Agency for Cooperation and Development,10,,Arbetsförmedlingen,0,1,commitments,outgoing,118110
+AICS - Italian Agency for Cooperation and Development,10,,Central Government in donor country,0,0,commitments,outgoing,3796589
+AICS - Italian Agency for Cooperation and Development,10,,Central Government in donor country,0,1,commitments,outgoing,118110
 AICS - Italian Agency for Cooperation and Development,10,,IOM – International Organization for Migration,0,0,commitments,outgoing,1312080
 AICS - Italian Agency for Cooperation and Development,10,,IOM – International Organization for Migration,0,0,spending,outgoing,1303060
 AICS - Italian Agency for Cooperation and Development,10,,Laakarin Sosialinen Vastuu ry,0,0,commitments,outgoing,303121
@@ -387,47 +388,46 @@ Access to Nutrition Foundation,21,(unspecified org),,1,0,spending,incoming,53289
 Action Against Hunger,21,,Action Contre la Faim,1,1,spending,outgoing,2551167
 Action Against Hunger,21,Disasters Emergency Committee,,1,1,spending,incoming,353220
 Action Against Hunger,21,"Foreign, Commonwealth and Development Office",,1,1,spending,incoming,2486602
-ActionAid Bangladesh,21,,(unspecified org),1,1,spending,outgoing,17468
-ActionAid Bangladesh,21,,ALO,1,1,commitments,outgoing,21667
-ActionAid Bangladesh,21,,ALO,1,1,spending,outgoing,21663
-ActionAid Bangladesh,21,,AVAS,1,1,commitments,outgoing,8733
-ActionAid Bangladesh,21,,AVAS,1,1,spending,outgoing,8733
-ActionAid Bangladesh,21,,ActionAid Bangladesh,1,1,spending,outgoing,21977
-ActionAid Bangladesh,21,,Association of Voluntary Action for Society (AVAS),1,1,commitments,outgoing,665
-ActionAid Bangladesh,21,,Association of Voluntary Action for Society (AVAS),1,1,spending,outgoing,665
-ActionAid Bangladesh,21,,BACE,1,1,spending,outgoing,372567
-ActionAid Bangladesh,21,,BADHON,1,1,commitments,outgoing,19964
-ActionAid Bangladesh,21,,BADHON,1,1,spending,outgoing,19962
-ActionAid Bangladesh,21,,BITA,1,1,commitments,outgoing,17674
-ActionAid Bangladesh,21,,BITA,1,1,spending,outgoing,17631
-ActionAid Bangladesh,21,,BSDO,1,1,commitments,outgoing,4366
-ActionAid Bangladesh,21,,BSDO,1,1,spending,outgoing,4366
-ActionAid Bangladesh,21,,Bangladesh Association for Community Education (BACE),1,1,spending,outgoing,97822
-ActionAid Bangladesh,21,,Chanpara Clinic,1,1,commitments,outgoing,4329
-ActionAid Bangladesh,21,,Chanpara Clinic,1,1,spending,outgoing,4329
-ActionAid Bangladesh,21,,DALIT,1,1,commitments,outgoing,4345
-ActionAid Bangladesh,21,,DALIT,1,1,spending,outgoing,4345
-ActionAid Bangladesh,21,,GHORAGHAT,1,1,commitments,outgoing,4362
-ActionAid Bangladesh,21,,GHORAGHAT,1,1,spending,outgoing,4362
-ActionAid Bangladesh,21,,HEAD,1,1,commitments,outgoing,21241
-ActionAid Bangladesh,21,,HEAD,1,1,spending,outgoing,21229
-ActionAid Bangladesh,21,,NDBUS,1,1,commitments,outgoing,4343
-ActionAid Bangladesh,21,,NDBUS,1,1,spending,outgoing,4343
-ActionAid Bangladesh,21,,Nari Maitree,1,1,commitments,outgoing,21108
-ActionAid Bangladesh,21,,Nari Maitree,1,1,spending,outgoing,21060
-ActionAid Bangladesh,21,,Shusilan,1,1,commitments,outgoing,4366
-ActionAid Bangladesh,21,,Shusilan,1,1,spending,outgoing,4366
-ActionAid Bangladesh,21,,USS,1,1,commitments,outgoing,23687
-ActionAid Bangladesh,21,,USS,1,1,spending,outgoing,23687
-ActionAid Bangladesh,21,,VARD,1,1,commitments,outgoing,4366
-ActionAid Bangladesh,21,,VARD,1,1,spending,outgoing,4366
-ActionAid Bangladesh,21,,YPSA,1,1,commitments,outgoing,16459
-ActionAid Bangladesh,21,,YPSA,1,1,spending,outgoing,16429
-ActionAid Bangladesh,21,AAB's private donor,,1,1,commitments,incoming,665
-ActionAid Bangladesh,21,ActionAid Denmark (Mellemfolkeligt Samvirke),,1,1,spending,incoming,153878
+ActionAid Bangladesh,21,,(unspecified org),1,1,spending,outgoing,17419
+ActionAid Bangladesh,21,,ALO,1,1,commitments,outgoing,21606
+ActionAid Bangladesh,21,,ALO,1,1,spending,outgoing,21602
+ActionAid Bangladesh,21,,AVAS,1,1,commitments,outgoing,8709
+ActionAid Bangladesh,21,,AVAS,1,1,spending,outgoing,8709
+ActionAid Bangladesh,21,,Association of Voluntary Action for Society (AVAS),1,1,commitments,outgoing,664
+ActionAid Bangladesh,21,,Association of Voluntary Action for Society (AVAS),1,1,spending,outgoing,664
+ActionAid Bangladesh,21,,BACE,1,1,spending,outgoing,371516
+ActionAid Bangladesh,21,,BADHON,1,1,commitments,outgoing,19907
+ActionAid Bangladesh,21,,BADHON,1,1,spending,outgoing,19906
+ActionAid Bangladesh,21,,BITA,1,1,commitments,outgoing,17624
+ActionAid Bangladesh,21,,BITA,1,1,spending,outgoing,17581
+ActionAid Bangladesh,21,,BSDO,1,1,commitments,outgoing,4354
+ActionAid Bangladesh,21,,BSDO,1,1,spending,outgoing,4354
+ActionAid Bangladesh,21,,Bangladesh Association for Community Education (BACE),1,1,spending,outgoing,97546
+ActionAid Bangladesh,21,,Chanpara Clinic,1,1,commitments,outgoing,4317
+ActionAid Bangladesh,21,,Chanpara Clinic,1,1,spending,outgoing,4317
+ActionAid Bangladesh,21,,DALIT,1,1,commitments,outgoing,4333
+ActionAid Bangladesh,21,,DALIT,1,1,spending,outgoing,4333
+ActionAid Bangladesh,21,,GHORAGHAT,1,1,commitments,outgoing,4350
+ActionAid Bangladesh,21,,GHORAGHAT,1,1,spending,outgoing,4350
+ActionAid Bangladesh,21,,HEAD,1,1,commitments,outgoing,21181
+ActionAid Bangladesh,21,,HEAD,1,1,spending,outgoing,21169
+ActionAid Bangladesh,21,,NDBUS,1,1,commitments,outgoing,4331
+ActionAid Bangladesh,21,,NDBUS,1,1,spending,outgoing,4331
+ActionAid Bangladesh,21,,Nari Maitree,1,1,commitments,outgoing,21049
+ActionAid Bangladesh,21,,Nari Maitree,1,1,spending,outgoing,21000
+ActionAid Bangladesh,21,,Shusilan,1,1,commitments,outgoing,4353
+ActionAid Bangladesh,21,,Shusilan,1,1,spending,outgoing,4353
+ActionAid Bangladesh,21,,USS,1,1,commitments,outgoing,23620
+ActionAid Bangladesh,21,,USS,1,1,spending,outgoing,23620
+ActionAid Bangladesh,21,,VARD,1,1,commitments,outgoing,4354
+ActionAid Bangladesh,21,,VARD,1,1,spending,outgoing,4354
+ActionAid Bangladesh,21,,YPSA,1,1,commitments,outgoing,16412
+ActionAid Bangladesh,21,,YPSA,1,1,spending,outgoing,16383
+ActionAid Bangladesh,21,AAB's private donor,,1,1,commitments,incoming,664
+ActionAid Bangladesh,21,ActionAid Denmark (Mellemfolkeligt Samvirke),,1,1,spending,incoming,153444
 ActionAid Bangladesh,21,ActionAid International,,1,1,commitments,incoming,47035
 ActionAid Bangladesh,21,ActionAid International,,1,1,spending,incoming,47035
-ActionAid Bangladesh,21,BAPA,,1,1,commitments,incoming,3549
+ActionAid Bangladesh,21,BAPA,,1,1,commitments,incoming,3539
 ActionAid Denmark (Mellemfolkeligt Samvirke),21,,ActionAid Bangladesh,0,0,commitments,outgoing,181255
 ActionAid Denmark (Mellemfolkeligt Samvirke),21,,ActionAid Bangladesh,0,0,spending,outgoing,628700
 ActionAid Denmark (Mellemfolkeligt Samvirke),21,,ActionAid International Kenya,0,0,commitments,outgoing,39306
@@ -486,7 +486,7 @@ ActionAid UK,21,Unilever,,1,1,spending,incoming,1388364
 "Affaires étrangères, Commerce et Développement Canada (MAECD)",10,,CARE Canada,0,0,commitments,outgoing,3494282
 "Affaires étrangères, Commerce et Développement Canada (MAECD)",10,,CARE Canada,0,0,spending,outgoing,1590963
 "Affaires étrangères, Commerce et Développement Canada (MAECD)",10,,CARE Canada,0,1,commitments,outgoing,4011975
-"Affaires étrangères, Commerce et Développement Canada (MAECD)",10,,CARE Canada,0,1,spending,outgoing,4013301
+"Affaires étrangères, Commerce et Développement Canada (MAECD)",10,,CARE Canada,0,1,spending,outgoing,5746893
 "Affaires étrangères, Commerce et Développement Canada (MAECD)",10,,CECI - Centre d'étude et de coopération internationale,0,1,commitments,outgoing,297952
 "Affaires étrangères, Commerce et Développement Canada (MAECD)",10,,CECI - Centre d'étude et de coopération internationale,0,1,spending,outgoing,314237
 "Affaires étrangères, Commerce et Développement Canada (MAECD)",10,,CESC - Centro de Aprendizagem e Capacitação da Sociedade Civil,0,1,commitments,outgoing,368406
@@ -601,9 +601,7 @@ ActionAid UK,21,Unilever,,1,1,spending,incoming,1388364
 "Affaires étrangères, Commerce et Développement Canada (MAECD)",10,,effect:hope,0,1,spending,outgoing,792833
 "Affaires étrangères, Commerce et Développement Canada (MAECD)",10,,"icddr,b",0,1,commitments,outgoing,19301914
 "Affaires étrangères, Commerce et Développement Canada (MAECD)",10,,"icddr,b",0,1,spending,outgoing,4635920
-African Center for Economic Transformation,80,,African Center for Economic Transformation,0,0,spending,outgoing,2083021
 African Center for Global Health and Social Transformation,22,,(unspecified org),0,0,spending,outgoing,278778
-African Center for Global Health and Social Transformation,22,African Center for Global Health and Social Transformation,,0,0,spending,incoming,77399
 African Center for Global Health and Social Transformation,22,Amref Flying Doctors,,0,0,spending,incoming,903449
 African Development Bank Group,40,,(unspecified org),0,1,spending,outgoing,305357797
 African Development Bank Group,40,,AFRICAN UNION,0,1,commitments,outgoing,27741263
@@ -801,56 +799,6 @@ BRAC UK,21,,(unspecified org),0,0,spending,outgoing,388298
 BRAC UK,21,,(unspecified org),0,1,spending,outgoing,647673
 BRAC UK,21,BRAC,,0,1,spending,incoming,541143
 BRAC UK,21,UK Department for International Development,,0,0,spending,incoming,273487
-Belgian development agency (Enabel),10,,"AFRICAN CONSTRUCTION SARL - ENTAG MARCHE/ COMMUNE MATOTO, CONAKRY, Guinea",0,0,commitments,outgoing,274687
-Belgian development agency (Enabel),10,,"AFRIKA DISTRIBUTION GROUP BURKINA - Ouagadougou, secteur 29, Ouagadougou, Burkina Faso",0,0,commitments,outgoing,59761
-Belgian development agency (Enabel),10,,"ANKER BURKINA Distribution - OUAGADOUGOU, OUAGADOUGOU, Burkina Faso",0,0,commitments,outgoing,180845
-Belgian development agency (Enabel),10,,"AVADIS - ZI de Tournai Ouest 1, Rue du Progrès 39, Froyennes, Belgium",0,0,commitments,outgoing,17182
-Belgian development agency (Enabel),10,,"Africalia Belgique - Bruxelles 1000 Brussel, Bruxelles, Belgium",0,0,commitments,outgoing,117703
-Belgian development agency (Enabel),10,,"BlueSquare SA - Hive5-Securex Building 1st Flr, Belgium, Belgium",0,0,commitments,outgoing,108256
-Belgian development agency (Enabel),10,,"CEDRES - Ouaga, Ouagadougou, Burkina Faso",0,0,commitments,outgoing,151630
-Belgian development agency (Enabel),10,,"CHR Tenkodogo - BP56 Tenkodogo, Tenkodogo, Burkina Faso",0,0,commitments,outgoing,166603
-Belgian development agency (Enabel),10,,"Centre MURAZ - 2054, Avenue Mamadou KONATE, Bobo Dioulasso, Burkina Faso",0,0,commitments,outgoing,67722
-Belgian development agency (Enabel),10,,"DACO INGENIERIE-IDEV/IC - YIMBAYA, CONAKRY, Guinea",0,0,commitments,outgoing,127810
-Belgian development agency (Enabel),10,,"DELL NV - Zone 3 Doornveld, 130, RELEGEM, Belgium",0,0,commitments,outgoing,166401
-Belgian development agency (Enabel),10,,"DJINTEY MULTI SERVCES - Immeuble feu kerfalla Touré Limanya commune de Kaloum, Conakry, French Guiana",0,0,commitments,outgoing,38248
-Belgian development agency (Enabel),10,,"DOCTORS WITH AFRICA CUAMM - Martires da Machava, Maputo, Mozambique",0,0,commitments,outgoing,26034
-Belgian development agency (Enabel),10,,"EGBTPE - CONAKRY, CONAKRY, Guinea",0,0,commitments,outgoing,187488
-Belgian development agency (Enabel),10,,"EGTC - KENENDE/ COMMUNE DUBREKA, DUBREKA, Guinea",0,0,commitments,outgoing,478095
-Belgian development agency (Enabel),10,,"ENCELEC - NONGO/COM. RATOMA, CONAKRY, Guinea",0,0,commitments,outgoing,330795
-Belgian development agency (Enabel),10,,"ENERAD CAV - OUAGADOUGOU, OUAGADOUGOU, Burkina Faso",0,1,commitments,outgoing,54382
-Belgian development agency (Enabel),10,,"ENTREPRISE DE CONSTRUCTION ET DE TOPOGRAPHIE - YATTAYA/ COMMUNE RATOMA, CONAKRY, Guinea",0,0,commitments,outgoing,317837
-Belgian development agency (Enabel),10,,"ETI - COMMUNE DE KALOUM, CONAKRY, Guinea",0,0,commitments,outgoing,18622
-Belgian development agency (Enabel),10,,"EUCORD-Belgique - 1050 Brussels, Brussels, Belgium",0,0,commitments,outgoing,534399
-Belgian development agency (Enabel),10,,"Ets Diallo et Frères - Carrefour Constantin-Matam, Conakry, Guinea",0,0,commitments,outgoing,25824
-Belgian development agency (Enabel),10,,"FPFD - SN, Pita, Guinea",0,0,commitments,outgoing,641357
-Belgian development agency (Enabel),10,,"GEO-CONSTRUCTION-ENTREPRISE SARL - MATOTO MARCHE/ COMMUNE MATOTO, CONAKRY, Guinea",0,0,commitments,outgoing,122835
-Belgian development agency (Enabel),10,,"GRET - Campus du jardin tropical 45 bis Avenue de la Belle Gabrielle, NOGENT SUR MARNE, France",0,0,commitments,outgoing,688423
-Belgian development agency (Enabel),10,,"GROUPEMENT TECKNICART/STRATHEG - MATAM, CONAKRY, Guinea",0,0,commitments,outgoing,67301
-Belgian development agency (Enabel),10,,"GUIMPEX - COMMUNE DIXINN, CONAKRY, Guinea",0,0,commitments,outgoing,322533
-Belgian development agency (Enabel),10,,"Groupement Cedis - Ouaga, ouagadoudou, Burkina Faso",0,0,commitments,outgoing,51295
-Belgian development agency (Enabel),10,,"H DATA SOLUTION SARL - KIPE/RATOMA, CONAKRY, Guinea",0,0,commitments,outgoing,25824
-Belgian development agency (Enabel),10,,"ISSP - UNIV JOSEPH KI ZERBO, OUAGA 03, Burkina Faso",0,0,commitments,outgoing,179575
-Belgian development agency (Enabel),10,,"Keolid innovation hub - Cité AN II, OUAGADOUGOU, Burkina Faso",0,0,commitments,outgoing,282674
-Belgian development agency (Enabel),10,,"MWANGAZA ACTION - Ouagadougou, Ouagadougou, Burkina Faso",0,0,commitments,outgoing,33191
-Belgian development agency (Enabel),10,,"NAZAN SARL - Ouagadougou, Ouagadougou, Burkina Faso",0,1,commitments,outgoing,40887
-Belgian development agency (Enabel),10,,"Network Sécurity Technology TALENTYS - secteur 52 ouaga 2000 rue 15 293 lot 15 parcelle 01 section H, ouagadougou, Burkina Faso",0,0,commitments,outgoing,45257
-Belgian development agency (Enabel),10,,"ORGANISATION CATHOLIQUE POUR LA PROMOTION HUMAINE - KALOUM ACHEVECHE, CONAKRY, Guinea",0,0,commitments,outgoing,359469
-Belgian development agency (Enabel),10,,"RESCOM-ENGINEERING SARL - ALMAMYA/COMMUNE KALOU, CONAKRY, Guinea",0,0,commitments,outgoing,348798
-Belgian development agency (Enabel),10,,"RGTA-DI - Féréffou 2, kindia, Kindia, Guinea",0,0,commitments,outgoing,323898
-Belgian development agency (Enabel),10,,"SERGE & GERARD PRESTATION - BENTOURAYA/COMMUNE COYAH, CONAKRY, Guinea",0,0,commitments,outgoing,464845
-Belgian development agency (Enabel),10,,"SERVIZIO DI PACE LVIA - CUNEO, CUNEO, Italy",0,0,commitments,outgoing,359469
-Belgian development agency (Enabel),10,,"SHER INGENIEURS - CONSEILS - Rue J. Matagne, 15, CHAMPION, Belgium",0,0,commitments,outgoing,25019
-Belgian development agency (Enabel),10,,"SOCIETE FILASTANINA BETONS SARL- BTP - KEITAYA/ COMMUNE RATOMA, CONAKRY, Guinea",0,0,commitments,outgoing,143689
-Belgian development agency (Enabel),10,,"SOCIETE NAFA DYAMA CONSTRUCTION SARL - MADINA BOUSSOURA/ C. MATAM, CONAKRY, Guinea",0,0,commitments,outgoing,295329
-Belgian development agency (Enabel),10,,"Sagrasy consulting - ouaga, ouagadougou, Burkina Faso",0,0,commitments,outgoing,53376
-Belgian development agency (Enabel),10,,"TOGOBALA HOLDING - NONGO, COMMUNE RATOMA, CONAKRY, Guinea",0,0,commitments,outgoing,22378
-Belgian development agency (Enabel),10,,"TOP-GUINEE SARL - MADINA DISPENSAIRE/ COMMUNE DE MATAM, CONAKRY, Guinea",0,0,commitments,outgoing,24574
-Belgian development agency (Enabel),10,,"TOPAZ MULTI - INDUSTRIES - SA - Matoto, Conakry, Guinea",0,1,commitments,outgoing,31399
-Belgian development agency (Enabel),10,,"TRIAS GUINEE - SN, Kindia, Guinea",0,0,commitments,outgoing,569705
-Belgian development agency (Enabel),10,,"UNIVERSITE DE LIEGE - Place du XX août, 7, LIEGE, Belgium",0,0,commitments,outgoing,138294
-Belgian development agency (Enabel),10,,"Union pour le Développement et la Coopération - Sandervalia Boulevard Diallo Telly, Conakry, Guinea",0,0,commitments,outgoing,40750
-Belgian development agency (Enabel),10,,"WEST INGENIERIE - KIPE/ COMMUNE RATOMA, CONAKRY, Guinea",0,0,commitments,outgoing,215680
-Belgian development agency (Enabel),10,,"YALLAND'UM EXPERTISE MONITORING & ÉVALUATION PROJET (YEME-C) - ALMAMYA, CONAKRY, Guinea",0,0,commitments,outgoing,48311
 Bill and Melinda Gates Foundation,60,,4YouandMe,0,1,commitments,outgoing,276576
 Bill and Melinda Gates Foundation,60,,4YouandMe,0,1,spending,outgoing,276576
 Bill and Melinda Gates Foundation,60,,"ALIMA USA, Inc.",0,1,commitments,outgoing,700000
@@ -1383,19 +1331,16 @@ British Red Cross,21,,Bermuda OSB,1,0,spending,outgoing,27441
 British Red Cross,21,,British Virgin Islands OSB,1,0,spending,outgoing,247615
 British Red Cross,21,,British Virgin Islands OSB,1,1,spending,outgoing,40000
 British Red Cross,21,,Cayman Islands OSB,1,0,spending,outgoing,43532
-British Red Cross,21,,Comité international de la Croix-Rouge,1,0,spending,outgoing,255820
-British Red Cross,21,,Comité international de la Croix-Rouge,1,1,spending,outgoing,1234833
+British Red Cross,21,,Comité international de la Croix-Rouge,1,1,spending,outgoing,1076235
 British Red Cross,21,,Danish Red Cross,1,0,spending,outgoing,21332
 British Red Cross,21,,Danish Red Cross,1,1,spending,outgoing,24660
 British Red Cross,21,,Finnish Red Cross,1,0,spending,outgoing,96076
 British Red Cross,21,,Finnish Red Cross,1,1,spending,outgoing,32332
 British Red Cross,21,,French Red Cross,1,0,spending,outgoing,377172
 British Red Cross,21,,French Red Cross,1,1,spending,outgoing,206741
-British Red Cross,21,,German Red Cross,1,0,spending,outgoing,468336
-British Red Cross,21,,German Red Cross,1,1,spending,outgoing,230782
 British Red Cross,21,,IFRC Livelihoods Resource Centre,1,1,spending,outgoing,29353
-British Red Cross,21,,International Federation of Red Cross and Red Crescent Societies,1,0,spending,outgoing,894457
-British Red Cross,21,,International Federation of Red Cross and Red Crescent Societies,1,1,spending,outgoing,50456279
+British Red Cross,21,,International Federation of Red Cross and Red Crescent Societies,1,0,spending,outgoing,692297
+British Red Cross,21,,International Federation of Red Cross and Red Crescent Societies,1,1,spending,outgoing,50232923
 British Red Cross,21,,Kenya Red Cross Society,1,0,spending,outgoing,570362
 British Red Cross,21,,Kenya Red Cross Society,1,1,spending,outgoing,396795
 British Red Cross,21,,Lebanese Red Cross,1,0,spending,outgoing,3414440
@@ -1414,8 +1359,6 @@ Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ),10,,
 Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ),10,,(unspecified org),0,0,spending,outgoing,602833040
 Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ),10,,(unspecified org),0,1,commitments,outgoing,433625459
 Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ),10,,(unspecified org),0,1,spending,outgoing,360944482
-Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ),10,,Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ),0,0,commitments,outgoing,40312800
-Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ),10,,Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ),0,0,spending,outgoing,17122266
 Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ),10,,CENTRAL BANK OF THE REPUBLIC OF ARMENIA,0,0,commitments,outgoing,30357500
 Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ),10,,CITY OF CAPE TOWN CIVIC CENTER,0,1,commitments,outgoing,4238500
 Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ),10,,CORPORACION ANDINA DE FOMENTO,0,1,commitments,outgoing,115473457
@@ -1728,8 +1671,6 @@ Centre de recherches pour le développement international,15,,Université Cheikh
 Centre de recherches pour le développement international,15,,Université Cheikh Anta Diop,0,1,spending,outgoing,138093
 Centre de recherches pour le développement international,15,,Women in Informal Employment: Globalizing and Organizing (WIEGO) Limited,0,1,commitments,outgoing,693452
 Centre de recherches pour le développement international,15,,Women in Informal Employment: Globalizing and Organizing (WIEGO) Limited,0,1,spending,outgoing,363114
-"Centre for Injury Prevention and Research, Bangladesh (CIPRB)",22,,"Centre for Injury Prevention and Research, Bangladesh (CIPRB)",0,0,spending,outgoing,60727
-"Centre for Injury Prevention and Research, Bangladesh (CIPRB)",22,,"Centre for Injury Prevention and Research, Bangladesh (CIPRB)",0,1,spending,outgoing,57941
 Christian Aid,21,,(unspecified org),1,0,spending,outgoing,348990341
 Christian Aid,21,,ACROSS,0,0,commitments,outgoing,89306
 Christian Aid,21,,ACROSS,0,0,spending,outgoing,105732
@@ -1910,7 +1851,6 @@ Coalition for Epidemic Preparedness innovations,30,The United Kingdom,,0,1,spend
 Coalition for Epidemic Preparedness innovations,30,UN Foundation,,0,1,spending,incoming,10000005
 Coalition for Epidemic Preparedness innovations,30,United States Agency for International Development,,0,0,spending,incoming,4000000
 Coalition for Epidemic Preparedness innovations,30,Wellcome Trust,,0,0,spending,incoming,63637483
-Concern Worldwide,22,,Concern Worldwide,0,1,spending,outgoing,394712
 Concern Worldwide,22,Concern Worldwide (UK),,0,0,commitments,incoming,489177
 Concern Worldwide,22,Concern Worldwide (UK),,0,1,commitments,incoming,1091416
 Concern Worldwide,22,Concern Worldwide (UK),,0,1,spending,incoming,1267164
@@ -1964,7 +1904,6 @@ Cordaid,21,,Caritas Zimbabwe,1,1,commitments,outgoing,636365
 Cordaid,21,,Caritas Zimbabwe,1,1,spending,outgoing,580460
 Cordaid,21,,Children Aid South Sudan,1,1,commitments,outgoing,97044
 Cordaid,21,,Children Aid South Sudan,1,1,spending,outgoing,87340
-Cordaid,21,,Cordaid,0,1,spending,outgoing,111737
 Cordaid,21,,Cordaid Uganda,0,1,commitments,outgoing,393390
 Cordaid,21,,Cordaid Uganda,0,1,spending,outgoing,393390
 Cordaid,21,,Cordaid Uganda,1,1,commitments,outgoing,14709
@@ -2036,7 +1975,7 @@ Cordaid,21,,Stichting Vluchteling,1,1,spending,outgoing,1208036
 Cordaid,21,,Tearfund Nederland,1,0,commitments,outgoing,524960
 Cordaid,21,,Tearfund Nederland,1,0,spending,outgoing,495216
 Cordaid,21,,Union pour le développement Agropastoral et la protection de l'envirenement,1,0,commitments,outgoing,62742
-Cordaid,21,,Union pour le développement Agropastoral et la protection de l'envirenement,1,0,spending,outgoing,21827
+Cordaid,21,,Union pour le développement Agropastoral et la protection de l'envirenement,1,0,spending,outgoing,31102
 Cordaid,21,,Union pour le développement Agropastoral et la protection de l'envirenement,1,1,commitments,outgoing,9709
 Cordaid,21,,University of Nairobi,0,0,commitments,outgoing,28157
 Cordaid,21,,University of Nairobi,0,0,spending,outgoing,28338
@@ -2091,7 +2030,6 @@ Danish Refugee Council,21,,Atlas,1,1,spending,outgoing,22324
 Danish Refugee Council,21,,BBC Media Action,1,0,spending,outgoing,626159
 Danish Refugee Council,21,,CDAC Network,1,1,spending,outgoing,67961
 Danish Refugee Council,21,,CartONG,1,1,spending,outgoing,22751
-Danish Refugee Council,21,,Danish Refugee Council,1,0,spending,outgoing,1278409
 Danish Refugee Council,21,,Evidence Aid,1,1,spending,outgoing,23387
 Danish Refugee Council,21,,Ground Truth Solutions,1,1,spending,outgoing,89615
 Danish Refugee Council,21,,Ground Truth Solutions (GTS),1,1,spending,outgoing,100766
@@ -2154,7 +2092,6 @@ Danish Refugee Council,21,World Food Programme,,1,1,spending,incoming,577109
 Danish Refugee Council,21,World Health Organization,,1,1,spending,incoming,25742
 Danish Refugee Council,21,World Resources Institute,,1,1,spending,incoming,10179
 Danish Refugee Council,21,World Vision International,,1,1,spending,incoming,21167
-Danmission,22,,Danmission,0,0,spending,outgoing,278011
 "Department of Business, Energy and Industrial Strategy",10,,Royal Academy of Engineering,0,0,commitments,outgoing,695314
 "Department of Business, Energy and Industrial Strategy",10,,Royal Academy of Engineering,0,0,spending,outgoing,410990
 "Department of Business, Energy and Industrial Strategy",10,,"Royal Holloway, Univ of London",0,1,commitments,outgoing,312183
@@ -2638,7 +2575,6 @@ Deutschland - Auswärtiges Amt,10,,l'Association Scout without borders,0,0,commi
 Deutschland - Auswärtiges Amt,10,,l'Association Scout without borders,0,0,spending,outgoing,27544
 Deutschland - Auswärtiges Amt,10,,Ärzte der Welt e.V.,1,1,commitments,outgoing,687232
 Deutschland - Auswärtiges Amt,10,,Ärzte der Welt e.V.,1,1,spending,outgoing,1602883
-Development Initiatives Poverty Research,21,,Development Initiatives Poverty Research,0,0,spending,outgoing,43838
 Direction-Générale Coopération au Développement et Aide humanitaire,10,,BIO - Belgian Investment Company for Developing Countries - BIO,0,1,spending,outgoing,36806844
 Direction-Générale Coopération au Développement et Aide humanitaire,10,,Coalition for Epidemic Preparedness Innovations (CEPI,0,1,spending,outgoing,5432000
 Direction-Générale Coopération au Développement et Aide humanitaire,10,,Commitment,0,0,commitments,outgoing,3490742
@@ -2701,7 +2637,6 @@ EMMS International,21,,Mulanje Mission Hospital,0,0,spending,outgoing,21282
 EMMS International,21,,Mulanje Mission Hospital,1,1,spending,outgoing,17340
 Ethiopian Public Health Association,15,Guttmacher Institute,,0,0,commitments,incoming,34630
 Ethiopian Public Health Association,15,Guttmacher Institute,,0,0,spending,incoming,21987
-Eurasia Partnership Foundation,60,,Eurasia Partnership Foundation,0,0,spending,outgoing,100283
 European Bank for Reconstruction and Development,40,,AGENCY FOR FINANCE IN KOSOVO,0,0,commitments,outgoing,2251800
 European Bank for Reconstruction and Development,40,,AGRICOVER CREDIT IFN SA,0,0,commitments,outgoing,5736516
 European Bank for Reconstruction and Development,40,,AGRICOVER SA,0,0,commitments,outgoing,5862000
@@ -2810,7 +2745,7 @@ European Commission - Humanitarian Aid & Civil Protection,15,,AGA KHAN FOUNDATIO
 European Commission - Humanitarian Aid & Civil Protection,15,,AGA KHAN FOUNDATION (United Kingdom),1,1,spending,outgoing,3219440
 European Commission - Humanitarian Aid & Civil Protection,15,,ASSOCIAZIONE INTERNAZIONALE VOLONTARI LAICI- SERVIZIO DI PACE (ITA),1,1,spending,outgoing,553044
 European Commission - Humanitarian Aid & Civil Protection,15,,Acción Contra El Hambre (ES),1,1,commitments,outgoing,18897079
-European Commission - Humanitarian Aid & Civil Protection,15,,Acción Contra El Hambre (ES),1,1,spending,outgoing,21500137
+European Commission - Humanitarian Aid & Civil Protection,15,,Acción Contra El Hambre (ES),1,1,spending,outgoing,21619065
 European Commission - Humanitarian Aid & Civil Protection,15,,Action Contre La Faim (FR),1,1,commitments,outgoing,6446150
 European Commission - Humanitarian Aid & Civil Protection,15,,Action Contre La Faim (FR),1,1,spending,outgoing,8183674
 European Commission - Humanitarian Aid & Civil Protection,15,,ActionAid International Italia onlus,1,1,commitments,outgoing,1673690
@@ -2825,7 +2760,7 @@ European Commission - Humanitarian Aid & Civil Protection,15,,CARE INTERNATIONAL
 European Commission - Humanitarian Aid & Civil Protection,15,,CESVI Fondazione Onlus,1,1,commitments,outgoing,5909000
 European Commission - Humanitarian Aid & Civil Protection,15,,CESVI Fondazione Onlus,1,1,spending,outgoing,4321110
 European Commission - Humanitarian Aid & Civil Protection,15,,COMITE INTERNATIONAL DE LA CROIX-ROUGE (CICR),1,1,commitments,outgoing,41788193
-European Commission - Humanitarian Aid & Civil Protection,15,,COMITE INTERNATIONAL DE LA CROIX-ROUGE (CICR),1,1,spending,outgoing,44004968
+European Commission - Humanitarian Aid & Civil Protection,15,,COMITE INTERNATIONAL DE LA CROIX-ROUGE (CICR),1,1,spending,outgoing,48663076
 European Commission - Humanitarian Aid & Civil Protection,15,,"CONCERN WORLDWIDE, (IRL)",1,0,commitments,outgoing,4643140
 European Commission - Humanitarian Aid & Civil Protection,15,,"CONCERN WORLDWIDE, (IRL)",1,0,spending,outgoing,3956826
 European Commission - Humanitarian Aid & Civil Protection,15,,"CONCERN WORLDWIDE, (IRL)",1,1,commitments,outgoing,5898105
@@ -2982,7 +2917,7 @@ European Commission - Humanitarian Aid & Civil Protection,15,,UNITED NATIONS POP
 European Commission - Humanitarian Aid & Civil Protection,15,,UNITED NATIONS RELIEF AND WORKS AGENCY FOR PALESTINE REFUGEES IN NEAR EAST,1,1,commitments,outgoing,1619700
 European Commission - Humanitarian Aid & Civil Protection,15,,UNITED NATIONS RELIEF AND WORKS AGENCY FOR PALESTINE REFUGEES IN NEAR EAST,1,1,spending,outgoing,1373440
 European Commission - Humanitarian Aid & Civil Protection,15,,"UNITED NATIONS, OFFICE FOR THE COORDINATION OF HUMANITARIAN AFFAIRS",1,1,commitments,outgoing,484280
-European Commission - Humanitarian Aid & Civil Protection,15,,"UNITED NATIONS, OFFICE FOR THE COORDINATION OF HUMANITARIAN AFFAIRS",1,1,spending,outgoing,1502390
+European Commission - Humanitarian Aid & Civil Protection,15,,"UNITED NATIONS, OFFICE FOR THE COORDINATION OF HUMANITARIAN AFFAIRS",1,1,spending,outgoing,1806249
 European Commission - Humanitarian Aid & Civil Protection,15,,WORLD FOOD PROGRAM,1,0,spending,outgoing,8414063
 European Commission - Humanitarian Aid & Civil Protection,15,,WORLD FOOD PROGRAM,1,1,commitments,outgoing,61999237
 European Commission - Humanitarian Aid & Civil Protection,15,,WORLD FOOD PROGRAM,1,1,spending,outgoing,38032865
@@ -2992,7 +2927,7 @@ European Commission - Humanitarian Aid & Civil Protection,15,,"WORLD VISION, (DE
 European Commission - Humanitarian Aid & Civil Protection,15,,WeWorld-GVC Onlus,1,1,spending,outgoing,1362977
 European Commission - Humanitarian Aid & Civil Protection,15,,ZOA,1,1,spending,outgoing,1826292
 European Commission - Humanitarian Aid & Civil Protection,15,,"ČLOVEK V TÍSNI, O.P.S.",1,1,commitments,outgoing,7964175
-European Commission - Humanitarian Aid & Civil Protection,15,,"ČLOVEK V TÍSNI, O.P.S.",1,1,spending,outgoing,9912898
+European Commission - Humanitarian Aid & Civil Protection,15,,"ČLOVEK V TÍSNI, O.P.S.",1,1,spending,outgoing,9917128
 European Commission - International Partnerships,15,,Accao Para O Desenvolvimento Rurale Ambiente Adra*,0,1,spending,outgoing,204761
 European Commission - International Partnerships,15,,Acted,0,1,spending,outgoing,4065623
 European Commission - International Partnerships,15,,Action Aid International Uganda Non Governmental Organization*Aaiu,0,1,spending,outgoing,304372
@@ -3670,11 +3605,6 @@ Feed the Minds,21,(unspecified org),,1,0,spending,incoming,236379
 Fondation Hirondelle,21,,(unspecified org),1,1,spending,outgoing,265650
 Fondation Hirondelle,21,Danish Refugee Council,,1,1,commitments,incoming,354200
 Fondation Hirondelle,21,Danish Refugee Council,,1,1,spending,incoming,152793
-Fondo Mujeres del Sur,60,,Fondo Mujeres del Sur,0,0,spending,outgoing,139832
-Food and Agriculture Organization (FAO),40,,Food and Agriculture Organization (FAO),0,0,commitments,outgoing,13180513
-Food and Agriculture Organization (FAO),40,,Food and Agriculture Organization (FAO),0,0,spending,outgoing,4144261
-Food and Agriculture Organization (FAO),40,,Food and Agriculture Organization (FAO),0,1,commitments,outgoing,70465061
-Food and Agriculture Organization (FAO),40,,Food and Agriculture Organization (FAO),0,1,spending,outgoing,30107549
 Food and Agriculture Organization (FAO),40,(unspecified org),,0,1,spending,incoming,2010000
 Food and Agriculture Organization (FAO),40,Belgium,,0,0,spending,incoming,1767136
 Food and Agriculture Organization (FAO),40,Belgium,,0,1,spending,incoming,3307136
@@ -3891,9 +3821,6 @@ HelpAge International,21,,"Caritas/ Pastoral Social, Colombia",1,1,spending,outg
 HelpAge International,21,,"Disabled People's Development Organisation, Myanmar",0,1,spending,outgoing,43936
 HelpAge International,21,,"Good Samaritan Social Service Trust, Tanzania",1,0,spending,outgoing,12181
 HelpAge International,21,,HelpAge Cambodia,1,0,spending,outgoing,17
-HelpAge International,21,,HelpAge International,0,1,spending,outgoing,96218
-HelpAge International,21,,HelpAge International,1,0,spending,outgoing,450491
-HelpAge International,21,,HelpAge International,1,1,spending,outgoing,1546169
 HelpAge International,21,,"Humanitarian and Development Consortium (HDC), South Sudan",1,1,spending,outgoing,21068
 HelpAge International,21,,IDRAAC,1,0,spending,outgoing,20
 HelpAge International,21,,"Jumuhia ya Wazee (JUWAZA), Zanzibar",1,0,spending,outgoing,19066
@@ -3987,80 +3914,31 @@ International Climate Initiative (IKI),10,,Institute for Transportation & Develo
 International Climate Initiative (IKI),10,,The Palladium Group,0,0,commitments,outgoing,12166982
 International Climate Initiative (IKI),10,,UN-HABITAT,0,0,spending,outgoing,111949
 International Climate Initiative (IKI),10,,United Nations Development Programme (UNDP) - Slovakia,0,0,spending,outgoing,22204148
-International Development Law Organization (IDLO),40,,International Development Law Organization (IDLO),0,1,spending,outgoing,116116
 International Development Law Organization (IDLO),40,European Bank for Reconstruction and Development,,0,1,commitments,incoming,814626
 International Development Law Organization (IDLO),40,European Commission - International Partnerships,,0,1,commitments,incoming,280462
 International Development Law Organization (IDLO),40,European Commission - International Partnerships,,0,1,spending,incoming,216678
-International Development Law Organization (IDLO),40,International Development Law Organization (IDLO),,0,1,commitments,incoming,561850
-International Federation of Red Cross and Red Crescent Societies,90,,International Federation of Red Cross and Red Crescent Societies,1,1,spending,outgoing,146477614
-International Federation of Red Cross and Red Crescent Societies,90,American Red Cross,,1,1,spending,incoming,10945953
-International Federation of Red Cross and Red Crescent Societies,90,Asian Football Confederation,,1,1,spending,incoming,217535
-International Federation of Red Cross and Red Crescent Societies,90,Australian Government,,1,1,spending,incoming,34288
-International Federation of Red Cross and Red Crescent Societies,90,Australian Red Cross,,1,1,spending,incoming,2484126
-International Federation of Red Cross and Red Crescent Societies,90,Austrian Red Cross,,1,1,spending,incoming,1592034
-International Federation of Red Cross and Red Crescent Societies,90,Bahrain Red Crescent Society,,1,1,spending,incoming,22622
-International Federation of Red Cross and Red Crescent Societies,90,Belgian Federal Government,,1,1,spending,incoming,1772222
-International Federation of Red Cross and Red Crescent Societies,90,Boston Scientfic,,1,1,spending,incoming,164187
-International Federation of Red Cross and Red Crescent Societies,90,British Red Cross,,1,1,spending,incoming,52130469
-International Federation of Red Cross and Red Crescent Societies,90,Coca Cola Foundation,,1,1,spending,incoming,2732456
-International Federation of Red Cross and Red Crescent Societies,90,Coca-Cola,,1,1,spending,incoming,214533
-International Federation of Red Cross and Red Crescent Societies,90,Danish Red Cross,,1,1,spending,incoming,600141
-International Federation of Red Cross and Red Crescent Societies,90,EU-DG SANTE,,1,1,spending,incoming,29469
-International Federation of Red Cross and Red Crescent Societies,90,European Commission - DG ECHO,,1,1,spending,incoming,5848080
-International Federation of Red Cross and Red Crescent Societies,90,European Investment Bank Institute,,1,1,spending,incoming,178519
-International Federation of Red Cross and Red Crescent Societies,90,Finnish Red Cross,,1,1,spending,incoming,3339376
-International Federation of Red Cross and Red Crescent Societies,90,German Government,,1,1,spending,incoming,17558951
-International Federation of Red Cross and Red Crescent Societies,90,German Red Cross,,1,1,spending,incoming,5476
-International Federation of Red Cross and Red Crescent Societies,90,Goldman Sachs,,1,1,spending,incoming,750865
-International Federation of Red Cross and Red Crescent Societies,90,ICRC,,1,1,spending,incoming,49245
-International Federation of Red Cross and Red Crescent Societies,90,Icelandic Red Cross,,1,1,spending,incoming,239400
-International Federation of Red Cross and Red Crescent Societies,90,Irish Government,,1,1,spending,incoming,1557536
-International Federation of Red Cross and Red Crescent Societies,90,Islamic Committee of the International Crescent,,1,1,spending,incoming,10914
-International Federation of Red Cross and Red Crescent Societies,90,Islamic Development Bank IsDB,,1,1,spending,incoming,637875
-International Federation of Red Cross and Red Crescent Societies,90,Italian Government Bilateral Emergency Fund,,1,1,spending,incoming,120647
-International Federation of Red Cross and Red Crescent Societies,90,Italian Red Cross,,1,1,spending,incoming,86823
-International Federation of Red Cross and Red Crescent Societies,90,Japanese Government,,1,1,spending,incoming,24283460
-International Federation of Red Cross and Red Crescent Societies,90,Japanese Red Cross Society,,1,1,spending,incoming,100288
-International Federation of Red Cross and Red Crescent Societies,90,Johnson & Johnson foundation,,1,1,spending,incoming,4211322
-International Federation of Red Cross and Red Crescent Societies,90,Kenya - Private Donors,,1,1,spending,incoming,2305
-International Federation of Red Cross and Red Crescent Societies,90,Kuwait Red Crescent Society,,1,1,spending,incoming,109905
-International Federation of Red Cross and Red Crescent Societies,90,Lithuania Government,,1,1,spending,incoming,119150
-International Federation of Red Cross and Red Crescent Societies,90,London Stock Exchange Group (LSEG),,1,1,spending,incoming,1339654
-International Federation of Red Cross and Red Crescent Societies,90,Morgan Stanley,,1,1,spending,incoming,30083
-International Federation of Red Cross and Red Crescent Societies,90,Nestle,,1,1,spending,incoming,1461712
-International Federation of Red Cross and Red Crescent Societies,90,New Balance,,1,1,spending,incoming,25883
-International Federation of Red Cross and Red Crescent Societies,90,New Zealand Government,,1,1,spending,incoming,344588
-International Federation of Red Cross and Red Crescent Societies,90,New Zealand Red Cross,,1,1,spending,incoming,81665
-International Federation of Red Cross and Red Crescent Societies,90,Norwegian Red Cross,,1,1,spending,incoming,1842599
-International Federation of Red Cross and Red Crescent Societies,90,Novartis,,1,1,spending,incoming,130190
-International Federation of Red Cross and Red Crescent Societies,90,PPG Coatings (HongKong) Co.Ltd,,1,1,spending,incoming,110186
-International Federation of Red Cross and Red Crescent Societies,90,PPG Industries Europe Sarl,,1,1,spending,incoming,326723
-International Federation of Red Cross and Red Crescent Societies,90,Procter & Gamble,,1,1,spending,incoming,1053715
-International Federation of Red Cross and Red Crescent Societies,90,Qatar Red Crescent Society,,1,1,spending,incoming,10021
-International Federation of Red Cross and Red Crescent Societies,90,Red Cross Society of China,,1,1,spending,incoming,1174767
-International Federation of Red Cross and Red Crescent Societies,90,Singapore Red Cross Society,,1,1,spending,incoming,2642991
-International Federation of Red Cross and Red Crescent Societies,90,Sociedad Textil Lonia S.A.,,1,1,spending,incoming,781893
-International Federation of Red Cross and Red Crescent Societies,90,Société Générale Foundation,,1,1,spending,incoming,1224992
-International Federation of Red Cross and Red Crescent Societies,90,Spanish Government,,1,1,spending,incoming,756935
-International Federation of Red Cross and Red Crescent Societies,90,Supreme Master Ching Hai,,1,1,spending,incoming,986485
-International Federation of Red Cross and Red Crescent Societies,90,Swedish Red Cross,,1,1,spending,incoming,811309
-International Federation of Red Cross and Red Crescent Societies,90,Swiss Government,,1,1,spending,incoming,2385251
-International Federation of Red Cross and Red Crescent Societies,90,Swiss Red Cross,,1,1,spending,incoming,2585042
-International Federation of Red Cross and Red Crescent Societies,90,Switzerland - Private Donors,,1,1,spending,incoming,566
-International Federation of Red Cross and Red Crescent Societies,90,The Burberry Foundation,,1,1,spending,incoming,114381
-International Federation of Red Cross and Red Crescent Societies,90,The Canadian Red Cross Society,,1,1,spending,incoming,16431401
-International Federation of Red Cross and Red Crescent Societies,90,The Netherlands Red Cross,,1,1,spending,incoming,22801315
-International Federation of Red Cross and Red Crescent Societies,90,The Republic of Korea National Red Cross,,1,1,spending,incoming,1036619
-International Federation of Red Cross and Red Crescent Societies,90,UNICEF - United Nations Children's Fund,,1,1,spending,incoming,39855
-International Federation of Red Cross and Red Crescent Societies,90,UPS foundation,,1,1,spending,incoming,55882
-International Federation of Red Cross and Red Crescent Societies,90,Unidentified donor,,1,1,spending,incoming,87456
-International Federation of Red Cross and Red Crescent Societies,90,United States - Private Donors,,1,1,spending,incoming,547
-International Federation of Red Cross and Red Crescent Societies,90,United States Government - PRM,,1,1,spending,incoming,525034
-International Federation of Red Cross and Red Crescent Societies,90,United States Government - USAID,,1,1,spending,incoming,15834903
-International Federation of Red Cross and Red Crescent Societies,90,Université de Management de Suisse,,1,1,spending,incoming,61014
-International Federation of Red Cross and Red Crescent Societies,90,WHO - World Health Organization,,1,1,spending,incoming,109780
-International Federation of Red Cross and Red Crescent Societies,90,West Coast University,,1,1,spending,incoming,49094
-International Federation of Red Cross and Red Crescent Societies,90,World Bank,,1,1,spending,incoming,979001
+International Federation of Red Cross and Red Crescent Societies,90,American Red Cross,,1,1,spending,incoming,737591
+International Federation of Red Cross and Red Crescent Societies,90,Bahrain Red Crescent Society,,1,1,spending,incoming,20775
+International Federation of Red Cross and Red Crescent Societies,90,Danish Red Cross,,1,1,spending,incoming,410533
+International Federation of Red Cross and Red Crescent Societies,90,Estonia Government,,1,1,spending,incoming,27435
+International Federation of Red Cross and Red Crescent Societies,90,Great Britain - Private Donors,,1,1,spending,incoming,20
+International Federation of Red Cross and Red Crescent Societies,90,Italian Government Bilateral Emergency Fund,,1,1,spending,incoming,660993
+International Federation of Red Cross and Red Crescent Societies,90,Japanese Government,,1,1,spending,incoming,10
+International Federation of Red Cross and Red Crescent Societies,90,Japanese Red Cross Society,,1,1,spending,incoming,91683
+International Federation of Red Cross and Red Crescent Societies,90,Lithuania Government,,1,1,spending,incoming,110165
+International Federation of Red Cross and Red Crescent Societies,90,Red Crescent Society of Turkmenistan,,1,1,spending,incoming,3033
+International Federation of Red Cross and Red Crescent Societies,90,Red Cross of Monaco,,1,1,spending,incoming,164695
+International Federation of Red Cross and Red Crescent Societies,90,Siemens Gamesa Renewable Energy,,1,1,spending,incoming,54831
+International Federation of Red Cross and Red Crescent Societies,90,Singapore Red Cross Society,,1,1,spending,incoming,2422004
+International Federation of Red Cross and Red Crescent Societies,90,Spanish Government,,1,1,spending,incoming,220331
+International Federation of Red Cross and Red Crescent Societies,90,Swedish Red Cross,,1,1,spending,incoming,146142
+International Federation of Red Cross and Red Crescent Societies,90,Swiss Government,,1,1,spending,incoming,310206
+International Federation of Red Cross and Red Crescent Societies,90,Switzerland - Private Donors,,1,1,spending,incoming,727
+International Federation of Red Cross and Red Crescent Societies,90,T1 Entertainment & Sports,,1,1,spending,incoming,11867
+International Federation of Red Cross and Red Crescent Societies,90,The Netherlands Red Cross,,1,1,spending,incoming,881070
+International Federation of Red Cross and Red Crescent Societies,90,The Republic of Korea National Red Cross,,1,1,spending,incoming,51937
+International Federation of Red Cross and Red Crescent Societies,90,Turkish Red Crescent Society,,1,1,spending,incoming,20680
+International Federation of Red Cross and Red Crescent Societies,90,United States Government - USAID,,1,1,spending,incoming,254
 International Finance Corporation,40,,ACCESS BANK PLC,0,0,commitments,outgoing,50000000
 International Finance Corporation,40,,AGROFERTIL S.A.,0,1,commitments,outgoing,10000000
 International Finance Corporation,40,,ALTERNATIFBANK ANONIM SIRKETI,0,1,commitments,outgoing,25000000
@@ -4071,7 +3949,7 @@ International Finance Corporation,40,,BANCO SANTANDER BRASIL SA,0,1,commitments,
 International Finance Corporation,40,,BANK ASIA LTD,0,1,commitments,outgoing,25000000
 International Finance Corporation,40,,BANK OF MALDIVES PLC,0,0,commitments,outgoing,50000000
 International Finance Corporation,40,,BELARUSKI NARODNY BANK,0,1,commitments,outgoing,10000000
-International Finance Corporation,40,,BIOLOGICAL E. LIMITED,0,1,commitments,outgoing,30000000
+International Finance Corporation,40,,BIOLOGICAL E. LIMITED,0,0,commitments,outgoing,30000000
 International Finance Corporation,40,,BOUDJEBEL SA VACPA,0,0,commitments,outgoing,6120000
 International Finance Corporation,40,,Banco Agromercantil de Guatemala S.A.,0,1,commitments,outgoing,20000000
 International Finance Corporation,40,,Banco Daycoval S/A.,0,1,commitments,outgoing,100000000
@@ -4126,7 +4004,6 @@ International Finance Corporation,40,,ZENITH BANK PLC,0,1,commitments,outgoing,1
 International Fund for Agricultural Development,40,,(unspecified org),0,0,commitments,outgoing,20000000
 International Fund for Agricultural Development,40,,(unspecified org),0,1,commitments,outgoing,48896276
 International IDEA,40,,European Commission – Development and Cooperation,0,1,spending,outgoing,250491
-International IDEA,40,,International IDEA,0,1,spending,outgoing,176046
 International Medical Corps UK,21,,GB-CHC-1093861-XM-DAC-47066-DP.1207,1,1,spending,outgoing,37119
 International Organization for Migration (IOM),40,AICS - Italian Agency for Cooperation and Development,,0,0,commitments,incoming,581870
 International Organization for Migration (IOM),40,AICS - Italian Agency for Cooperation and Development,,1,0,commitments,incoming,1305487
@@ -4236,7 +4113,6 @@ International Organization for Migration (IOM),40,World Health Organization,,0,1
 International Organization for Migration (IOM),40,World Health Organization,,1,1,commitments,incoming,80000
 International Trade Centre (ITC),40,,(unspecified org),0,0,commitments,outgoing,18000
 International Trade Centre (ITC),40,,(unspecified org),0,0,spending,outgoing,866301
-International Trade Centre (ITC),40,,International Trade Centre (ITC),0,0,spending,outgoing,297047
 International Trade Centre (ITC),40,(unspecified org),,0,0,commitments,incoming,300000
 International Trade Centre (ITC),40,(unspecified org),,0,0,spending,incoming,153544
 International Trade Centre (ITC),40,"ITC Trust Fund Window 1 (Belgium, Canada, China, Denmark, Finland, Germany, Iceland, India, Ireland, Norway, Sweden)",,0,0,commitments,incoming,250000
@@ -4331,7 +4207,6 @@ MAEDI,10,,Wot-If? Trust,0,0,commitments,outgoing,14659
 MAEDI,10,,Wot-If? Trust,0,0,spending,outgoing,14694
 MERCY CORPS EUROPE,21,,(unspecified org),0,0,spending,outgoing,1706070
 MERCY CORPS EUROPE,21,,MERCY CORPS,0,0,spending,outgoing,323537
-MERCY CORPS EUROPE,21,,MERCY CORPS EUROPE,0,0,spending,outgoing,4180
 MERCY CORPS EUROPE,21,,Mandwi,0,0,spending,outgoing,43929
 MERCY CORPS EUROPE,21,,Needs,0,0,spending,outgoing,62198
 MERCY CORPS EUROPE,21,,Nepal Red Cross,0,0,spending,outgoing,9433
@@ -4342,7 +4217,6 @@ MERCY CORPS EUROPE,21,Ministry of Foreign Affairs of the Netherlands,,0,0,spendi
 MERCY CORPS EUROPE,21,UK Department for International Development,,0,0,commitments,incoming,3722597
 MERCY CORPS EUROPE,21,UK Department for International Development,,0,0,spending,incoming,2915046
 Malaria Consortium,21,,(unspecified org),0,0,spending,outgoing,1299631
-Malaria Consortium,21,,Malaria Consortium,0,0,commitments,outgoing,1299798
 Malaria Consortium,21,MasterCard Foundation,,0,0,spending,incoming,1299798
 MannionDanniels,70,,Access Chapter 2 NPO,0,0,commitments,outgoing,45228
 MannionDanniels,70,,Forum for the Empowerment of Women,0,0,commitments,outgoing,43264
@@ -4536,7 +4410,7 @@ Ministry of Foreign Affairs of the Netherlands,10,,ZOA,1,1,spending,outgoing,767
 "Ministry of Foreign Affairs, Denmark",10,,(unspecified org),0,0,commitments,outgoing,4523659
 "Ministry of Foreign Affairs, Denmark",10,,(unspecified org),0,0,spending,outgoing,4523659
 "Ministry of Foreign Affairs, Denmark",10,,(unspecified org),0,1,commitments,outgoing,54350309
-"Ministry of Foreign Affairs, Denmark",10,,(unspecified org),0,1,spending,outgoing,47111580
+"Ministry of Foreign Affairs, Denmark",10,,(unspecified org),0,1,spending,outgoing,47099374
 "Ministry of Foreign Affairs, Denmark",10,,Danish Red Cross,0,1,commitments,outgoing,9123713
 "Ministry of Foreign Affairs, Denmark",10,,Danish Red Cross,0,1,spending,outgoing,9135296
 "Ministry of Foreign Affairs, Denmark",10,,OXFAM IBIS - DENMARK,0,1,commitments,outgoing,3015772
@@ -4609,8 +4483,6 @@ Netherlands Enterprise Agency,10,,Trade Mark East Africa,0,0,spending,outgoing,3
 Netherlands Enterprise Agency,10,,Triggerise B.V.,0,1,commitments,outgoing,8392
 Netherlands Enterprise Agency,10,,Triggerise B.V.,0,1,spending,outgoing,8902
 Netherlands Enterprise Agency,10,,Wageningen Livestock Research,0,0,commitments,outgoing,32903
-Netherlands Enterprise Agency,10,Netherlands Enterprise Agency,,0,0,spending,incoming,2013935
-Netherlands Enterprise Agency,10,Netherlands Enterprise Agency,,0,1,spending,incoming,542679
 New Zealand Ministry of Foreign Affairs and Trade,10,,Pending Approval,0,0,commitments,outgoing,486405
 New Zealand Ministry of Foreign Affairs and Trade,10,,Pending Approval,0,0,spending,outgoing,7366139
 New Zealand Ministry of Foreign Affairs and Trade,10,,Pending Approval,0,1,commitments,outgoing,10240096
@@ -4622,7 +4494,6 @@ Norad - Norwegian Agency for Development Cooperation,10,,(unspecified org),0,0,c
 Norad - Norwegian Agency for Development Cooperation,10,,(unspecified org),0,0,spending,outgoing,26420338
 Norad - Norwegian Agency for Development Cooperation,10,,(unspecified org),0,1,commitments,outgoing,599952314
 Norad - Norwegian Agency for Development Cooperation,10,,(unspecified org),0,1,spending,outgoing,288193711
-Norwegian Refugee Council,21,,Norwegian Refugee Council,1,1,spending,outgoing,3817663
 Norwegian Refugee Council,21,Danish Refugee Council,,1,1,spending,incoming,388653
 Nuffic,15,,(unspecified org),0,0,commitments,outgoing,1297010
 Nuffic,15,,(unspecified org),0,0,spending,outgoing,519508
@@ -4731,10 +4602,6 @@ Oxfam Novib,21,,Oxfam Intermón,1,1,spending,outgoing,247233
 Oxfam Novib,21,,Oxfam International,1,0,spending,outgoing,10444
 Oxfam Novib,21,,Oxfam International,1,1,spending,outgoing,42424
 Oxfam Novib,21,,Oxfam Italy,1,0,spending,outgoing,32063
-Oxfam Novib,21,,Oxfam Novib,0,0,spending,outgoing,317172
-Oxfam Novib,21,,Oxfam Novib,0,1,spending,outgoing,63793
-Oxfam Novib,21,,Oxfam Novib,1,0,spending,outgoing,2686628
-Oxfam Novib,21,,Oxfam Novib,1,1,spending,outgoing,1686345
 Oxfam Novib,21,,PALESTINIAN ENVIRONMENTAL FRIENDS,1,1,spending,outgoing,6444
 Oxfam Novib,21,,PALM CORPS LTD- GENERAL PCLO,1,0,spending,outgoing,28876
 Oxfam Novib,21,,PALM CORPS LTD- GENERAL PCLO,1,1,spending,outgoing,29564
@@ -4760,6 +4627,7 @@ Oxfam Novib,21,,Weaving Bonds Across Borders,0,0,spending,outgoing,10431
 Oxfam Novib,21,,Women Media and Development,0,0,spending,outgoing,5761
 Oxfam Novib,21,,Women Media and Development,1,0,spending,outgoing,9362
 Oxfam Novib,21,,Women's Affairs Center Gaza Shu'un al Mar'a,0,0,spending,outgoing,5378
+Oxfam Novib,21,,Yayasan Peduli Sindroma Down Indone Down Syndrome Care Foundation Indon,0,0,spending,outgoing,25222
 Oxfam Novib,21,,Youth Empowerment Center,1,0,spending,outgoing,148985
 Oxfam Novib,21,,Youth Empowerment Center,1,1,spending,outgoing,5370
 Oxfam Novib,21,,Youth Social Advocacy team YSAT,1,1,spending,outgoing,64377
@@ -4769,7 +4637,7 @@ Oxfam Novib,21,European Union,,0,0,spending,incoming,69305
 Oxfam Novib,21,European Union,,1,0,spending,incoming,1139494
 Oxfam Novib,21,IKEA Foundation,,1,0,spending,incoming,253558
 Oxfam Novib,21,IKEA Foundation,,1,1,spending,incoming,249246
-Oxfam Novib,21,Ministry of Foreign Affairs of the Netherlands,,0,0,spending,incoming,38239
+Oxfam Novib,21,Ministry of Foreign Affairs of the Netherlands,,0,0,spending,incoming,63461
 Oxfam Novib,21,Ministry of Foreign Affairs of the Netherlands,,1,0,spending,incoming,517307
 Oxfam Novib,21,Ministry of Foreign Affairs of the Netherlands,,1,1,spending,incoming,1518505
 Oxfam Novib,21,"Ministry of Foreign Affairs, The Netherlands",,0,0,spending,incoming,32368
@@ -4799,10 +4667,7 @@ Oxfam Novib,21,SOS Children's Villages The Netherlands,,1,0,spending,incoming,62
 Oxfam Novib,21,Sweden,,0,0,spending,incoming,10649
 Oxfam Novib,21,UN ORGANISATIONS,,1,0,spending,incoming,256670
 Oxfam Novib,21,UN ORGANISATIONS,,1,1,spending,incoming,49041
-PARADIGM INITIATIVE,21,,PARADIGM INITIATIVE,1,0,spending,outgoing,-189220
-PARADIGM INITIATIVE,21,,PARADIGM INITIATIVE,1,1,spending,outgoing,-46635
-PARADIGM INITIATIVE,21,Ministry of Foreign Affairs of the Netherlands,,1,0,spending,incoming,395183
-PENAL REFORM INTERNATIONAL,21,,PENAL REFORM INTERNATIONAL,0,1,spending,outgoing,563259
+PARADIGM INITIATIVE,21,Ministry of Foreign Affairs of the Netherlands,,1,0,spending,incoming,395633
 PENAL REFORM INTERNATIONAL,21,Ministry of Foreign Affairs of the Netherlands,,0,1,spending,incoming,536530
 "Pact, Inc",21,,(unspecified org),0,1,commitments,outgoing,413408
 Plan International Netherlands,21,,(unspecified org),0,0,spending,outgoing,17780
@@ -4823,7 +4688,6 @@ Plan International Netherlands,21,,Plan International Malawi,0,1,spending,outgoi
 Plan International Netherlands,21,,Plan International Mozambique,0,0,spending,outgoing,227385
 Plan International Netherlands,21,,Plan International Mozambique,0,1,spending,outgoing,464178
 Plan International Netherlands,21,,Plan International Nepal,0,1,spending,outgoing,662894
-Plan International Netherlands,21,,Plan International Netherlands,0,1,spending,outgoing,244839
 Plan International Netherlands,21,,Plan International Philippines,0,1,spending,outgoing,394975
 Plan International Netherlands,21,,Plan International South Sudan,1,0,commitments,outgoing,941756
 Plan International Netherlands,21,,Plan International South Sudan,1,0,spending,outgoing,560594
@@ -4858,8 +4722,6 @@ Plan International UK,21,Plan International Inc. (Burkina Faso Country Office),,
 Plan International UK,21,UNICEF - Fonds des Nations Unies pour l'enfance,,1,0,spending,incoming,-347580
 Plan International UK,21,United Nations Office for the Coordination of Humanitarian Affairs,,1,0,spending,incoming,-781543
 Population Services Kenya,22,,(unspecified org),0,1,spending,outgoing,199304
-Practical Action,21,,Practical Action,0,0,spending,outgoing,375675
-Practical Action,21,,Practical Action,0,1,spending,outgoing,15592
 Practical Action,21,AECF (Africa Enterprise Challenge Fund),,0,1,spending,incoming,18100
 Practical Action,21,Bill and Melinda Gates Foundation,,0,0,spending,incoming,6241
 Practical Action,21,Bill and Melinda Gates Foundation,,0,1,spending,incoming,0
@@ -4874,12 +4736,10 @@ PricewaterhouseCoopers LLP,70,"Foreign, Commonwealth and Development Office",,0,
 Red Barnet,21,"Ministry of Foreign Affairs, Denmark",,1,0,spending,incoming,12950937
 Red Barnet,21,"Ministry of Foreign Affairs, Denmark",,1,1,spending,incoming,2007977
 RedR UK,21,Danish Refugee Council,,1,1,spending,incoming,264774
-Relief International UK,21,,Relief International UK,1,1,spending,outgoing,969823
 SNV Netherlands Development Organisation,21,,(unspecified org),0,0,spending,outgoing,383220
 SNV Netherlands Development Organisation,21,,Helvetas Swiss Intercooperation Bénin,0,0,spending,outgoing,562075
 SNV Netherlands Development Organisation,21,,PROTOS Bénin,0,0,spending,outgoing,734471
 SNV Netherlands Development Organisation,21,,SNV Benin,0,0,spending,outgoing,924941
-SNV Netherlands Development Organisation,21,,SNV Netherlands Development Organisation,0,0,commitments,outgoing,3441910
 SNV Netherlands Development Organisation,21,Ministry of Foreign Affairs of the Netherlands,,0,0,spending,incoming,1028364
 SNV Netherlands Development Organisation,21,SNV Benin,,0,0,spending,incoming,269842
 SNV Netherlands Development Organisation,21,Stichting Simavi,,0,1,spending,incoming,381313
@@ -4905,23 +4765,14 @@ SOS Children's Villages The Netherlands,60,,ZOA,1,0,commitments,outgoing,520950
 SOS Children's Villages The Netherlands,60,,ZOA,1,0,spending,outgoing,495999
 SOS Children's Villages The Netherlands,60,Stichting Beheer Subsidiegelden DRA,,1,0,commitments,incoming,7862567
 SOS Children's Villages The Netherlands,60,Stichting Beheer Subsidiegelden DRA,,1,0,spending,incoming,7890368
-Sabre Education Limited,21,,Sabre Education Limited,0,0,spending,outgoing,456156
-Sabre Education Limited,21,,Sabre Education Limited,0,1,commitments,outgoing,1628197
 Sabre Education Limited,21,(unspecified org),,0,0,spending,incoming,127280
 Sabre Education Limited,21,MannionDanniels,,0,0,spending,incoming,509994
-Save The Children International,21,,Save The Children International,0,0,commitments,outgoing,2162798
-Save The Children International,21,,Save The Children International,0,0,spending,outgoing,255951
-Save The Children International,21,,Save The Children International,1,0,commitments,outgoing,103209
-Save The Children International,21,,Save The Children International,1,0,spending,outgoing,43568
-Save The Children International,21,,Save The Children International,1,1,commitments,outgoing,9743038
-Save The Children International,21,,Save The Children International,1,1,spending,outgoing,5482370
 Save The Children International,21,Save The Children UK,,0,0,spending,incoming,255951
 Save The Children International,21,Save The Children UK,,1,0,spending,incoming,43568
 Save The Children International,21,Save The Children UK,,1,1,spending,incoming,5214348
 Save The Children UK,21,,Save The Children International,0,0,spending,outgoing,268761
 Save The Children UK,21,,Save The Children International,1,0,spending,outgoing,46298
 Save The Children UK,21,,Save The Children International,1,1,spending,outgoing,5797849
-Save The Children UK,21,,Save The Children UK,1,1,commitments,outgoing,204930
 Save The Children UK,21,Education Cannot Wait,,0,1,spending,incoming,-59397
 Save The Children UK,21,Education Cannot Wait,,1,1,spending,incoming,1446283
 Save The Children UK,21,"Foreign, Commonwealth and Development Office",,1,1,spending,incoming,3711057
@@ -5028,10 +4879,8 @@ Sightsavers,21,Standard Chartered Bank,,0,0,spending,incoming,40032
 Sightsavers,21,Standard Chartered Bank,,1,1,spending,incoming,85599
 Sightsavers,21,U.S. Agency for International Development,,1,1,spending,incoming,33515
 Solidaridad,21,,(unspecified org),0,0,spending,outgoing,1947637
-Solidaridad,21,,Solidaridad,0,0,spending,outgoing,275246
 Solidaridad,21,Solidaridad Europa,,0,0,commitments,incoming,6203171
 Solidaridad Europa,21,,(unspecified org),0,0,spending,outgoing,96256
-Solidaridad South & South-East Asia,21,,Solidaridad South & South-East Asia,0,0,spending,outgoing,338529
 Solidaridad South & South-East Asia,21,Solidaridad Europa,,0,0,commitments,incoming,834876
 Stichting Agriterra,22,,Chadiza District Farmer Association,0,0,spending,outgoing,1934
 Stichting Beheer Subsidiegelden DRA,21,,CARE Nederland,1,0,commitments,outgoing,3290478
@@ -5092,31 +4941,41 @@ Stichting Vluchteling,21,World Vision Netherlands,,1,0,spending,incoming,1182705
 Survivors Fund (SURF),21,UK Department for International Development (DfID),,0,0,spending,incoming,138707
 Survivors Fund (SURF),21,UK Department for International Development (DfID),,0,1,spending,incoming,47426
 Sweden,10,,AAU/Addis Ababa University,0,0,commitments,outgoing,1357265
-Sweden,10,,AAU/Addis Ababa University,0,0,spending,outgoing,3229747
-Sweden,10,,AAU/Addis Ababa University,1,0,spending,outgoing,327372
+Sweden,10,,AAU/Addis Ababa University,0,0,spending,outgoing,7312399
+Sweden,10,,AAU/Addis Ababa University,1,0,spending,outgoing,488615
 Sweden,10,,African Development Bank Group,0,1,spending,outgoing,8143588
-Sweden,10,,Arbetsförmedlingen,0,1,spending,outgoing,657542
 Sweden,10,,CHAI/Clinton Health Access Initiative,0,1,spending,outgoing,5211896
+Sweden,10,,Central Government in donor country,0,0,spending,outgoing,5700511
+Sweden,10,,Central Government in donor country,0,1,spending,outgoing,657542
 Sweden,10,,Central Government in recipient country,0,1,spending,outgoing,5356248
+Sweden,10,,Cities Alliance,0,1,spending,outgoing,3257435
 Sweden,10,,EBRD/European Bank for Reconstruction and Development,0,1,commitments,outgoing,3800341
 Sweden,10,,EBRD/European Bank for Reconstruction and Development,0,1,spending,outgoing,1628718
 Sweden,10,,ECOWAS/Economic Community of West African States,0,1,spending,outgoing,1172677
-Sweden,10,,FAO/Food and Agriculture Organization,0,0,spending,outgoing,2735170
-Sweden,10,,FAO/Food and Agriculture Organization,1,0,commitments,outgoing,12213918
-Sweden,10,,FAO/Food and Agriculture Organization,1,0,spending,outgoing,11825631
-Sweden,10,,Forward Thinking,0,0,commitments,outgoing,6597392
-Sweden,10,,Forward Thinking,0,0,spending,outgoing,30116349
-Sweden,10,,Forward Thinking,0,1,commitments,outgoing,22206144
-Sweden,10,,Forward Thinking,0,1,spending,outgoing,62770244
-Sweden,10,,Forward Thinking,1,0,commitments,outgoing,34210669
-Sweden,10,,Forward Thinking,1,0,spending,outgoing,36259260
-Sweden,10,,Forward Thinking,1,1,spending,outgoing,92823273
+Sweden,10,,FAO/Food and Agriculture Organization,0,0,spending,outgoing,4363887
+Sweden,10,,FAO/Food and Agriculture Organization,0,1,spending,outgoing,2236772
+Sweden,10,,FAO/Food and Agriculture Organization,1,0,commitments,outgoing,18338547
+Sweden,10,,FAO/Food and Agriculture Organization,1,0,spending,outgoing,17469898
+Sweden,10,,FIDA - Fonds international pour le développement agricole,0,1,commitments,outgoing,5429058
+Sweden,10,,FIDA - Fonds international pour le développement agricole,0,1,spending,outgoing,5429058
+Sweden,10,,Forward Thinking,0,0,commitments,outgoing,13057971
+Sweden,10,,Forward Thinking,0,0,spending,outgoing,48412941
+Sweden,10,,Forward Thinking,0,1,commitments,outgoing,37331501
+Sweden,10,,Forward Thinking,0,1,spending,outgoing,97048870
+Sweden,10,,Forward Thinking,1,0,commitments,outgoing,34908846
+Sweden,10,,Forward Thinking,1,0,spending,outgoing,40161643
+Sweden,10,,Forward Thinking,1,1,spending,outgoing,101831884
+Sweden,10,,GWP/Global Water Partnership,0,0,spending,outgoing,2714529
+Sweden,10,,Geneva Call,0,1,commitments,outgoing,4375821
+Sweden,10,,Geneva Call,0,1,spending,outgoing,2714529
 Sweden,10,,Global Partnership for Education,0,1,spending,outgoing,34094487
-Sweden,10,,ICRC/International Committee of the Red Cross/Röda Korset,1,1,spending,outgoing,110338925
+Sweden,10,,ICRC/International Committee of the Red Cross/Röda Korset,1,1,spending,outgoing,143419807
 Sweden,10,,IGAD/Intergovernmental Authority on Development,0,0,spending,outgoing,2931692
 Sweden,10,,IGAD/Intergovernmental Authority on Development,0,1,commitments,outgoing,5971964
 Sweden,10,,IGAD/Intergovernmental Authority on Development,0,1,spending,outgoing,12471633
-Sweden,10,,ILO/International Labour Organization,0,0,spending,outgoing,1639576
+Sweden,10,,IIED/International Institute for Environment and Development,0,0,spending,outgoing,4343247
+Sweden,10,,ILC/International Land Coalition,0,0,spending,outgoing,1411555
+Sweden,10,,ILO/International Labour Organization,0,0,spending,outgoing,7177215
 Sweden,10,,ILO/International Labour Organization,0,1,commitments,outgoing,542906
 Sweden,10,,ILO/International Labour Organization,0,1,spending,outgoing,2517454
 Sweden,10,,IMF/International Monetary Fund,0,0,commitments,outgoing,3257435
@@ -5127,23 +4986,29 @@ Sweden,10,,IOM – International Organization for Migration,1,1,commitments,outg
 Sweden,10,,IOM – International Organization for Migration,1,1,spending,outgoing,2176401
 Sweden,10,,"IPAS-Protecting Women's Health, Advancing Women's Reproductive Rights",0,0,spending,outgoing,1520136
 Sweden,10,,"IPAS-Protecting Women's Health, Advancing Women's Reproductive Rights",0,1,spending,outgoing,2171623
+Sweden,10,,IPPF/International Planned Parenthood Federation,0,0,commitments,outgoing,35831786
+Sweden,10,,IPPF/International Planned Parenthood Federation,0,0,spending,outgoing,17915893
 Sweden,10,,IRC/International Rescue Committee,0,0,spending,outgoing,5190180
 Sweden,10,,IRC/International Rescue Committee,0,1,spending,outgoing,977231
-Sweden,10,,International Bank for Reconstruction and Development,0,0,commitments,outgoing,3257435
-Sweden,10,,International Bank for Reconstruction and Development,0,0,spending,outgoing,70751490
-Sweden,10,,International Bank for Reconstruction and Development,0,1,spending,outgoing,22943201
+Sweden,10,,IVI/International Vaccine Institute,0,1,spending,outgoing,673203
+Sweden,10,,International Alert,0,0,spending,outgoing,3040273
+Sweden,10,,International Bank for Reconstruction and Development,0,0,commitments,outgoing,9772305
+Sweden,10,,International Bank for Reconstruction and Development,0,0,spending,outgoing,106583276
+Sweden,10,,International Bank for Reconstruction and Development,0,1,spending,outgoing,37493078
+Sweden,10,,International HIV/AIDS Alliance,0,1,commitments,outgoing,9772305
+Sweden,10,,International HIV/AIDS Alliance,0,1,spending,outgoing,4886153
 Sweden,10,,International Strategy for Disaster Reduction,0,1,spending,outgoing,2171623
-Sweden,10,,Investment funds and other collective investment institutions,0,1,spending,outgoing,4588555
-Sweden,10,,Laakarin Sosialinen Vastuu ry,0,0,commitments,outgoing,13192612
-Sweden,10,,Laakarin Sosialinen Vastuu ry,0,0,spending,outgoing,25780136
-Sweden,10,,Laakarin Sosialinen Vastuu ry,0,1,commitments,outgoing,42441773
-Sweden,10,,Laakarin Sosialinen Vastuu ry,0,1,spending,outgoing,136446398
+Sweden,10,,Investment funds and other collective investment institutions,0,1,spending,outgoing,3398718
+Sweden,10,,Laakarin Sosialinen Vastuu ry,0,0,commitments,outgoing,98428830
+Sweden,10,,Laakarin Sosialinen Vastuu ry,0,0,spending,outgoing,44021773
+Sweden,10,,Laakarin Sosialinen Vastuu ry,0,1,commitments,outgoing,43225382
+Sweden,10,,Laakarin Sosialinen Vastuu ry,0,1,spending,outgoing,252740946
 Sweden,10,,MFO Crystal,0,0,commitments,outgoing,69894
 Sweden,10,,MFO Crystal,0,0,spending,outgoing,69894
 Sweden,10,,MRC/Mekong River Commission,0,0,spending,outgoing,2171623
 Sweden,10,,NRF/National Research Foundation,0,0,spending,outgoing,9146161
-Sweden,10,,NRF/National Research Foundation,0,1,commitments,outgoing,2208541
-Sweden,10,,NRF/National Research Foundation,0,1,spending,outgoing,1035517
+Sweden,10,,NRF/National Research Foundation,0,1,commitments,outgoing,1104270
+Sweden,10,,NRF/National Research Foundation,0,1,spending,outgoing,517758
 Sweden,10,,National Red Cross and Red Crescent Societies,0,1,commitments,outgoing,110651
 Sweden,10,,National Red Cross and Red Crescent Societies,0,1,spending,outgoing,110651
 Sweden,10,,Not applicable,0,0,commitments,outgoing,48637
@@ -5152,69 +5017,86 @@ Sweden,10,,OECD Development Centre,0,1,commitments,outgoing,325744
 Sweden,10,,OECD Development Centre,0,1,spending,outgoing,325744
 Sweden,10,,OHCHR/Office of the High Commissioner for Human Rights,0,0,spending,outgoing,1082663
 Sweden,10,,OHCHR/Office of the High Commissioner for Human Rights,0,1,spending,outgoing,2714529
-Sweden,10,,OMS - Organisation mondiale de la Santé,0,0,commitments,outgoing,52770
-Sweden,10,,OMS - Organisation mondiale de la Santé,0,0,spending,outgoing,38281
-Sweden,10,,OMS - Organisation mondiale de la Santé,0,1,commitments,outgoing,32682932
-Sweden,10,,OMS - Organisation mondiale de la Santé,0,1,spending,outgoing,10972408
+Sweden,10,,OMS - Organisation mondiale de la Santé,0,0,commitments,outgoing,3310206
+Sweden,10,,OMS - Organisation mondiale de la Santé,0,0,spending,outgoing,1666998
+Sweden,10,,OMS - Organisation mondiale de la Santé,0,1,commitments,outgoing,73455161
+Sweden,10,,OMS - Organisation mondiale de la Santé,0,1,spending,outgoing,32966646
 Sweden,10,,OMS - Organisation mondiale de la Santé,1,1,commitments,outgoing,5429058
 Sweden,10,,OMS - Organisation mondiale de la Santé,1,1,spending,outgoing,5429058
 Sweden,10,,ONU Femmes des femmes,0,0,commitments,outgoing,8295948
-Sweden,10,,ONU Femmes des femmes,0,0,spending,outgoing,9839246
+Sweden,10,,ONU Femmes des femmes,0,0,spending,outgoing,14182492
 Sweden,10,,ONU Femmes des femmes,0,1,commitments,outgoing,1628718
-Sweden,10,,ONU Femmes des femmes,0,1,spending,outgoing,8480189
-Sweden,10,,OXFAM International,0,0,spending,outgoing,20765062
+Sweden,10,,ONU Femmes des femmes,0,1,spending,outgoing,11737624
+Sweden,10,,OXFAM International,0,0,spending,outgoing,30537367
 Sweden,10,,OXFAM International,0,1,spending,outgoing,4071794
-Sweden,10,,OXFAM International,1,0,commitments,outgoing,1759015
-Sweden,10,,OXFAM International,1,0,spending,outgoing,7304038
-Sweden,10,,Other,0,0,commitments,outgoing,18242
+Sweden,10,,OXFAM International,1,0,commitments,outgoing,8143588
+Sweden,10,,OXFAM International,1,0,spending,outgoing,15527107
+Sweden,10,,Other,0,0,commitments,outgoing,39958
 Sweden,10,,PAM - Programme alimentaire mondial,0,0,spending,outgoing,1299543
 Sweden,10,,PAM - Programme alimentaire mondial,0,1,commitments,outgoing,3257435
 Sweden,10,,PAM - Programme alimentaire mondial,0,1,spending,outgoing,19544611
 Sweden,10,,PNUD - Programme des Nations Unies pour le développement,0,0,commitments,outgoing,13138322
-Sweden,10,,PNUD - Programme des Nations Unies pour le développement,0,0,spending,outgoing,24246175
+Sweden,10,,PNUD - Programme des Nations Unies pour le développement,0,0,spending,outgoing,45962409
 Sweden,10,,PNUD - Programme des Nations Unies pour le développement,0,1,commitments,outgoing,9548628
 Sweden,10,,PNUD - Programme des Nations Unies pour le développement,0,1,spending,outgoing,63072032
 Sweden,10,,PNUD - Programme des Nations Unies pour le développement,1,0,commitments,outgoing,2171623
 Sweden,10,,PNUD - Programme des Nations Unies pour le développement,1,0,spending,outgoing,1628718
 Sweden,10,,PSI/Population Service International,0,1,spending,outgoing,4724475
 Sweden,10,,Ramboll Finland oy,0,0,commitments,outgoing,132947
-Sweden,10,,Ramboll Finland oy,0,0,spending,outgoing,64888
+Sweden,10,,Ramboll Finland oy,0,0,spending,outgoing,75214
 Sweden,10,,Ramboll Finland oy,0,1,spending,outgoing,1514372
 Sweden,10,,SPC/Secretariat of the Pacific Community,0,0,spending,outgoing,1520136
 Sweden,10,,Save the Children Canada,0,0,commitments,outgoing,86865
 Sweden,10,,Save the Children Canada,0,0,spending,outgoing,2388786
 Sweden,10,,Save the Children Canada,0,1,commitments,outgoing,6422997
-Sweden,10,,Save the Children Canada,0,1,spending,outgoing,22565747
+Sweden,10,,Save the Children Canada,0,1,spending,outgoing,40088577
 Sweden,10,,Save the Children Canada,1,1,spending,outgoing,8791492
-Sweden,10,,Sveriges Lantbruksuniversitet,0,0,commitments,outgoing,754422
-Sweden,10,,Sveriges Lantbruksuniversitet,0,0,spending,outgoing,17027690
-Sweden,10,,Sveriges Lantbruksuniversitet,0,1,spending,outgoing,6210846
+Sweden,10,,Sveriges Lantbruksuniversitet,0,0,commitments,outgoing,6834967
+Sweden,10,,Sveriges Lantbruksuniversitet,0,0,spending,outgoing,26481563
+Sweden,10,,Sveriges Lantbruksuniversitet,0,1,commitments,outgoing,17372987
+Sweden,10,,Sveriges Lantbruksuniversitet,0,1,spending,outgoing,10497081
+Sweden,10,,Sveriges Lantbruksuniversitet,1,0,commitments,outgoing,814359
+Sweden,10,,Sveriges Lantbruksuniversitet,1,0,spending,outgoing,271453
 Sweden,10,,Swedish Radiation Safety Authority,0,1,commitments,outgoing,27145
 Sweden,10,,Swedish Radiation Safety Authority,0,1,spending,outgoing,23345
 Sweden,10,,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",0,1,commitments,outgoing,10858117
 Sweden,10,,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",0,1,spending,outgoing,10858117
 Sweden,10,,Trade Mark East Africa,0,0,commitments,outgoing,14575593
-Sweden,10,,Trade Mark East Africa,0,0,spending,outgoing,13985287
+Sweden,10,,Trade Mark East Africa,0,0,spending,outgoing,14528193
 Sweden,10,,Trade Mark East Africa,0,1,commitments,outgoing,1259542
 Sweden,10,,Trade Mark East Africa,0,1,spending,outgoing,24379300
 Sweden,10,,UN Development Operations Coordination Office,0,0,commitments,outgoing,5108744
 Sweden,10,,UN Development Operations Coordination Office,0,0,spending,outgoing,2882830
-Sweden,10,,UN-Habitat/United Nations Human Settlements Programme,0,1,commitments,outgoing,4542936
-Sweden,10,,UN-Habitat/United Nations Human Settlements Programme,0,1,spending,outgoing,1004037
+Sweden,10,,UN-Habitat/United Nations Human Settlements Programme,0,0,commitments,outgoing,19001705
+Sweden,10,,UN-Habitat/United Nations Human Settlements Programme,0,0,spending,outgoing,5429058
+Sweden,10,,UN-Habitat/United Nations Human Settlements Programme,0,1,commitments,outgoing,6714559
+Sweden,10,,UN-Habitat/United Nations Human Settlements Programme,0,1,spending,outgoing,3175660
+Sweden,10,,UNDP/United Nations Development Programme,0,0,spending,outgoing,2714529
 Sweden,10,,UNDP/United Nations Development Programme,0,1,spending,outgoing,1085812
-Sweden,10,,"UNESCO/United Nations Educational, Scientific and Cultural Organization",0,0,spending,outgoing,2443076
+Sweden,10,,"UNESCO/United Nations Educational, Scientific and Cultural Organization",0,0,spending,outgoing,13052162
+Sweden,10,,"UNESCO/United Nations Educational, Scientific and Cultural Organization",0,1,spending,outgoing,1520136
+Sweden,10,,UNFCCC/United Nations Framework Convention on Climate Change,0,0,spending,outgoing,2225914
 Sweden,10,,UNFPA - Fonds des Nations Unies pour la population,0,0,commitments,outgoing,6514870
 Sweden,10,,UNFPA - Fonds des Nations Unies pour la population,0,0,spending,outgoing,29316916
 Sweden,10,,UNFPA - Fonds des Nations Unies pour la population,0,1,commitments,outgoing,1672150
 Sweden,10,,UNFPA - Fonds des Nations Unies pour la population,0,1,spending,outgoing,37047895
-Sweden,10,,UNICEF - Fonds des Nations Unies pour l'enfance,0,0,commitments,outgoing,2714529
-Sweden,10,,UNICEF - Fonds des Nations Unies pour l'enfance,0,0,spending,outgoing,13138322
+Sweden,10,,UNICEF - Fonds des Nations Unies pour l'enfance,0,0,commitments,outgoing,10858117
+Sweden,10,,UNICEF - Fonds des Nations Unies pour l'enfance,0,0,spending,outgoing,14767039
 Sweden,10,,UNICEF - Fonds des Nations Unies pour l'enfance,0,1,commitments,outgoing,15527107
-Sweden,10,,UNICEF - Fonds des Nations Unies pour l'enfance,0,1,spending,outgoing,65202992
-Sweden,10,,UNICEF - Fonds des Nations Unies pour l'enfance,1,1,spending,outgoing,61444191
+Sweden,10,,UNICEF - Fonds des Nations Unies pour l'enfance,0,1,spending,outgoing,83118886
+Sweden,10,,UNICEF - Fonds des Nations Unies pour l'enfance,1,0,spending,outgoing,7600682
+Sweden,10,,UNICEF - Fonds des Nations Unies pour l'enfance,1,1,spending,outgoing,79233696
+Sweden,10,,UNIDO/United Nations Industrial Development Organization,0,0,commitments,outgoing,1845880
+Sweden,10,,UNIDO/United Nations Industrial Development Organization,0,0,spending,outgoing,738352
+Sweden,10,,UNU-WIDER/The United Nations University World Institute For Development Economics Research,0,0,spending,outgoing,868649
+Sweden,10,,UNV/United Nations Volunteers Programme,0,1,spending,outgoing,977231
+Sweden,10,,UNV/United Nations Volunteers Programme,1,1,spending,outgoing,1747808
+Sweden,10,,United Nations Environment Programme,0,0,spending,outgoing,7600682
 Sweden,10,,United Nations Office for Project Services (UNOPS),0,0,spending,outgoing,1737299
-Sweden,10,,United Nations Office for Project Services (UNOPS),0,1,spending,outgoing,13898390
+Sweden,10,,United Nations Office for Project Services (UNOPS),0,1,spending,outgoing,18241637
 Sweden,10,,United Nations Office of the United Nations High Commissioner for Refugees,1,0,spending,outgoing,26610422
+Sweden,10,,United Nations Office of the United Nations High Commissioner for Refugees,1,1,spending,outgoing,3257435
+Sweden,10,,WTO-ITC/World Trade Organisation - International Trade Centre,0,0,spending,outgoing,3257435
 Sweden,10,,World Vision,0,0,spending,outgoing,2171623
 Sweden,10,,World Vision,0,1,spending,outgoing,1558584
 Sweden,10,,"icddr,b",0,1,spending,outgoing,651487
@@ -5287,9 +5169,7 @@ Terre des Hommes Netherlands,21,Plan International Netherlands,,0,0,spending,inc
 Terre des Hommes Netherlands,21,Plan International Netherlands,,0,1,spending,incoming,256167
 Terre des Hommes Netherlands,21,Save the Children Netherlands,,0,0,spending,incoming,1394212
 Terre des Hommes Netherlands,21,ZOA,,0,0,spending,incoming,1096336
-Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,,Terre des hommes - Aide à l'enfance dans le monde - Fondation,1,0,spending,outgoing,143252
 Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,Ministry of Foreign Affairs of the Netherlands,,0,1,spending,incoming,1198000
-The Commonwealth Secretariat,40,,The Commonwealth Secretariat,1,0,spending,outgoing,844534
 The Freedom Fund,21,,In-country partner,1,1,spending,outgoing,328035
 The Freedom Fund,21,"Foreign, Commonwealth and Development Office",,1,1,spending,incoming,319575
 The Leprosy Mission England and Wales,21,,The Leprosy Mission Nepal,0,0,spending,outgoing,79939
@@ -5297,7 +5177,7 @@ The Leprosy Mission England and Wales,21,,The Leprosy Mission Nepal,0,1,spending
 The Leprosy Mission England and Wales,21,,The Leprosy Mission Nepal,1,0,spending,outgoing,30795
 The Leprosy Mission England and Wales,21,MannionDaniels,,0,0,spending,incoming,525896
 The Leprosy Mission England and Wales,21,MannionDaniels,,0,1,spending,incoming,18005
-The Leprosy Mission Nepal,22,The Leprosy Mission England and Wales,,1,0,spending,incoming,189780
+The Leprosy Mission Nepal,22,The Leprosy Mission England and Wales,,1,0,spending,incoming,188608
 The Netherlands Red Cross,21,,(unspecified org),1,1,spending,outgoing,2060450
 The Netherlands Red Cross,21,,Central African Red Cross Society,1,1,commitments,outgoing,158260
 The Netherlands Red Cross,21,,Central African Red Cross Society,1,1,spending,outgoing,135524
@@ -5332,7 +5212,6 @@ The Netherlands Red Cross,21,,South Sudan Red Cross,1,0,commitments,outgoing,955
 The Netherlands Red Cross,21,,South Sudan Red Cross,1,0,spending,outgoing,232189
 The Netherlands Red Cross,21,,South Sudan Red Cross,1,1,commitments,outgoing,137159
 The Netherlands Red Cross,21,,South Sudan Red Cross,1,1,spending,outgoing,156024
-The Netherlands Red Cross,21,,The Netherlands Red Cross,1,1,spending,outgoing,1441202
 The Netherlands Red Cross,21,,The Sudanese Red Crescent Society,1,1,commitments,outgoing,401405
 The Netherlands Red Cross,21,,The Sudanese Red Crescent Society,1,1,spending,outgoing,299903
 The Netherlands Red Cross,21,,Uganda Red Cross Society,1,1,commitments,outgoing,298938
@@ -5620,11 +5499,8 @@ The federal government of the United States,10,,Young Farmers Champions Network 
 The federal government of the United States,10,,Young Farmers Champions Network (YOFCHAN),0,0,spending,outgoing,10000
 The federal government of the United States,10,,ZIP 103 LIMITED,0,0,commitments,outgoing,6429
 The federal government of the United States,10,,ZIP 103 LIMITED,0,0,spending,outgoing,6429
-TradeMark East Africa,23,,TradeMark East Africa,0,0,spending,outgoing,6473
-TradeMark East Africa,23,,TradeMark East Africa,0,1,spending,outgoing,4003387
 Transform Africa,21,,Grant provided to Transform Africa for supporting downstream partner YDM in Sierra Leone,0,0,spending,outgoing,50906
 Transform Africa,21,,Grant provided to Transform Africa for supporting downstream partner YDM in Sierra Leone.,0,0,spending,outgoing,46932
-Transform Africa,21,,Transform Africa,0,0,spending,outgoing,19486
 U.S. Agency for International Development,10,,AECOM Technology Corporation,0,0,commitments,outgoing,469847
 U.S. Agency for International Development,10,,AECOM Technology Corporation,0,0,spending,outgoing,4735780
 U.S. Agency for International Development,10,,AECOM Technology Corporation,0,1,commitments,outgoing,14500000
@@ -6121,12 +5997,6 @@ U.S. Agency for International Development,10,,Tufts University,1,1,spending,outg
 U.S. Agency for International Development,10,,U.P. PUBLIC ADMINISTRATION RESEARCH AND EXTENSION SERVICE FO,0,0,commitments,outgoing,3222873
 U.S. Agency for International Development,10,,U.P. PUBLIC ADMINISTRATION RESEARCH AND EXTENSION SERVICE FO,0,0,spending,outgoing,2285937
 U.S. Agency for International Development,10,,U.P. PUBLIC ADMINISTRATION RESEARCH AND EXTENSION SERVICE FO,0,1,commitments,outgoing,700000
-U.S. Agency for International Development,10,,U.S. Agency for International Development,0,0,commitments,outgoing,31326325
-U.S. Agency for International Development,10,,U.S. Agency for International Development,0,0,spending,outgoing,28967560
-U.S. Agency for International Development,10,,U.S. Agency for International Development,0,1,commitments,outgoing,900000
-U.S. Agency for International Development,10,,U.S. Agency for International Development,0,1,spending,outgoing,900000
-U.S. Agency for International Development,10,,U.S. Agency for International Development,1,1,commitments,outgoing,499974
-U.S. Agency for International Development,10,,U.S. Agency for International Development,1,1,spending,outgoing,381487
 U.S. Agency for International Development,10,,U.S. Government - Department of Agriculture,0,0,spending,outgoing,-2378703
 U.S. Agency for International Development,10,,U.S. Government - Department of Commerce,0,0,spending,outgoing,438093
 U.S. Agency for International Development,10,,U.S. Government - Peace Corps,0,0,commitments,outgoing,60000
@@ -6213,14 +6083,7 @@ U.S. Agency for International Development,10,,Yayasan KNCV Indonesia,0,0,commitm
 U.S. Agency for International Development,10,,Yayasan KNCV Indonesia,0,0,spending,outgoing,0
 U.S. Agency for International Development,10,,Yayasan KNCV Indonesia,0,1,commitments,outgoing,700000
 U.S. Agency for International Development,10,,Yayasan KNCV Indonesia,0,1,spending,outgoing,630000
-UK-Med,21,,UK-Med,1,1,spending,outgoing,205997
 UK-Med,21,"Foreign, Commonwealth and Development Office",,1,1,spending,incoming,123912
-UN Women,40,,UN Women,0,0,commitments,outgoing,1766256
-UN Women,40,,UN Women,0,0,spending,outgoing,484406
-UN Women,40,,UN Women,0,1,commitments,outgoing,3568513
-UN Women,40,,UN Women,0,1,spending,outgoing,724015
-UN Women,40,,UN Women,1,0,commitments,outgoing,244307
-UN Women,40,,UN Women,1,0,spending,outgoing,138383
 UN Women,40,Dept of Forgn Afrs Trade & Dev,,0,0,spending,incoming,42347
 UN Women,40,GOVERNMENT OF CANADA,,0,1,spending,incoming,40000
 UN Women,40,GOVERNMENT OF JAPAN,,0,1,spending,incoming,531795
@@ -6246,14 +6109,6 @@ UNICEF,40,,(unspecified org),1,1,commitments,outgoing,175948804
 UNICEF,40,,(unspecified org),1,1,spending,outgoing,107162978
 UNICEF,40,,The Gavi Alliance,1,1,commitments,outgoing,54100
 UNICEF,40,,The Gavi Alliance,1,1,spending,outgoing,16764
-UNICEF,40,,UNICEF,0,0,commitments,outgoing,2958734
-UNICEF,40,,UNICEF,0,0,spending,outgoing,2476083
-UNICEF,40,,UNICEF,0,1,commitments,outgoing,200000
-UNICEF,40,,UNICEF,0,1,spending,outgoing,133162
-UNICEF,40,,UNICEF,1,0,commitments,outgoing,186221
-UNICEF,40,,UNICEF,1,0,spending,outgoing,157296
-UNICEF,40,,UNICEF,1,1,commitments,outgoing,1168858
-UNICEF,40,,UNICEF,1,1,spending,outgoing,224441
 UNICEF,40,Andalucia,,1,1,spending,incoming,360665
 UNICEF,40,Asian Development Bank,,1,0,spending,incoming,31336
 UNICEF,40,Asian Development Bank,,1,1,spending,incoming,5843916
@@ -6761,14 +6616,6 @@ United Nations Development Programme,40,,URU-AGENCIA URUGUAYA DE COOPER,1,1,comm
 United Nations Development Programme,40,,URU-AGENCIA URUGUAYA DE COOPER,1,1,spending,outgoing,1572266
 United Nations Development Programme,40,,UZB MINISTRY OF ECONOMICS,0,1,commitments,outgoing,69127
 United Nations Development Programme,40,,UZB MINISTRY OF ECONOMICS,0,1,spending,outgoing,69126
-United Nations Development Programme,40,,United Nations Development Programme,0,0,commitments,outgoing,44722825
-United Nations Development Programme,40,,United Nations Development Programme,0,0,spending,outgoing,3575115
-United Nations Development Programme,40,,United Nations Development Programme,0,1,commitments,outgoing,1351633164
-United Nations Development Programme,40,,United Nations Development Programme,0,1,spending,outgoing,355186209
-United Nations Development Programme,40,,United Nations Development Programme,1,0,commitments,outgoing,18254
-United Nations Development Programme,40,,United Nations Development Programme,1,0,spending,outgoing,1189
-United Nations Development Programme,40,,United Nations Development Programme,1,1,commitments,outgoing,491855597
-United Nations Development Programme,40,,United Nations Development Programme,1,1,spending,outgoing,155701435
 United Nations Development Programme,40,,Zanzibar Revolutionary Governm,0,0,commitments,outgoing,110000
 United Nations Development Programme,40,,Zanzibar Revolutionary Governm,0,0,spending,outgoing,19658
 United Nations Development Programme,40,A.P.Moller-Maersk A/S,,0,1,commitments,incoming,200000
@@ -7533,8 +7380,6 @@ United Nations High Commissioner for Refugees (UNHCR),40,World Bank,,1,1,commitm
 United Nations High Commissioner for Refugees (UNHCR),40,World Food Programme,,1,0,commitments,incoming,7254
 United Nations High Commissioner for Refugees (UNHCR),40,World Food Programme,,1,1,commitments,incoming,1296888
 United Nations High Commissioner for Refugees (UNHCR),40,World Health Organization,,1,1,commitments,incoming,15000
-United Nations Industrial Development Organization,40,,United Nations Industrial Development Organization,0,0,spending,outgoing,1453425
-United Nations Industrial Development Organization,40,,United Nations Industrial Development Organization,0,1,spending,outgoing,4513275
 United Nations Industrial Development Organization,40,(unspecified org),,0,0,spending,incoming,18914
 United Nations Industrial Development Organization,40,(unspecified org),,0,1,spending,incoming,837800
 United Nations Industrial Development Organization,40,China,,0,0,spending,incoming,1370000
@@ -7548,8 +7393,6 @@ United Nations Industrial Development Organization,40,Switzerland,,0,0,spending,
 United Nations Industrial Development Organization,40,UN COVID-19 Response and Recovery Fund,,0,1,spending,incoming,649224
 United Nations Industrial Development Organization,40,UNDP,,0,0,spending,incoming,16630
 United Nations Industrial Development Organization,40,UNDP,,0,1,spending,incoming,282015
-United Nations Office for Project Services,40,,United Nations Office for Project Services,0,0,spending,outgoing,9195408
-United Nations Office for Project Services,40,,United Nations Office for Project Services,0,1,spending,outgoing,173934163
 United Nations Office for the Coordination of Humanitarian Affairs,22,,ABAAD Resource Center For Gender Equality,1,1,commitments,outgoing,153514
 United Nations Office for the Coordination of Humanitarian Affairs,22,,ABAAD Resource Center For Gender Equality,1,1,spending,outgoing,122811
 United Nations Office for the Coordination of Humanitarian Affairs,22,,ACT Alliance / Lutheran World Federation,1,1,commitments,outgoing,375000
@@ -7749,7 +7592,7 @@ United Nations Office for the Coordination of Humanitarian Affairs,22,,Catholic 
 United Nations Office for the Coordination of Humanitarian Affairs,22,,Catholic Relief Services,1,0,commitments,outgoing,559848
 United Nations Office for the Coordination of Humanitarian Affairs,22,,Catholic Relief Services,1,0,spending,outgoing,559848
 United Nations Office for the Coordination of Humanitarian Affairs,22,,Catholic Relief Services,1,1,commitments,outgoing,2150523
-United Nations Office for the Coordination of Humanitarian Affairs,22,,Catholic Relief Services,1,1,spending,outgoing,1320497
+United Nations Office for the Coordination of Humanitarian Affairs,22,,Catholic Relief Services,1,1,spending,outgoing,1553606
 United Nations Office for the Coordination of Humanitarian Affairs,22,,Center for Peace and Democracy,1,0,commitments,outgoing,600000
 United Nations Office for the Coordination of Humanitarian Affairs,22,,Center for Peace and Democracy,1,0,spending,outgoing,560000
 United Nations Office for the Coordination of Humanitarian Affairs,22,,Centre de Support en Santé Internationale,1,1,commitments,outgoing,500000
@@ -7999,7 +7842,7 @@ United Nations Office for the Coordination of Humanitarian Affairs,22,,Islamic R
 United Nations Office for the Coordination of Humanitarian Affairs,22,,Islamic Relief Pakistan,1,1,commitments,outgoing,477000
 United Nations Office for the Coordination of Humanitarian Affairs,22,,Islamic Relief Pakistan,1,1,spending,outgoing,381600
 United Nations Office for the Coordination of Humanitarian Affairs,22,,Islamic Relief Worldwide,1,0,commitments,outgoing,1564762
-United Nations Office for the Coordination of Humanitarian Affairs,22,,Islamic Relief Worldwide,1,0,spending,outgoing,872908
+United Nations Office for the Coordination of Humanitarian Affairs,22,,Islamic Relief Worldwide,1,0,spending,outgoing,986834
 United Nations Office for the Coordination of Humanitarian Affairs,22,,Islamic Relief Worldwide,1,1,commitments,outgoing,1164922
 United Nations Office for the Coordination of Humanitarian Affairs,22,,Islamic Relief Worldwide,1,1,spending,outgoing,909516
 United Nations Office for the Coordination of Humanitarian Affairs,22,,Islamic Relief Worldwide - Somalia,1,0,commitments,outgoing,433701
@@ -8105,7 +7948,7 @@ United Nations Office for the Coordination of Humanitarian Affairs,22,,Nada Elaz
 United Nations Office for the Coordination of Humanitarian Affairs,22,,National Foundation for Development and Humanitarian Response,1,0,commitments,outgoing,1699920
 United Nations Office for the Coordination of Humanitarian Affairs,22,,National Foundation for Development and Humanitarian Response,1,0,spending,outgoing,679968
 United Nations Office for the Coordination of Humanitarian Affairs,22,,National NGO,1,0,commitments,outgoing,51055379
-United Nations Office for the Coordination of Humanitarian Affairs,22,,National NGO,1,0,spending,outgoing,47100065
+United Nations Office for the Coordination of Humanitarian Affairs,22,,National NGO,1,0,spending,outgoing,47307635
 United Nations Office for the Coordination of Humanitarian Affairs,22,,National NGO,1,1,commitments,outgoing,8998094
 United Nations Office for the Coordination of Humanitarian Affairs,22,,National NGO,1,1,spending,outgoing,6540888
 United Nations Office for the Coordination of Humanitarian Affairs,22,,Nile Hope,1,0,commitments,outgoing,600001
@@ -8286,7 +8129,7 @@ United Nations Office for the Coordination of Humanitarian Affairs,22,,Terre des
 United Nations Office for the Coordination of Humanitarian Affairs,22,,Terre des hommes foundation,1,0,spending,outgoing,392000
 United Nations Office for the Coordination of Humanitarian Affairs,22,,The Aga Khan Foundation,1,1,commitments,outgoing,600001
 United Nations Office for the Coordination of Humanitarian Affairs,22,,The Aga Khan Foundation,1,1,spending,outgoing,600001
-United Nations Office for the Coordination of Humanitarian Affairs,22,,The Border Consortium,1,0,commitments,outgoing,206388
+United Nations Office for the Coordination of Humanitarian Affairs,22,,The Border Consortium,1,0,commitments,outgoing,255922
 United Nations Office for the Coordination of Humanitarian Affairs,22,,The Border Consortium,1,0,spending,outgoing,165110
 United Nations Office for the Coordination of Humanitarian Affairs,22,,The Health Support Organization,1,0,commitments,outgoing,860000
 United Nations Office for the Coordination of Humanitarian Affairs,22,,The Health Support Organization,1,0,spending,outgoing,344000
@@ -8338,8 +8181,8 @@ United Nations Office for the Coordination of Humanitarian Affairs,22,,United Na
 United Nations Office for the Coordination of Humanitarian Affairs,22,,United Nations Human Settlements Programme (UN-HABITAT),1,1,spending,outgoing,372912
 United Nations Office for the Coordination of Humanitarian Affairs,22,,United Nations Office for Project Services,1,0,commitments,outgoing,5345145
 United Nations Office for the Coordination of Humanitarian Affairs,22,,United Nations Office for Project Services,1,0,spending,outgoing,5345145
-United Nations Office for the Coordination of Humanitarian Affairs,22,,United Nations Population Fund,1,0,commitments,outgoing,9591996
-United Nations Office for the Coordination of Humanitarian Affairs,22,,United Nations Population Fund,1,0,spending,outgoing,9591996
+United Nations Office for the Coordination of Humanitarian Affairs,22,,United Nations Population Fund,1,0,commitments,outgoing,10015145
+United Nations Office for the Coordination of Humanitarian Affairs,22,,United Nations Population Fund,1,0,spending,outgoing,9840967
 United Nations Office for the Coordination of Humanitarian Affairs,22,,United Nations Population Fund,1,1,commitments,outgoing,2284801
 United Nations Office for the Coordination of Humanitarian Affairs,22,,United Nations Population Fund,1,1,spending,outgoing,2284801
 United Nations Office for the Coordination of Humanitarian Affairs,22,,United Nations Relief and Works Agency,1,1,commitments,outgoing,300000
@@ -8427,7 +8270,6 @@ United Nations Office for the Coordination of Humanitarian Affairs,22,,Zamzam Fo
 War Child Holland,21,,IY01,1,0,spending,outgoing,149204
 War Child Holland,21,War Child UK,,1,0,spending,incoming,190107
 War Child UK,21,,(unspecified org),1,1,spending,outgoing,365555
-War Child UK,21,,War Child UK,1,1,spending,outgoing,149729
 War Child UK,21,(unspecified org),,1,1,commitments,incoming,225866
 War Child UK,21,(unspecified org),,1,1,spending,incoming,81387
 War Child UK,21,Bureau des Nations Unies pour la coordination de l'assistance humanitaire,,1,1,commitments,incoming,160000
@@ -8436,7 +8278,6 @@ War Child UK,21,Stanley Thomas Johnson Foundation,,1,1,commitments,incoming,3346
 War Child UK,21,Stanley Thomas Johnson Foundation,,1,1,spending,incoming,34954
 War Child UK,21,United Nations Office for the Coordination of Humanitarian Affairs,,1,1,commitments,incoming,393197
 War Child UK,21,United Nations Office for the Coordination of Humanitarian Affairs,,1,1,spending,incoming,390691
-Welbodi Partnership,21,,Welbodi Partnership,0,0,spending,outgoing,191090
 Welbodi Partnership,21,(unspecified org),,0,0,spending,incoming,40947
 Women's Fund Asia,23,,(unspecified org),0,0,spending,outgoing,101581
 Women's Fund Asia,23,,(unspecified org),0,1,spending,outgoing,28363
@@ -8483,10 +8324,6 @@ World Bank Trust Funds (WBTF),40,Jordan Inclusive Growth and Economic Opportunit
 World Bank Trust Funds (WBTF),40,Multi Donor Programmatic Trust Fund for Europe and Central Asia Region Capacity Development,,0,0,commitments,incoming,1172724
 World Bank Trust Funds (WBTF),40,Partnership for Support to the Implementation of Ugandaâ€™s National Development Plans,,0,0,commitments,incoming,320000
 World Bank Trust Funds (WBTF),40,Strengthening Mozambique's Social Protection System Multi-Donor Trust Fund,,0,1,commitments,incoming,26200000
-World Food Programme,40,,World Food Programme,1,0,commitments,outgoing,1688978
-World Food Programme,40,,World Food Programme,1,0,spending,outgoing,1688978
-World Food Programme,40,,World Food Programme,1,1,commitments,outgoing,330308
-World Food Programme,40,,World Food Programme,1,1,spending,outgoing,330308
 World Food Programme,40,Canada,,1,1,spending,incoming,3237572
 World Food Programme,40,Dominican Republic,,1,1,spending,incoming,5034846
 World Food Programme,40,European Commission,,1,1,spending,incoming,158335
@@ -8496,7 +8333,6 @@ World Food Programme,40,Multilateral,,1,1,spending,incoming,242
 World Food Programme,40,Private Donors,,1,1,spending,incoming,152837
 World Food Programme,40,UN Other Funds and Agencies (excl. CERF),,1,1,spending,incoming,78635
 World Food Programme,40,United Kingdom,,1,1,spending,incoming,21635
-World Health Organization,40,,World Health Organization,1,1,spending,outgoing,1035106610
 World Jewish Relief,21,,(unspecified org),1,0,spending,outgoing,339555
 World Jewish Relief,21,,(unspecified org),1,1,spending,outgoing,206559
 World Jewish Relief,21,,SACCA,0,0,spending,outgoing,208166
@@ -8776,19 +8612,15 @@ World Vision Netherlands,60,Ministry of Foreign Affairs of the Netherlands,,1,1,
 World Vision Netherlands,60,Oxfam Novib,,1,0,commitments,incoming,1410662
 World Vision Netherlands,60,Oxfam Novib,,1,0,spending,incoming,1353110
 World Vision Netherlands,60,Save the Children Netherlands,,1,1,commitments,incoming,429241
-World Vision Netherlands,60,World Vision Netherlands,,0,0,spending,incoming,71392
-World Vision Netherlands,60,World Vision Netherlands,,1,0,spending,incoming,1388307
 World Vision United Kingdom,21,,World VIsion Sri Lanka,0,0,spending,outgoing,104517
 World Vision United Kingdom,21,,World VIsion Uganda,1,0,spending,outgoing,171948
 World Vision United Kingdom,21,,World Vision Congo - Democratic Republic of,0,1,spending,outgoing,1020673
 World Vision United Kingdom,21,,World Vision Mexico,1,0,spending,outgoing,75000
 World Vision United Kingdom,21,,World Vision Mozambique,0,0,spending,outgoing,248056
 World Vision United Kingdom,21,,World Vision Pacific Timor Leste,0,0,spending,outgoing,166305
-World Vision United Kingdom,21,,World Vision Syria,1,0,spending,outgoing,713260
+World Vision United Kingdom,21,,World Vision Syria,0,1,spending,outgoing,713415
 World Vision United Kingdom,21,,World Vision Zimbabwe,0,0,spending,outgoing,350647
-World Vision United Kingdom,21,Disasters Emergency Committee,,0,1,spending,incoming,161304
-World Vision United Kingdom,21,Disasters Emergency Committee,,1,0,commitments,incoming,1349634
-World Vision United Kingdom,21,Disasters Emergency Committee,,1,0,spending,incoming,785742
+World Vision United Kingdom,21,Disasters Emergency Committee,,0,1,spending,incoming,945371
 World Vision United Kingdom,21,Start Network,,0,0,spending,incoming,1010821
 World Vision United Kingdom,21,Start Network,,1,0,spending,incoming,366918
 World Vision United Kingdom,21,Unilever,,0,1,spending,incoming,1216350
@@ -8807,7 +8639,6 @@ ZOA,21,,Oxfam Novib,1,0,commitments,outgoing,1453802
 ZOA,21,,Oxfam Novib,1,0,spending,outgoing,1183921
 ZOA,21,,Terre des Hommes Netherlands,1,0,commitments,outgoing,1479889
 ZOA,21,,Terre des Hommes Netherlands,1,0,spending,outgoing,1099584
-ZOA,21,,ZOA,0,0,spending,outgoing,1968936
 ZOA,21,Ministry of Foreign Affairs of the Netherlands,,1,0,commitments,incoming,7286140
 ZOA,21,Ministry of Foreign Affairs of the Netherlands,,1,0,spending,incoming,5044002
 ZOA,21,Ministry of Foreign Affairs of the Netherlands,,1,1,spending,incoming,767830
