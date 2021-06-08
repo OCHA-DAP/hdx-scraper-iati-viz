@@ -48,7 +48,8 @@ lookups:
   sector_data: "data/dac3-sector-map.json"
   rates_url: "https://codeforiati.org/exchangerates-scraper/consolidated.csv"
   fallback_rates_url: "https://api.exchangerate.host/latest?base=usd"
-  default_org: "(unspecified org)"
+  default_org_id: ""
+  default_org_name: "(unspecified org)"
   default_sector: "(Unspecified sector)"
   default_country: "(Unspecified country)"
 
@@ -85,7 +86,8 @@ outputs:
     csv: "transactions.csv"
     headers:
       - "Month"
-      - "Reporting org"
+#      - "Reporting org id"
+      - "Reporting org name"
       - "Reporting org type"
       - "Sector"
       - "Recipient country"
@@ -97,6 +99,7 @@ outputs:
       - "Total money"
     hxltags:
       - "#date+month"
+#      - "#org+id"
       - "#org+name"
       - "#org+type"
       - "#sector"
@@ -111,7 +114,8 @@ outputs:
     json: "flows.json"
     csv: "flows.csv"
     headers:
-      - "Reporting org"
+#      - "Reporting org id"
+      - "Reporting org name"
       - "Reporting org type"
       - "Provider org"
       - "Receiver org"
@@ -121,6 +125,7 @@ outputs:
       - "Transaction direction"
       - "Total money"
     hxltags:
+#      - "#org+id+reporting"
       - "#org+name+reporting"
       - "#org+reporting+type"
       - "#org+name+provider"

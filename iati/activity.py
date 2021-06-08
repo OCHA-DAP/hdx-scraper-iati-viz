@@ -12,8 +12,8 @@ class Activity:
         """
         self.dactivity = dactivity
         self.identifier = dactivity.identifier
-        # Get the reporting-org name and C19 strictness at activity level
-        self.org = Lookups.get_org_name(dactivity.reporting_org)
+        # Get the reporting-org and C19 strictness at activity level
+        self.org = Lookups.get_org_id_name(dactivity.reporting_org)
         self.org_type = str(dactivity.reporting_org.type)
         self.strict = self.is_strict()
         self.humanitarian = dactivity.humanitarian
@@ -24,12 +24,12 @@ class Activity:
 
     @staticmethod
     def add_all_reporting_org_names_to_lookup(dactivity):
-        Lookups.get_org_name(dactivity.reporting_org)
+        Lookups.add_to_org_lookup(dactivity.reporting_org)
 
     @staticmethod
     def add_all_participating_org_names_to_lookup(dactivity):
         for org in dactivity.participating_orgs:
-            Lookups.get_org_name(org)
+            Lookups.add_to_org_lookup(org)
 
     def add_transactions(self, configuration):
         skipped = 0
@@ -110,13 +110,18 @@ class Activity:
 
     def add_to_flows(self, out_flows, transaction, funder, implementer):
         provider, receiver = transaction.get_provider_receiver()
-        if funder and provider == Lookups.default_org:
-            provider = funder
-        if implementer and receiver == Lookups.default_org:
-            receiver = implementer
-        if self.org != provider and self.org != receiver and self.org != Lookups.default_org:
-            key = (self.org, self.org_type, provider, receiver, transaction.is_humanitarian, transaction.is_strict,
-                   transaction.classification, transaction.direction)
+        provider = provider['name'] if provider else ''
+        receiver = receiver['name'] if receiver else ''
+        if funder and provider == Lookups.default_org_name:
+            provider = funder['name']
+        if implementer and receiver == Lookups.default_org_name:
+            receiver = implementer['name']
+        org_name = self.org['name']
+        if org_name != Lookups.default_org_name and org_name != provider and org_name != receiver:
+            key = (org_name, self.org_type, provider, receiver, transaction.is_humanitarian,
+                   transaction.is_strict, transaction.classification, transaction.direction)
+            # key = (self.org['id'], org_name, self.org_type, provider, receiver, transaction.is_humanitarian,
+            #        transaction.is_strict, transaction.classification, transaction.direction)
             # ignore internal transactions or unknown reporting orgs
             out_flows[key] = out_flows.get(key, 0) + transaction.value
 
@@ -142,9 +147,14 @@ class Activity:
 
                 if total_money != 0:
                     # add to transactions
-                    out_transactions.append([transaction.month, self.org, self.org_type, sector_name,
-                                             country_name, transaction.is_humanitarian, transaction.is_strict,
-                                             transaction.classification, self.identifier, net_money, total_money])
+                    out_transactions.append([transaction.month, self.org['name'], self.org_type,
+                                             sector_name, country_name, transaction.is_humanitarian,
+                                             transaction.is_strict, transaction.classification, self.identifier,
+                                             net_money, total_money])
+                    # out_transactions.append([transaction.month, self.org['id'], self.org['name'], self.org_type,
+                    #                          sector_name, country_name, transaction.is_humanitarian,
+                    #                          transaction.is_strict, transaction.classification, self.identifier,
+                    #                          net_money, total_money])
 
     def get_funder_implementer(self):
         funder = None
@@ -156,11 +166,11 @@ class Activity:
             participating_orgs = participating_orgs_by_role[role]
             if len(participating_orgs) != 1:
                 continue
-            orgname = Lookups.get_org_name(participating_orgs[0])
+            org = Lookups.get_org_id_name(participating_orgs[0])
             if role == '1':
-                funder = orgname
+                funder = org
             else:
-                implementer = orgname
+                implementer = org
         return funder, implementer
 
     def process(self, this_month, out_flows, out_transactions):

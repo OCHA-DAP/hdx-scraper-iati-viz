@@ -106,8 +106,10 @@ def start(configuration, today, retriever, dportal_params):
     # Prepare and write flows
     #
     write(today, outputs_configuration, 'flows', [list(key)+[int(round(flows[key]))] for key in sorted(flows)])
+#    write(today, outputs_configuration, 'flows', [list(key)+[int(round(flows[key]))] for key in sorted(flows, key=lambda x: x[1:])])
 
     #
     # Write transactions
     #
     write(today, outputs_configuration, 'transactions', sorted(transactions), all_skipped)
+#    write(today, outputs_configuration, 'transactions', sorted(transactions, key=lambda x: (x[0], x[2:])), all_skipped)

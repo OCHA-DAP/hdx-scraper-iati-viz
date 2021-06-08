@@ -22,7 +22,8 @@ def clean_string(s):
 class Lookups:
     org_ref_to_name = dict()
     org_names_to_ref = dict()
-    default_org = None
+    default_org_id = None
+    default_org_name = None
     sector_info = None
     default_sector = None
     default_country = None
@@ -43,7 +44,8 @@ class Lookups:
             cls.org_ref_to_name[code] = name
             cls.org_names_to_ref[name] = code
         cls.sector_info = load_json(configuration['sector_data'])
-        cls.default_org = configuration['default_org']
+        cls.default_org_id = configuration['default_org_id']
+        cls.default_org_name = configuration['default_org_name']
         cls.default_sector = configuration['default_sector']
         cls.default_country = configuration['default_country']
         rates_path = retriever.retrieve_file(configuration['rates_url'], 'rates.csv', 'exchange rates', True)
@@ -67,39 +69,47 @@ class Lookups:
     def is_filter_reporting_orgs_children(cls, orgid):
         return True if orgid in cls.filter_reporting_orgs_children else False
 
+    @staticmethod
+    def get_cleaned_ref_and_name(org):
+        ref = None if org is None or org.ref is None else clean_string(str(org.ref)).lower()
+        name = None if org is None or org.name is None else clean_string(str(org.name))
+        return ref, name
+
     @classmethod
-    def get_org_name(cls, org):
+    def add_to_org_lookup(cls, org):
+        ref, name = cls.get_cleaned_ref_and_name(org)
+        if name:
+            cur_ref = cls.org_names_to_ref.get(name)
+            if cur_ref:
+                if cur_ref not in cls.org_ref_to_name:
+                    cls.org_ref_to_name[cur_ref] = name
+            if ref:
+                if ref not in cls.org_ref_to_name:
+                    cls.org_ref_to_name[ref] = name
+                if not cur_ref:
+                    cls.org_names_to_ref[name] = ref
+
+    @classmethod
+    def get_org_id_name(cls, org):
         """ Standardise organisation names
         For now, use the first name found for an identifier.
         Later, we can reference the registry.
         """
-        name = None if org is None or org.name is None else clean_string(str(org.name))
-        ref = None if org is None or org.ref is None else clean_string(str(org.ref)).lower()
+        ref, name = cls.get_cleaned_ref_and_name(org)
 
+        if name and not ref:
+            ref = cls.org_names_to_ref.get(name)
         if ref:
-            if name:
-                cur_ref = cls.org_names_to_ref.get(name)
-                if cur_ref:
-                    second_preferred_name = cls.org_ref_to_name.get(cur_ref)
-                    if not second_preferred_name:
-                        cls.org_ref_to_name[cur_ref] = name
-                else:
-                    cls.org_names_to_ref[name] = ref
-                    second_preferred_name = None
-                preferred_name = cls.org_ref_to_name.get(ref)
-                if preferred_name:
-                    return preferred_name
-                cls.org_ref_to_name[ref] = name
-                if second_preferred_name:
-                    return second_preferred_name
-                return name
             preferred_name = cls.org_ref_to_name.get(ref)
-            if preferred_name:
-                return preferred_name
-        elif name:
-            return name
-        # We can't figure out anything
-        return cls.default_org
+        else:
+            preferred_name = None
+        if not ref:
+            ref = cls.default_org_id
+        if preferred_name:
+            name = preferred_name
+        elif not name:
+            name = cls.default_org_name
+        return {'id': ref, 'name': name}
 
     @classmethod
     def get_sector_group_name(cls, code):
