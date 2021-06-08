@@ -1,0 +1,3125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iati-activities version="2.03">
+ <iati-activity budget-not-provided="3" default-currency="USD" dstore:dataset="cerf-projectsfunded2021" dstore:index="54" hierarchy="1" humanitarian="1" iati-activities:generated-datetime="2021-05-30T03:08:53" iati-activities:version="2.03" last-updated-datetime="2021-04-27T00:00:00" xml:lang="EN" xmlns:cerf="http://cerf-gms.unocha.org/CERF01" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>XM-OCHA-CERF-21-RR-CEF-011</iati-identifier>
+  <reporting-org ref="XM-OCHA-CERF" type="40">
+   <narrative xml:lang="EN">UNOCHA - Central Emergency Response Fund (CERF)</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">Provision of Life-Saving Nutrition and WASH Services to emergency-affected vulnerable populations</narrative>
+  </title>
+  <description type="1">
+   <narrative xml:lang="EN">The main objective of this project is to provide essential Nutrition and WASH services to children, women and communities affected by conflict, drought and the impact of COVID-19. This UNICEF project 1) distributes therapeutic supplies to people with Severe Acute Malnutrition (SAM), 2) provides hygiene supplies and 3) installs emergency sanitation facilities among other activities. The project provides life-saving assistance to 80,000 people, including 21,700 women, 22,900 men, 35,400 children, and 3,400 people with disabilities.</narrative>
+  </description>
+  <participating-org activity-id="XM-OCHA-CERF" crs-channel-code="41147" ref="XM-OCHA-CERF" role="1" type="40">
+   <narrative xml:lang="EN">OCHA Central Emergency Response Fund (CERF)</narrative>
+  </participating-org>
+  <participating-org ref="XM-DAC-41122" role="2" type="40">
+   <narrative xml:lang="EN">United Nations Children&apos;s Fund (UNICEF)</narrative>
+  </participating-org>
+  <other-identifier ref="21-RR-CEF-011" type="A1">
+   <owner-org ref="XM-OCHA-CERF">
+    <narrative xml:lang="EN">UN OCHA Central Emergency Response Fund (CERF)</narrative>
+   </owner-org>
+  </other-identifier>
+  <activity-status code="2"></activity-status>
+  <activity-date iso-date="2021-04-27" type="2">
+   <narrative xml:lang="EN">2021-04-27</narrative>
+  </activity-date>
+  <activity-date iso-date="2021-10-26" type="3">
+   <narrative xml:lang="EN">2021-10-26</narrative>
+  </activity-date>
+  <contact-info type="1">
+   <organisation>
+    <narrative xml:lang="EN">UN Office for the Coordination of Humanitarian Affairs (OCHA)</narrative>
+   </organisation>
+   <department>
+    <narrative xml:lang="EN">Central Emergency Response Fund (CERF) secretariat</narrative>
+   </department>
+   <email>cerf@un.org</email>
+   <website>http://www.unocha.org/cerf/</website>
+   <mailing-address>
+    <narrative xml:lang="EN">United Nations Office for the Coordination of Humanitarian Affairs (OCHA), Central Emergency Response Fund (CERF), 2 United Nations Plaza (DC2), East 44th street (13th floor), United Nations, New York, USA</narrative>
+   </mailing-address>
+  </contact-info>
+  <activity-scope code="4"></activity-scope>
+  <recipient-country code="AF" percentage="100"></recipient-country>
+  <humanitarian-scope code="8" type="1" vocabulary="99" vocabulary-uri="https://cerf.un.org">
+   <narrative xml:lang="EN">AFGHANISTAN        DROUGHT        2021</narrative>
+  </humanitarian-scope>
+  <collaboration-type code="4"></collaboration-type>
+  <default-flow-type code="10"></default-flow-type>
+  <default-finance-type code="110"></default-finance-type>
+  <default-aid-type code="C01" vocabulary="1"></default-aid-type>
+  <default-tied-status code="5"></default-tied-status>
+  <capital-spend percentage="0"></capital-spend>
+  <transaction humanitarian="1" ref="XM-OCHA-CERF-21-RR-CEF-011">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-04-27"></transaction-date>
+   <value currency="USD" value-date="2021-04-27">1891000</value>
+   <description>
+    <narrative xml:lang="EN">Disbursement to CERF Project Provision of Life-Saving Nutrition and WASH Services to emergency-affected vulnerable populations</narrative>
+   </description>
+   <provider-org ref="XM-OCHA-CERF" type="40">
+    <narrative xml:lang="EN">OCHA Central Emergency Response Fund (CERF)</narrative>
+   </provider-org>
+   <receiver-org ref="XM-DAC-41122">
+    <narrative xml:lang="EN">United Nations Children&apos;s Fund (UNICEF)</narrative>
+   </receiver-org>
+   <disbursement-channel code="2"></disbursement-channel>
+   <sector code="72010" vocabulary="1"></sector>
+  </transaction>
+  <transaction humanitarian="1" ref="XM-OCHA-CERF-21-RR-CEF-011">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-04-27"></transaction-date>
+   <value currency="USD" value-date="2021-04-27">4209000</value>
+   <description>
+    <narrative xml:lang="EN">Disbursement to CERF Project Provision of Life-Saving Nutrition and WASH Services to emergency-affected vulnerable populations</narrative>
+   </description>
+   <provider-org ref="XM-OCHA-CERF" type="40">
+    <narrative xml:lang="EN">OCHA Central Emergency Response Fund (CERF)</narrative>
+   </provider-org>
+   <receiver-org ref="XM-DAC-41122">
+    <narrative xml:lang="EN">United Nations Children&apos;s Fund (UNICEF)</narrative>
+   </receiver-org>
+   <disbursement-channel code="2"></disbursement-channel>
+   <sector code="72010" vocabulary="1"></sector>
+  </transaction>
+  <document-link format="APPLICATION/PDF" url="https://www.unocha.org/cerf/sites/default/files/CERF/HCRCReports/21-RR-AFG-47407-NR03_Afghanistan_RCHC.Report.pdf">
+   <title>
+    <narrative xml:lang="EN">RESIDENT / HUMANITARIAN COORDINATOR REPORT ON THE USE OF CERF FUNDS AFGHANISTAN        RAPID RESPONSE        DROUGHT        2021</narrative>
+   </title>
+   <category code="A07"></category>
+  </document-link>
+  <conditions attached="1">
+   <condition type="2">
+    <narrative xml:lang="EN">CERF funding is based on an agreed proposal, including specific planned outcomes and outputs.</narrative>
+   </condition>
+  </conditions>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 1</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">A total of 32,449 children aged 6-59 months with Severe Acute Malnutrition (SAM) are provided with lifesaving therapeutic supplies (RUTF and milks)</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN"># of RUTF cartons procured and dispatched to the 10 priority and highly affected provincesQuantity of special nutritious foods (RUTF) provided</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-27"></period-start>
+     <period-end iso-date="2021-10-26"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.5</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN"># of children aged under-five with SAM who are admitted for treatment# SAM new admissions (children)</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-27"></period-start>
+     <period-end iso-date="2021-10-26"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.4</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN"># of health facilities (fixed and mobile) supplied with therapeutic food.</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-27"></period-start>
+     <period-end iso-date="2021-10-26"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN"># of therapeutic milk (F-100 type) cartons procured and dispatched to Inpatient Department (IPD)-SAM wards in 10 priority provincesQuantity of special nutritious foods (therapeutic milk F-100) provided</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-27"></period-start>
+     <period-end iso-date="2021-10-26"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN"># of therapeutic milk (F-75 type) cartons procured and dispatched to IPD_SAM wards in 10 priority provincesQuantity of special nutritious foods (therapeutic milk F-75) provided</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-27"></period-start>
+     <period-end iso-date="2021-10-26"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 2</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">An estimated 40,000 vulnerable people affected by conflict and natural disaster (drought/flood/landslide) and conflict access safe drinking water through trucking, rehabilitation of existing systems, or installation of new water supply systems</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of people in affected areas with access to at least 15 liters per capita per day (lpcd) of safe water drinking water</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-27"></period-start>
+     <period-end iso-date="2021-10-26"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of public institutions (such as temporary learning centers, mobile health teams, healthcare facilities, nutrition centers, schools or child friendly spaces) with access to WASH facilities/services</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-27"></period-start>
+     <period-end iso-date="2021-10-26"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 3</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">An estimated 84,000 people affected by natural disaster (drought/flood/landslide) and conflict including most vulnerable people in host communities have improved knowledge and perform healthy hygienic behaviors and practices (this includes provision of sanitation facilities including bathing spaces and handwashing stations for an estimated 8,000 displaced people affected by natural disasters and conflict)</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 3.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of affected people who receive hygiene supplies and orientation on key hygiene messages as per WASH cluster standard</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-27"></period-start>
+     <period-end iso-date="2021-10-26"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 3.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of displaced people with access to sanitation facilities/services (latrines, bathing spaces and handwashing stations)</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-27"></period-start>
+     <period-end iso-date="2021-10-26"></period-end>
+    </period>
+   </indicator>
+  </result>
+ </iati-activity>
+ <iati-activity budget-not-provided="3" default-currency="USD" dstore:dataset="cerf-projectsfunded2021" dstore:index="6" hierarchy="1" humanitarian="1" iati-activities:generated-datetime="2021-05-30T03:08:53" iati-activities:version="2.03" last-updated-datetime="2021-01-22T00:00:00" xml:lang="EN" xmlns:cerf="http://cerf-gms.unocha.org/CERF01" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>XM-OCHA-CERF-21-RR-FAO-001</iati-identifier>
+  <reporting-org ref="XM-OCHA-CERF" type="40">
+   <narrative xml:lang="EN">UNOCHA - Central Emergency Response Fund (CERF)</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">Mitigating the socio-economic impacts of the COVID-19 pandemic on livelihoods through Cash Transfer in the Kasai regions</narrative>
+  </title>
+  <description type="1">
+   <narrative xml:lang="EN">The main objective of this project is to provide life-saving multi-purpose cash assistance to vulnerable communities in Kamonia, Kazumba, and Kangana. This FAO project provides cash assistance to 39,600 people, including 16,000 women, 11,000 men, and over 12,000 children. This project is part of an $80 million CERF allocation to support cash programming in response to increasing food insecurity in 6 countries.</narrative>
+  </description>
+  <participating-org ref="XM-DAC-41301" role="2" type="40">
+   <narrative xml:lang="EN">Food and Agriculture Organization of the United Nations (FAO)</narrative>
+  </participating-org>
+  <participating-org activity-id="XM-OCHA-CERF" crs-channel-code="41147" ref="XM-OCHA-CERF" role="1" type="40">
+   <narrative xml:lang="EN">OCHA Central Emergency Response Fund (CERF)</narrative>
+  </participating-org>
+  <other-identifier ref="21-RR-FAO-001" type="A1">
+   <owner-org ref="XM-OCHA-CERF">
+    <narrative xml:lang="EN">UN OCHA Central Emergency Response Fund (CERF)</narrative>
+   </owner-org>
+  </other-identifier>
+  <activity-status code="2"></activity-status>
+  <activity-date iso-date="2020-12-09" type="2">
+   <narrative xml:lang="EN">2020-12-09</narrative>
+  </activity-date>
+  <activity-date iso-date="2021-06-08" type="3">
+   <narrative xml:lang="EN">2021-06-08</narrative>
+  </activity-date>
+  <contact-info type="1">
+   <organisation>
+    <narrative xml:lang="EN">UN Office for the Coordination of Humanitarian Affairs (OCHA)</narrative>
+   </organisation>
+   <department>
+    <narrative xml:lang="EN">Central Emergency Response Fund (CERF) secretariat</narrative>
+   </department>
+   <email>cerf@un.org</email>
+   <website>http://www.unocha.org/cerf/</website>
+   <mailing-address>
+    <narrative xml:lang="EN">United Nations Office for the Coordination of Humanitarian Affairs (OCHA), Central Emergency Response Fund (CERF), 2 United Nations Plaza (DC2), East 44th street (13th floor), United Nations, New York, USA</narrative>
+   </mailing-address>
+  </contact-info>
+  <activity-scope code="4"></activity-scope>
+  <recipient-country code="CD" percentage="100"></recipient-country>
+  <humanitarian-scope code="16" type="1" vocabulary="99" vocabulary-uri="https://cerf.un.org">
+   <narrative xml:lang="EN">CONGO, DEMOCRATIC REPUBLIC OF THE        DISPLACEMENT        2021</narrative>
+  </humanitarian-scope>
+  <collaboration-type code="4"></collaboration-type>
+  <default-flow-type code="10"></default-flow-type>
+  <default-finance-type code="110"></default-finance-type>
+  <default-aid-type code="C01" vocabulary="1"></default-aid-type>
+  <default-tied-status code="5"></default-tied-status>
+  <capital-spend percentage="0"></capital-spend>
+  <transaction humanitarian="1" ref="XM-OCHA-CERF-21-RR-FAO-001">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-01-22"></transaction-date>
+   <value currency="USD" value-date="2021-01-22">1000000</value>
+   <description>
+    <narrative xml:lang="EN">Disbursement to CERF Project Mitigating the socio-economic impacts of the COVID-19 pandemic on livelihoods through Cash Transfer in the Kasai regions</narrative>
+   </description>
+   <provider-org ref="XM-OCHA-CERF" type="40">
+    <narrative xml:lang="EN">OCHA Central Emergency Response Fund (CERF)</narrative>
+   </provider-org>
+   <receiver-org ref="XM-DAC-41301">
+    <narrative xml:lang="EN">Food and Agriculture Organization of the United Nations (FAO)</narrative>
+   </receiver-org>
+   <disbursement-channel code="2"></disbursement-channel>
+   <sector code="72010" vocabulary="1"></sector>
+  </transaction>
+  <document-link format="APPLICATION/PDF" url="https://www.unocha.org/cerf/sites/default/files/CERF/HCRCReports/21-RR-COD-46697-NR01_Democratic Republic of the Congo_RCHC.Report.pdf">
+   <title>
+    <narrative xml:lang="EN">RESIDENT / HUMANITARIAN COORDINATOR REPORT ON THE USE OF CERF FUNDS CONGO, DEMOCRATIC REPUBLIC OF THE        RAPID RESPONSE        DISPLACEMENT        2021</narrative>
+   </title>
+   <category code="A07"></category>
+  </document-link>
+  <conditions attached="1">
+   <condition type="2">
+    <narrative xml:lang="EN">CERF funding is based on an agreed proposal, including specific planned outcomes and outputs.</narrative>
+   </condition>
+  </conditions>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 2</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Agricultural production is increased through the mastery of good agricultural practices</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">% of households using good agricultural practices</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of trained Households (Training of Trainers) on Good Agricultural Practices</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 1</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Unconditional cash strengthens the livelihoods of 6,600 vulnerable households</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">% of households aware of the project</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.4</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">% of households who report being able to meet the basic needs of their households (all/most/some/none), according to their priorities</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">% of households with acceptable Food Consumption Score</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of households that received the cash</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+  </result>
+ </iati-activity>
+ <iati-activity budget-not-provided="3" default-currency="USD" dstore:dataset="cerf-projectsfunded2021" dstore:index="55" hierarchy="1" humanitarian="1" iati-activities:generated-datetime="2021-05-30T03:08:53" iati-activities:version="2.03" last-updated-datetime="2021-04-29T00:00:00" xml:lang="EN" xmlns:cerf="http://cerf-gms.unocha.org/CERF01" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>XM-OCHA-CERF-21-RR-FAO-007</iati-identifier>
+  <reporting-org ref="XM-OCHA-CERF" type="40">
+   <narrative xml:lang="EN">UNOCHA - Central Emergency Response Fund (CERF)</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">Anticipatory livelihood protection to minimise drought impacts and safeguard food security</narrative>
+  </title>
+  <description type="1">
+   <narrative xml:lang="EN">The main objective of this project is to protect livelihoods and safeguard food and nutrition security of vulnerable households from the adverse impacts of drought and other recent shocks. This FAO project 1) distributes livestock assistance package, 2) provides unconditional cash transfers and cash for work activities and 3) provides training, information dissemination and awareness building on key protection messages and COVID-19 among other activities. The project provides life-saving assistance to 245,000 people, including 50,000 women, 48,000 men, 145,000 children, and 6,600 people with disabilities.</narrative>
+  </description>
+  <participating-org ref="XM-DAC-41301" role="2" type="40">
+   <narrative xml:lang="EN">Food and Agriculture Organization of the United Nations (FAO)</narrative>
+  </participating-org>
+  <participating-org activity-id="XM-OCHA-CERF" crs-channel-code="41147" ref="XM-OCHA-CERF" role="1" type="40">
+   <narrative xml:lang="EN">OCHA Central Emergency Response Fund (CERF)</narrative>
+  </participating-org>
+  <other-identifier ref="21-RR-FAO-007" type="A1">
+   <owner-org ref="XM-OCHA-CERF">
+    <narrative xml:lang="EN">UN OCHA Central Emergency Response Fund (CERF)</narrative>
+   </owner-org>
+  </other-identifier>
+  <activity-status code="2"></activity-status>
+  <activity-date iso-date="2021-04-15" type="2">
+   <narrative xml:lang="EN">2021-04-15</narrative>
+  </activity-date>
+  <activity-date iso-date="2021-10-14" type="3">
+   <narrative xml:lang="EN">2021-10-14</narrative>
+  </activity-date>
+  <contact-info type="1">
+   <organisation>
+    <narrative xml:lang="EN">UN Office for the Coordination of Humanitarian Affairs (OCHA)</narrative>
+   </organisation>
+   <department>
+    <narrative xml:lang="EN">Central Emergency Response Fund (CERF) secretariat</narrative>
+   </department>
+   <email>cerf@un.org</email>
+   <website>http://www.unocha.org/cerf/</website>
+   <mailing-address>
+    <narrative xml:lang="EN">United Nations Office for the Coordination of Humanitarian Affairs (OCHA), Central Emergency Response Fund (CERF), 2 United Nations Plaza (DC2), East 44th street (13th floor), United Nations, New York, USA</narrative>
+   </mailing-address>
+  </contact-info>
+  <activity-scope code="4"></activity-scope>
+  <recipient-country code="AF" percentage="100"></recipient-country>
+  <humanitarian-scope code="8" type="1" vocabulary="99" vocabulary-uri="https://cerf.un.org">
+   <narrative xml:lang="EN">AFGHANISTAN        DROUGHT        2021</narrative>
+  </humanitarian-scope>
+  <collaboration-type code="4"></collaboration-type>
+  <default-flow-type code="10"></default-flow-type>
+  <default-finance-type code="110"></default-finance-type>
+  <default-aid-type code="C01" vocabulary="1"></default-aid-type>
+  <default-tied-status code="5"></default-tied-status>
+  <capital-spend percentage="0"></capital-spend>
+  <transaction humanitarian="1" ref="XM-OCHA-CERF-21-RR-FAO-007">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-04-28"></transaction-date>
+   <value currency="USD" value-date="2021-04-28">4798459</value>
+   <description>
+    <narrative xml:lang="EN">Disbursement to CERF Project Anticipatory livelihood protection to minimise drought impacts and safeguard food security</narrative>
+   </description>
+   <provider-org ref="XM-OCHA-CERF" type="40">
+    <narrative xml:lang="EN">OCHA Central Emergency Response Fund (CERF)</narrative>
+   </provider-org>
+   <receiver-org ref="XM-DAC-41301">
+    <narrative xml:lang="EN">Food and Agriculture Organization of the United Nations (FAO)</narrative>
+   </receiver-org>
+   <disbursement-channel code="2"></disbursement-channel>
+   <sector code="72010" vocabulary="1"></sector>
+  </transaction>
+  <document-link format="APPLICATION/PDF" url="https://www.unocha.org/cerf/sites/default/files/CERF/HCRCReports/21-RR-AFG-47407-NR03_Afghanistan_RCHC.Report.pdf">
+   <title>
+    <narrative xml:lang="EN">RESIDENT / HUMANITARIAN COORDINATOR REPORT ON THE USE OF CERF FUNDS AFGHANISTAN        RAPID RESPONSE        DROUGHT        2021</narrative>
+   </title>
+   <category code="A07"></category>
+  </document-link>
+  <conditions attached="1">
+   <condition type="2">
+    <narrative xml:lang="EN">CERF funding is based on an agreed proposal, including specific planned outcomes and outputs.</narrative>
+   </condition>
+  </conditions>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 3</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Awareness of 245,000 at-risk and vulnerable people belonging to marginal herding, landless, women-headed, and persons with disability households raised on key protection messages and on COVID-19 and important livestock diseases safety measures to adopt at livelihood practices, during market participation and in general appropriate preventive practices for minimizing transmission.</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 3.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of persons receiving information and awareness materials on key protection messages and COVID-19 safety measures to adopt at livelihood practices, during market participation and in general appropriate preventive practices for minimizing transmission.</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-15"></period-start>
+     <period-end iso-date="2021-10-14"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 1</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Livelihoods and food security of 175,000 at-risk and vulnerable people from 25,000 marginal herding, landless, women-headed, and persons with disability HHs protected through provision of emergency livestock protection package assistance.</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of at-risk and vulnerable people from marginal herding, landless, women-headed, and persons with disability HHs provided with emergency livestock protection assistance</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-15"></period-start>
+     <period-end iso-date="2021-10-14"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Percent of households no longer in Crisis or Emergency Phase of the Livelihood Coping Strategy Index (LCS).</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-15"></period-start>
+     <period-end iso-date="2021-10-14"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Percentage of households who report being able to meet the basic needs of their households (all/most/some/none), according to their priorities.</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-15"></period-start>
+     <period-end iso-date="2021-10-14"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 2</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Livelihoods and food security of 70,000 at-risk and vulnerable people from 10,000 marginal landless, women-headed, and persons with disability HHs protected through provision of emergency cash-based assistance.</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of at-risk and vulnerable people from marginal landless, women-headed, and persons with disability HHs, provided with cash assistance.</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-15"></period-start>
+     <period-end iso-date="2021-10-14"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.4</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of local irrigation / soil-water conservation / livestock watering / flood-protection structures repaired / rehabilitated through cash-for-work activities.</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-15"></period-start>
+     <period-end iso-date="2021-10-14"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Percentage of households by Food Consumption Score (FCS) phase (Poor, Borderline, and Acceptable).</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-15"></period-start>
+     <period-end iso-date="2021-10-14"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Percentage of households who report being able to meet the basic needs of their households (all/most/some/none), according to their priorities.</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-15"></period-start>
+     <period-end iso-date="2021-10-14"></period-end>
+    </period>
+   </indicator>
+  </result>
+ </iati-activity>
+ <iati-activity budget-not-provided="3" default-currency="USD" dstore:dataset="cerf-projectsfunded2021" dstore:index="7" hierarchy="1" humanitarian="1" iati-activities:generated-datetime="2021-05-30T03:08:53" iati-activities:version="2.03" last-updated-datetime="2021-01-20T00:00:00" xml:lang="EN" xmlns:cerf="http://cerf-gms.unocha.org/CERF01" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>XM-OCHA-CERF-21-RR-WFP-001</iati-identifier>
+  <reporting-org ref="XM-OCHA-CERF" type="40">
+   <narrative xml:lang="EN">UNOCHA - Central Emergency Response Fund (CERF)</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">MITIGATION OF THE COVID-19 PANDEMIC SOCIO-ECONOMIC IMPACTS THROUGH CASH TRANSFERS</narrative>
+  </title>
+  <description type="1">
+   <narrative xml:lang="EN">The main objective of this project is to provide life-saving multi-purpose cash assistance to vulnerable communities in Kasai, Kasai Central, Kasai Oriental, Ituri and Tanganyika. This WFP project provides cash assistance to 77,320 people, including 21,000 women, 20,000 men, and over 36,000 children. This project is part of an $80 million CERF allocation to support cash programming in response to increasing food insecurity in 6 countries.</narrative>
+  </description>
+  <participating-org activity-id="XM-OCHA-CERF" crs-channel-code="41147" ref="XM-OCHA-CERF" role="1" type="40">
+   <narrative xml:lang="EN">OCHA Central Emergency Response Fund (CERF)</narrative>
+  </participating-org>
+  <participating-org ref="XM-DAC-41140" role="2" type="40">
+   <narrative xml:lang="EN">United Nations World Food Programme (WFP)</narrative>
+  </participating-org>
+  <other-identifier ref="21-RR-WFP-001" type="A1">
+   <owner-org ref="XM-OCHA-CERF">
+    <narrative xml:lang="EN">UN OCHA Central Emergency Response Fund (CERF)</narrative>
+   </owner-org>
+  </other-identifier>
+  <activity-status code="2"></activity-status>
+  <activity-date iso-date="2020-12-09" type="2">
+   <narrative xml:lang="EN">2020-12-09</narrative>
+  </activity-date>
+  <activity-date iso-date="2021-06-08" type="3">
+   <narrative xml:lang="EN">2021-06-08</narrative>
+  </activity-date>
+  <contact-info type="1">
+   <organisation>
+    <narrative xml:lang="EN">UN Office for the Coordination of Humanitarian Affairs (OCHA)</narrative>
+   </organisation>
+   <department>
+    <narrative xml:lang="EN">Central Emergency Response Fund (CERF) secretariat</narrative>
+   </department>
+   <email>cerf@un.org</email>
+   <website>http://www.unocha.org/cerf/</website>
+   <mailing-address>
+    <narrative xml:lang="EN">United Nations Office for the Coordination of Humanitarian Affairs (OCHA), Central Emergency Response Fund (CERF), 2 United Nations Plaza (DC2), East 44th street (13th floor), United Nations, New York, USA</narrative>
+   </mailing-address>
+  </contact-info>
+  <activity-scope code="4"></activity-scope>
+  <recipient-country code="CD" percentage="100"></recipient-country>
+  <humanitarian-scope code="16" type="1" vocabulary="99" vocabulary-uri="https://cerf.un.org">
+   <narrative xml:lang="EN">CONGO, DEMOCRATIC REPUBLIC OF THE        DISPLACEMENT        2021</narrative>
+  </humanitarian-scope>
+  <collaboration-type code="4"></collaboration-type>
+  <default-flow-type code="10"></default-flow-type>
+  <default-finance-type code="110"></default-finance-type>
+  <default-aid-type code="C01" vocabulary="1"></default-aid-type>
+  <default-tied-status code="5"></default-tied-status>
+  <capital-spend percentage="0"></capital-spend>
+  <transaction humanitarian="1" ref="XM-OCHA-CERF-21-RR-WFP-001">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-01-20"></transaction-date>
+   <value currency="USD" value-date="2021-01-20">5998971</value>
+   <description>
+    <narrative xml:lang="EN">Disbursement to CERF Project MITIGATION OF THE COVID-19 PANDEMIC SOCIO-ECONOMIC IMPACTS THROUGH CASH TRANSFERS</narrative>
+   </description>
+   <provider-org ref="XM-OCHA-CERF" type="40">
+    <narrative xml:lang="EN">OCHA Central Emergency Response Fund (CERF)</narrative>
+   </provider-org>
+   <receiver-org ref="XM-DAC-41140">
+    <narrative xml:lang="EN">United Nations World Food Programme (WFP)</narrative>
+   </receiver-org>
+   <disbursement-channel code="2"></disbursement-channel>
+   <sector code="72010" vocabulary="1"></sector>
+  </transaction>
+  <document-link format="APPLICATION/PDF" url="https://www.unocha.org/cerf/sites/default/files/CERF/HCRCReports/21-RR-COD-46697-NR01_Democratic Republic of the Congo_RCHC.Report.pdf">
+   <title>
+    <narrative xml:lang="EN">RESIDENT / HUMANITARIAN COORDINATOR REPORT ON THE USE OF CERF FUNDS CONGO, DEMOCRATIC REPUBLIC OF THE        RAPID RESPONSE        DISPLACEMENT        2021</narrative>
+   </title>
+   <category code="A07"></category>
+  </document-link>
+  <conditions attached="1">
+   <condition type="2">
+    <narrative xml:lang="EN">CERF funding is based on an agreed proposal, including specific planned outcomes and outputs.</narrative>
+   </condition>
+  </conditions>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 1</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Crisis-affected acutely food insecure populations targeted by WFP and partners in DRC receive sufficient cash to meet their basic food and nutrient and non-food requirements despite COVID-19 socio-economic impacts</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.6</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Food Expenditure Share (Percentage of total household monthly expenditure dedicated to food)</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of people receiving WFP assistance</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of people receiving sensitization on COVID-19 prevention measures</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.8</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Percentage of Women of Reproductive Age (15-49 years) who reached Minimum Dietary Diversity for Women (MDD-W).</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.7</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Percentage of households who report being able to meet the basic needs of their households (all/most/some/none), according to their priorities</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.4</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Proportion of assisted people informed about the programme (who is included, what people will receive, duration of assistance)</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.5</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Proportion of households with acceptable Food Consumption Score</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Total amount of cash transferred to targeted beneficiaries</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 2</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Crisis-affected acutely food insecure populations targeted by WFP are empowered and less exposed to protection issues (including GBV and SEA)</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Consumption-based Coping Strategy Index (Average) female headed family</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.4</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of awareness-raising meetings dedicated to gender issues</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.6</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of feedback or complaints received from beneficiaries or community members</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.5</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of persons with disabilities assisted</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.7</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Percentage of GBV feedback or complaints received from beneficiaries or community members</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Proportion of households where women and men jointly make decisions about the cash received from WFP</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Proportion of targeted beneficiaries accessing assistance without protection challenges</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2020-12-09"></period-start>
+     <period-end iso-date="2021-06-08"></period-end>
+    </period>
+   </indicator>
+  </result>
+ </iati-activity>
+ <iati-activity budget-not-provided="3" default-currency="USD" dstore:dataset="cerf-projectsfunded2021" dstore:index="37" hierarchy="1" humanitarian="1" iati-activities:generated-datetime="2021-05-30T03:08:53" iati-activities:version="2.03" last-updated-datetime="2021-04-14T00:00:00" xml:lang="EN" xmlns:cerf="http://cerf-gms.unocha.org/CERF01" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>XM-OCHA-CERF-21-RR-WFP-004</iati-identifier>
+  <reporting-org ref="XM-OCHA-CERF" type="40">
+   <narrative xml:lang="EN">UNOCHA - Central Emergency Response Fund (CERF)</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">Logistics response - Equatorial Guinea Bata explosions</narrative>
+  </title>
+  <description type="1">
+   <narrative xml:lang="EN">The overall objective of this project is to support the Logistics sector, which has been identified as critical and urgent in the delivery of life saving support to affected communities in Bata. This WFP project provide UNHAS services by establishing an air bridge between Malabo and Bata to enable emergency personnel and equipment to be transported quickly and regularly. One aircraft B1900D will be based in Malabo operating the route Malabo-Bata-Malabo. The aircraft capacity is of 19 passengers, however due to COVID-19 restrictions, capacity will be reduced to 50%: with approximately 20 passengers per day &#x2013; round trip from Monday to Friday / An estimated 450 passengers per month will use UNHAS assets.</narrative>
+  </description>
+  <participating-org activity-id="XM-OCHA-CERF" crs-channel-code="41147" ref="XM-OCHA-CERF" role="1" type="40">
+   <narrative xml:lang="EN">OCHA Central Emergency Response Fund (CERF)</narrative>
+  </participating-org>
+  <participating-org ref="XM-DAC-41140" role="2" type="40">
+   <narrative xml:lang="EN">United Nations World Food Programme (WFP)</narrative>
+  </participating-org>
+  <other-identifier ref="21-RR-WFP-004" type="A1">
+   <owner-org ref="XM-OCHA-CERF">
+    <narrative xml:lang="EN">UN OCHA Central Emergency Response Fund (CERF)</narrative>
+   </owner-org>
+  </other-identifier>
+  <activity-status code="2"></activity-status>
+  <activity-date iso-date="2021-04-01" type="2">
+   <narrative xml:lang="EN">2021-04-01</narrative>
+  </activity-date>
+  <activity-date iso-date="2021-09-30" type="3">
+   <narrative xml:lang="EN">2021-09-30</narrative>
+  </activity-date>
+  <contact-info type="1">
+   <organisation>
+    <narrative xml:lang="EN">UN Office for the Coordination of Humanitarian Affairs (OCHA)</narrative>
+   </organisation>
+   <department>
+    <narrative xml:lang="EN">Central Emergency Response Fund (CERF) secretariat</narrative>
+   </department>
+   <email>cerf@un.org</email>
+   <website>http://www.unocha.org/cerf/</website>
+   <mailing-address>
+    <narrative xml:lang="EN">United Nations Office for the Coordination of Humanitarian Affairs (OCHA), Central Emergency Response Fund (CERF), 2 United Nations Plaza (DC2), East 44th street (13th floor), United Nations, New York, USA</narrative>
+   </mailing-address>
+  </contact-info>
+  <activity-scope code="4"></activity-scope>
+  <recipient-country code="GQ" percentage="100"></recipient-country>
+  <humanitarian-scope code="34" type="1" vocabulary="99" vocabulary-uri="https://cerf.un.org">
+   <narrative xml:lang="EN">EQUATORIAL GUINEA        UNSPECIFIED EMERGENCY        2021</narrative>
+  </humanitarian-scope>
+  <collaboration-type code="4"></collaboration-type>
+  <default-flow-type code="10"></default-flow-type>
+  <default-finance-type code="110"></default-finance-type>
+  <default-aid-type code="C01" vocabulary="1"></default-aid-type>
+  <default-tied-status code="5"></default-tied-status>
+  <capital-spend percentage="0"></capital-spend>
+  <transaction humanitarian="1" ref="XM-OCHA-CERF-21-RR-WFP-004">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-04-14"></transaction-date>
+   <value currency="USD" value-date="2021-04-14">0</value>
+   <description>
+    <narrative xml:lang="EN">Disbursement to CERF Project Logistics response - Equatorial Guinea Bata explosions</narrative>
+   </description>
+   <provider-org ref="XM-OCHA-CERF" type="40">
+    <narrative xml:lang="EN">OCHA Central Emergency Response Fund (CERF)</narrative>
+   </provider-org>
+   <receiver-org ref="XM-DAC-41140">
+    <narrative xml:lang="EN">United Nations World Food Programme (WFP)</narrative>
+   </receiver-org>
+   <disbursement-channel code="2"></disbursement-channel>
+   <sector code="72050" vocabulary="1"></sector>
+  </transaction>
+  <document-link format="APPLICATION/PDF" url="https://www.unocha.org/cerf/sites/default/files/CERF/HCRCReports/21-RR-GNQ-47143-NR01_Equatorial Guinea_RCHC.Report.pdf">
+   <title>
+    <narrative xml:lang="EN">RESIDENT / HUMANITARIAN COORDINATOR REPORT ON THE USE OF CERF FUNDS EQUATORIAL GUINEA        RAPID RESPONSE        UNSPECIFIED EMERGENCY        2021</narrative>
+   </title>
+   <category code="A07"></category>
+  </document-link>
+  <conditions attached="1">
+   <condition type="2">
+    <narrative xml:lang="EN">CERF funding is based on an agreed proposal, including specific planned outcomes and outputs.</narrative>
+   </condition>
+  </conditions>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 1</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Providing air transport services to the humanitarian and development community</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Lead time in recovering cancelled flight (hours)</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-01"></period-start>
+     <period-end iso-date="2021-09-30"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Percentage of passengers served against requested</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-01"></period-start>
+     <period-end iso-date="2021-09-30"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.4</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Percentage of payload delivered against capacity</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-01"></period-start>
+     <period-end iso-date="2021-09-30"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Total number of passengers transported</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-01"></period-start>
+     <period-end iso-date="2021-09-30"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.5</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Total weight/volume of cargo transported</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-01"></period-start>
+     <period-end iso-date="2021-09-30"></period-end>
+    </period>
+   </indicator>
+  </result>
+ </iati-activity>
+ <iati-activity budget-not-provided="3" default-currency="USD" dstore:dataset="cerf-projectsfunded2021" dstore:index="10" hierarchy="1" humanitarian="1" iati-activities:generated-datetime="2021-05-30T03:08:53" iati-activities:version="2.03" last-updated-datetime="2021-02-06T00:00:00" xml:lang="EN" xmlns:cerf="http://cerf-gms.unocha.org/CERF01" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>XM-OCHA-CERF-21-RR-WHO-001</iati-identifier>
+  <reporting-org ref="XM-OCHA-CERF" type="40">
+   <narrative xml:lang="EN">UNOCHA - Central Emergency Response Fund (CERF)</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">Reduce deaths and serious illness in the vulnerable populations in conflict-affected regions</narrative>
+  </title>
+  <description type="1">
+   <narrative xml:lang="EN">The main objective of this project is to reduce deaths and serious illness in the vulnerable populations in conflict-affected regions through enhanced service provision and capacity building.  This WHO project deploys mobile medical teams, deploys psychologists to the health facilities, and donates COVID-19 antigen tests among other activities. The project provides assistance to 47,500 people, including 18,000 women, 17,000 men, 12,000 children, and 2,500 people with disabilities.</narrative>
+  </description>
+  <participating-org activity-id="XM-OCHA-CERF" crs-channel-code="41147" ref="XM-OCHA-CERF" role="1" type="40">
+   <narrative xml:lang="EN">OCHA Central Emergency Response Fund (CERF)</narrative>
+  </participating-org>
+  <participating-org ref="XM-DAC-928" role="2" type="40">
+   <narrative xml:lang="EN">World Health Organization</narrative>
+  </participating-org>
+  <other-identifier ref="21-RR-WHO-001" type="A1">
+   <owner-org ref="XM-OCHA-CERF">
+    <narrative xml:lang="EN">UN OCHA Central Emergency Response Fund (CERF)</narrative>
+   </owner-org>
+  </other-identifier>
+  <activity-status code="2"></activity-status>
+  <activity-date iso-date="2021-01-18" type="2">
+   <narrative xml:lang="EN">2021-01-18</narrative>
+  </activity-date>
+  <activity-date iso-date="2021-07-17" type="3">
+   <narrative xml:lang="EN">2021-07-17</narrative>
+  </activity-date>
+  <contact-info type="1">
+   <organisation>
+    <narrative xml:lang="EN">UN Office for the Coordination of Humanitarian Affairs (OCHA)</narrative>
+   </organisation>
+   <department>
+    <narrative xml:lang="EN">Central Emergency Response Fund (CERF) secretariat</narrative>
+   </department>
+   <email>cerf@un.org</email>
+   <website>http://www.unocha.org/cerf/</website>
+   <mailing-address>
+    <narrative xml:lang="EN">United Nations Office for the Coordination of Humanitarian Affairs (OCHA), Central Emergency Response Fund (CERF), 2 United Nations Plaza (DC2), East 44th street (13th floor), United Nations, New York, USA</narrative>
+   </mailing-address>
+  </contact-info>
+  <activity-scope code="4"></activity-scope>
+  <recipient-country code="AZ" percentage="100"></recipient-country>
+  <humanitarian-scope code="16" type="1" vocabulary="99" vocabulary-uri="https://cerf.un.org">
+   <narrative xml:lang="EN">AZERBAIJAN        DISPLACEMENT        2021</narrative>
+  </humanitarian-scope>
+  <collaboration-type code="4"></collaboration-type>
+  <default-flow-type code="10"></default-flow-type>
+  <default-finance-type code="110"></default-finance-type>
+  <default-aid-type code="C01" vocabulary="1"></default-aid-type>
+  <default-tied-status code="5"></default-tied-status>
+  <capital-spend percentage="0"></capital-spend>
+  <transaction humanitarian="1" ref="XM-OCHA-CERF-21-RR-WHO-001">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-02-02"></transaction-date>
+   <value currency="USD" value-date="2021-02-02">599227</value>
+   <description>
+    <narrative xml:lang="EN">Disbursement to CERF Project Reduce deaths and serious illness in the vulnerable populations in conflict-affected regions</narrative>
+   </description>
+   <provider-org ref="XM-OCHA-CERF" type="40">
+    <narrative xml:lang="EN">OCHA Central Emergency Response Fund (CERF)</narrative>
+   </provider-org>
+   <receiver-org ref="XM-DAC-928">
+    <narrative xml:lang="EN">World Health Organization</narrative>
+   </receiver-org>
+   <disbursement-channel code="2"></disbursement-channel>
+  </transaction>
+  <document-link format="APPLICATION/PDF" url="https://www.unocha.org/cerf/sites/default/files/CERF/HCRCReports/21-RR-AZE-46781-NR01_Azerbaijan_RCHC.Report.pdf">
+   <title>
+    <narrative xml:lang="EN">RESIDENT / HUMANITARIAN COORDINATOR REPORT ON THE USE OF CERF FUNDS AZERBAIJAN        RAPID RESPONSE        DISPLACEMENT        2021</narrative>
+   </title>
+   <category code="A07"></category>
+  </document-link>
+  <conditions attached="1">
+   <condition type="2">
+    <narrative xml:lang="EN">CERF funding is based on an agreed proposal, including specific planned outcomes and outputs.</narrative>
+   </condition>
+  </conditions>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 4</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Health workforce trained to better respond to the increased need.</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 4.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of staff trained on each of the 3 different subjects</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-01-18"></period-start>
+     <period-end iso-date="2021-07-17"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 4.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Observed increase in selected skills of health care workers</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-01-18"></period-start>
+     <period-end iso-date="2021-07-17"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 4.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Passing scores in post-tests</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-01-18"></period-start>
+     <period-end iso-date="2021-07-17"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 5</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Laboratories are supported to provide timely COVID-19 diagnostics.</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 5.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of COVID diagnostic tests performed.</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-01-18"></period-start>
+     <period-end iso-date="2021-07-17"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 5.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of COVID-19 antigen tests procured and donated</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-01-18"></period-start>
+     <period-end iso-date="2021-07-17"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 5.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of laboratories provided with technical support</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-01-18"></period-start>
+     <period-end iso-date="2021-07-17"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 1</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Life-saving health care services delivered through mobile clinics in selected locations.</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of &gt;5 years consultations</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-01-18"></period-start>
+     <period-end iso-date="2021-07-17"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of consultations provided by age and service groups (e.g. antenatal care, family planning)</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-01-18"></period-start>
+     <period-end iso-date="2021-07-17"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of visits to each of the 25 service points</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-01-18"></period-start>
+     <period-end iso-date="2021-07-17"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 2</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Psychological support provided for people in distress.</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of people who received direct psychological support from a psychologist</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-01-18"></period-start>
+     <period-end iso-date="2021-07-17"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of trainers trained (TOT) on psychological first aid training.</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-01-18"></period-start>
+     <period-end iso-date="2021-07-17"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 3</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Strengthened health-care facilities with essential equipment</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 3.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of autoclaves procured and donated</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-01-18"></period-start>
+     <period-end iso-date="2021-07-17"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 3.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of oxygen concentrators procured and donated</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-01-18"></period-start>
+     <period-end iso-date="2021-07-17"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 3.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of primary health care equipment kits procured and donated</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-01-18"></period-start>
+     <period-end iso-date="2021-07-17"></period-end>
+    </period>
+   </indicator>
+  </result>
+ </iati-activity>
+ <iati-activity budget-not-provided="3" default-currency="USD" dstore:dataset="cerf-projectsfunded2021" dstore:index="20" hierarchy="1" humanitarian="1" iati-activities:generated-datetime="2021-05-30T03:08:53" iati-activities:version="2.03" last-updated-datetime="2021-04-12T00:00:00" xml:lang="EN" xmlns:cerf="http://cerf-gms.unocha.org/CERF01" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>XM-OCHA-CERF-21-RR-WHO-003</iati-identifier>
+  <reporting-org ref="XM-OCHA-CERF" type="40">
+   <narrative xml:lang="EN">UNOCHA - Central Emergency Response Fund (CERF)</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">West Africa Ebola Virus Disease Readiness project</narrative>
+  </title>
+  <description type="1">
+   <narrative xml:lang="EN">The main objective of this project is to provide life-saving health assistance to vulnerable communities at risk of spread of Ebola virus disease in Sierra Leone, Liberia, Cote D&apos;Ivoire, Mali, Senegal and Guinea-Bissau. This WHO project will support operations of the Public Health Emergency Operation Centre&#x2019;s to curtail the EVD outbreak at national and subnational level, conduct Ebola virus disease surveillance, scale-up EVD prevention efforts at Points of Entry and provide technical support for Ebola virus disease laboratory diagnosis and case management. The project provides life-saving assistance to 33,139,174 people, including 8,410,699 women, men and 16,839,083 children and 2,752 people with disabilities in health sector.</narrative>
+  </description>
+  <participating-org activity-id="XM-OCHA-CERF" crs-channel-code="41147" ref="XM-OCHA-CERF" role="1" type="40">
+   <narrative xml:lang="EN">OCHA Central Emergency Response Fund (CERF)</narrative>
+  </participating-org>
+  <participating-org ref="XM-DAC-928" role="2" type="40">
+   <narrative xml:lang="EN">World Health Organization</narrative>
+  </participating-org>
+  <other-identifier ref="21-RR-WHO-003" type="A1">
+   <owner-org ref="XM-OCHA-CERF">
+    <narrative xml:lang="EN">UN OCHA Central Emergency Response Fund (CERF)</narrative>
+   </owner-org>
+  </other-identifier>
+  <activity-status code="2"></activity-status>
+  <activity-date iso-date="2021-03-01" type="2">
+   <narrative xml:lang="EN">2021-03-01</narrative>
+  </activity-date>
+  <activity-date iso-date="2021-08-31" type="3">
+   <narrative xml:lang="EN">2021-08-31</narrative>
+  </activity-date>
+  <contact-info type="1">
+   <organisation>
+    <narrative xml:lang="EN">UN Office for the Coordination of Humanitarian Affairs (OCHA)</narrative>
+   </organisation>
+   <department>
+    <narrative xml:lang="EN">Central Emergency Response Fund (CERF) secretariat</narrative>
+   </department>
+   <email>cerf@un.org</email>
+   <website>http://www.unocha.org/cerf/</website>
+   <mailing-address>
+    <narrative xml:lang="EN">United Nations Office for the Coordination of Humanitarian Affairs (OCHA), Central Emergency Response Fund (CERF), 2 United Nations Plaza (DC2), East 44th street (13th floor), United Nations, New York, USA</narrative>
+   </mailing-address>
+  </contact-info>
+  <activity-scope code="4"></activity-scope>
+  <humanitarian-scope code="EP-2020-000012-001" type="1" vocabulary="1-2">
+   <narrative xml:lang="EN">Global        EBOLA        2021</narrative>
+  </humanitarian-scope>
+  <humanitarian-scope code="HCOVD20" type="2" vocabulary="2-1">
+   <narrative xml:lang="EN">Global        EBOLA        2021</narrative>
+  </humanitarian-scope>
+  <collaboration-type code="4"></collaboration-type>
+  <default-flow-type code="10"></default-flow-type>
+  <default-finance-type code="110"></default-finance-type>
+  <default-aid-type code="C01" vocabulary="1"></default-aid-type>
+  <default-tied-status code="5"></default-tied-status>
+  <capital-spend percentage="0"></capital-spend>
+  <transaction humanitarian="1" ref="XM-OCHA-CERF-21-RR-WHO-003">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-04-09"></transaction-date>
+   <value currency="USD" value-date="2021-04-09">2499224</value>
+   <description>
+    <narrative xml:lang="EN">Disbursement to CERF Project West Africa Ebola Virus Disease Readiness project</narrative>
+   </description>
+   <provider-org ref="XM-OCHA-CERF" type="40">
+    <narrative xml:lang="EN">OCHA Central Emergency Response Fund (CERF)</narrative>
+   </provider-org>
+   <receiver-org ref="XM-DAC-928">
+    <narrative xml:lang="EN">World Health Organization</narrative>
+   </receiver-org>
+   <disbursement-channel code="2"></disbursement-channel>
+   <sector code="72010" vocabulary="1"></sector>
+  </transaction>
+  <document-link format="APPLICATION/PDF" url="https://www.unocha.org/cerf/sites/default/files/CERF/HCRCReports/21-RR-GLB-47074-NR01_Global_RCHC.Report.pdf">
+   <title>
+    <narrative xml:lang="EN">RESIDENT / HUMANITARIAN COORDINATOR REPORT ON THE USE OF CERF FUNDS Global        RAPID RESPONSE        EBOLA        2021</narrative>
+   </title>
+   <category code="A07"></category>
+  </document-link>
+  <conditions attached="1">
+   <condition type="2">
+    <narrative xml:lang="EN">CERF funding is based on an agreed proposal, including specific planned outcomes and outputs.</narrative>
+   </condition>
+  </conditions>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 13</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Adequate human, material and financial resources are provided timely to support effective EVD response</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 13.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">;Number of response teams supported with vehicles to support field readiness activities</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 13.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of emergency response workforce with the required capacity needed and deployed as necessary at WCO and field locations</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 13.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of response teams supported with fuel, and communication cards;</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 16</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">EVD materials, equipment&#x2019;s and consumables are available in Bamako and the 3 high-risk regions.</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 16.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of Health facilities with minimal IPC material</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 16.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of health facilities with isolation arrangement</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 16.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of labs supplied with cartridges</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 11</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Ensure all specimens are collected and tested in line with referral procedures and standard laboratory protocols, SOPs and guidelines</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 11.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of health facilities supplied with test kits/reagents and consumables</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 11.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Percentage of health facilities with capacity to collect, package and transport EVD samples in 3 high- risk counties</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 23</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Existing infrastructure and work force for isolation and treatment of suspected and confirmed EVD cases strengthened</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 23.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of case management guidelines printed</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 23.5</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of districts supported to maintain maternal and SRH services</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 23.4</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of health workers trained and supported on safe and dignified  burial</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 23.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of healthcare workers trained</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 23.6</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of printed SOPs for nutritional interventions in EVD case management</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 23.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of simulation exercises conducted</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 25</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Heightened risk communication and engagement of communities, the media and the public to manage misinformation and roumors, and provide appropriate information for readiness to an EVD outbreak</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 25.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of districts supported on community empowerment</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 25.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of materials produced/printed/ and distributed</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 25.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of media personnel trained</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 25.4</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of sessions aired in various media</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 5</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Human Resource at all level (regional to local) and on the PoE are well prepared and equipped</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 5.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of people trained disaggregated by category, gender and region.</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 5.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of training at the PoE</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 24</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Improved infection prevention and control practices in health facilities to protect Health Care Workers and patients from nosocomial transmission of EVD and other diseases.</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 24.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of IPC SOPS printed and disseminated</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 24.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of districts assessed for EVD preparedness</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 24.4</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of districts with prepositioned IPC supplies</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 24.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of health workers trained on IPC</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 14</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Improved knowledge of, and responsiveness of target communities to the EVD vaccination program</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 14.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Microplanning for EVD vaccination is supported. 3 counties (Lofa Nimba and Bong) and National level</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 14.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of high-risk districts sensitized on EVD vaccines safety</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 14.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Sensitization of high- risk groups on EVD vaccination done. 3 counties (Lofa Bong and Nimba)</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 6</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Laboratories consumables and IPC related materials provided.</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 6.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of PoE with IPC material provided</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 6.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of laboratories which can perform EVD diagnostic test</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 26</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">National capacity for deployment of EVD vaccines initiated and expedited</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 26.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of SOPs/tools printed and disseminated</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 26.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of vaccinators/mobilizers supported during vaccination exercises(allowances)</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 26.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of vaccinators/mobilizers trained</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 22</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">National public health laboratory capacity to confirm EVD and other Viral Hemorrhagic Fever causes enhanced</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 22.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of laboratories supported with reagents and supplies for testing EVD including Gene Xpert</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 22.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of molecular scientists facilitated with a monthly allowance for 3 months</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 9</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Points of Entry have adequate capacity to prevent and manage the high risk of importation of EVD including other emerging and reemerging infectious diseases from the neighboring countries (Guinea, Sierra Leone and Cote D&#x2019;Ivoire).</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 9.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of high-risk PoEs in the 3 target counties having screening and referral capacity</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 9.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of high-risk PoEs in the 3 target counties with functional triage/ holding facilities</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 4</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Preparedness and respond are well implemented in each of the 7 high risk regions</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 4.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of actives RRT at regional level. 7 actives RRT</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 4.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of functional Public Health Emergency Operation Center (PHEOC) at regional level. 7 functional PHEOC</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 4.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of regions experimented SIMEX</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 17</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Risk communication, social mobilization and community engagement interventions in the 3 high-risk regions and Bamako are in place</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 17.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Establish a 24/7 hotline or ensure existing emergency numbers can manage alert</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 17.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of regions  with the risk communication plan</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 17.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Percentage of high-risk communities at the border with Guinea   targeted for communication and community engagement activities</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 18</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Strengthen surveillance for early detection of EVD cases</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 18.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of community health workers (CHW) trained on detection of EVD cases at community level</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 18.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of health workers trained on early detection of EVD cases in health facilities</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 18.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Proportion of suspected EVD alert investigated</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 7</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Strengthened EOC capacity to coordinate responders and stakeholders to curtail the EVD outbreak at national and sub-national levels</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 7.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of Emergency Operation Centers (EOCs) supported to function</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 7.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of counties IMS functions supported with logistics</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 8</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Strengthened EVD surveillance, including strengthening and ensuring a robust surveillance system using the IDSR strategy for early detection, rapid confirmation and response to public health threats.</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 8.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">County RRTs established and trained with clear lines of responsibilities for activation and coordination. 3 RRTs at county level trained and revitalized</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 8.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Orient frontline health workers, clinicians on EVD case definitions. 600 frontline clinicians from 196 health facilities (3 counties)</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 8.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Proportion of suspected EVD alerts investigated</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 12</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Strengthened capacity in IPC for EVD prevention and control in Liberia</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 12.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of Health Facility IPC focal persons refresher-trained in IPC standard precautions for EVD in 4 high-risk counties. 200 frontline health workers trained</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 12.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Percentage of healthcare facilities in EVD high-risk counties with adequate essential IPC supplies</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 10</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Strengthened county and national capacity for EVD isolation and treatment in Liberia, including the use of experimental therapies</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 10.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of frontline healthcare workers trained in triage, isolation and treatment of EVD cases, including new therapeutics. 200 clinicians from county and referral hospitals in high-risk counties trained</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 10.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of printed and disseminated. Clinical Guideline for EVD management reviewed, updated,</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 21</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Strengthened surveillance for EVD at all levels to facilitate case detection, notification, reporting and data collection and analysis</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 21.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of border districts assessed on EVD preparedness</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 21.5</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of district support supervision visits to POEs (10 visits for each of the 8 districts)</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 21.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of districts conducting active case search</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 21.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of districts with surveillance resource documents for EVD</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 21.4</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of health workers orientated on EVD case definition and SOPs for detection</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 21.6</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of staff supported to attend cross border meetings</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 20</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Support the existing network of Emergency Operations Centres</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 20.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of EVD alerts investigated by the district teams</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 20.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of missions by national teams to districts to support with field investigation and simulation exercises</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 1</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Surveillance capacity in 17 high-risk districts is strengthened for early case detection and follow-up</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of RRTs trained and revitalized</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Proportion of suspected EVD alerts investigated</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Proportion of villages watch committees activated</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 2</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Technical support and equipment, including communication materials, are provided to the 17 high-risk districts</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Proportion of districts supplied with case management kits</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Proportion of districts supplied with communication materials</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 3</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Technical support to community health workers in management of EVD</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 3.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of CHWs trained</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 3.7</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of actors trained in vaccination</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 3.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of community leaders sensitized</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 3.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of health workers trained in surveillance</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 3.5</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of health workers with enhanced capacity in PCI / decontamination</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 3.4</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of local radios involved in mass awareness</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 3.6</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of socio-community groups trained</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 19</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">The MoH has the ability to acquire and deploy the Ebola vaccine to affected areas</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 19.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of health workers vaccinated in high risk District</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 19.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of vaccination kits for 500 persons</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 19.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of vaccination teams trained on  EVD vaccination (Team of 10 members/ one team/district of High risk)</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 15</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">capacities  to respond to a first EVD case is in place in Bamako, Sikasso, Kayes and Koulikoro</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 15.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">EVD preparedness   improvement plan</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 15.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of staff trained in EVD</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 15.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of supervisors</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-03-01"></period-start>
+     <period-end iso-date="2021-08-31"></period-end>
+    </period>
+   </indicator>
+  </result>
+ </iati-activity>
+ <iati-activity budget-not-provided="3" default-currency="USD" dstore:dataset="cerf-projectsfunded2021" dstore:index="46" hierarchy="1" humanitarian="1" iati-activities:generated-datetime="2021-05-30T03:08:53" iati-activities:version="2.03" last-updated-datetime="2021-04-26T00:00:00" xml:lang="EN" xmlns:cerf="http://cerf-gms.unocha.org/CERF01" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>XM-OCHA-CERF-21-RR-WHO-007</iati-identifier>
+  <reporting-org ref="XM-OCHA-CERF" type="40">
+   <narrative xml:lang="EN">UNOCHA - Central Emergency Response Fund (CERF)</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">Supporting the emergency health response to population displacements due to inter-communal conflict in  El Geneina, West Darfur</narrative>
+  </title>
+  <description type="1">
+   <narrative xml:lang="EN">The project supports the emergency health response after internal displacement due to inter-communal violence in the area of El Geneina in West Darfur. The objective of the project is to improve access to and quality of health care for the IDP population and thus, to contribute to a reduction of morbidity and mortality in the target population.
+The project comprises the following activities:
+-	Procurement and supplies of essential medicines, diagnostics and basic equipment for primary health care and referral health facilities including Covid-19 related IPC supplies and diagnostics tests
+-	Operational support to 7 mobile and/or fixed primary health care facilities implemented through NGO partners or the SMOH including isolation centres in case of a Covid-19 outbreak in El Geneina during the implementation period
+-	Strengthening medical waste management in primary and secondary health care facilities receiving IDPs in El Geneina and its surroundings through medical waste management campaigns
+-	Strengthen disease surveillance and rapid response teams interventions in order to improve early detection, tracing and containment of diseases with epidemic potential among the vulnerable population
+-	Strengthen vector surveillance in order to orient vector control interventions of health partners and WHO with the aim to reduce the transmission  in the IDP and host community 
+
+The project targets 135,000 affected people.</narrative>
+  </description>
+  <participating-org activity-id="XM-OCHA-CERF" crs-channel-code="41147" ref="XM-OCHA-CERF" role="1" type="40">
+   <narrative xml:lang="EN">OCHA Central Emergency Response Fund (CERF)</narrative>
+  </participating-org>
+  <participating-org ref="XM-DAC-928" role="2" type="40">
+   <narrative xml:lang="EN">World Health Organization</narrative>
+  </participating-org>
+  <other-identifier ref="21-RR-WHO-007" type="A1">
+   <owner-org ref="XM-OCHA-CERF">
+    <narrative xml:lang="EN">UN OCHA Central Emergency Response Fund (CERF)</narrative>
+   </owner-org>
+  </other-identifier>
+  <activity-status code="2"></activity-status>
+  <activity-date iso-date="2021-04-26" type="2">
+   <narrative xml:lang="EN">2021-04-26</narrative>
+  </activity-date>
+  <activity-date iso-date="2021-10-25" type="3">
+   <narrative xml:lang="EN">2021-10-25</narrative>
+  </activity-date>
+  <contact-info type="1">
+   <organisation>
+    <narrative xml:lang="EN">UN Office for the Coordination of Humanitarian Affairs (OCHA)</narrative>
+   </organisation>
+   <department>
+    <narrative xml:lang="EN">Central Emergency Response Fund (CERF) secretariat</narrative>
+   </department>
+   <email>cerf@un.org</email>
+   <website>http://www.unocha.org/cerf/</website>
+   <mailing-address>
+    <narrative xml:lang="EN">United Nations Office for the Coordination of Humanitarian Affairs (OCHA), Central Emergency Response Fund (CERF), 2 United Nations Plaza (DC2), East 44th street (13th floor), United Nations, New York, USA</narrative>
+   </mailing-address>
+  </contact-info>
+  <activity-scope code="4"></activity-scope>
+  <recipient-country code="SD" percentage="100"></recipient-country>
+  <humanitarian-scope code="16" type="1" vocabulary="99" vocabulary-uri="https://cerf.un.org">
+   <narrative xml:lang="EN">SUDAN        DISPLACEMENT        2021</narrative>
+  </humanitarian-scope>
+  <collaboration-type code="4"></collaboration-type>
+  <default-flow-type code="10"></default-flow-type>
+  <default-finance-type code="110"></default-finance-type>
+  <default-aid-type code="C01" vocabulary="1"></default-aid-type>
+  <default-tied-status code="5"></default-tied-status>
+  <capital-spend percentage="0"></capital-spend>
+  <transaction humanitarian="1" ref="XM-OCHA-CERF-21-RR-WHO-007">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-04-26"></transaction-date>
+   <value currency="USD" value-date="2021-04-26">599139</value>
+   <description>
+    <narrative xml:lang="EN">Disbursement to CERF Project Supporting the emergency health response to population displacements due to inter-communal conflict in  El Geneina, West Darfur</narrative>
+   </description>
+   <provider-org ref="XM-OCHA-CERF" type="40">
+    <narrative xml:lang="EN">OCHA Central Emergency Response Fund (CERF)</narrative>
+   </provider-org>
+   <receiver-org ref="XM-DAC-928">
+    <narrative xml:lang="EN">World Health Organization</narrative>
+   </receiver-org>
+   <disbursement-channel code="2"></disbursement-channel>
+   <sector code="72010" vocabulary="1"></sector>
+  </transaction>
+  <document-link format="APPLICATION/PDF" url="https://www.unocha.org/cerf/sites/default/files/CERF/HCRCReports/21-RR-SDN-47060-NR02_Republic of the Sudan_RCHC.Report.pdf">
+   <title>
+    <narrative xml:lang="EN">RESIDENT / HUMANITARIAN COORDINATOR REPORT ON THE USE OF CERF FUNDS SUDAN        RAPID RESPONSE        DISPLACEMENT        2021</narrative>
+   </title>
+   <category code="A07"></category>
+  </document-link>
+  <conditions attached="1">
+   <condition type="2">
+    <narrative xml:lang="EN">CERF funding is based on an agreed proposal, including specific planned outcomes and outputs.</narrative>
+   </condition>
+  </conditions>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 1</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Access to and quality of health care are improved for the IDP population in Elgeneina and its surroundings</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of IEHK kits procured and distributed to partners</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-26"></period-start>
+     <period-end iso-date="2021-10-25"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.4</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of TESK kits (surgical supply for 50 interventions) distributed to referral hospitals</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-26"></period-start>
+     <period-end iso-date="2021-10-25"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.5</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of joint supervision visits</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-26"></period-start>
+     <period-end iso-date="2021-10-25"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of outpatient consultation supported</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-26"></period-start>
+     <period-end iso-date="2021-10-25"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 1.3</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of waste management campaigns</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-26"></period-start>
+     <period-end iso-date="2021-10-25"></period-end>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="0" type="1">
+   <title>
+    <narrative xml:lang="EN">Output 2</narrative>
+   </title>
+   <description>
+    <narrative xml:lang="EN">Disease surveillance and outbreak control is strengthened in the reception sites and surrounding host communities communities</narrative>
+   </description>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.1</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of alert investigations by RRT supported by WHO</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-26"></period-start>
+     <period-end iso-date="2021-10-25"></period-end>
+    </period>
+   </indicator>
+   <indicator aggregation-status="0" ascending="1" measure="5">
+    <title>
+     <narrative xml:lang="EN">Indicator 2.2</narrative>
+    </title>
+    <description>
+     <narrative xml:lang="EN">Number of vector surveillance missions to 8 sentinel sites supported by WHO</narrative>
+    </description>
+    <period>
+     <period-start iso-date="2021-04-26"></period-start>
+     <period-end iso-date="2021-10-25"></period-end>
+    </period>
+   </indicator>
+  </result>
+ </iati-activity>
+ <iati-activity default-currency="USD" dstore:dataset="ksrelief291-ye" dstore:index="258" hierarchy="1" humanitarian="1" iati-activities:generated-datetime="2021-03-15T14:00:30+00:00" iati-activities:version="2.03" last-updated-datetime="2020-09-10T08:35:08+00:00" xml:lang="EN" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>XM-OCHAS-HPC6770-5219</iati-identifier>
+  <reporting-org ref="XM-OCHAS-HPC6770" secondary-reporter="0" type="10">
+   <narrative xml:lang="AR">King Salman Humanitarian Aid and Relief Centre</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">Securing medical equipment and supplies for preventive isolation centers and border ports to cope with the COVID -19 emerging in Yemen (Phase I)</narrative>
+  </title>
+  <description type="2">
+   <narrative xml:lang="EN">Helping Yemen to face the Corona virus epidemic through support with medical supplies and preventive supplies, and limiting its spread throughout Yemen.</narrative>
+  </description>
+  <description type="1">
+   <narrative xml:lang="EN">Providing support to the Yemeni Ministry of Health and Population to confront the emerging of corona virus in Yemen.</narrative>
+  </description>
+  <participating-org activity-id="5219" crs-channel-code="11000" ref="XM-OCHA-HPC6770" role="1" type="10">
+   <narrative xml:lang="EN">King Salman Humanitarian Aid and Relief Centre</narrative>
+  </participating-org>
+  <participating-org crs-channel-code="12000" role="4" type="10">
+   <narrative xml:lang="EN">Ministry of Public Health &amp; Population</narrative>
+  </participating-org>
+  <activity-status code="2"></activity-status>
+  <activity-date iso-date="2020-04-05" type="2"></activity-date>
+  <activity-date iso-date="2021-04-04" type="3"></activity-date>
+  <recipient-country code="YE" percentage="100"></recipient-country>
+  <sector code="12250" percentage="100" vocabulary="1"></sector>
+  <budget status="2" type="1">
+   <period-start iso-date="2020-04-05"></period-start>
+   <period-end iso-date="2021-04-04"></period-end>
+   <value currency="USD" value-date="2020-04-05">1200000</value>
+  </budget>
+  <transaction>
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2020-04-05"></transaction-date>
+   <value currency="USD" value-date="2020-04-05">1200000</value>
+   <flow-type code="10"></flow-type>
+   <finance-type code="110"></finance-type>
+   <aid-type code="C01" vocabulary="1"></aid-type>
+   <tied-status code="5"></tied-status>
+  </transaction>
+ </iati-activity>
+ <iati-activity default-currency="USD" dstore:dataset="ksrelief291-ye" dstore:index="259" hierarchy="1" humanitarian="1" iati-activities:generated-datetime="2021-03-15T14:00:30+00:00" iati-activities:version="2.03" last-updated-datetime="2020-09-13T07:48:04+00:00" xml:lang="EN" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>XM-OCHAS-HPC6770-5221</iati-identifier>
+  <reporting-org ref="XM-OCHAS-HPC6770" secondary-reporter="0" type="10">
+   <narrative xml:lang="AR">King Salman Humanitarian Aid and Relief Centre</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">Securing medical equipment and supplies for preventive isolation centers and border ports to cope with the COVID -19 emerging in Yemen (Phase II)</narrative>
+  </title>
+  <description type="2">
+   <narrative xml:lang="EN">Helping Yemen to face the Corona virus epidemic through support with medical supplies and preventive supplies, and limiting its spread throughout Yemen.</narrative>
+  </description>
+  <description type="1">
+   <narrative xml:lang="EN">Providing support to the Yemeni Ministry of Health and Population to confront the emerging of corona virus in Yemen.</narrative>
+  </description>
+  <participating-org activity-id="5221" crs-channel-code="11000" ref="XM-OCHA-HPC6770" role="1" type="10">
+   <narrative xml:lang="EN">King Salman Humanitarian Aid and Relief Centre</narrative>
+  </participating-org>
+  <participating-org crs-channel-code="12000" role="4" type="10">
+   <narrative xml:lang="EN">Ministry of Public Health &amp; Population</narrative>
+  </participating-org>
+  <activity-status code="2"></activity-status>
+  <activity-date iso-date="2020-05-12" type="2"></activity-date>
+  <activity-date iso-date="2021-05-11" type="3"></activity-date>
+  <recipient-country code="YE" percentage="100"></recipient-country>
+  <sector code="12250" percentage="100" vocabulary="1"></sector>
+  <budget status="2" type="1">
+   <period-start iso-date="2020-05-12"></period-start>
+   <period-end iso-date="2021-05-11"></period-end>
+   <value currency="USD" value-date="2020-05-12">1800000</value>
+  </budget>
+  <transaction>
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2020-05-12"></transaction-date>
+   <value currency="USD" value-date="2020-05-12">1800000</value>
+   <flow-type code="10"></flow-type>
+   <finance-type code="110"></finance-type>
+   <aid-type code="C01" vocabulary="1"></aid-type>
+   <tied-status code="5"></tied-status>
+  </transaction>
+ </iati-activity>
+ <iati-activity default-currency="USD" dstore:dataset="ksrelief291-ye" dstore:index="275" hierarchy="1" humanitarian="1" iati-activities:generated-datetime="2021-03-15T14:00:30+00:00" iati-activities:version="2.03" last-updated-datetime="2020-12-07T07:21:01+00:00" xml:lang="EN" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>XM-OCHAS-HPC6770-5391</iati-identifier>
+  <reporting-org ref="XM-OCHAS-HPC6770" secondary-reporter="0" type="10">
+   <narrative xml:lang="AR">King Salman Humanitarian Aid and Relief Centre</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">The Joint Executive Program to Support the Humanitarian Response Plan in Yemen 2020 Preparedness and Planning for the Response to COVID-19 Phase I.</narrative>
+  </title>
+  <description type="2">
+   <narrative xml:lang="EN">1- Training of medical personnel to deal with the pandemic
+2- Increase the hospital bed capacity to receive infected cases
+3. Increase the clinical capacity in the intensive care departments
+4. Providing ventilators, intensive care devices and emergency departments
+5. Establishing 40 points for visual screening
+6- Providing the laboratory department with the equipment and consumables required to detect the disease
+7. Providing personal protection equipment for medical personnel
+8. Equipping the isolation centers and supplying them with the required equipment, medicines and consumables
+9. Coordination of efforts between partners in the health sector</narrative>
+  </description>
+  <description type="1">
+   <narrative xml:lang="EN">Supporting the health sector in the Republic of Yemen to counter emerging corona virus, COVID- 19</narrative>
+  </description>
+  <description type="4">
+   <narrative xml:lang="EN">Supporting the health sector to help all those affected by the epidemic, providing the required health care for critical cases, in addition to providing isolation centers to prevent the spread of the epidemic</narrative>
+  </description>
+  <participating-org activity-id="5391" crs-channel-code="11000" ref="XM-OCHA-HPC6770" role="1" type="10">
+   <narrative xml:lang="EN">King Salman Humanitarian Aid and Relief Centre</narrative>
+  </participating-org>
+  <participating-org crs-channel-code="40000" ref="XM-DAC-928" role="4" type="40">
+   <narrative xml:lang="EN">World Health Organization</narrative>
+  </participating-org>
+  <activity-status code="2"></activity-status>
+  <activity-date iso-date="2020-09-17" type="2"></activity-date>
+  <activity-date iso-date="2021-04-30" type="3"></activity-date>
+  <recipient-country code="YE" percentage="100"></recipient-country>
+  <sector code="12250" percentage="100" vocabulary="1"></sector>
+  <budget status="2" type="1">
+   <period-start iso-date="2020-09-17"></period-start>
+   <period-end iso-date="2021-04-30"></period-end>
+   <value currency="USD" value-date="2020-09-17">10000000</value>
+  </budget>
+  <transaction humanitarian="1">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2020-09-17"></transaction-date>
+   <value currency="USD" value-date="2020-09-17">10000000</value>
+   <flow-type code="10"></flow-type>
+   <finance-type code="110"></finance-type>
+   <aid-type code="B03" vocabulary="1"></aid-type>
+   <tied-status code="5"></tied-status>
+  </transaction>
+ </iati-activity>
+ <iati-activity default-currency="USD" dstore:dataset="ksrelief291-ye" dstore:index="274" hierarchy="1" humanitarian="1" iati-activities:generated-datetime="2021-03-15T14:00:30+00:00" iati-activities:version="2.03" last-updated-datetime="2020-12-06T08:54:15+00:00" xml:lang="EN" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>XM-OCHAS-HPC6770-5392</iati-identifier>
+  <reporting-org ref="XM-OCHAS-HPC6770" secondary-reporter="0" type="10">
+   <narrative xml:lang="AR">King Salman Humanitarian Aid and Relief Centre</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">The Joint Executive Program to Support the Humanitarian Response Plan in Yemen 2020 Preparedness and Planning for Responding COVID-19 Pandemic Phase II</narrative>
+  </title>
+  <description type="3">
+   <narrative xml:lang="EN">1- Training of medical personnel to deal with the pandemic
+2- Increase the hospital bed capacity to receive infected cases
+3. Increase the clinical capacity in the intensive care departments
+4. Providing ventilators, intensive care devices and emergency departments
+5. Establishing 60 respiratory screening points in hospitals and health centers
+6- Providing the laboratory department with the equipment and consumables required to detect the disease
+7. Providing personal protection equipment for medical personnel
+8. Equipping the isolation centers and supplying them with the required equipment, medicines and consumables
+9. Coordination of efforts between partners in the health sector</narrative>
+  </description>
+  <description type="1">
+   <narrative xml:lang="EN">Supporting the health sector in the Republic of Yemen to counter the emerging of COVID-19</narrative>
+  </description>
+  <description type="4">
+   <narrative xml:lang="EN">Supporting the health sector to help all those affected by the epidemic, providing the required health care for critical cases, in addition to providing isolation centers to prevent the spread of the epidemic</narrative>
+  </description>
+  <participating-org activity-id="5392" crs-channel-code="11000" ref="XM-OCHA-HPC6770" role="1" type="10">
+   <narrative xml:lang="EN">King Salman Humanitarian Aid and Relief Centre</narrative>
+  </participating-org>
+  <participating-org crs-channel-code="40000" ref="XM-DAC-928" role="4" type="40">
+   <narrative xml:lang="EN">World Health Organization</narrative>
+  </participating-org>
+  <activity-status code="2"></activity-status>
+  <activity-date iso-date="2020-09-17" type="2"></activity-date>
+  <activity-date iso-date="2021-04-30" type="3"></activity-date>
+  <recipient-country code="YE" percentage="100"></recipient-country>
+  <sector code="12250" percentage="100" vocabulary="1"></sector>
+  <budget status="2" type="1">
+   <period-start iso-date="2020-09-17"></period-start>
+   <period-end iso-date="2021-04-30"></period-end>
+   <value currency="USD" value-date="2020-09-17">3000000</value>
+  </budget>
+  <transaction humanitarian="1">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2020-09-17"></transaction-date>
+   <value currency="USD" value-date="2020-09-17">3000000</value>
+   <flow-type code="10"></flow-type>
+   <finance-type code="110"></finance-type>
+   <aid-type code="B03" vocabulary="1"></aid-type>
+   <tied-status code="5"></tied-status>
+  </transaction>
+ </iati-activity>
+ <iati-activity default-currency="USD" dstore:dataset="ksrelief291-ye" dstore:index="273" hierarchy="1" humanitarian="1" iati-activities:generated-datetime="2021-03-15T14:00:30+00:00" iati-activities:version="2.03" last-updated-datetime="2020-12-06T08:42:34+00:00" xml:lang="EN" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>XM-OCHAS-HPC6770-5393</iati-identifier>
+  <reporting-org ref="XM-OCHAS-HPC6770" secondary-reporter="0" type="10">
+   <narrative xml:lang="AR">King Salman Humanitarian Aid and Relief Centre</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">The Joint Executive Program to Support the Humanitarian Response Plan in Yemen 2020 for the emergency response COVID-19in the targeted health facilities in the governorates of the Southern Corridor (Aden, Lahj, Abyan, Al-Dhalea, Shabwa, Al-Mahra, Hadramawt Al-Sahel, Hadramout Al-Wadi, Taiz, Socotra)</narrative>
+  </title>
+  <description type="2">
+   <narrative xml:lang="EN">1- Training of medical personnel to deal with the pandemic
+2- Increase the hospital bed capacity to receive infected cases
+3. Increase the clinical capacity in the intensive care departments
+4. Providing ventilators, intensive care devices and emergency departments
+5. Establishing 60 respiratory screening points in hospitals and health centers
+6- Providing the laboratory department with the equipment and consumables required to detect the disease
+7. Providing personal protection equipment for medical personnel
+8. Equipping the isolation centers and supplying them with the required equipment, medicines and consumables
+9. Coordination of efforts between partners in the health sector</narrative>
+  </description>
+  <description type="1">
+   <narrative xml:lang="EN">Supporting the health sector in the Republic of Yemen to counter the emerging corona virus, COVID-19</narrative>
+  </description>
+  <description type="4">
+   <narrative xml:lang="EN">Supporting the health sector to accommodate all those affected by the epidemic and providing the required health care for critical cases, in addition to providing isolation centers to prevent the spread of the epidemic</narrative>
+  </description>
+  <participating-org activity-id="5393" crs-channel-code="11000" ref="XM-OCHA-HPC6770" role="1" type="10">
+   <narrative xml:lang="EN">King Salman Humanitarian Aid and Relief Centre</narrative>
+  </participating-org>
+  <participating-org crs-channel-code="40000" ref="XM-DAC-928" role="4" type="40">
+   <narrative xml:lang="EN">World Health Organization</narrative>
+  </participating-org>
+  <activity-status code="2"></activity-status>
+  <activity-date iso-date="2020-09-17" type="2"></activity-date>
+  <activity-date iso-date="2021-04-30" type="3"></activity-date>
+  <recipient-country code="YE" percentage="100"></recipient-country>
+  <sector code="12250" percentage="100" vocabulary="1"></sector>
+  <budget status="2" type="1">
+   <period-start iso-date="2020-12-17"></period-start>
+   <period-end iso-date="2021-04-30"></period-end>
+   <value currency="USD" value-date="2020-09-17">4000000</value>
+  </budget>
+  <transaction humanitarian="1">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2020-09-17"></transaction-date>
+   <value currency="USD" value-date="2020-09-17">4000000</value>
+   <flow-type code="10"></flow-type>
+   <finance-type code="110"></finance-type>
+   <aid-type code="B03" vocabulary="1"></aid-type>
+   <tied-status code="5"></tied-status>
+  </transaction>
+ </iati-activity>
+ <iati-activity default-currency="USD" dstore:dataset="ksrelief291-ye" dstore:index="272" hierarchy="1" humanitarian="1" iati-activities:generated-datetime="2021-03-15T14:00:30+00:00" iati-activities:version="2.03" last-updated-datetime="2020-12-06T07:41:23+00:00" xml:lang="EN" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>XM-OCHAS-HPC6770-5394</iati-identifier>
+  <reporting-org ref="XM-OCHAS-HPC6770" secondary-reporter="0" type="10">
+   <narrative xml:lang="AR">King Salman Humanitarian Aid and Relief Centre</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">The Joint Executive Program to Support the Humanitarian Response Plan in Yemen 2020 Mal Emergency Response to the Novel Coronavirus (COVID-19) pandemic in the targeted health facilities in the southern governorates (Aden, Lahj, Abyan, Al Dhale&apos;e, Shabwah, Mahra, Hadramawt Al Sahel, Hadramout Al Wadi, Taiz, Socotra).</narrative>
+  </title>
+  <description type="2">
+   <narrative xml:lang="EN">1- Training of medical personnel to deal with the pandemic
+2- Increase the hospital bed capacity to receive infected cases
+3. Increase the clinical capacity in the intensive care departments
+4. Providing ventilators, intensive care devices and emergency departments
+5. Establishing 60 respiratory screening points in hospitals and health centers
+6- Providing the laboratory department with the equipment and consumables required to detect the disease
+7. Providing personal protection equipment for medical personnel
+8. Equipping the isolation centers and supplying them with the required equipment, medicines and consumables
+9. Coordination of efforts between partners in the health sector</narrative>
+  </description>
+  <description type="1">
+   <narrative xml:lang="EN">Supporting the health sector in the Republic of Yemen to deal with the emerging corona virus, Covid-19.</narrative>
+  </description>
+  <participating-org activity-id="5394" crs-channel-code="11000" ref="XM-OCHA-HPC6770" role="1" type="10">
+   <narrative xml:lang="EN">King Salman Humanitarian Aid and Relief Centre</narrative>
+  </participating-org>
+  <participating-org crs-channel-code="40000" ref="XM-DAC-41122" role="4" type="40">
+   <narrative xml:lang="EN">United Nations Children&apos;s Fund (UNICEF)</narrative>
+  </participating-org>
+  <activity-status code="2"></activity-status>
+  <activity-date iso-date="2020-09-17" type="2"></activity-date>
+  <activity-date iso-date="2021-04-30" type="3"></activity-date>
+  <recipient-country code="YE" percentage="100"></recipient-country>
+  <sector code="12250" percentage="100" vocabulary="1"></sector>
+  <budget status="2" type="1">
+   <period-start iso-date="2020-09-17"></period-start>
+   <period-end iso-date="2021-04-30"></period-end>
+   <value currency="USD" value-date="2020-09-17">4000000</value>
+  </budget>
+  <transaction humanitarian="1">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2020-09-17"></transaction-date>
+   <value currency="USD" value-date="2020-09-17">4000000</value>
+   <flow-type code="10"></flow-type>
+   <finance-type code="110"></finance-type>
+   <aid-type code="B03" vocabulary="1"></aid-type>
+   <tied-status code="5"></tied-status>
+  </transaction>
+ </iati-activity>
+ <iati-activity default-currency="USD" dstore:dataset="ksrelief291-ye" dstore:index="271" hierarchy="1" humanitarian="1" iati-activities:generated-datetime="2021-03-15T14:00:30+00:00" iati-activities:version="2.03" last-updated-datetime="2020-11-23T10:34:07+00:00" xml:lang="EN" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>XM-OCHAS-HPC6770-5395</iati-identifier>
+  <reporting-org ref="XM-OCHAS-HPC6770" secondary-reporter="0" type="10">
+   <narrative xml:lang="AR">King Salman Humanitarian Aid and Relief Centre</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">Integrated Emergency Health Response Program to ensure continuity and expansion of services through integrated prevention of COVID-19.</narrative>
+  </title>
+  <description type="2">
+   <narrative xml:lang="EN">1- Training of medical personnel to deal with the pandemic
+2- Increase the hospital bed capacity to receive infected cases
+3. Increase the clinical capacity in the intensive care departments
+4. Providing ventilators, intensive care devices and emergency departments
+5. Establishing 60 respiratory screening points in hospitals and health centers
+6- Providing the laboratory department with the equipment and consumables required to detect the disease
+7. Providing personal protection equipment for medical personnel
+8. Equipping the isolation centers and supplying them with the required equipment, medicines and consumables
+9. Coordination of efforts between partners in the health sector</narrative>
+  </description>
+  <description type="1">
+   <narrative xml:lang="EN">Supporting the health sector in the Republic of Yemen to deal with the emerging corona virus, Covid -19</narrative>
+  </description>
+  <participating-org activity-id="5395" crs-channel-code="11000" ref="XM-OCHA-HPC6770" role="1" type="10">
+   <narrative xml:lang="EN">King Salman Humanitarian Aid and Relief Centre</narrative>
+  </participating-org>
+  <participating-org crs-channel-code="40000" ref="XM-DAC-41122" role="4" type="40">
+   <narrative xml:lang="EN">United Nations Children&apos;s Fund (UNICEF)</narrative>
+  </participating-org>
+  <activity-status code="2"></activity-status>
+  <activity-date iso-date="2020-09-17" type="2"></activity-date>
+  <activity-date iso-date="2021-04-30" type="3"></activity-date>
+  <recipient-country code="YE" percentage="100"></recipient-country>
+  <sector code="12250" percentage="100" vocabulary="1"></sector>
+  <budget status="2" type="1">
+   <period-start iso-date="2020-09-17"></period-start>
+   <period-end iso-date="2021-04-30"></period-end>
+   <value currency="USD" value-date="2020-09-17">11200000</value>
+  </budget>
+  <transaction humanitarian="1">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2020-09-17"></transaction-date>
+   <value currency="USD" value-date="2020-09-17">11200000</value>
+   <flow-type code="10"></flow-type>
+   <finance-type code="110"></finance-type>
+   <aid-type code="B03" vocabulary="1"></aid-type>
+   <tied-status code="5"></tied-status>
+  </transaction>
+ </iati-activity>
+ <iati-activity default-currency="USD" dstore:dataset="ksrelief291-ye" dstore:index="279" hierarchy="1" humanitarian="1" iati-activities:generated-datetime="2021-03-15T14:00:30+00:00" iati-activities:version="2.03" last-updated-datetime="2021-01-04T07:35:59+00:00" xml:lang="EN" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>XM-OCHAS-HPC6770-5398</iati-identifier>
+  <reporting-org ref="XM-OCHAS-HPC6770" secondary-reporter="0" type="10">
+   <narrative xml:lang="AR">King Salman Humanitarian Aid and Relief Centre</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">Supporting the international response to internally displaced persons and refugees during the COVID-19 pandemic.</narrative>
+  </title>
+  <description type="2">
+   <narrative xml:lang="EN">Preventing the spread of the epidemic among refugees and displaced persons by providing preventive means and equipping isolation centers to limit the spread of the epidemic in addition to treating positive cases and providing devices and equipment to treat critical cases in the intensive care departments</narrative>
+  </description>
+  <description type="1">
+   <narrative xml:lang="EN">Supporting hospitals and medical centers and equipping isolation centers to receive patients from refugees and displaced people in the Republic of Yemen</narrative>
+  </description>
+  <participating-org activity-id="5398" crs-channel-code="11000" ref="XM-OCHA-HPC6770" role="1" type="10">
+   <narrative xml:lang="EN">King Salman Humanitarian Aid and Relief Centre</narrative>
+  </participating-org>
+  <participating-org crs-channel-code="40000" ref="XM-DAC-41121" role="4" type="40">
+   <narrative xml:lang="EN">United Nations High Commissioner for Refugees (UNHCR)</narrative>
+  </participating-org>
+  <activity-status code="2"></activity-status>
+  <activity-date iso-date="2020-10-01" type="2"></activity-date>
+  <activity-date iso-date="2021-04-01" type="3"></activity-date>
+  <recipient-country code="YE" percentage="100"></recipient-country>
+  <sector code="12250" percentage="100" vocabulary="1"></sector>
+  <budget status="2" type="1">
+   <period-start iso-date="2020-10-01"></period-start>
+   <period-end iso-date="2021-04-01"></period-end>
+   <value currency="USD" value-date="2020-10-01">3000000</value>
+  </budget>
+  <transaction humanitarian="1">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2020-10-01"></transaction-date>
+   <value currency="USD" value-date="2020-10-01">3000000</value>
+   <flow-type code="10"></flow-type>
+   <finance-type code="110"></finance-type>
+   <aid-type code="B03" vocabulary="1"></aid-type>
+   <tied-status code="5"></tied-status>
+  </transaction>
+ </iati-activity>
+</iati-activities>
