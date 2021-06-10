@@ -81,20 +81,21 @@ def start(configuration, today, retriever, dportal_params):
     for text in generator:
         for dactivity in diterator.XMLIterator(StringIO(text)):
             dactivities.append(dactivity)
-            Activity.add_all_reporting_org_names_to_lookup(dactivity)
-    for dactivity in dactivities:
-        Activity.add_all_participating_org_names_to_lookup(dactivity)
+#    Lookups.build_reporting_org_blocklist(dactivities)
+    Lookups.add_reporting_orgs(dactivities)
+    Lookups.add_participating_orgs(dactivities)
 
     # Build the accumulators from the IATI activities and transactions
     flows = dict()
     transactions = list()
     all_skipped = 0
-    for dactivity in dactivities:
+    for i, dactivity in enumerate(dactivities):
         activity, skipped = Activity.get_activity(configuration, dactivity)
         all_skipped += skipped
-        if not activity:
-            continue
-        all_skipped += activity.process(today[:7], flows, transactions)
+        if activity:
+            all_skipped += activity.process(today[:7], flows, transactions)
+        if i % 1000 == 0:
+            logger.info(f'Processed {i} activities')
 
     logger.info(f'Processed {len(flows)} flows')
     logger.info(f'Processed {len(transactions)} transactions')
@@ -106,8 +107,10 @@ def start(configuration, today, retriever, dportal_params):
     # Prepare and write flows
     #
     write(today, outputs_configuration, 'flows', [list(key)+[int(round(flows[key]))] for key in sorted(flows)])
+#    write(today, outputs_configuration, 'flows', [list(key)+[int(round(flows[key]))] for key in sorted(flows, key=lambda x: x[1:])])
 
     #
     # Write transactions
     #
     write(today, outputs_configuration, 'transactions', sorted(transactions), all_skipped)
+#    write(today, outputs_configuration, 'transactions', sorted(transactions, key=lambda x: (x[0], x[2:])), all_skipped)

@@ -8,7 +8,6 @@ from hdx.location.country import Country
 from hdx.utilities.dateparse import parse_date
 from hdx.utilities.loader import load_json
 
-
 logger = logging.getLogger(__name__)
 
 
@@ -20,8 +19,11 @@ def clean_string(s):
 
 
 class Lookups:
-    org_names = dict()
-    default_org = None
+    org_ref_blocklist = list()
+    org_ref_to_name = dict()
+    org_names_to_ref = dict()
+    default_org_id = None
+    default_org_name = None
     sector_info = None
     default_sector = None
     default_country = None
@@ -38,9 +40,12 @@ class Lookups:
         # Prime with org identifiers from code4iati
         for entry in org_data['data']:
             code = clean_string(entry['code']).lower()
-            cls.org_names[code] = clean_string(entry['name'])
+            name = clean_string(entry['name'])
+            cls.org_ref_to_name[code] = name
+            cls.org_names_to_ref[name.lower()] = code
         cls.sector_info = load_json(configuration['sector_data'])
-        cls.default_org = configuration['default_org']
+        cls.default_org_id = configuration['default_org_id']
+        cls.default_org_name = configuration['default_org_name']
         cls.default_sector = configuration['default_sector']
         cls.default_country = configuration['default_country']
         rates_path = retriever.retrieve_file(configuration['rates_url'], 'rates.csv', 'exchange rates', True)
@@ -55,6 +60,10 @@ class Lookups:
             org_id = row.get('#org+reporting_children+id')
             if org_id:
                 cls.filter_reporting_orgs_children.append(org_id)
+        for row in hxl.data(configuration['blocklist_url']):
+            org_id = row.get('#org+reporting+id')
+            if org_id:
+                cls.org_ref_blocklist.append(org_id)
 
     @classmethod
     def is_filter_reporting_orgs(cls, orgid):
@@ -64,29 +73,94 @@ class Lookups:
     def is_filter_reporting_orgs_children(cls, orgid):
         return True if orgid in cls.filter_reporting_orgs_children else False
 
+    @staticmethod
+    def get_cleaned_ref_and_name(org):
+        ref = None if org is None or org.ref is None else clean_string(str(org.ref)).lower()
+        other_names = set()
+        name = None
+        if org and org.name:
+            name = clean_string(str(org.name))
+            for key, value in org.name.narratives.items():
+                value = clean_string(value)
+                if key.lower() == 'en':
+                    name = value
+                else:
+                    other_names.add(value)
+        names = list()
+        if name:
+            names.append(name)
+            names.extend(other_names)
+        return ref, names
+
     @classmethod
-    def get_org_name(cls, org):
+    def add_to_org_lookup(cls, org, is_participating_org=False):
+        ref, names = cls.get_cleaned_ref_and_name(org)
+        for name in names:
+            cur_ref = cls.org_names_to_ref.get(name.lower())
+            if cur_ref:
+                if cur_ref not in cls.org_ref_to_name:
+                    cls.org_ref_to_name[cur_ref] = name
+            if ref:
+                if is_participating_org:
+                    if ref in cls.org_ref_blocklist:
+                        continue
+                if cur_ref:
+                    if ref not in cls.org_ref_to_name:
+                        cls.org_ref_to_name[ref] = cls.org_ref_to_name[cur_ref]
+                    cls.org_names_to_ref[name.lower()] = cur_ref
+                else:
+                    if ref not in cls.org_ref_to_name:
+                        cls.org_ref_to_name[ref] = name
+                    cls.org_names_to_ref[name.lower()] = ref
+
+    @classmethod
+    def get_org_id_name(cls, org):
         """ Standardise organisation names
         For now, use the first name found for an identifier.
         Later, we can reference the registry.
         """
-        name = None if org is None or org.name is None else clean_string(str(org.name))
-        ref = None if org is None or org.ref is None else clean_string(str(org.ref)).lower()
+        ref, names = cls.get_cleaned_ref_and_name(org)
 
-        # We have a ref and an existing match
-        if ref and ref in cls.org_names:
-            # existing match
-            return cls.org_names[ref]
+        preferred_name = None
+        for name in names:
+            if name and not ref:
+                ref = cls.org_names_to_ref.get(name.lower())
+        if ref:
+            preferred_name = cls.org_ref_to_name.get(ref)
+        else:
+            ref = cls.default_org_id
+        if preferred_name:
+            name = preferred_name
+        elif not names:
+            name = cls.default_org_name
+        else:
+            name = names[0]
+        return {'id': ref, 'name': name}
 
-        # No existing match, but we have a name
-        if name:
-            if ref is not None:
-                # if there's a ref, save it for future matching
-                cls.org_names[ref] = name
-            return name
+    # This can be used to get a list of org refs to check to see if they should be added to the manual list
+    # @classmethod
+    # def build_reporting_org_blocklist(cls, dactivities):
+    #     ref_to_names = dict()
+    #     for dactivity in dactivities:
+    #         for org in dactivity.participating_orgs:
+    #             ref, name = cls.get_cleaned_ref_and_name(org)
+    #             if ref and name:
+    #                 dict_of_sets_add(ref_to_names, ref, name)
+    #     for ref, names in ref_to_names.items():
+    #         if len(names) > 5:
+    #             cls.org_ref_blocklist.append(ref)
 
-        # We can't figure out anything
-        return cls.default_org
+    @classmethod
+    def add_reporting_orgs(cls, dactivities):
+        for dactivity in dactivities:
+            cls.add_to_org_lookup(dactivity.reporting_org)
+
+    @classmethod
+    def add_participating_orgs(cls, dactivities):
+        for dactivity in dactivities:
+            for org in dactivity.participating_orgs:
+                cls.add_to_org_lookup(org, is_participating_org=True)
+
 
     @classmethod
     def get_sector_group_name(cls, code):
