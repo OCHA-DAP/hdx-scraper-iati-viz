@@ -44,6 +44,7 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
 
 lookups:
   filters_url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQxyJ0Y658cIIN1NpbHl4Ah1bZjNnWao7oawdLkl4T_5GC4BF-KMFnzKuzupU-w2Js1_Zy-VmaFJdIW/pub?gid=0&single=true&output=csv"
+  blocklist_url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQxyJ0Y658cIIN1NpbHl4Ah1bZjNnWao7oawdLkl4T_5GC4BF-KMFnzKuzupU-w2Js1_Zy-VmaFJdIW/pub?gid=1705733671&single=true&output=csv"
   org_data: "data/IATIOrganisationIdentifier.json"
   sector_data: "data/dac3-sector-map.json"
   rates_url: "https://codeforiati.org/exchangerates-scraper/consolidated.csv"

@@ -44,6 +44,7 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
 
 lookups:
   filters_url: "https://github.com/OCHA-DAP/hdx-scraper-iati-viz/raw/main/tests/config/IATI%20Explorer%20Filters%20-%20Skipped%20Activities.csv"
+  blocklist_url: "https://github.com/OCHA-DAP/hdx-scraper-iati-viz/raw/main/tests/config/IATI%20Explorer%20Filters%20-%20Spurious%20References.csv"
   org_data: "data/IATIOrganisationIdentifier.json"
   sector_data: "data/dac3-sector-map.json"
   default_org_id: ""

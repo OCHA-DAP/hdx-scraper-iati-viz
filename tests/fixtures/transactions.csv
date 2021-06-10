@@ -1,4 +1,4 @@
-Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,Strict?,Transaction type,Activity id,Net money,Total money
+Month,Reporting org name,Reporting org type,Sector,Recipient country,Humanitarian?,Strict?,Transaction type,Activity id,Net money,Total money
 #date+month,#org+name,#org+type,#sector,#country,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_type,#activity+code,#value+net,#value+total
 2020-01,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005765,3000000,3000000
 2020-01,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005765,3000000,3000000
@@ -74,7 +74,7 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2020-03,Save The Children UK,21,Education,Uganda,1,1,commitments,GB-COH-213890-82604712,0,368856
 2020-03,Save The Children UK,21,Education,Uganda,1,1,commitments,GB-COH-213890-82604729,0,116168
 2020-03,Save The Children UK,21,Unallocated / Unspecified,(Unspecified country),0,1,commitments,GB-COH-213890-82690119,485024,485024
-2020-03,Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,Emergency Response,Iraq,1,0,spending,CH-FDJP-CHE106823242-2019723a,0,238603
+2020-03,Terre des hommes - Helping children worldwide - Foundation,21,Emergency Response,Iraq,1,0,spending,CH-FDJP-CHE106823242-2019723a,0,238603
 2020-03,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,0,spending,LK-DRC-GA139-LFS1.2,84058,84058
 2020-04,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,0,commitments,DAC-1601-INV-004259,1060303,1060303
 2020-04,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,0,spending,DAC-1601-INV-004259,530152,530152
@@ -155,7 +155,7 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2020-05,HelpAge International,21,Reconstruction Relief & Rehabilitation,Ukraine,1,1,spending,GB-COH-1762840-UKR040-UN99-01,0,43465
 2020-05,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-16485
 2020-05,Save The Children UK,21,Health,United Republic of Tanzania,1,1,commitments,GB-COH-213890-82604730,0,319807
-2020-05,Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,Emergency Response,Iraq,1,0,spending,CH-FDJP-CHE106823242-2019723a,0,143252
+2020-05,Terre des hommes - Helping children worldwide - Foundation,21,Emergency Response,Iraq,1,0,spending,CH-FDJP-CHE106823242-2019723a,0,143252
 2020-06,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,0,spending,DAC-1601-INV-004259,530152,530152
 2020-06,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006124,711349,711349
 2020-06,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006124,579783,579783
@@ -212,8 +212,8 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2020-06,Save The Children UK,21,Health,Ethiopia,1,1,commitments,GB-COH-213890-82604786,3474,203840
 2020-06,Save The Children UK,21,Health,Thailand,1,1,spending,GB-COH-213890-82604768,0,159495
 2020-06,Save The Children UK,21,Health,United Republic of Tanzania,1,1,spending,GB-COH-213890-82604730,0,19079
-2020-06,Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,Emergency Response,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,69400
-2020-06,Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,Health,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,17350
+2020-06,Terre des hommes - Helping children worldwide - Foundation,21,Emergency Response,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,69400
+2020-06,Terre des hommes - Helping children worldwide - Foundation,21,Health,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,17350
 2020-06,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,0,spending,LK-DRC-GA139-LFS1.2,24,24
 2020-07,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005779,4233842,4233842
 2020-07,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005779,3055000,3055000
@@ -393,8 +393,8 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2020-09,Save The Children UK,21,Health,United Republic of Tanzania,1,1,spending,GB-COH-213890-82604730,0,183010
 2020-09,Save The Children UK,21,Other Social Infrastructure & Services,Nepal,1,1,spending,GB-COH-213890-82604802,1423,20633
 2020-09,Save The Children UK,21,Unallocated / Unspecified,United Kingdom of Great Britain and Northern Ireland,1,1,spending,GB-COH-213890-82604830,5962,193815
-2020-09,Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,Emergency Response,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,200732
-2020-09,Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,Health,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,50183
+2020-09,Terre des hommes - Helping children worldwide - Foundation,21,Emergency Response,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,200732
+2020-09,Terre des hommes - Helping children worldwide - Foundation,21,Health,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,50183
 2020-10,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-001933,3383156,3383156
 2020-10,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-003438,17000000,17000000
 2020-10,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-004949,602998,602998
@@ -728,8 +728,8 @@ Month,Reporting org,Reporting org type,Sector,Recipient country,Humanitarian?,St
 2020-12,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Tajikistan,0,1,commitments,CH-4-2020001356,11311,11311
 2020-12,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Tajikistan,0,1,spending,CH-4-2020001355,94329,94329
 2020-12,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Tajikistan,0,1,spending,CH-4-2020001356,8203,8203
-2020-12,Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,Emergency Response,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,688268
-2020-12,Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,Health,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,172067
+2020-12,Terre des hommes - Helping children worldwide - Foundation,21,Emergency Response,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,688268
+2020-12,Terre des hommes - Helping children worldwide - Foundation,21,Health,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,172067
 2021-01,ADD International,21,Education,Bangladesh,0,0,spending,GB-COH-294860-PR9917,0,2178
 2021-01,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006124,131566,131566
 2021-01,"Foreign, Commonwealth and Development Office",10,Education,South Africa,0,1,commitments,GB-GOV-1-300310-110,65918,65918

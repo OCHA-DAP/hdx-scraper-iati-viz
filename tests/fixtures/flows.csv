@@ -1,4 +1,4 @@
-Reporting org,Reporting org type,Provider org,Receiver org,Humanitarian?,Strict?,Transaction type,Transaction direction,Total money
+Reporting org name,Reporting org type,Provider org,Receiver org,Humanitarian?,Strict?,Transaction type,Transaction direction,Total money
 #org+name+reporting,#org+reporting+type,#org+name+provider,#org+name+receiver,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_type,#x_transaction_direction,#value+total
 ADD International,21,Sightsavers,,0,0,spending,incoming,97065
 ADD International,21,Sightsavers,,0,1,commitments,incoming,162156
@@ -65,8 +65,8 @@ Bill and Melinda Gates Foundation,60,,The Third People‘s Hospital of Shenzhen,
 Bill and Melinda Gates Foundation,60,,The Third People‘s Hospital of Shenzhen,0,1,spending,outgoing,500000
 Bill and Melinda Gates Foundation,60,,"Vital Strategies, Inc.",0,1,commitments,outgoing,999450
 Bill and Melinda Gates Foundation,60,,"Vital Strategies, Inc.",0,1,spending,outgoing,999450
-Bill and Melinda Gates Foundation,60,,World Health Organization,0,1,commitments,outgoing,7078178
-Bill and Melinda Gates Foundation,60,,World Health Organization,0,1,spending,outgoing,7078178
+Bill and Melinda Gates Foundation,60,,WORLD HEALTH ORGANIZATION,0,1,commitments,outgoing,7078178
+Bill and Melinda Gates Foundation,60,,WORLD HEALTH ORGANIZATION,0,1,spending,outgoing,7078178
 Bill and Melinda Gates Foundation,60,,World Health Organization Regional Office for Africa,0,1,commitments,outgoing,2500000
 Bill and Melinda Gates Foundation,60,,World Health Organization Regional Office for Africa,0,1,spending,outgoing,2500000
 Bill and Melinda Gates Foundation,60,,Xiamen University,0,1,commitments,outgoing,600000
@@ -86,10 +86,10 @@ Fondation Hirondelle,21,Danish Refugee Council,,1,1,spending,incoming,152793
 "Foreign, Commonwealth and Development Office",10,,CANADEM,0,0,spending,outgoing,630451
 "Foreign, Commonwealth and Development Office",10,,Centre for Employment Initiatives,0,1,commitments,outgoing,134526
 "Foreign, Commonwealth and Development Office",10,,Centre for Employment Initiatives,0,1,spending,outgoing,56155
-"Foreign, Commonwealth and Development Office",10,,Correction,0,0,spending,outgoing,-88379
-"Foreign, Commonwealth and Development Office",10,,Correction,1,0,spending,outgoing,6204
-"Foreign, Commonwealth and Development Office",10,,Correction,1,1,commitments,outgoing,3963782
-"Foreign, Commonwealth and Development Office",10,,Correction,1,1,spending,outgoing,1814722
+"Foreign, Commonwealth and Development Office",10,,Correction,0,0,spending,outgoing,-58900
+"Foreign, Commonwealth and Development Office",10,,Correction,1,1,spending,outgoing,-2133275
+"Foreign, Commonwealth and Development Office",10,,Customer,0,0,spending,outgoing,-29479
+"Foreign, Commonwealth and Development Office",10,,Customer,1,1,spending,outgoing,-91781
 "Foreign, Commonwealth and Development Office",10,,Danish Refugee Council,0,1,commitments,outgoing,2466400
 "Foreign, Commonwealth and Development Office",10,,Danish Refugee Council,0,1,spending,outgoing,2093940
 "Foreign, Commonwealth and Development Office",10,,Enterprise LSE Ltd,1,0,spending,outgoing,102575
@@ -106,6 +106,7 @@ Fondation Hirondelle,21,Danish Refugee Council,,1,1,spending,incoming,152793
 "Foreign, Commonwealth and Development Office",10,,International Committee of the Red Cross,0,1,spending,outgoing,20989900
 "Foreign, Commonwealth and Development Office",10,,International Organization for Migration (IOM),0,1,commitments,outgoing,1806538
 "Foreign, Commonwealth and Development Office",10,,International Organization for Migration (IOM),0,1,spending,outgoing,1823217
+"Foreign, Commonwealth and Development Office",10,,Journal Transaction,1,0,spending,outgoing,6204
 "Foreign, Commonwealth and Development Office",10,,National University of Singapore,0,1,spending,outgoing,41187
 "Foreign, Commonwealth and Development Office",10,,Palladium International Ltd (UK),0,0,commitments,outgoing,964661
 "Foreign, Commonwealth and Development Office",10,,Palladium International Ltd (UK),0,0,spending,outgoing,861072
@@ -119,6 +120,8 @@ Fondation Hirondelle,21,Danish Refugee Council,,1,1,spending,incoming,152793
 "Foreign, Commonwealth and Development Office",10,,Social Fund for Development,0,1,spending,outgoing,10801631
 "Foreign, Commonwealth and Development Office",10,,St Helena Government,0,0,commitments,outgoing,3632836
 "Foreign, Commonwealth and Development Office",10,,St Helena Government,0,0,spending,outgoing,3767186
+"Foreign, Commonwealth and Development Office",10,,Supplier Name Withheld,1,1,commitments,outgoing,3963782
+"Foreign, Commonwealth and Development Office",10,,Supplier Name Withheld,1,1,spending,outgoing,4039779
 "Foreign, Commonwealth and Development Office",10,,Titan Airways,0,0,spending,outgoing,234106
 "Foreign, Commonwealth and Development Office",10,,Tristan da Cunha Government,0,0,commitments,outgoing,799440
 "Foreign, Commonwealth and Development Office",10,,Tristan da Cunha Government,0,0,spending,outgoing,282645
@@ -199,7 +202,7 @@ Swiss Agency for Development and Cooperation (SDC),10,,World Food Programme (WFP
 Swiss Agency for Development and Cooperation (SDC),10,,World Food Programme (WFP),0,0,spending,outgoing,1809750
 Swiss Agency for Development and Cooperation (SDC),10,,World Food Programme (WFP),0,1,commitments,outgoing,5259586
 Swiss Agency for Development and Cooperation (SDC),10,,World Food Programme (WFP),0,1,spending,outgoing,5259586
-Terre des hommes - Aide à l'enfance dans le monde - Fondation,21,GOVERNMENT OF NETHERLANDS,,0,1,spending,incoming,1198000
+Terre des hommes - Helping children worldwide - Foundation,21,GOVERNMENT OF NETHERLANDS,,0,1,spending,incoming,1198000
 United Nations Development Programme,40,ALCALDIA DE CHIA,,0,0,commitments,incoming,194
 United Nations Development Programme,40,AYUDA EN ACCION MEXICO,,0,0,commitments,incoming,144506
 United Nations Development Programme,40,BRITISH EMBASSY,,0,1,commitments,incoming,12000

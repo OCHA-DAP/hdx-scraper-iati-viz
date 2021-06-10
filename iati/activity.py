@@ -22,15 +22,6 @@ class Activity:
         self.sector_splits = CalculateSplits.make_sector_splits(dactivity)
         self.transactions = list()
 
-    @staticmethod
-    def add_all_reporting_org_names_to_lookup(dactivity):
-        Lookups.add_to_org_lookup(dactivity.reporting_org)
-
-    @staticmethod
-    def add_all_participating_org_names_to_lookup(dactivity):
-        for org in dactivity.participating_orgs:
-            Lookups.add_to_org_lookup(org)
-
     def add_transactions(self, configuration):
         skipped = 0
         for dtransaction in self.dactivity.transactions:
