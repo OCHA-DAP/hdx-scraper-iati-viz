@@ -87,7 +87,7 @@ outputs:
     csv: "transactions.csv"
     headers:
       - "Month"
-#      - "Reporting org id"
+      - "Reporting org id"
       - "Reporting org name"
       - "Reporting org type"
       - "Sector"
@@ -100,7 +100,7 @@ outputs:
       - "Total money"
     hxltags:
       - "#date+month"
-#      - "#org+id"
+      - "#org+id"
       - "#org+name"
       - "#org+type"
       - "#sector"
@@ -115,7 +115,7 @@ outputs:
     json: "flows.json"
     csv: "flows.csv"
     headers:
-#      - "Reporting org id"
+      - "Reporting org id"
       - "Reporting org name"
       - "Reporting org type"
       - "Provider org"
@@ -126,7 +126,7 @@ outputs:
       - "Transaction direction"
       - "Total money"
     hxltags:
-#      - "#org+id+reporting"
+      - "#org+id+reporting"
       - "#org+name+reporting"
       - "#org+reporting+type"
       - "#org+name+provider"
