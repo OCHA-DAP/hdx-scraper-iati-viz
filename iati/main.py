@@ -103,12 +103,11 @@ def start(configuration, today, retriever, dportal_params):
 
     outputs_configuration = configuration['outputs']
 
-    #
     # Prepare and write flows
-    #
-    write(today, outputs_configuration, 'flows', [list(key)+[int(round(flows[key]))] for key in sorted(flows, key=lambda x: x[1:])])
+    write(today, outputs_configuration, 'flows', [list(key)+[int(round(flows[key]))] for key in sorted(flows)])
 
-    #
     # Write transactions
-    #
-    write(today, outputs_configuration, 'transactions', sorted(transactions, key=lambda x: (x[0], x[2:])), all_skipped)
+    write(today, outputs_configuration, 'transactions', sorted(transactions), all_skipped)
+
+    # Write reporting orgs
+    write(today, outputs_configuration, 'reporting_orgs', sorted(Lookups.reporting_orgs, key=lambda x: x[1]))

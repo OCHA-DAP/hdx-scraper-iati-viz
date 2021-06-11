@@ -88,7 +88,6 @@ outputs:
     headers:
       - "Month"
       - "Reporting org id"
-      - "Reporting org name"
       - "Reporting org type"
       - "Sector"
       - "Recipient country"
@@ -101,7 +100,6 @@ outputs:
     hxltags:
       - "#date+month"
       - "#org+id"
-      - "#org+name"
       - "#org+type"
       - "#sector"
       - "#country"
@@ -116,7 +114,6 @@ outputs:
     csv: "flows.csv"
     headers:
       - "Reporting org id"
-      - "Reporting org name"
       - "Reporting org type"
       - "Provider org"
       - "Receiver org"
@@ -127,7 +124,6 @@ outputs:
       - "Total money"
     hxltags:
       - "#org+id+reporting"
-      - "#org+name+reporting"
       - "#org+reporting+type"
       - "#org+name+provider"
       - "#org+name+receiver"
@@ -136,4 +132,13 @@ outputs:
       - "#x_transaction_type"
       - "#x_transaction_direction"
       - "#value+total"
+  reporting_orgs:
+    json: "reporting_orgs.json"
+    csv: "reporting_orgs.csv"
+    headers:
+      - "Reporting org id"
+      - "Reporting org name"
+    hxltags:
+      - "#org+id+reporting"
+      - "#org+name+reporting"
 

@@ -35,20 +35,13 @@ class TestIATI:
                 configuration['outputs']['folder'] = tempdir
                 today = '2021-05-06'
                 start(configuration, today, retriever, dportal_params=None)
-                filename = 'flows.csv'
-                expected_file = join(fixtures_dir, filename)
-                actual_file = join(tempdir, filename)
-                assert_files_same(expected_file, actual_file)
-                filename = 'flows.json'
-                expected_file = join(fixtures_dir, filename)
-                actual_file = join(tempdir, filename)
-                assert filecmp.cmp(expected_file, actual_file)
-                filename = 'transactions.csv'
-                expected_file = join(fixtures_dir, filename)
-                actual_file = join(tempdir, filename)
-                assert_files_same(expected_file, actual_file)
-                filename = 'transactions.json'
-                expected_file = join(fixtures_dir, filename)
-                actual_file = join(tempdir, filename)
-                assert filecmp.cmp(expected_file, actual_file)
+                for filename in ('flows', 'transactions', 'reporting_orgs'):
+                    csv_filename = f'{filename}.csv'
+                    expected_file = join(fixtures_dir, csv_filename)
+                    actual_file = join(tempdir, csv_filename)
+                    assert_files_same(expected_file, actual_file)
+                    json_filename = f'{filename}.json'
+                    expected_file = join(fixtures_dir, json_filename)
+                    actual_file = join(tempdir, json_filename)
+                    assert filecmp.cmp(expected_file, actual_file)
 
