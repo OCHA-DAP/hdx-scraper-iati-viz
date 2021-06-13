@@ -83,11 +83,10 @@ transaction_type_info:
 outputs:
   folder: output
   transactions:
-    json: "transactions.json"
-    csv: "transactions.csv"
     headers:
       - "Month"
       - "Reporting org id"
+      - "Reporting org name"
       - "Reporting org type"
       - "Sector"
       - "Recipient country"
@@ -100,6 +99,7 @@ outputs:
     hxltags:
       - "#date+month"
       - "#org+id"
+      - "#org+name"
       - "#org+type"
       - "#sector"
       - "#country"
@@ -109,11 +109,38 @@ outputs:
       - "#activity+code"
       - "#value+net"
       - "#value+total"
+    csv:
+      filename: "transactions.csv"
+      hxltags:
+        - "#date+month"
+        - "#org+id"
+        - "#org+type"
+        - "#sector"
+        - "#country"
+        - "#indicator+bool+humanitarian"
+        - "#indicator+bool+strict"
+        - "#x_transaction_type"
+        - "#activity+code"
+        - "#value+net"
+        - "#value+total"
+    json:
+      filename: "transactions.json"
+      hxltags:
+        - "#date+month"
+        - "#org+id"
+        - "#org+type"
+        - "#sector"
+        - "#country"
+        - "#indicator+bool+humanitarian"
+        - "#indicator+bool+strict"
+        - "#x_transaction_type"
+        - "#activity+code"
+        - "#value+net"
+        - "#value+total"
   flows:
-    json: "flows.json"
-    csv: "flows.csv"
     headers:
       - "Reporting org id"
+      - "Reporting org name"
       - "Reporting org type"
       - "Provider org"
       - "Receiver org"
@@ -124,6 +151,7 @@ outputs:
       - "Total money"
     hxltags:
       - "#org+id+reporting"
+      - "#org+name+reporting"
       - "#org+reporting+type"
       - "#org+name+provider"
       - "#org+name+receiver"
@@ -132,13 +160,39 @@ outputs:
       - "#x_transaction_type"
       - "#x_transaction_direction"
       - "#value+total"
-  reporting_orgs:
-    json: "reporting_orgs.json"
-    csv: "reporting_orgs.csv"
+    csv:
+      filename: "flows.csv"
+      hxltags:
+        - "#org+id+reporting"
+        - "#org+reporting+type"
+        - "#org+name+provider"
+        - "#org+name+receiver"
+        - "#indicator+bool+humanitarian"
+        - "#indicator+bool+strict"
+        - "#x_transaction_type"
+        - "#x_transaction_direction"
+        - "#value+total"
+    json:
+      filename: "flows.json"
+      hxltags:
+        - "#org+id+reporting"
+        - "#org+reporting+type"
+        - "#org+name+provider"
+        - "#org+name+receiver"
+        - "#indicator+bool+humanitarian"
+        - "#indicator+bool+strict"
+        - "#x_transaction_type"
+        - "#x_transaction_direction"
+        - "#value+total"
+
+  orgs:
     headers:
       - "Reporting org id"
       - "Reporting org name"
     hxltags:
       - "#org+id+reporting"
       - "#org+name+reporting"
-
+    csv:
+      filename: "orgs.csv"
+    json:
+      filename: "orgs.json"

@@ -109,7 +109,7 @@ class Activity:
             receiver = implementer['name']
         org_name = self.org['name']
         if org_name != Lookups.default_org_name and org_name != provider and org_name != receiver:
-            key = (self.org['id'], self.org_type, provider, receiver, transaction.is_humanitarian,
+            key = (self.org['id'], self.org['name'], self.org_type, provider, receiver, transaction.is_humanitarian,
                    transaction.is_strict, transaction.classification, transaction.direction)
             # ignore internal transactions or unknown reporting orgs
             out_flows[key] = out_flows.get(key, 0) + transaction.value
@@ -136,9 +136,10 @@ class Activity:
 
                 if total_money != 0:
                     # add to transactions
-                    out_transactions.append([transaction.month, self.org['id'], self.org_type, sector_name,
-                                             country_name, transaction.is_humanitarian, transaction.is_strict,
-                                             transaction.classification, self.identifier, net_money, total_money])
+                    out_transactions.append([transaction.month, self.org['id'], self.org['name'], self.org_type,
+                                             sector_name, country_name, transaction.is_humanitarian,
+                                             transaction.is_strict, transaction.classification, self.identifier,
+                                             net_money, total_money])
 
     def get_funder_implementer(self):
         funder = None

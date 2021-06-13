@@ -35,7 +35,7 @@ class TestIATI:
                 configuration['outputs']['folder'] = tempdir
                 today = '2021-05-06'
                 start(configuration, today, retriever, dportal_params=None)
-                for filename in ('flows', 'transactions', 'reporting_orgs'):
+                for filename in ('flows', 'transactions', 'orgs'):
                     csv_filename = f'{filename}.csv'
                     expected_file = join(fixtures_dir, csv_filename)
                     actual_file = join(tempdir, csv_filename)
