@@ -96,7 +96,7 @@ class Lookups:
         return ref, names
 
     @classmethod
-    def add_to_org_lookup(cls, org, is_participating_org=False):
+    def add_to_org_lookup(cls, org):
         ref, names = cls.get_cleaned_ref_and_name(org)
         for name in names:
             cur_ref = cls.org_names_to_ref.get(name.lower())
@@ -104,9 +104,8 @@ class Lookups:
                 if cur_ref not in cls.org_ref_to_name:
                     cls.org_ref_to_name[cur_ref] = name
             if ref:
-                if is_participating_org:
-                    if ref in cls.org_ref_blocklist:
-                        continue
+                if ref in cls.org_ref_blocklist:
+                    continue
                 if cur_ref:
                     if ref not in cls.org_ref_to_name:
                         cls.org_ref_to_name[ref] = cls.org_ref_to_name[cur_ref]
@@ -170,7 +169,7 @@ class Lookups:
     def add_participating_orgs(cls, dactivities):
         for dactivity in dactivities:
             for org in dactivity.participating_orgs:
-                cls.add_to_org_lookup(org, is_participating_org=True)
+                cls.add_to_org_lookup(org)
 
     @classmethod
     def get_sector_group_name(cls, code):
