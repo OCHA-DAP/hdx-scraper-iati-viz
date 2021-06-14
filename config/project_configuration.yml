@@ -50,9 +50,9 @@ lookups:
   rates_url: "https://codeforiati.org/exchangerates-scraper/consolidated.csv"
   fallback_rates_url: "https://api.exchangerate.host/latest?base=usd"
   default_org_id: ""
-  default_org_name: "N/A"
-  default_sector: "N/A"
-  default_country: "N/A"
+  default_org_name: "(unspecified org)"
+  default_sector: "(Unspecified sector)"
+  default_country: "(Unspecified country)"
 
 calculate_splits:
   default_sector: "99999"
