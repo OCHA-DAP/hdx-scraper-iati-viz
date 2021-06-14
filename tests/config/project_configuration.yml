@@ -159,16 +159,13 @@ outputs:
       hxltags:
         - "#org+id+reporting"
         - "#org+reporting+type"
-        - "#org+provider"
-        - "#org+receiver"
+        - "#org+name+provider"
+        - "#org+name+receiver"
         - "#indicator+bool+humanitarian"
         - "#indicator+bool+strict"
         - "#x_transaction_type"
         - "#x_transaction_direction"
         - "#value+total"
-    process_cols:
-      "#org+provider": "#org+id+provider if #org+id+provider else #org+name+provider"
-      "#org+receiver": "#org+id+receiver if #org+id+receiver else #org+name+receiver"
 
   orgs:
     headers:
@@ -178,6 +175,6 @@ outputs:
       - "#org+id+reporting"
       - "#org+name+reporting"
     csv:
-      filename: "orgs.csv"
+      filename: "reporting_orgs.csv"
     json:
-      filename: "orgs.json"
+      filename: "reporting_orgs.json"

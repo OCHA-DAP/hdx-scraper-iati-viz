@@ -96,7 +96,7 @@ class Lookups:
         return ref, names
 
     @classmethod
-    def add_to_org_lookup(cls, org):
+    def add_to_org_lookup(cls, org, is_participating_org=False):
         ref, names = cls.get_cleaned_ref_and_name(org)
         for name in names:
             cur_ref = cls.org_names_to_ref.get(name.lower())
@@ -104,7 +104,7 @@ class Lookups:
                 if cur_ref not in cls.org_ref_to_name:
                     cls.org_ref_to_name[cur_ref] = name
             if ref:
-                if ref in cls.org_ref_blocklist:
+                if is_participating_org and ref in cls.org_ref_blocklist:
                     continue
                 if cur_ref:
                     if ref not in cls.org_ref_to_name:
@@ -116,7 +116,7 @@ class Lookups:
                     cls.org_names_to_ref[name.lower()] = ref
 
     @classmethod
-    def get_org_id_name(cls, org):
+    def get_org_id_name(cls, org, reporting_org=False):
         """ Standardise organisation names
         For now, use the first name found for an identifier.
         Later, we can reference the registry.
@@ -140,11 +140,12 @@ class Lookups:
             name = cls.default_org_name
         else:
             name = names[0]
-        if ref in cls.org_ref_blocklist and name:
-            ref = None
         if ref and ref != cls.default_org_id:
-            if name != cls.default_org_name:
-                cls.orgs_lookedup.add((ref, name))
+            if reporting_org:
+                if name != cls.default_org_name:
+                    cls.orgs_lookedup.add((ref, name))
+            elif ref in cls.org_ref_blocklist and name:
+                ref = None
         return {'id': ref, 'name': name}
 
     # This can be used to get a list of org refs to check to see if they should be added to the manual list
@@ -169,7 +170,7 @@ class Lookups:
     def add_participating_orgs(cls, dactivities):
         for dactivity in dactivities:
             for org in dactivity.participating_orgs:
-                cls.add_to_org_lookup(org)
+                cls.add_to_org_lookup(org, is_participating_org=True)
 
     @classmethod
     def get_sector_group_name(cls, code):

@@ -13,7 +13,7 @@ class Activity:
         self.dactivity = dactivity
         self.identifier = dactivity.identifier
         # Get the reporting-org and C19 strictness at activity level
-        self.org = Lookups.get_org_id_name(dactivity.reporting_org)
+        self.org = Lookups.get_org_id_name(dactivity.reporting_org, reporting_org=True)
         self.org_type = str(dactivity.reporting_org.type)
         self.strict = self.is_strict()
         self.humanitarian = dactivity.humanitarian
