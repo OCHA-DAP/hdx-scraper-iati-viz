@@ -101,9 +101,9 @@ class Activity:
 
     def add_to_flows(self, out_flows, transaction, funder, implementer):
         provider, receiver = transaction.get_provider_receiver()
-        if funder and (provider['name'] == Lookups.default_org_name or provider['name'].lower() == funder['name'].lower()):
+        if funder and provider['name'] == Lookups.default_org_name:
             provider = funder
-        if implementer and (receiver['name'] == Lookups.default_org_name or receiver['name'].lower() == implementer['name'].lower()):
+        if implementer and receiver['name'] == Lookups.default_org_name:
             receiver = implementer
         org_name = self.org['name']
         if org_name != Lookups.default_org_name and org_name != provider['name'] and org_name != receiver['name']:
