@@ -111,18 +111,6 @@ outputs:
       - "#value+total"
     csv:
       filename: "transactions.csv"
-      hxltags:
-        - "#date+month"
-        - "#org+id"
-        - "#org+type"
-        - "#sector"
-        - "#country"
-        - "#indicator+bool+humanitarian"
-        - "#indicator+bool+strict"
-        - "#x_transaction_type"
-        - "#activity+code"
-        - "#value+net"
-        - "#value+total"
     json:
       filename: "transactions.json"
       hxltags:
@@ -166,16 +154,6 @@ outputs:
       - "#value+total"
     csv:
       filename: "flows.csv"
-      hxltags:
-        - "#org+id+reporting"
-        - "#org+reporting+type"
-        - "#org+name+provider"
-        - "#org+name+receiver"
-        - "#indicator+bool+humanitarian"
-        - "#indicator+bool+strict"
-        - "#x_transaction_type"
-        - "#x_transaction_direction"
-        - "#value+total"
     json:
       filename: "flows.json"
       hxltags:

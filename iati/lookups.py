@@ -144,9 +144,7 @@ class Lookups:
         if ref in cls.org_ref_blocklist and name:
             ref = None
         if ref and ref != cls.default_org_id:
-            if name == cls.default_org_name:
-                name = ref
-            else:
+            if name != cls.default_org_name:
                 cls.orgs_lookedup.add((ref, name))
         return {'id': ref, 'name': name}
 
