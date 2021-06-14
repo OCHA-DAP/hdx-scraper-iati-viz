@@ -49,6 +49,7 @@ def write(today, configuration, configuration_key, rows, skipped=None):
     file_configuration = configuration[configuration_key]
     headers = file_configuration['headers']
     hxltags = file_configuration['hxltags']
+    process_cols = file_configuration.get('process_cols', dict())
     csv_configuration = file_configuration['csv']
     json_configuration = file_configuration['json']
     csv_hxltags = csv_configuration.get('hxltags', hxltags)
@@ -67,8 +68,19 @@ def write(today, configuration, configuration_key, rows, skipped=None):
             output_json.write(f'{{"metadata":{metadata_json},"data":[\n')
 
             def write_row(inrow, ending):
-                writer.writerow([inrow[i] for i, hxltag in enumerate(hxltags) if hxltag in csv_hxltags])
-                row = {hxltag: inrow[i] for i, hxltag in enumerate(hxltags) if hxltag in json_hxltags}
+                def get_outrow(file_hxltags):
+                    outrow = dict()
+                    for file_hxltag in file_hxltags:
+                        expression = process_cols.get(file_hxltag)
+                        if expression:
+                            for i, hxltag in enumerate(hxltags):
+                                expression = expression.replace(hxltag, f'inrow[{i}]')
+                            outrow[file_hxltag] = eval(expression)
+                        else:
+                            outrow[file_hxltag] = inrow[hxltags.index(file_hxltag)]
+                    return outrow
+                writer.writerow(get_outrow(csv_hxltags).values())
+                row = get_outrow(json_hxltags)
                 output_json.write(json.dumps(row, indent=None, separators=(',', ':')) + ending)
 
             [write_row(row, ',\n') for row in rows[:-1]]

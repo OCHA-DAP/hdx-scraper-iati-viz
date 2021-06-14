@@ -159,13 +159,16 @@ outputs:
       hxltags:
         - "#org+id+reporting"
         - "#org+reporting+type"
-        - "#org+name+provider"
-        - "#org+name+receiver"
+        - "#org+provider"
+        - "#org+receiver"
         - "#indicator+bool+humanitarian"
         - "#indicator+bool+strict"
         - "#x_transaction_type"
         - "#x_transaction_direction"
         - "#value+total"
+    process_cols:
+      "#org+provider": "#org+id+provider if #org+id+provider else #org+name+provider"
+      "#org+receiver": "#org+id+receiver if #org+id+receiver else #org+name+receiver"
 
   orgs:
     headers:
