@@ -1,4 +1,4 @@
-Reporting org id,Reporting org type,Provider org,Receiver org,Humanitarian?,Strict?,Transaction type,Transaction direction,Total money
+Reporting org id,Reporting org type,Provider org name,Receiver org name,Humanitarian?,Strict?,Transaction type,Transaction direction,Total money
 #org+id+reporting,#org+reporting+type,#org+name+provider,#org+name+receiver,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_type,#x_transaction_direction,#value+total
 ch-4,10,,Association internationale de développement,0,0,commitments,outgoing,2262188
 ch-4,10,,Association internationale de développement,0,0,spending,outgoing,2035969
@@ -22,7 +22,9 @@ ch-4,10,,World Food Programme (WFP),0,0,spending,outgoing,1809750
 ch-4,10,,World Food Programme (WFP),0,1,commitments,outgoing,5259586
 ch-4,10,,World Food Programme (WFP),0,1,spending,outgoing,5259586
 ch-fdjp-che106823242,21,GOVERNMENT OF NETHERLANDS,,0,1,spending,incoming,1198000
-ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,21,,(unspecified org),1,1,spending,outgoing,265650
+ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,21,,association des journalistes scientifiques de guinée,1,1,spending,outgoing,23714
+ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,21,,cotton tree news,1,1,spending,outgoing,118071
+ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,21,,mict,1,1,spending,outgoing,123865
 ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,21,Danish Refugee Council,,1,1,commitments,incoming,354200
 ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,21,Danish Refugee Council,,1,1,spending,incoming,152793
 dac-1601,60,,"AbMax Biotechnology Co., Ltd.",0,1,commitments,outgoing,100000
@@ -113,12 +115,14 @@ gb-coh-213890,21,,Save The Children International,1,0,spending,outgoing,10876
 gb-coh-213890,21,,Save The Children International,1,1,spending,outgoing,5127555
 gb-coh-213890,21,Education Cannot Wait,,0,1,spending,incoming,-59397
 gb-coh-213890,21,Education Cannot Wait,,1,1,spending,incoming,1446283
-gb-coh-213890,21,"Foreign, Commonwealth and Development Office",,1,1,spending,incoming,3711057
+gb-coh-213890,21,"Foreign, Commonwealth and Development Office",,1,1,spending,incoming,2862766
 gb-coh-213890,21,Irish Aid,,0,0,spending,incoming,2458548
 gb-coh-213890,21,Jersey Overseas Aid Commission (JOAC),,1,1,spending,incoming,187853
 gb-coh-213890,21,START Network,,1,1,spending,incoming,159189
 gb-coh-213890,21,UNOCHA - United Nations Office for the Coordination of Humanitarian Affairs,,1,0,spending,incoming,109990
 gb-coh-213890,21,UNOCHA - United Nations Office for the Coordination of Humanitarian Affairs,,1,1,spending,incoming,200367
+gb-coh-213890,21,crown agents for oversea governments and administrations ltd the,,1,1,spending,incoming,512345
+gb-coh-213890,21,kpmg,,1,1,spending,incoming,335946
 gb-coh-294860,21,Sightsavers,,0,0,spending,incoming,97065
 gb-coh-294860,21,Sightsavers,,0,1,commitments,incoming,162156
 gb-coh-294860,21,Sightsavers,,0,1,spending,incoming,131689

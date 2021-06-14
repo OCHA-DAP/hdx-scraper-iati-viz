@@ -101,18 +101,15 @@ class Activity:
 
     def add_to_flows(self, out_flows, transaction, funder, implementer):
         provider, receiver = transaction.get_provider_receiver()
-        if funder and provider['name'] == Lookups.default_org_name:
+        if funder and (provider['name'] == Lookups.default_org_name or provider['name'].lower() == funder['name'].lower()):
             provider = funder
-        if implementer and receiver['name'] == Lookups.default_org_name:
+        if implementer and (receiver['name'] == Lookups.default_org_name or receiver['name'].lower() == implementer['name'].lower()):
             receiver = implementer
         org_name = self.org['name']
         if org_name != Lookups.default_org_name and org_name != provider['name'] and org_name != receiver['name']:
-            key = (self.org['id'], self.org['name'], self.org_type, provider['name'],
-                   receiver['name'], transaction.is_humanitarian, transaction.is_strict,
+            key = (self.org['id'], self.org['name'], self.org_type, provider['id'], provider['name'],
+                   receiver['id'], receiver['name'], transaction.is_humanitarian, transaction.is_strict,
                    transaction.classification, transaction.direction)
-            # key = (self.org['id'], self.org['name'], self.org_type, provider['id'], provider['name'],
-            #        receiver['id'], receiver['name'], transaction.is_humanitarian, transaction.is_strict,
-            #        transaction.classification, transaction.direction)
             # ignore internal transactions or unknown reporting orgs
             out_flows[key] = out_flows.get(key, 0) + transaction.value
 

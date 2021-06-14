@@ -143,8 +143,11 @@ class Lookups:
             name = names[0]
         if ref in cls.org_ref_blocklist and name:
             ref = None
-        if ref and ref != cls.default_org_id and name != cls.default_org_name:
-            cls.orgs_lookedup.add((ref, name))
+        if ref and ref != cls.default_org_id:
+            if name == cls.default_org_name:
+                name = ref
+            else:
+                cls.orgs_lookedup.add((ref, name))
         return {'id': ref, 'name': name}
 
     # This can be used to get a list of org refs to check to see if they should be added to the manual list
