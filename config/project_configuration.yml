@@ -159,8 +159,8 @@ outputs:
       hxltags:
         - "#org+id+reporting"
         - "#org+reporting+type"
-        - "#org+provider"
-        - "#org+receiver"
+        - "#org+name+provider"
+        - "#org+name+receiver"
         - "#indicator+bool+humanitarian"
         - "#indicator+bool+strict"
         - "#x_transaction_type"
