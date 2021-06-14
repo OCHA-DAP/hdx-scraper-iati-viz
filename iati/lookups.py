@@ -125,9 +125,9 @@ class Lookups:
         ref, names = cls.get_cleaned_ref_and_name(org)
 
         preferred_name = None
-        # # Odd case where ref is a name
-        # if ref and not names:
-        #     ref = cls.org_names_to_ref.get(ref.lower())
+        # In case ref is being misused as a name
+        if ref and not names:
+            ref = cls.org_names_to_ref.get(ref.lower(), ref)
         for name in names:
             if name and not ref:
                 ref = cls.org_names_to_ref.get(name.lower())
