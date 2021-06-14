@@ -44,15 +44,15 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
 
 lookups:
   filters_url: "https://github.com/OCHA-DAP/hdx-scraper-iati-viz/raw/main/tests/config/IATI%20Explorer%20Filters%20-%20Skipped%20Activities.csv"
-  blocklist_url: "https://github.com/OCHA-DAP/hdx-scraper-iati-viz/raw/main/tests/config/IATI%20Explorer%20Filters%20-%20Spurious%20References.csv"
+  blocklist_url: "https://github.com/OCHA-DAP/hdx-scraper-iati-viz/raw/org_id_name_output/tests/config/IATI%20Explorer%20Filters%20-%20Spurious%20References.csv"
   org_data: "data/IATIOrganisationIdentifier.json"
   sector_data: "data/dac3-sector-map.json"
+  rates_url: "https://codeforiati.org/exchangerates-scraper/consolidated.csv"
+  fallback_rates_url: "https://api.exchangerate.host/latest?base=usd"
   default_org_id: ""
   default_org_name: "(unspecified org)"
   default_sector: "(Unspecified sector)"
   default_country: "(Unspecified country)"
-  rates_url: "https://codeforiati.org/exchangerates-scraper/consolidated.csv"
-  fallback_rates_url: "https://api.exchangerate.host/latest?base=usd"
 
 calculate_splits:
   default_sector: "99999"

@@ -75,8 +75,8 @@ class Transaction:
     def get_provider_receiver(self):
         if self.direction == 'incoming':
             provider = Lookups.get_org_id_name(self.dtransaction.provider_org)
-            receiver = None
+            receiver = {'id': '', 'name': ''}
         else:
-            provider = None
+            provider = {'id': '', 'name': ''}
             receiver = Lookups.get_org_id_name(self.dtransaction.receiver_org)
         return provider, receiver

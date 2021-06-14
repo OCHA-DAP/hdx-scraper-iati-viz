@@ -24,7 +24,7 @@ class Lookups:
     org_ref_blocklist = list()
     org_ref_to_name = dict()
     org_names_to_ref = dict()
-    reporting_orgs = set()
+    orgs_lookedup = set()
     default_org_id = None
     default_org_name = None
     sector_info = None
@@ -117,7 +117,7 @@ class Lookups:
                     cls.org_names_to_ref[name.lower()] = ref
 
     @classmethod
-    def get_org_id_name(cls, org, reporting_org=False):
+    def get_org_id_name(cls, org):
         """ Standardise organisation names
         For now, use the first name found for an identifier.
         Later, we can reference the registry.
@@ -125,6 +125,9 @@ class Lookups:
         ref, names = cls.get_cleaned_ref_and_name(org)
 
         preferred_name = None
+        # # Odd case where ref is a name
+        # if ref and not names:
+        #     ref = cls.org_names_to_ref.get(ref.lower())
         for name in names:
             if name and not ref:
                 ref = cls.org_names_to_ref.get(name.lower())
@@ -138,8 +141,10 @@ class Lookups:
             name = cls.default_org_name
         else:
             name = names[0]
-        if reporting_org:
-            cls.reporting_orgs.add((ref, name))
+        if ref in cls.org_ref_blocklist and name:
+            ref = None
+        if ref and ref != cls.default_org_id and name != cls.default_org_name:
+            cls.orgs_lookedup.add((ref, name))
         return {'id': ref, 'name': name}
 
     # This can be used to get a list of org refs to check to see if they should be added to the manual list

@@ -115,4 +115,4 @@ def start(configuration, today, retriever, dportal_params):
     write(today, outputs_configuration, 'transactions', sorted(transactions), all_skipped)
 
     # Write orgs
-    write(today, outputs_configuration, 'orgs', sorted(Lookups.reporting_orgs, key=lambda x: x[1]))
+    write(today, outputs_configuration, 'orgs', sorted(Lookups.orgs_lookedup, key=lambda x: (x[1], x[0])))
