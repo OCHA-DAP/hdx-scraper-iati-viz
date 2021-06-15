@@ -99,7 +99,8 @@ class Lookups:
     def add_to_org_lookup(cls, org, is_participating_org=False):
         ref, names = cls.get_cleaned_ref_and_name(org)
         for name in names:
-            cur_ref = cls.org_names_to_ref.get(name.lower())
+            lower_name = name.lower()
+            cur_ref = cls.org_names_to_ref.get(lower_name)
             if cur_ref:
                 if cur_ref not in cls.org_ref_to_name:
                     cls.org_ref_to_name[cur_ref] = name
@@ -109,11 +110,10 @@ class Lookups:
                 if cur_ref:
                     if ref not in cls.org_ref_to_name:
                         cls.org_ref_to_name[ref] = cls.org_ref_to_name[cur_ref]
-                    cls.org_names_to_ref[name.lower()] = cur_ref
                 else:
                     if ref not in cls.org_ref_to_name:
                         cls.org_ref_to_name[ref] = name
-                    cls.org_names_to_ref[name.lower()] = ref
+                    cls.org_names_to_ref[lower_name] = ref
 
     @classmethod
     def get_org_id_name(cls, org, reporting_org=False):
