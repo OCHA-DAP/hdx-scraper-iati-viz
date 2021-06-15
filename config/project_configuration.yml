@@ -83,8 +83,6 @@ transaction_type_info:
 outputs:
   folder: output
   transactions:
-    json: "transactions.json"
-    csv: "transactions.csv"
     headers:
       - "Month"
       - "Reporting org id"
@@ -111,15 +109,31 @@ outputs:
       - "#activity+code"
       - "#value+net"
       - "#value+total"
+    csv:
+      filename: "transactions.csv"
+    json:
+      filename: "transactions.json"
+      hxltags:
+        - "#date+month"
+        - "#org+id"
+        - "#org+type"
+        - "#sector"
+        - "#country"
+        - "#indicator+bool+humanitarian"
+        - "#indicator+bool+strict"
+        - "#x_transaction_type"
+        - "#activity+code"
+        - "#value+net"
+        - "#value+total"
   flows:
-    json: "flows.json"
-    csv: "flows.csv"
     headers:
       - "Reporting org id"
       - "Reporting org name"
       - "Reporting org type"
-      - "Provider org"
-      - "Receiver org"
+      - "Provider org id"
+      - "Provider org name"
+      - "Receiver org id"
+      - "Receiver org name"
       - "Humanitarian?"
       - "Strict?"
       - "Transaction type"
@@ -129,11 +143,38 @@ outputs:
       - "#org+id+reporting"
       - "#org+name+reporting"
       - "#org+reporting+type"
+      - "#org+id+provider"
       - "#org+name+provider"
+      - "#org+id+receiver"
       - "#org+name+receiver"
       - "#indicator+bool+humanitarian"
       - "#indicator+bool+strict"
       - "#x_transaction_type"
       - "#x_transaction_direction"
       - "#value+total"
+    csv:
+      filename: "flows.csv"
+    json:
+      filename: "flows.json"
+      hxltags:
+        - "#org+id+reporting"
+        - "#org+reporting+type"
+        - "#org+name+provider"
+        - "#org+name+receiver"
+        - "#indicator+bool+humanitarian"
+        - "#indicator+bool+strict"
+        - "#x_transaction_type"
+        - "#x_transaction_direction"
+        - "#value+total"
 
+  orgs:
+    headers:
+      - "Reporting org id"
+      - "Reporting org name"
+    hxltags:
+      - "#org+id+reporting"
+      - "#org+name+reporting"
+    csv:
+      filename: "reporting_orgs.csv"
+    json:
+      filename: "reporting_orgs.json"

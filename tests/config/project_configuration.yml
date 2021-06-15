@@ -44,15 +44,15 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
 
 lookups:
   filters_url: "https://github.com/OCHA-DAP/hdx-scraper-iati-viz/raw/main/tests/config/IATI%20Explorer%20Filters%20-%20Skipped%20Activities.csv"
-  blocklist_url: "https://github.com/OCHA-DAP/hdx-scraper-iati-viz/raw/main/tests/config/IATI%20Explorer%20Filters%20-%20Spurious%20References.csv"
+  blocklist_url: "https://github.com/OCHA-DAP/hdx-scraper-iati-viz/raw/org_id_name_output/tests/config/IATI%20Explorer%20Filters%20-%20Spurious%20References.csv"
   org_data: "data/IATIOrganisationIdentifier.json"
   sector_data: "data/dac3-sector-map.json"
+  rates_url: "https://codeforiati.org/exchangerates-scraper/consolidated.csv"
+  fallback_rates_url: "https://api.exchangerate.host/latest?base=usd"
   default_org_id: ""
   default_org_name: "(unspecified org)"
   default_sector: "(Unspecified sector)"
   default_country: "(Unspecified country)"
-  rates_url: "https://codeforiati.org/exchangerates-scraper/consolidated.csv"
-  fallback_rates_url: "https://api.exchangerate.host/latest?base=usd"
 
 calculate_splits:
   default_sector: "99999"
@@ -83,8 +83,6 @@ transaction_type_info:
 outputs:
   folder: output
   transactions:
-    json: "transactions.json"
-    csv: "transactions.csv"
     headers:
       - "Month"
       - "Reporting org id"
@@ -111,15 +109,31 @@ outputs:
       - "#activity+code"
       - "#value+net"
       - "#value+total"
+    csv:
+      filename: "transactions.csv"
+    json:
+      filename: "transactions.json"
+      hxltags:
+        - "#date+month"
+        - "#org+id"
+        - "#org+type"
+        - "#sector"
+        - "#country"
+        - "#indicator+bool+humanitarian"
+        - "#indicator+bool+strict"
+        - "#x_transaction_type"
+        - "#activity+code"
+        - "#value+net"
+        - "#value+total"
   flows:
-    json: "flows.json"
-    csv: "flows.csv"
     headers:
       - "Reporting org id"
       - "Reporting org name"
       - "Reporting org type"
-      - "Provider org"
-      - "Receiver org"
+      - "Provider org id"
+      - "Provider org name"
+      - "Receiver org id"
+      - "Receiver org name"
       - "Humanitarian?"
       - "Strict?"
       - "Transaction type"
@@ -129,10 +143,38 @@ outputs:
       - "#org+id+reporting"
       - "#org+name+reporting"
       - "#org+reporting+type"
+      - "#org+id+provider"
       - "#org+name+provider"
+      - "#org+id+receiver"
       - "#org+name+receiver"
       - "#indicator+bool+humanitarian"
       - "#indicator+bool+strict"
       - "#x_transaction_type"
       - "#x_transaction_direction"
       - "#value+total"
+    csv:
+      filename: "flows.csv"
+    json:
+      filename: "flows.json"
+      hxltags:
+        - "#org+id+reporting"
+        - "#org+reporting+type"
+        - "#org+name+provider"
+        - "#org+name+receiver"
+        - "#indicator+bool+humanitarian"
+        - "#indicator+bool+strict"
+        - "#x_transaction_type"
+        - "#x_transaction_direction"
+        - "#value+total"
+
+  orgs:
+    headers:
+      - "Reporting org id"
+      - "Reporting org name"
+    hxltags:
+      - "#org+id+reporting"
+      - "#org+name+reporting"
+    csv:
+      filename: "reporting_orgs.csv"
+    json:
+      filename: "reporting_orgs.json"

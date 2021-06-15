@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 import logging
 import re
+from os.path import join
 
 import exchangerates
 import hxl
 from hdx.location.country import Country
 from hdx.utilities.dateparse import parse_date
 from hdx.utilities.loader import load_json
+from hdx.utilities.saver import save_json
 
 logger = logging.getLogger(__name__)
 
@@ -22,6 +24,7 @@ class Lookups:
     org_ref_blocklist = list()
     org_ref_to_name = dict()
     org_names_to_ref = dict()
+    orgs_lookedup = set()
     default_org_id = None
     default_org_name = None
     sector_info = None
@@ -101,9 +104,8 @@ class Lookups:
                 if cur_ref not in cls.org_ref_to_name:
                     cls.org_ref_to_name[cur_ref] = name
             if ref:
-                if is_participating_org:
-                    if ref in cls.org_ref_blocklist:
-                        continue
+                if is_participating_org and ref in cls.org_ref_blocklist:
+                    continue
                 if cur_ref:
                     if ref not in cls.org_ref_to_name:
                         cls.org_ref_to_name[ref] = cls.org_ref_to_name[cur_ref]
@@ -114,7 +116,7 @@ class Lookups:
                     cls.org_names_to_ref[name.lower()] = ref
 
     @classmethod
-    def get_org_id_name(cls, org):
+    def get_org_id_name(cls, org, reporting_org=False):
         """ Standardise organisation names
         For now, use the first name found for an identifier.
         Later, we can reference the registry.
@@ -122,6 +124,9 @@ class Lookups:
         ref, names = cls.get_cleaned_ref_and_name(org)
 
         preferred_name = None
+        # In case ref is being misused as a name
+        if ref and not names:
+            ref = cls.org_names_to_ref.get(ref.lower(), ref)
         for name in names:
             if name and not ref:
                 ref = cls.org_names_to_ref.get(name.lower())
@@ -135,6 +140,12 @@ class Lookups:
             name = cls.default_org_name
         else:
             name = names[0]
+        if ref and ref != cls.default_org_id:
+            if reporting_org:
+                if name != cls.default_org_name:
+                    cls.orgs_lookedup.add((ref, name))
+            elif ref in cls.org_ref_blocklist and name:
+                ref = None
         return {'id': ref, 'name': name}
 
     # This can be used to get a list of org refs to check to see if they should be added to the manual list
@@ -160,7 +171,6 @@ class Lookups:
         for dactivity in dactivities:
             for org in dactivity.participating_orgs:
                 cls.add_to_org_lookup(org, is_participating_org=True)
-
 
     @classmethod
     def get_sector_group_name(cls, code):

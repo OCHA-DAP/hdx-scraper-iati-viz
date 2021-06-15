@@ -13,7 +13,7 @@ class Activity:
         self.dactivity = dactivity
         self.identifier = dactivity.identifier
         # Get the reporting-org and C19 strictness at activity level
-        self.org = Lookups.get_org_id_name(dactivity.reporting_org)
+        self.org = Lookups.get_org_id_name(dactivity.reporting_org, reporting_org=True)
         self.org_type = str(dactivity.reporting_org.type)
         self.strict = self.is_strict()
         self.humanitarian = dactivity.humanitarian
@@ -101,16 +101,15 @@ class Activity:
 
     def add_to_flows(self, out_flows, transaction, funder, implementer):
         provider, receiver = transaction.get_provider_receiver()
-        provider = provider['name'] if provider else ''
-        receiver = receiver['name'] if receiver else ''
-        if funder and provider == Lookups.default_org_name:
-            provider = funder['name']
-        if implementer and receiver == Lookups.default_org_name:
-            receiver = implementer['name']
+        if funder and provider['name'] == Lookups.default_org_name:
+            provider = funder
+        if implementer and receiver['name'] == Lookups.default_org_name:
+            receiver = implementer
         org_name = self.org['name']
-        if org_name != Lookups.default_org_name and org_name != provider and org_name != receiver:
-            key = (self.org['id'], org_name, self.org_type, provider, receiver, transaction.is_humanitarian,
-                   transaction.is_strict, transaction.classification, transaction.direction)
+        if org_name != Lookups.default_org_name and org_name != provider['name'] and org_name != receiver['name']:
+            key = (self.org['id'], self.org['name'], self.org_type, provider['id'], provider['name'],
+                   receiver['id'], receiver['name'], transaction.is_humanitarian, transaction.is_strict,
+                   transaction.classification, transaction.direction)
             # ignore internal transactions or unknown reporting orgs
             out_flows[key] = out_flows.get(key, 0) + transaction.value
 
