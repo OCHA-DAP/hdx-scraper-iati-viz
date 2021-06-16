@@ -134,7 +134,7 @@ class Lookups:
             preferred_name = cls.org_ref_to_name.get(ref)
         else:
             ref = cls.default_org_id
-        if preferred_name:
+        if preferred_name and (reporting_org or ref not in cls.org_ref_blocklist):
             name = preferred_name
         elif not names:
             name = cls.default_org_name
