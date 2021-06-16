@@ -145,8 +145,56 @@ class Lookups:
                 if name != cls.default_org_name:
                     cls.orgs_lookedup.add((ref, name))
             elif ref in cls.org_ref_blocklist and name:
-                ref = None
+                ref = cls.org_names_to_ref.get(name.lower())
         return {'id': ref, 'name': name}
+
+    # @classmethod
+    # def get_org_id_name(cls, org, reporting_org=False):
+    #     """ Standardise organisation names
+    #     For now, use the first name found for an identifier.
+    #     Later, we can reference the registry.
+    #     """
+    #     ref, names = cls.get_cleaned_ref_and_name(org)
+    #
+    #     preferred_name = None
+    #     # In case ref is being misused as a name
+    #     if ref and not names:
+    #         ref = cls.org_names_to_ref.get(ref.lower(), ref)
+    #     other_refs = list()
+    #     for name in names:
+    #         if name:
+    #             other_ref = cls.org_names_to_ref.get(name.lower())
+    #             if other_ref and other_ref not in other_refs:
+    #                 other_refs.append(other_ref)
+    #     if ref and (reporting_org or ref not in cls.org_ref_blocklist):
+    #         preferred_name = cls.org_ref_to_name.get(ref)
+    #     if not preferred_name:
+    #         i = 0
+    #         while i != len(other_refs):
+    #             other_ref = other_refs[i]
+    #             preferred_name = cls.org_ref_to_name.get(other_ref)
+    #             if preferred_name:
+    #                 ref = other_ref
+    #                 break
+    #             i += 1
+    #     if not ref:
+    #         if other_refs:
+    #             ref = other_refs[0]
+    #         else:
+    #             ref = cls.default_org_id
+    #     if preferred_name:
+    #         name = preferred_name
+    #     elif not names:
+    #         name = cls.default_org_name
+    #     else:
+    #         name = names[0]
+    #     if ref and ref != cls.default_org_id:
+    #         if reporting_org:
+    #             if name != cls.default_org_name:
+    #                 cls.orgs_lookedup.add((ref, name))
+    #         elif ref in cls.org_ref_blocklist and name:
+    #             ref = cls.org_names_to_ref.get(name.lower())
+    #     return {'id': ref, 'name': name}
 
     # This can be used to get a list of org refs to check to see if they should be added to the manual list
     # @classmethod
