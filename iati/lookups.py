@@ -79,20 +79,25 @@ class Lookups:
     @staticmethod
     def get_cleaned_ref_and_name(org):
         ref = None if org is None or org.ref is None else clean_string(str(org.ref)).lower()
-        other_names = set()
+        other_names = list()
+        orig_name = None
         name = None
         if org and org.name:
-            name = clean_string(str(org.name))
+            orig_name = clean_string(str(org.name))
             for key, value in org.name.narratives.items():
                 value = clean_string(value)
-                if key.lower() == 'en':
-                    name = value
-                else:
-                    other_names.add(value)
+                if value:
+                    if key.lower() == 'en':
+                        name = value
+                    else:
+                        other_names.append(value)
         names = list()
         if name:
             names.append(name)
-            names.extend(other_names)
+        if orig_name and orig_name not in names:
+            names.append(orig_name)
+        if other_names:
+            [names.append(x) for x in other_names if x not in names]
         return ref, names
 
     @classmethod
