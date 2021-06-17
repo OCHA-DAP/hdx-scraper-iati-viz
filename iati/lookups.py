@@ -128,9 +128,6 @@ class Lookups:
         """
         ref, names = cls.get_cleaned_ref_and_name(org)
 
-        # In case ref is being misused as a name
-        if ref and not names:
-            ref = cls.org_names_to_ref.get(ref.lower(), ref)
         refs = list()
         if ref:
             refs.append(ref)
@@ -139,6 +136,12 @@ class Lookups:
                 other_ref = cls.org_names_to_ref.get(name.lower())
                 if other_ref and other_ref not in refs:
                     refs.append(other_ref)
+        # In case ref is being misused as a name
+        if ref and not names:
+            ref = cls.org_names_to_ref.get(ref.lower(), ref)
+            if ref and ref not in refs:
+                refs.append(ref)
+        ref = None
         preferred_name = None
         i = 0
         while i != len(refs):
@@ -156,12 +159,13 @@ class Lookups:
                 ref = refs[0]
             else:
                 ref = cls.default_org_id
-        if preferred_name and (reporting_org or ref not in cls.org_ref_blocklist):
+        if preferred_name:
             name = preferred_name
-        elif not names:
-            name = cls.default_org_name
-        else:
+        elif names:
             name = names[0]
+        else:
+            name = cls.default_org_name
+
         if ref and ref != cls.default_org_id:
             if reporting_org:
                 if name != cls.default_org_name:
