@@ -79,20 +79,25 @@ class Lookups:
     @staticmethod
     def get_cleaned_ref_and_name(org):
         ref = None if org is None or org.ref is None else clean_string(str(org.ref)).lower()
-        other_names = set()
+        other_names = list()
+        orig_name = None
         name = None
         if org and org.name:
-            name = clean_string(str(org.name))
+            orig_name = clean_string(str(org.name))
             for key, value in org.name.narratives.items():
                 value = clean_string(value)
-                if key.lower() == 'en':
-                    name = value
-                else:
-                    other_names.add(value)
+                if value:
+                    if key.lower() == 'en':
+                        name = value
+                    else:
+                        other_names.append(value)
         names = list()
         if name:
             names.append(name)
-            names.extend(other_names)
+        if orig_name and orig_name not in names:
+            names.append(orig_name)
+        if other_names:
+            [names.append(x) for x in other_names if x not in names]
         return ref, names
 
     @classmethod
@@ -123,29 +128,50 @@ class Lookups:
         """
         ref, names = cls.get_cleaned_ref_and_name(org)
 
-        preferred_name = None
+        refs = list()
+        if ref:
+            refs.append(ref)
+        for name in names:
+            if name:
+                associated_ref = cls.org_names_to_ref.get(name.lower())
+                if associated_ref and associated_ref not in refs:
+                    refs.append(associated_ref)
         # In case ref is being misused as a name
         if ref and not names:
             ref = cls.org_names_to_ref.get(ref.lower(), ref)
-        for name in names:
-            if name and not ref:
-                ref = cls.org_names_to_ref.get(name.lower())
-        if ref:
-            preferred_name = cls.org_ref_to_name.get(ref)
-        else:
-            ref = cls.default_org_id
+            if ref and ref not in refs:
+                refs.append(ref)
+        ref = None
+        preferred_name = None
+        i = 0
+        while i != len(refs):
+            ref_to_consider = refs[i]
+            if not reporting_org and ref_to_consider in cls.org_ref_blocklist:
+                i += 1
+                continue
+            preferred_name = cls.org_ref_to_name.get(ref_to_consider)
+            if preferred_name:
+                ref = ref_to_consider
+                break
+            i += 1
+        if not ref:
+            if refs:
+                ref = refs[0]
+            else:
+                ref = cls.default_org_id
         if preferred_name:
             name = preferred_name
-        elif not names:
-            name = cls.default_org_name
-        else:
+        elif names:
             name = names[0]
+        else:
+            name = cls.default_org_name
+
         if ref and ref != cls.default_org_id:
             if reporting_org:
                 if name != cls.default_org_name:
                     cls.orgs_lookedup.add((ref, name))
             elif ref in cls.org_ref_blocklist and name:
-                ref = None
+                ref = cls.org_names_to_ref.get(name.lower())
         return {'id': ref, 'name': name}
 
     # This can be used to get a list of org refs to check to see if they should be added to the manual list
@@ -163,12 +189,12 @@ class Lookups:
 
     @classmethod
     def add_reporting_orgs(cls, dactivities):
-        for dactivity in dactivities:
+        for dactivity in reversed(dactivities):
             cls.add_to_org_lookup(dactivity.reporting_org)
 
     @classmethod
     def add_participating_orgs(cls, dactivities):
-        for dactivity in dactivities:
+        for dactivity in reversed(dactivities):
             for org in dactivity.participating_orgs:
                 cls.add_to_org_lookup(org, is_participating_org=True)
 
