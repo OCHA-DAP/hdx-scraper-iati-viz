@@ -133,9 +133,9 @@ class Lookups:
             refs.append(ref)
         for name in names:
             if name:
-                other_ref = cls.org_names_to_ref.get(name.lower())
-                if other_ref and other_ref not in refs:
-                    refs.append(other_ref)
+                associated_ref = cls.org_names_to_ref.get(name.lower())
+                if associated_ref and associated_ref not in refs:
+                    refs.append(associated_ref)
         # In case ref is being misused as a name
         if ref and not names:
             ref = cls.org_names_to_ref.get(ref.lower(), ref)
@@ -145,13 +145,13 @@ class Lookups:
         preferred_name = None
         i = 0
         while i != len(refs):
-            other_ref = refs[i]
-            if not reporting_org and other_ref in cls.org_ref_blocklist:
+            ref_to_consider = refs[i]
+            if not reporting_org and ref_to_consider in cls.org_ref_blocklist:
                 i += 1
                 continue
-            preferred_name = cls.org_ref_to_name.get(other_ref)
+            preferred_name = cls.org_ref_to_name.get(ref_to_consider)
             if preferred_name:
-                ref = other_ref
+                ref = ref_to_consider
                 break
             i += 1
         if not ref:
