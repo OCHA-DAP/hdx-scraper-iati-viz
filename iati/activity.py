@@ -115,7 +115,7 @@ class Activity:
             if (not receiver_name or receiver_name == Lookups.default_org_name) and receiver['id']:
                 receiver_name = receiver['id']
             key = self.org['name'], provider_name, receiver_name,\
-                  transaction.is_humanitarian, transaction.is_strict, transaction.classification, transaction.direction
+                  transaction.is_humanitarian, transaction.is_strict, transaction.direction
             # ignore internal transactions or unknown reporting orgs
             cur_output = out_flows.get(key, dict())
             cur_output['value'] = cur_output.get('value', 0) + transaction.value
@@ -123,7 +123,7 @@ class Activity:
                 cur_output['row'] = [self.org['id'], self.org['name'], self.org['type'], provider['id'],
                                      provider_name, provider['type'], receiver['id'], receiver_name,
                                      receiver['type'], transaction.is_humanitarian, transaction.is_strict,
-                                     transaction.classification, transaction.direction]
+                                     transaction.direction]
             out_flows[key] = cur_output
 
     def generate_split_transactions(self, out_transactions, transaction):
