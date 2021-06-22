@@ -99,6 +99,8 @@ class Activity:
                 self.spending_factor = 0.0
 
     def add_to_flows(self, out_flows, transaction, funder, implementer):
+        if transaction.classification != 'spending':
+            return
         provider, receiver = transaction.get_provider_receiver()
         if funder and provider['name'] == Lookups.default_org_name:
             provider = funder
