@@ -13,8 +13,7 @@ class Activity:
         self.dactivity = dactivity
         self.identifier = dactivity.identifier
         # Get the reporting-org and C19 strictness at activity level
-        self.org = Lookups.get_org_id_name(dactivity.reporting_org, reporting_org=True)
-        self.org_type = str(dactivity.reporting_org.type)
+        self.org = Lookups.get_org_info(dactivity.reporting_org, reporting_org=True)
         self.strict = self.is_strict()
         self.humanitarian = dactivity.humanitarian
         # Figure out default country/sector percentage splits at the activity level
@@ -107,11 +106,23 @@ class Activity:
             receiver = implementer
         org_name = self.org['name']
         if org_name != Lookups.default_org_name and org_name != provider['name'] and org_name != receiver['name']:
-            key = (self.org['id'], self.org['name'], self.org_type, provider['id'], provider['name'],
-                   receiver['id'], receiver['name'], transaction.is_humanitarian, transaction.is_strict,
-                   transaction.classification, transaction.direction)
+            provider_name = provider['name']
+            if (not provider_name or provider_name == Lookups.default_org_name) and provider['id']:
+                provider_name = provider['id']
+            receiver_name = receiver['name']
+            if (not receiver_name or receiver_name == Lookups.default_org_name) and receiver['id']:
+                receiver_name = receiver['id']
+            key = self.org['name'], provider_name, receiver_name,\
+                  transaction.is_humanitarian, transaction.is_strict, transaction.classification, transaction.direction
             # ignore internal transactions or unknown reporting orgs
-            out_flows[key] = out_flows.get(key, 0) + transaction.value
+            cur_output = out_flows.get(key, dict())
+            cur_output['value'] = cur_output.get('value', 0) + transaction.value
+            if 'row' not in cur_output:
+                cur_output['row'] = [self.org['id'], self.org['name'], self.org['type'], provider['id'],
+                                     provider_name, provider['type'], receiver['id'], receiver_name,
+                                     receiver['type'], transaction.is_humanitarian, transaction.is_strict,
+                                     transaction.classification, transaction.direction]
+            out_flows[key] = cur_output
 
     def generate_split_transactions(self, out_transactions, transaction):
         # Make the splits for the transaction (default to activity splits)
@@ -135,7 +146,7 @@ class Activity:
 
                 if total_money != 0:
                     # add to transactions
-                    out_transactions.append([transaction.month, self.org['id'], self.org['name'], self.org_type,
+                    out_transactions.append([transaction.month, self.org['id'], self.org['name'], self.org['type'],
                                              sector_name, country_name, transaction.is_humanitarian,
                                              transaction.is_strict, transaction.classification, self.identifier,
                                              net_money, total_money])
@@ -150,7 +161,7 @@ class Activity:
             participating_orgs = participating_orgs_by_role[role]
             if len(participating_orgs) != 1:
                 continue
-            org = Lookups.get_org_id_name(participating_orgs[0])
+            org = Lookups.get_org_info(participating_orgs[0])
             if role == '1':
                 funder = org
             else:

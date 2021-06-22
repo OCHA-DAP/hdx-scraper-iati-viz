@@ -23,7 +23,9 @@ def clean_string(s):
 class Lookups:
     org_ref_blocklist = list()
     org_ref_to_name = dict()
+    org_ref_to_type = dict()
     org_names_to_ref = dict()
+    org_names_to_type = dict()
     orgs_lookedup = set()
     default_org_id = None
     default_org_name = None
@@ -77,32 +79,36 @@ class Lookups:
         return True if orgid in cls.filter_reporting_orgs_children else False
 
     @staticmethod
-    def get_cleaned_ref_and_name(org):
+    def get_cleaned_ref_name_type(org):
         ref = None if org is None or org.ref is None else clean_string(str(org.ref)).lower()
         other_names = list()
         orig_name = None
-        name = None
-        if org and org.name:
-            orig_name = clean_string(str(org.name))
-            for key, value in org.name.narratives.items():
-                value = clean_string(value)
-                if value:
-                    if key.lower() == 'en':
-                        name = value
-                    else:
-                        other_names.append(value)
+        org_name = None
+        org_type = None
+        if org:
+            if org.name:
+                orig_name = clean_string(str(org.name))
+                for key, value in org.name.narratives.items():
+                    value = clean_string(value)
+                    if value:
+                        if key.lower() == 'en':
+                            org_name = value
+                        else:
+                            other_names.append(value)
+            if org.type:
+                org_type = org.type
         names = list()
-        if name:
-            names.append(name)
+        if org_name:
+            names.append(org_name)
         if orig_name and orig_name not in names:
             names.append(orig_name)
         if other_names:
             [names.append(x) for x in other_names if x not in names]
-        return ref, names
+        return ref, names, org_type
 
     @classmethod
     def add_to_org_lookup(cls, org, is_participating_org=False):
-        ref, names = cls.get_cleaned_ref_and_name(org)
+        ref, names, org_type = cls.get_cleaned_ref_name_type(org)
         for name in names:
             lower_name = name.lower()
             cur_ref = cls.org_names_to_ref.get(lower_name)
@@ -119,14 +125,23 @@ class Lookups:
                     if ref not in cls.org_ref_to_name:
                         cls.org_ref_to_name[ref] = name
                     cls.org_names_to_ref[lower_name] = ref
+                if org_type and lower_name not in cls.org_names_to_type:
+                    cls.org_names_to_type[lower_name] = org_type
+            elif org_type and lower_name not in cls.org_names_to_type:
+                cls.org_names_to_type[lower_name] = org_type
+        if org_type:
+            if is_participating_org and ref and ref in cls.org_ref_blocklist:
+                return
+            if ref and ref not in cls.org_ref_to_type:
+                cls.org_ref_to_type[ref] = org_type
 
     @classmethod
-    def get_org_id_name(cls, org, reporting_org=False):
+    def get_org_info(cls, org, reporting_org=False):
         """ Standardise organisation names
         For now, use the first name found for an identifier.
         Later, we can reference the registry.
         """
-        ref, names = cls.get_cleaned_ref_and_name(org)
+        ref, names, org_type = cls.get_cleaned_ref_name_type(org)
 
         refs = list()
         if ref:
@@ -166,13 +181,20 @@ class Lookups:
         else:
             name = cls.default_org_name
 
+        preferred_type = None
         if ref and ref != cls.default_org_id:
             if reporting_org:
                 if name != cls.default_org_name:
                     cls.orgs_lookedup.add((ref, name))
-            elif ref in cls.org_ref_blocklist and name:
+            elif ref in cls.org_ref_blocklist and name and name != cls.default_org_name:
                 ref = cls.org_names_to_ref.get(name.lower())
-        return {'id': ref, 'name': name}
+            if ref:
+                preferred_type = cls.org_ref_to_type.get(ref)
+        if not preferred_type and name and name != cls.default_org_name:
+            preferred_type = cls.org_names_to_type.get(name.lower())
+        if preferred_type:
+            org_type = preferred_type
+        return {'id': ref, 'name': name, 'type': org_type}
 
     # This can be used to get a list of org refs to check to see if they should be added to the manual list
     # @classmethod
@@ -180,7 +202,7 @@ class Lookups:
     #     ref_to_names = dict()
     #     for dactivity in dactivities:
     #         for org in dactivity.participating_orgs:
-    #             ref, name = cls.get_cleaned_ref_and_name(org)
+    #             ref, name, _ = cls.get_cleaned_ref_name_type(org)
     #             if ref and name:
     #                 dict_of_sets_add(ref_to_names, ref, name)
     #     for ref, names in ref_to_names.items():
