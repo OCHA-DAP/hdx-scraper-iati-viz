@@ -138,7 +138,6 @@ outputs:
       - "Receiver org type"
       - "Humanitarian?"
       - "Strict?"
-      - "Transaction type"
       - "Transaction direction"
       - "Total money"
     hxltags:
@@ -153,7 +152,6 @@ outputs:
       - "#org+type+receiver"
       - "#indicator+bool+humanitarian"
       - "#indicator+bool+strict"
-      - "#x_transaction_type"
       - "#x_transaction_direction"
       - "#value+total"
     csv:
@@ -167,10 +165,8 @@ outputs:
         - "#org+name+receiver"
         - "#indicator+bool+humanitarian"
         - "#indicator+bool+strict"
-        - "#x_transaction_type"
         - "#x_transaction_direction"
         - "#value+total"
-
   orgs:
     headers:
       - "Reporting org id"
