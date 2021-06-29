@@ -61,7 +61,7 @@ class Activity:
     def sum_transactions_by_type(self):
         totals = dict()
         for transaction in self.transactions:
-            key = f'{transaction.direction} {transaction.classification}'
+            key = f'{transaction.get_direction()} {transaction.get_classification()}'
             totals[key] = totals.get(key, 0) + transaction.value
         return totals
 
@@ -99,7 +99,7 @@ class Activity:
                 self.spending_factor = 0.0
 
     def add_to_flows(self, out_flows, transaction, funder, implementer):
-        if transaction.classification != 'spending':
+        if transaction.get_classification() != 'spending':
             return
         provider, receiver = transaction.get_provider_receiver()
         if funder and provider['name'] == Lookups.default_org_name:
@@ -115,7 +115,7 @@ class Activity:
             if (not receiver_name or receiver_name == Lookups.default_org_name) and receiver['id']:
                 receiver_name = receiver['id']
             key = self.org['name'], provider_name, receiver_name,\
-                  transaction.is_humanitarian, transaction.is_strict, transaction.direction
+                  transaction.is_humanitarian, transaction.is_strict, transaction.get_direction()
             # ignore internal transactions or unknown reporting orgs
             cur_output = out_flows.get(key, dict())
             cur_output['value'] = cur_output.get('value', 0) + transaction.value
@@ -123,7 +123,7 @@ class Activity:
                 cur_output['row'] = [self.org['id'], self.org['name'], self.org['type'], provider['id'],
                                      provider_name, provider['type'], receiver['id'], receiver_name,
                                      receiver['type'], transaction.is_humanitarian, transaction.is_strict,
-                                     transaction.direction]
+                                     transaction.get_direction()]
             out_flows[key] = cur_output
 
     def generate_split_transactions(self, out_transactions, transaction):
@@ -150,7 +150,7 @@ class Activity:
                     # add to transactions
                     out_transactions.append([transaction.month, self.org['id'], self.org['name'], self.org['type'],
                                              sector_name, country_name, transaction.is_humanitarian,
-                                             transaction.is_strict, transaction.classification, self.identifier,
+                                             transaction.is_strict, transaction.get_classification(), self.identifier,
                                              net_money, total_money])
 
     def get_funder_implementer(self):

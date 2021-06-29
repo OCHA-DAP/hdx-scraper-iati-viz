@@ -9,8 +9,7 @@ class Transaction:
         """
         Use the get_transaction static method to construct
         """
-        self.classification = transaction_type_info['classification']
-        self.direction = transaction_type_info['direction']
+        self.transaction_type_info = transaction_type_info
         self.dtransaction = dtransaction
         # Convert the transaction value to USD
         self.value = Lookups.get_value_in_usd(dtransaction.value, dtransaction.currency, dtransaction.date)
@@ -25,6 +24,12 @@ class Transaction:
         if not transaction_type_info:
             return None
         return Transaction(transaction_type_info, dtransaction)
+
+    def get_classification(self):
+        return self.transaction_type_info['classification']
+
+    def get_direction(self):
+        return self.transaction_type_info['direction']
 
     def process(self, this_month, activity):
         if self.value:
@@ -44,8 +49,8 @@ class Transaction:
 
     def get_usd_net_value(self, commitment_factor, spending_factor):
         # Set the net (new money) factors based on the type (commitments or spending)
-        if self.direction == 'outgoing':
-            if self.classification == 'commitments':
+        if self.get_direction() == 'outgoing':
+            if self.get_classification() == 'commitments':
                 return self.value * commitment_factor
             else:
                 return self.value * spending_factor
@@ -73,7 +78,7 @@ class Transaction:
         return CalculateSplits.make_sector_splits(self.dtransaction, activity_sector_splits)
 
     def get_provider_receiver(self):
-        if self.direction == 'incoming':
+        if self.get_direction() == 'incoming':
             provider = Lookups.get_org_info(self.dtransaction.provider_org)
             receiver = {'id': '', 'name': '', 'type': ''}
         else:
