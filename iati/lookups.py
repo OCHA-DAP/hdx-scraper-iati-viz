@@ -29,6 +29,8 @@ class Lookups:
     orgs_lookedup = set()
     default_org_id = None
     default_org_name = None
+    default_expenditure_org_name = None
+    default_all_org_names = list()
     sector_info = None
     default_sector = None
     default_country = None
@@ -51,6 +53,10 @@ class Lookups:
         cls.sector_info = load_json(configuration['sector_data'])
         cls.default_org_id = configuration['default_org_id']
         cls.default_org_name = configuration['default_org_name']
+        cls.default_all_org_names.append(cls.default_org_name)
+        cls.default_expenditure_org_name = configuration['default_expenditure_org_name']
+        cls.default_all_org_names.append(cls.default_expenditure_org_name)
+
         cls.default_sector = configuration['default_sector']
         cls.default_country = configuration['default_country']
         rates_path = retriever.retrieve_file(configuration['rates_url'], 'rates.csv', 'exchange rates', True)
@@ -136,12 +142,14 @@ class Lookups:
                 cls.org_ref_to_type[ref] = org_type
 
     @classmethod
-    def get_org_info(cls, org, reporting_org=False, default_org_name=None):
+    def get_org_info(cls, org, reporting_org=False, expenditure=False):
         """ Standardise organisation names
         For now, use the first name found for an identifier.
         Later, we can reference the registry.
         """
-        if not default_org_name:
+        if expenditure:
+            default_org_name = cls.default_expenditure_org_name
+        else:
             default_org_name = cls.default_org_name
         ref, names, org_type = cls.get_cleaned_ref_name_type(org)
 

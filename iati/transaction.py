@@ -86,6 +86,6 @@ class Transaction:
             receiver = {'id': '', 'name': '', 'type': ''}
         else:
             provider = {'id': '', 'name': '', 'type': ''}
-            default_org_name = None
-            receiver = Lookups.get_org_info(self.dtransaction.receiver_org, default_org_name=default_org_name)
+            expenditure = self.get_label() == 'Expenditure'
+            receiver = Lookups.get_org_info(self.dtransaction.receiver_org, expenditure=expenditure)
         return provider, receiver
