@@ -25,6 +25,9 @@ class Transaction:
             return None
         return Transaction(transaction_type_info, dtransaction)
 
+    def get_label(self):
+        return self.transaction_type_info['label']
+
     def get_classification(self):
         return self.transaction_type_info['classification']
 
@@ -83,5 +86,6 @@ class Transaction:
             receiver = {'id': '', 'name': '', 'type': ''}
         else:
             provider = {'id': '', 'name': '', 'type': ''}
-            receiver = Lookups.get_org_info(self.dtransaction.receiver_org)
+            default_org_name = None
+            receiver = Lookups.get_org_info(self.dtransaction.receiver_org, default_org_name=default_org_name)
         return provider, receiver

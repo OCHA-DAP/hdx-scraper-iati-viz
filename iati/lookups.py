@@ -136,11 +136,13 @@ class Lookups:
                 cls.org_ref_to_type[ref] = org_type
 
     @classmethod
-    def get_org_info(cls, org, reporting_org=False):
+    def get_org_info(cls, org, reporting_org=False, default_org_name=None):
         """ Standardise organisation names
         For now, use the first name found for an identifier.
         Later, we can reference the registry.
         """
+        if not default_org_name:
+            default_org_name = cls.default_org_name
         ref, names, org_type = cls.get_cleaned_ref_name_type(org)
 
         refs = list()
@@ -179,18 +181,18 @@ class Lookups:
         elif names:
             name = names[0]
         else:
-            name = cls.default_org_name
+            name = default_org_name
 
         preferred_type = None
         if ref and ref != cls.default_org_id:
             if reporting_org:
-                if name != cls.default_org_name:
+                if name != default_org_name:
                     cls.orgs_lookedup.add((ref, name))
-            elif ref in cls.org_ref_blocklist and name and name != cls.default_org_name:
+            elif ref in cls.org_ref_blocklist and name and name != default_org_name:
                 ref = cls.org_names_to_ref.get(name.lower())
             if ref:
                 preferred_type = cls.org_ref_to_type.get(ref)
-        if not preferred_type and name and name != cls.default_org_name:
+        if not preferred_type and name and name != default_org_name:
             preferred_type = cls.org_names_to_type.get(name.lower())
         if preferred_type:
             org_type = preferred_type
