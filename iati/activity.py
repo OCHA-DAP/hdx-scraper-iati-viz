@@ -104,7 +104,7 @@ class Activity:
         provider, receiver = transaction.get_provider_receiver()
         if funder and provider['name'] == Lookups.default_org_name:
             provider = funder
-        if implementer and receiver['name'] in Lookups.default_all_org_names:
+        if implementer and receiver['name'] == Lookups.default_org_name:
             receiver = implementer
         org_name = self.org['name']
         if org_name != Lookups.default_org_name and org_name != provider['name'] and org_name != receiver['name']:
@@ -112,7 +112,7 @@ class Activity:
             if (not provider_name or provider_name == Lookups.default_org_name) and provider['id']:
                 provider_name = provider['id']
             receiver_name = receiver['name']
-            if (not receiver_name or receiver_name in Lookups.default_all_org_names) and receiver['id']:
+            if (not receiver_name or receiver_name == Lookups.default_org_name) and receiver['id']:
                 receiver_name = receiver['id']
             key = self.org['name'], provider_name, receiver_name,\
                   transaction.is_humanitarian, transaction.is_strict, transaction.get_direction()

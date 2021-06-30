@@ -30,7 +30,6 @@ class Lookups:
     default_org_id = None
     default_org_name = None
     default_expenditure_org_name = None
-    default_all_org_names = list()
     sector_info = None
     default_sector = None
     default_country = None
@@ -53,9 +52,7 @@ class Lookups:
         cls.sector_info = load_json(configuration['sector_data'])
         cls.default_org_id = configuration['default_org_id']
         cls.default_org_name = configuration['default_org_name']
-        cls.default_all_org_names.append(cls.default_org_name)
         cls.default_expenditure_org_name = configuration['default_expenditure_org_name']
-        cls.default_all_org_names.append(cls.default_expenditure_org_name)
 
         cls.default_sector = configuration['default_sector']
         cls.default_country = configuration['default_country']
