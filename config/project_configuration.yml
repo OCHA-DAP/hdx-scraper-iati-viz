@@ -50,7 +50,8 @@ lookups:
   rates_url: "https://codeforiati.org/exchangerates-scraper/consolidated.csv"
   fallback_rates_url: "https://api.exchangerate.host/latest?base=usd"
   default_org_id: ""
-  default_org_name: "(unspecified org)"
+  default_org_name: "(Unspecified org)"
+  default_expenditure_org_name: "(Direct expenditure)"
   default_sector: "(Unspecified sector)"
   default_country: "(Unspecified country)"
 

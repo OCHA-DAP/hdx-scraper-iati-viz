@@ -29,6 +29,7 @@ class Lookups:
     orgs_lookedup = set()
     default_org_id = None
     default_org_name = None
+    default_expenditure_org_name = None
     sector_info = None
     default_sector = None
     default_country = None
@@ -51,6 +52,8 @@ class Lookups:
         cls.sector_info = load_json(configuration['sector_data'])
         cls.default_org_id = configuration['default_org_id']
         cls.default_org_name = configuration['default_org_name']
+        cls.default_expenditure_org_name = configuration['default_expenditure_org_name']
+
         cls.default_sector = configuration['default_sector']
         cls.default_country = configuration['default_country']
         rates_path = retriever.retrieve_file(configuration['rates_url'], 'rates.csv', 'exchange rates', True)
@@ -136,11 +139,15 @@ class Lookups:
                 cls.org_ref_to_type[ref] = org_type
 
     @classmethod
-    def get_org_info(cls, org, reporting_org=False):
+    def get_org_info(cls, org, reporting_org=False, expenditure=False):
         """ Standardise organisation names
         For now, use the first name found for an identifier.
         Later, we can reference the registry.
         """
+        if expenditure:
+            default_org_name = cls.default_expenditure_org_name
+        else:
+            default_org_name = cls.default_org_name
         ref, names, org_type = cls.get_cleaned_ref_name_type(org)
 
         refs = list()
@@ -179,18 +186,18 @@ class Lookups:
         elif names:
             name = names[0]
         else:
-            name = cls.default_org_name
+            name = default_org_name
 
         preferred_type = None
         if ref and ref != cls.default_org_id:
             if reporting_org:
-                if name != cls.default_org_name:
+                if name != default_org_name:
                     cls.orgs_lookedup.add((ref, name))
-            elif ref in cls.org_ref_blocklist and name and name != cls.default_org_name:
+            elif ref in cls.org_ref_blocklist and name and name != default_org_name:
                 ref = cls.org_names_to_ref.get(name.lower())
             if ref:
                 preferred_type = cls.org_ref_to_type.get(ref)
-        if not preferred_type and name and name != cls.default_org_name:
+        if not preferred_type and name and name != default_org_name:
             preferred_type = cls.org_names_to_type.get(name.lower())
         if preferred_type:
             org_type = preferred_type

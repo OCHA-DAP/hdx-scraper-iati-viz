@@ -1,5 +1,8 @@
 Reporting org id,Reporting org name,Reporting org type,Provider org id,Provider org name,Provider org type,Receiver org id,Receiver org name,Receiver org type,Humanitarian?,Strict?,Transaction direction,Total money
 #org+id+reporting,#org+name+reporting,#org+reporting+type,#org+id+provider,#org+name+provider,#org+type+provider,#org+id+receiver,#org+name+receiver,#org+type+receiver,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_direction,#value+total
+lb-moi-497,ABAAD- Resource Center for Gender Equality,22,,,,,(Direct expenditure),,1,0,outgoing,1112742
+gb-coh-294860,ADD International,21,,,,,(Direct expenditure),,0,0,outgoing,2178
+gb-coh-294860,ADD International,21,,,,,(Direct expenditure),,0,1,outgoing,165845
 gb-coh-294860,ADD International,21,gb-chc-207544,Sightsavers,21,,,,0,0,incoming,97065
 gb-coh-294860,ADD International,21,gb-chc-207544,Sightsavers,21,,,,0,1,incoming,131689
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,"AbMax Biotechnology Co., Ltd.",,0,1,outgoing,100000
@@ -84,8 +87,9 @@ gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,xm-dac-41121,Unite
 gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,xm-dac-41127,United Nations Office for the Coordination of Huma,40,1,1,outgoing,4939200
 gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,us-gov-1,United States Agency for International Development (USAID),10,0,1,outgoing,609700
 gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,xm-dac-928,World Health Organization (WHO),40,0,0,outgoing,85880500
-gb-coh-1762840,HelpAge International,21,,,,,(unspecified org),,1,0,outgoing,65968
-gb-coh-1762840,HelpAge International,21,,,,,(unspecified org),,1,1,outgoing,13148
+gb-coh-1762840,HelpAge International,21,,,,,(Direct expenditure),,0,1,outgoing,25040
+gb-coh-1762840,HelpAge International,21,,,,,(Direct expenditure),,1,0,outgoing,310715
+gb-coh-1762840,HelpAge International,21,,,,,(Direct expenditure),,1,1,outgoing,436621
 gb-coh-1762840,HelpAge International,21,,,,,"African Woman's AIDS Working Group (AFRIWAG), Tanzania",,1,0,outgoing,23496
 gb-coh-1762840,HelpAge International,21,,,,,"Good Samaritan Social Service Trust, Tanzania",22,1,0,outgoing,12181
 gb-coh-1762840,HelpAge International,21,,,,,"Jumuhia ya Wazee (JUWAZA), Zanzibar",22,1,0,outgoing,19066
@@ -98,7 +102,11 @@ gb-coh-1762840,HelpAge International,21,gb-chc-1128267-8,Age International,21,,,
 gb-coh-1762840,HelpAge International,21,gb-chc-1128267-8,Age International,21,,,,1,1,incoming,561803
 gb-coh-1762840,HelpAge International,21,,HelpAge Canada,21,,,,0,1,incoming,21328
 nl-kvk-27108436,Oxfam Novib,21,,,,,Center for Education Promotion and CEPEW,,0,0,outgoing,16862
+ng-cac-30547,PARADIGM INITIATIVE,21,,,,,(Direct expenditure),,1,0,outgoing,-189449
+ng-cac-30547,PARADIGM INITIATIVE,21,,,,,(Direct expenditure),,1,1,outgoing,-46691
 ng-cac-30547,PARADIGM INITIATIVE,21,xm-dac-7,GOVERNMENT OF NETHERLANDS,10,,,,1,0,incoming,395662
+gb-coh-871954,Practical Action,21,,,,,(Direct expenditure),,0,0,outgoing,375675
+gb-coh-871954,Practical Action,21,,,,,(Direct expenditure),,0,1,outgoing,15592
 gb-coh-871954,Practical Action,21,,AECF (Africa Enterprise Challenge Fund),,,,,0,1,incoming,18100
 gb-coh-871954,Practical Action,21,dac-1601,Bill and Melinda Gates Foundation,60,,,,0,0,incoming,6241
 gb-coh-871954,Practical Action,21,dac-1601,Bill and Melinda Gates Foundation,60,,,,0,1,incoming,0
@@ -124,12 +132,16 @@ ch-4,Swiss Agency for Development and Cooperation (SDC),10,,,,xm-dac-23000,ONG b
 ch-4,Swiss Agency for Development and Cooperation (SDC),10,,,,xm-dac-23000,ONG basée dans un pays en développement,23,0,1,outgoing,406290
 ch-4,Swiss Agency for Development and Cooperation (SDC),10,,,,xm-dac-41140,Programme alimentaire mondial,40,0,0,outgoing,1809750
 ch-4,Swiss Agency for Development and Cooperation (SDC),10,,,,xm-dac-41140,Programme alimentaire mondial,40,0,1,outgoing,5259586
+ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,,,,,(Direct expenditure),,1,0,outgoing,143252
 ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,xm-dac-7,GOVERNMENT OF NETHERLANDS,10,,,,0,1,incoming,1198000
+xm-dac-41114,United Nations Development Programme,40,,,,,(Direct expenditure),,0,0,outgoing,1430
+xm-dac-41114,United Nations Development Programme,40,,,,,(Direct expenditure),,0,1,outgoing,8229
 xm-dac-41114,United Nations Development Programme,40,gb-6,BRITISH EMBASSY,10,,,,0,1,incoming,11999
 xm-dac-41114,United Nations Development Programme,40,00004,FOOD AND AGRICULTURE ORGANIZATION OF THE UNITED NATIONS,,,,,0,1,incoming,69940
 xm-dac-41114,United Nations Development Programme,40,00085,"GOVERNMENT OF CAMEROON, REPUBLIC OF",10,,,,0,1,incoming,1820714
 xm-dac-41114,United Nations Development Programme,40,xm-dac-301-2,International Development Research Centre,10,,,,0,0,incoming,417045
 xm-dac-41114,United Nations Development Programme,40,12994,MPTFO - Joint SDG Fund (previously known as The Joint Fund for the 2030 Agenda),40,,,,0,1,incoming,150762
 xm-dac-41114,United Nations Development Programme,40,10500,UNITED NATIONS FOUNDATION,,,,,0,0,incoming,368317
-lk-drc-ga139,Women's Fund Asia,23,,,,,(unspecified org),,0,0,outgoing,101581
-lk-drc-ga139,Women's Fund Asia,23,,,,,(unspecified org),,0,1,outgoing,28363
+lk-drc-ga139,Women's Fund Asia,23,,,,,(Direct expenditure),,0,0,outgoing,84081
+lk-drc-ga139,Women's Fund Asia,23,,,,,(Unspecified org),,0,0,outgoing,17500
+lk-drc-ga139,Women's Fund Asia,23,,,,,(Unspecified org),,0,1,outgoing,28363
