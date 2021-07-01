@@ -118,7 +118,7 @@ class Lookups:
             if cur_ref:
                 if cur_ref not in cls.org_ref_to_name:
                     cls.org_ref_to_name[cur_ref] = name
-            if ref:
+            if ref and ref != lower_name:
                 if is_participating_org and ref in cls.org_ref_blocklist:
                     continue
                 if cur_ref:
