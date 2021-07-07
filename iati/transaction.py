@@ -11,8 +11,13 @@ class Transaction:
         """
         self.transaction_type_info = transaction_type_info
         self.dtransaction = dtransaction
+        self.date = dtransaction.date
+        # # Use value-date falling back on date
+        # self.date = dtransaction.value_date
+        # if not self.date:
+        #     self.date = dtransaction.date
         # Convert the transaction value to USD
-        self.value = Lookups.get_value_in_usd(dtransaction.value, dtransaction.currency, dtransaction.date)
+        self.value = Lookups.get_value_in_usd(dtransaction.value, dtransaction.currency, self.date)
 
     @staticmethod
     def get_transaction(configuration, dtransaction):
@@ -36,8 +41,8 @@ class Transaction:
 
     def process(self, this_month, activity):
         if self.value:
-            self.month = self.dtransaction.date[:7]
-            if self.month < '2020-01' or self.month > this_month:
+            self.month = self.date[:7]
+            if (Lookups.filter_transaction_date and self.month < Lookups.filter_transaction_date) or self.month > this_month:
                 # Skip transactions with out-of-range months
                 return False
         else:
@@ -68,9 +73,9 @@ class Transaction:
         return 1 if is_humanitarian else 0
 
     def is_strict(self, activity_strict):
-        is_strict = True if (checks['use'].has_desired_sector(self.dtransaction.sectors) or
+        is_strict = True if (Lookups.checks.has_desired_sector(self.dtransaction.sectors) or
                              (self.dtransaction.description and
-                              checks['use'].is_desired_narrative(self.dtransaction.description.narratives))) else False
+                              Lookups.checks.is_desired_narrative(self.dtransaction.description.narratives))) else False
         is_strict = is_strict or activity_strict
         return 1 if is_strict else 0
 

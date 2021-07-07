@@ -54,8 +54,8 @@ class Activity:
         return activity, skipped
 
     def is_strict(self):
-        return True if (checks['use'].has_desired_scope(self.dactivity.humanitarian_scopes) or checks['use'].has_desired_tag(self.dactivity.tags) or
-                        checks['use'].has_desired_sector(self.dactivity.sectors) or checks['use'].is_desired_narrative(self.dactivity.title.narratives)) \
+        return True if (Lookups.checks.has_desired_scope(self.dactivity.humanitarian_scopes) or Lookups.checks.has_desired_tag(self.dactivity.tags) or
+                        Lookups.checks.has_desired_sector(self.dactivity.sectors) or Lookups.checks.is_desired_narrative(self.dactivity.title.narratives)) \
             else False
 
     def sum_transactions_by_type(self):

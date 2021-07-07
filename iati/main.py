@@ -89,8 +89,9 @@ def write(today, configuration, configuration_key, rows, skipped=None):
             output_json.write('}')
 
 
-def start(configuration, today, retriever, dportal_params, whattorun):
-    checks['use'] = checks[whattorun]
+def start(configuration, today, retriever, dportal_params, whattorun, filterdate):
+    Lookups.checks = checks[whattorun]
+    Lookups.filter_transaction_date = filterdate
     generator = retrieve_dportal(configuration, retriever, dportal_params, whattorun)
     Lookups.setup(configuration['lookups'], retriever)
     CalculateSplits.setup(configuration['calculate_splits'])

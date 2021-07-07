@@ -37,6 +37,8 @@ class Lookups:
     fallback_rates = None
     filter_reporting_orgs = list()
     filter_reporting_orgs_children = list()
+    checks = None
+    filter_transaction_date = None
 
     @classmethod
     def setup(cls, configuration, retriever):
