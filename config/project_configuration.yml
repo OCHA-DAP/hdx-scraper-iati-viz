@@ -4,7 +4,7 @@ dportal:
   filename: "dportal_{}.xml"
   limit: 100
   url: "http://d-portal.org/dquery?form=xml&sql=%s"
-  query: "
+  covid_query: "
 SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
     SELECT aid FROM xson WHERE
     (
@@ -39,6 +39,25 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
         root='/iati-activities/iati-activity/transaction/sector' AND
         xson->>'@code'='12264' AND
         (xson->>'@vocabulary'='1' OR xson->>'@vocabulary'='' OR xson->>'@vocabulary' IS NULL)
+    ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {}
+)"
+  ebola_query: "
+SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
+    SELECT aid FROM xson WHERE
+    (
+        root='/iati-activities/iati-activity/humanitarian-scope' AND
+        xson->>'@type'='2' AND
+        xson->>'@vocabulary'='2-1' AND
+        xson->>'@code'='OXEBOLA1415'
+    ) OR (
+        root='/iati-activities/iati-activity/title/narrative' AND
+        to_tsvector('simple', xson->>'') @@ to_tsquery('simple','EBOLA')
+    ) OR (
+        root='/iati-activities/iati-activity/description/narrative' AND
+        to_tsvector('simple', xson->>'') @@ to_tsquery('simple','EBOLA')
+    ) OR (
+        root='/iati-activities/iati-activity/transaction/description/narrative' AND
+        to_tsvector('simple', xson->>'') @@ to_tsquery('simple','EBOLA')
     ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {}
 )"
 

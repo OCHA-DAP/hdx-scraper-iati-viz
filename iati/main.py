@@ -8,6 +8,7 @@ from urllib.parse import quote
 import diterator
 import unicodecsv
 
+from iati import checks
 from iati.activity import Activity
 from iati.calculatesplits import CalculateSplits
 from iati.lookups import Lookups
@@ -15,7 +16,7 @@ from iati.lookups import Lookups
 logger = logging.getLogger(__name__)
 
 
-def retrieve_dportal(configuration, retriever, dportal_params):
+def retrieve_dportal(configuration, retriever, dportal_params, whattorun):
     """
     Downloads activity data from D-Portal. Filters them and returns a
     list of activities.
@@ -33,7 +34,7 @@ def retrieve_dportal(configuration, retriever, dportal_params):
             offset = n * dportal_limit
             params = f'LIMIT {dportal_limit} OFFSET {offset}'
             logger.info(f'OFFSET {offset}')
-        url = dportal_configuration['url'] % quote(dportal_configuration['query'].format(params))
+        url = dportal_configuration['url'] % quote(dportal_configuration[f'{whattorun}_query'].format(params))
         filename = base_filename.format(n)
         text = retriever.retrieve_text(url, filename, 'D-Portal activities', False)
         if '<iati-activity' in text:
@@ -88,8 +89,9 @@ def write(today, configuration, configuration_key, rows, skipped=None):
             output_json.write('}')
 
 
-def start(configuration, today, retriever, dportal_params):
-    generator = retrieve_dportal(configuration, retriever, dportal_params)
+def start(configuration, today, retriever, dportal_params, whattorun):
+    checks['use'] = checks[whattorun]
+    generator = retrieve_dportal(configuration, retriever, dportal_params, whattorun)
     Lookups.setup(configuration['lookups'], retriever)
     CalculateSplits.setup(configuration['calculate_splits'])
 

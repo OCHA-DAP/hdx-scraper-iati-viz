@@ -30,11 +30,12 @@ def parse_args():
     parser.add_argument('-sv', '--save', default=False, action='store_true', help='Save downloaded data')
     parser.add_argument('-usv', '--use_saved', default=False, action='store_true', help='Use saved data')
     parser.add_argument('-dp', '--dportal_params', default='', help='Parameters for DPortal query (eg. limit X, offset Y')
+    parser.add_argument('-wh', '--what', default='covid', help='What to run eg. covid, ebola')
     args = parser.parse_args()
     return args
 
 
-def main(saved_dir, save, use_saved, dportal_params, **ignore):
+def main(saved_dir, save, use_saved, dportal_params, whattorun, **ignore):
     logger.info('##### hdx-scraper-iati-viz version %.1f ####' % VERSION)
     configuration = Configuration.read()
     output_dir = configuration['outputs']['folder']
@@ -43,7 +44,7 @@ def main(saved_dir, save, use_saved, dportal_params, **ignore):
     with Download() as downloader:
         retriever = Retrieve(downloader, configuration['fallback_dir'], saved_dir, output_dir, save, use_saved)
         today = datetime.utcnow().isoformat()
-        start(configuration, today, retriever, dportal_params)
+        start(configuration, today, retriever, dportal_params, whattorun)
 
 
 if __name__ == '__main__':
@@ -61,4 +62,4 @@ if __name__ == '__main__':
         hdx_site = getenv('HDX_SITE', 'prod')
     facade(main, hdx_read_only=True, user_agent=user_agent, preprefix=preprefix, hdx_site=hdx_site,
            project_config_yaml=join('config', 'project_configuration.yml'), saved_dir=args.saved_dir, save=args.save,
-           use_saved=args.use_saved, dportal_params=args.dportal_params)
+           use_saved=args.use_saved, dportal_params=args.dportal_params, whattorun=args.what)

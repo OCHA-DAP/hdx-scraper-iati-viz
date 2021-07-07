@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from iati.calculatesplits import CalculateSplits
-from iati.covidchecks import has_c19_sector, is_c19_narrative
+from iati import checks
 from iati.lookups import Lookups
 
 
@@ -68,9 +68,9 @@ class Transaction:
         return 1 if is_humanitarian else 0
 
     def is_strict(self, activity_strict):
-        is_strict = True if (has_c19_sector(self.dtransaction.sectors) or
+        is_strict = True if (checks['use'].has_desired_sector(self.dtransaction.sectors) or
                              (self.dtransaction.description and
-                              is_c19_narrative(self.dtransaction.description.narratives))) else False
+                              checks['use'].is_desired_narrative(self.dtransaction.description.narratives))) else False
         is_strict = is_strict or activity_strict
         return 1 if is_strict else 0
 

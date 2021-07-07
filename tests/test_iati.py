@@ -30,7 +30,7 @@ class TestIATI:
                 retriever = Retrieve(downloader, tempdir, fixtures_dir, tempdir, save=False, use_saved=True)
                 configuration['outputs']['folder'] = tempdir
                 today = '2021-05-06'
-                start(configuration, today, retriever, dportal_params=None)
+                start(configuration, today, retriever, dportal_params=None, whattorun='covid')
                 for filename in ('flows', 'transactions', 'reporting_orgs'):
                     csv_filename = f'{filename}.csv'
                     expected_file = join(fixtures_dir, csv_filename)

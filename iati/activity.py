@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from iati.calculatesplits import CalculateSplits
-from iati.covidchecks import has_c19_scope, has_c19_tag, has_c19_sector, is_c19_narrative
+from iati import checks
 from iati.lookups import Lookups
 from iati.transaction import Transaction
 
@@ -54,8 +54,8 @@ class Activity:
         return activity, skipped
 
     def is_strict(self):
-        return True if (has_c19_scope(self.dactivity.humanitarian_scopes) or has_c19_tag(self.dactivity.tags) or
-                        has_c19_sector(self.dactivity.sectors) or is_c19_narrative(self.dactivity.title.narratives)) \
+        return True if (checks['use'].has_desired_scope(self.dactivity.humanitarian_scopes) or checks['use'].has_desired_tag(self.dactivity.tags) or
+                        checks['use'].has_desired_sector(self.dactivity.sectors) or checks['use'].is_desired_narrative(self.dactivity.title.narratives)) \
             else False
 
     def sum_transactions_by_type(self):
