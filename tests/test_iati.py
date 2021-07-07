@@ -24,11 +24,7 @@ class TestIATI:
     def fixtures_dir(self):
         return join('tests', 'fixtures')
 
-    @pytest.fixture(scope='class')
-    def input_dir(self, fixtures_dir):
-        return join(fixtures_dir, 'input')
-
-    def test_run(self, configuration, fixtures_dir, input_dir):
+    def test_run(self, configuration, fixtures_dir):
         with temp_dir('TestIATIViz', delete_on_success=True, delete_on_failure=False) as tempdir:
             with Download(user_agent='test') as downloader:
                 retriever = Retrieve(downloader, tempdir, fixtures_dir, tempdir, save=False, use_saved=True)
