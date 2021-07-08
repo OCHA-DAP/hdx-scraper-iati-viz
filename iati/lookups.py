@@ -37,6 +37,8 @@ class Lookups:
     fallback_rates = None
     filter_reporting_orgs = list()
     filter_reporting_orgs_children = list()
+    checks = None
+    filter_transaction_date = None
 
     @classmethod
     def setup(cls, configuration, retriever):
@@ -253,6 +255,5 @@ class Lookups:
         except exchangerates.UnknownCurrencyException:
             fx_rate = cls.fallback_rates.get(currency)
             if fx_rate is None:
-                logger.exception(f'Currency {currency} is invalid!')
-                return 0
+                raise ValueError(f'Currency {currency} is invalid!')
         return value / fx_rate

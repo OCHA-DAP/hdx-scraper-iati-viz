@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
 from iati.calculatesplits import CalculateSplits
-from iati.covidchecks import has_c19_sector, is_c19_narrative
+from iati import checks
 from iati.lookups import Lookups
 
 
 class Transaction:
-    def __init__(self, transaction_type_info, dtransaction):
+    def __init__(self, transaction_type_info, dtransaction, date, value):
         """
         Use the get_transaction static method to construct
         """
         self.transaction_type_info = transaction_type_info
         self.dtransaction = dtransaction
-        # Convert the transaction value to USD
-        self.value = Lookups.get_value_in_usd(dtransaction.value, dtransaction.currency, dtransaction.date)
+        self.date = date
+        self.value = value
 
     @staticmethod
     def get_transaction(configuration, dtransaction):
@@ -23,7 +23,17 @@ class Transaction:
         transaction_type_info = configuration['transaction_type_info'].get(dtransaction.type)
         if not transaction_type_info:
             return None
-        return Transaction(transaction_type_info, dtransaction)
+        # We're not interested in transactions that can't be valued
+        try:
+            # Use value-date falling back on date
+            date = dtransaction.value_date
+            if not date:
+                date = dtransaction.date
+            # Convert the transaction value to USD
+            value = Lookups.get_value_in_usd(dtransaction.value, dtransaction.currency, date)
+        except (ValueError, AttributeError):
+            return None
+        return Transaction(transaction_type_info, dtransaction, date, value)
 
     def get_label(self):
         return self.transaction_type_info['label']
@@ -36,8 +46,8 @@ class Transaction:
 
     def process(self, this_month, activity):
         if self.value:
-            self.month = self.dtransaction.date[:7]
-            if self.month < '2020-01' or self.month > this_month:
+            self.month = self.date[:7]
+            if (Lookups.filter_transaction_date and self.month < Lookups.filter_transaction_date) or self.month > this_month:
                 # Skip transactions with out-of-range months
                 return False
         else:
@@ -68,9 +78,9 @@ class Transaction:
         return 1 if is_humanitarian else 0
 
     def is_strict(self, activity_strict):
-        is_strict = True if (has_c19_sector(self.dtransaction.sectors) or
+        is_strict = True if (Lookups.checks.has_desired_sector(self.dtransaction.sectors) or
                              (self.dtransaction.description and
-                              is_c19_narrative(self.dtransaction.description.narratives))) else False
+                              Lookups.checks.is_desired_narrative(self.dtransaction.description.narratives))) else False
         is_strict = is_strict or activity_strict
         return 1 if is_strict else 0
 
