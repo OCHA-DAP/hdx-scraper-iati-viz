@@ -5,19 +5,14 @@ from iati.lookups import Lookups
 
 
 class Transaction:
-    def __init__(self, transaction_type_info, dtransaction):
+    def __init__(self, transaction_type_info, dtransaction, date, value):
         """
         Use the get_transaction static method to construct
         """
         self.transaction_type_info = transaction_type_info
         self.dtransaction = dtransaction
-        self.date = dtransaction.date
-        # # Use value-date falling back on date
-        # self.date = dtransaction.value_date
-        # if not self.date:
-        #     self.date = dtransaction.date
-        # Convert the transaction value to USD
-        self.value = Lookups.get_value_in_usd(dtransaction.value, dtransaction.currency, self.date)
+        self.date = date
+        self.value = value
 
     @staticmethod
     def get_transaction(configuration, dtransaction):
@@ -28,7 +23,17 @@ class Transaction:
         transaction_type_info = configuration['transaction_type_info'].get(dtransaction.type)
         if not transaction_type_info:
             return None
-        return Transaction(transaction_type_info, dtransaction)
+        # We're not interested in transactions that can't be valued
+        try:
+            # Use value-date falling back on date
+            date = dtransaction.value_date
+            if not date:
+                date = dtransaction.date
+            # Convert the transaction value to USD
+            value = Lookups.get_value_in_usd(dtransaction.value, dtransaction.currency, date)
+        except (ValueError, AttributeError):
+            return None
+        return Transaction(transaction_type_info, dtransaction, date, value)
 
     def get_label(self):
         return self.transaction_type_info['label']
