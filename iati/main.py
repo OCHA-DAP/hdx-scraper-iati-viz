@@ -90,6 +90,11 @@ def write(today, output_dir, configuration, configuration_key, rows, skipped=Non
 
 
 def start(configuration, today, retriever, output_dir, dportal_params, whattorun, filterdate):
+    if filterdate:
+        text = f'removing transactions before {filterdate}'
+    else:
+        text = 'without removing transactions before a certain date'
+    logger.info(f'Running {whattorun} {text}')
     Lookups.checks = checks[whattorun]
     Lookups.filter_transaction_date = filterdate
     generator = retrieve_dportal(configuration, retriever, dportal_params, whattorun)
