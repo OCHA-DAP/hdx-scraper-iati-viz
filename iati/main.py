@@ -45,8 +45,8 @@ def retrieve_dportal(configuration, retriever, dportal_params, whattorun):
             dont_exit = False
 
 
-def write(today, configuration, configuration_key, rows, skipped=None):
-    output_dir = configuration['folder']
+def write(today, output_dir, configuration, configuration_key, rows, skipped=None):
+    logger.info(f'Writing {configuration_key} files to {output_dir}')
     file_configuration = configuration[configuration_key]
     headers = file_configuration['headers']
     hxltags = file_configuration['hxltags']
@@ -89,7 +89,7 @@ def write(today, configuration, configuration_key, rows, skipped=None):
             output_json.write('}')
 
 
-def start(configuration, today, retriever, dportal_params, whattorun, filterdate):
+def start(configuration, today, retriever, output_dir, dportal_params, whattorun, filterdate):
     Lookups.checks = checks[whattorun]
     Lookups.filter_transaction_date = filterdate
     generator = retrieve_dportal(configuration, retriever, dportal_params, whattorun)
@@ -124,12 +124,12 @@ def start(configuration, today, retriever, dportal_params, whattorun, filterdate
     outputs_configuration = configuration['outputs']
 
     # Prepare and write flows
-    write(today, outputs_configuration, 'flows',
+    write(today, output_dir, outputs_configuration, 'flows',
           [flows[key]['row']+[int(round(flows[key]['value']))] for key in sorted(flows)])
 
     # Write transactions
-    write(today, outputs_configuration, 'transactions',
+    write(today, output_dir, outputs_configuration, 'transactions',
           sorted(transactions, key=lambda x: (x[0], x[2], x[3], x[4], x[5], x[6], x[7], x[8], x[9], x[10])), all_skipped)
 
     # Write orgs
-    write(today, outputs_configuration, 'orgs', sorted(Lookups.orgs_lookedup, key=lambda x: (x[1], x[0])))
+    write(today, output_dir, outputs_configuration, 'orgs', sorted(Lookups.orgs_lookedup, key=lambda x: (x[1], x[0])))

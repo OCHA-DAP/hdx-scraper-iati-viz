@@ -101,7 +101,6 @@ transaction_type_info:
     direction: "incoming"
 
 outputs:
-  folder: output
   transactions:
     headers:
       - "Month"
