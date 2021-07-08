@@ -4,7 +4,7 @@ dportal:
   filename: "dportal_{}.xml"
   limit: 1000
   url: "http://d-portal.org/dquery?form=xml&sql=%s"
-  query: "
+  covid_query: "
 SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
     SELECT aid FROM xson WHERE
     (
@@ -82,7 +82,6 @@ transaction_type_info:
     direction: "incoming"
 
 outputs:
-  folder: output
   transactions:
     headers:
       - "Month"

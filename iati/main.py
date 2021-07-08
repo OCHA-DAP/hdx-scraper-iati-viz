@@ -8,6 +8,7 @@ from urllib.parse import quote
 import diterator
 import unicodecsv
 
+from iati import checks
 from iati.activity import Activity
 from iati.calculatesplits import CalculateSplits
 from iati.lookups import Lookups
@@ -15,7 +16,7 @@ from iati.lookups import Lookups
 logger = logging.getLogger(__name__)
 
 
-def retrieve_dportal(configuration, retriever, dportal_params):
+def retrieve_dportal(configuration, retriever, dportal_params, whattorun):
     """
     Downloads activity data from D-Portal. Filters them and returns a
     list of activities.
@@ -33,7 +34,7 @@ def retrieve_dportal(configuration, retriever, dportal_params):
             offset = n * dportal_limit
             params = f'LIMIT {dportal_limit} OFFSET {offset}'
             logger.info(f'OFFSET {offset}')
-        url = dportal_configuration['url'] % quote(dportal_configuration['query'].format(params))
+        url = dportal_configuration['url'] % quote(dportal_configuration[f'{whattorun}_query'].format(params))
         filename = base_filename.format(n)
         text = retriever.retrieve_text(url, filename, 'D-Portal activities', False)
         if '<iati-activity' in text:
@@ -44,8 +45,8 @@ def retrieve_dportal(configuration, retriever, dportal_params):
             dont_exit = False
 
 
-def write(today, configuration, configuration_key, rows, skipped=None):
-    output_dir = configuration['folder']
+def write(today, output_dir, configuration, configuration_key, rows, skipped=None):
+    logger.info(f'Writing {configuration_key} files to {output_dir}')
     file_configuration = configuration[configuration_key]
     headers = file_configuration['headers']
     hxltags = file_configuration['hxltags']
@@ -88,8 +89,10 @@ def write(today, configuration, configuration_key, rows, skipped=None):
             output_json.write('}')
 
 
-def start(configuration, today, retriever, dportal_params):
-    generator = retrieve_dportal(configuration, retriever, dportal_params)
+def start(configuration, today, retriever, output_dir, dportal_params, whattorun, filterdate):
+    Lookups.checks = checks[whattorun]
+    Lookups.filter_transaction_date = filterdate
+    generator = retrieve_dportal(configuration, retriever, dportal_params, whattorun)
     Lookups.setup(configuration['lookups'], retriever)
     CalculateSplits.setup(configuration['calculate_splits'])
 
@@ -121,12 +124,12 @@ def start(configuration, today, retriever, dportal_params):
     outputs_configuration = configuration['outputs']
 
     # Prepare and write flows
-    write(today, outputs_configuration, 'flows',
+    write(today, output_dir, outputs_configuration, 'flows',
           [flows[key]['row']+[int(round(flows[key]['value']))] for key in sorted(flows)])
 
     # Write transactions
-    write(today, outputs_configuration, 'transactions',
+    write(today, output_dir, outputs_configuration, 'transactions',
           sorted(transactions, key=lambda x: (x[0], x[2], x[3], x[4], x[5], x[6], x[7], x[8], x[9], x[10])), all_skipped)
 
     # Write orgs
-    write(today, outputs_configuration, 'orgs', sorted(Lookups.orgs_lookedup, key=lambda x: (x[1], x[0])))
+    write(today, output_dir, outputs_configuration, 'orgs', sorted(Lookups.orgs_lookedup, key=lambda x: (x[1], x[0])))
