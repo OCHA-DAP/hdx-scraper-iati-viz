@@ -32,7 +32,7 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: output
+        FOLDER: output_covid
     - name: Send mail
       if: failure()
       uses: dawidd6/action-send-mail@v2
