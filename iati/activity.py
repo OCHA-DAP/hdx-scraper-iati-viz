@@ -148,7 +148,7 @@ class Activity:
 
                 if total_money != 0:
                     # add to transactions
-                    out_transactions.append([transaction.month, self.org['id'], self.org['name'], self.org['type'],
+                    out_transactions.append([transaction.year_month, self.org['id'], self.org['name'], self.org['type'],
                                              sector_name, country_name, transaction.is_humanitarian,
                                              transaction.is_strict, transaction.get_classification(), self.identifier,
                                              net_money, total_money])
@@ -170,7 +170,7 @@ class Activity:
                 implementer = org
         return funder, implementer
 
-    def process(self, this_month, out_flows, out_transactions):
+    def process(self, today_year_month, out_flows, out_transactions):
         self.factor_new_money()
         #
         # Walk through the activity's transactions one-by-one, and split by country/sector
@@ -178,7 +178,7 @@ class Activity:
         funder, implementer = self.get_funder_implementer()
         skipped = 0
         for transaction in self.transactions:
-            if not transaction.process(this_month, self):
+            if not transaction.process(today_year_month, self):
                 skipped += 1
                 continue
             self.add_to_flows(out_flows, transaction, funder, implementer)

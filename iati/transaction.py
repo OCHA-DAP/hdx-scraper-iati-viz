@@ -5,13 +5,17 @@ from iati.lookups import Lookups
 
 
 class Transaction:
-    def __init__(self, transaction_type_info, dtransaction, date, value):
+    def __init__(self, transaction_type_info, dtransaction, value):
         """
         Use the get_transaction static method to construct
         """
         self.transaction_type_info = transaction_type_info
         self.dtransaction = dtransaction
-        self.date = date
+        # Use date falling back on value-date
+        if dtransaction.date:
+            self.year_month = dtransaction.date[:7]
+        else:
+            self.year_month = dtransaction.value_date[:7]
         self.value = value
 
     @staticmethod
@@ -33,7 +37,7 @@ class Transaction:
             value = Lookups.get_value_in_usd(dtransaction.value, dtransaction.currency, date)
         except (ValueError, AttributeError):
             return None
-        return Transaction(transaction_type_info, dtransaction, date, value)
+        return Transaction(transaction_type_info, dtransaction, value)
 
     def get_label(self):
         return self.transaction_type_info['label']
@@ -44,10 +48,9 @@ class Transaction:
     def get_direction(self):
         return self.transaction_type_info['direction']
 
-    def process(self, this_month, activity):
+    def process(self, today_year_month, activity):
         if self.value:
-            self.month = self.date[:7]
-            if (Lookups.filter_transaction_date and self.month < Lookups.filter_transaction_date) or self.month > this_month:
+            if (Lookups.filter_transaction_date and self.year_month < Lookups.filter_transaction_date) or self.year_month > today_year_month:
                 # Skip transactions with out-of-range months
                 return False
         else:
