@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 import logging
 import re
-from os.path import join
 
 import exchangerates
 import hxl
 from hdx.location.country import Country
 from hdx.utilities.dateparse import parse_date
 from hdx.utilities.loader import load_json
-from hdx.utilities.saver import save_json
 
 logger = logging.getLogger(__name__)
 
