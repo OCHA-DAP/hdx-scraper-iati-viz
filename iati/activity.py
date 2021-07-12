@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from iati.calculatesplits import CalculateSplits
-from iati import checks
 from iati.lookups import Lookups
 from iati.transaction import Transaction
 
