@@ -86,8 +86,8 @@ class Transaction:
         is_strict = is_strict or activity_strict
         return 1 if is_strict else 0
 
-    def make_country_splits(self, activity_country_splits):
-        return CalculateSplits.make_country_splits(self.dtransaction, activity_country_splits)
+    def make_country_or_region_splits(self, activity_country_splits):
+        return CalculateSplits.make_country_or_region_splits(self.dtransaction, activity_country_splits)
 
     def make_sector_splits(self, activity_sector_splits):
         return CalculateSplits.make_sector_splits(self.dtransaction, activity_sector_splits)

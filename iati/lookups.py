@@ -30,7 +30,7 @@ class Lookups:
     default_expenditure_org_name = None
     sector_info = None
     default_sector = None
-    default_country = None
+    default_country_region = None
     fx_rates = None
     fallback_rates = None
     filter_reporting_orgs = list()
@@ -55,7 +55,7 @@ class Lookups:
         cls.default_expenditure_org_name = configuration['default_expenditure_org_name']
 
         cls.default_sector = configuration['default_sector']
-        cls.default_country = configuration['default_country']
+        cls.default_country_region = configuration['default_country_region']
         rates_path = retriever.retrieve_file(configuration['rates_url'], 'rates.csv', 'exchange rates', True)
         cls.fx_rates = exchangerates.CurrencyConverter(update=False, source=rates_path)
         rjson = retriever.retrieve_json(configuration['fallback_rates_url'], 'fallbackrates.json',
@@ -242,7 +242,7 @@ class Lookups:
         countryname = Country.get_country_name_from_iso2(code)
         if countryname:
             return countryname
-        return cls.default_country
+        return cls.default_country_region
 
     @classmethod
     def get_value_in_usd(cls, value, currency, date):

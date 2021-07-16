@@ -2,18 +2,18 @@
 
 class CalculateSplits:
     default_sector = None
-    default_country = None
+    default_country_region = None
 
     @classmethod
     def setup(cls, configuration):
         cls.default_sector = configuration['default_sector']
-        cls.default_country = configuration['default_country']
+        cls.default_country_region = configuration['default_country_region']
 
     @classmethod
-    def make_country_splits(cls, entity, default_splits=None, default_country=None):
-        """ Generate recipient-country splits by percentage for an activity or transaction
-        FIXME - if there's no percentage for a country, default to 100% (could overcount)
-        If there are no countries, assign 1.0 (100%) to the default provided.
+    def make_country_or_region_splits(cls, entity, default_splits=None):
+        """ Generate recipient-country or recipient-region splits by percentage for an activity or transaction
+        FIXME - if there's no percentage for a country/region, default to 100% (could overcount)
+        If there are no countries or regions, assign 1.0 (100%) to the default provided.
         If default splits are provided (e.g. for an activity), use those.
         """
         splits = {}
@@ -21,6 +21,12 @@ class CalculateSplits:
             code = country.code
             if code:
                 splits[code.upper()] = float(country.percentage if country.percentage else 100.0) / 100.0
+        # for region in entity.recipient_regions:
+        #     if region.vocabulary != '1':
+        #         continue
+        #     code = region.code
+        #     if code:
+        #         splits[code.upper()] = float(region.percentage if region.percentage else 100.0) / 100.0
 
         if splits:
             # we have actual splits to return
@@ -30,9 +36,7 @@ class CalculateSplits:
             return default_splits
         else:
             # default to 100% for unknown country
-            if default_country is None:
-                return {cls.default_country: 1.0}
-            return {default_country: 1.0}
+            return {cls.default_country_region: 1.0}
 
     @classmethod
     def make_sector_splits(cls, entity, default_splits=None, default_sector=None):
