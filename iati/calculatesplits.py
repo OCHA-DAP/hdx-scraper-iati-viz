@@ -21,12 +21,12 @@ class CalculateSplits:
             code = country.code
             if code:
                 splits[code.upper()] = float(country.percentage if country.percentage else 100.0) / 100.0
-        # for region in entity.recipient_regions:
-        #     if region.vocabulary != '1':
-        #         continue
-        #     code = region.code
-        #     if code:
-        #         splits[code.upper()] = float(region.percentage if region.percentage else 100.0) / 100.0
+        for region in entity.recipient_regions:
+            if region.vocabulary != '1':
+                continue
+            code = region.code
+            if code:
+                splits[code.upper()] = float(region.percentage if region.percentage else 100.0) / 100.0
 
         if splits:
             # we have actual splits to return
