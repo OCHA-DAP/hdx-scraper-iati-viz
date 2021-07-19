@@ -15,8 +15,8 @@ class Activity:
         self.org = Lookups.get_org_info(dactivity.reporting_org, reporting_org=True)
         self.strict = self.is_strict()
         self.humanitarian = dactivity.humanitarian
-        # Figure out default country/sector percentage splits at the activity level
-        self.country_splits = CalculateSplits.make_country_splits(dactivity)
+        # Figure out default country or region/sector percentage splits at the activity level
+        self.countryregion_splits = CalculateSplits.make_country_or_region_splits(dactivity)
         self.sector_splits = CalculateSplits.make_sector_splits(dactivity)
         self.transactions = list()
 
@@ -127,7 +127,7 @@ class Activity:
 
     def generate_split_transactions(self, out_transactions, transaction):
         # Make the splits for the transaction (default to activity splits)
-        country_splits = transaction.make_country_splits(self.country_splits)
+        country_splits = transaction.make_country_or_region_splits(self.countryregion_splits)
         sector_splits = transaction.make_sector_splits(self.sector_splits)
 
         # Apply the country and sector percentage splits to the transaction
@@ -136,7 +136,7 @@ class Activity:
             for sector, sector_percentage in sector_splits.items():
 
                 sector_name = Lookups.get_sector_group_name(sector)
-                country_name = Lookups.get_country_name(country)
+                country_name = Lookups.get_country_region_name(country)
 
                 #
                 # Add to transactions
