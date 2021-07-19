@@ -289,7 +289,7 @@ nl-kvk-58279199,Access to Nutrition Foundation,21,,(Unspecified org),,,,,1,0,inc
 gb-chc-1047501,Action Against Hunger,21,,,,fr-rcs-31899089200065,Action Contre la Faim,21,1,1,outgoing,2542764
 gb-chc-1047501,Action Against Hunger,21,gb-chc-1062638,Disasters Emergency Committee,22,,,,1,1,incoming,353220
 gb-chc-1047501,Action Against Hunger,21,gb-gov-1,"UK - Foreign, Commonwealth and Development Office",10,,,,1,1,incoming,2486602
-bd-nab-0210,ActionAid Bangladesh,21,,,,,(Direct expenditure),,1,1,outgoing,136848
+bd-nab-0210,ActionAid Bangladesh,21,,,,,(Direct expenditure),,1,1,outgoing,136847
 bd-nab-0210,ActionAid Bangladesh,21,,,,,ALO,24,1,1,outgoing,21597
 bd-nab-0210,ActionAid Bangladesh,21,,,,,AVAS,24,1,1,outgoing,8707
 bd-nab-0210,ActionAid Bangladesh,21,,,,,Association of Voluntary Action for Society (AVAS),24,1,1,outgoing,663
@@ -338,7 +338,7 @@ ug-rsb-73316,African Center for Global Health and Social Transformation,22,,,,,(
 ug-rsb-73316,African Center for Global Health and Social Transformation,22,nl-kvk-41150298,Amref Flying Doctors,21,,,,0,0,incoming,903449
 46002,African Development Bank Group,40,,,,,(Unspecified org),,0,1,outgoing,305357797
 46002,African Development Bank Group,40,,,,,CEMAC - COMMUNAUTE ECONOMIQUE ET MONETAIRE DE L'AFRIQUE CENTRALE,,0,1,outgoing,11096505
-46002,African Development Bank Group,40,,,,,Commissariat à la Sécurité Alimentaire (,,0,0,outgoing,716449
+46002,African Development Bank Group,40,,,,,Commissariat à la Sécurité Alimentaire,,0,0,outgoing,716449
 46002,African Development Bank Group,40,,,,,EAST AFRICAN COMMUNITY (EAC),,0,1,outgoing,8795370
 46002,African Development Bank Group,40,,,,,FEDERAL MINISTRY OF FINANCE,10,0,1,outgoing,277506899
 46002,African Development Bank Group,40,,,,,G5 Sahel,,0,1,outgoing,21099650
@@ -476,7 +476,7 @@ dac-1601,Bill and Melinda Gates Foundation,60,,,,,"Calibr, a division of The Scr
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,California Institute of Technology,,0,1,outgoing,1360592
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,CanSino Biologics Inc.,,0,1,outgoing,400000
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,Carramore International Limited,,0,1,outgoing,120790
-dac-1601,Bill and Melinda Gates Foundation,60,,,,,Center for Global Development,,0,1,outgoing,1445467
+dac-1601,Bill and Melinda Gates Foundation,60,,,,us-ein-522351337,Center for Global Development,,0,1,outgoing,1445467
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,Centre for Advocacy and Research,,0,1,outgoing,199995
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,Centre for Asian Philanthropy and Society Ltd.,,0,0,outgoing,199801
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,Certara USA Inc,,0,1,outgoing,10000
@@ -841,15 +841,25 @@ gb-chc-285776,CAFOD,21,,,,,Zambia Conference of Catholic Bishops,22,0,0,outgoing
 gb-chc-285776,CAFOD,21,,,,,Zimbabwe Catholic Bishops Conference-Social Communications,22,0,1,outgoing,13693
 gb-chc-285776,CAFOD,21,,CAFOD General Funds,,,,,0,0,incoming,5510509
 gb-chc-285776,CAFOD,21,,CAFOD General Funds,,,,,0,1,incoming,1720272
-gb-chc-292506,CARE International UK,21,,,,,CARE AUSTRALIA,,1,0,outgoing,64747
-gb-chc-292506,CARE International UK,21,,,,;,CARE National Office,22,0,0,outgoing,78581
-gb-chc-292506,CARE International UK,21,,,,;,CARE National Office,22,1,0,outgoing,4887691
-gb-chc-292506,CARE International UK,21,,,,;,CARE National Office,22,1,1,outgoing,278854
-gb-chc-292506,CARE International UK,21,,,,np-ird-302274734,CARE Nepal - IU Vendor,,1,0,outgoing,641081
+gb-chc-292506,CARE International UK,21,,,,,CARE AUSTRALIA,,1,0,outgoing,169129
+gb-chc-292506,CARE International UK,21,,,,,CARE Bangladesh - IU Vendor,,0,0,outgoing,78581
+gb-chc-292506,CARE International UK,21,,,,,CARE Bangladesh - IU Vendor,,1,1,outgoing,6681
+gb-chc-292506,CARE International UK,21,,,,,CARE CHAD,,1,0,outgoing,1213922
+gb-chc-292506,CARE International UK,21,,,,,CARE International Syria,,1,0,outgoing,304644
+gb-chc-292506,CARE International UK,21,,,,,CARE International Timor-Leste,,1,0,outgoing,40254
+gb-chc-292506,CARE International UK,21,,,,,CARE LAOS,,1,0,outgoing,118776
+gb-chc-292506,CARE International UK,21,,,,,CARE Mali - IU Vendor,,1,0,outgoing,875674
+gb-chc-292506,CARE International UK,21,,,,np-ird-302274734,CARE Nepal - IU Vendor,,1,0,outgoing,941861
+gb-chc-292506,CARE International UK,21,,,,,CARE Niger - IU Vendor,,1,0,outgoing,1222923
+gb-chc-292506,CARE International UK,21,,,,,CARE Togo - IU Vendor,,1,0,outgoing,200413
+gb-chc-292506,CARE International UK,21,,,,,CARE Yemen - IU Vendor,,1,0,outgoing,250805
+gb-chc-292506,CARE International UK,21,,,,,Country Office/Partner,,1,0,outgoing,255118
+gb-chc-292506,CARE International UK,21,,,,,Country Office/Partner,,1,1,outgoing,272173
 gb-chc-292506,CARE International UK,21,,,,gb-coh-1364201,Plan International UK,21,1,0,outgoing,94580
 gb-chc-292506,CARE International UK,21,,,,gb-coh-213890,Save The Children UK,21,1,0,outgoing,-4347
-gb-chc-292506,CARE International UK,21,;,CARE National Office,22,,,,1,1,incoming,322459
 gb-chc-292506,CARE International UK,21,gb-chc-1062638,Disasters Emergency Committee,22,,,,1,0,incoming,267152
+gb-chc-292506,CARE International UK,21,,Guernsey Overseas Aid Commission,,,,,1,1,incoming,46559
+gb-chc-292506,CARE International UK,21,,Jersey Overseas Aid Commission,,,,,1,1,incoming,275900
 gb-chc-292506,CARE International UK,21,gb-coh-1110949,Mott MacDonald Group Limited,70,,,,1,0,incoming,136601
 gb-chc-292506,CARE International UK,21,gb-chc-202918,Oxfam GB,21,,,,1,0,incoming,45629
 gb-chc-292506,CARE International UK,21,gb-coh-213890,Save The Children UK,21,,,,1,0,incoming,1236365
@@ -939,8 +949,8 @@ no-brc-917687811,Coalition for Epidemic Preparedness innovations,30,dac-1601,Bil
 no-brc-917687811,Coalition for Epidemic Preparedness innovations,30,dac-1601,Bill and Melinda Gates Foundation,60,,,,0,1,incoming,19999978
 no-brc-917687811,Coalition for Epidemic Preparedness innovations,30,10159,EUROPEAN COMMISSION,90,,,,0,0,incoming,10662242
 no-brc-917687811,Coalition for Epidemic Preparedness innovations,30,10159,EUROPEAN COMMISSION,90,,,,0,1,incoming,89509486
-no-brc-917687811,Coalition for Epidemic Preparedness innovations,30,de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,0,0,incoming,30011244
-no-brc-917687811,Coalition for Epidemic Preparedness innovations,30,de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,0,1,incoming,165138105
+no-brc-917687811,Coalition for Epidemic Preparedness innovations,30,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,0,0,incoming,30011244
+no-brc-917687811,Coalition for Epidemic Preparedness innovations,30,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,0,1,incoming,165138105
 no-brc-917687811,Coalition for Epidemic Preparedness innovations,30,,Fidelity Charitable gift funds,70,,,,0,1,incoming,1489806
 no-brc-917687811,Coalition for Epidemic Preparedness innovations,30,00078,GOVERNMENT OF CANADA,10,,,,0,1,incoming,15825289
 no-brc-917687811,Coalition for Epidemic Preparedness innovations,30,dk-1,GOVERNMENT OF DENMARK,10,,,,0,0,incoming,1447399
@@ -1154,7 +1164,7 @@ xm-dac-2-10,Directorate-general Development Cooperation and Humanitarian Aid,10,
 xm-dac-2-10,Directorate-general Development Cooperation and Humanitarian Aid,10,,,,be-bce_kbo-264814354,Enabel - the Belgian development agency,10,0,0,outgoing,5966327
 xm-dac-2-10,Directorate-general Development Cooperation and Humanitarian Aid,10,,,,be-bce_kbo-264814354,Enabel - the Belgian development agency,10,0,1,outgoing,1052
 xm-dac-2-10,Directorate-general Development Cooperation and Humanitarian Aid,10,,,,41301,FAO/Food and Agriculture Organization,40,1,1,outgoing,2956000
-xm-dac-2-10,Directorate-general Development Cooperation and Humanitarian Aid,10,,,,,General / not specified ***,10,0,0,outgoing,1134874
+xm-dac-2-10,Directorate-general Development Cooperation and Humanitarian Aid,10,,,,,General / not specified *,10,0,0,outgoing,1134874
 xm-dac-2-10,Directorate-general Development Cooperation and Humanitarian Aid,10,,,,41302,ILO - International Labour Organization,40,0,1,outgoing,2351000
 xm-dac-2-10,Directorate-general Development Cooperation and Humanitarian Aid,10,,,,,Integrated Regional Information Networks (IRIN),22,1,0,outgoing,178605
 xm-dac-2-10,Directorate-general Development Cooperation and Humanitarian Aid,10,,,,44001,International Bank for Reconstruction and Development,40,0,1,outgoing,2446000
@@ -1256,7 +1266,7 @@ xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,
 xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,,FEDERATION HANDICAP INTERNATIONAL,21,1,1,outgoing,8245889
 xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,,FONDAZIONE TERRE DES HOMMES ITALIA ONLUS,21,1,1,outgoing,3774490
 xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,,"FUNDACION ALIANZA POR LOS DERECHOS, LA IGUALD Y LA SOLIDARIDAD INTERNACIONAL",21,1,1,outgoing,637752
-xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,1,1,outgoing,5554838
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,1,1,outgoing,5554838
 xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,,Fondation Caritas Luxembourg,21,1,1,outgoing,2997740
 xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,,Fondazione Opera San Francesco Saverio,21,1,1,outgoing,473600
 xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,xm-dac-41301,Food and Agriculture Organization (FAO),40,1,0,outgoing,2529353
@@ -1343,14 +1353,14 @@ xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,
 xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,,iMMAP France,21,1,1,outgoing,231235
 xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,,"ČLOVEK V TÍSNI, O.P.S.",21,1,1,outgoing,12537805
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,(Direct expenditure),,0,1,outgoing,109126
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Accao Para O Desenvolvimento Rurale Ambiente Adra*,,0,1,outgoing,206203
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Accao Para O Desenvolvimento Rurale Ambiente Adra,,0,1,outgoing,206203
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Acted,,0,1,outgoing,4330701
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Action Aid International Uganda Non Governmental Organization*Aaiu,,0,1,outgoing,305092
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Action Contre La Faim*Acf,,0,1,outgoing,9190935
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Action Des Chretiens Pour L'Abolition De La Torture En Cote D'Ivoire,,0,1,outgoing,177383
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Action On Disability And Development,,0,1,outgoing,297221
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Actionaid International (Thailand)Foundation,,0,1,outgoing,1116573
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Adelante Knowledge And Developmentsl*,,0,1,outgoing,23489
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Adelante Knowledge And Developmentsl,,0,1,outgoing,23489
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Advance Afrika Limited,,0,1,outgoing,322967
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Adventist Development And Relief Agency Foundation,,0,1,outgoing,474880
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Adventist Development And Relief Agency Uk Unincorporated Association*Adra Uk,,0,1,outgoing,2373147
@@ -1368,21 +1378,21 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Agencia
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Agencia De Desarrollo Economico Local Del Departamento De Sonsonate,,0,1,outgoing,243828
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Agencia Espanola De Cooperacion Internacional Para El Desarrollo,,0,1,outgoing,18775746
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Aghs Legal Aid Cell,,0,1,outgoing,140090
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Agreco Geie*,,0,1,outgoing,646114
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Agreco Geie,,0,1,outgoing,646114
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Agriconsulting Europe Sa*Aesa,,0,1,outgoing,618094
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Agrinatura Eeig*The European Alliance Agricultural Knowledge Development Alliance Europeenne Domaine Connaissance Agricole Developpement,,0,1,outgoing,172441
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Aida Ayuda Intercambio Y Desarolloasociacion*,,0,1,outgoing,135127
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Aide A La Decision Economique Sa*,,0,1,outgoing,159422
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Aide Et Action Association*,,0,1,outgoing,229592
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Aida Ayuda Intercambio Y Desarolloasociacion,,0,1,outgoing,135127
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Aide A La Decision Economique Sa,,0,1,outgoing,159422
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Aide Et Action Association,,0,1,outgoing,229592
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Al Jumhuriyah Al Islamiyah Al Muritaniyah*Republique Islamique De Mauritanie Islamic Republic Of Mauritania,,0,1,outgoing,24151527
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Alimenta La Solidariedad Ac,,0,1,outgoing,382045
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Alliance Francaise De Bangui Association*Afb,,0,1,outgoing,309478
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Amerindian Peoples Association Friendly Societies*Apa,,0,1,outgoing,271869
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,ke-ncb-93175,Amref Health Africa in Kenya,21,0,1,outgoing,2374400
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Angel Cosmetics,,0,1,outgoing,236563
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Anguilla*,,0,1,outgoing,3383520
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Anguilla,,0,1,outgoing,3383520
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Antigua And Barbuda*Antigua Et Barbudes,,0,1,outgoing,254927
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Apple Tree Communications Sl*,,0,1,outgoing,482486
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Apple Tree Communications Sl,,0,1,outgoing,482486
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Arc-En-Ciel,,0,1,outgoing,186390
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Asociacion Civil Franciscana Pata Pila,,0,1,outgoing,304469
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Asociacion Comunitaria Unida Por El Agua Y La Agricultura,,0,1,outgoing,209293
@@ -1400,16 +1410,17 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Associa
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Association Pour L Ecodeveloppementet L Auto Promotion Rurale Au Sahel,,0,1,outgoing,236107
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Association Pour La Promotion Du Developpement Local,,0,1,outgoing,186257
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Association Sos Sahel International Tchad*Sos Sit,,0,1,outgoing,515537
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Associazione Alisei*,,0,1,outgoing,113971
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Associazione Alisei,,0,1,outgoing,113971
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Assotsiatsiyai Tarabhonadoroni Tochikiston,,0,1,outgoing,138225
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Atrevia Comunicacion Sl,,0,1,outgoing,22190
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Baker Tilly Bishkek Consulting,,0,1,outgoing,1496
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Balochistan Rural Support Programme Lbg*Brsp,,0,1,outgoing,3506943
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Barbados*Barbade,,0,1,outgoing,332416
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Bombali District Council,,0,1,outgoing,890271
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Burkina Faso*,,0,1,outgoing,107809632
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Business And Strategies In Europe*,,0,1,outgoing,1752209
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Burkina Faso,,0,1,outgoing,107809632
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Business And Strategies In Europe,,0,1,outgoing,1752209
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Bw Gender Based Violence Prevevention And Support Centre,,0,1,outgoing,169088
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,nl-kvk-41158230,CARE Nederland,21,0,1,outgoing,655322
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Camoes - Instituto Da Cooperacao Eda Lingua Ip*Cicl,,0,1,outgoing,7783295
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Campana Global Por La Libertad De Expresion A19 Ac,,0,1,outgoing,382745
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Carbon Av Limited,,0,1,outgoing,71177
@@ -1417,7 +1428,7 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Care De
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Care Osterreich Verein Fur Entwicklungszusammenarbeit Und Humanitare Hilfe*Care Austria Assoc For Developement Coop & Humanitarian Assist,,0,1,outgoing,3003707
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Caribbean Policy Development Centre Inc,,0,1,outgoing,530066
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Catholic Relief Services United States Conference Of Catholic Bishops,,0,1,outgoing,2026539
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Catolicas Por El Derecho A Decidirac*,,0,1,outgoing,361285
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Catolicas Por El Derecho A Decidirac,,0,1,outgoing,361285
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Cdp Spa*Cassa Deposite E Prestiti Spa,,0,1,outgoing,2096595
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Cellule D Etude De Soutien Et D Action Pour Le Developpement Et La Paix Association*Cesadep,,0,1,outgoing,87435
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Center For International Forestry Reserch,,0,1,outgoing,817336
@@ -1426,7 +1437,7 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Centro 
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Centro Empresarial De Jalisco Sp,,0,1,outgoing,150799
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Centro Laici Italiani Per Le Missioni,,0,1,outgoing,179771
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Cesie,,0,1,outgoing,765456
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Childlink Inc*,,0,0,outgoing,428050
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Childlink Inc,,0,0,outgoing,428050
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Clovek V Tisni Ops*People In Need,,0,1,outgoing,2103502
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Co Operative Republic Of Guyana*Republique Cooperative De Guyana,,0,1,outgoing,9473856
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Colectivo Contra La Tortura Y La Impunidad Ac,,0,1,outgoing,141047
@@ -1436,10 +1447,10 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Commune
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Community And Family Services International Inc,,0,1,outgoing,205386
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Commwithus,,0,1,outgoing,464570
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Compagnie Des Margarines Savons Etcosmetiques Au Congo,,0,1,outgoing,235913
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Compania Espanola De Financiacion Del Desarollo Cofides Sa*,,0,1,outgoing,764161
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Compania Espanola De Financiacion Del Desarollo Cofides Sa,,0,1,outgoing,764161
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Concern Worldwide Lbg,,0,1,outgoing,5250483
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Confartigianato Vicenza Associazione*Conf Vi,,0,1,outgoing,738235
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Conference Episcopale Nationale Ducongo*,,0,1,outgoing,1899520
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Conference Episcopale Nationale Ducongo,,0,1,outgoing,1899520
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Cong Hoa Xa Hoi Chu Nghia Vietnam*Republique Socialiste Du Vietnamsocialist Republic Of Vietnam,,0,1,outgoing,43926400
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Cong Ty Tnhh Tu Van Quan Ly Va Chuyen Doi To Chuc*Transformation And Change Management Consulting Company Limited (T&C Consulting Co Ltd),,0,1,outgoing,46194
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Congreso De Intendentes,,0,1,outgoing,611865
@@ -1449,14 +1460,14 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Cook Is
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Corporacion De Organizaciones Solidarias,,0,1,outgoing,488618
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Corporacion Sisma Mujer,,0,1,outgoing,694257
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Criativa - Eventos E Marketing Promocional Ltda-Me*,,0,1,outgoing,35681
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Croix Rouge Burkinabe Association*,,0,1,outgoing,1602694
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Croix Rouge Burkinabe Association,,0,1,outgoing,1602694
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Croix-Rouge Francaise,21,0,1,outgoing,4746858
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Cruz Roja Espanola Fundacion*Croixrouge Espagne Fondation Cre,,0,1,outgoing,4765980
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Dahw Deutsche Lepra- Und Tuberkulosehilfe Ev,,0,1,outgoing,357347
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Dansk Rode Kors*Danish Red Cross Drc,,0,1,outgoing,844837
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Deutsche Gesellschaft Fur Internationale Zusammenarbeit (Giz) Gmbh*,,0,1,outgoing,59116571
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Deutsche Welthungerhilfe Ev*Germanagro Action,,0,1,outgoing,360008
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Deutscher Caritasverband Ev*,,0,1,outgoing,227422
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Deutscher Caritasverband Ev,,0,1,outgoing,227422
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Deutscher Volkshochschul-Verband Ev,,0,1,outgoing,242521
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Dhaka Ahsania Mission*Dam,,0,1,outgoing,671040
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Diakonia,,0,1,outgoing,1827890
@@ -1464,17 +1475,17 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Ditshwa
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Documenta Analisis Y Accion Para Lajusticia Social Ac,,0,1,outgoing,88188
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Druk Gyal Khab*Royaume Du Bhoutankingdom Of Bhutan,,0,1,outgoing,17451840
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Dt Global Idev Europe S.L,,0,1,outgoing,5641852
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,E E Engenharia Lda*,,0,1,outgoing,19310
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,E E Engenharia Lda,,0,1,outgoing,19310
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,EC_INTPA,15,0,1,outgoing,-2259870
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,East And Horn Of Africa Human Rights Defenders Network Company Limited By Guarantee*Projects Ehahrdp,,0,1,outgoing,94976
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Ecorys Nederland Bv*,,0,1,outgoing,625292
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Ecorys Nederland Bv,,0,1,outgoing,625292
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Educacion Y Ciudadania Ac,,0,1,outgoing,219864
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Edutech De Centro America Sa,,0,1,outgoing,94976
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Egis International,,0,1,outgoing,1326391
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Em-One Energy Solutions Limited,,0,1,outgoing,1050673
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Eminence Expertises Conseils Et Audits Consulting Group,,0,1,outgoing,4511
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,"Enabel, Belgisch Ontwikkelingsagentschap*Enabel, Agence Belge De Developpement",,0,1,outgoing,40491472
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Eptisa Servicios De Ingenieria Sl*,,0,1,outgoing,2746742
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Eptisa Servicios De Ingenieria Sl,,0,1,outgoing,2746742
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Era Audit Et Expertise,,0,1,outgoing,6126
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Estado Plurinacional De Bolivia*Etat Plurinational De Bolivie Plurinational State Of Bolivia,,0,1,outgoing,21177274
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Ethiopian Red Cross Society,,0,1,outgoing,222905
@@ -1485,12 +1496,13 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Europea
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,European Chamber Of Commerce Of Thephilippines Inc,,0,1,outgoing,31817
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,European Investment Bank*Banque Europeenne D Investissement,,0,1,outgoing,31413312
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,European Network On Debt And Development Vzw*Eurodad,,0,0,outgoing,1423454
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,European Service Network Sa*,,0,1,outgoing,91791
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,European Service Network Sa,,0,1,outgoing,91791
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Everest Expertises Associees,,0,1,outgoing,4749
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Falaba District Women'S Network,,0,1,outgoing,159182
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Federacao Cabo-Verdiana De Associacoes De Pessoas Com Deficiencia,,0,1,outgoing,116195
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Federacao De Organizacoes Nao Governamentais Em Sao Tome E Principe*Federation Des Organisations Non Gouvernementales En Sao Tome Et Princip,,0,1,outgoing,140186
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Federacion De Cooperativas De Produccion Fecoprod Limitada*,,0,1,outgoing,893102
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Federacion De Cooperativas De Produccion Fecoprod Limitada,,0,1,outgoing,893102
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,0,1,outgoing,1432198
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Federation Des Centrales D Approvisionnement En Medicaments Essentiels,,0,1,outgoing,808697
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Federation Internationale Des Societes De La Croix-Rouge Et Du Croissant Rouge*International Federation Of Red Cross And Red Crescent,,0,1,outgoing,347778
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Folkekirkens Nodhjaelp*Danchurchaid,,0,1,outgoing,3434924
@@ -1513,15 +1525,15 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Fundaci
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Fundacion Para El Avance De Las Reformas Y Las Oportunidades Grupo Faro,,0,1,outgoing,313146
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Fundacion Para El Desarrollo Integral De Programas Socio-Economicos,,0,1,outgoing,745245
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Fundacion Promocion Humana Diocesana De Guaranda,,0,1,outgoing,372690
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Fundacion Pronorte*,,0,1,outgoing,133800
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Fundacion Pronorte,,0,1,outgoing,133800
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Fundacion Save The Children,,0,1,outgoing,1290505
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Fundacion Vision Mundial Costa Rica,,0,1,outgoing,203113
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Fundamenta Consulting Sl,,0,1,outgoing,15582
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Gavi Alliance,70,0,1,outgoing,119117712
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Gfa Consulting Group Gmbh*,,0,1,outgoing,2720070
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Gfa Consulting Group Gmbh,,0,1,outgoing,2720070
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Givedirectly Inc,,0,1,outgoing,474880
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Global Campus Of Human Rights,,0,1,outgoing,229558
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Global Green Growth Institute*,,0,1,outgoing,848284
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,xm-dac-47136,Global Green Growth Institute,40,0,1,outgoing,848284
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Global Wildlife Conservation,,0,1,outgoing,3285510
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Gmina Gora Kalwaria,,0,1,outgoing,214120
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Goethe-Institut Ev*,,0,1,outgoing,23744
@@ -1556,14 +1568,14 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Interna
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,International Commission Of Jurists Association*Commission Internationale De Juristes,,0,1,outgoing,137587
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,International Criminal Police Organization*Organisation Internationale Police Criminelle,,0,1,outgoing,1282176
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,International Development Law Organization*Istituto Internazionale Didiritto Per Lo Sviluppo,,0,1,outgoing,211772
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,International Finance Corporation*,,0,1,outgoing,474880
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,xm-dac-903,International Finance Corporation,40,0,1,outgoing,474880
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,International Food Policy Researchinstitute,,0,1,outgoing,608748
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,International Fund For Agriculturaldevelopment*,,0,1,outgoing,19858426
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,International Fund For Agriculturaldevelopment,,0,1,outgoing,19858426
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,International Institute For Democracy And Electoral Assistance,,0,1,outgoing,1725289
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,International Labour Organization*Organisation Internationale Du Travail,,0,1,outgoing,6974955
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,International Media Support (Ims) Forening*,,0,1,outgoing,298700
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,International Monetary Fund*Fonds Monetaire International,,0,1,outgoing,217257600
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,International Trade Centre*,,0,1,outgoing,4650680
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,International Trade Centre,,0,1,outgoing,4650680
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Islas Malvinas*Iles Malouinesfalkland Islands,,0,1,outgoing,2564352
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Istiqbolli Avlod Republican Socialinformation Center,,0,1,outgoing,282666
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Jamaica Observer Limited*Jol,,0,1,outgoing,659
@@ -1580,14 +1592,13 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Kenema 
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Kenya National Commission On Humanrights*Knchr,,0,1,outgoing,360215
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Kenya Red Cross Society,,0,1,outgoing,2374400
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Kirkens Nodhjelp Forening*Norwegian Church Aid Association Ayuda De La Iglesia Noruega,,0,1,outgoing,838144
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Kreditanstalt Fur Wiederaufbau*,,0,1,outgoing,1432198
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Kyrgyz Respublikasy*Republique Dukirghizistan Kyrgyz Republic,,0,1,outgoing,36268960
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Landell Mills International Limited,,0,1,outgoing,3038757
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Landell Mills Limited*,,0,1,outgoing,1627079
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Landell Mills Limited,,0,1,outgoing,1627079
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Lefatshe La Botswana*Republic Of Botswana Republique Du Botswana,,0,1,outgoing,2374400
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Lifeline/Childline Zambia,,0,1,outgoing,116820
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Limited Liability Company Agency,,0,0,outgoing,37800
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Linpico*,,0,1,outgoing,1259053
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Linpico,,0,1,outgoing,1259053
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,M-Tech Renewables Ltd,,0,1,outgoing,119561
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,gb-sc-sc030289,MERCY CORPS EUROPE,21,0,1,outgoing,1484632
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Management4health Gmbh,,0,1,outgoing,178075
@@ -1599,9 +1610,9 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Melcome
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Memisa Belgie Vzw*Asbl Memisa Belgique Medical Mission Action Belgique Belgie Belgium,,0,1,outgoing,4429047
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Middleway Films Private Limited,,0,1,outgoing,58410
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Mission Ost Forening*Mission East,,0,1,outgoing,175127
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Missionpharma As*,,0,1,outgoing,656348
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Missionpharma As,,0,1,outgoing,656348
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Mongol Uls*Mongolie Mongolia,,0,1,outgoing,18995200
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Montserrat*,,0,1,outgoing,5817280
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Montserrat,,0,1,outgoing,5817280
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Movimento Africa 70,,0,1,outgoing,83343
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,"Movimiento Por La Paz, El Desarme Yla Libertad*",,0,1,outgoing,1262996
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Mrca/Relief International - France,,0,1,outgoing,949760
@@ -1626,7 +1637,7 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,O'Zbeki
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Office International Des Epizooties*World Organisation For Animal Health Organisation Mondiale De La Sante Animale,,0,1,outgoing,796420
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,One Africa Television Pty Ltd,,0,1,outgoing,618
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Optima Construction,,0,1,outgoing,228163
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Orange Sa*,,0,1,outgoing,724927
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Orange Sa,,0,1,outgoing,724927
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Organisation For Economic Co-Operation And Development*Organisation De Cooperation Et De Developpement Economiques Ocde,,0,1,outgoing,2136960
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Organisation For Women In Self-Employment,,0,1,outgoing,141419
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Organisation Mondiale Contre La Torture Association*Omct World Organisation Against Torture,,0,1,outgoing,810314
@@ -1635,13 +1646,13 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Osh Rur
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,gb-chc-228248,Overseas Development Institute,80,0,1,outgoing,962420
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Ovibashi Karmi Unnayan Program (Okup)*Migrant Workers' Development Program,,0,1,outgoing,140613
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Oxfam,21,0,1,outgoing,4739740
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Oxfam Italia Onlus Associazione*,,0,1,outgoing,2703052
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Oxfam Italia Onlus Associazione,21,0,1,outgoing,2703052
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Oxfam Solidarite - Oxfam Solidariteit,,0,1,outgoing,739025
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Oxford Policy Management Limited,,0,1,outgoing,4466283
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,00303,PAN AMERICAN HEALTH ORGANIZATION,,0,1,outgoing,1602720
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,gb-coh-04154075,PENAL REFORM INTERNATIONAL,21,0,1,outgoing,647261
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Pacific Community*Communaute Du Pacifique Secretariat,,0,1,outgoing,3968986
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Pacific Islands Forum Secretariat*,,0,1,outgoing,1912302
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Pacific Islands Forum Secretariat,,0,1,outgoing,1912302
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Palladium International Bv,,0,1,outgoing,5061158
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Particip Gmbh,,0,1,outgoing,2642265
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Pelastakaa Lapset Ry Ruotsiksi Radda Barnen Rf,,0,1,outgoing,915512
@@ -1651,10 +1662,10 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Plan In
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Plan International Deutschland Ev*Plan,,0,1,outgoing,6869750
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Plan International Sverige Insamlingsstiftelse,21,0,1,outgoing,154171
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Polynesie Francaise*French Polynesia,,0,1,outgoing,15730400
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Pomilio Blumm Srl*,,0,1,outgoing,160635
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Pomilio Blumm Srl,,0,1,outgoing,160635
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Populus Global Solutions Inc.,,0,0,outgoing,183559
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Preah Reacheanachakr Kampuchea*Royaume Du Cambodge Kingdom Of Cambodia,,0,1,outgoing,56095200
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Proman Sa*,,0,1,outgoing,1017021
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Proman Sa,,0,1,outgoing,1017021
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Pujehun District Council,,0,1,outgoing,884163
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Puleanga Tonga*Royaume Des Tongakingdom Of Tonga,,0,1,outgoing,2552480
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Pyeidaungzu Myanma Naingngandaw*Union Of Myanmar L Union De Birmanie,,0,1,outgoing,83104000
@@ -1710,19 +1721,18 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Sightsa
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Socio Legal Information Centre Public Trust*Slic,,0,1,outgoing,500629
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Solidarites International,,0,1,outgoing,764082
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Solomon Islands* Les Iles Salomon,,0,1,outgoing,7657440
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Stichting Care Nederland*,,0,1,outgoing,655322
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Stichting Free Press Unlimited*,,0,1,outgoing,4322706
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Stichting Free Press Unlimited,,0,1,outgoing,4322706
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Stichting Healthnet International Transcultural Psychosocial Organization,,0,1,outgoing,3799172
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Stichting Hivos Humanistisch Instituut Voor Ontwikkelings Samenwerking,,0,1,outgoing,2122558
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Stichting Nedworc Stip (Short Termindependent Professionals)*Nedworcfoundation Stip,,0,1,outgoing,21963
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Stichting Save The Children Nederland*,,0,1,outgoing,1949295
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Stichting Save The Children Nederland,,0,1,outgoing,1949295
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Stichting Solidaridad Nederland,,0,1,outgoing,2571668
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Stiftelsen Flyktninghjelpen*Norwegian Refugee Council,,0,1,outgoing,1899520
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Strive Foundation Rwanda,,0,1,outgoing,178399
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Sudan Social Development Organisation Sudo,,0,1,outgoing,527732
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Surgie Global (Pvt) Ltd,,0,1,outgoing,22825
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Suruhanjaya Hak Asasi Manusia Malaysia*Suruhanjaya Hak Asasi Manusia Malaysia,,0,1,outgoing,320174
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Swaziland Water & Agricultural Development Enterprise Ltd*,,0,1,outgoing,261725
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Swaziland Water & Agricultural Development Enterprise Ltd,,0,1,outgoing,261725
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,"Technoserve, Inc",,0,1,outgoing,796272
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Televic Conference,,0,1,outgoing,20529
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Terra Nuova Centro Per La Solidarieta E La Cooperazione Tra I Popoli Onlus,,0,1,outgoing,795039
@@ -1732,10 +1742,10 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,The All
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,The Federation Of Saint Kitts & Nevis*La Federation De Saint Kitts &Nieves,,0,1,outgoing,4088717
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,The Food And Agriculture Organization Of The United Nations*Organisation Des Nations Unies Pour L'Alimentation Et L'Agriculture,,0,1,outgoing,28138330
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,"The Gambia Chamber Of Commerce, Industry, Agriculture And Employers Association",,0,1,outgoing,188981
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,The Gleaner Company Limited*,,0,1,outgoing,542
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,The Gleaner Company Limited,,0,1,outgoing,542
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,The Global Fund For Community Foundation,,0,1,outgoing,781533
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,The Republic Of The Marshall Islands*Republique Des Iles Marshall,,0,1,outgoing,2968000
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,The Save The Children Fund Lbg*,,0,1,outgoing,391776
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,The Save The Children Fund Lbg,,0,1,outgoing,391776
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,ke-rco-cpr/2009/5689,TradeMark East Africa,23,0,1,outgoing,4748800
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Transtec,,0,1,outgoing,51978
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Trinidad And Tobago Red Cross Society,,0,1,outgoing,150774
@@ -1744,13 +1754,13 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Trocair
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Trotasuenos Ac,,0,1,outgoing,217444
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Trust For Democratic Education Andaccountability,,0,1,outgoing,216664
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Turks And Caicos Islands*Iles Turkset Caiques,,0,1,outgoing,5603584
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Tuvalu*,,0,1,outgoing,2255680
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Tuvalu,10,0,1,outgoing,2255680
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Uganda Development Bank Limited,,0,1,outgoing,1902369
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,"Uicn, Union International Pour La Conservation De La Nature Et De Sesressources*International Union Forconservation Of Nature And Natural",,0,1,outgoing,1242727
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Union Iberoamericana De Municipalistas,,0,1,outgoing,276702
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Union Industrial Paraguaya,,0,1,outgoing,393989
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,United Kingdom Of Great Britain And Northern Ireland*Pre Brexit,,0,1,outgoing,10115527
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,United Nations Capital Developmentfund*,,0,1,outgoing,3128006
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,United Nations Capital Developmentfund,,0,1,outgoing,3128006
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,United Nations Children'S Fund*Le Ffonds Des Nations Unies Pour L'Enfance,,0,0,outgoing,10414245
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,United Nations Children'S Fund*Le Ffonds Des Nations Unies Pour L'Enfance,,0,1,outgoing,127877664
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,United Nations Development Programme*Programme Des Nations Unies Pourle Developpement,,0,1,outgoing,244860710
@@ -1763,24 +1773,24 @@ xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,United 
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,United Nations Industrial Development Organization*Organisation Des Nations Unies Pour Le Developpement Industriel,,0,0,outgoing,917159
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,United Nations Office At Geneva*Office Des Nations Unies A Geneve,,0,1,outgoing,949760
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,United Nations Office For Project Services*Bureau Des Nations Unies Pour Les Services D'Appui Aux Projets,,0,1,outgoing,38901693
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,United Nations Office On Drugs Andcrime*,,0,1,outgoing,2379788
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,United Nations Office On Drugs Andcrime,,0,1,outgoing,2379788
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,United Nations Organisation*Organisation Des Nations Unies,,0,1,outgoing,21448747
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,United Nations Population Fund*Fonddes Nations Unies Pour La Population,,0,1,outgoing,461962
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Universidad Centroamericana Jose Simeon Canas De El Salvador Asociacion*Uca,,0,1,outgoing,229813
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,University Of Denver Colorado Seminary*,,0,1,outgoing,149388
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,University Of Denver Colorado Seminary,,0,1,outgoing,149388
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Uttaran,,0,1,outgoing,241734
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Veterinarios Sin Fronteras-Vetermon Asociacion*Vsf,,0,1,outgoing,166406
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Volontariato Internazionale Per Losviluppo Associazione*,,0,1,outgoing,173560
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Voluntary Service Overseas*,,0,1,outgoing,243505
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Volontariato Internazionale Per Losviluppo Associazione,,0,1,outgoing,173560
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Voluntary Service Overseas,,0,1,outgoing,243505
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,We Effect,,0,1,outgoing,1073314
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,We World-Gvc Organizzazione Non Lucrativa Di Utilita'Sociale,,0,1,outgoing,854784
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Wellcom,,0,1,outgoing,148400
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,World Food Programme*Programme Alimentaire Mondial,,0,1,outgoing,16732207
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,World Health Organization*Organisation Mondiale De La Sante,,0,1,outgoing,103059028
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,World Vision Australia*,,0,1,outgoing,6152429
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,World Vision Australia,21,0,1,outgoing,6152429
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,World Vision Deutschland Ev*Wvd,,0,1,outgoing,6317176
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,nl-kvk-41179943,World Vision Netherlands,60,0,1,outgoing,1146874
-xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,World Vision South Africa*,,0,1,outgoing,321929
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,World Vision South Africa,21,0,1,outgoing,321929
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,gb-chc-285908,World Vision United Kingdom,21,0,1,outgoing,4682928
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,World Vision Zambia Limited,,0,1,outgoing,611998
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Yash Pharmaceuticals Ltd,,0,1,outgoing,550284
@@ -1795,7 +1805,7 @@ xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Al Mamlaka Al Urduniya Al Hashemiyah*Royaume Hachemite De Jordanie Hashemite Kingdom Of Jordan,,0,1,outgoing,39177600
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Aljumhuriyah At Tunisiyah*Republique Tunisienne Republic Of Tunisia,,0,1,outgoing,94976000
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Arbeiter-Samariter-Bund Deutschland Ev*Asb,,0,1,outgoing,30226
-xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Armenian Red Cross Society*,,0,1,outgoing,70020
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Armenian Red Cross Society,,0,1,outgoing,70020
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Asociatia Obsteasca Keystone Humanservices International Moldova Association,,0,1,outgoing,56986
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Association Amis Des Enfants-Maroc*Amici Dei Bambini-Maroc,,0,1,outgoing,241271
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Association De L'Enfance Handicapee*Aeh,,0,1,outgoing,277834
@@ -1804,8 +1814,8 @@ xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Association Marocaine De Solidariteet De Developpement,,0,1,outgoing,249567
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Association Marocaine Des Villagesd'Enfants Sos*Amvesos Sos Villagesd'Enfants Maroc,,0,1,outgoing,260225
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Association Medecins Du Monde*France,,0,1,outgoing,45414
-xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Association Rural Development For For Future Georgia*,,0,1,outgoing,505454
-xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Autorite Nationale Palestinienne*,,0,1,outgoing,197075200
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Association Rural Development For For Future Georgia,,0,1,outgoing,505454
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Autorite Nationale Palestinienne,,0,1,outgoing,197075200
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Awlers,,0,1,outgoing,65890
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Azerbaijan Micro-Finance Association Ictimai Birliyi*Amfa,,0,1,outgoing,184351
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Azerbaijan Red Crescent Society,,0,1,outgoing,56986
@@ -1825,7 +1835,7 @@ xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Com.Int Spa*,,0,1,outgoing,5263857
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,"Conception, Etudes Et Cooperation De Formation",,0,1,outgoing,7067773
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Conseil De L' Europe*Council Of Europe,,0,1,outgoing,290015
-xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Coptic Evangelical Organization Forsocial Services Association*,,0,1,outgoing,356160
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Coptic Evangelical Organization Forsocial Services Association,,0,1,outgoing,356160
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Crveni Krst Srbije*Red Cross Of Serbia,,0,1,outgoing,1112232
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Dai Global Belgium,,0,1,outgoing,268
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Deloitte Bedrijfsrevisoren/Reviseurs D'Entreprises,,0,1,outgoing,55813
@@ -1847,6 +1857,8 @@ xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Europos Socialinio Fondo Agentura*European Social Fund Agency,,0,1,outgoing,61468
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Evoluxer Sl,,0,1,outgoing,523541
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Face For Children In Need,,0,1,outgoing,94976
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,0,0,outgoing,35031293
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,0,1,outgoing,166648451
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Felcos Umbria - Fondo Di Enti Locali Per La Cooperazione Decentrata Elo Sviluppo Umano Sostenibile,,0,1,outgoing,170902
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Flybosnia Doo,,0,1,outgoing,160272
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Fondacioni World Vision Albania*World Vision Albania Foundation,,0,1,outgoing,379904
@@ -1858,8 +1870,8 @@ xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Fundatia Est - Europeana*East Europe Foundation Eef,,0,1,outgoing,1999509
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Fundatia Soros Moldova*Soros Foundation Moldova Sfm,,0,1,outgoing,1090488
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Georgian Institute Of Public Affair Foundation*Gipa,,0,1,outgoing,412096
-xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Gfa Consulting Group Gmbh*,,0,1,outgoing,886915
-xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Global Green Growth Institute*,,0,1,outgoing,22556
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Gfa Consulting Group Gmbh,,0,1,outgoing,886915
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,xm-dac-47136,Global Green Growth Institute,40,0,1,outgoing,22556
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Global Initiative On Psychiatry Tbilisi Foundation*Gip Tbilisi,,0,1,outgoing,72914
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Goethe-Institut Ev*,,0,1,outgoing,4821122
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Gopa Worldwide Consultants Gmbh,,0,1,outgoing,1856769
@@ -1872,7 +1884,7 @@ xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Ibf International Consulting,,0,1,outgoing,1737019
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Idp Women Association Consent*Association Of Internally Displaced Women Consent,,0,1,outgoing,47488
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Impact Hub Llc,,0,1,outgoing,441203
-xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Impact Services And Public Relation*,,0,0,outgoing,137478
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Impact Services And Public Relation,,0,0,outgoing,137478
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Initiative Feministe Euro-Mediterraneenne,,0,1,outgoing,435394
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Institute For Development Of Freedom Of Information,,0,1,outgoing,56948
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,44001,International Bank for Reconstruction and Development,40,0,1,outgoing,5360208
@@ -1880,7 +1892,7 @@ xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,International Food Policy Researchinstitute,,0,1,outgoing,151962
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,International Labour Organization*Organisation Internationale Du Travail,,0,1,outgoing,3321355
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,International Renaissance Foundation,,0,1,outgoing,1900738
-xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,International Trade Centre*,,0,1,outgoing,676704
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,International Trade Centre,,0,1,outgoing,676704
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Intertech Group Sal,,0,1,outgoing,240672
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Irex Europe,,0,1,outgoing,1220038
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Ivane Javakhishvili Tbilisi State University,,0,1,outgoing,298131
@@ -1890,8 +1902,6 @@ xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Komesarijat Za Izbeglice I Migracije Republike Srbije*Commissariat Forrefugees And Migration Of The Republic Of Serbia,,0,1,outgoing,12784000
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Konrad-Adenauer-Stiftung Ev*Kas,,0,1,outgoing,841295
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Kosova Education Center Foundation*Qendra E Arsimit - Kosove Kec,,0,1,outgoing,39878
-xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Kreditanstalt Fur Wiederaufbau*,,0,0,outgoing,35031293
-xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Kreditanstalt Fur Wiederaufbau*,,0,1,outgoing,166648451
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Latvijas Republika*Republique De Lettonie Republic Of Latvia,,0,1,outgoing,869884
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Lietuvos Respublikos Specialiuju Tyrimu Tarnyba*Special Investigationservice Of The Republic Of Lithuania,,0,1,outgoing,994153
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Luhansk Oblast Non Governmental Organisation Agricultural Extension Service,,0,1,outgoing,243022
@@ -1914,16 +1924,16 @@ xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Rzeczpospolita Polska*Republique Depologne Republic Of Poland,,0,1,outgoing,772867
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Safad Advertising Private Stock Co*Safad Adv Co,,0,1,outgoing,142464
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Sakartvelo* Georgie Georgia,,0,1,outgoing,102099200
-xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Samu Social International*,,0,1,outgoing,42822
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Samu Social International,,0,1,outgoing,42822
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Secretariat Of The Northern Dimension Partnership In Public Health And Social Well-Being*Ndphs Secretariat,,0,1,outgoing,975268
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Sifir Ayrimcilik Dernegi(Sifiray-Der)*Zero Discrimination Associationzda,,0,1,outgoing,166963
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Sivil Toplum Gelistirme Merkezi Dernegi*Association Of Civil Society Development Center,,0,1,outgoing,887352
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Sofreco-Societe Francaise De Realisation D'Etudes Et De Conseil Sa*,,0,1,outgoing,3378091
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Stichting Fgip-Human Rights In Mental Health,,0,1,outgoing,70425
-xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Stichting Save The Children Nederland*,,0,1,outgoing,354465
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Stichting Save The Children Nederland,,0,1,outgoing,354465
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Terre Des Hommes-Aide A L'Enfance Dans Le Monde Fondation*Terre Des Hommes Kinderhilfe Weltweit Stiftungterre Des Hommes Helping Children W,,0,1,outgoing,378858
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,The 'Caf' Charitable Foundation Forphilanthropy Development,,0,1,outgoing,873408
-xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,The British Council Royal Charter*,,0,1,outgoing,398023
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,The British Council Royal Charter,,0,1,outgoing,398023
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,The Food And Agriculture Organization Of The United Nations*Organisation Des Nations Unies Pour L'Alimentation Et L'Agriculture,,0,1,outgoing,2498262
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,The International Centre For Migration Policy Development,,0,1,outgoing,1601489
 xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,The Pragma Corporation,,0,1,outgoing,356160
@@ -1952,7 +1962,8 @@ xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Appel De Geneve / Geneva Call,,0,1,outgoing,741457
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Application Europeenne De Technologies Et De Services,,0,1,outgoing,1566809
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Association Forum Des Sciences Sociales Appliquees*Assf Applied Social Science Forum,,0,1,outgoing,327308
-xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Business And Strategies In Europe*,,0,1,outgoing,4136045
+xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Business And Strategies In Europe,,0,1,outgoing,4136045
+xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,nl-kvk-41158230,CARE Nederland,21,0,1,outgoing,876110
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Centre D'Etude De L'Energie Nucleaire*Studiecentrum Voor Kernenergie,,0,1,outgoing,1124153
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Centre Henry Dunant Pour Le Dialogue Humanitaire,,0,1,outgoing,2703323
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Ceso Ci Internacional Sa,,0,1,outgoing,912152
@@ -1970,21 +1981,21 @@ xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Folkekirkens Nodhjaelp*Danchurchaid,,0,1,outgoing,793001
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Fondation Hirondelle Media For Peace And Humain Dignity,,0,1,outgoing,3780045
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Fondation Kofi Annan*Kofi Annan Foundation,,0,1,outgoing,302495
-xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Gfa Consulting Group Gmbh*,,0,1,outgoing,4933948
+xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Gfa Consulting Group Gmbh,,0,1,outgoing,4933948
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,"Gopa-Gesellschaft Fur Organisationplanung Und Ausbildung Mbh*Limitedliability Of Organisation, Planningand Training Gopa Consultants",,0,1,outgoing,1734462
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Gorongosa Project Inc.,,0,1,outgoing,247817
-xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Helvetas Intercooperation Ggmbh*,,0,1,outgoing,320861
+xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Helvetas Intercooperation Ggmbh,,0,1,outgoing,320861
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Helvetas Swiss Intercooperation,,0,1,outgoing,188937
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Hulla & Co Human Dynamics Gmbh & Co Kg,,0,1,outgoing,1240624
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,00043,INTERNATIONAL ORGANIZATION FOR MIGRATION,40,0,1,outgoing,17015315
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Icf Consulting Services Limited,,0,1,outgoing,2000220
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Icf Sa,,0,1,outgoing,585763
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,"Idom Consulting, Engineering, Architecture S.A.U.",,0,1,outgoing,7189649
-xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Institut Pasteur Fondation*,,0,1,outgoing,1088510
+xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Institut Pasteur Fondation,,0,1,outgoing,1088510
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Institute For Autonomy And Governance Initiatives Inc,,0,1,outgoing,329099
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Intergovernmental Authority On Development*Igad,,0,1,outgoing,223730
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,gb-coh-2153193,International Alert,21,0,1,outgoing,287536
-xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,International Crisis Group Non Profit Corporation*,,0,1,outgoing,982913
+xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,International Crisis Group Non Profit Corporation,,0,1,outgoing,982913
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,International Labour Organization*Organisation Internationale Du Travail,,0,1,outgoing,4862815
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,International Rescue Committee Inc,21,0,1,outgoing,1865958
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,International Science And Technology Center,,0,1,outgoing,10684800
@@ -1998,15 +2009,14 @@ xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Peaceful Change Initiative,,0,1,outgoing,584745
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Pricewaterhousecoopers Private Limited,,0,1,outgoing,794456
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Radda Barnens Riksforbund,21,0,1,outgoing,589749
-xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Ramboll Danmark As*,,0,1,outgoing,2046999
+xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Ramboll Danmark As,,0,1,outgoing,2046999
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Saferworld,,0,1,outgoing,1196763
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Science And Technology Center In Ukraine,,0,1,outgoing,4167572
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Search For Common Ground Vzw*Sfcg,,0,1,outgoing,4593142
-xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Stichting Care Nederland*,,0,1,outgoing,876110
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Stiftelsen Flyktninghjelpen*Norwegian Refugee Council,,0,1,outgoing,1298697
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Sustainable Criminal Justice Solutions Europe,,0,1,outgoing,170244
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,us-ein-941191246,The Asia Foundation,21,0,1,outgoing,1179362
-xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,The British Council Royal Charter*,,0,1,outgoing,5818345
+xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,The British Council Royal Charter,,0,1,outgoing,5818345
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,The International Centre For Migration Policy Development,,0,1,outgoing,1087976
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,"Tokai National Higher Education And Research System, National University Corporation",,0,1,outgoing,489256
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Tokutei Hieiri Katsudo Hojin Crimeifo,,0,1,outgoing,81026
@@ -2019,35 +2029,35 @@ xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,United Nations High Commissioner For Refugees*Haut Commissariat Des Nations Unies Pour Les Refugies,,0,1,outgoing,10990070
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,United Nations Human Settlements Programme*Programme Des Nations Unies Pour Les Etablissements Humains,,0,1,outgoing,2914331
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,United Nations Office For Project Services*Bureau Des Nations Unies Pour Les Services D'Appui Aux Projets,,0,1,outgoing,1661680
-xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,United Nations Office On Drugs Andcrime*,,0,1,outgoing,11872000
+xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,United Nations Office On Drugs Andcrime,,0,1,outgoing,11872000
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,United Nations Population Fund*Fonddes Nations Unies Pour La Population,,0,1,outgoing,324108
 xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,United Nations Relief And Works Agency For Palestine Refugees In The Near East*Office Secours Travaux Refugies Palestine Proche Orient,,0,1,outgoing,4748800
 xm-dac-918-3,European Investment Bank,15,,,,,HASHEMITE KINGDOM OF JORDAN,10,0,1,outgoing,23590000
 xm-dac-918-3,European Investment Bank,15,,,,,REPUBLIQUE DU SENEGAL,10,0,1,outgoing,11848000
 xm-dac-918-3,European Investment Bank,15,,,,,ROYAUME DU MAROC,10,0,1,outgoing,118480000
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,,(Direct expenditure),,0,0,outgoing,32834154
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,,(Direct expenditure),,0,1,outgoing,71314430
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,,(Unspecified org),,0,0,outgoing,588697666
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,,(Unspecified org),,0,1,outgoing,326417110
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,,CORPORACION FINANCIERA DE DESARROLLO SA,,0,1,outgoing,101669773
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,,COVID-19 EM. AND FR. MARKETS MSME SUP. FUND SCSP SICAV-RAIF,,0,0,outgoing,30485000
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,,"DEVELOPMENT BANK OF NAMIBIA, LIMITED",,0,0,outgoing,29792502
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,,INVESTITIONEN F BESCHAEFTIGUNG (INVESTING F. EMPLOYMENT) GMBH,,0,0,outgoing,51493495
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,,"MICROFINANCE ENHANCEMENT FACILITY S.A., SICAV-SIF",,0,1,outgoing,48852000
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,,"MINISTERE DE L'ECONOMIE, DES FINANCES ET DE LA RÉFORME DE",,0,0,outgoing,45292100
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,03223,Ministry Of Finance,10,0,0,outgoing,7331390
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,0,0,outgoing,38961360
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,,REPUBLIK GEORGIEN,,0,1,outgoing,4940484
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,,"REPUBLIK INDIEN FINANCE, DPT. OF ECON. AFFAIRS",,0,0,outgoing,547814000
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,,REPUBLIK KOSOVO MININSTRY OF FINANCE,,0,0,outgoing,13928800
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,,REPUBLIK TOGO,,0,0,outgoing,4599845
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,xm-dac-41122,UNICEF,40,0,1,outgoing,39069300
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,,UNITED NATIONS RELIEF AND WORK S AGENCY FOR PALESTINE REFUGEE,,0,0,outgoing,4816800
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,,UNITED NATIONS RELIEF AND WORKS AGENCY FOR PALESTINE REF,,0,0,outgoing,17427000
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,xm-dac-41114,United Nations Development Programme,40,0,0,outgoing,7072800
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,xm-dac-41140,World Food Programme,40,0,1,outgoing,10300300
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,EU-EU,40,,,,0,0,incoming,11138000
-de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,EU-EU,40,,,,0,1,incoming,7338000
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,(Direct expenditure),,0,0,outgoing,32834154
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,(Direct expenditure),,0,1,outgoing,71314430
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,(Unspecified org),,0,0,outgoing,588697666
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,(Unspecified org),,0,1,outgoing,326417110
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,CORPORACION FINANCIERA DE DESARROLLO SA,,0,1,outgoing,101669773
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,COVID-19 EM. AND FR. MARKETS MSME SUP. FUND SCSP  SICAV-RAIF,,0,0,outgoing,30485000
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,"DEVELOPMENT BANK OF NAMIBIA, LIMITED",,0,0,outgoing,29792502
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,INVESTITIONEN F BESCHAEFTIGUNG (INVESTING F. EMPLOYMENT)  GMBH,,0,0,outgoing,51493495
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,"MICROFINANCE ENHANCEMENT FACILITY S.A., SICAV-SIF",,0,1,outgoing,48852000
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,"MINISTERE DE L'ECONOMIE, DES FINANCES ET DE LA RÉFORME DE",,0,0,outgoing,45292100
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,03223,Ministry Of Finance,10,0,0,outgoing,7331390
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,0,0,outgoing,38961360
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,REPUBLIK GEORGIEN,,0,1,outgoing,4940484
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,"REPUBLIK INDIEN FINANCE, DPT. OF ECON. AFFAIRS",,0,0,outgoing,547814000
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,REPUBLIK KOSOVO MININSTRY OF FINANCE,,0,0,outgoing,13928800
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,REPUBLIK TOGO,,0,0,outgoing,4599845
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,xm-dac-41122,UNICEF,40,0,1,outgoing,39069300
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,UNITED NATIONS RELIEF AND WORK S AGENCY FOR PALESTINE  REFUGEE,,0,0,outgoing,4816800
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,UNITED NATIONS RELIEF AND WORKS AGENCY FOR PALESTINE REF,,0,0,outgoing,17427000
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,xm-dac-41114,United Nations Development Programme,40,0,0,outgoing,7072800
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,xm-dac-41140,World Food Programme,40,0,1,outgoing,10300300
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,EU-EU,40,,,,0,0,incoming,11138000
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,EU-EU,40,,,,0,1,incoming,7338000
 gb-chc-291333,Feed the Minds,21,,,,,(Unspecified org),,0,0,outgoing,184750
 gb-chc-291333,Feed the Minds,21,,,,,(Unspecified org),,1,0,outgoing,319724
 gb-chc-291333,Feed the Minds,21,,(Unspecified org),,,,,0,0,incoming,212217
@@ -2111,7 +2121,7 @@ ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,,,,ca-cra_acr-00
 ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,,,,ca-cra_acr-2118973999,Canada World Youth,22,0,0,outgoing,748680
 ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,,,,ca-cra_acr-3119219814,Canadian Red Cross,22,0,1,outgoing,1352060
 ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,,,,ca-cra_acr-3119219814,Canadian Red Cross,22,1,1,outgoing,8239268
-ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,,,,,Center for Global Development,,0,0,outgoing,216502
+ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,,,,us-ein-522351337,Center for Global Development,,0,0,outgoing,216502
 ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,,,,,Clinton Health Access Initiative,70,0,1,outgoing,5350455
 ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,,,,ie-chy-20009090,Concern Worldwide,22,1,0,outgoing,1200961
 ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,,,,11003,Development Finance Institute CanadFinDev Canada,10,0,0,outgoing,60377058
@@ -2181,6 +2191,7 @@ nl-kvk-56484038,Foundation ICCO,21,,,,00000395,Norwegian Church Aid,22,0,0,outgo
 nl-kvk-56484038,Foundation ICCO,21,,,,00016425,The Ethiopian Evangelical Church Mekane Yesus Dvt and Social,22,0,0,outgoing,249300
 nl-kvk-56484038,Foundation ICCO,21,,,,00002955,Zimbabwe Council of Churches,22,0,0,outgoing,259254
 gb-chc-1107403,GOAL UK,21,,,,,(Direct expenditure),,0,1,outgoing,5391233
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,"""Aghorj Kyanq/Healthy Life"" Social Health Organisation",22,0,1,outgoing,4430
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,ACIAD,22,0,0,outgoing,40507
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,ACODE,21,0,1,outgoing,29556
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,ADECA,10,0,0,outgoing,20173
@@ -2195,7 +2206,6 @@ xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,AVICRES,22,0,1,outgoing,9726
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Action medeor e.V.,22,1,1,outgoing,831832
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Advancing Together,22,0,0,outgoing,12979
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,"Advocacy, Research, Training and Services (ARTS) Foundation",22,0,1,outgoing,11789
-xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,"Aghorj Kyanq/Healthy Life"" Social Health Organisation",22,0,1,outgoing,4430
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,"Akramzada International, Kabul",10,0,1,outgoing,54225
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Alcaldia Muelle de los bueyes,10,0,1,outgoing,14209
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Arbeiter Samariter Bund Deutschland e.V.,22,1,1,outgoing,348937
@@ -2356,7 +2366,6 @@ xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,OSAPO,70,0,1,outgoing,22560
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,21501,OXFAM International,21,1,1,outgoing,681803
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,OXFAM en Cuba,22,0,1,outgoing,117755
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Organisation Nigérienne d’Appui au Développement Local (ONADEL),22,0,1,outgoing,17094
-xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Organisme Public de Coopération Intercommunale – Tambazotra ho an’ny Fampandrosoana Ifotony » OPCI – TFI Soamiray,10,0,1,outgoing,10987
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Organización de Mujeres Aymaras del Kollasuyo – OMAK,22,0,1,outgoing,10876
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Pastoral Social Caritas Beni,22,0,1,outgoing,10641
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,cz-ico-25755277,People in Need,21,0,1,outgoing,72501
@@ -2422,6 +2431,7 @@ xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Zentrum für angewandte Kultu
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Zentrum für rechtliche Aufklärung und Rehabilitationsmaßnahmen (unterstellt dem Justizministerium),10,0,1,outgoing,1372
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Zinvori mayr NGO,22,0,1,outgoing,4449
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,l'Association Scout without borders,22,0,0,outgoing,27544
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,« Organisme Public de Coopération Intercommunale – Tambazotra ho an’ny Fampandrosoana Ifotony » OPCI – TFI Soamiray,10,0,1,outgoing,10987
 xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Ärzte der Welt e.V.,22,1,1,outgoing,1602883
 us-ein-27-1661997,GiveDirectly,21,gb-gov-3,UK - Foreign & Commonwealth Office,10,,,,1,1,incoming,6545348
 xm-dac-47136,Global Green Growth Institute,40,,,,,(Direct expenditure),,0,0,outgoing,231726
@@ -3599,7 +3609,6 @@ xm-dac-301-2,International Development Research Centre,15,,,,,Centre ivoirien de
 xm-dac-301-2,International Development Research Centre,15,,,,,Centro Ceibal para el Estudio de las Tecnologías Digitales en la Educación,22,0,0,outgoing,16756
 xm-dac-301-2,International Development Research Centre,15,,,,,Centro de Estudios para la Equidad y Gobernanza en los Sistemas de Salud,21,0,1,outgoing,112307
 xm-dac-301-2,International Development Research Centre,15,,,,,"Centro de Política Digital para América Latina, A. C.",23,0,0,outgoing,105031
-xm-dac-301-2,International Development Research Centre,15,,,,,"Corporación de Derecho Privado ""Rimisp"" - Centro Latinoamericano para el Desarrollo Rural] or [Corporación Rimisp]",23,0,1,outgoing,364241
 xm-dac-301-2,International Development Research Centre,15,,,,,"Dimagi, Inc.",73,0,1,outgoing,57794
 xm-dac-301-2,International Development Research Centre,15,,,,,"East-West Management Institute, Inc.",24,0,0,outgoing,65699
 xm-dac-301-2,International Development Research Centre,15,,,,,Economic Policy Research Centre,22,0,1,outgoing,229260
@@ -3640,6 +3649,7 @@ xm-dac-301-2,International Development Research Centre,15,,,,,University of Otta
 xm-dac-301-2,International Development Research Centre,15,,,,,University of the Western Cape,80,0,1,outgoing,517391
 xm-dac-301-2,International Development Research Centre,15,,,,,Université Cheikh Anta Diop,80,0,1,outgoing,138093
 xm-dac-301-2,International Development Research Centre,15,,,,,Women in Informal Employment: Globalizing and Organizing (WIEGO) Limited,21,0,1,outgoing,363114
+xm-dac-301-2,International Development Research Centre,15,,,,,"[Corporación de Derecho Privado ""Rimisp"" - Centro Latinoamericano para el Desarrollo Rural] or [Corporación Rimisp]",23,0,1,outgoing,364241
 xm-dac-21018,International Federation of Red Cross and Red Crescent Societies,90,,,,,(Direct expenditure),,1,1,outgoing,217782393
 xm-dac-21018,International Federation of Red Cross and Red Crescent Societies,90,dai015,Airbus Corporate Foundation (Employees of Airbus),,,,,1,1,incoming,14669
 xm-dac-21018,International Federation of Red Cross and Red Crescent Societies,90,dal018,Alter Domus Participations S.ar.l,,,,,1,1,incoming,244852
@@ -3814,6 +3824,7 @@ jo-ccd-200104681,Leaders of Tomorrow,70,,,,,"This cost was paid to Careem, Uber,
 jo-ccd-200104681,Leaders of Tomorrow,70,,,,,This cost was paid to the owner of the building as a part of the office rent,90,0,0,outgoing,3519
 jo-ccd-200104681,Leaders of Tomorrow,70,,,,,This is the Personnel costs that we paid to our staff member to implement the activities,90,0,0,outgoing,22623
 fr-6,MAEDI,10,,,,,(Unspecified org),,0,0,outgoing,10910
+fr-6,MAEDI,10,,,,,"- L’université Gamal Abdel Nasser de Conakry ; - L’Institut supérieur des sciences de l’éducation de Guinée ; - L’Institut de Formation à distance - L’institut Pasteur de guinée, - Le Centre de recherche et de formation en infectiologie de Guinée",,0,0,outgoing,438098
 fr-6,MAEDI,10,,,,,APC-Colombia (Agencia Presidencial de Cooperacion Internacional de Colombia),,0,1,outgoing,37006
 fr-6,MAEDI,10,,,,,ARHR,,0,1,outgoing,8853
 fr-6,MAEDI,10,,,,,Adonis Musati Project,,0,1,outgoing,14826
@@ -3828,7 +3839,6 @@ fr-6,MAEDI,10,,,,,Fondation Congolaise pour la Recherche Médicale,,0,1,outgoing
 fr-6,MAEDI,10,,,,,La Commission Electorale Indépendante,,0,1,outgoing,26094
 fr-6,MAEDI,10,,,,,"La chambre de Commerce, d’industrie, d’Agriculture et des Métiers de Pointe-Noire (CCIAM PNR)",,0,0,outgoing,6489
 fr-6,MAEDI,10,,,,,Lawyers Against Abuse,,0,1,outgoing,13522
-fr-6,MAEDI,10,,,,,"L’université Gamal Abdel Nasser de Conakry ; - L’Institut supérieur des sciences de l’éducation de Guinée ; - L’Institut de Formation à distance - L’institut Pasteur de guinée, - Le Centre de recherche et de formation en infectiologie de Guinée",,0,0,outgoing,438098
 fr-6,MAEDI,10,,,,,Ministère de l'Education Nationale et de la Formation Professionnelle - MENFOP,,0,0,outgoing,418781
 fr-6,MAEDI,10,,,,,"National Institute for Communicable Diseases; Centre of Excellence for Biomedical TB Research, Université de Witwatersrand et National Health Laboratory Service; Université de Stellenbosch; Institut Pasteur Madagascar; Institut Pasteur Paris",,0,0,outgoing,326903
 fr-6,MAEDI,10,,,,,Ordre de Malte,,0,1,outgoing,4837
@@ -4136,9 +4146,9 @@ nl-kvk-27108436,Oxfam Novib,21,nl-kvk-41197577,SOS Children's Villages The Nethe
 nl-kvk-27108436,Oxfam Novib,21,se-0,Sweden,10,,,,0,0,incoming,22146
 nl-kvk-27108436,Oxfam Novib,21,,UN ORGANISATIONS,10,,,,1,0,incoming,274819
 nl-kvk-27108436,Oxfam Novib,21,,UN ORGANISATIONS,10,,,,1,1,incoming,49041
-ng-cac-30547,PARADIGM INITIATIVE,21,,,,,(Direct expenditure),,1,0,outgoing,-189844
-ng-cac-30547,PARADIGM INITIATIVE,21,,,,,(Direct expenditure),,1,1,outgoing,-46788
-ng-cac-30547,PARADIGM INITIATIVE,21,xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,1,0,incoming,396486
+ng-cac-30547,PARADIGM INITIATIVE,21,,,,,(Direct expenditure),,1,0,outgoing,-189915
+ng-cac-30547,PARADIGM INITIATIVE,21,,,,,(Direct expenditure),,1,1,outgoing,-46806
+ng-cac-30547,PARADIGM INITIATIVE,21,xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,1,0,incoming,396635
 gb-coh-04154075,PENAL REFORM INTERNATIONAL,21,,,,,(Direct expenditure),,0,0,outgoing,1353624
 gb-coh-04154075,PENAL REFORM INTERNATIONAL,21,,,,,(Direct expenditure),,0,1,outgoing,563497
 gb-coh-04154075,PENAL REFORM INTERNATIONAL,21,xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,0,1,incoming,536757
@@ -4307,8 +4317,8 @@ gb-chc-207544,Sightsavers,21,,,,,"Regional Delegation of Public Health - Littora
 gb-chc-207544,Sightsavers,21,,,,,Singida Regional Hospital,10,0,0,outgoing,99640
 gb-chc-207544,Sightsavers,21,,,,,Sokoto State Ministry of Health,11,1,1,outgoing,131126
 gb-chc-207544,Sightsavers,21,,,,,The College of Ophthalmology and Allied Vision Sciences,80,1,1,outgoing,24017
-gb-chc-207544,Sightsavers,21,;,CARE National Office,22,,,,1,1,incoming,9480
 gb-chc-207544,Sightsavers,21,xm-dac-21-1,DFAT / Irish Aid,10,,,,1,1,incoming,319977
+gb-chc-207544,Sightsavers,21,,Jersey Overseas Aid,10,,,,1,1,incoming,9480
 gb-chc-207544,Sightsavers,21,,Peoples Postcode Lottery,60,,,,1,1,incoming,26995
 gb-chc-207544,Sightsavers,21,,Standard Chartered Bank,70,,,,0,0,incoming,40032
 gb-chc-207544,Sightsavers,21,,Standard Chartered Bank,70,,,,1,1,incoming,85599
@@ -4358,7 +4368,7 @@ se-0,Sweden,10,,,,41502,Cities Alliance,40,0,0,outgoing,1737299
 se-0,Sweden,10,,,,41502,Cities Alliance,40,0,1,outgoing,21499072
 se-0,Sweden,10,,,,,Developing country-based NGO,22,0,0,outgoing,14528193
 se-0,Sweden,10,,,,,Developing country-based NGO,22,0,1,outgoing,26105897
-se-0,Sweden,10,,,,11000,"Donor Government (project via EAC, JRC,...)",10,0,1,outgoing,23345
+se-0,Sweden,10,,,,11000,"Donor Government (project via EAC, JRC,.)",10,0,1,outgoing,23345
 se-0,Sweden,10,,,,,Donor country-based NGO,22,0,0,outgoing,44456097
 se-0,Sweden,10,,,,,Donor country-based NGO,22,0,1,outgoing,259945728
 se-0,Sweden,10,,,,46015,EBRD/European Bank for Reconstruction and Development,40,0,1,outgoing,1628718
@@ -4509,20 +4519,21 @@ gb-chc-1050327,The Leprosy Mission England and Wales,21,gb-coh-04105827,MannionD
 gb-chc-1050327,The Leprosy Mission England and Wales,21,gb-coh04105827,gb-coh04105827,70,,,,0,0,incoming,418999
 gb-chc-1050327,The Leprosy Mission England and Wales,21,gb-coh04105827,gb-coh04105827,70,,,,0,1,incoming,18005
 np-swc-17775,The Leprosy Mission Nepal,22,gb-chc-1050327,The Leprosy Mission England and Wales,21,,,,1,0,incoming,185574
-us-ein-941655673,The William and Flora Hewlett Foundation,60,,,,us-ein-061608361,"African Population and Health Research Center Inc""",,0,0,outgoing,580000
-us-ein-941655673,The William and Flora Hewlett Foundation,60,,,,us-ein-261339988,"CalCEF Innovations""",,0,0,outgoing,360000
-us-ein-941655673,The William and Flora Hewlett Foundation,60,,,,us-ein-522351337,"Center for Global Development""",,0,0,outgoing,1000000
-us-ein-941655673,The William and Flora Hewlett Foundation,60,,,,us-ein-463995547,"International Budget Partnership""",,0,0,outgoing,1250000
-us-ein-941655673,The William and Flora Hewlett Foundation,60,,,,,"International Development Research Centre""",,0,0,outgoing,2600000
-us-ein-941655673,The William and Flora Hewlett Foundation,60,,,,us-ein-811867464,"Open Government Partnership Secretariat""",,0,0,outgoing,1000000
-us-ein-941655673,The William and Flora Hewlett Foundation,60,,,,,"Positive Money Ltd""",,0,0,outgoing,55000
+us-ein-941655673,The William and Flora Hewlett Foundation,60,,,,us-ein-061608361,African Population and Health Research Center Inc,,0,0,outgoing,580000
+us-ein-941655673,The William and Flora Hewlett Foundation,60,,,,us-ein-261339988,CalCEF Innovations,,0,0,outgoing,360000
+us-ein-941655673,The William and Flora Hewlett Foundation,60,,,,us-ein-522351337,Center for Global Development,,0,0,outgoing,1000000
+us-ein-941655673,The William and Flora Hewlett Foundation,60,,,,us-ein-463995547,International Budget Partnership,,0,0,outgoing,1250000
+us-ein-941655673,The William and Flora Hewlett Foundation,60,,,,xm-dac-301-2,International Development Research Centre,15,0,0,outgoing,2600000
+us-ein-941655673,The William and Flora Hewlett Foundation,60,,,,us-ein-811867464,Open Government Partnership Secretariat,,0,0,outgoing,1000000
+us-ein-941655673,The William and Flora Hewlett Foundation,60,,,,,Positive Money Ltd,,0,0,outgoing,55000
+us-usagov,The federal government of the United States,10,,,,,"*Audit Expertise, Accounting, and Counseling (Audit Expertise, Comptable et Conseil (AE2C)",15,0,0,outgoing,416478
 us-usagov,The federal government of the United States,10,,,,,A.O. Centrul de Drept al Femeilor,,0,0,outgoing,11218
 us-usagov,The federal government of the United States,10,,,,,"AAR GOVERNMENT SERVICES, INC.",70,0,0,outgoing,3053707
 us-usagov,The federal government of the United States,10,,,,,AGANI Ltd,70,0,0,outgoing,1522
 us-usagov,The federal government of the United States,10,,,,,ALKALOID AD - SKOPJE,,0,0,outgoing,13484
 us-usagov,The federal government of the United States,10,,,,,ANHOCH,,0,0,outgoing,7039
 us-usagov,The federal government of the United States,10,,,,,ASSISI FARMS LIMITED,15,0,0,outgoing,47000
-us-usagov,The federal government of the United States,10,,,,,Action Council Association (Association Conseil pour l'Action (ACA)),15,0,0,outgoing,435677
+us-usagov,The federal government of the United States,10,,,,,Action Council Association (Association Conseil pour l'Action (ACA),15,0,0,outgoing,435677
 us-usagov,The federal government of the United States,10,,,,,Action Pour la Promotion des Initiatives Communautaires (APIC),15,0,0,outgoing,534884
 us-usagov,The federal government of the United States,10,,,,,Action Sociale et d'Organisation Paysanne,15,0,0,outgoing,251686
 us-usagov,The federal government of the United States,10,,,,,Action pour le Développement des Initiatives Locales (ADLI),15,0,0,outgoing,831069
@@ -4533,7 +4544,6 @@ us-usagov,The federal government of the United States,10,,,,,Asociación Coordin
 us-usagov,The federal government of the United States,10,,,,,Asociación Minga Perú,15,0,0,outgoing,50000
 us-usagov,The federal government of the United States,10,,,,,Association Laafi La Touma,15,0,0,outgoing,11657
 us-usagov,The federal government of the United States,10,,,,,Association pour le Développement Transformationnel des Communautés (DTC),15,0,0,outgoing,310858
-us-usagov,The federal government of the United States,10,,,,,"Audit Expertise, Accounting, and Counseling (Audit Expertise, Comptable et Conseil (AE2C)",15,0,0,outgoing,416478
 us-usagov,The federal government of the United States,10,,,,,"BALBOA MOVERS, INC.",,0,0,outgoing,1775
 us-usagov,The federal government of the United States,10,,,,,BOJTA ING.,,0,0,outgoing,1537
 us-usagov,The federal government of the United States,10,,,,,CENTRO DE ESTUDOS E PROMOCAO DA AGRICULTURA DE GRUPO,23,0,0,outgoing,119535
@@ -4541,7 +4551,7 @@ us-usagov,The federal government of the United States,10,,,,,"CEZAM and Associat
 us-usagov,The federal government of the United States,10,,,,,CITIBANK USA,70,0,0,outgoing,72856
 us-usagov,The federal government of the United States,10,,,,,COBURWAS International Youth Organization to Transform Africa (CIYOTA).,15,0,1,outgoing,10000
 us-usagov,The federal government of the United States,10,,,,,Cabinet d’Ingénierie et de Conseil en Développement d’Enterprises (ICDE),15,0,0,outgoing,424702
-us-usagov,The federal government of the United States,10,,,,,Center for Development Support (Centre d’Appui au Développement (CAD)),15,0,0,outgoing,199577
+us-usagov,The federal government of the United States,10,,,,,Center for Development Support (Centre d’Appui au Développement (CAD),15,0,0,outgoing,199577
 us-usagov,The federal government of the United States,10,,,,,Chepkemoi Magdaline,15,0,0,outgoing,10000
 us-usagov,The federal government of the United States,10,,,,,Communication Info Sharing Group in Wash Emergencies,10,0,0,outgoing,7391
 us-usagov,The federal government of the United States,10,,,,,Community Action for Rural Enhancement Community Based Organization,15,0,0,outgoing,9501
@@ -5119,9 +5129,9 @@ xm-dac-41114,United Nations Development Programme,40,xi-iati-ec_echo,European Co
 xm-dac-41114,United Nations Development Programme,40,00004,FOOD AND AGRICULTURE ORGANIZATION OF THE UNITED NATIONS,40,,,,0,1,incoming,113940
 xm-dac-41114,United Nations Development Programme,40,00004,FOOD AND AGRICULTURE ORGANIZATION OF THE UNITED NATIONS,40,,,,1,1,incoming,5948
 xm-dac-41114,United Nations Development Programme,40,12540,FUNDACION POPULAR INC,40,,,,1,1,incoming,587130
-xm-dac-41114,United Nations Development Programme,40,de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,0,0,incoming,4789460
-xm-dac-41114,United Nations Development Programme,40,de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,0,1,incoming,32571362
-xm-dac-41114,United Nations Development Programme,40,de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,1,1,incoming,30859800
+xm-dac-41114,United Nations Development Programme,40,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,0,0,incoming,4789460
+xm-dac-41114,United Nations Development Programme,40,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,0,1,incoming,32571362
+xm-dac-41114,United Nations Development Programme,40,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,1,1,incoming,30859800
 xm-dac-41114,United Nations Development Programme,40,gb-3,Foreign & Commonwealth Office,10,,,,0,1,incoming,1096213
 xm-dac-41114,United Nations Development Programme,40,gb-3,Foreign & Commonwealth Office,10,,,,1,1,incoming,965251
 xm-dac-41114,United Nations Development Programme,40,ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,,,,0,0,incoming,29575
