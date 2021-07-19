@@ -136,7 +136,7 @@ class Activity:
             for sector, sector_percentage in sector_splits.items():
 
                 sector_name = Lookups.get_sector_group_name(sector)
-                country_name = Lookups.get_country_name(country)
+                country_name = Lookups.get_country_region_name(country)
 
                 #
                 # Add to transactions

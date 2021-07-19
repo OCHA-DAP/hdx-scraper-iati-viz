@@ -12,10 +12,18 @@ logger = logging.getLogger(__name__)
 
 
 def clean_string(s):
-    """ Normalise whitespace in a single, and remove any punctuation at the start/end """
-    s = re.sub(r'^\W*(\w.*)\W*$', r'\1', s)
-    s = re.sub(r'\s+', ' ', s)
+    # Normalise one or more whitespaces to a single space and remove any punctuation at the start/end except
+    # for any trailing full stop
+    s = re.sub(r'(\W)\1+', r'\1', s.strip())
+    s = re.sub(r'\s', ' ', s)
+    s = re.sub(r'^\W?([\w &]*)[^a-zA-Z0-9_\.]?$', r'\1', s)
     return s.strip()
+
+
+def clean_region(region):
+    region = region.replace('unspecified', '')
+    region = region.replace('regional', '')
+    return clean_string(region)
 
 
 class Lookups:
@@ -30,6 +38,7 @@ class Lookups:
     default_expenditure_org_name = None
     sector_info = None
     default_sector = None
+    region_code_to_name = dict()
     default_country_region = None
     fx_rates = None
     fallback_rates = None
@@ -50,6 +59,13 @@ class Lookups:
             cls.org_ref_to_name[code] = name
             cls.org_names_to_ref[name.lower()] = code
         cls.sector_info = load_json(configuration['sector_data'])
+        region_data = load_json(configuration['region_data'])
+        """ Map from region codes to region names """
+        # Prime with region codes from code4iati
+        for entry in region_data['data']:
+            code = clean_string(entry['code']).lower()
+            name = clean_region(entry['name'])
+            cls.region_code_to_name[code] = name
         cls.default_org_id = configuration['default_org_id']
         cls.default_org_name = configuration['default_org_name']
         cls.default_expenditure_org_name = configuration['default_expenditure_org_name']
@@ -58,9 +74,9 @@ class Lookups:
         cls.default_country_region = configuration['default_country_region']
         rates_path = retriever.retrieve_file(configuration['rates_url'], 'rates.csv', 'exchange rates', True)
         cls.fx_rates = exchangerates.CurrencyConverter(update=False, source=rates_path)
-        rjson = retriever.retrieve_json(configuration['fallback_rates_url'], 'fallbackrates.json',
+        fallback_rates = retriever.retrieve_json(configuration['fallback_rates_url'], 'fallbackrates.json',
                                         'fallback exchange rates', True)
-        cls.fallback_rates = rjson['rates']
+        cls.fallback_rates = fallback_rates['rates']
         for row in hxl.data(configuration['filters_url']):
             org_id = row.get('#org+reporting+id')
             if org_id:
@@ -238,10 +254,13 @@ class Lookups:
             return cls.default_sector
 
     @classmethod
-    def get_country_name(cls, code):
+    def get_country_region_name(cls, code):
         countryname = Country.get_country_name_from_iso2(code)
         if countryname:
             return countryname
+        regionname = cls.region_code_to_name.get(code)
+        if regionname:
+            return f'{regionname} (no country specified)'
         return cls.default_country_region
 
     @classmethod

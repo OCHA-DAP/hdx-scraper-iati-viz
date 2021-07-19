@@ -47,6 +47,7 @@ lookups:
   blocklist_url: "https://github.com/OCHA-DAP/hdx-scraper-iati-viz/raw/org_id_name_output/tests/config/IATI%20Explorer%20Filters%20-%20Spurious%20References.csv"
   org_data: "data/IATIOrganisationIdentifier.json"
   sector_data: "data/dac3-sector-map.json"
+  region_data: "data/Region.json"
   rates_url: "https://codeforiati.org/exchangerates-scraper/consolidated.csv"
   fallback_rates_url: "https://api.exchangerate.host/latest?base=usd"
   default_org_id: ""

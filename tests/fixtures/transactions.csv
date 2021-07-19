@@ -1,47 +1,45 @@
 Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient country,Humanitarian?,Strict?,Transaction type,Activity id,Net money,Total money
 #date+month,#org+id,#org+name,#org+type,#sector,#country,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_type,#activity+code,#value+net,#value+total
-2020-01,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005765,3000000,3000000
-2020-01,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005765,3000000,3000000
+2020-01,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,commitments,DAC-1601-INV-005765,3000000,3000000
+2020-01,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,spending,DAC-1601-INV-005765,3000000,3000000
 2020-01,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-19734
 2020-01,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-2281
 2020-01,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-5525
 2020-01,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-2969
 2020-01,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,1,spending,NG-CAC-30547-CSSOFE1,0,-8607
 2020-01,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,1,spending,NG-CAC-30547-CSSOFE1,0,-13342
-2020-01,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,0,spending,LK-DRC-GA139-LFS1.2,5000,5000
-2020-02,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005948,39600,39600
-2020-02,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005948,39600,39600
+2020-01,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,0,spending,LK-DRC-GA139-LFS1.2,5000,5000
 2020-02,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-005839,50000,50000
 2020-02,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-005840,250000,250000
 2020-02,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-006080,199653,199653
 2020-02,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-005839,50000,50000
 2020-02,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-005840,250000,250000
 2020-02,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-006080,199653,199653
-2020-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,0,commitments,GB-GOV-1-301150-104,59631,59631
-2020-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,commitments,GB-GOV-1-301150-101,6467000,6467000
-2020-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,commitments,GB-GOV-1-301150-103,964661,964661
+2020-02,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-005839,50000,50000
+2020-02,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-005840,250000,250000
+2020-02,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-005948,39600,39600
+2020-02,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-005839,50000,50000
+2020-02,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-005840,250000,250000
+2020-02,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-005948,39600,39600
+2020-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Developing countries (no country specified),1,0,commitments,GB-GOV-1-301150-104,59631,59631
+2020-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,commitments,GB-GOV-1-301150-101,6467000,6467000
+2020-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,commitments,GB-GOV-1-301150-103,964661,964661
 2020-02,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-7915
 2020-02,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-41504
 2020-02,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-12769
 2020-02,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-2474
 2020-02,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,1,spending,NG-CAC-30547-CSSOFE1,0,-24742
-2020-02,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,0,spending,LK-DRC-GA139-LFS1.2,2500,2500
-2020-02,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,0,spending,LK-DRC-GA139-LFS1.2,2500,2500
-2020-02,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,0,spending,LK-DRC-GA139-LFS1.2,2500,2500
-2020-02,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,0,spending,LK-DRC-GA139-LFS1.2,2500,2500
-2020-02,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,0,spending,LK-DRC-GA139-LFS1.2,2500,2500
-2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005971,249550,249550
-2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006008,2500000,2500000
-2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006010,157929,157929
-2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006131,2381967,2381967
-2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006133,1730875,1730875
-2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006200,7000000,7000000
-2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005971,249550,249550
-2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006008,2500000,2500000
-2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006010,157929,157929
-2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006131,2381967,2381967
-2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006133,1730875,1730875
-2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006200,7000000,7000000
+2020-02,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,0,spending,LK-DRC-GA139-LFS1.2,2500,2500
+2020-02,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,0,spending,LK-DRC-GA139-LFS1.2,2500,2500
+2020-02,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,0,spending,LK-DRC-GA139-LFS1.2,2500,2500
+2020-02,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,0,spending,LK-DRC-GA139-LFS1.2,2500,2500
+2020-02,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,0,spending,LK-DRC-GA139-LFS1.2,2500,2500
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,commitments,DAC-1601-INV-005999,499725,499725
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,commitments,DAC-1601-INV-006008,2500000,2500000
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,commitments,DAC-1601-INV-006010,157929,157929
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,spending,DAC-1601-INV-005999,499725,499725
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,spending,DAC-1601-INV-006008,2500000,2500000
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,spending,DAC-1601-INV-006010,157929,157929
 2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-005834,300000,300000
 2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-006104,50000,50000
 2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-006105,100000,100000
@@ -50,19 +48,37 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-006104,50000,50000
 2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-006105,100000,100000
 2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-006106,50000,50000
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-005834,300000,300000
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-005971,249550,249550
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-005999,149918,149918
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-006104,50000,50000
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-006105,100000,100000
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-006106,50000,50000
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-006131,2381967,2381967
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-006133,1730875,1730875
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-006200,7000000,7000000
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-005834,300000,300000
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-005971,249550,249550
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-005999,149918,149918
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-006104,50000,50000
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-006105,100000,100000
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-006106,50000,50000
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-006131,2381967,2381967
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-006133,1730875,1730875
+2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-006200,7000000,7000000
 2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Ethiopia,0,1,commitments,DAC-1601-INV-005999,229874,229874
 2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Ethiopia,0,1,spending,DAC-1601-INV-005999,229874,229874
 2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Nigeria,0,1,commitments,DAC-1601-INV-005999,119934,119934
 2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Nigeria,0,1,spending,DAC-1601-INV-005999,119934,119934
 2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Disaster Prevention & Preparedness,Malawi,1,1,commitments,GB-GOV-1-300150-103,184838,184838
 2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Disaster Prevention & Preparedness,Malawi,1,1,spending,GB-GOV-1-300150-103,187344,187344
-2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,0,spending,GB-GOV-1-301150-104,13817,13817
-2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,commitments,GB-GOV-1-301150-105,1894325,1894325
-2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,commitments,GB-GOV-1-301150-106,6469500,6469500
-2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,commitments,GB-GOV-1-301150-107,5880000,5880000
-2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-101,6418000,6418000
-2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-106,5831000,5831000
-2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-107,5880000,5880000
+2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Developing countries (no country specified),1,0,spending,GB-GOV-1-301150-104,13817,13817
+2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,commitments,GB-GOV-1-301150-105,1894325,1894325
+2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,commitments,GB-GOV-1-301150-106,6469500,6469500
+2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,commitments,GB-GOV-1-301150-107,5880000,5880000
+2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-101,6418000,6418000
+2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-106,5831000,5831000
+2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-107,5880000,5880000
 2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,1,commitments,GB-GOV-1-300150-103,115524,115524
 2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,1,commitments,GB-GOV-1-300150-103,566068,566068
 2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,1,spending,GB-GOV-1-300150-103,117090,117090
@@ -75,31 +91,35 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-03,gb-coh-213890,Save The Children UK,21,Education,Uganda,1,1,commitments,GB-COH-213890-82604729,1444,121896
 2020-03,gb-coh-213890,Save The Children UK,21,Unallocated / Unspecified,(Unspecified country),0,1,commitments,GB-COH-213890-82690119,512155,512155
 2020-03,ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,Emergency Response,Iraq,1,0,spending,CH-FDJP-CHE106823242-2019723a,0,238603
-2020-03,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,0,spending,LK-DRC-GA139-LFS1.2,84058,84058
-2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,0,commitments,DAC-1601-INV-004259,1060303,1060303
-2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,0,spending,DAC-1601-INV-004259,530152,530152
-2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005779,737323,737323
-2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005779,737323,737323
+2020-03,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,0,spending,LK-DRC-GA139-LFS1.2,84058,84058
 2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-005837,200000,200000
 2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-005838,200000,200000
 2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-005837,200000,200000
 2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-005838,200000,200000
+2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,0,commitments,DAC-1601-INV-004259,1060303,1060303
+2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,0,spending,DAC-1601-INV-004259,530152,530152
+2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-005779,737323,737323
+2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-005837,200000,200000
+2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-005838,200000,200000
+2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-005779,737323,737323
+2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-005837,200000,200000
+2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-005838,200000,200000
 2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Disaster Prevention & Preparedness,Malawi,1,1,commitments,GB-GOV-1-300150-103,183597,183597
-2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Education,(Unspecified country),0,1,spending,GB-GOV-1-300402-105,6167500,6167500
-2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,0,spending,GB-GOV-1-301150-104,54858,54858
+2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Education,Developing countries (no country specified),0,1,spending,GB-GOV-1-300402-105,6167500,6167500
+2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Developing countries (no country specified),1,0,spending,GB-GOV-1-301150-104,54858,54858
 2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Saint Helena,0,0,commitments,GB-GOV-1-300806-104,3632836,3632836
-2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,commitments,GB-GOV-1-301150-102,1194021,1194021
-2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,commitments,GB-GOV-1-301150-111,81035500,81035500
-2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,commitments,GB-GOV-1-301150-112,18700500,18700500
-2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,commitments,GB-GOV-1-301150-116,40477800,40477800
-2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-105,46821,46821
-2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-112,18631500,18631500
-2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-116,41586600,41586600
-2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,1,commitments,GB-GOV-1-301150-110,21255100,21255100
-2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,1,commitments,GB-GOV-1-301150-113,18700500,18700500
-2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,1,commitments,GB-GOV-1-301150-114,24934000,24934000
-2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,1,commitments,GB-GOV-1-301150-115,12467000,12467000
-2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,1,commitments,GB-GOV-1-301150-117,2466400,2466400
+2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,commitments,GB-GOV-1-301150-102,1194021,1194021
+2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,commitments,GB-GOV-1-301150-111,81035500,81035500
+2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,commitments,GB-GOV-1-301150-112,18700500,18700500
+2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,commitments,GB-GOV-1-301150-116,40477800,40477800
+2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-105,46821,46821
+2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-112,18631500,18631500
+2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-116,41586600,41586600
+2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,1,commitments,GB-GOV-1-301150-110,21255100,21255100
+2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,1,commitments,GB-GOV-1-301150-113,18700500,18700500
+2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,1,commitments,GB-GOV-1-301150-114,24934000,24934000
+2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,1,commitments,GB-GOV-1-301150-115,12467000,12467000
+2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,1,commitments,GB-GOV-1-301150-117,2466400,2466400
 2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,1,commitments,GB-GOV-1-300150-103,114748,114748
 2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,1,commitments,GB-GOV-1-300150-103,562266,562266
 2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Syrian Arab Republic,0,1,spending,GB-GOV-1-300388-102,6214500,6214500
@@ -113,38 +133,40 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-04,gb-coh-213890,Save The Children UK,21,Health,Thailand,1,1,commitments,GB-COH-213890-82604768,0,158751
 2020-05,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-005832,300000,300000
 2020-05,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-005832,300000,300000
+2020-05,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-005832,300000,300000
+2020-05,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-005832,300000,300000
 2020-05,dac-1601,Bill and Melinda Gates Foundation,60,Health,India,0,1,commitments,DAC-1601-INV-005925,466292,466292
 2020-05,dac-1601,Bill and Melinda Gates Foundation,60,Health,India,0,1,spending,DAC-1601-INV-005925,466292,466292
 2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Disaster Prevention & Preparedness,Malawi,1,1,spending,GB-GOV-1-300150-103,183893,183893
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,1,commitments,GB-GOV-1-301150-118,1426962,1426962
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,1,commitments,GB-GOV-1-301150-119,1713333,1713333
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,1,spending,GB-GOV-1-301150-118,490652,490652
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,1,spending,GB-GOV-1-301150-119,519005,519005
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Developing countries (no country specified),1,1,commitments,GB-GOV-1-301150-118,1426962,1426962
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Developing countries (no country specified),1,1,commitments,GB-GOV-1-301150-119,1713333,1713333
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-118,490652,490652
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-119,519005,519005
 2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Jordan,1,1,commitments,GB-GOV-1-300540-108,2425800,2425800
 2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Jordan,1,1,spending,GB-GOV-1-300540-108,-2464000,-2464000
 2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Jordan,1,1,spending,GB-GOV-1-300540-108,2445400,2445400
 2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Yemen,1,1,commitments,GB-GOV-1-301150-120,2963280,2963280
 2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Yemen,1,1,spending,GB-GOV-1-301150-120,977938,977938
 2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Somalia,0,0,commitments,GB-GOV-1-300490-106,759192,759192
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-105,34698,34698
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-111,79462500,79462500
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,1,commitments,GB-GOV-1-300044-104,621800,621800
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,1,spending,GB-GOV-1-300044-104,609700,609700
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,1,spending,GB-GOV-1-301150-110,20989900,20989900
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,1,spending,GB-GOV-1-301150-113,18450380,18450380
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,1,spending,GB-GOV-1-301150-115,12430000,12430000
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,commitments,GB-GOV-1-301150-118,594567,594567
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,commitments,GB-GOV-1-301150-118,594567,594567
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,commitments,GB-GOV-1-301150-118,1347686,1347686
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,commitments,GB-GOV-1-301150-119,428333,428333
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,commitments,GB-GOV-1-301150-119,2141666,2141666
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-118,204438,204438
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-118,204438,204438
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-118,463394,463394
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-119,129751,129751
-2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-119,648756,648756
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-105,34698,34698
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-111,79462500,79462500
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,1,spending,GB-GOV-1-301150-110,20989900,20989900
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,1,spending,GB-GOV-1-301150-113,18450380,18450380
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,1,spending,GB-GOV-1-301150-115,12430000,12430000
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,commitments,GB-GOV-1-301150-118,594567,594567
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,commitments,GB-GOV-1-301150-118,594567,594567
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,commitments,GB-GOV-1-301150-118,1347686,1347686
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,commitments,GB-GOV-1-301150-119,428333,428333
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,commitments,GB-GOV-1-301150-119,2141666,2141666
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-118,204438,204438
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-118,204438,204438
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-118,463394,463394
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-119,129751,129751
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-119,648756,648756
 2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,1,spending,GB-GOV-1-300150-103,114933,114933
 2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,1,spending,GB-GOV-1-300150-103,563171,563171
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,South of Sahara (no country specified),0,1,commitments,GB-GOV-1-300044-104,621800,621800
+2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,South of Sahara (no country specified),0,1,spending,GB-GOV-1-300044-104,609700,609700
 2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Yemen,1,1,commitments,GB-GOV-1-301150-120,370410,370410
 2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Yemen,1,1,commitments,GB-GOV-1-301150-120,370410,370410
 2020-05,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Yemen,1,1,spending,GB-GOV-1-301150-120,122242,122242
@@ -156,9 +178,11 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-05,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-16485
 2020-05,gb-coh-213890,Save The Children UK,21,Health,United Republic of Tanzania,1,1,commitments,GB-COH-213890-82604730,0,320918
 2020-05,ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,Emergency Response,Iraq,1,0,spending,CH-FDJP-CHE106823242-2019723a,0,143252
-2020-06,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,0,spending,DAC-1601-INV-004259,530152,530152
-2020-06,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006124,711349,711349
-2020-06,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006124,579783,579783
+2020-06,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,commitments,DAC-1601-INV-006124,711349,711349
+2020-06,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,spending,DAC-1601-INV-006124,579783,579783
+2020-06,dac-1601,Bill and Melinda Gates Foundation,60,Health,Asia (no country specified),0,0,commitments,DAC-1601-INV-005598,152721,152721
+2020-06,dac-1601,Bill and Melinda Gates Foundation,60,Health,Asia (no country specified),0,0,spending,DAC-1601-INV-005598,152721,152721
+2020-06,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,0,spending,DAC-1601-INV-004259,530152,530152
 2020-06,dac-1601,Bill and Melinda Gates Foundation,60,Health,India,0,0,commitments,DAC-1601-INV-005598,18876,18876
 2020-06,dac-1601,Bill and Melinda Gates Foundation,60,Health,India,0,0,spending,DAC-1601-INV-005598,18876,18876
 2020-06,dac-1601,Bill and Melinda Gates Foundation,60,Health,South Africa,0,1,commitments,DAC-1601-INV-004598,750000,750000
@@ -169,19 +193,19 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Disaster Prevention & Preparedness,Malawi,1,0,spending,GB-GOV-1-300150-105,1231674,1231674
 2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Disaster Prevention & Preparedness,Malawi,1,1,commitments,GB-GOV-1-300150-103,1003731,1003731
 2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Disaster Prevention & Preparedness,Malawi,1,1,spending,GB-GOV-1-300150-103,995152,995152
-2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,1,spending,GB-GOV-1-301150-118,493877,493877
+2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-118,493877,493877
 2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Yemen,1,1,spending,GB-GOV-1-301150-120,1017321,1017321
 2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Pitcairn,0,0,commitments,GB-GOV-1-300807-102,334620,334620
 2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Pitcairn,0,0,spending,GB-GOV-1-300807-102,167745,167745
-2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,799,799
-2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,8303,8303
-2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,32273,32273
-2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-105,115401,115401
-2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,1,spending,GB-GOV-1-301150-114,25052000,25052000
-2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,1,spending,GB-GOV-1-301150-117,497880,497880
-2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-118,205782,205782
-2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-118,205782,205782
-2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-118,466439,466439
+2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,799,799
+2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,8303,8303
+2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,32273,32273
+2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-105,115401,115401
+2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,1,spending,GB-GOV-1-301150-114,25052000,25052000
+2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,1,spending,GB-GOV-1-301150-117,497880,497880
+2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-118,205782,205782
+2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-118,205782,205782
+2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-118,466439,466439
 2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,0,commitments,GB-GOV-1-300150-105,65384,65384
 2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,0,spending,GB-GOV-1-300150-105,64825,64825
 2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,1,commitments,GB-GOV-1-300150-103,627332,627332
@@ -214,9 +238,9 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-06,gb-coh-213890,Save The Children UK,21,Health,United Republic of Tanzania,1,1,spending,GB-COH-213890-82604730,0,19039
 2020-06,ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,Emergency Response,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,69400
 2020-06,ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,Health,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,17350
-2020-06,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,0,spending,LK-DRC-GA139-LFS1.2,24,24
-2020-07,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005779,4233842,4233842
-2020-07,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005779,3055000,3055000
+2020-06,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,0,spending,LK-DRC-GA139-LFS1.2,24,24
+2020-07,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-005779,4233842,4233842
+2020-07,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-005779,3055000,3055000
 2020-07,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,1308,2855
 2020-07,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Communications,Sierra Leone,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,2617,5710
 2020-07,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Communications,Uganda,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,2617,5710
@@ -232,7 +256,7 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-07,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Jordan,1,1,spending,GB-GOV-1-300540-108,2493800,2493800
 2020-07,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Sudan,1,1,commitments,GB-GOV-1-300196-115,10438470,10438470
 2020-07,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Sudan,1,1,spending,GB-GOV-1-300196-115,3939900,3939900
-2020-07,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-105,109221,109221
+2020-07,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-105,109221,109221
 2020-07,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,Yemen,0,1,spending,GB-GOV-1-300527-104,3939900,3939900
 2020-07,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Water Supply & Sanitation,Sierra Leone,0,1,spending,GB-GOV-1-300067-115,1135890,1135890
 2020-07,gb-coh-1762840,HelpAge International,21,Emergency Response,Ukraine,1,0,spending,GB-COH-1762840-UKR038-NG24-01,1046,7612
@@ -252,10 +276,10 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-08,dac-1601,Bill and Melinda Gates Foundation,60,Government & Civil Society,Kenya,0,0,spending,DAC-1601-INV-004537,287000,287000
 2020-08,dac-1601,Bill and Melinda Gates Foundation,60,Government & Civil Society,Nigeria,0,0,commitments,DAC-1601-INV-004537,981908,981908
 2020-08,dac-1601,Bill and Melinda Gates Foundation,60,Government & Civil Society,Nigeria,0,0,spending,DAC-1601-INV-004537,413000,413000
-2020-08,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-003687,78178,78178
-2020-08,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-005371,300000,300000
-2020-08,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-003687,78178,78178
-2020-08,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005371,150000,150000
+2020-08,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-003687,78178,78178
+2020-08,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-005371,300000,300000
+2020-08,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-003687,78178,78178
+2020-08,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-005371,150000,150000
 2020-08,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,249,542
 2020-08,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,1243,2712
 2020-08,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,2827,6169
@@ -292,25 +316,25 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-08,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Health,Uganda,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,497,1085
 2020-08,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Health,Uganda,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,2486,5424
 2020-08,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Health,Uganda,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,5655,12339
-2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Business & Other Services,(Unspecified country),0,1,commitments,GB-GOV-1-300805-103,681087,681087
-2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Business & Other Services,(Unspecified country),0,1,spending,GB-GOV-1-300805-103,66145,66145
+2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Business & Other Services,Developing countries (no country specified),0,1,commitments,GB-GOV-1-300805-103,681087,681087
+2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Business & Other Services,Developing countries (no country specified),0,1,spending,GB-GOV-1-300805-103,66145,66145
 2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Disaster Prevention & Preparedness,Malawi,1,1,spending,GB-GOV-1-300150-103,52916,52916
-2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,1,spending,GB-GOV-1-301150-119,939384,939384
+2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-119,939384,939384
 2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Somalia,0,0,spending,GB-GOV-1-300490-106,302222,302222
-2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,4751,4751
-2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,6577,6577
-2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,10645,10645
-2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,11175,11175
-2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,12993,12993
-2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,2835,2835
-2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,29786,29786
-2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,42371,42371
-2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,64679,64679
-2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,82030,82030
-2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-105,172941,172941
-2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,1,spending,GB-GOV-1-301150-117,785880,785880
-2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-119,234846,234846
-2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-119,1174230,1174230
+2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,4751,4751
+2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,6577,6577
+2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,10645,10645
+2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,11175,11175
+2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,12993,12993
+2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,2835,2835
+2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,29786,29786
+2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,42371,42371
+2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,64679,64679
+2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,82030,82030
+2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-105,172941,172941
+2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,1,spending,GB-GOV-1-301150-117,785880,785880
+2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-119,234846,234846
+2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-119,1174230,1174230
 2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,1,spending,GB-GOV-1-300150-103,33072,33072
 2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,1,spending,GB-GOV-1-300150-103,162055,162055
 2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Population Policies/Programmes & Reproductive Health,Malawi,1,1,spending,GB-GOV-1-300150-103,82681,82681
@@ -328,19 +352,19 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-08,gb-coh-1762840,HelpAge International,21,Health,Ukraine,0,1,spending,GB-COH-1762840-UKR041-HC01-01,327,2207
 2020-08,gb-coh-1762840,HelpAge International,21,Reconstruction Relief & Rehabilitation,Ukraine,1,1,spending,GB-COH-1762840-UKR040-UN99-01,0,3625
 2020-08,gb-coh-213890,Save The Children UK,21,Education,Ethiopia,1,1,commitments,GB-COH-213890-82604858,30216,507277
-2020-08,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,1,spending,LK-DRC-GA139-LFS1.2,5089,5089
-2020-08,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,1,spending,LK-DRC-GA139-LFS1.2,5696,5696
-2020-08,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,1,spending,LK-DRC-GA139-LFS1.2,5807,5807
-2020-08,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,1,spending,LK-DRC-GA139-LFS1.2,5881,5881
-2020-08,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,(Unspecified country),0,1,spending,LK-DRC-GA139-LFS1.2,5890,5890
+2020-08,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,1,spending,LK-DRC-GA139-LFS1.2,5089,5089
+2020-08,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,1,spending,LK-DRC-GA139-LFS1.2,5696,5696
+2020-08,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,1,spending,LK-DRC-GA139-LFS1.2,5807,5807
+2020-08,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,1,spending,LK-DRC-GA139-LFS1.2,5881,5881
+2020-08,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,1,spending,LK-DRC-GA139-LFS1.2,5890,5890
 2020-09,gb-coh-294860,ADD International,21,Other Multisector,Bangladesh,0,1,spending,GB-COH-294860-PR9915,4022,70200
 2020-09,gb-coh-294860,ADD International,21,Other Multisector,United Republic of Tanzania,0,1,spending,GB-COH-294860-PR9916,0,6925
-2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-004954,100000,100000
-2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006131,1970398,1970398
-2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-006135,1944053,1944053
-2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-004954,100000,100000
-2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006131,1970398,1970398
-2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006135,1944053,1944053
+2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-004954,100000,100000
+2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-006131,1970398,1970398
+2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-006135,1944053,1944053
+2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-004954,100000,100000
+2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-006131,1970398,1970398
+2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-006135,1944053,1944053
 2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,India,0,1,commitments,DAC-1601-INV-005924,1000000,1000000
 2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,India,0,1,commitments,DAC-1601-INV-005924,1000000,1000000
 2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,India,0,1,spending,DAC-1601-INV-005924,1000000,1000000
@@ -349,9 +373,9 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Yemen,1,1,spending,GB-GOV-1-300417-110,38766,38766
 2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Yemen,1,1,spending,GB-GOV-1-300417-110,82173,82173
 2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Pitcairn,0,0,spending,GB-GOV-1-300807-102,175371,175371
-2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,commitments,GB-GOV-1-301150-102,67548,67548
-2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-105,161079,161079
-2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,1,commitments,GB-GOV-1-300044-107,1301100,1301100
+2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,commitments,GB-GOV-1-301150-102,67548,67548
+2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-105,161079,161079
+2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,South of Sahara (no country specified),0,1,commitments,GB-GOV-1-300044-107,1301100,1301100
 2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,State of Palestine,0,1,commitments,GB-GOV-1-300001-104,259100,259100
 2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,State of Palestine,0,1,spending,GB-GOV-1-300001-104,256940,256940
 2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,Kenya,0,0,commitments,GB-GOV-1-300143-104,6316907,6316907
@@ -395,14 +419,14 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-09,gb-coh-213890,Save The Children UK,21,Unallocated / Unspecified,United Kingdom of Great Britain and Northern Ireland,1,1,spending,GB-COH-213890-82604830,0,189000
 2020-09,ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,Emergency Response,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,200732
 2020-09,ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,Health,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,50183
-2020-10,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-001933,3383156,3383156
-2020-10,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-003438,17000000,17000000
-2020-10,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,commitments,DAC-1601-INV-004949,602998,602998
-2020-10,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-001933,3383156,3383156
-2020-10,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-003438,17000000,17000000
-2020-10,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-004949,250699,250699
-2020-10,dac-1601,Bill and Melinda Gates Foundation,60,Population Policies/Programmes & Reproductive Health,(Unspecified country),0,1,commitments,DAC-1601-INV-004949,296999,296999
-2020-10,dac-1601,Bill and Melinda Gates Foundation,60,Population Policies/Programmes & Reproductive Health,(Unspecified country),0,1,spending,DAC-1601-INV-004949,123478,123478
+2020-10,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,commitments,DAC-1601-INV-003438,17000000,17000000
+2020-10,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,spending,DAC-1601-INV-003438,17000000,17000000
+2020-10,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-001933,3383156,3383156
+2020-10,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-004949,602998,602998
+2020-10,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-001933,3383156,3383156
+2020-10,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-004949,250699,250699
+2020-10,dac-1601,Bill and Melinda Gates Foundation,60,Population Policies/Programmes & Reproductive Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-004949,296999,296999
+2020-10,dac-1601,Bill and Melinda Gates Foundation,60,Population Policies/Programmes & Reproductive Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-004949,123478,123478
 2020-10,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,256,560
 2020-10,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,1348,2940
 2020-10,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Communications,Sierra Leone,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,513,1119
@@ -427,18 +451,18 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-10,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Health,Sierra Leone,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,2695,5881
 2020-10,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Health,Uganda,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,513,1119
 2020-10,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Health,Uganda,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,2695,5881
-2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Business & Other Services,(Unspecified country),0,1,spending,GB-GOV-1-300805-103,47186,47186
-2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,1,spending,GB-GOV-1-301150-118,469791,469791
+2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Business & Other Services,Developing countries (no country specified),0,1,spending,GB-GOV-1-300805-103,47186,47186
+2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-118,469791,469791
 2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Sudan,1,1,spending,GB-GOV-1-300196-115,644500,644500
 2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Yemen,1,1,spending,GB-GOV-1-301150-120,1009160,1009160
-2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,7374,7374
-2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,35729,35729
-2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,69514,69514
-2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-105,242224,242224
-2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,1,spending,GB-GOV-1-300044-107,646400,646400
-2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-118,195746,195746
-2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-118,195746,195746
-2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-118,443692,443692
+2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,7374,7374
+2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,35729,35729
+2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,69514,69514
+2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-105,242224,242224
+2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-118,195746,195746
+2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-118,195746,195746
+2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-118,443692,443692
+2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,South of Sahara (no country specified),0,1,spending,GB-GOV-1-300044-107,646400,646400
 2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Yemen,1,1,spending,GB-GOV-1-301150-120,126145,126145
 2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Yemen,1,1,spending,GB-GOV-1-301150-120,126145,126145
 2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,Kenya,0,0,spending,GB-GOV-1-300143-104,1741911,1741911
@@ -466,15 +490,15 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-11,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Health,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,1280,2794
 2020-11,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Health,Sierra Leone,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,2561,5587
 2020-11,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Health,Uganda,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,2561,5587
-2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Business & Other Services,(Unspecified country),0,1,spending,GB-GOV-1-300805-103,3955,3955
+2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Business & Other Services,Developing countries (no country specified),0,1,spending,GB-GOV-1-300805-103,3955,3955
 2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Yemen,1,1,spending,GB-GOV-1-300417-110,89687,89687
-2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,22599,22599
-2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,23718,23718
-2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,7009,7009
-2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,11001,11001
-2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,56572,56572
-2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,78044,78044
-2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-105,224272,224272
+2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,22599,22599
+2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,23718,23718
+2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,7009,7009
+2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,11001,11001
+2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,56572,56572
+2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,78044,78044
+2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-105,224272,224272
 2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Syrian Arab Republic,0,1,spending,GB-GOV-1-300388-102,696526,696526
 2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,Kenya,0,0,spending,GB-GOV-1-300143-104,2972447,2972447
 2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,Yemen,0,1,spending,GB-GOV-1-300527-104,3967500,3967500
@@ -541,7 +565,7 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-12,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Health,Uganda,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,1316,2873
 2020-12,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Health,Uganda,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,1367,2982
 2020-12,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Health,Uganda,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,15989,34889
-2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Business & Other Services,(Unspecified country),0,1,spending,GB-GOV-1-300805-103,48984,48984
+2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Business & Other Services,Developing countries (no country specified),0,1,spending,GB-GOV-1-300805-103,48984,48984
 2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Education,Tajikistan,0,1,commitments,GB-GOV-1-300619-104,247665,247665
 2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Education,Tajikistan,0,1,spending,GB-GOV-1-300619-104,141941,141941
 2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Sudan,1,1,spending,GB-GOV-1-300196-115,6179640,6179640
@@ -550,9 +574,9 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Saint Helena,0,0,spending,GB-GOV-1-300806-104,3767186,3767186
 2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Tajikistan,0,1,commitments,GB-GOV-1-300619-104,257773,257773
 2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Tajikistan,0,1,spending,GB-GOV-1-300619-104,147734,147734
-2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,10738,10738
-2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,1,spending,GB-GOV-1-300044-107,659850,659850
-2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,1,spending,GB-GOV-1-301150-117,810180,810180
+2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,10738,10738
+2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,1,spending,GB-GOV-1-301150-117,810180,810180
+2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,South of Sahara (no country specified),0,1,spending,GB-GOV-1-300044-107,659850,659850
 2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Multisector,South Sudan,1,0,spending,GB-GOV-1-300708-117,30196,30196
 2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,Kenya,0,0,spending,GB-GOV-1-300143-104,1603068,1603068
 2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,Uganda,1,1,spending,GB-COH-1762840-UGA076-SC99-01,0,13148
@@ -592,15 +616,6 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-12,gb-coh-213890,Save The Children UK,21,Unallocated / Unspecified,United Kingdom of Great Britain and Northern Ireland,1,1,commitments,GB-COH-213890-82604830,0,189000
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Business & Other Services,Nepal,0,0,commitments,CH-4-2020001328,1131094,1131094
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Business & Other Services,Nepal,0,0,spending,CH-4-2020001328,1017984,1017984
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,(Unspecified country),0,1,commitments,CH-4-2020002314,226218754,226218754
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,(Unspecified country),0,1,commitments,CH-4-2020002315,899220,899220
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,(Unspecified country),0,1,commitments,CH-4-2020002315,2098179,2098179
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,(Unspecified country),0,1,commitments,CH-4-2020002316,678656,678656
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,(Unspecified country),0,1,commitments,CH-4-2020002316,1583531,1583531
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,(Unspecified country),0,1,spending,CH-4-2020002315,899220,899220
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,(Unspecified country),0,1,spending,CH-4-2020002315,2098179,2098179
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,(Unspecified country),0,1,spending,CH-4-2020002316,678656,678656
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,(Unspecified country),0,1,spending,CH-4-2020002316,1583531,1583531
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Bolivia (Plurinational State of),0,0,commitments,CH-4-2020001303,36195,36195
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Bolivia (Plurinational State of),0,0,commitments,CH-4-2020001304,9049,9049
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Bolivia (Plurinational State of),0,0,spending,CH-4-2020001303,33039,33039
@@ -613,6 +628,15 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Cameroon,0,1,spending,CH-4-2020001322,169664,169664
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Chad,0,1,commitments,CH-4-2020001283,56555,56555
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Chad,0,1,spending,CH-4-2020001283,45244,45244
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Developing countries (no country specified),0,1,commitments,CH-4-2020002314,226218754,226218754
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Developing countries (no country specified),0,1,commitments,CH-4-2020002315,899220,899220
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Developing countries (no country specified),0,1,commitments,CH-4-2020002315,2098179,2098179
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Developing countries (no country specified),0,1,commitments,CH-4-2020002316,678656,678656
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Developing countries (no country specified),0,1,commitments,CH-4-2020002316,1583531,1583531
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Developing countries (no country specified),0,1,spending,CH-4-2020002315,899220,899220
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Developing countries (no country specified),0,1,spending,CH-4-2020002315,2098179,2098179
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Developing countries (no country specified),0,1,spending,CH-4-2020002316,678656,678656
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Developing countries (no country specified),0,1,spending,CH-4-2020002316,1583531,1583531
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Kyrgyzstan,0,0,commitments,CH-4-2020001403,1131094,1131094
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Kyrgyzstan,0,0,spending,CH-4-2020001403,904875,904875
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Libya,0,0,commitments,CH-4-2020001292,169438,169438
@@ -644,18 +668,6 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Government & Civil Society,Libya,0,0,spending,CH-4-2020001292,72616,72616
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Government & Civil Society,Nepal,0,0,commitments,CH-4-2020001328,678656,678656
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Government & Civil Society,Nepal,0,0,spending,CH-4-2020001328,610791,610791
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,(Unspecified country),0,1,commitments,CH-4-2020001312,6447234,6447234
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,(Unspecified country),0,1,commitments,CH-4-2020001312,10745391,10745391
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,(Unspecified country),0,1,commitments,CH-4-2020001313,2290465,2290465
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,(Unspecified country),0,1,commitments,CH-4-2020001313,3817441,3817441
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,(Unspecified country),0,1,commitments,CH-4-2020001314,1442145,1442145
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,(Unspecified country),0,1,commitments,CH-4-2020001314,2403574,2403574
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,(Unspecified country),0,1,spending,CH-4-2020001312,6447234,6447234
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,(Unspecified country),0,1,spending,CH-4-2020001312,10745391,10745391
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,(Unspecified country),0,1,spending,CH-4-2020001313,2290465,2290465
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,(Unspecified country),0,1,spending,CH-4-2020001313,3817441,3817441
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,(Unspecified country),0,1,spending,CH-4-2020001314,1442145,1442145
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,(Unspecified country),0,1,spending,CH-4-2020001314,2403574,2403574
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Bolivia (Plurinational State of),0,0,commitments,CH-4-2020001303,90488,90488
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Bolivia (Plurinational State of),0,0,commitments,CH-4-2020001304,22622,22622
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Bolivia (Plurinational State of),0,0,spending,CH-4-2020001303,82597,82597
@@ -683,6 +695,18 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Chad,0,1,spending,CH-4-2020001296,15609,15609
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Chad,0,1,spending,CH-4-2020001296,23414,23414
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Chad,0,1,spending,CH-4-2020001296,39023,39023
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Developing countries (no country specified),0,1,commitments,CH-4-2020001312,6447234,6447234
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Developing countries (no country specified),0,1,commitments,CH-4-2020001312,10745391,10745391
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Developing countries (no country specified),0,1,commitments,CH-4-2020001313,2290465,2290465
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Developing countries (no country specified),0,1,commitments,CH-4-2020001313,3817441,3817441
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Developing countries (no country specified),0,1,commitments,CH-4-2020001314,1442145,1442145
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Developing countries (no country specified),0,1,commitments,CH-4-2020001314,2403574,2403574
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Developing countries (no country specified),0,1,spending,CH-4-2020001312,6447234,6447234
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Developing countries (no country specified),0,1,spending,CH-4-2020001312,10745391,10745391
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Developing countries (no country specified),0,1,spending,CH-4-2020001313,2290465,2290465
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Developing countries (no country specified),0,1,spending,CH-4-2020001313,3817441,3817441
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Developing countries (no country specified),0,1,spending,CH-4-2020001314,1442145,1442145
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Developing countries (no country specified),0,1,spending,CH-4-2020001314,2403574,2403574
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Multisector,Kyrgyzstan,0,0,commitments,CH-4-2020001403,678656,678656
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Multisector,Kyrgyzstan,0,0,spending,CH-4-2020001403,542925,542925
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Multisector,Tajikistan,0,1,commitments,CH-4-2020001353,67866,67866
@@ -691,20 +715,14 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Multisector,Tajikistan,0,1,commitments,CH-4-2020001354,16035,16035
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Multisector,Tajikistan,0,1,spending,CH-4-2020001353,67866,67866
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Multisector,Tajikistan,0,1,spending,CH-4-2020001353,158353,158353
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Social Infrastructure & Services,(Unspecified country),0,1,commitments,CH-4-2020001312,4298156,4298156
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Social Infrastructure & Services,(Unspecified country),0,1,spending,CH-4-2020001312,4298156,4298156
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Social Infrastructure & Services,Developing countries (no country specified),0,1,commitments,CH-4-2020001312,4298156,4298156
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Social Infrastructure & Services,Developing countries (no country specified),0,1,spending,CH-4-2020001312,4298156,4298156
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Social Infrastructure & Services,Nepal,0,0,commitments,CH-4-2020001328,452438,452438
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Social Infrastructure & Services,Nepal,0,0,spending,CH-4-2020001328,407194,407194
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Trade Policies & Regulations,(Unspecified country),0,1,commitments,CH-4-2020001313,1526977,1526977
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Trade Policies & Regulations,(Unspecified country),0,1,commitments,CH-4-2020001314,961430,961430
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Trade Policies & Regulations,(Unspecified country),0,1,spending,CH-4-2020001313,1526977,1526977
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Trade Policies & Regulations,(Unspecified country),0,1,spending,CH-4-2020001314,961430,961430
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,(Unspecified country),0,1,commitments,CH-4-2020001337,108585,108585
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,(Unspecified country),0,1,commitments,CH-4-2020001337,253365,253365
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,(Unspecified country),0,1,commitments,CH-4-2020001338,27146,27146
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,(Unspecified country),0,1,commitments,CH-4-2020001338,63341,63341
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,(Unspecified country),0,1,spending,CH-4-2020001337,98742,98742
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,(Unspecified country),0,1,spending,CH-4-2020001337,230397,230397
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Trade Policies & Regulations,Developing countries (no country specified),0,1,commitments,CH-4-2020001313,1526977,1526977
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Trade Policies & Regulations,Developing countries (no country specified),0,1,commitments,CH-4-2020001314,961430,961430
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Trade Policies & Regulations,Developing countries (no country specified),0,1,spending,CH-4-2020001313,1526977,1526977
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Trade Policies & Regulations,Developing countries (no country specified),0,1,spending,CH-4-2020001314,961430,961430
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Bolivia (Plurinational State of),0,0,commitments,CH-4-2020001303,54293,54293
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Bolivia (Plurinational State of),0,0,commitments,CH-4-2020001304,13573,13573
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Bolivia (Plurinational State of),0,0,spending,CH-4-2020001303,49558,49558
@@ -712,6 +730,12 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Burkina Faso,0,1,commitments,CH-4-2020001320,38683,38683
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Burkina Faso,0,1,spending,CH-4-2020001319,50899,50899
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Burkina Faso,0,1,spending,CH-4-2020001320,21236,21236
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Caribbean & Central America (no country specified),0,1,commitments,CH-4-2020001337,108585,108585
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Caribbean & Central America (no country specified),0,1,commitments,CH-4-2020001337,253365,253365
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Caribbean & Central America (no country specified),0,1,commitments,CH-4-2020001338,27146,27146
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Caribbean & Central America (no country specified),0,1,commitments,CH-4-2020001338,63341,63341
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Caribbean & Central America (no country specified),0,1,spending,CH-4-2020001337,98742,98742
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Caribbean & Central America (no country specified),0,1,spending,CH-4-2020001337,230397,230397
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Honduras,0,1,commitments,CH-4-2020001316,32236,32236
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Honduras,0,1,commitments,CH-4-2020001316,75218,75218
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Honduras,0,1,commitments,CH-4-2020001317,1697,1697
@@ -731,24 +755,24 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-12,ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,Emergency Response,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,688268
 2020-12,ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,Health,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,172067
 2021-01,gb-coh-294860,ADD International,21,Education,Bangladesh,0,0,spending,GB-COH-294860-PR9917,0,2178
-2021-01,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-006124,131566,131566
+2021-01,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,spending,DAC-1601-INV-006124,131566,131566
 2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Education,South Africa,0,1,commitments,GB-GOV-1-300310-110,65918,65918
 2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Education,South Africa,0,1,commitments,GB-GOV-1-300310-110,68608,68608
-2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,1,spending,GB-GOV-1-301150-119,306764,306764
+2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-119,306764,306764
 2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Yemen,1,1,spending,GB-GOV-1-300417-110,64267,64267
-2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,21167,21167
-2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,24095,24095
-2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,25184,25184
-2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,25551,25551
-2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,29646,29646
-2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,3506,3506
-2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,38859,38859
-2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,51486,51486
-2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,63741,63741
-2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,88162,88162
-2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-105,65456,65456
-2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-119,76691,76691
-2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-119,383455,383455
+2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,21167,21167
+2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,24095,24095
+2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,25184,25184
+2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,25551,25551
+2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,29646,29646
+2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,3506,3506
+2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,38859,38859
+2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,51486,51486
+2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,63741,63741
+2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,88162,88162
+2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-105,65456,65456
+2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-119,76691,76691
+2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-119,383455,383455
 2021-01,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Multisector,South Sudan,1,0,spending,GB-GOV-1-300708-117,6204,6204
 2021-02,gb-coh-294860,ADD International,21,Education,Bangladesh,0,0,spending,GB-COH-294860-PR9917,0,3868
 2021-02,dac-1601,Bill and Melinda Gates Foundation,60,Population Policies/Programmes & Reproductive Health,India,0,0,commitments,DAC-1601-INV-005891,465637,465637
@@ -758,54 +782,54 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2021-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Education,South Africa,0,1,spending,GB-GOV-1-300310-110,9912,9912
 2021-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,General Environment Protection,India,0,0,spending,GB-GOV-1-300110-118,-59241,-59241
 2021-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,General Environment Protection,India,0,0,spending,GB-GOV-1-300110-118,59241,59241
-2021-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,22971,22971
-2021-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,57972,57972
 2021-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Bangladesh,0,1,spending,GB-GOV-1-300708-134,9428,9428
 2021-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Bangladesh,0,1,spending,GB-GOV-1-300708-134,9813,9813
+2021-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,22971,22971
+2021-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,57972,57972
 2021-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,India,0,0,spending,GB-GOV-1-300110-117,-83614,-83614
 2021-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,India,0,0,spending,GB-GOV-1-300110-117,83614,83614
 2021-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,Kenya,0,0,spending,GB-GOV-1-300143-104,289933,289933
 2021-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,Yemen,0,1,spending,GB-GOV-1-300527-104,2894231,2894231
 2021-03,gb-coh-294860,ADD International,21,Education,Bangladesh,0,0,spending,GB-COH-294860-PR9917,0,3581
-2021-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005371,150000,150000
-2021-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,(Unspecified country),0,1,spending,DAC-1601-INV-005779,1178842,1178842
+2021-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-005371,150000,150000
+2021-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-005779,1178842,1178842
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Banking & Financial Services,India,0,0,spending,GB-GOV-1-300110-117,26206,26206
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Business & Other Services,(Unspecified country),0,1,spending,GB-GOV-1-300805-103,67156,67156
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Business & Other Services,(Unspecified country),0,1,spending,GB-GOV-1-300805-103,112316,112316
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Business & Other Services,Developing countries (no country specified),0,1,spending,GB-GOV-1-300805-103,67156,67156
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Business & Other Services,Developing countries (no country specified),0,1,spending,GB-GOV-1-300805-103,112316,112316
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Education,South Africa,0,1,spending,GB-GOV-1-300310-110,17993,17993
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Education,South Africa,0,1,spending,GB-GOV-1-300310-110,18727,18727
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Education,Tajikistan,0,1,spending,GB-GOV-1-300619-104,111373,111373
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,1,spending,GB-GOV-1-301150-118,-6835,-6835
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,(Unspecified country),1,1,spending,GB-GOV-1-301150-119,-29118,-29118
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-118,-6835,-6835
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-119,-29118,-29118
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Yemen,1,1,spending,GB-GOV-1-300417-110,78723,78723
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Yemen,1,1,spending,GB-GOV-1-300417-110,98994,98994
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,General Environment Protection,India,0,0,spending,GB-GOV-1-300110-118,58796,58796
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Saint Helena,0,0,spending,GB-GOV-1-300806-104,110360,110360
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Tajikistan,0,1,spending,GB-GOV-1-300619-104,115919,115919
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,18930,18930
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,23604,23604
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,23653,23653
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,24865,24865
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,28658,28658
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,45036,45036
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,46763,46763
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,55226,55226
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-102,57298,57298
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,9673,9673
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,10141,10141
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,14753,14753
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,23860,23860
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,35014,35014
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),0,0,spending,GB-GOV-1-301150-103,36660,36660
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-118,-6455,-6455
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-118,-2848,-2848
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-118,-2848,-2848
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-119,-36398,-36398
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,(Unspecified country),1,1,spending,GB-GOV-1-301150-119,-7280,-7280
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Bangladesh,0,1,spending,GB-GOV-1-300708-134,9409,9409
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Bangladesh,0,1,spending,GB-GOV-1-300708-134,9793,9793
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Bangladesh,0,1,spending,GB-GOV-1-300708-134,28226,28226
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Bangladesh,0,1,spending,GB-GOV-1-300708-134,29378,29378
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,18930,18930
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,23604,23604
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,23653,23653
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,24865,24865
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,28658,28658
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,45036,45036
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,46763,46763
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,55226,55226
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,57298,57298
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,9673,9673
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,10141,10141
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,14753,14753
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,23860,23860
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,35014,35014
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,36660,36660
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-118,-6455,-6455
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-118,-2848,-2848
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-118,-2848,-2848
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-119,-36398,-36398
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),1,1,spending,GB-GOV-1-301150-119,-7280,-7280
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Iraq,0,0,commitments,GB-GOV-1-300707-102,1667040,1667040
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Iraq,0,0,commitments,GB-GOV-1-300707-102,2778400,2778400
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Iraq,0,0,spending,GB-GOV-1-300707-102,1646760,1646760
