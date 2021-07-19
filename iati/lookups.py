@@ -16,7 +16,7 @@ def clean_string(s):
     # for any trailing full stop
     s = re.sub(r'(\W)\1+', r'\1', s.strip())
     s = re.sub(r'\s', ' ', s)
-    s = re.sub(r'^\W?([\w ]*)[^a-zA-Z0-9_\.]?$', r'\1', s)
+    s = re.sub(r'^\W?([\w &]*)[^a-zA-Z0-9_\.]?$', r'\1', s)
     return s.strip()
 
 
