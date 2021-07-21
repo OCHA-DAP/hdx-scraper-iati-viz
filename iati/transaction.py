@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+from hdx.location.currency import Currency
+from hdx.utilities.dateparse import parse_date
+
 from iati.calculatesplits import CalculateSplits
 from iati.lookups import Lookups
 
@@ -33,7 +36,7 @@ class Transaction:
             if not date:
                 date = dtransaction.date
             # Convert the transaction value to USD
-            value = Lookups.get_value_in_usd(dtransaction.value, dtransaction.currency, date)
+            value = Currency.get_historic_value_in_usd(dtransaction.value, dtransaction.currency, parse_date(date))
         except (ValueError, AttributeError):
             return None
         return Transaction(transaction_type_info, dtransaction, value)
