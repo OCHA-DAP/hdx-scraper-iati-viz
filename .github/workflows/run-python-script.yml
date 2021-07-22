@@ -28,11 +28,10 @@ jobs:
       run: |
         python run.py
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@3.6.2
+      uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: output
+        FOLDER: output_covid
     - name: Send mail
       if: failure()
       uses: dawidd6/action-send-mail@v2
