@@ -2,10 +2,8 @@
 import logging
 import re
 
-import exchangerates
 import hxl
 from hdx.location.country import Country
-from hdx.utilities.dateparse import parse_date
 from hdx.utilities.loader import load_json
 
 logger = logging.getLogger(__name__)
@@ -40,15 +38,13 @@ class Lookups:
     default_sector = None
     region_code_to_name = dict()
     default_country_region = None
-    fx_rates = None
-    fallback_rates = None
     filter_reporting_orgs = list()
     filter_reporting_orgs_children = list()
     checks = None
     filter_transaction_date = None
 
     @classmethod
-    def setup(cls, configuration, retriever):
+    def setup(cls, configuration):
         logger.info('Reading in lookups data')
         org_data = load_json(configuration['org_data'])
         """ Map from IATI identifiers to organisation names """
@@ -72,11 +68,6 @@ class Lookups:
 
         cls.default_sector = configuration['default_sector']
         cls.default_country_region = configuration['default_country_region']
-        rates_path = retriever.retrieve_file(configuration['rates_url'], 'rates.csv', 'exchange rates', True)
-        cls.fx_rates = exchangerates.CurrencyConverter(update=False, source=rates_path)
-        fallback_rates = retriever.retrieve_json(configuration['fallback_rates_url'], 'fallbackrates.json',
-                                        'fallback exchange rates', True)
-        cls.fallback_rates = fallback_rates['rates']
         for row in hxl.data(configuration['filters_url']):
             org_id = row.get('#org+reporting+id')
             if org_id:
@@ -262,15 +253,3 @@ class Lookups:
         if regionname:
             return f'{regionname} (no country specified)'
         return cls.default_country_region
-
-    @classmethod
-    def get_value_in_usd(cls, value, currency, date):
-        if currency == 'USD':
-            return value
-        try:
-            fx_rate = cls.fx_rates.closest_rate(currency, parse_date(date).date()).get('conversion_rate')
-        except exchangerates.UnknownCurrencyException:
-            fx_rate = cls.fallback_rates.get(currency)
-            if fx_rate is None:
-                raise ValueError(f'Currency {currency} is invalid!')
-        return value / fx_rate

@@ -7,6 +7,7 @@ from urllib.parse import quote
 
 import diterator
 import unicodecsv
+from hdx.location.currency import Currency
 
 from iati import checks
 from iati.activity import Activity
@@ -98,7 +99,8 @@ def start(configuration, today, retriever, output_dir, dportal_params, whattorun
     Lookups.checks = checks[whattorun]
     Lookups.filter_transaction_date = filterdate
     generator = retrieve_dportal(configuration, retriever, dportal_params, whattorun)
-    Lookups.setup(configuration['lookups'], retriever)
+    Lookups.setup(configuration['lookups'])
+    Currency.setup(retriever=retriever, fallback_historic_to_current=True, fallback_current_to_static=True)
     CalculateSplits.setup(configuration['calculate_splits'])
 
     # Build org name lookup
