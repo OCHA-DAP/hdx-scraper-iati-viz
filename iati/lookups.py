@@ -246,7 +246,7 @@ class Lookups:
 
     @classmethod
     def get_country_region_name(cls, code):
-        countryname = Country.get_country_name_from_iso2(code)
+        countryname = Country.get_country_name_from_iso2(code, shortname=True)
         if countryname:
             return countryname
         regionname = cls.region_code_to_name.get(code)

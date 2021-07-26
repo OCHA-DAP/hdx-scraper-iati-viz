@@ -83,8 +83,8 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,1,commitments,GB-GOV-1-300150-103,566068,566068
 2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,1,spending,GB-GOV-1-300150-103,117090,117090
 2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,1,spending,GB-GOV-1-300150-103,573741,573741
-2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,State of Palestine,0,1,commitments,GB-GOV-1-300001-104,519120,519120
-2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,State of Palestine,0,1,spending,GB-GOV-1-300001-104,519120,519120
+2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Palestine,0,1,commitments,GB-GOV-1-300001-104,519120,519120
+2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Palestine,0,1,spending,GB-GOV-1-300001-104,519120,519120
 2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Population Policies/Programmes & Reproductive Health,Malawi,1,1,commitments,GB-GOV-1-300150-103,288810,288810
 2020-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Population Policies/Programmes & Reproductive Health,Malawi,1,1,spending,GB-GOV-1-300150-103,292725,292725
 2020-03,gb-coh-213890,Save The Children UK,21,Education,Uganda,1,1,commitments,GB-COH-213890-82604712,0,368856
@@ -107,7 +107,7 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Disaster Prevention & Preparedness,Malawi,1,1,commitments,GB-GOV-1-300150-103,183597,183597
 2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Education,Developing countries (no country specified),0,1,spending,GB-GOV-1-300402-105,6167500,6167500
 2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Developing countries (no country specified),1,0,spending,GB-GOV-1-301150-104,54858,54858
-2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Saint Helena,0,0,commitments,GB-GOV-1-300806-104,3632836,3632836
+2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,St. Helena,0,0,commitments,GB-GOV-1-300806-104,3632836,3632836
 2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,commitments,GB-GOV-1-301150-102,1194021,1194021
 2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,commitments,GB-GOV-1-301150-111,81035500,81035500
 2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,commitments,GB-GOV-1-301150-112,18700500,18700500
@@ -122,10 +122,10 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,1,commitments,GB-GOV-1-301150-117,2466400,2466400
 2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,1,commitments,GB-GOV-1-300150-103,114748,114748
 2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,1,commitments,GB-GOV-1-300150-103,562266,562266
-2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Syrian Arab Republic,0,1,spending,GB-GOV-1-300388-102,6214500,6214500
+2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Syria,0,1,spending,GB-GOV-1-300388-102,6214500,6214500
 2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Population Policies/Programmes & Reproductive Health,Malawi,1,1,commitments,GB-GOV-1-300150-103,286871,286871
-2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Transport & Storage,Saint Helena,0,0,spending,GB-GOV-1-300806-103,2572,2572
-2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Transport & Storage,Saint Helena,0,0,spending,GB-GOV-1-300806-103,231534,231534
+2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Transport & Storage,St. Helena,0,0,spending,GB-GOV-1-300806-103,2572,2572
+2020-04,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Transport & Storage,St. Helena,0,0,spending,GB-GOV-1-300806-103,231534,231534
 2020-04,gb-coh-1762840,HelpAge International,21,Emergency Response,Ukraine,1,1,spending,GB-COH-1762840-UKR040-UN99-01,0,11334
 2020-04,gb-coh-1762840,HelpAge International,21,Reconstruction Relief & Rehabilitation,Ukraine,1,1,spending,GB-COH-1762840-UKR040-UN99-01,0,11334
 2020-04,gb-coh-213890,Save The Children UK,21,Education,Ethiopia,1,1,commitments,GB-COH-213890-82604710,0,236740
@@ -176,7 +176,7 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-05,gb-coh-1762840,HelpAge International,21,Health,Ukraine,0,1,spending,GB-COH-1762840-UKR041-HC01-01,52,348
 2020-05,gb-coh-1762840,HelpAge International,21,Reconstruction Relief & Rehabilitation,Ukraine,1,1,spending,GB-COH-1762840-UKR040-UN99-01,0,43465
 2020-05,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-16485
-2020-05,gb-coh-213890,Save The Children UK,21,Health,United Republic of Tanzania,1,1,commitments,GB-COH-213890-82604730,0,320918
+2020-05,gb-coh-213890,Save The Children UK,21,Health,Tanzania,1,1,commitments,GB-COH-213890-82604730,0,320918
 2020-05,ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,Emergency Response,Iraq,1,0,spending,CH-FDJP-CHE106823242-2019723a,0,143252
 2020-06,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,commitments,DAC-1601-INV-006124,711349,711349
 2020-06,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,spending,DAC-1601-INV-006124,579783,579783
@@ -220,11 +220,11 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Population Policies/Programmes & Reproductive Health,Malawi,1,1,spending,GB-GOV-1-300150-103,1554925,1554925
 2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Tourism,Pitcairn,0,0,commitments,GB-GOV-1-300807-102,334620,334620
 2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Tourism,Pitcairn,0,0,spending,GB-GOV-1-300807-102,167745,167745
-2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Transport & Storage,Saint Helena,0,0,spending,GB-GOV-1-300806-103,-27419,-27419
-2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Transport & Storage,Saint Helena,0,0,spending,GB-GOV-1-300806-103,-2060,-2060
+2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Transport & Storage,St. Helena,0,0,spending,GB-GOV-1-300806-103,-27419,-27419
+2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Transport & Storage,St. Helena,0,0,spending,GB-GOV-1-300806-103,-2060,-2060
 2020-06,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Water Supply & Sanitation,Sierra Leone,0,1,commitments,GB-GOV-1-300067-115,1756020,1756020
+2020-06,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,4346
 2020-06,gb-coh-1762840,HelpAge International,21,Emergency Response,Ukraine,1,1,spending,GB-COH-1762840-UKR040-UN99-01,0,25645
-2020-06,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,4346
 2020-06,gb-coh-1762840,HelpAge International,21,Health,Ukraine,0,1,spending,GB-COH-1762840-UKR041-HC01-01,53,356
 2020-06,gb-coh-1762840,HelpAge International,21,Reconstruction Relief & Rehabilitation,Ukraine,1,1,spending,GB-COH-1762840-UKR040-UN99-01,0,25645
 2020-06,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-31365
@@ -234,8 +234,8 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-06,gb-coh-213890,Save The Children UK,21,Education,Uganda,1,1,spending,GB-COH-213890-82604712,1795,292515
 2020-06,gb-coh-213890,Save The Children UK,21,Education,Uganda,1,1,spending,GB-COH-213890-82604729,0,70369
 2020-06,gb-coh-213890,Save The Children UK,21,Health,Ethiopia,1,1,commitments,GB-COH-213890-82604786,0,196967
+2020-06,gb-coh-213890,Save The Children UK,21,Health,Tanzania,1,1,spending,GB-COH-213890-82604730,0,19039
 2020-06,gb-coh-213890,Save The Children UK,21,Health,Thailand,1,1,spending,GB-COH-213890-82604768,1,159056
-2020-06,gb-coh-213890,Save The Children UK,21,Health,United Republic of Tanzania,1,1,spending,GB-COH-213890-82604730,0,19039
 2020-06,ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,Emergency Response,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,69400
 2020-06,ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,Health,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,17350
 2020-06,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,0,spending,LK-DRC-GA139-LFS1.2,24,24
@@ -259,9 +259,9 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-07,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-105,109221,109221
 2020-07,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,Yemen,0,1,spending,GB-GOV-1-300527-104,3939900,3939900
 2020-07,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Water Supply & Sanitation,Sierra Leone,0,1,spending,GB-GOV-1-300067-115,1135890,1135890
+2020-07,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,3015
 2020-07,gb-coh-1762840,HelpAge International,21,Emergency Response,Ukraine,1,0,spending,GB-COH-1762840-UKR038-NG24-01,1046,7612
 2020-07,gb-coh-1762840,HelpAge International,21,Emergency Response,Ukraine,1,1,spending,GB-COH-1762840-UKR040-UN99-01,0,62738
-2020-07,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,3015
 2020-07,gb-coh-1762840,HelpAge International,21,Health,Ukraine,0,1,spending,GB-COH-1762840-UKR041-HC01-01,3281,22128
 2020-07,gb-coh-1762840,HelpAge International,21,Reconstruction Relief & Rehabilitation,Ukraine,1,1,spending,GB-COH-1762840-UKR040-UN99-01,0,62738
 2020-07,gb-coh-213890,Save The Children UK,21,Banking & Financial Services,Nepal,1,1,commitments,GB-COH-213890-82604802,283712,1631641
@@ -338,17 +338,17 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,1,spending,GB-GOV-1-300150-103,33072,33072
 2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Malawi,1,1,spending,GB-GOV-1-300150-103,162055,162055
 2020-08,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Population Policies/Programmes & Reproductive Health,Malawi,1,1,spending,GB-GOV-1-300150-103,82681,82681
+2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,6157
+2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1640
+2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,5016
+2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,6144
+2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,5707
+2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1557
+2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,5806
+2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,106
+2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,9632
 2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,Ukraine,1,0,spending,GB-COH-1762840-UKR038-NG24-01,1257,9152
 2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,Ukraine,1,1,spending,GB-COH-1762840-UKR040-UN99-01,0,3625
-2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,6157
-2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1640
-2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,5016
-2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,6144
-2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,5707
-2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1557
-2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,5806
-2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,106
-2020-08,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,9632
 2020-08,gb-coh-1762840,HelpAge International,21,Health,Ukraine,0,1,spending,GB-COH-1762840-UKR041-HC01-01,327,2207
 2020-08,gb-coh-1762840,HelpAge International,21,Reconstruction Relief & Rehabilitation,Ukraine,1,1,spending,GB-COH-1762840-UKR040-UN99-01,0,3625
 2020-08,gb-coh-213890,Save The Children UK,21,Education,Ethiopia,1,1,commitments,GB-COH-213890-82604858,30216,507277
@@ -358,7 +358,7 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-08,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,1,spending,LK-DRC-GA139-LFS1.2,5881,5881
 2020-08,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,1,spending,LK-DRC-GA139-LFS1.2,5890,5890
 2020-09,gb-coh-294860,ADD International,21,Other Multisector,Bangladesh,0,1,spending,GB-COH-294860-PR9915,4022,70200
-2020-09,gb-coh-294860,ADD International,21,Other Multisector,United Republic of Tanzania,0,1,spending,GB-COH-294860-PR9916,0,6925
+2020-09,gb-coh-294860,ADD International,21,Other Multisector,Tanzania,0,1,spending,GB-COH-294860-PR9916,0,6925
 2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-004954,100000,100000
 2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-006131,1970398,1970398
 2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-006135,1944053,1944053
@@ -375,28 +375,28 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Pitcairn,0,0,spending,GB-GOV-1-300807-102,175371,175371
 2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,commitments,GB-GOV-1-301150-102,67548,67548
 2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-105,161079,161079
+2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Palestine,0,1,commitments,GB-GOV-1-300001-104,259100,259100
+2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Palestine,0,1,spending,GB-GOV-1-300001-104,256940,256940
 2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,South of Sahara (no country specified),0,1,commitments,GB-GOV-1-300044-107,1301100,1301100
-2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,State of Palestine,0,1,commitments,GB-GOV-1-300001-104,259100,259100
-2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,State of Palestine,0,1,spending,GB-GOV-1-300001-104,256940,256940
 2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,Kenya,0,0,commitments,GB-GOV-1-300143-104,6316907,6316907
 2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,Pitcairn,0,0,spending,GB-GOV-1-300807-102,233827,233827
 2020-09,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Tourism,Pitcairn,0,0,spending,GB-GOV-1-300807-102,175371,175371
+2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,10
+2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,3398
+2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,2409
+2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,329
+2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1
+2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,3685
+2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,728
+2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,3751
 2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,Ukraine,1,0,spending,GB-COH-1762840-UKR038-NG24-01,1549,11274
 2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,Ukraine,1,1,spending,GB-COH-1762840-UKR040-UN99-01,0,1970
-2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,10
-2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,3398
-2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,2409
-2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,329
-2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1
-2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,3685
-2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,728
-2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,3751
 2020-09,gb-coh-1762840,HelpAge International,21,Health,Ukraine,0,1,spending,GB-COH-1762840-UKR041-HC01-01,0,1
 2020-09,gb-coh-1762840,HelpAge International,21,Reconstruction Relief & Rehabilitation,Ukraine,1,1,spending,GB-COH-1762840-UKR040-UN99-01,0,1970
 2020-09,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-16239
 2020-09,gb-coh-871954,Practical Action,21,Emergency Response,Kenya,0,0,spending,GB-COH-871954-QR00580,0,308431
 2020-09,gb-coh-871954,Practical Action,21,Energy,Kenya,0,1,spending,GB-COH-871954-QR00582,0,15625
-2020-09,gb-coh-871954,Practical Action,21,"Industry, Mining, Construction",United Kingdom of Great Britain and Northern Ireland,0,0,spending,GB-COH-871954-QR00575,6903,6903
+2020-09,gb-coh-871954,Practical Action,21,"Industry, Mining, Construction",United Kingdom,0,0,spending,GB-COH-871954-QR00575,6903,6903
 2020-09,gb-coh-871954,Practical Action,21,Water Supply & Sanitation,India,0,0,spending,GB-COH-871954-QR00133,25316,52184
 2020-09,gb-coh-213890,Save The Children UK,21,Banking & Financial Services,Nepal,1,1,spending,GB-COH-213890-82604802,4187,99826
 2020-09,gb-coh-213890,Save The Children UK,21,Education,Ethiopia,1,1,spending,GB-COH-213890-82604710,0,207195
@@ -413,10 +413,10 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-09,gb-coh-213890,Save The Children UK,21,Health,Myanmar,1,1,spending,GB-COH-213890-82604798,0,5995
 2020-09,gb-coh-213890,Save The Children UK,21,Health,Nepal,1,1,spending,GB-COH-213890-82604802,837,19965
 2020-09,gb-coh-213890,Save The Children UK,21,Health,Nepal,1,1,spending,GB-COH-213890-82604802,837,19965
+2020-09,gb-coh-213890,Save The Children UK,21,Health,Tanzania,1,1,spending,GB-COH-213890-82604730,0,174824
 2020-09,gb-coh-213890,Save The Children UK,21,Health,Thailand,1,1,spending,GB-COH-213890-82604768,0,-303
-2020-09,gb-coh-213890,Save The Children UK,21,Health,United Republic of Tanzania,1,1,spending,GB-COH-213890-82604730,0,174824
 2020-09,gb-coh-213890,Save The Children UK,21,Other Social Infrastructure & Services,Nepal,1,1,spending,GB-COH-213890-82604802,837,19965
-2020-09,gb-coh-213890,Save The Children UK,21,Unallocated / Unspecified,United Kingdom of Great Britain and Northern Ireland,1,1,spending,GB-COH-213890-82604830,0,189000
+2020-09,gb-coh-213890,Save The Children UK,21,Unallocated / Unspecified,United Kingdom,1,1,spending,GB-COH-213890-82604830,0,189000
 2020-09,ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,Emergency Response,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,200732
 2020-09,ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,Health,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,50183
 2020-10,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,commitments,DAC-1601-INV-003438,17000000,17000000
@@ -467,12 +467,12 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Yemen,1,1,spending,GB-GOV-1-301150-120,126145,126145
 2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,Kenya,0,0,spending,GB-GOV-1-300143-104,1741911,1741911
 2020-10,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Water Supply & Sanitation,Sierra Leone,0,1,spending,GB-GOV-1-300067-115,651050,651050
+2020-10,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,330
+2020-10,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,86
+2020-10,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,61
+2020-10,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1293
+2020-10,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1805
 2020-10,gb-coh-1762840,HelpAge International,21,Emergency Response,Ukraine,1,0,spending,GB-COH-1762840-UKR038-NG24-01,3319,24155
-2020-10,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,330
-2020-10,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,86
-2020-10,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,61
-2020-10,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1293
-2020-10,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1805
 2020-10,gb-coh-1762840,HelpAge International,21,Emergency Response,Viet Nam,1,1,spending,GB-COH-1762840-VIE082-UN03-01,280,3326
 2020-11,lb-moi-497,ABAAD- Resource Center for Gender Equality,22,Government & Civil Society,Lebanon,1,0,spending,LB-MOI-497-XM-DAC-7-PPR-4000003882,1112742,1112742
 2020-11,dac-1601,Bill and Melinda Gates Foundation,60,Health,Nigeria,0,1,commitments,DAC-1601-INV-005914,1138565,1138565
@@ -499,23 +499,23 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,56572,56572
 2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-103,78044,78044
 2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-105,224272,224272
-2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Syrian Arab Republic,0,1,spending,GB-GOV-1-300388-102,696526,696526
+2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Syria,0,1,spending,GB-GOV-1-300388-102,696526,696526
 2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,Kenya,0,0,spending,GB-GOV-1-300143-104,2972447,2972447
 2020-11,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,Yemen,0,1,spending,GB-GOV-1-300527-104,3967500,3967500
+2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,5582
+2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1052
+2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1284
+2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,4889
+2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1662
+2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,671
+2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1569
+2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1828
+2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,3464
 2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,Ukraine,1,0,spending,GB-COH-1762840-UKR038-NG24-01,3436,25008
-2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,5582
-2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1052
-2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1284
-2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,4889
-2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1662
-2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,671
-2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1569
-2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1828
-2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,3464
 2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,Viet Nam,1,1,spending,GB-COH-1762840-VIE082-UN03-01,773,9179
 2020-11,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-29838
 2020-12,gb-coh-294860,ADD International,21,Other Multisector,Bangladesh,0,1,spending,GB-COH-294860-PR9915,4664,81398
-2020-12,gb-coh-294860,ADD International,21,Other Multisector,United Republic of Tanzania,0,1,spending,GB-COH-294860-PR9916,0,7322
+2020-12,gb-coh-294860,ADD International,21,Other Multisector,Tanzania,0,1,spending,GB-COH-294860-PR9916,0,7322
 2020-12,dac-1601,Bill and Melinda Gates Foundation,60,Population Policies/Programmes & Reproductive Health,India,0,0,spending,DAC-1601-INV-005891,250000,250000
 2020-12,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,131,287
 2020-12,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,658,1436
@@ -571,7 +571,7 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Sudan,1,1,spending,GB-GOV-1-300196-115,6179640,6179640
 2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,(Unspecified country),0,0,commitments,GB-GOV-1-300584-104,799440,799440
 2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,(Unspecified country),0,0,spending,GB-GOV-1-300584-104,282645,282645
-2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Saint Helena,0,0,spending,GB-GOV-1-300806-104,3767186,3767186
+2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,St. Helena,0,0,spending,GB-GOV-1-300806-104,3767186,3767186
 2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Tajikistan,0,1,commitments,GB-GOV-1-300619-104,257773,257773
 2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Tajikistan,0,1,spending,GB-GOV-1-300619-104,147734,147734
 2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,spending,GB-GOV-1-301150-102,10738,10738
@@ -579,14 +579,14 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,South of Sahara (no country specified),0,1,spending,GB-GOV-1-300044-107,659850,659850
 2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Multisector,South Sudan,1,0,spending,GB-GOV-1-300708-117,30196,30196
 2020-12,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,Kenya,0,0,spending,GB-GOV-1-300143-104,1603068,1603068
+2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,493
+2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,606
+2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1
+2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1242
+2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,61
+2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,6971
 2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,Uganda,1,1,spending,GB-COH-1762840-UGA076-SC99-01,0,13148
 2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,Ukraine,1,0,spending,GB-COH-1762840-UKR038-NG24-01,2844,20698
-2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,493
-2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,606
-2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1
-2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1242
-2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,61
-2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,6971
 2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,Viet Nam,1,1,spending,GB-COH-1762840-VIE082-UN03-01,4251,50456
 2020-12,gb-coh-871954,Practical Action,21,Emergency Response,Kenya,0,0,spending,GB-COH-871954-QR00580,0,8158
 2020-12,gb-coh-871954,Practical Action,21,Energy,Kenya,0,1,spending,GB-COH-871954-QR00582,0,-32
@@ -609,16 +609,16 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-12,gb-coh-213890,Save The Children UK,21,Health,Myanmar,1,1,spending,GB-COH-213890-82604798,0,73732
 2020-12,gb-coh-213890,Save The Children UK,21,Health,Nepal,1,1,spending,GB-COH-213890-82604802,5113,121929
 2020-12,gb-coh-213890,Save The Children UK,21,Health,Nepal,1,1,spending,GB-COH-213890-82604802,5113,121929
-2020-12,gb-coh-213890,Save The Children UK,21,Health,United Republic of Tanzania,1,1,spending,GB-COH-213890-82604730,0,84457
+2020-12,gb-coh-213890,Save The Children UK,21,Health,Tanzania,1,1,spending,GB-COH-213890-82604730,0,84457
 2020-12,gb-coh-213890,Save The Children UK,21,Other Social Infrastructure & Services,Nepal,1,1,spending,GB-COH-213890-82604802,5113,121929
 2020-12,gb-coh-213890,Save The Children UK,21,Population Policies/Programmes & Reproductive Health,Ethiopia,0,0,commitments,GB-COH-213890-82604850,0,529570
 2020-12,gb-coh-213890,Save The Children UK,21,Population Policies/Programmes & Reproductive Health,Ethiopia,0,0,spending,GB-COH-213890-82604850,0,136
-2020-12,gb-coh-213890,Save The Children UK,21,Unallocated / Unspecified,United Kingdom of Great Britain and Northern Ireland,1,1,commitments,GB-COH-213890-82604830,0,189000
+2020-12,gb-coh-213890,Save The Children UK,21,Unallocated / Unspecified,United Kingdom,1,1,commitments,GB-COH-213890-82604830,0,189000
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Business & Other Services,Nepal,0,0,commitments,CH-4-2020001328,1131094,1131094
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Business & Other Services,Nepal,0,0,spending,CH-4-2020001328,1017984,1017984
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Bolivia (Plurinational State of),0,0,commitments,CH-4-2020001303,36195,36195
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Bolivia (Plurinational State of),0,0,commitments,CH-4-2020001304,9049,9049
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Bolivia (Plurinational State of),0,0,spending,CH-4-2020001303,33039,33039
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Bolivia,0,0,commitments,CH-4-2020001303,36195,36195
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Bolivia,0,0,commitments,CH-4-2020001304,9049,9049
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Bolivia,0,0,spending,CH-4-2020001303,33039,33039
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Burkina Faso,0,1,commitments,CH-4-2020001319,84832,84832
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Burkina Faso,0,1,commitments,CH-4-2020001320,64472,64472
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Burkina Faso,0,1,spending,CH-4-2020001319,84831,84831
@@ -637,8 +637,8 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Developing countries (no country specified),0,1,spending,CH-4-2020002315,2098179,2098179
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Developing countries (no country specified),0,1,spending,CH-4-2020002316,678656,678656
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Developing countries (no country specified),0,1,spending,CH-4-2020002316,1583531,1583531
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Kyrgyzstan,0,0,commitments,CH-4-2020001403,1131094,1131094
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Kyrgyzstan,0,0,spending,CH-4-2020001403,904875,904875
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Kyrgyz Republic,0,0,commitments,CH-4-2020001403,1131094,1131094
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Kyrgyz Republic,0,0,spending,CH-4-2020001403,904875,904875
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Libya,0,0,commitments,CH-4-2020001292,169438,169438
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Libya,0,0,commitments,CH-4-2020001293,37755,37755
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Libya,0,0,commitments,CH-4-2020001294,221694,221694
@@ -662,15 +662,15 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Tunisia,0,0,spending,CH-4-2020001350,-258,-258
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Tunisia,0,0,spending,CH-4-2020001351,94028,94028
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Emergency Response,Tunisia,0,0,spending,CH-4-2020001352,478,478
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Government & Civil Society,Kyrgyzstan,0,0,commitments,CH-4-2020001403,452438,452438
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Government & Civil Society,Kyrgyzstan,0,0,spending,CH-4-2020001403,361950,361950
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Government & Civil Society,Kyrgyz Republic,0,0,commitments,CH-4-2020001403,452438,452438
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Government & Civil Society,Kyrgyz Republic,0,0,spending,CH-4-2020001403,361950,361950
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Government & Civil Society,Libya,0,0,commitments,CH-4-2020001292,72616,72616
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Government & Civil Society,Libya,0,0,spending,CH-4-2020001292,72616,72616
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Government & Civil Society,Nepal,0,0,commitments,CH-4-2020001328,678656,678656
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Government & Civil Society,Nepal,0,0,spending,CH-4-2020001328,610791,610791
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Bolivia (Plurinational State of),0,0,commitments,CH-4-2020001303,90488,90488
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Bolivia (Plurinational State of),0,0,commitments,CH-4-2020001304,22622,22622
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Bolivia (Plurinational State of),0,0,spending,CH-4-2020001303,82597,82597
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Bolivia,0,0,commitments,CH-4-2020001303,90488,90488
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Bolivia,0,0,commitments,CH-4-2020001304,22622,22622
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Bolivia,0,0,spending,CH-4-2020001303,82597,82597
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Bosnia and Herzegovina,0,1,commitments,CH-4-2020001346,53275,53275
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Bosnia and Herzegovina,0,1,commitments,CH-4-2020001346,124307,124307
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Bosnia and Herzegovina,0,1,commitments,CH-4-2020001347,1188,1188
@@ -707,8 +707,8 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Developing countries (no country specified),0,1,spending,CH-4-2020001313,3817441,3817441
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Developing countries (no country specified),0,1,spending,CH-4-2020001314,1442145,1442145
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Health,Developing countries (no country specified),0,1,spending,CH-4-2020001314,2403574,2403574
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Multisector,Kyrgyzstan,0,0,commitments,CH-4-2020001403,678656,678656
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Multisector,Kyrgyzstan,0,0,spending,CH-4-2020001403,542925,542925
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Multisector,Kyrgyz Republic,0,0,commitments,CH-4-2020001403,678656,678656
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Multisector,Kyrgyz Republic,0,0,spending,CH-4-2020001403,542925,542925
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Multisector,Tajikistan,0,1,commitments,CH-4-2020001353,67866,67866
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Multisector,Tajikistan,0,1,commitments,CH-4-2020001353,158353,158353
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Other Multisector,Tajikistan,0,1,commitments,CH-4-2020001354,6872,6872
@@ -723,9 +723,9 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Trade Policies & Regulations,Developing countries (no country specified),0,1,commitments,CH-4-2020001314,961430,961430
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Trade Policies & Regulations,Developing countries (no country specified),0,1,spending,CH-4-2020001313,1526977,1526977
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Trade Policies & Regulations,Developing countries (no country specified),0,1,spending,CH-4-2020001314,961430,961430
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Bolivia (Plurinational State of),0,0,commitments,CH-4-2020001303,54293,54293
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Bolivia (Plurinational State of),0,0,commitments,CH-4-2020001304,13573,13573
-2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Bolivia (Plurinational State of),0,0,spending,CH-4-2020001303,49558,49558
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Bolivia,0,0,commitments,CH-4-2020001303,54293,54293
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Bolivia,0,0,commitments,CH-4-2020001304,13573,13573
+2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Bolivia,0,0,spending,CH-4-2020001303,49558,49558
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Burkina Faso,0,1,commitments,CH-4-2020001319,50899,50899
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Burkina Faso,0,1,commitments,CH-4-2020001320,38683,38683
 2020-12,ch-4,Swiss Agency for Development and Cooperation (SDC),10,Water Supply & Sanitation,Burkina Faso,0,1,spending,CH-4-2020001319,50899,50899
@@ -804,7 +804,7 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Yemen,1,1,spending,GB-GOV-1-300417-110,78723,78723
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Yemen,1,1,spending,GB-GOV-1-300417-110,98994,98994
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,General Environment Protection,India,0,0,spending,GB-GOV-1-300110-118,58796,58796
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Saint Helena,0,0,spending,GB-GOV-1-300806-104,110360,110360
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,St. Helena,0,0,spending,GB-GOV-1-300806-104,110360,110360
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Tajikistan,0,1,spending,GB-GOV-1-300619-104,115919,115919
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Bangladesh,0,1,spending,GB-GOV-1-300708-134,9409,9409
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Bangladesh,0,1,spending,GB-GOV-1-300708-134,9793,9793
@@ -834,7 +834,7 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Iraq,0,0,commitments,GB-GOV-1-300707-102,2778400,2778400
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Iraq,0,0,spending,GB-GOV-1-300707-102,1646760,1646760
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Iraq,0,0,spending,GB-GOV-1-300707-102,2744600,2744600
-2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Syrian Arab Republic,0,1,spending,GB-GOV-1-300708-116,41187,41187
+2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Syria,0,1,spending,GB-GOV-1-300708-116,41187,41187
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Multisector,South Sudan,1,0,spending,GB-GOV-1-300708-117,31021,31021
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Multisector,South Sudan,1,0,spending,GB-GOV-1-300708-117,41358,41358
 2021-03,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Other Social Infrastructure & Services,India,0,0,spending,GB-GOV-1-300110-117,82986,82986
@@ -860,7 +860,7 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2021-03,gb-coh-213890,Save The Children UK,21,Health,Nepal,1,1,spending,GB-COH-213890-82604802,3412,81359
 2021-03,gb-coh-213890,Save The Children UK,21,Other Social Infrastructure & Services,Nepal,1,1,spending,GB-COH-213890-82604802,3412,81359
 2021-03,gb-coh-213890,Save The Children UK,21,Population Policies/Programmes & Reproductive Health,Ethiopia,0,0,spending,GB-COH-213890-82604850,0,12613
-2021-03,xm-dac-41114,United Nations Development Programme,40,Unallocated / Unspecified,Bolivia (Plurinational State of),0,1,spending,XM-DAC-41114-OUTPUT-00126462,0,286
+2021-03,xm-dac-41114,United Nations Development Programme,40,Unallocated / Unspecified,Bolivia,0,1,spending,XM-DAC-41114-OUTPUT-00126462,0,286
 2021-04,dac-1601,Bill and Melinda Gates Foundation,60,Population Policies/Programmes & Reproductive Health,India,0,0,spending,DAC-1601-INV-005891,650000,650000
 2021-04,nl-kvk-27108436,Oxfam Novib,21,Government & Civil Society,Viet Nam,0,0,spending,NL-KVK-27108436-A-05001-22:VN,0,16862
 2021-04,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Cameroon,0,1,commitments,XM-DAC-41114-OUTPUT-00126699,0,1820714
@@ -874,8 +874,8 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2021-04,xm-dac-41114,United Nations Development Programme,40,General Environment Protection,Fiji,0,1,commitments,XM-DAC-41114-OUTPUT-00126732,0,140899
 2021-04,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Belarus,0,1,commitments,XM-DAC-41114-OUTPUT-00126884,0,3077
 2021-04,xm-dac-41114,United Nations Development Programme,40,Other Social Infrastructure & Services,Paraguay,0,1,commitments,XM-DAC-41114-OUTPUT-00126524,0,55000
-2021-04,xm-dac-41114,United Nations Development Programme,40,Unallocated / Unspecified,Bolivia (Plurinational State of),0,1,commitments,XM-DAC-41114-OUTPUT-00126462,0,390748
-2021-04,xm-dac-41114,United Nations Development Programme,40,Unallocated / Unspecified,Bolivia (Plurinational State of),0,1,spending,XM-DAC-41114-OUTPUT-00126462,0,5261
+2021-04,xm-dac-41114,United Nations Development Programme,40,Unallocated / Unspecified,Bolivia,0,1,commitments,XM-DAC-41114-OUTPUT-00126462,0,390748
+2021-04,xm-dac-41114,United Nations Development Programme,40,Unallocated / Unspecified,Bolivia,0,1,spending,XM-DAC-41114-OUTPUT-00126462,0,5261
 2021-05,xm-dac-41114,United Nations Development Programme,40,General Budget Support,Viet Nam,0,0,spending,XM-DAC-41114-OUTPUT-00126459,0,253
 2021-05,xm-dac-41114,United Nations Development Programme,40,Other Social Infrastructure & Services,Paraguay,0,1,spending,XM-DAC-41114-OUTPUT-00126524,0,34
-2021-05,xm-dac-41114,United Nations Development Programme,40,Unallocated / Unspecified,Bolivia (Plurinational State of),0,1,spending,XM-DAC-41114-OUTPUT-00126462,0,2648
+2021-05,xm-dac-41114,United Nations Development Programme,40,Unallocated / Unspecified,Bolivia,0,1,spending,XM-DAC-41114-OUTPUT-00126462,0,2648
