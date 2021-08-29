@@ -15,7 +15,7 @@ class CovidChecks:
     def has_desired_tag(tags):
         """ Check if the COVID-19 tag is present """
         for tag in tags:
-            if tag.vocabulary == '99' and tag.code.upper() == 'COVID-19':
+            if tag.vocabulary == '99' and tag.code and tag.code.upper() == 'COVID-19':
                 return True
         return False
 
