@@ -27,6 +27,7 @@ jobs:
         UPDATESHEETS: ${{ secrets.UPDATESHEETS }}
       run: |
         python run.py
+        cp errors.log output_covid
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:

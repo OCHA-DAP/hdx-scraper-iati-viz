@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
+import logging
+
 from iati.calculatesplits import CalculateSplits
 from iati.lookups import Lookups
 from iati.transaction import Transaction
 
+logger = logging.getLogger(__name__)
 
 class Activity:
     def __init__(self, dactivity):
@@ -23,7 +26,7 @@ class Activity:
     def add_transactions(self, configuration):
         skipped = 0
         for dtransaction in self.dactivity.transactions:
-            transaction = Transaction.get_transaction(configuration, dtransaction)
+            transaction = Transaction.get_transaction(configuration, dtransaction, self.identifier)
             if not transaction:
                 skipped += 1
                 continue
@@ -53,9 +56,13 @@ class Activity:
         return activity, skipped
 
     def is_strict(self):
-        return True if (Lookups.checks.has_desired_scope(self.dactivity.humanitarian_scopes) or Lookups.checks.has_desired_tag(self.dactivity.tags) or
-                        Lookups.checks.has_desired_sector(self.dactivity.sectors) or Lookups.checks.is_desired_narrative(self.dactivity.title.narratives)) \
-            else False
+        try:
+            return True if (Lookups.checks.has_desired_scope(self.dactivity.humanitarian_scopes) or Lookups.checks.has_desired_tag(self.dactivity.tags) or
+                            Lookups.checks.has_desired_sector(self.dactivity.sectors) or
+                            Lookups.checks.is_desired_narrative(self.dactivity.title.narratives)) else False
+        except AttributeError:
+            logger.exception(f'Activity {self.identifier} is_strict call failed!')
+            return False
 
     def sum_transactions_by_type(self):
         totals = dict()

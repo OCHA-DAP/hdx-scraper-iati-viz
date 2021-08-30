@@ -1,9 +1,13 @@
 # -*- coding: utf-8 -*-
+import logging
+
 from hdx.location.currency import Currency, CurrencyError
 from hdx.utilities.dateparse import parse_date
 
 from iati.calculatesplits import CalculateSplits
 from iati.lookups import Lookups
+
+logger = logging.getLogger(__name__)
 
 
 class Transaction:
@@ -21,7 +25,7 @@ class Transaction:
         self.value = value
 
     @staticmethod
-    def get_transaction(configuration, dtransaction):
+    def get_transaction(configuration, dtransaction, activity_identifier):
         # We're not interested in transactions that have no value
         if not dtransaction.value:
             return None
@@ -38,9 +42,11 @@ class Transaction:
             # Convert the transaction value to USD
             currency = dtransaction.currency
             if currency is None:
+                logger.error(f'Activity {activity_identifier} transaction with value {dtransaction.value} currency error!')
                 return None
             value = Currency.get_historic_value_in_usd(dtransaction.value, currency, parse_date(date))
         except (ValueError, CurrencyError):
+            logger.exception(f'Activity {activity_identifier} transaction with value {dtransaction.value} USD conversion failed!')
             return None
         return Transaction(transaction_type_info, dtransaction, value)
 
@@ -65,7 +71,7 @@ class Transaction:
         self.net_value = self.get_usd_net_value(activity.commitment_factor, activity.spending_factor)
         # transaction status defaults to activity
         self.is_humanitarian = self.is_humanitarian(activity.humanitarian)
-        self.is_strict = self.is_strict(activity.strict)
+        self.is_strict = self.is_strict(activity)
         return True
 
     def get_usd_net_value(self, commitment_factor, spending_factor):
@@ -85,11 +91,15 @@ class Transaction:
             is_humanitarian = transaction_humanitarian
         return 1 if is_humanitarian else 0
 
-    def is_strict(self, activity_strict):
-        is_strict = True if (Lookups.checks.has_desired_sector(self.dtransaction.sectors) or
-                             (self.dtransaction.description and
-                              Lookups.checks.is_desired_narrative(self.dtransaction.description.narratives))) else False
-        is_strict = is_strict or activity_strict
+    def is_strict(self, activity):
+        try:
+            is_strict = True if (Lookups.checks.has_desired_sector(self.dtransaction.sectors) or
+                                 (self.dtransaction.description and
+                                  Lookups.checks.is_desired_narrative(self.dtransaction.description.narratives))) else False
+        except AttributeError:
+            logger.exception(f'Activity {activity.identifier} transaction with value {self.dtransaction.value} is_strict call failed!')
+            is_strict = False
+        is_strict = is_strict or activity.strict
         return 1 if is_strict else 0
 
     def make_country_or_region_splits(self, activity_country_splits):
