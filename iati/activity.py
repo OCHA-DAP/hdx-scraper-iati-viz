@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import logging
 
 from iati.calculatesplits import CalculateSplits
@@ -6,6 +5,7 @@ from iati.lookups import Lookups
 from iati.transaction import Transaction
 
 logger = logging.getLogger(__name__)
+
 
 class Activity:
     def __init__(self, dactivity):
@@ -19,14 +19,18 @@ class Activity:
         self.strict = self.is_strict()
         self.humanitarian = dactivity.humanitarian
         # Figure out default country or region/sector percentage splits at the activity level
-        self.countryregion_splits = CalculateSplits.make_country_or_region_splits(dactivity)
+        self.countryregion_splits = CalculateSplits.make_country_or_region_splits(
+            dactivity
+        )
         self.sector_splits = CalculateSplits.make_sector_splits(dactivity)
         self.transactions = list()
 
     def add_transactions(self, configuration):
         skipped = 0
         for dtransaction in self.dactivity.transactions:
-            transaction = Transaction.get_transaction(configuration, dtransaction, self.identifier)
+            transaction = Transaction.get_transaction(
+                configuration, dtransaction, self.identifier
+            )
             if not transaction:
                 skipped += 1
                 continue
@@ -49,7 +53,7 @@ class Activity:
             return None, len(dactivity.transactions)
         # Filter out eg. UNDP and DFID activities that have children (i.e. filter out h=1)
         if Lookups.is_filter_reporting_orgs_children(reporting_org_ref):
-            if '2' in dactivity.related_activities_by_type:
+            if "2" in dactivity.related_activities_by_type:
                 return None, len(dactivity.transactions)
         activity = Activity(dactivity)
         skipped = activity.add_transactions(configuration)
@@ -57,17 +61,26 @@ class Activity:
 
     def is_strict(self):
         try:
-            return True if (Lookups.checks.has_desired_scope(self.dactivity.humanitarian_scopes) or Lookups.checks.has_desired_tag(self.dactivity.tags) or
-                            Lookups.checks.has_desired_sector(self.dactivity.sectors) or
-                            Lookups.checks.is_desired_narrative(self.dactivity.title.narratives)) else False
+            return (
+                True
+                if (
+                    Lookups.checks.has_desired_scope(self.dactivity.humanitarian_scopes)
+                    or Lookups.checks.has_desired_tag(self.dactivity.tags)
+                    or Lookups.checks.has_desired_sector(self.dactivity.sectors)
+                    or Lookups.checks.is_desired_narrative(
+                        self.dactivity.title.narratives
+                    )
+                )
+                else False
+            )
         except AttributeError:
-            logger.exception(f'Activity {self.identifier} is_strict call failed!')
+            logger.exception(f"Activity {self.identifier} is_strict call failed!")
             return False
 
     def sum_transactions_by_type(self):
         totals = dict()
         for transaction in self.transactions:
-            key = f'{transaction.get_direction()} {transaction.get_classification()}'
+            key = f"{transaction.get_direction()} {transaction.get_classification()}"
             totals[key] = totals.get(key, 0) + transaction.value
         return totals
 
@@ -80,7 +93,9 @@ class Activity:
         totals = self.sum_transactions_by_type()
 
         # Figure out total incoming money (never less than zero)
-        incoming = max(totals.get('incoming commitments', 0), totals.get('incoming spending', 0))
+        incoming = max(
+            totals.get("incoming commitments", 0), totals.get("incoming spending", 0)
+        )
         if incoming < 0:
             incoming = 0
 
@@ -88,9 +103,11 @@ class Activity:
         if incoming == 0:
             self.commitment_factor = 1.0
         else:
-            outgoing_commitments = totals.get('outgoing commitments', 0)
+            outgoing_commitments = totals.get("outgoing commitments", 0)
             if outgoing_commitments > incoming:
-                self.commitment_factor = (outgoing_commitments - incoming) / outgoing_commitments
+                self.commitment_factor = (
+                    outgoing_commitments - incoming
+                ) / outgoing_commitments
             else:
                 self.commitment_factor = 0.0
 
@@ -98,43 +115,69 @@ class Activity:
         if incoming == 0:
             self.spending_factor = 1.0
         else:
-            spending = totals.get('outgoing spending', 0)
+            spending = totals.get("outgoing spending", 0)
             if spending > incoming:
-               self.spending_factor = (spending - incoming) / spending
+                self.spending_factor = (spending - incoming) / spending
             else:
                 self.spending_factor = 0.0
 
     def add_to_flows(self, out_flows, transaction, funder, implementer):
-        if transaction.get_classification() != 'spending':
+        if transaction.get_classification() != "spending":
             return
         provider, receiver = transaction.get_provider_receiver()
-        if funder and provider['name'] == Lookups.default_org_name:
+        if funder and provider["name"] == Lookups.default_org_name:
             provider = funder
-        if implementer and receiver['name'] == Lookups.default_org_name:
+        if implementer and receiver["name"] == Lookups.default_org_name:
             receiver = implementer
-        org_name = self.org['name']
-        if org_name != Lookups.default_org_name and org_name != provider['name'] and org_name != receiver['name']:
-            provider_name = provider['name']
-            if (not provider_name or provider_name == Lookups.default_org_name) and provider['id']:
-                provider_name = provider['id']
-            receiver_name = receiver['name']
-            if (not receiver_name or receiver_name == Lookups.default_org_name) and receiver['id']:
-                receiver_name = receiver['id']
-            key = self.org['name'], provider_name, receiver_name,\
-                  transaction.is_humanitarian, transaction.is_strict, transaction.get_direction()
+        org_name = self.org["name"]
+        if (
+            org_name != Lookups.default_org_name
+            and org_name != provider["name"]
+            and org_name != receiver["name"]
+        ):
+            provider_name = provider["name"]
+            if (
+                not provider_name or provider_name == Lookups.default_org_name
+            ) and provider["id"]:
+                provider_name = provider["id"]
+            receiver_name = receiver["name"]
+            if (
+                not receiver_name or receiver_name == Lookups.default_org_name
+            ) and receiver["id"]:
+                receiver_name = receiver["id"]
+            key = (
+                self.org["name"],
+                provider_name,
+                receiver_name,
+                transaction.is_humanitarian,
+                transaction.is_strict,
+                transaction.get_direction(),
+            )
             # ignore internal transactions or unknown reporting orgs
             cur_output = out_flows.get(key, dict())
-            cur_output['value'] = cur_output.get('value', 0) + transaction.value
-            if 'row' not in cur_output:
-                cur_output['row'] = [self.org['id'], self.org['name'], self.org['type'], provider['id'],
-                                     provider_name, provider['type'], receiver['id'], receiver_name,
-                                     receiver['type'], transaction.is_humanitarian, transaction.is_strict,
-                                     transaction.get_direction()]
+            cur_output["value"] = cur_output.get("value", 0) + transaction.value
+            if "row" not in cur_output:
+                cur_output["row"] = [
+                    self.org["id"],
+                    self.org["name"],
+                    self.org["type"],
+                    provider["id"],
+                    provider_name,
+                    provider["type"],
+                    receiver["id"],
+                    receiver_name,
+                    receiver["type"],
+                    transaction.is_humanitarian,
+                    transaction.is_strict,
+                    transaction.get_direction(),
+                ]
             out_flows[key] = cur_output
 
     def generate_split_transactions(self, out_transactions, transaction):
         # Make the splits for the transaction (default to activity splits)
-        country_splits = transaction.make_country_or_region_splits(self.countryregion_splits)
+        country_splits = transaction.make_country_or_region_splits(
+            self.countryregion_splits
+        )
         sector_splits = transaction.make_sector_splits(self.sector_splits)
 
         # Apply the country and sector percentage splits to the transaction
@@ -149,28 +192,46 @@ class Activity:
                 # Add to transactions
                 #
 
-                total_money = int(round(transaction.value * country_percentage * sector_percentage))
-                net_money = int(round(transaction.net_value * country_percentage * sector_percentage))
+                total_money = int(
+                    round(transaction.value * country_percentage * sector_percentage)
+                )
+                net_money = int(
+                    round(
+                        transaction.net_value * country_percentage * sector_percentage
+                    )
+                )
 
                 if total_money != 0:
                     # add to transactions
-                    out_transactions.append([transaction.year_month, self.org['id'], self.org['name'], self.org['type'],
-                                             sector_name, country_name, transaction.is_humanitarian,
-                                             transaction.is_strict, transaction.get_classification(), self.identifier,
-                                             net_money, total_money])
+                    out_transactions.append(
+                        [
+                            transaction.year_month,
+                            self.org["id"],
+                            self.org["name"],
+                            self.org["type"],
+                            sector_name,
+                            country_name,
+                            transaction.is_humanitarian,
+                            transaction.is_strict,
+                            transaction.get_classification(),
+                            self.identifier,
+                            net_money,
+                            total_money,
+                        ]
+                    )
 
     def get_funder_implementer(self):
         funder = None
         implementer = None
         participating_orgs_by_role = self.dactivity.participating_orgs_by_role
         for role in participating_orgs_by_role:
-            if role not in ('1', '4'):
+            if role not in ("1", "4"):
                 continue
             participating_orgs = participating_orgs_by_role[role]
             if len(participating_orgs) != 1:
                 continue
             org = Lookups.get_org_info(participating_orgs[0])
-            if role == '1':
+            if role == "1":
                 funder = org
             else:
                 implementer = org

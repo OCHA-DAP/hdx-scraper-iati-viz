@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import logging
 import re
 
@@ -12,15 +11,15 @@ logger = logging.getLogger(__name__)
 def clean_string(s):
     # Normalise one or more whitespaces to a single space and remove any punctuation at the start/end except
     # for any trailing full stop
-    s = re.sub(r'(\W)\1+', r'\1', s.strip())
-    s = re.sub(r'\s', ' ', s)
-    s = re.sub(r'^\W?([\w &]*)[^a-zA-Z0-9_\.]?$', r'\1', s)
+    s = re.sub(r"(\W)\1+", r"\1", s.strip())
+    s = re.sub(r"\s", " ", s)
+    s = re.sub(r"^\W?([\w &]*)[^a-zA-Z0-9_\.]?$", r"\1", s)
     return s.strip()
 
 
 def clean_region(region):
-    region = region.replace('unspecified', '')
-    region = region.replace('regional', '')
+    region = region.replace("unspecified", "")
+    region = region.replace("regional", "")
     return clean_string(region)
 
 
@@ -45,38 +44,38 @@ class Lookups:
 
     @classmethod
     def setup(cls, configuration):
-        logger.info('Reading in lookups data')
-        org_data = load_json(configuration['org_data'])
+        logger.info("Reading in lookups data")
+        org_data = load_json(configuration["org_data"])
         """ Map from IATI identifiers to organisation names """
         # Prime with org identifiers from code4iati
-        for entry in org_data['data']:
-            code = clean_string(entry['code']).lower()
-            name = clean_string(entry['name'])
+        for entry in org_data["data"]:
+            code = clean_string(entry["code"]).lower()
+            name = clean_string(entry["name"])
             cls.org_ref_to_name[code] = name
             cls.org_names_to_ref[name.lower()] = code
-        cls.sector_info = load_json(configuration['sector_data'])
-        region_data = load_json(configuration['region_data'])
+        cls.sector_info = load_json(configuration["sector_data"])
+        region_data = load_json(configuration["region_data"])
         """ Map from region codes to region names """
         # Prime with region codes from code4iati
-        for entry in region_data['data']:
-            code = clean_string(entry['code']).lower()
-            name = clean_region(entry['name'])
+        for entry in region_data["data"]:
+            code = clean_string(entry["code"]).lower()
+            name = clean_region(entry["name"])
             cls.region_code_to_name[code] = name
-        cls.default_org_id = configuration['default_org_id']
-        cls.default_org_name = configuration['default_org_name']
-        cls.default_expenditure_org_name = configuration['default_expenditure_org_name']
+        cls.default_org_id = configuration["default_org_id"]
+        cls.default_org_name = configuration["default_org_name"]
+        cls.default_expenditure_org_name = configuration["default_expenditure_org_name"]
 
-        cls.default_sector = configuration['default_sector']
-        cls.default_country_region = configuration['default_country_region']
-        for row in hxl.data(configuration['filters_url']):
-            org_id = row.get('#org+reporting+id')
+        cls.default_sector = configuration["default_sector"]
+        cls.default_country_region = configuration["default_country_region"]
+        for row in hxl.data(configuration["filters_url"]):
+            org_id = row.get("#org+reporting+id")
             if org_id:
                 cls.filter_reporting_orgs.append(org_id)
-            org_id = row.get('#org+reporting_children+id')
+            org_id = row.get("#org+reporting_children+id")
             if org_id:
                 cls.filter_reporting_orgs_children.append(org_id)
-        for row in hxl.data(configuration['blocklist_url']):
-            org_id = row.get('#org+reporting+id')
+        for row in hxl.data(configuration["blocklist_url"]):
+            org_id = row.get("#org+reporting+id")
             if org_id:
                 cls.org_ref_blocklist.append(org_id)
 
@@ -90,7 +89,11 @@ class Lookups:
 
     @staticmethod
     def get_cleaned_ref_name_type(org):
-        ref = None if org is None or org.ref is None else clean_string(str(org.ref)).lower()
+        ref = (
+            None
+            if org is None or org.ref is None
+            else clean_string(str(org.ref)).lower()
+        )
         other_names = list()
         orig_name = None
         org_name = None
@@ -101,7 +104,7 @@ class Lookups:
                 for key, value in org.name.narratives.items():
                     value = clean_string(value)
                     if value:
-                        if key.lower() == 'en':
+                        if key.lower() == "en":
                             org_name = value
                         else:
                             other_names.append(value)
@@ -147,7 +150,7 @@ class Lookups:
 
     @classmethod
     def get_org_info(cls, org, reporting_org=False, expenditure=False):
-        """ Standardise organisation names
+        """Standardise organisation names
         For now, use the first name found for an identifier.
         Later, we can reference the registry.
         """
@@ -208,7 +211,7 @@ class Lookups:
             preferred_type = cls.org_names_to_type.get(name.lower())
         if preferred_type:
             org_type = preferred_type
-        return {'id': ref, 'name': name, 'type': org_type}
+        return {"id": ref, "name": name, "type": org_type}
 
     # This can be used to get a list of org refs to check to see if they should be added to the manual list
     # @classmethod
@@ -236,11 +239,10 @@ class Lookups:
 
     @classmethod
     def get_sector_group_name(cls, code):
-        """ Look up a group name for a 3- or 5-digit sector code.
-        """
+        """Look up a group name for a 3- or 5-digit sector code."""
         code = code[:3]
         if code in cls.sector_info:
-            return cls.sector_info.get(code)['dac-group']
+            return cls.sector_info.get(code)["dac-group"]
         else:
             return cls.default_sector
 
@@ -251,5 +253,5 @@ class Lookups:
             return countryname
         regionname = cls.region_code_to_name.get(code)
         if regionname:
-            return f'{regionname} (no country specified)'
+            return f"{regionname} (no country specified)"
         return cls.default_country_region

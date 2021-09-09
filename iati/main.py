@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import json
 import logging
 from io import StringIO
@@ -22,9 +21,9 @@ def retrieve_dportal(configuration, retriever, dportal_params, whattorun):
     Downloads activity data from D-Portal. Filters them and returns a
     list of activities.
     """
-    dportal_configuration = configuration['dportal']
-    base_filename = dportal_configuration['filename']
-    dportal_limit = dportal_configuration['limit']
+    dportal_configuration = configuration["dportal"]
+    base_filename = dportal_configuration["filename"]
+    dportal_limit = dportal_configuration["limit"]
     n = 0
     dont_exit = True
     while dont_exit:
@@ -33,12 +32,14 @@ def retrieve_dportal(configuration, retriever, dportal_params, whattorun):
             dont_exit = False
         else:
             offset = n * dportal_limit
-            params = f'LIMIT {dportal_limit} OFFSET {offset}'
-            logger.info(f'OFFSET {offset}')
-        url = dportal_configuration['url'] % quote(dportal_configuration[f'{whattorun}_query'].format(params))
+            params = f"LIMIT {dportal_limit} OFFSET {offset}"
+            logger.info(f"OFFSET {offset}")
+        url = dportal_configuration["url"] % quote(
+            dportal_configuration[f"{whattorun}_query"].format(params)
+        )
         filename = base_filename.format(n)
-        text = retriever.retrieve_text(url, filename, 'D-Portal activities', False)
-        if '<iati-activity' in text:
+        text = retriever.retrieve_text(url, filename, "D-Portal activities", False)
+        if "<iati-activity" in text:
             n += 1
             yield text
         else:
@@ -47,26 +48,26 @@ def retrieve_dportal(configuration, retriever, dportal_params, whattorun):
 
 
 def write(today, output_dir, configuration, configuration_key, rows, skipped=None):
-    logger.info(f'Writing {configuration_key} files to {output_dir}')
+    logger.info(f"Writing {configuration_key} files to {output_dir}")
     file_configuration = configuration[configuration_key]
-    headers = file_configuration['headers']
-    hxltags = file_configuration['hxltags']
-    process_cols = file_configuration.get('process_cols', dict())
-    csv_configuration = file_configuration['csv']
-    json_configuration = file_configuration['json']
-    csv_hxltags = csv_configuration.get('hxltags', hxltags)
-    json_hxltags = json_configuration.get('hxltags', hxltags)
+    headers = file_configuration["headers"]
+    hxltags = file_configuration["hxltags"]
+    process_cols = file_configuration.get("process_cols", dict())
+    csv_configuration = file_configuration["csv"]
+    json_configuration = file_configuration["json"]
+    csv_hxltags = csv_configuration.get("hxltags", hxltags)
+    json_hxltags = json_configuration.get("hxltags", hxltags)
     hxltag_to_header = dict(zip(hxltags, headers))
     csv_headers = [hxltag_to_header[hxltag] for hxltag in csv_hxltags]
-    metadata = {'#date+run': today, f'#meta+{configuration_key}+num': len(rows)}
+    metadata = {"#date+run": today, f"#meta+{configuration_key}+num": len(rows)}
     if skipped is not None:
-        metadata[f'#meta+{configuration_key}+skipped+num'] = skipped
-    metadata_json = json.dumps(metadata, indent=None, separators=(',', ':'))
-    with open(join(output_dir, csv_configuration['filename']), 'wb') as output_csv:
-        writer = unicodecsv.writer(output_csv, encoding='utf-8', lineterminator='\n')
+        metadata[f"#meta+{configuration_key}+skipped+num"] = skipped
+    metadata_json = json.dumps(metadata, indent=None, separators=(",", ":"))
+    with open(join(output_dir, csv_configuration["filename"]), "wb") as output_csv:
+        writer = unicodecsv.writer(output_csv, encoding="utf-8", lineterminator="\n")
         writer.writerow(csv_headers)
         writer.writerow(csv_hxltags)
-        with open(join(output_dir, json_configuration['filename']), 'w') as output_json:
+        with open(join(output_dir, json_configuration["filename"]), "w") as output_json:
             output_json.write(f'{{"metadata":{metadata_json},"data":[\n')
 
             def write_row(inrow, ending):
@@ -76,39 +77,48 @@ def write(today, output_dir, configuration, configuration_key, rows, skipped=Non
                         expression = process_cols.get(file_hxltag)
                         if expression:
                             for i, hxltag in enumerate(hxltags):
-                                expression = expression.replace(hxltag, f'inrow[{i}]')
+                                expression = expression.replace(hxltag, f"inrow[{i}]")
                             outrow[file_hxltag] = eval(expression)
                         else:
                             outrow[file_hxltag] = inrow[hxltags.index(file_hxltag)]
                     return outrow
+
                 writer.writerow(get_outrow(csv_hxltags).values())
                 row = get_outrow(json_hxltags)
-                output_json.write(json.dumps(row, indent=None, separators=(',', ':')) + ending)
+                output_json.write(
+                    json.dumps(row, indent=None, separators=(",", ":")) + ending
+                )
 
-            [write_row(row, ',\n') for row in rows[:-1]]
-            write_row(rows[-1], ']')
-            output_json.write('}')
+            [write_row(row, ",\n") for row in rows[:-1]]
+            write_row(rows[-1], "]")
+            output_json.write("}")
 
 
-def start(configuration, today, retriever, output_dir, dportal_params, whattorun, filterdate):
+def start(
+    configuration, today, retriever, output_dir, dportal_params, whattorun, filterdate
+):
     if filterdate:
-        text = f'removing transactions before {filterdate}'
+        text = f"removing transactions before {filterdate}"
     else:
-        text = 'without removing transactions before a certain date'
-    logger.info(f'Running {whattorun} {text}')
+        text = "without removing transactions before a certain date"
+    logger.info(f"Running {whattorun} {text}")
     Lookups.checks = checks[whattorun]
     Lookups.filter_transaction_date = filterdate
     generator = retrieve_dportal(configuration, retriever, dportal_params, whattorun)
-    Lookups.setup(configuration['lookups'])
-    Currency.setup(retriever=retriever, fallback_historic_to_current=True, fallback_current_to_static=True)
-    CalculateSplits.setup(configuration['calculate_splits'])
+    Lookups.setup(configuration["lookups"])
+    Currency.setup(
+        retriever=retriever,
+        fallback_historic_to_current=True,
+        fallback_current_to_static=True,
+    )
+    CalculateSplits.setup(configuration["calculate_splits"])
 
     # Build org name lookup
     dactivities = list()
     for text in generator:
         for dactivity in diterator.XMLIterator(StringIO(text)):
             dactivities.append(dactivity)
-#    Lookups.build_reporting_org_blocklist(dactivities)
+    #    Lookups.build_reporting_org_blocklist(dactivities)
     Lookups.add_reporting_orgs(dactivities)
     Lookups.add_participating_orgs(dactivities)
 
@@ -122,21 +132,44 @@ def start(configuration, today, retriever, output_dir, dportal_params, whattorun
         if activity:
             all_skipped += activity.process(today[:7], flows, transactions)
         if i % 1000 == 0:
-            logger.info(f'Processed {i} activities')
+            logger.info(f"Processed {i} activities")
 
-    logger.info(f'Processed {len(flows)} flows')
-    logger.info(f'Processed {len(transactions)} transactions')
-    logger.info(f'Skipped {all_skipped} transactions')
+    logger.info(f"Processed {len(flows)} flows")
+    logger.info(f"Processed {len(transactions)} transactions")
+    logger.info(f"Skipped {all_skipped} transactions")
 
-    outputs_configuration = configuration['outputs']
+    outputs_configuration = configuration["outputs"]
 
     # Prepare and write flows
-    write(today, output_dir, outputs_configuration, 'flows',
-          [flows[key]['row']+[int(round(flows[key]['value']))] for key in sorted(flows)])
+    write(
+        today,
+        output_dir,
+        outputs_configuration,
+        "flows",
+        [
+            flows[key]["row"] + [int(round(flows[key]["value"]))]
+            for key in sorted(flows)
+        ],
+    )
 
     # Write transactions
-    write(today, output_dir, outputs_configuration, 'transactions',
-          sorted(transactions, key=lambda x: (x[0], x[2], x[3], x[4], x[5], x[6], x[7], x[8], x[9], x[10])), all_skipped)
+    write(
+        today,
+        output_dir,
+        outputs_configuration,
+        "transactions",
+        sorted(
+            transactions,
+            key=lambda x: (x[0], x[2], x[3], x[4], x[5], x[6], x[7], x[8], x[9], x[10]),
+        ),
+        all_skipped,
+    )
 
     # Write orgs
-    write(today, output_dir, outputs_configuration, 'orgs', sorted(Lookups.orgs_lookedup, key=lambda x: (x[1], x[0])))
+    write(
+        today,
+        output_dir,
+        outputs_configuration,
+        "orgs",
+        sorted(Lookups.orgs_lookedup, key=lambda x: (x[1], x[0])),
+    )
