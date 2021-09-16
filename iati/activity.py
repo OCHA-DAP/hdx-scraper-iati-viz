@@ -42,7 +42,7 @@ class Activity:
         """
         We exclude activities from secondary reporters and certain sorts
         of organisations where the data is very poor quality. We also
-        exclude hierarchy=1 activities for UNDP (XM-DAC-41114) and FCDO (GB-GOV-1).
+        exclude hierarchy=1 activities for GAVI (47122) and FCDO (GB-GOV-1).
         """
         # Skip activities from a secondary reporter
         if dactivity.secondary_reporter:
@@ -51,10 +51,9 @@ class Activity:
         # Filter out certain orgs
         if Lookups.is_filter_reporting_orgs(reporting_org_ref):
             return None, len(dactivity.transactions)
-        # Filter out eg. UNDP and DFID activities that have children (i.e. filter out h=1)
-        if Lookups.is_filter_reporting_orgs_children(reporting_org_ref):
-            if "2" in dactivity.related_activities_by_type:
-                return None, len(dactivity.transactions)
+        # Filter out eg. GAVI and FCDO activities that have children (ie. filter out h=1)
+        if Lookups.is_filter_reporting_orgs_children(reporting_org_ref, dactivity.hierarchy):
+            return None, len(dactivity.transactions)
         activity = Activity(dactivity)
         skipped = activity.add_transactions(configuration)
         return activity, skipped
