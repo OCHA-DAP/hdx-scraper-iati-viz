@@ -171,5 +171,5 @@ def start(
         output_dir,
         outputs_configuration,
         "orgs",
-        sorted(Lookups.orgs_lookedup, key=lambda x: (x[1], x[0])),
+        sorted(Lookups.used_reporting_orgs, key=lambda x: (x[1], x[0])),
     )

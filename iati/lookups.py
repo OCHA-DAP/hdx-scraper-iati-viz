@@ -29,7 +29,7 @@ class Lookups:
     org_ref_to_type = dict()
     org_names_to_ref = dict()
     org_names_to_type = dict()
-    orgs_lookedup = set()
+    used_reporting_orgs = set()
     default_org_id = None
     default_org_name = None
     default_expenditure_org_name = None
@@ -38,7 +38,7 @@ class Lookups:
     region_code_to_name = dict()
     default_country_region = None
     filter_reporting_orgs = list()
-    filter_reporting_orgs_children = list()
+    filter_reporting_orgs_children = dict()
     checks = None
     filter_transaction_date = None
 
@@ -72,8 +72,9 @@ class Lookups:
             if org_id:
                 cls.filter_reporting_orgs.append(org_id)
             org_id = row.get("#org+reporting_children+id")
-            if org_id:
-                cls.filter_reporting_orgs_children.append(org_id)
+            hierarchy = row.get("#org+reporting_children+hierarchy")
+            if org_id and hierarchy:
+                cls.filter_reporting_orgs_children[org_id] = hierarchy
         for row in hxl.data(configuration["blocklist_url"]):
             org_id = row.get("#org+reporting+id")
             if org_id:
@@ -84,8 +85,8 @@ class Lookups:
         return True if orgid in cls.filter_reporting_orgs else False
 
     @classmethod
-    def is_filter_reporting_orgs_children(cls, orgid):
-        return True if orgid in cls.filter_reporting_orgs_children else False
+    def is_filter_reporting_orgs_children(cls, orgid, hierarchy):
+        return True if hierarchy and hierarchy == cls.filter_reporting_orgs_children.get(orgid) else False
 
     @staticmethod
     def get_cleaned_ref_name_type(org):
@@ -202,7 +203,7 @@ class Lookups:
         if ref and ref != cls.default_org_id:
             if reporting_org:
                 if name != default_org_name:
-                    cls.orgs_lookedup.add((ref, name))
+                    cls.used_reporting_orgs.add((ref, name))
             elif ref in cls.org_ref_blocklist and name and name != default_org_name:
                 ref = cls.org_names_to_ref.get(name.lower())
             if ref:
