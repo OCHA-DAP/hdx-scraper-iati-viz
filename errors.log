@@ -1,109 +1,109 @@
-ERROR - 2021-09-23 14:22:30 - iati.activity - Activity FI-3-2020-2019191446 is_strict call failed!
+ERROR - 2021-09-24 14:23:27 - iati.activity - Activity FI-3-2020-2019191446 is_strict call failed!
 Traceback (most recent call last):
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 67, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
 AttributeError: 'NoneType' object has no attribute 'upper'
-ERROR - 2021-09-23 14:22:30 - iati.activity - Activity FI-3-2020-2019191448 is_strict call failed!
+ERROR - 2021-09-24 14:23:27 - iati.activity - Activity FI-3-2020-2019191448 is_strict call failed!
 Traceback (most recent call last):
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 67, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
 AttributeError: 'NoneType' object has no attribute 'upper'
-ERROR - 2021-09-23 14:22:30 - iati.activity - Activity FI-3-2020-2019191451 is_strict call failed!
+ERROR - 2021-09-24 14:23:27 - iati.activity - Activity FI-3-2020-2019191451 is_strict call failed!
 Traceback (most recent call last):
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 67, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
 AttributeError: 'NoneType' object has no attribute 'upper'
-ERROR - 2021-09-23 14:22:30 - iati.activity - Activity FI-3-2020-2019191453 is_strict call failed!
+ERROR - 2021-09-24 14:23:27 - iati.activity - Activity FI-3-2020-2019191453 is_strict call failed!
 Traceback (most recent call last):
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 67, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
 AttributeError: 'NoneType' object has no attribute 'upper'
-ERROR - 2021-09-23 14:22:30 - iati.activity - Activity FI-3-2020-2019191454 is_strict call failed!
+ERROR - 2021-09-24 14:23:27 - iati.activity - Activity FI-3-2020-2019191454 is_strict call failed!
 Traceback (most recent call last):
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 67, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
 AttributeError: 'NoneType' object has no attribute 'upper'
-ERROR - 2021-09-23 14:22:30 - iati.activity - Activity FI-3-2020-2019191455 is_strict call failed!
+ERROR - 2021-09-24 14:23:27 - iati.activity - Activity FI-3-2020-2019191455 is_strict call failed!
 Traceback (most recent call last):
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 67, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
 AttributeError: 'NoneType' object has no attribute 'upper'
-ERROR - 2021-09-23 14:22:30 - iati.activity - Activity FI-3-2020-2020200801 is_strict call failed!
+ERROR - 2021-09-24 14:23:27 - iati.activity - Activity FI-3-2020-2020200801 is_strict call failed!
 Traceback (most recent call last):
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 67, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
 AttributeError: 'NoneType' object has no attribute 'upper'
-ERROR - 2021-09-23 14:22:30 - iati.activity - Activity FI-3-2020-2020201064 is_strict call failed!
+ERROR - 2021-09-24 14:23:27 - iati.activity - Activity FI-3-2020-2020201064 is_strict call failed!
 Traceback (most recent call last):
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 67, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
 AttributeError: 'NoneType' object has no attribute 'upper'
-ERROR - 2021-09-23 14:22:30 - iati.activity - Activity FI-3-2020-2020201160 is_strict call failed!
+ERROR - 2021-09-24 14:23:27 - iati.activity - Activity FI-3-2020-2020201160 is_strict call failed!
 Traceback (most recent call last):
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 67, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
 AttributeError: 'NoneType' object has no attribute 'upper'
-ERROR - 2021-09-23 14:22:30 - iati.activity - Activity FI-3-2020-2020201163 is_strict call failed!
+ERROR - 2021-09-24 14:23:27 - iati.activity - Activity FI-3-2020-2020201163 is_strict call failed!
 Traceback (most recent call last):
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 67, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
 AttributeError: 'NoneType' object has no attribute 'upper'
-ERROR - 2021-09-23 14:22:30 - iati.activity - Activity FI-3-2020-2020201165 is_strict call failed!
+ERROR - 2021-09-24 14:23:27 - iati.activity - Activity FI-3-2020-2020201165 is_strict call failed!
 Traceback (most recent call last):
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 67, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
 AttributeError: 'NoneType' object has no attribute 'upper'
-ERROR - 2021-09-23 14:22:30 - iati.activity - Activity FI-3-2020-2020201166 is_strict call failed!
+ERROR - 2021-09-24 14:23:27 - iati.activity - Activity FI-3-2020-2020201166 is_strict call failed!
 Traceback (most recent call last):
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 67, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
 AttributeError: 'NoneType' object has no attribute 'upper'
-ERROR - 2021-09-23 14:22:30 - iati.activity - Activity FI-3-2020-2020201168 is_strict call failed!
+ERROR - 2021-09-24 14:23:27 - iati.activity - Activity FI-3-2020-2020201168 is_strict call failed!
 Traceback (most recent call last):
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 67, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
 AttributeError: 'NoneType' object has no attribute 'upper'
-ERROR - 2021-09-23 14:22:30 - iati.activity - Activity FI-3-2020-2020201170 is_strict call failed!
+ERROR - 2021-09-24 14:23:27 - iati.activity - Activity FI-3-2020-2020201170 is_strict call failed!
 Traceback (most recent call last):
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 67, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
 AttributeError: 'NoneType' object has no attribute 'upper'
-ERROR - 2021-09-23 14:22:30 - iati.activity - Activity FI-3-2020-2020201234 is_strict call failed!
+ERROR - 2021-09-24 14:23:27 - iati.activity - Activity FI-3-2020-2020201234 is_strict call failed!
 Traceback (most recent call last):
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 67, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
 AttributeError: 'NoneType' object has no attribute 'upper'
-ERROR - 2021-09-23 14:22:30 - iati.activity - Activity FI-3-2020-2020201403 is_strict call failed!
+ERROR - 2021-09-24 14:23:27 - iati.activity - Activity FI-3-2020-2020201403 is_strict call failed!
 Traceback (most recent call last):
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 67, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
