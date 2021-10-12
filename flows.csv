@@ -1,9 +1,9 @@
 Reporting org id,Reporting org name,Reporting org type,Provider org id,Provider org name,Provider org type,Receiver org id,Receiver org name,Receiver org type,Humanitarian?,Strict?,Transaction direction,Total money
 #org+id+reporting,#org+name+reporting,#org+reporting+type,#org+id+provider,#org+name+provider,#org+type+provider,#org+id+receiver,#org+name+receiver,#org+type+receiver,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_direction,#value+total
 lb-moi-497,ABAAD- Resource Center for Gender Equality,22,,,,,(Direct expenditure),,1,0,outgoing,1112742
-gb-coh-294860,ADD International,21,,,,,(Direct expenditure),,0,0,outgoing,2178
+gb-coh-294860,ADD International,21,,,,,(Direct expenditure),,0,0,outgoing,34189
 gb-coh-294860,ADD International,21,,,,,(Direct expenditure),,0,1,outgoing,165845
-gb-coh-294860,ADD International,21,gb-chc-207544,Sightsavers,21,,,,0,0,incoming,97065
+gb-coh-294860,ADD International,21,gb-chc-207544,Sightsavers,21,,,,0,0,incoming,30857
 gb-coh-294860,ADD International,21,gb-chc-207544,Sightsavers,21,,,,0,1,incoming,131689
 dk-cvr-20074035,ADRA Danmark,22,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,1,0,incoming,3435668
 dk-cvr-20074035,ADRA Danmark,22,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,1,1,incoming,622395
@@ -290,25 +290,25 @@ nl-kvk-58279199,Access to Nutrition Foundation,21,,(Unspecified org),,,,,1,0,inc
 gb-chc-1047501,Action Against Hunger,21,,,,fr-rcs-31899089200065,Action Contre la Faim,21,1,1,outgoing,2542764
 gb-chc-1047501,Action Against Hunger,21,gb-chc-1062638,Disasters Emergency Committee,22,,,,1,1,incoming,353220
 gb-chc-1047501,Action Against Hunger,21,gb-gov-1,"UK - Foreign, Commonwealth and Development Office",10,,,,1,1,incoming,2486602
-bd-nab-0210,ActionAid Bangladesh,21,,,,,(Direct expenditure),,1,1,outgoing,135752
-bd-nab-0210,ActionAid Bangladesh,21,,,,,ALO,24,1,1,outgoing,21424
-bd-nab-0210,ActionAid Bangladesh,21,,,,,AVAS,24,1,1,outgoing,8637
-bd-nab-0210,ActionAid Bangladesh,21,,,,,Association of Voluntary Action for Society (AVAS),24,1,1,outgoing,658
-bd-nab-0210,ActionAid Bangladesh,21,,,,,BACE,24,1,1,outgoing,368457
-bd-nab-0210,ActionAid Bangladesh,21,,,,,BADHON,24,1,1,outgoing,19742
-bd-nab-0210,ActionAid Bangladesh,21,,,,,BITA,24,1,1,outgoing,17436
-bd-nab-0210,ActionAid Bangladesh,21,,,,,BSDO,24,1,1,outgoing,4318
-bd-nab-0210,ActionAid Bangladesh,21,,,,,Chanpara Clinic,24,1,1,outgoing,4282
-bd-nab-0210,ActionAid Bangladesh,21,,,,,DALIT,24,1,1,outgoing,4297
-bd-nab-0210,ActionAid Bangladesh,21,,,,,GHORAGHAT,24,1,1,outgoing,4314
-bd-nab-0210,ActionAid Bangladesh,21,,,,,HEAD,24,1,1,outgoing,20995
-bd-nab-0210,ActionAid Bangladesh,21,,,,,NDBUS,24,1,1,outgoing,4295
-bd-nab-0210,ActionAid Bangladesh,21,,,,,Nari Maitree,24,1,1,outgoing,20828
-bd-nab-0210,ActionAid Bangladesh,21,,,,,Shusilan,24,1,1,outgoing,4317
-bd-nab-0210,ActionAid Bangladesh,21,,,,,USS,24,1,1,outgoing,23425
-bd-nab-0210,ActionAid Bangladesh,21,,,,,VARD,24,1,1,outgoing,4318
-bd-nab-0210,ActionAid Bangladesh,21,,,,,YPSA,24,1,1,outgoing,16248
-bd-nab-0210,ActionAid Bangladesh,21,dk-cvr-18243717,ActionAid Denmark (Mellemfolkeligt Samvirke),21,,,,1,1,incoming,152181
+bd-nab-0210,ActionAid Bangladesh,21,,,,,(Direct expenditure),,1,1,outgoing,135359
+bd-nab-0210,ActionAid Bangladesh,21,,,,,ALO,24,1,1,outgoing,21362
+bd-nab-0210,ActionAid Bangladesh,21,,,,,AVAS,24,1,1,outgoing,8612
+bd-nab-0210,ActionAid Bangladesh,21,,,,,Association of Voluntary Action for Society (AVAS),24,1,1,outgoing,656
+bd-nab-0210,ActionAid Bangladesh,21,,,,,BACE,24,1,1,outgoing,367390
+bd-nab-0210,ActionAid Bangladesh,21,,,,,BADHON,24,1,1,outgoing,19685
+bd-nab-0210,ActionAid Bangladesh,21,,,,,BITA,24,1,1,outgoing,17386
+bd-nab-0210,ActionAid Bangladesh,21,,,,,BSDO,24,1,1,outgoing,4305
+bd-nab-0210,ActionAid Bangladesh,21,,,,,Chanpara Clinic,24,1,1,outgoing,4269
+bd-nab-0210,ActionAid Bangladesh,21,,,,,DALIT,24,1,1,outgoing,4285
+bd-nab-0210,ActionAid Bangladesh,21,,,,,GHORAGHAT,24,1,1,outgoing,4301
+bd-nab-0210,ActionAid Bangladesh,21,,,,,HEAD,24,1,1,outgoing,20934
+bd-nab-0210,ActionAid Bangladesh,21,,,,,NDBUS,24,1,1,outgoing,4283
+bd-nab-0210,ActionAid Bangladesh,21,,,,,Nari Maitree,24,1,1,outgoing,20767
+bd-nab-0210,ActionAid Bangladesh,21,,,,,Shusilan,24,1,1,outgoing,4305
+bd-nab-0210,ActionAid Bangladesh,21,,,,,USS,24,1,1,outgoing,23358
+bd-nab-0210,ActionAid Bangladesh,21,,,,,VARD,24,1,1,outgoing,4306
+bd-nab-0210,ActionAid Bangladesh,21,,,,,YPSA,24,1,1,outgoing,16201
+bd-nab-0210,ActionAid Bangladesh,21,dk-cvr-18243717,ActionAid Denmark (Mellemfolkeligt Samvirke),21,,,,1,1,incoming,151740
 bd-nab-0210,ActionAid Bangladesh,21,nl-kvk-27264198,ActionAid International,21,,,,1,1,incoming,47035
 dk-cvr-18243717,ActionAid Denmark (Mellemfolkeligt Samvirke),21,,,,bd-nab-0210,ActionAid Bangladesh,21,0,0,outgoing,628700
 dk-cvr-18243717,ActionAid Denmark (Mellemfolkeligt Samvirke),21,,,,ke-ncb-op/218/051/924/84-nag,ActionAid International Kenya,21,0,0,outgoing,616824
@@ -431,7 +431,7 @@ xm-dac-46004,Asian Development Bank,40,,,,,Department of Health,,0,1,outgoing,20
 46004,Asian Development Bank,40,,,,,Department of Health;Department of Treasury;Department of Finance,,0,0,outgoing,150000000
 46004,Asian Development Bank,40,,,,,Department of Social Welfare and Development,,0,0,outgoing,200000000
 46004,Asian Development Bank,40,,,,,Department of Treasury,,0,1,outgoing,250000000
-xm-dac-46004,Asian Development Bank,40,,,,,Electric Networks of Armenia CJSC,,0,1,outgoing,4382455
+xm-dac-46004,Asian Development Bank,40,,,,,Electric Networks of Armenia CJSC,70,0,1,outgoing,4382455
 xm-dac-46004,Asian Development Bank,40,,,,,Energy Absolute Public Company Limited,,0,0,outgoing,49603518
 xm-dac-46004,Asian Development Bank,40,,,,,Far East Horizon Limited,,0,1,outgoing,75000000
 xm-dac-46004,Asian Development Bank,40,,,,,Imexpharm Corporation,,0,1,outgoing,8000000
@@ -466,6 +466,7 @@ xm-dac-46004,Asian Development Bank,40,,,,,Ministry of Labor and Social Protecti
 xm-dac-46004,Asian Development Bank,40,,,,,Olam International Limited;Olam Treasury Private Limited,,0,1,outgoing,93750000
 xm-dac-46004,Asian Development Bank,40,,,,,Pran Dairy Limited,,0,0,outgoing,10000000
 xm-dac-46004,Asian Development Bank,40,,,,,Tavan Bogd Foods LLC;Tavan Bogd LLC;Tavan Bogd Trade Limited Liability Company;Ulaanbaatar Flour LLC,,0,1,outgoing,5000000
+ug-ngb-3329,Auschwitz Institute for the Prevention of Genocide and Mass Atrocities,21,,,,,(Direct expenditure),,1,0,outgoing,195584
 au-5,Australian Aid,10,,,,,Name Withheld,,0,0,outgoing,1304922
 au-5,Australian Aid,10,,,,,Name Withheld,,0,1,outgoing,134067895
 au-5,Australian Aid,10,,,,,Name Withheld,,1,0,outgoing,344650
@@ -934,7 +935,7 @@ dk-cvr-19348407,CISU Civil Society in Development,22,xm-dac-3-1,"Ministry of For
 dk-cvr-19348407,CISU Civil Society in Development,22,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,0,1,incoming,4106371
 dk-cvr-29439915,Caritas Denmark,22,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,1,0,incoming,6855043
 dk-cvr-29439915,Caritas Denmark,22,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,1,1,incoming,765706
-ge-rs-406061513,Center for Participation and Development,22,,(Unspecified org),,,,,0,0,incoming,132415
+ge-rs-406061513,Center for Participation and Development,22,,(Unspecified org),,,,,0,0,incoming,132344
 gb-chc-287287,Centre for Economic Policy Research,22,,,,,(Direct expenditure),,0,0,outgoing,1116924
 gb-chc-287287,Centre for Economic Policy Research,22,gb-1,"UK - Foreign, Commonwealth and Development Office",10,,,,0,0,incoming,5463929
 bd-nab-2004,"Centre for Injury Prevention and Research, Bangladesh (CIPRB)",22,,,,,(Direct expenditure),,0,0,outgoing,138514
@@ -1391,16 +1392,16 @@ gb-coh-02622374,Energy Saving Trust,15,us-ein-33-1112770,CLASP,21,,,,0,0,incomin
 gb-coh-02622374,Energy Saving Trust,15,gb-gov-1,"UK - Foreign, Commonwealth and Development Office",10,,,,0,0,incoming,6696691
 et-csa-1351,Ethiopian Public Health Association,15,,,,,(Direct expenditure),,0,0,outgoing,34630
 et-csa-1351,Ethiopian Public Health Association,15,us-ein-13-2890727,Guttmacher Institute,21,,,,0,0,incoming,34630
-xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,CITY OF BUCHAREST,,0,0,outgoing,123315789
-xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,CITY OF LVIV,,0,0,outgoing,11940000
-xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,KOSOVO SOVEREIGN,,0,0,outgoing,363780
-xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,NATIONAL ELECTRIC POWER COMPANY,,0,0,outgoing,99593267
-xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,OFFICE NATIONAL DE L ELECTRICITE ET DE L EAU POTABLE,,0,0,outgoing,59347700
-xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,OFFICE NATIONAL DES AEROPORTS,,0,0,outgoing,167587193
-xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,PUBLIC POWER CORPORATION SA,,0,0,outgoing,186680000
-xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,SAKAERONAVIGATSIA LTD,,0,0,outgoing,11737000
-xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,SOCIETE NATIONALE DES AUTOROUTES DU MAROC,,0,0,outgoing,82585191
-xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,UKRAINIAN STATE AIR TRAFFIC SERVICES ENTERPRISE,,0,0,outgoing,14710960
+xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,CITY OF BUCHAREST,70,0,0,outgoing,122660239
+xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,CITY OF LVIV,70,0,0,outgoing,11940000
+xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,KOSOVO SOVEREIGN,10,0,0,outgoing,12077780
+xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,NATIONAL ELECTRIC POWER COMPANY,11,0,0,outgoing,102446782
+xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,OFFICE NATIONAL DE L ELECTRICITE ET DE L EAU POTABLE,11,0,0,outgoing,59347700
+xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,OFFICE NATIONAL DES AEROPORTS,11,0,0,outgoing,176953028
+xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,PUBLIC POWER CORPORATION SA,70,0,0,outgoing,186680000
+xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,SAKAERONAVIGATSIA LTD,70,0,0,outgoing,11737000
+xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,SOCIETE NATIONALE DES AUTOROUTES DU MAROC,11,0,0,outgoing,86664201
+xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,UKRAINIAN STATE AIR TRAFFIC SERVICES ENTERPRISE,70,0,0,outgoing,14710960
 xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,,(Unspecified org),21,1,1,outgoing,29470185
 xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,fr-siret-4028868160030,ACTED (FR),21,1,1,outgoing,16720057
 xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,dk-cvr-20074035,ADRA Danmark,22,1,0,outgoing,1292928
@@ -2819,7 +2820,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-10419,xi-gg-10419,,0,0,outgoing,7455
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-10427,xi-gg-10427,,0,0,outgoing,2012
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-10471,xi-gg-10471,,0,0,outgoing,18646
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-10517,xi-gg-10517,,0,1,outgoing,479
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-1052,xi-gg-1052,,0,0,outgoing,34606
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-1052,xi-gg-1052,,0,0,outgoing,35106
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-1071,xi-gg-1071,,0,1,outgoing,23735
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-1072,xi-gg-1072,,0,0,outgoing,1140
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-10734,xi-gg-10734,,0,1,outgoing,20
@@ -2832,14 +2833,14 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-10955,xi-gg-10955,,0,0,outgoing,58925
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-10984,xi-gg-10984,,0,0,outgoing,6157
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-11055,xi-gg-11055,,0,1,outgoing,165
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-11089,xi-gg-11089,,0,1,outgoing,1803
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-11200,xi-gg-11200,,0,0,outgoing,158535
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-11211,xi-gg-11211,,0,0,outgoing,67091
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-11200,xi-gg-11200,,0,0,outgoing,158561
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-11211,xi-gg-11211,,0,0,outgoing,67101
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-11233,xi-gg-11233,,0,1,outgoing,357
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-11272,xi-gg-11272,,0,1,outgoing,12055
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-11303,xi-gg-11303,,0,0,outgoing,113
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-11303,xi-gg-11303,,0,1,outgoing,15797
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-11419,xi-gg-11419,,0,0,outgoing,200
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-11427,xi-gg-11427,,0,0,outgoing,117190
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-11427,xi-gg-11427,,0,0,outgoing,117202
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-1144,xi-gg-1144,,0,0,outgoing,5680
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-11492,xi-gg-11492,,0,0,outgoing,45
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-1150,xi-gg-1150,,0,0,outgoing,36460
@@ -2863,7 +2864,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-12861,xi-gg-12861,,0,1,outgoing,10528
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-12863,xi-gg-12863,,0,0,outgoing,2021
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-13013,xi-gg-13013,,0,1,outgoing,578
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-13027,xi-gg-13027,,0,0,outgoing,2523
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-13063,xi-gg-13063,,0,0,outgoing,392393
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-13063,xi-gg-13063,,0,0,outgoing,392528
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-13124,xi-gg-13124,,0,0,outgoing,43574
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-13138,xi-gg-13138,,0,1,outgoing,760
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-13190,xi-gg-13190,,0,0,outgoing,225
@@ -2907,7 +2908,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-1553,xi-gg-1553,,0,1,outgoing,13540
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-15556,xi-gg-15556,,0,0,outgoing,161
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-15646,xi-gg-15646,,0,0,outgoing,257
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-15662,xi-gg-15662,,0,1,outgoing,490
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-15725,xi-gg-15725,,0,0,outgoing,177761
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-15725,xi-gg-15725,,0,0,outgoing,177782
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-15754,xi-gg-15754,,0,0,outgoing,10234
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-15789,xi-gg-15789,,0,0,outgoing,3662
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-1601,xi-gg-1601,,0,1,outgoing,15
@@ -2936,20 +2937,20 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-17551,xi-gg-17551,,0,1,outgoing,15736
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-17670,xi-gg-17670,,0,1,outgoing,2214
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-17719,xi-gg-17719,,0,0,outgoing,525
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-18045,xi-gg-18045,,0,1,outgoing,85693
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-18299,xi-gg-18299,,0,0,outgoing,17967
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-18299,xi-gg-18299,,0,0,outgoing,18030
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-18301,xi-gg-18301,,0,0,outgoing,547
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-18354,xi-gg-18354,,0,0,outgoing,2969
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-18405,xi-gg-18405,,0,0,outgoing,138070
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-18405,xi-gg-18405,,0,0,outgoing,138084
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-18545,xi-gg-18545,,0,0,outgoing,323
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-18550,xi-gg-18550,,0,1,outgoing,9671
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-18595,xi-gg-18595,,0,0,outgoing,32270
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-18612,xi-gg-18612,,0,0,outgoing,3203
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-18632,xi-gg-18632,,0,0,outgoing,1194
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-18707,xi-gg-18707,,0,0,outgoing,74120
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-189,xi-gg-189,,0,0,outgoing,13760543
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-189,xi-gg-189,,0,0,outgoing,13760643
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-189,xi-gg-189,,0,1,outgoing,1800391
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-21142,xi-gg-21142,,0,0,outgoing,6437
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-21474,xi-gg-21474,,0,0,outgoing,12015
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-21474,xi-gg-21474,,0,0,outgoing,13015
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-22187,xi-gg-22187,,0,0,outgoing,2306
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-22349,xi-gg-22349,,0,1,outgoing,1047
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-22473,xi-gg-22473,,0,0,outgoing,921
@@ -2992,8 +2993,8 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-26531,xi-gg-26531,,0,0,outgoing,44893
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-26554,xi-gg-26554,,0,0,outgoing,57
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-26554,xi-gg-26554,,0,1,outgoing,195
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-2661,xi-gg-2661,,0,0,outgoing,40597
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-26617,xi-gg-26617,,0,1,outgoing,593068
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-26710,xi-gg-26710,,0,1,outgoing,14597
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-26617,xi-gg-26617,,0,1,outgoing,593243
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-26710,xi-gg-26710,,0,1,outgoing,14634
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-2690,xi-gg-2690,,0,1,outgoing,3797
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-2691,xi-gg-2691,,0,0,outgoing,140
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-27023,xi-gg-27023,,0,0,outgoing,1011
@@ -3037,7 +3038,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-29213,xi-gg-29213,,0,0,outgoing,13603
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-29233,xi-gg-29233,,0,0,outgoing,4615
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-29258,xi-gg-29258,,0,1,outgoing,140
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-29289,xi-gg-29289,,0,1,outgoing,3817
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-29359,xi-gg-29359,,0,0,outgoing,1837
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-29359,xi-gg-29359,,0,0,outgoing,1856
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-29602,xi-gg-29602,,0,1,outgoing,40
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-29738,xi-gg-29738,,0,1,outgoing,20022
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-29805,xi-gg-29805,,0,0,outgoing,9249
@@ -3075,7 +3076,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-32017,xi-gg-32017,,0,1,outgoing,2835
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-32089,xi-gg-32089,,0,1,outgoing,3499
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-32281,xi-gg-32281,,0,0,outgoing,120
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-32292,xi-gg-32292,,0,1,outgoing,2020
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-3247,xi-gg-3247,,0,1,outgoing,39435
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-3247,xi-gg-3247,,0,1,outgoing,39445
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-32599,xi-gg-32599,,0,0,outgoing,5245
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-32614,xi-gg-32614,,0,1,outgoing,3153
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-32637,xi-gg-32637,,0,0,outgoing,329
@@ -3095,14 +3096,14 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-33066,xi-gg-33066,,0,1,outgoing,1435
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-33093,xi-gg-33093,,0,0,outgoing,1567
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-33107,xi-gg-33107,,0,0,outgoing,5097
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-33107,xi-gg-33107,,0,1,outgoing,10538
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-33394,xi-gg-33394,,0,1,outgoing,51923
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-33394,xi-gg-33394,,0,1,outgoing,51948
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-335,xi-gg-335,,0,1,outgoing,145
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-33702,xi-gg-33702,,0,0,outgoing,25
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-33930,xi-gg-33930,,0,1,outgoing,1023
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-33965,xi-gg-33965,,0,0,outgoing,4710
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-34069,xi-gg-34069,,0,0,outgoing,2104
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-3409,xi-gg-3409,,0,1,outgoing,653
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-34119,xi-gg-34119,,0,1,outgoing,5842
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-34119,xi-gg-34119,,0,1,outgoing,5942
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-34234,xi-gg-34234,,0,0,outgoing,240
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-34299,xi-gg-34299,,0,0,outgoing,155689
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-34384,xi-gg-34384,,0,0,outgoing,5321
@@ -3120,7 +3121,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-35,xi-gg-35,,0,1,outgoing,8004
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-35057,xi-gg-35057,,0,0,outgoing,22843
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-35112,xi-gg-35112,,0,0,outgoing,571
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-35180,xi-gg-35180,,0,0,outgoing,4514
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-35226,xi-gg-35226,,0,1,outgoing,43018
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-35226,xi-gg-35226,,0,1,outgoing,43155
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-35238,xi-gg-35238,,0,0,outgoing,656
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-35273,xi-gg-35273,,0,1,outgoing,4104
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-35289,xi-gg-35289,,0,0,outgoing,25
@@ -3134,8 +3135,8 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-35708,xi-gg-35708,,0,0,outgoing,8734
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-35883,xi-gg-35883,,0,0,outgoing,40
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-35904,xi-gg-35904,,0,0,outgoing,191
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-35933,xi-gg-35933,,0,1,outgoing,91072
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-36025,xi-gg-36025,,0,1,outgoing,6872
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-36072,xi-gg-36072,,0,1,outgoing,172441
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-36025,xi-gg-36025,,0,1,outgoing,6880
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-36072,xi-gg-36072,,0,1,outgoing,172455
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-36149,xi-gg-36149,,0,0,outgoing,370
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-36149,xi-gg-36149,,0,1,outgoing,2070
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-36179,xi-gg-36179,,0,0,outgoing,63448
@@ -3156,7 +3157,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-36960,xi-gg-36960,,0,1,outgoing,1602
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-36968,xi-gg-36968,,0,0,outgoing,2317
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-37026,xi-gg-37026,,0,0,outgoing,27667
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-37080,xi-gg-37080,,0,0,outgoing,135538
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-37084,xi-gg-37084,,0,0,outgoing,2349
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-37084,xi-gg-37084,,0,0,outgoing,2359
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-37093,xi-gg-37093,,0,0,outgoing,34275
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-37186,xi-gg-37186,,0,0,outgoing,42895
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-37186,xi-gg-37186,,0,1,outgoing,547
@@ -3170,14 +3171,14 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-37273,xi-gg-37273,,0,0,outgoing,6000
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-37319,xi-gg-37319,,0,1,outgoing,11056
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-3732,xi-gg-3732,,0,0,outgoing,7625
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-376,xi-gg-376,,0,0,outgoing,42031
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-376,xi-gg-376,,0,1,outgoing,166237
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-376,xi-gg-376,,0,1,outgoing,166274
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-38001,xi-gg-38001,,0,0,outgoing,21
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-3825,xi-gg-3825,,0,0,outgoing,13728
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-38267,xi-gg-38267,,0,1,outgoing,9977
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-38295,xi-gg-38295,,0,1,outgoing,1681
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-38345,xi-gg-38345,,0,1,outgoing,970
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-38502,xi-gg-38502,,0,0,outgoing,7259
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-38532,xi-gg-38532,,0,0,outgoing,106547
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-38532,xi-gg-38532,,0,0,outgoing,106597
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-38532,xi-gg-38532,,0,1,outgoing,5263
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-38675,xi-gg-38675,,0,1,outgoing,5174
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-38722,xi-gg-38722,,0,0,outgoing,1137
@@ -3220,7 +3221,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-41121,xi-gg-41121,,0,0,outgoing,36
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-41234,xi-gg-41234,,0,1,outgoing,16
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-41799,xi-gg-41799,,0,0,outgoing,300
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-41935,xi-gg-41935,,0,0,outgoing,400
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-41987,xi-gg-41987,,0,1,outgoing,59807
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-41987,xi-gg-41987,,0,1,outgoing,59857
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-42062,xi-gg-42062,,0,0,outgoing,19572
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-42189,xi-gg-42189,,0,0,outgoing,1753
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-42203,xi-gg-42203,,0,1,outgoing,2258
@@ -3247,7 +3248,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-43821,xi-gg-43821,,0,0,outgoing,338
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-43821,xi-gg-43821,,0,1,outgoing,252
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-43881,xi-gg-43881,,0,0,outgoing,22038
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-43908,xi-gg-43908,,0,1,outgoing,1362
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-43937,xi-gg-43937,,0,1,outgoing,44554
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-43937,xi-gg-43937,,0,1,outgoing,44553
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-43948,xi-gg-43948,,0,1,outgoing,22661
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-43994,xi-gg-43994,,0,1,outgoing,425
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-44012,xi-gg-44012,,0,0,outgoing,1180
@@ -3353,7 +3354,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-52781,xi-gg-52781,,0,0,outgoing,800
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-52915,xi-gg-52915,,0,0,outgoing,212
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-52987,xi-gg-52987,,0,0,outgoing,2590
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-53003,xi-gg-53003,,0,1,outgoing,12622
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-53021,xi-gg-53021,,0,0,outgoing,105181
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-53021,xi-gg-53021,,0,0,outgoing,105248
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-53161,xi-gg-53161,,0,1,outgoing,4017
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-53190,xi-gg-53190,,0,0,outgoing,1355
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-53216,xi-gg-53216,,0,1,outgoing,4750
@@ -3376,7 +3377,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-54432,xi-gg-54432,,0,1,outgoing,7066
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-54530,xi-gg-54530,,0,0,outgoing,100
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-54632,xi-gg-54632,,0,0,outgoing,33803
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-54679,xi-gg-54679,,0,0,outgoing,853
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-54895,xi-gg-54895,,0,0,outgoing,7612
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-54895,xi-gg-54895,,0,0,outgoing,7747
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-55299,xi-gg-55299,,0,1,outgoing,5640
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-55302,xi-gg-55302,,0,0,outgoing,10
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-55703,xi-gg-55703,,0,0,outgoing,45
@@ -3533,7 +3534,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-6576,xi-gg-6576,,0,1,outgoing,1336
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-65843,xi-gg-65843,,0,0,outgoing,3684
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-65970,xi-gg-65970,,0,1,outgoing,8039
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-66013,xi-gg-66013,,0,0,outgoing,28943
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-6602,xi-gg-6602,,0,0,outgoing,19820
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-6602,xi-gg-6602,,0,0,outgoing,19870
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-66157,xi-gg-66157,,0,1,outgoing,325
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-6631,xi-gg-6631,,0,0,outgoing,48357
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-66350,xi-gg-66350,,0,0,outgoing,2977
@@ -3550,7 +3551,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-67089,xi-gg-67089,,0,0,outgoing,5828
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-67132,xi-gg-67132,,0,0,outgoing,185
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-67160,xi-gg-67160,,0,0,outgoing,5706
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-67198,xi-gg-67198,,0,0,outgoing,8484
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-67297,xi-gg-67297,,0,0,outgoing,9285
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-67297,xi-gg-67297,,0,0,outgoing,9330
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-67381,xi-gg-67381,,0,1,outgoing,27003
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-67449,xi-gg-67449,,0,0,outgoing,6765
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-67454,xi-gg-67454,,0,0,outgoing,44
@@ -3605,7 +3606,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-71558,xi-gg-71558,,0,1,outgoing,9559
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-71663,xi-gg-71663,,0,0,outgoing,2487
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-71668,xi-gg-71668,,0,0,outgoing,22033
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-717,xi-gg-717,,0,0,outgoing,215768
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-717,xi-gg-717,,0,1,outgoing,19381
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-717,xi-gg-717,,0,1,outgoing,19391
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-71716,xi-gg-71716,,0,0,outgoing,446
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-71741,xi-gg-71741,,0,0,outgoing,570
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-71785,xi-gg-71785,,0,0,outgoing,55
@@ -3614,13 +3615,13 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-71831,xi-gg-71831,,0,0,outgoing,135
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-71906,xi-gg-71906,,0,1,outgoing,4184
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-71944,xi-gg-71944,,0,0,outgoing,4
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-72061,xi-gg-72061,,0,0,outgoing,5617
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-72117,xi-gg-72117,,0,1,outgoing,868
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-72117,xi-gg-72117,,0,1,outgoing,898
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-72214,xi-gg-72214,,0,1,outgoing,20
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-72264,xi-gg-72264,,0,0,outgoing,57
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-72274,xi-gg-72274,,0,0,outgoing,111
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-72390,xi-gg-72390,,0,0,outgoing,10497
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-72452,xi-gg-72452,,0,0,outgoing,2023
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-72520,xi-gg-72520,,0,1,outgoing,222853
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-72520,xi-gg-72520,,0,1,outgoing,223463
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-72574,xi-gg-72574,,0,0,outgoing,697
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-7259,xi-gg-7259,,0,1,outgoing,1999
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-72610,xi-gg-72610,,0,1,outgoing,2517
@@ -3687,7 +3688,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-76120,xi-gg-76120,,0,0,outgoing,11405
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-76171,xi-gg-76171,,0,0,outgoing,170
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-76267,xi-gg-76267,,0,1,outgoing,969
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-76393,xi-gg-76393,,0,0,outgoing,4955
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-764,xi-gg-764,,0,0,outgoing,699917
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-764,xi-gg-764,,0,0,outgoing,699962
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-764,xi-gg-764,,0,1,outgoing,49085
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-76518,xi-gg-76518,,0,0,outgoing,7629
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-76614,xi-gg-76614,,0,0,outgoing,10522
@@ -3760,7 +3761,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-78883,xi-gg-78883,,0,0,outgoing,6
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-78884,xi-gg-78884,,0,0,outgoing,1085
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-78884,xi-gg-78884,,0,1,outgoing,11030
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-78900,xi-gg-78900,,0,0,outgoing,1366
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-7891,xi-gg-7891,,0,0,outgoing,3192
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-7891,xi-gg-7891,,0,0,outgoing,3217
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-78939,xi-gg-78939,,0,0,outgoing,25059
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-79019,xi-gg-79019,,0,0,outgoing,14667
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-79025,xi-gg-79025,,0,0,outgoing,4533
@@ -3794,7 +3795,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-80947,xi-gg-80947,,0,0,outgoing,14
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-81074,xi-gg-81074,,0,0,outgoing,12788
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-81089,xi-gg-81089,,0,1,outgoing,150
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-81248,xi-gg-81248,,0,0,outgoing,26026
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-81248,xi-gg-81248,,0,1,outgoing,37516
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-81248,xi-gg-81248,,0,1,outgoing,37539
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-81330,xi-gg-81330,,0,1,outgoing,10
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-81399,xi-gg-81399,,0,0,outgoing,122124
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-81417,xi-gg-81417,,0,1,outgoing,10150
@@ -3862,7 +3863,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-85668,xi-gg-85668,,0,0,outgoing,15000
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-85720,xi-gg-85720,,0,0,outgoing,1610
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-85754,xi-gg-85754,,0,0,outgoing,6292
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-85927,xi-gg-85927,,0,0,outgoing,10895
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-85945,xi-gg-85945,,0,0,outgoing,12474
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-85945,xi-gg-85945,,0,0,outgoing,12488
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-86184,xi-gg-86184,,0,0,outgoing,100
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-86236,xi-gg-86236,,0,0,outgoing,1123
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-86244,xi-gg-86244,,0,0,outgoing,1972
@@ -3882,7 +3883,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-88028,xi-gg-88028,,0,0,outgoing,778
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-88131,xi-gg-88131,,0,1,outgoing,8279
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-88137,xi-gg-88137,,0,0,outgoing,7671
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-88198,xi-gg-88198,,0,0,outgoing,8695
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-88267,xi-gg-88267,,0,0,outgoing,110
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-88267,xi-gg-88267,,0,0,outgoing,113
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-88533,xi-gg-88533,,0,0,outgoing,10437
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-88533,xi-gg-88533,,0,1,outgoing,95
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-88552,xi-gg-88552,,0,0,outgoing,4329
@@ -3947,7 +3948,7 @@ us-ein-300108263,GlobalGiving,21,,,,xi-gg-97681,xi-gg-97681,,0,0,outgoing,419
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-9866,xi-gg-9866,,0,1,outgoing,770
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-9916,xi-gg-9916,,0,0,outgoing,3959
 us-ein-300108263,GlobalGiving,21,,,,xi-gg-9958,xi-gg-9958,,0,0,outgoing,475
-us-ein-300108263,GlobalGiving,21,,,,xi-gg-9958,xi-gg-9958,,0,1,outgoing,5573
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-9958,xi-gg-9958,,0,1,outgoing,5583
 us-ein-52-2042014,GoodWeave International,21,,,,,AWAJ Foundation,22,1,0,outgoing,139557
 us-ein-52-2042014,GoodWeave International,21,gb-gov-1,"UK - Foreign, Commonwealth and Development Office",10,,,,1,0,incoming,347027
 at-uid-u74408937,Ground Truth Solutions,21,dk-cvr-20699310,Danish Refugee Council,21,,,,1,0,incoming,37389
@@ -4167,18 +4168,19 @@ xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,Ministry 
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,Palestine,10,1,1,outgoing,3010000
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,Sudan Federal Ministry of Health,10,0,1,outgoing,1066667
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,The Jordan Hashemite Charity Organization for Relief & Development (JHCO),10,1,0,outgoing,1000000
+xm-ocha-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,The National Disaster Management Authority,10,1,1,outgoing,1500000
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,xm-dac-41122,UNICEF,40,0,1,outgoing,619980
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,xm-dac-41122,UNICEF,40,1,1,outgoing,15200000
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,xm-dac-41121,United Nations High Commissioner for Refugees (UNHCR),40,1,1,outgoing,3000000
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,xm-dac-928,World Health Organization,40,1,1,outgoing,17000000
-ke-kra-p051098561l,Kituo Cha Sheria-Legal Advice Centre,22,,,,,(Direct expenditure),,0,0,outgoing,162760
-ke-kra-p051098561l,Kituo Cha Sheria-Legal Advice Centre,22,,(Unspecified org),,,,,0,0,incoming,167686
-jo-ccd-200104681,Leaders of Tomorrow,70,,,,,Contractual costs are paid to individuals that we contract to implement the activities,90,0,0,outgoing,93022
-jo-ccd-200104681,Leaders of Tomorrow,70,,,,,Covered cost of Catering and materials,90,0,0,outgoing,1914
-jo-ccd-200104681,Leaders of Tomorrow,70,,,,,This cost used to do a marketing campaign through Facebook,90,0,0,outgoing,2958
-jo-ccd-200104681,Leaders of Tomorrow,70,,,,,"This cost was paid to Careem, Uber, Gas companies",90,0,0,outgoing,1873
-jo-ccd-200104681,Leaders of Tomorrow,70,,,,,This cost was paid to the owner of the building as a part of the office rent,90,0,0,outgoing,3515
-jo-ccd-200104681,Leaders of Tomorrow,70,,,,,This is the Personnel costs that we paid to our staff member to implement the activities,90,0,0,outgoing,22596
+ke-kra-p051098561l,Kituo Cha Sheria-Legal Advice Centre,22,,,,,(Direct expenditure),,0,0,outgoing,162627
+ke-kra-p051098561l,Kituo Cha Sheria-Legal Advice Centre,22,,(Unspecified org),,,,,0,0,incoming,167549
+jo-ccd-200104681,Leaders of Tomorrow,70,,,,,Contractual costs are paid to individuals that we contract to implement the activities,90,0,0,outgoing,92972
+jo-ccd-200104681,Leaders of Tomorrow,70,,,,,Covered cost of Catering and materials,90,0,0,outgoing,1913
+jo-ccd-200104681,Leaders of Tomorrow,70,,,,,This cost used to do a marketing campaign through Facebook,90,0,0,outgoing,2957
+jo-ccd-200104681,Leaders of Tomorrow,70,,,,,"This cost was paid to Careem, Uber, Gas companies",90,0,0,outgoing,1872
+jo-ccd-200104681,Leaders of Tomorrow,70,,,,,This cost was paid to the owner of the building as a part of the office rent,90,0,0,outgoing,3513
+jo-ccd-200104681,Leaders of Tomorrow,70,,,,,This is the Personnel costs that we paid to our staff member to implement the activities,90,0,0,outgoing,22584
 fr-6,MAEDI,10,,,,,(Unspecified org),,0,0,outgoing,10668
 fr-6,MAEDI,10,,,,,"- L’université Gamal Abdel Nasser de Conakry ; - L’Institut supérieur des sciences de l’éducation de Guinée ; - L’Institut de Formation à distance - L’institut Pasteur de guinée, - Le Centre de recherche et de formation en infectiologie de Guinée",,0,0,outgoing,428384
 fr-6,MAEDI,10,,,,,APC-Colombia (Agencia Presidencial de Cooperacion Internacional de Colombia),,0,1,outgoing,36186
@@ -4544,12 +4546,12 @@ gb-coh-03122495,Oxford Policy Management Ltd,70,,,,,University of Cape Town,80,0
 gb-coh-03122495,Oxford Policy Management Ltd,70,,,,,University of Cape Town (UCT),,0,0,outgoing,376970
 gb-coh-03122495,Oxford Policy Management Ltd,70,,,,,University of Massachusetts at Amherst,,0,0,outgoing,87987
 gb-coh-03122495,Oxford Policy Management Ltd,70,,,,,Wageningen University,80,0,1,outgoing,91269
-ng-cac-30547,PARADIGM INITIATIVE,21,,,,,(Direct expenditure),,1,0,outgoing,-190366
-ng-cac-30547,PARADIGM INITIATIVE,21,,,,,(Direct expenditure),,1,1,outgoing,-46917
-ng-cac-30547,PARADIGM INITIATIVE,21,xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,1,0,incoming,397577
+ng-cac-30547,PARADIGM INITIATIVE,21,,,,,(Direct expenditure),,1,0,outgoing,-188572
+ng-cac-30547,PARADIGM INITIATIVE,21,,,,,(Direct expenditure),,1,1,outgoing,-46475
+ng-cac-30547,PARADIGM INITIATIVE,21,xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,1,0,incoming,393829
 gb-coh-04154075,PENAL REFORM INTERNATIONAL,21,,,,,(Direct expenditure),,0,0,outgoing,1353624
-gb-coh-04154075,PENAL REFORM INTERNATIONAL,21,,,,,(Direct expenditure),,0,1,outgoing,562823
-gb-coh-04154075,PENAL REFORM INTERNATIONAL,21,xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,0,1,incoming,536115
+gb-coh-04154075,PENAL REFORM INTERNATIONAL,21,,,,,(Direct expenditure),,0,1,outgoing,562519
+gb-coh-04154075,PENAL REFORM INTERNATIONAL,21,xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,0,1,incoming,535826
 nl-kvk-41198890,Plan International Netherlands,21,,,,,(Direct expenditure),,0,0,outgoing,245405
 nl-kvk-41198890,Plan International Netherlands,21,,,,,(Direct expenditure),,0,1,outgoing,758667
 nl-kvk-41198890,Plan International Netherlands,21,,,,,(Direct expenditure),,1,0,outgoing,105353
@@ -4750,14 +4752,17 @@ nl-kvk-41150939,Solidaridad Europa,21,,,,,(Direct expenditure),,0,0,outgoing,223
 hk-cr-1494242,Solidaridad South & South-East Asia,21,,,,,(Direct expenditure),,0,0,outgoing,687849
 nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,nl-kvk-41158230,CARE Nederland,21,1,0,outgoing,2738544
 nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,nl-kvk-41160054,Cordaid,21,1,0,outgoing,8682251
-nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,nl-kvk-41236410,Dorcas Aid International,21,1,0,outgoing,3526800
-nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,nl-kvk-41198890,Plan International Netherlands,21,1,0,outgoing,2377200
+nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,nl-kvk-41236410,Dorcas Aid International,21,1,0,outgoing,4435149
+nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,nl-kvk-27108436,Oxfam Novib,21,1,0,outgoing,948160
+nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,nl-kvk-41198890,Plan International Netherlands,21,1,0,outgoing,6019500
 nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,nl-kvk-41197577,SOS Children's Villages The Netherlands,60,1,0,outgoing,4326000
 nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,nl-kvk-41197577,SOS Children's Villages The Netherlands,60,1,1,outgoing,3485269
-nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,nl-kvk-41201463,Save the Children Netherlands,21,1,0,outgoing,645600
+nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,nl-kvk-41201463,Save the Children Netherlands,21,1,0,outgoing,4613719
 nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,nl-kvk-41201463,Save the Children Netherlands,21,1,1,outgoing,3485400
-nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,nl-kvk-41215393,War Child Holland,21,1,0,outgoing,244817
-nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,1,0,incoming,39363141
+nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,nl-kvk-41022454,Stichting Red een Kind,21,1,0,outgoing,778340
+nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,nl-kvk-41177385,Tearfund Nederland,21,1,0,outgoing,724583
+nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,nl-kvk-41215393,War Child Holland,21,1,0,outgoing,2632417
+nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,1,0,incoming,42777441
 nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,1,1,incoming,7021800
 nl-kvk-41022454,Stichting Red een Kind,21,,,,ke-ncb-op2180519381152,ACROSS,22,0,0,outgoing,462423
 nl-kvk-41022454,Stichting Red een Kind,21,nl-kvk-41201463,Save the Children Netherlands,21,,,,0,0,incoming,593772
@@ -4941,7 +4946,7 @@ gb-chc-1050327,The Leprosy Mission England and Wales,21,,,,np-swc-17775,The Lepr
 gb-chc-1050327,The Leprosy Mission England and Wales,21,gb-coh-04105827,MannionDanniels,70,,,,0,0,incoming,104530
 gb-chc-1050327,The Leprosy Mission England and Wales,21,gb-coh04105827,gb-coh04105827,70,,,,0,0,incoming,679646
 gb-chc-1050327,The Leprosy Mission England and Wales,21,gb-coh04105827,gb-coh04105827,70,,,,0,1,incoming,18005
-np-swc-17775,The Leprosy Mission Nepal,22,gb-chc-1050327,The Leprosy Mission England and Wales,21,,,,1,0,incoming,252605
+np-swc-17775,The Leprosy Mission Nepal,22,gb-chc-1050327,The Leprosy Mission England and Wales,21,,,,1,0,incoming,250773
 nl-kvk-40409352,The Netherlands Red Cross,21,,,,,(Direct expenditure),,0,0,outgoing,225309
 nl-kvk-40409352,The Netherlands Red Cross,21,,,,,(Direct expenditure),,0,1,outgoing,28356
 nl-kvk-40409352,The Netherlands Red Cross,21,,,,,(Direct expenditure),,1,0,outgoing,23118693
