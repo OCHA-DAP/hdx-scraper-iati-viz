@@ -1,4 +1,3 @@
-import gc
 import json
 import logging
 from io import StringIO
@@ -43,6 +42,7 @@ def retrieve_dportal(configuration, retriever, dportal_params, whattorun):
         if "<iati-activity" in text:
             n += 1
             yield text
+            del text  # Maybe this helps garbage collector?
         else:
             # If the result doesn't contain any IATI activities, we're done
             dont_exit = False
@@ -120,9 +120,8 @@ def start(
         xmliterator = diterator.XMLIterator(StringIO(text))
         for dactivity in xmliterator:
             dactivities.append(dactivity)
-        del xmliterator
-        del text
-        gc.collect()
+        del xmliterator  # Maybe this helps garbage collector?
+        del text  # Maybe this helps garbage collector?
     #    Lookups.build_reporting_org_blocklist(dactivities)
     Lookups.add_reporting_orgs(dactivities)
     Lookups.add_participating_orgs(dactivities)

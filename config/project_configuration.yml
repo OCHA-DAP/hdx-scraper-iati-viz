@@ -2,7 +2,7 @@ fallback_dir: "fallback_data"
 
 dportal:
   filename: "dportal_{}.xml"
-  limit: 100
+  limit: 50
   url: "http://d-portal.org/dquery?form=xml&sql=%s"
   covid_query: "
 SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
