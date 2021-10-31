@@ -1,3 +1,4 @@
+import gc
 import json
 import logging
 from io import StringIO
@@ -116,8 +117,12 @@ def start(
     # Build org name lookup
     dactivities = list()
     for text in generator:
-        for dactivity in diterator.XMLIterator(StringIO(text)):
+        xmliterator = diterator.XMLIterator(StringIO(text))
+        for dactivity in xmliterator:
             dactivities.append(dactivity)
+        del xmliterator
+        del text
+        gc.collect()
     #    Lookups.build_reporting_org_blocklist(dactivities)
     Lookups.add_reporting_orgs(dactivities)
     Lookups.add_participating_orgs(dactivities)
