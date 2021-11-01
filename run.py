@@ -10,30 +10,27 @@ from hdx.hdx_configuration import Configuration
 from hdx.utilities.downloader import Download
 from hdx.utilities.easy_logging import setup_logging
 from hdx.utilities.retriever import Retrieve
-
+from iati.download import download_all
 from iati.main import start
 
 setup_logging()
 logger = logging.getLogger()
 
 
-VERSION = 3.0
+VERSION = 4.0
 
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Covid IATI Explorer")
+    parser.add_argument(
+        "-ac", "--action", default=None, help="action (download or run)"
+    )
     parser.add_argument("-ua", "--user_agent", default=None, help="user agent")
     parser.add_argument("-pp", "--preprefix", default=None, help="preprefix")
     parser.add_argument("-hs", "--hdx_site", default=None, help="HDX site to use")
     parser.add_argument("-od", "--output_dir", default="output", help="Output folder")
     parser.add_argument(
         "-sd", "--saved_dir", default="saved_data", help="Saved data folder"
-    )
-    parser.add_argument(
-        "-sv", "--save", default=False, action="store_true", help="Save downloaded data"
-    )
-    parser.add_argument(
-        "-usv", "--use_saved", default=False, action="store_true", help="Use saved data"
     )
     parser.add_argument(
         "-dp",
@@ -52,10 +49,9 @@ def parse_args():
 
 
 def main(
+    action,
     output_dir,
     saved_dir,
-    save,
-    use_saved,
     dportal_params,
     whattorun,
     filterdate,
@@ -63,25 +59,19 @@ def main(
 ):
     logger.info(f"##### hdx-scraper-iati-viz version {VERSION:.1f} ####")
     configuration = Configuration.read()
-    output_dir = f"{output_dir}_{whattorun}"
-    rmtree(output_dir, ignore_errors=True)
-    mkdir(output_dir)
-    with Download() as downloader:
-        retriever = Retrieve(
-            downloader,
-            configuration["fallback_dir"],
-            f"{saved_dir}_{whattorun}",
-            output_dir,
-            save,
-            use_saved,
-        )
+    data_dir = f"{saved_dir}_{whattorun}"
+    if action == "download":
+        download_all(configuration, data_dir, dportal_params, whattorun)
+    else:
+        output_dir = f"{output_dir}_{whattorun}"
+        rmtree(output_dir, ignore_errors=True)
+        mkdir(output_dir)
         today = datetime.utcnow().isoformat()
         start(
             configuration,
             today,
-            retriever,
             output_dir,
-            dportal_params,
+            data_dir,
             whattorun,
             filterdate,
         )
@@ -107,10 +97,9 @@ if __name__ == "__main__":
         preprefix=preprefix,
         hdx_site=hdx_site,
         project_config_yaml=join("config", "project_configuration.yml"),
+        action=args.action,
         output_dir=args.output_dir,
         saved_dir=args.saved_dir,
-        save=args.save,
-        use_saved=args.use_saved,
         dportal_params=args.dportal_params,
         whattorun=args.what,
         filterdate=args.date_filter,

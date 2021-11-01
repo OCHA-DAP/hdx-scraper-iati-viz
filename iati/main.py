@@ -1,51 +1,22 @@
+import glob
 import json
 import logging
-from io import StringIO
 from os.path import join
-from urllib.parse import quote
 
 import diterator
 import unicodecsv
 from hdx.location.currency import Currency
+from hdx.utilities.downloader import Download
+from hdx.utilities.retriever import Retrieve
+from natsort import natsorted
 
 from iati import checks
 from iati.activity import Activity
 from iati.calculatesplits import CalculateSplits
+from iati.download import is_xml
 from iati.lookups import Lookups
 
 logger = logging.getLogger(__name__)
-
-
-def retrieve_dportal(configuration, retriever, dportal_params, whattorun):
-    """
-    Downloads activity data from D-Portal. Filters them and returns a
-    list of activities.
-    """
-    dportal_configuration = configuration["dportal"]
-    base_filename = dportal_configuration["filename"]
-    dportal_limit = dportal_configuration["limit"]
-    n = 0
-    dont_exit = True
-    while dont_exit:
-        if dportal_params:
-            params = dportal_params
-            dont_exit = False
-        else:
-            offset = n * dportal_limit
-            params = f"LIMIT {dportal_limit} OFFSET {offset}"
-            logger.info(f"OFFSET {offset}")
-        url = dportal_configuration["url"] % quote(
-            dportal_configuration[f"{whattorun}_query"].format(params)
-        )
-        filename = base_filename.format(n)
-        text = retriever.retrieve_text(url, filename, "D-Portal activities", False)
-        if "<iati-activity" in text:
-            n += 1
-            yield text
-            del text  # Maybe this helps garbage collector?
-        else:
-            # If the result doesn't contain any IATI activities, we're done
-            dont_exit = False
 
 
 def write(today, output_dir, configuration, configuration_key, rows, skipped=None):
@@ -96,8 +67,16 @@ def write(today, output_dir, configuration, configuration_key, rows, skipped=Non
 
 
 def start(
-    configuration, today, retriever, output_dir, dportal_params, whattorun, filterdate
+    configuration, today, output_dir, data_dir, whattorun, filterdate, downloader=None
 ):
+    retriever = Retrieve(
+        downloader or Download(),
+        configuration["fallback_dir"],
+        data_dir,
+        output_dir,
+        False,
+        True,
+    )
     if filterdate:
         text = f"removing transactions before {filterdate}"
     else:
@@ -105,7 +84,6 @@ def start(
     logger.info(f"Running {whattorun} {text}")
     Lookups.checks = checks[whattorun]
     Lookups.filter_transaction_date = filterdate
-    generator = retrieve_dportal(configuration, retriever, dportal_params, whattorun)
     Lookups.setup(configuration["lookups"])
     Currency.setup(
         retriever=retriever,
@@ -116,12 +94,13 @@ def start(
 
     # Build org name lookup
     dactivities = list()
-    for text in generator:
-        xmliterator = diterator.XMLIterator(StringIO(text))
-        for dactivity in xmliterator:
-            dactivities.append(dactivity)
-        del xmliterator  # Maybe this helps garbage collector?
-        del text  # Maybe this helps garbage collector?
+    for file in natsorted(glob.glob(join(data_dir, "dportal_*.xml"))):
+        if is_xml(file):
+            logger.info(f"Reading {file}")
+            xmliterator = diterator.XMLIterator(file)
+            for dactivity in xmliterator:
+                dactivities.append(dactivity)
+            del xmliterator  # Maybe this helps garbage collector?
     #    Lookups.build_reporting_org_blocklist(dactivities)
     Lookups.add_reporting_orgs(dactivities)
     Lookups.add_participating_orgs(dactivities)

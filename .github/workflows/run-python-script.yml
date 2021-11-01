@@ -16,17 +16,17 @@ jobs:
     - name: Set up Python 3.x
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.x
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Run script
-      env:
-        GSHEET_AUTH: ${{ secrets.GSHEET_AUTH }}
-        UPDATESHEETS: ${{ secrets.UPDATESHEETS }}
+    - name: Download data
       run: |
-        python run.py
+        python run.py --action=download
+    - name: Run script
+      run: |
+        python run.py --action=run
         cp errors.log output_covid
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.1.4
