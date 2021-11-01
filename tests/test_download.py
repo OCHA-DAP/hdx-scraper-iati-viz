@@ -19,10 +19,10 @@ class TestDownload:
                     dportal_params="LIMIT 10 OFFSET 10",
                     downloader=downloader,
                 )
-                assert listdir(tempdir) == [
-                    "rates.csv",
+                assert sorted(listdir(tempdir)) == [
                     "currentrates.json",
                     "dportal_0.xml",
+                    "rates.csv",
                 ]
                 path = join(tempdir, "dportal_0.xml")
                 assert is_xml(path) is True
@@ -34,9 +34,9 @@ class TestDownload:
                     dportal_params="LIMIT 1 OFFSET 100000",
                     downloader=downloader,
                 )
-                assert listdir(tempdir) == [
-                    "rates.csv",
+                assert sorted(listdir(tempdir)) == [
                     "currentrates.json",
                     "dportal_0.xml",
+                    "rates.csv",
                 ]
                 assert is_xml(path) is False
