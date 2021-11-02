@@ -3,7 +3,7 @@ from os.path import join
 
 from hdx.utilities.downloader import Download
 from hdx.utilities.path import temp_dir
-from iati.download import download_all, is_xml
+from iati.data import download_all, is_xml
 
 
 class TestDownload:

@@ -10,7 +10,7 @@ from hdx.hdx_configuration import Configuration
 from hdx.utilities.downloader import Download
 from hdx.utilities.easy_logging import setup_logging
 from hdx.utilities.retriever import Retrieve
-from iati.download import download_all
+from iati.data import download_all
 from iati.main import start
 
 setup_logging()

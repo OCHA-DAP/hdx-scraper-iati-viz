@@ -5,6 +5,8 @@ import hxl
 from hdx.location.country import Country
 from hdx.utilities.loader import load_json
 
+from iati.data import dactivity_iterator
+
 logger = logging.getLogger(__name__)
 
 
@@ -216,9 +218,9 @@ class Lookups:
 
     # This can be used to get a list of org refs to check to see if they should be added to the manual list
     # @classmethod
-    # def build_reporting_org_blocklist(cls, dactivities):
+    # def build_reporting_org_blocklist(cls, data_dir):
     #     ref_to_names = dict()
-    #     for dactivity in dactivities:
+    #     for dactivity in dactivity_iterator(data_dir):
     #         for org in dactivity.participating_orgs:
     #             ref, name, _ = cls.get_cleaned_ref_name_type(org)
     #             if ref and name:
@@ -228,13 +230,13 @@ class Lookups:
     #             cls.org_ref_blocklist.append(ref)
 
     @classmethod
-    def add_reporting_orgs(cls, dactivities):
-        for dactivity in reversed(dactivities):
+    def add_reporting_orgs(cls, data_dir):
+        for dactivity in dactivity_iterator(data_dir, go_backwards=True):
             cls.add_to_org_lookup(dactivity.reporting_org)
 
     @classmethod
-    def add_participating_orgs(cls, dactivities):
-        for dactivity in reversed(dactivities):
+    def add_participating_orgs(cls, data_dir):
+        for dactivity in dactivity_iterator(data_dir, go_backwards=True):
             for org in dactivity.participating_orgs:
                 cls.add_to_org_lookup(org, is_participating_org=True)
 
