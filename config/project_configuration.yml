@@ -2,7 +2,7 @@ fallback_dir: "fallback_data"
 
 dportal:
   filename: "dportal_{}.xml"
-  limit: 50
+  limit: 100
   url: "http://d-portal.org/dquery?form=xml&sql=%s"
   covid_query: "
 SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
@@ -24,9 +24,6 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
         UPPER(xson->>'@code')='COVID-19'
     ) OR (
         root='/iati-activities/iati-activity/title/narrative' AND
-        to_tsvector('simple', xson->>'') @@ to_tsquery('simple','COVID | CORONAVIRUS')
-    ) OR (
-        root='/iati-activities/iati-activity/description/narrative' AND
         to_tsvector('simple', xson->>'') @@ to_tsquery('simple','COVID | CORONAVIRUS')
     ) OR (
         root='/iati-activities/iati-activity/transaction/description/narrative' AND
