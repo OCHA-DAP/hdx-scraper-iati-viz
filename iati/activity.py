@@ -1,8 +1,8 @@
 import logging
 
-from iati.calculatesplits import CalculateSplits
-from iati.lookups import Lookups
-from iati.transaction import Transaction
+from .calculatesplits import CalculateSplits
+from .lookups import Lookups
+from .transaction import Transaction
 
 logger = logging.getLogger(__name__)
 
@@ -52,7 +52,9 @@ class Activity:
         if Lookups.is_filter_reporting_orgs(reporting_org_ref):
             return None, len(dactivity.transactions)
         # Filter out eg. GAVI and FCDO activities that have children (ie. filter out h=1)
-        if Lookups.is_filter_reporting_orgs_children(reporting_org_ref, dactivity.hierarchy):
+        if Lookups.is_filter_reporting_orgs_children(
+            reporting_org_ref, dactivity.hierarchy
+        ):
             return None, len(dactivity.transactions)
         activity = Activity(dactivity)
         skipped = activity.add_transactions(configuration)

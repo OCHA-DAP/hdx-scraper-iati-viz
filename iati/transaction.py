@@ -3,8 +3,8 @@ import logging
 from hdx.location.currency import Currency, CurrencyError
 from hdx.utilities.dateparse import parse_date
 
-from iati.calculatesplits import CalculateSplits
-from iati.lookups import Lookups
+from .calculatesplits import CalculateSplits
+from .lookups import Lookups
 
 logger = logging.getLogger(__name__)
 

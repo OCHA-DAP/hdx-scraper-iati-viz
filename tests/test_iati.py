@@ -8,7 +8,6 @@ from hdx.utilities.compare import assert_files_same
 from hdx.utilities.downloader import Download
 from hdx.utilities.path import temp_dir
 from hdx.utilities.retriever import Retrieve
-
 from iati.main import start
 
 

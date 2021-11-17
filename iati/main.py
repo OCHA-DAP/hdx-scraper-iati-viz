@@ -8,10 +8,10 @@ import diterator
 import unicodecsv
 from hdx.location.currency import Currency
 
-from iati import checks
-from iati.activity import Activity
-from iati.calculatesplits import CalculateSplits
-from iati.lookups import Lookups
+from . import checks
+from .activity import Activity
+from .calculatesplits import CalculateSplits
+from .lookups import Lookups
 
 logger = logging.getLogger(__name__)
 

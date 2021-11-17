@@ -86,7 +86,11 @@ class Lookups:
 
     @classmethod
     def is_filter_reporting_orgs_children(cls, orgid, hierarchy):
-        return True if hierarchy and hierarchy == cls.filter_reporting_orgs_children.get(orgid) else False
+        return (
+            True
+            if hierarchy and hierarchy == cls.filter_reporting_orgs_children.get(orgid)
+            else False
+        )
 
     @staticmethod
     def get_cleaned_ref_name_type(org):
