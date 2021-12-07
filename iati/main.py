@@ -1,6 +1,6 @@
 import json
 import logging
-from io import StringIO
+from os import remove
 from os.path import join
 from urllib.parse import quote
 
@@ -26,7 +26,9 @@ def retrieve_dportal(configuration, retriever, whattorun, dportal_params=""):
     url = dportal_configuration["url"] % quote(
         dportal_configuration[f"{whattorun}_query"].format(dportal_params)
     )
-    return retriever.retrieve_file(url, filename, 'D-Portal activities', False)
+    return filename, retriever.retrieve_file(
+        url, filename, "D-Portal activities", False
+    )
 
 
 def write(today, output_dir, configuration, configuration_key, rows, skipped=None):
@@ -86,7 +88,9 @@ def start(
     logger.info(f"Running {whattorun} {text}")
     Lookups.checks = checks[whattorun]
     Lookups.filter_transaction_date = filterdate
-    dportal_path = retrieve_dportal(configuration, retriever, whattorun, dportal_params)
+    dportal_filename, dportal_path = retrieve_dportal(
+        configuration, retriever, whattorun, dportal_params
+    )
     Lookups.setup(configuration["lookups"])
     Currency.setup(
         retriever=retriever,
@@ -156,3 +160,7 @@ def start(
         "orgs",
         sorted(Lookups.used_reporting_orgs, key=lambda x: (x[1], x[0])),
     )
+    try:
+        remove(join(output_dir, dportal_filename))
+    except FileNotFoundError:
+        pass
