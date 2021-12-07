@@ -16,36 +16,17 @@ from .lookups import Lookups
 logger = logging.getLogger(__name__)
 
 
-def retrieve_dportal(configuration, retriever, dportal_params, whattorun):
+def retrieve_dportal(configuration, retriever, whattorun, dportal_params=""):
     """
     Downloads activity data from D-Portal. Filters them and returns a
     list of activities.
     """
     dportal_configuration = configuration["dportal"]
-    base_filename = dportal_configuration["filename"]
-    dportal_limit = dportal_configuration["limit"]
-    n = 0
-    dont_exit = True
-    while dont_exit:
-        if dportal_params:
-            params = dportal_params
-            dont_exit = False
-        else:
-            offset = n * dportal_limit
-            params = f"LIMIT {dportal_limit} OFFSET {offset}"
-            logger.info(f"OFFSET {offset}")
-        url = dportal_configuration["url"] % quote(
-            dportal_configuration[f"{whattorun}_query"].format(params)
-        )
-        filename = base_filename.format(n)
-        text = retriever.retrieve_text(url, filename, "D-Portal activities", False)
-        if "<iati-activity" in text:
-            n += 1
-            yield text
-            del text  # Maybe this helps garbage collector?
-        else:
-            # If the result doesn't contain any IATI activities, we're done
-            dont_exit = False
+    filename = dportal_configuration["filename"]
+    url = dportal_configuration["url"] % quote(
+        dportal_configuration[f"{whattorun}_query"].format(dportal_params)
+    )
+    return retriever.retrieve_file(url, filename, 'D-Portal activities', False)
 
 
 def write(today, output_dir, configuration, configuration_key, rows, skipped=None):
@@ -105,7 +86,7 @@ def start(
     logger.info(f"Running {whattorun} {text}")
     Lookups.checks = checks[whattorun]
     Lookups.filter_transaction_date = filterdate
-    generator = retrieve_dportal(configuration, retriever, dportal_params, whattorun)
+    dportal_path = retrieve_dportal(configuration, retriever, whattorun, dportal_params)
     Lookups.setup(configuration["lookups"])
     Currency.setup(
         retriever=retriever,
@@ -116,21 +97,19 @@ def start(
 
     # Build org name lookup
     dactivities = list()
-    for text in generator:
-        xmliterator = diterator.XMLIterator(StringIO(text))
-        for dactivity in xmliterator:
-            dactivities.append(dactivity)
-        del xmliterator  # Maybe this helps garbage collector?
-        del text  # Maybe this helps garbage collector?
+    xmliterator = diterator.XMLIterator(dportal_path)
+    for dactivity in xmliterator:
+        Lookups.add_reporting_org(dactivity)
+        dactivities.append(dactivity)
+    del xmliterator  # Maybe this helps garbage collector?
     #    Lookups.build_reporting_org_blocklist(dactivities)
-    Lookups.add_reporting_orgs(dactivities)
     Lookups.add_participating_orgs(dactivities)
 
     # Build the accumulators from the IATI activities and transactions
     flows = dict()
     transactions = list()
     all_skipped = 0
-    for i, dactivity in enumerate(dactivities):
+    for i, dactivity in enumerate(reversed(dactivities)):
         activity, skipped = Activity.get_activity(configuration, dactivity)
         all_skipped += skipped
         if activity:

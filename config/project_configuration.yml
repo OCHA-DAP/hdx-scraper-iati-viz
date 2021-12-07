@@ -1,8 +1,7 @@
 fallback_dir: "fallback_data"
 
 dportal:
-  filename: "dportal_{}.xml"
-  limit: 100
+  filename: "dportal.xml"
   url: "http://d-portal.org/dquery?from=xson&form=xml&sql=%s"
   covid_query: "
 SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
@@ -36,7 +35,7 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
         root='/iati-activities/iati-activity/transaction/sector' AND
         xson->>'@code'='12264' AND
         (xson->>'@vocabulary'='1' OR xson->>'@vocabulary'='' OR xson->>'@vocabulary' IS NULL)
-    ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {}
+    ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {} desc
 )"
   ebola_query: "
 SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
@@ -55,7 +54,7 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
     ) OR (
         root='/iati-activities/iati-activity/transaction/description/narrative' AND
         to_tsvector('simple', xson->>'') @@ to_tsquery('simple','EBOLA')
-    ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {}
+    ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {} desc
 )"
 
 lookups:

@@ -232,13 +232,12 @@ class Lookups:
     #             cls.org_ref_blocklist.append(ref)
 
     @classmethod
-    def add_reporting_orgs(cls, dactivities):
-        for dactivity in reversed(dactivities):
-            cls.add_to_org_lookup(dactivity.reporting_org)
+    def add_reporting_org(cls, dactivity):
+        cls.add_to_org_lookup(dactivity.reporting_org)
 
     @classmethod
     def add_participating_orgs(cls, dactivities):
-        for dactivity in reversed(dactivities):
+        for dactivity in dactivities:
             for org in dactivity.participating_orgs:
                 cls.add_to_org_lookup(org, is_participating_org=True)
 
