@@ -38,7 +38,7 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
         root='/iati-activities/iati-activity/transaction/sector' AND
         xson->>'@code'='12264' AND
         (xson->>'@vocabulary'='1' OR xson->>'@vocabulary'='' OR xson->>'@vocabulary' IS NULL)
-    ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {}
+    ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {} desc
 )"
 
 lookups:
