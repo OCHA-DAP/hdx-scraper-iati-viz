@@ -1,18 +1,17 @@
-class EbolaChecks:
+class ClimateChecks:
     @staticmethod
     def has_desired_scope(scopes):
-        """Check if the Ebola code is present"""
-        for scope in scopes:
-            if (
-                scope.type == "2"
-                and scope.vocabulary == "2-1"
-                and scope.code.upper() == "OXEBOLA1415"
-            ):
-                return True
         return False
 
     @staticmethod
     def has_desired_marker(markers):
+        for marker in markers:
+            if marker.vocabulary != "1":
+                continue
+            if marker.code not in ["6", "7"]:
+                continue
+            if marker.significance in ["1", "2", "3"]:
+                return True
         return False
 
     @staticmethod
@@ -25,8 +24,8 @@ class EbolaChecks:
 
     @staticmethod
     def is_desired_narrative(narratives):
-        """Check a dict of different-language text for the string "EBOLA" (case-insensitive)"""
+        """Check a dict of different-language text for the string "climate finance" (case-insensitive)"""
         for lang, text in narratives.items():
-            if "ebola" in text.lower():
+            if "climate finance" in text.lower():
                 return True
         return False

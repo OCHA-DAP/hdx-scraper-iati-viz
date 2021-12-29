@@ -66,6 +66,7 @@ class Activity:
                 True
                 if (
                     Lookups.checks.has_desired_scope(self.dactivity.humanitarian_scopes)
+                    or Lookups.checks.has_desired_marker(self.dactivity.policy_markers)
                     or Lookups.checks.has_desired_tag(self.dactivity.tags)
                     or Lookups.checks.has_desired_sector(self.dactivity.sectors)
                     or Lookups.checks.is_desired_narrative(

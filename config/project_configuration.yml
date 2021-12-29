@@ -56,6 +56,50 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
         to_tsvector('simple', xson->>'') @@ to_tsquery('simple','EBOLA')
     ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {} desc
 )"
+  climate_query: "
+SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
+    SELECT aid FROM xson WHERE
+    (
+    	root='/iati-activities/iati-activity/policy-marker' AND
+    	xson->>'@vocabulary'='1' AND
+    	xson->>'@code'='6' AND
+    	xson->>'@significance'='1'
+    ) OR (
+    	root='/iati-activities/iati-activity/policy-marker' AND
+    	xson->>'@vocabulary'='1' AND
+    	xson->>'@code'='6' AND
+    	xson->>'@significance'='2'
+    ) OR (
+    	root='/iati-activities/iati-activity/policy-marker' AND
+    	xson->>'@vocabulary'='1' AND
+    	xson->>'@code'='6' AND
+    	xson->>'@significance'='3'
+    ) OR (
+    	root='/iati-activities/iati-activity/policy-marker' AND
+    	xson->>'@vocabulary'='1' AND
+    	xson->>'@code'='7' AND
+    	xson->>'@significance'='1'
+    ) OR (
+    	root='/iati-activities/iati-activity/policy-marker' AND
+    	xson->>'@vocabulary'='1' AND
+    	xson->>'@code'='7' AND
+    	xson->>'@significance'='2'
+    ) OR (
+    	root='/iati-activities/iati-activity/policy-marker' AND
+    	xson->>'@vocabulary'='1' AND
+    	xson->>'@code'='7' AND
+    	xson->>'@significance'='3'
+    ) OR (
+    	root='/iati-activities/iati-activity/title/narrative' AND
+    	to_tsvector('simple', xson->>'') @@ to_tsquery('simple','''climate finance''')
+    ) OR (
+    	root='/iati-activities/iati-activity/description/narrative' AND
+    	to_tsvector('simple', xson->>'') @@ to_tsquery('simple','''climate finance''')
+    ) OR (
+    	root='/iati-activities/iati-activity/transaction/description/narrative' AND
+    	to_tsvector('simple', xson->>'') @@ to_tsquery('simple','''climate finance''')
+    ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {} desc
+)"
 
 lookups:
   filters_url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQxyJ0Y658cIIN1NpbHl4Ah1bZjNnWao7oawdLkl4T_5GC4BF-KMFnzKuzupU-w2Js1_Zy-VmaFJdIW/pub?gid=0&single=true&output=csv"
