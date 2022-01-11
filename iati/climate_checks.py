@@ -8,9 +8,9 @@ class ClimateChecks:
         for marker in markers:
             if marker.vocabulary != "1":
                 continue
-            if marker.code not in ["6", "7"]:
+            if marker.code not in ("6", "7"):
                 continue
-            if marker.significance in ["1", "2", "3"]:
+            if marker.significance in ("1", "2", "3", "4"):
                 return True
         return False
 

@@ -77,6 +77,11 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
     ) OR (
     	root='/iati-activities/iati-activity/policy-marker' AND
     	xson->>'@vocabulary'='1' AND
+    	xson->>'@code'='6' AND
+    	xson->>'@significance'='4'
+    ) OR (
+    	root='/iati-activities/iati-activity/policy-marker' AND
+    	xson->>'@vocabulary'='1' AND
     	xson->>'@code'='7' AND
     	xson->>'@significance'='1'
     ) OR (
@@ -89,6 +94,11 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
     	xson->>'@vocabulary'='1' AND
     	xson->>'@code'='7' AND
     	xson->>'@significance'='3'
+    ) OR (
+    	root='/iati-activities/iati-activity/policy-marker' AND
+    	xson->>'@vocabulary'='1' AND
+    	xson->>'@code'='7' AND
+    	xson->>'@significance'='4'
     ) OR (
     	root='/iati-activities/iati-activity/title/narrative' AND
     	to_tsvector('simple', xson->>'') @@ to_tsquery('simple','''climate finance''')
