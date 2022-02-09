@@ -6,17 +6,7 @@ class SouthSudanChecks:
             if (
                 scope.type == "2"
                 and scope.vocabulary == "2-1"
-                and scope.code.upper()
-                in (
-                    "HSSD15",
-                    "HSSD16",
-                    "HSSD17",
-                    "HSSD18",
-                    "HSSD19",
-                    "HSSD20",
-                    "HSSD21",
-                    "HSSD22",
-                )
+                and scope.code.upper() in ("HSSD21", "HSSD22")
             ):
                 return True
         return False

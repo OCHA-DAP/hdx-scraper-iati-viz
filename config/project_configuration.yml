@@ -123,36 +123,6 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
         xson->>'@type'='2' AND
         xson->>'@vocabulary'='2-1' AND
         xson->>'@code'='HSSD21'
-    ) OR (
-        root='/iati-activities/iati-activity/humanitarian-scope' AND
-        xson->>'@type'='2' AND
-        xson->>'@vocabulary'='2-1' AND
-        xson->>'@code'='HSSD20'
-    ) OR (
-        root='/iati-activities/iati-activity/humanitarian-scope' AND
-        xson->>'@type'='2' AND
-        xson->>'@vocabulary'='2-1' AND
-        xson->>'@code'='HSSD19'
-    ) OR (
-        root='/iati-activities/iati-activity/humanitarian-scope' AND
-        xson->>'@type'='2' AND
-        xson->>'@vocabulary'='2-1' AND
-        xson->>'@code'='HSSD18'
-    ) OR (
-        root='/iati-activities/iati-activity/humanitarian-scope' AND
-        xson->>'@type'='2' AND
-        xson->>'@vocabulary'='2-1' AND
-        xson->>'@code'='HSSD17'
-    ) OR (
-        root='/iati-activities/iati-activity/humanitarian-scope' AND
-        xson->>'@type'='2' AND
-        xson->>'@vocabulary'='2-1' AND
-        xson->>'@code'='HSSD16'
-    ) OR (
-        root='/iati-activities/iati-activity/humanitarian-scope' AND
-        xson->>'@type'='2' AND
-        xson->>'@vocabulary'='2-1' AND
-        xson->>'@code'='HSSD15'
     ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {} desc
 )"
   
