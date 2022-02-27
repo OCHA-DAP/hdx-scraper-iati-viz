@@ -1,676 +1,676 @@
-2022-02-26 14:32:28.731 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2020201403 is_strict call failed!
+2022-02-27 14:33:51.627 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2020201403 is_strict call failed!
 Traceback (most recent call last):
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 103, in <module>
     facade(
-    └ <function facade at 0x7f44d253db40>
+    └ <function facade at 0x7efbfe0fdb40>
 
   File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/hdx/facades/keyword_arguments.py", line 37, in facade
     projectmainfn(**kwargs)
     │               └ {'hdx_read_only': True, 'user_agent': 'hdx-scraper-iati-viz', 'preprefix': None, 'hdx_site': 'prod', 'project_config_yaml': '...
-    └ <function main at 0x7f44d0126e60>
+    └ <function main at 0x7efbfbce6e60>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 79, in main
     start(
-    └ <function start at 0x7f44d0126d40>
+    └ <function start at 0x7efbfbce6d40>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/main.py", line 117, in start
     activity, skipped = Activity.get_activity(configuration, dactivity)
-    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7f44a56ab820>
+    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7efb63e8e7d0>
     │                   │        │            └ ordereddict([('hdx_prod_site', ordereddict([('url', 'https://data.humdata.org')])), ('hdx_demo_site', ordereddict([('url', 'h...
-    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7f44d01268c0>)>
+    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7efbfbce68c0>)>
     │                   └ <class 'iati.activity.Activity'>
-    └ <iati.activity.Activity object at 0x7f44d3dbff70>
+    └ <iati.activity.Activity object at 0x7efbb28b6560>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 59, in get_activity
     activity = Activity(dactivity)
-               │        └ <diterator.wrappers.Activity object at 0x7f44a56ab820>
+               │        └ <diterator.wrappers.Activity object at 0x7efb63e8e7d0>
                └ <class 'iati.activity.Activity'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 19, in __init__
     self.strict = self.is_strict()
-    │             │    └ <function Activity.is_strict at 0x7f44d0126950>
-    │             └ <iati.activity.Activity object at 0x7f44cf063fa0>
-    └ <iati.activity.Activity object at 0x7f44cf063fa0>
+    │             │    └ <function Activity.is_strict at 0x7efbfbce6950>
+    │             └ <iati.activity.Activity object at 0x7efa1c7f6d10>
+    └ <iati.activity.Activity object at 0x7efa1c7f6d10>
 
 > File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 69, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
-       │       │      │               │    │         └ <property object at 0x7f44d25718f0>
-       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7f44a56ab820>
-       │       │      │               └ <iati.activity.Activity object at 0x7f44cf063fa0>
-       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7f44d253fd90>)>
+       │       │      │               │    │         └ <property object at 0x7efbfe129580>
+       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7efb63e8e7d0>
+       │       │      │               └ <iati.activity.Activity object at 0x7efa1c7f6d10>
+       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7efbfe0ffd90>)>
        │       └ <class 'iati.covid_checks.CovidChecks'>
        └ <class 'iati.lookups.Lookups'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
-       │   │                      │   └ <property object at 0x7f44d2572b60>
-       │   │                      └ <diterator.wrappers.CodedItem object at 0x7f44cf0916c0>
-       │   └ <property object at 0x7f44d2572bb0>
-       └ <diterator.wrappers.CodedItem object at 0x7f44cf0916c0>
+       │   │                      │   └ <property object at 0x7efbfe12a7f0>
+       │   │                      └ <diterator.wrappers.CodedItem object at 0x7efa1c7f4cd0>
+       │   └ <property object at 0x7efbfe12a840>
+       └ <diterator.wrappers.CodedItem object at 0x7efa1c7f4cd0>
 
 AttributeError: 'NoneType' object has no attribute 'upper'
-2022-02-26 14:32:28.788 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2020201234 is_strict call failed!
+2022-02-27 14:33:51.685 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2020201234 is_strict call failed!
 Traceback (most recent call last):
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 103, in <module>
     facade(
-    └ <function facade at 0x7f44d253db40>
+    └ <function facade at 0x7efbfe0fdb40>
 
   File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/hdx/facades/keyword_arguments.py", line 37, in facade
     projectmainfn(**kwargs)
     │               └ {'hdx_read_only': True, 'user_agent': 'hdx-scraper-iati-viz', 'preprefix': None, 'hdx_site': 'prod', 'project_config_yaml': '...
-    └ <function main at 0x7f44d0126e60>
+    └ <function main at 0x7efbfbce6e60>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 79, in main
     start(
-    └ <function start at 0x7f44d0126d40>
+    └ <function start at 0x7efbfbce6d40>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/main.py", line 117, in start
     activity, skipped = Activity.get_activity(configuration, dactivity)
-    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7f44a56ab700>
+    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7efb63e8e710>
     │                   │        │            └ ordereddict([('hdx_prod_site', ordereddict([('url', 'https://data.humdata.org')])), ('hdx_demo_site', ordereddict([('url', 'h...
-    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7f44d01268c0>)>
+    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7efbfbce68c0>)>
     │                   └ <class 'iati.activity.Activity'>
-    └ <iati.activity.Activity object at 0x7f44cf063fa0>
+    └ <iati.activity.Activity object at 0x7efa1c7f69e0>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 59, in get_activity
     activity = Activity(dactivity)
-               │        └ <diterator.wrappers.Activity object at 0x7f44a56ab700>
+               │        └ <diterator.wrappers.Activity object at 0x7efb63e8e710>
                └ <class 'iati.activity.Activity'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 19, in __init__
     self.strict = self.is_strict()
-    │             │    └ <function Activity.is_strict at 0x7f44d0126950>
-    │             └ <iati.activity.Activity object at 0x7f42e95c9b40>
-    └ <iati.activity.Activity object at 0x7f42e95c9b40>
+    │             │    └ <function Activity.is_strict at 0x7efbfbce6950>
+    │             └ <iati.activity.Activity object at 0x7efa1c7f5cf0>
+    └ <iati.activity.Activity object at 0x7efa1c7f5cf0>
 
 > File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 69, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
-       │       │      │               │    │         └ <property object at 0x7f44d25718f0>
-       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7f44a56ab700>
-       │       │      │               └ <iati.activity.Activity object at 0x7f42e95c9b40>
-       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7f44d253fd90>)>
+       │       │      │               │    │         └ <property object at 0x7efbfe129580>
+       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7efb63e8e710>
+       │       │      │               └ <iati.activity.Activity object at 0x7efa1c7f5cf0>
+       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7efbfe0ffd90>)>
        │       └ <class 'iati.covid_checks.CovidChecks'>
        └ <class 'iati.lookups.Lookups'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
-       │   │                      │   └ <property object at 0x7f44d2572b60>
-       │   │                      └ <diterator.wrappers.CodedItem object at 0x7f42e95c9780>
-       │   └ <property object at 0x7f44d2572bb0>
-       └ <diterator.wrappers.CodedItem object at 0x7f42e95c9780>
+       │   │                      │   └ <property object at 0x7efbfe12a7f0>
+       │   │                      └ <diterator.wrappers.CodedItem object at 0x7efa1c7f7730>
+       │   └ <property object at 0x7efbfe12a840>
+       └ <diterator.wrappers.CodedItem object at 0x7efa1c7f7730>
 
 AttributeError: 'NoneType' object has no attribute 'upper'
-2022-02-26 14:32:28.796 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2020201168 is_strict call failed!
+2022-02-27 14:33:51.691 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2020201168 is_strict call failed!
 Traceback (most recent call last):
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 103, in <module>
     facade(
-    └ <function facade at 0x7f44d253db40>
+    └ <function facade at 0x7efbfe0fdb40>
 
   File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/hdx/facades/keyword_arguments.py", line 37, in facade
     projectmainfn(**kwargs)
     │               └ {'hdx_read_only': True, 'user_agent': 'hdx-scraper-iati-viz', 'preprefix': None, 'hdx_site': 'prod', 'project_config_yaml': '...
-    └ <function main at 0x7f44d0126e60>
+    └ <function main at 0x7efbfbce6e60>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 79, in main
     start(
-    └ <function start at 0x7f44d0126d40>
+    └ <function start at 0x7efbfbce6d40>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/main.py", line 117, in start
     activity, skipped = Activity.get_activity(configuration, dactivity)
-    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7f44a56ab6a0>
+    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7efb63e8e6b0>
     │                   │        │            └ ordereddict([('hdx_prod_site', ordereddict([('url', 'https://data.humdata.org')])), ('hdx_demo_site', ordereddict([('url', 'h...
-    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7f44d01268c0>)>
+    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7efbfbce68c0>)>
     │                   └ <class 'iati.activity.Activity'>
-    └ <iati.activity.Activity object at 0x7f42e95c9b40>
+    └ <iati.activity.Activity object at 0x7efa1c7f5cf0>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 59, in get_activity
     activity = Activity(dactivity)
-               │        └ <diterator.wrappers.Activity object at 0x7f44a56ab6a0>
+               │        └ <diterator.wrappers.Activity object at 0x7efb63e8e6b0>
                └ <class 'iati.activity.Activity'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 19, in __init__
     self.strict = self.is_strict()
-    │             │    └ <function Activity.is_strict at 0x7f44d0126950>
-    │             └ <iati.activity.Activity object at 0x7f44d3dbff70>
-    └ <iati.activity.Activity object at 0x7f44d3dbff70>
+    │             │    └ <function Activity.is_strict at 0x7efbfbce6950>
+    │             └ <iati.activity.Activity object at 0x7efbb28b6560>
+    └ <iati.activity.Activity object at 0x7efbb28b6560>
 
 > File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 69, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
-       │       │      │               │    │         └ <property object at 0x7f44d25718f0>
-       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7f44a56ab6a0>
-       │       │      │               └ <iati.activity.Activity object at 0x7f44d3dbff70>
-       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7f44d253fd90>)>
+       │       │      │               │    │         └ <property object at 0x7efbfe129580>
+       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7efb63e8e6b0>
+       │       │      │               └ <iati.activity.Activity object at 0x7efbb28b6560>
+       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7efbfe0ffd90>)>
        │       └ <class 'iati.covid_checks.CovidChecks'>
        └ <class 'iati.lookups.Lookups'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
-       │   │                      │   └ <property object at 0x7f44d2572b60>
-       │   │                      └ <diterator.wrappers.CodedItem object at 0x7f42e95c8070>
-       │   └ <property object at 0x7f44d2572bb0>
-       └ <diterator.wrappers.CodedItem object at 0x7f42e95c8070>
+       │   │                      │   └ <property object at 0x7efbfe12a7f0>
+       │   │                      └ <diterator.wrappers.CodedItem object at 0x7efa1c7f59f0>
+       │   └ <property object at 0x7efbfe12a840>
+       └ <diterator.wrappers.CodedItem object at 0x7efa1c7f59f0>
 
 AttributeError: 'NoneType' object has no attribute 'upper'
-2022-02-26 14:32:28.803 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2020201166 is_strict call failed!
+2022-02-27 14:33:51.697 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2020201166 is_strict call failed!
 Traceback (most recent call last):
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 103, in <module>
     facade(
-    └ <function facade at 0x7f44d253db40>
+    └ <function facade at 0x7efbfe0fdb40>
 
   File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/hdx/facades/keyword_arguments.py", line 37, in facade
     projectmainfn(**kwargs)
     │               └ {'hdx_read_only': True, 'user_agent': 'hdx-scraper-iati-viz', 'preprefix': None, 'hdx_site': 'prod', 'project_config_yaml': '...
-    └ <function main at 0x7f44d0126e60>
+    └ <function main at 0x7efbfbce6e60>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 79, in main
     start(
-    └ <function start at 0x7f44d0126d40>
+    └ <function start at 0x7efbfbce6d40>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/main.py", line 117, in start
     activity, skipped = Activity.get_activity(configuration, dactivity)
-    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7f44a56ab640>
+    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7efb63e8e650>
     │                   │        │            └ ordereddict([('hdx_prod_site', ordereddict([('url', 'https://data.humdata.org')])), ('hdx_demo_site', ordereddict([('url', 'h...
-    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7f44d01268c0>)>
+    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7efbfbce68c0>)>
     │                   └ <class 'iati.activity.Activity'>
-    └ <iati.activity.Activity object at 0x7f44d3dbff70>
+    └ <iati.activity.Activity object at 0x7efbb28b6560>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 59, in get_activity
     activity = Activity(dactivity)
-               │        └ <diterator.wrappers.Activity object at 0x7f44a56ab640>
+               │        └ <diterator.wrappers.Activity object at 0x7efb63e8e650>
                └ <class 'iati.activity.Activity'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 19, in __init__
     self.strict = self.is_strict()
-    │             │    └ <function Activity.is_strict at 0x7f44d0126950>
-    │             └ <iati.activity.Activity object at 0x7f44cf063fa0>
-    └ <iati.activity.Activity object at 0x7f44cf063fa0>
+    │             │    └ <function Activity.is_strict at 0x7efbfbce6950>
+    │             └ <iati.activity.Activity object at 0x7efa1c7f51b0>
+    └ <iati.activity.Activity object at 0x7efa1c7f51b0>
 
 > File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 69, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
-       │       │      │               │    │         └ <property object at 0x7f44d25718f0>
-       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7f44a56ab640>
-       │       │      │               └ <iati.activity.Activity object at 0x7f44cf063fa0>
-       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7f44d253fd90>)>
+       │       │      │               │    │         └ <property object at 0x7efbfe129580>
+       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7efb63e8e650>
+       │       │      │               └ <iati.activity.Activity object at 0x7efa1c7f51b0>
+       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7efbfe0ffd90>)>
        │       └ <class 'iati.covid_checks.CovidChecks'>
        └ <class 'iati.lookups.Lookups'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
-       │   │                      │   └ <property object at 0x7f44d2572b60>
-       │   │                      └ <diterator.wrappers.CodedItem object at 0x7f42e95c9a80>
-       │   └ <property object at 0x7f44d2572bb0>
-       └ <diterator.wrappers.CodedItem object at 0x7f42e95c9a80>
+       │   │                      │   └ <property object at 0x7efbfe12a7f0>
+       │   │                      └ <diterator.wrappers.CodedItem object at 0x7efa1c7f59f0>
+       │   └ <property object at 0x7efbfe12a840>
+       └ <diterator.wrappers.CodedItem object at 0x7efa1c7f59f0>
 
 AttributeError: 'NoneType' object has no attribute 'upper'
-2022-02-26 14:32:28.810 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2020201165 is_strict call failed!
+2022-02-27 14:33:51.703 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2020201165 is_strict call failed!
 Traceback (most recent call last):
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 103, in <module>
     facade(
-    └ <function facade at 0x7f44d253db40>
+    └ <function facade at 0x7efbfe0fdb40>
 
   File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/hdx/facades/keyword_arguments.py", line 37, in facade
     projectmainfn(**kwargs)
     │               └ {'hdx_read_only': True, 'user_agent': 'hdx-scraper-iati-viz', 'preprefix': None, 'hdx_site': 'prod', 'project_config_yaml': '...
-    └ <function main at 0x7f44d0126e60>
+    └ <function main at 0x7efbfbce6e60>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 79, in main
     start(
-    └ <function start at 0x7f44d0126d40>
+    └ <function start at 0x7efbfbce6d40>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/main.py", line 117, in start
     activity, skipped = Activity.get_activity(configuration, dactivity)
-    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7f44a56ab5e0>
+    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7efb63e8e5f0>
     │                   │        │            └ ordereddict([('hdx_prod_site', ordereddict([('url', 'https://data.humdata.org')])), ('hdx_demo_site', ordereddict([('url', 'h...
-    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7f44d01268c0>)>
+    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7efbfbce68c0>)>
     │                   └ <class 'iati.activity.Activity'>
-    └ <iati.activity.Activity object at 0x7f44cf063fa0>
+    └ <iati.activity.Activity object at 0x7efa1c7f51b0>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 59, in get_activity
     activity = Activity(dactivity)
-               │        └ <diterator.wrappers.Activity object at 0x7f44a56ab5e0>
+               │        └ <diterator.wrappers.Activity object at 0x7efb63e8e5f0>
                └ <class 'iati.activity.Activity'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 19, in __init__
     self.strict = self.is_strict()
-    │             │    └ <function Activity.is_strict at 0x7f44d0126950>
-    │             └ <iati.activity.Activity object at 0x7f42e95cb730>
-    └ <iati.activity.Activity object at 0x7f42e95cb730>
+    │             │    └ <function Activity.is_strict at 0x7efbfbce6950>
+    │             └ <iati.activity.Activity object at 0x7efa1c7f4520>
+    └ <iati.activity.Activity object at 0x7efa1c7f4520>
 
 > File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 69, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
-       │       │      │               │    │         └ <property object at 0x7f44d25718f0>
-       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7f44a56ab5e0>
-       │       │      │               └ <iati.activity.Activity object at 0x7f42e95cb730>
-       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7f44d253fd90>)>
+       │       │      │               │    │         └ <property object at 0x7efbfe129580>
+       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7efb63e8e5f0>
+       │       │      │               └ <iati.activity.Activity object at 0x7efa1c7f4520>
+       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7efbfe0ffd90>)>
        │       └ <class 'iati.covid_checks.CovidChecks'>
        └ <class 'iati.lookups.Lookups'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
-       │   │                      │   └ <property object at 0x7f44d2572b60>
-       │   │                      └ <diterator.wrappers.CodedItem object at 0x7f42e95c9a80>
-       │   └ <property object at 0x7f44d2572bb0>
-       └ <diterator.wrappers.CodedItem object at 0x7f42e95c9a80>
+       │   │                      │   └ <property object at 0x7efbfe12a7f0>
+       │   │                      └ <diterator.wrappers.CodedItem object at 0x7efa1c7f59f0>
+       │   └ <property object at 0x7efbfe12a840>
+       └ <diterator.wrappers.CodedItem object at 0x7efa1c7f59f0>
 
 AttributeError: 'NoneType' object has no attribute 'upper'
-2022-02-26 14:32:28.818 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2020201160 is_strict call failed!
+2022-02-27 14:33:52.086 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2020201160 is_strict call failed!
 Traceback (most recent call last):
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 103, in <module>
     facade(
-    └ <function facade at 0x7f44d253db40>
+    └ <function facade at 0x7efbfe0fdb40>
 
   File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/hdx/facades/keyword_arguments.py", line 37, in facade
     projectmainfn(**kwargs)
     │               └ {'hdx_read_only': True, 'user_agent': 'hdx-scraper-iati-viz', 'preprefix': None, 'hdx_site': 'prod', 'project_config_yaml': '...
-    └ <function main at 0x7f44d0126e60>
+    └ <function main at 0x7efbfbce6e60>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 79, in main
     start(
-    └ <function start at 0x7f44d0126d40>
+    └ <function start at 0x7efbfbce6d40>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/main.py", line 117, in start
     activity, skipped = Activity.get_activity(configuration, dactivity)
-    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7f44a56ab580>
+    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7efb63e8e530>
     │                   │        │            └ ordereddict([('hdx_prod_site', ordereddict([('url', 'https://data.humdata.org')])), ('hdx_demo_site', ordereddict([('url', 'h...
-    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7f44d01268c0>)>
+    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7efbfbce68c0>)>
     │                   └ <class 'iati.activity.Activity'>
-    └ <iati.activity.Activity object at 0x7f42e95cb730>
+    └ <iati.activity.Activity object at 0x7efbb28b6560>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 59, in get_activity
     activity = Activity(dactivity)
-               │        └ <diterator.wrappers.Activity object at 0x7f44a56ab580>
+               │        └ <diterator.wrappers.Activity object at 0x7efb63e8e530>
                └ <class 'iati.activity.Activity'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 19, in __init__
     self.strict = self.is_strict()
-    │             │    └ <function Activity.is_strict at 0x7f44d0126950>
-    │             └ <iati.activity.Activity object at 0x7f44d3dbff70>
-    └ <iati.activity.Activity object at 0x7f44d3dbff70>
+    │             │    └ <function Activity.is_strict at 0x7efbfbce6950>
+    │             └ <iati.activity.Activity object at 0x7efa1c7f5f60>
+    └ <iati.activity.Activity object at 0x7efa1c7f5f60>
 
 > File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 69, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
-       │       │      │               │    │         └ <property object at 0x7f44d25718f0>
-       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7f44a56ab580>
-       │       │      │               └ <iati.activity.Activity object at 0x7f44d3dbff70>
-       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7f44d253fd90>)>
+       │       │      │               │    │         └ <property object at 0x7efbfe129580>
+       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7efb63e8e530>
+       │       │      │               └ <iati.activity.Activity object at 0x7efa1c7f5f60>
+       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7efbfe0ffd90>)>
        │       └ <class 'iati.covid_checks.CovidChecks'>
        └ <class 'iati.lookups.Lookups'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
-       │   │                      │   └ <property object at 0x7f44d2572b60>
-       │   │                      └ <diterator.wrappers.CodedItem object at 0x7f42e95c9870>
-       │   └ <property object at 0x7f44d2572bb0>
-       └ <diterator.wrappers.CodedItem object at 0x7f42e95c9870>
+       │   │                      │   └ <property object at 0x7efbfe12a7f0>
+       │   │                      └ <diterator.wrappers.CodedItem object at 0x7efa1a09fe80>
+       │   └ <property object at 0x7efbfe12a840>
+       └ <diterator.wrappers.CodedItem object at 0x7efa1a09fe80>
 
 AttributeError: 'NoneType' object has no attribute 'upper'
-2022-02-26 14:32:28.828 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2020200801 is_strict call failed!
+2022-02-27 14:33:52.157 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2020200801 is_strict call failed!
 Traceback (most recent call last):
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 103, in <module>
     facade(
-    └ <function facade at 0x7f44d253db40>
+    └ <function facade at 0x7efbfe0fdb40>
 
   File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/hdx/facades/keyword_arguments.py", line 37, in facade
     projectmainfn(**kwargs)
     │               └ {'hdx_read_only': True, 'user_agent': 'hdx-scraper-iati-viz', 'preprefix': None, 'hdx_site': 'prod', 'project_config_yaml': '...
-    └ <function main at 0x7f44d0126e60>
+    └ <function main at 0x7efbfbce6e60>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 79, in main
     start(
-    └ <function start at 0x7f44d0126d40>
+    └ <function start at 0x7efbfbce6d40>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/main.py", line 117, in start
     activity, skipped = Activity.get_activity(configuration, dactivity)
-    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7f44a56ab520>
+    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7efb63e8e470>
     │                   │        │            └ ordereddict([('hdx_prod_site', ordereddict([('url', 'https://data.humdata.org')])), ('hdx_demo_site', ordereddict([('url', 'h...
-    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7f44d01268c0>)>
+    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7efbfbce68c0>)>
     │                   └ <class 'iati.activity.Activity'>
-    └ <iati.activity.Activity object at 0x7f44d3dbff70>
+    └ <iati.activity.Activity object at 0x7efa1a09c430>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 59, in get_activity
     activity = Activity(dactivity)
-               │        └ <diterator.wrappers.Activity object at 0x7f44a56ab520>
+               │        └ <diterator.wrappers.Activity object at 0x7efb63e8e470>
                └ <class 'iati.activity.Activity'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 19, in __init__
     self.strict = self.is_strict()
-    │             │    └ <function Activity.is_strict at 0x7f44d0126950>
-    │             └ <iati.activity.Activity object at 0x7f44cf063fa0>
-    └ <iati.activity.Activity object at 0x7f44cf063fa0>
+    │             │    └ <function Activity.is_strict at 0x7efbfbce6950>
+    │             └ <iati.activity.Activity object at 0x7efa1c7f5f60>
+    └ <iati.activity.Activity object at 0x7efa1c7f5f60>
 
 > File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 69, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
-       │       │      │               │    │         └ <property object at 0x7f44d25718f0>
-       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7f44a56ab520>
-       │       │      │               └ <iati.activity.Activity object at 0x7f44cf063fa0>
-       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7f44d253fd90>)>
+       │       │      │               │    │         └ <property object at 0x7efbfe129580>
+       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7efb63e8e470>
+       │       │      │               └ <iati.activity.Activity object at 0x7efa1c7f5f60>
+       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7efbfe0ffd90>)>
        │       └ <class 'iati.covid_checks.CovidChecks'>
        └ <class 'iati.lookups.Lookups'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
-       │   │                      │   └ <property object at 0x7f44d2572b60>
-       │   │                      └ <diterator.wrappers.CodedItem object at 0x7f42e95caf20>
-       │   └ <property object at 0x7f44d2572bb0>
-       └ <diterator.wrappers.CodedItem object at 0x7f42e95caf20>
+       │   │                      │   └ <property object at 0x7efbfe12a7f0>
+       │   │                      └ <diterator.wrappers.CodedItem object at 0x7efa1a0a5d80>
+       │   └ <property object at 0x7efbfe12a840>
+       └ <diterator.wrappers.CodedItem object at 0x7efa1a0a5d80>
 
 AttributeError: 'NoneType' object has no attribute 'upper'
-2022-02-26 14:32:30.873 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2019191455 is_strict call failed!
+2022-02-27 14:33:53.399 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2019191455 is_strict call failed!
 Traceback (most recent call last):
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 103, in <module>
     facade(
-    └ <function facade at 0x7f44d253db40>
+    └ <function facade at 0x7efbfe0fdb40>
 
   File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/hdx/facades/keyword_arguments.py", line 37, in facade
     projectmainfn(**kwargs)
     │               └ {'hdx_read_only': True, 'user_agent': 'hdx-scraper-iati-viz', 'preprefix': None, 'hdx_site': 'prod', 'project_config_yaml': '...
-    └ <function main at 0x7f44d0126e60>
+    └ <function main at 0x7efbfbce6e60>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 79, in main
     start(
-    └ <function start at 0x7f44d0126d40>
+    └ <function start at 0x7efbfbce6d40>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/main.py", line 117, in start
     activity, skipped = Activity.get_activity(configuration, dactivity)
-    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7f44a56ab400>
+    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7efb63e8e3b0>
     │                   │        │            └ ordereddict([('hdx_prod_site', ordereddict([('url', 'https://data.humdata.org')])), ('hdx_demo_site', ordereddict([('url', 'h...
-    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7f44d01268c0>)>
+    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7efbfbce68c0>)>
     │                   └ <class 'iati.activity.Activity'>
-    └ <iati.activity.Activity object at 0x7f44cf063fa0>
+    └ <iati.activity.Activity object at 0x7efbb28b6560>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 59, in get_activity
     activity = Activity(dactivity)
-               │        └ <diterator.wrappers.Activity object at 0x7f44a56ab400>
+               │        └ <diterator.wrappers.Activity object at 0x7efb63e8e3b0>
                └ <class 'iati.activity.Activity'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 19, in __init__
     self.strict = self.is_strict()
-    │             │    └ <function Activity.is_strict at 0x7f44d0126950>
-    │             └ <iati.activity.Activity object at 0x7f44cf093fd0>
-    └ <iati.activity.Activity object at 0x7f44cf093fd0>
+    │             │    └ <function Activity.is_strict at 0x7efbfbce6950>
+    │             └ <iati.activity.Activity object at 0x7efa1c7f4af0>
+    └ <iati.activity.Activity object at 0x7efa1c7f4af0>
 
 > File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 69, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
-       │       │      │               │    │         └ <property object at 0x7f44d25718f0>
-       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7f44a56ab400>
-       │       │      │               └ <iati.activity.Activity object at 0x7f44cf093fd0>
-       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7f44d253fd90>)>
+       │       │      │               │    │         └ <property object at 0x7efbfe129580>
+       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7efb63e8e3b0>
+       │       │      │               └ <iati.activity.Activity object at 0x7efa1c7f4af0>
+       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7efbfe0ffd90>)>
        │       └ <class 'iati.covid_checks.CovidChecks'>
        └ <class 'iati.lookups.Lookups'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
-       │   │                      │   └ <property object at 0x7f44d2572b60>
-       │   │                      └ <diterator.wrappers.CodedItem object at 0x7f44cf090820>
-       │   └ <property object at 0x7f44d2572bb0>
-       └ <diterator.wrappers.CodedItem object at 0x7f44cf090820>
+       │   │                      │   └ <property object at 0x7efbfe12a7f0>
+       │   │                      └ <diterator.wrappers.CodedItem object at 0x7efa1c7f5210>
+       │   └ <property object at 0x7efbfe12a840>
+       └ <diterator.wrappers.CodedItem object at 0x7efa1c7f5210>
 
 AttributeError: 'NoneType' object has no attribute 'upper'
-2022-02-26 14:32:30.881 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2019191454 is_strict call failed!
+2022-02-27 14:33:53.406 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2019191454 is_strict call failed!
 Traceback (most recent call last):
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 103, in <module>
     facade(
-    └ <function facade at 0x7f44d253db40>
+    └ <function facade at 0x7efbfe0fdb40>
 
   File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/hdx/facades/keyword_arguments.py", line 37, in facade
     projectmainfn(**kwargs)
     │               └ {'hdx_read_only': True, 'user_agent': 'hdx-scraper-iati-viz', 'preprefix': None, 'hdx_site': 'prod', 'project_config_yaml': '...
-    └ <function main at 0x7f44d0126e60>
+    └ <function main at 0x7efbfbce6e60>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 79, in main
     start(
-    └ <function start at 0x7f44d0126d40>
+    └ <function start at 0x7efbfbce6d40>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/main.py", line 117, in start
     activity, skipped = Activity.get_activity(configuration, dactivity)
-    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7f44a56ab3a0>
+    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7efb63e8e350>
     │                   │        │            └ ordereddict([('hdx_prod_site', ordereddict([('url', 'https://data.humdata.org')])), ('hdx_demo_site', ordereddict([('url', 'h...
-    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7f44d01268c0>)>
+    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7efbfbce68c0>)>
     │                   └ <class 'iati.activity.Activity'>
-    └ <iati.activity.Activity object at 0x7f44cf093fd0>
+    └ <iati.activity.Activity object at 0x7efa1c7f4af0>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 59, in get_activity
     activity = Activity(dactivity)
-               │        └ <diterator.wrappers.Activity object at 0x7f44a56ab3a0>
+               │        └ <diterator.wrappers.Activity object at 0x7efb63e8e350>
                └ <class 'iati.activity.Activity'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 19, in __init__
     self.strict = self.is_strict()
-    │             │    └ <function Activity.is_strict at 0x7f44d0126950>
-    │             └ <iati.activity.Activity object at 0x7f44d3dbff70>
-    └ <iati.activity.Activity object at 0x7f44d3dbff70>
+    │             │    └ <function Activity.is_strict at 0x7efbfbce6950>
+    │             └ <iati.activity.Activity object at 0x7efa1a09ffd0>
+    └ <iati.activity.Activity object at 0x7efa1a09ffd0>
 
 > File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 69, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
-       │       │      │               │    │         └ <property object at 0x7f44d25718f0>
-       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7f44a56ab3a0>
-       │       │      │               └ <iati.activity.Activity object at 0x7f44d3dbff70>
-       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7f44d253fd90>)>
+       │       │      │               │    │         └ <property object at 0x7efbfe129580>
+       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7efb63e8e350>
+       │       │      │               └ <iati.activity.Activity object at 0x7efa1a09ffd0>
+       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7efbfe0ffd90>)>
        │       └ <class 'iati.covid_checks.CovidChecks'>
        └ <class 'iati.lookups.Lookups'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
-       │   │                      │   └ <property object at 0x7f44d2572b60>
-       │   │                      └ <diterator.wrappers.CodedItem object at 0x7f44cf0904f0>
-       │   └ <property object at 0x7f44d2572bb0>
-       └ <diterator.wrappers.CodedItem object at 0x7f44cf0904f0>
+       │   │                      │   └ <property object at 0x7efbfe12a7f0>
+       │   │                      └ <diterator.wrappers.CodedItem object at 0x7efa1c7f6200>
+       │   └ <property object at 0x7efbfe12a840>
+       └ <diterator.wrappers.CodedItem object at 0x7efa1c7f6200>
 
 AttributeError: 'NoneType' object has no attribute 'upper'
-2022-02-26 14:32:30.889 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2019191453 is_strict call failed!
+2022-02-27 14:33:53.413 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2019191453 is_strict call failed!
 Traceback (most recent call last):
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 103, in <module>
     facade(
-    └ <function facade at 0x7f44d253db40>
+    └ <function facade at 0x7efbfe0fdb40>
 
   File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/hdx/facades/keyword_arguments.py", line 37, in facade
     projectmainfn(**kwargs)
     │               └ {'hdx_read_only': True, 'user_agent': 'hdx-scraper-iati-viz', 'preprefix': None, 'hdx_site': 'prod', 'project_config_yaml': '...
-    └ <function main at 0x7f44d0126e60>
+    └ <function main at 0x7efbfbce6e60>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 79, in main
     start(
-    └ <function start at 0x7f44d0126d40>
+    └ <function start at 0x7efbfbce6d40>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/main.py", line 117, in start
     activity, skipped = Activity.get_activity(configuration, dactivity)
-    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7f44a56ab340>
+    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7efb63e8e2f0>
     │                   │        │            └ ordereddict([('hdx_prod_site', ordereddict([('url', 'https://data.humdata.org')])), ('hdx_demo_site', ordereddict([('url', 'h...
-    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7f44d01268c0>)>
+    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7efbfbce68c0>)>
     │                   └ <class 'iati.activity.Activity'>
-    └ <iati.activity.Activity object at 0x7f44d3dbff70>
+    └ <iati.activity.Activity object at 0x7efa1a09ffd0>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 59, in get_activity
     activity = Activity(dactivity)
-               │        └ <diterator.wrappers.Activity object at 0x7f44a56ab340>
+               │        └ <diterator.wrappers.Activity object at 0x7efb63e8e2f0>
                └ <class 'iati.activity.Activity'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 19, in __init__
     self.strict = self.is_strict()
-    │             │    └ <function Activity.is_strict at 0x7f44d0126950>
-    │             └ <iati.activity.Activity object at 0x7f44cf063fa0>
-    └ <iati.activity.Activity object at 0x7f44cf063fa0>
+    │             │    └ <function Activity.is_strict at 0x7efbfbce6950>
+    │             └ <iati.activity.Activity object at 0x7efbb28b6560>
+    └ <iati.activity.Activity object at 0x7efbb28b6560>
 
 > File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 69, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
-       │       │      │               │    │         └ <property object at 0x7f44d25718f0>
-       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7f44a56ab340>
-       │       │      │               └ <iati.activity.Activity object at 0x7f44cf063fa0>
-       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7f44d253fd90>)>
+       │       │      │               │    │         └ <property object at 0x7efbfe129580>
+       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7efb63e8e2f0>
+       │       │      │               └ <iati.activity.Activity object at 0x7efbb28b6560>
+       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7efbfe0ffd90>)>
        │       └ <class 'iati.covid_checks.CovidChecks'>
        └ <class 'iati.lookups.Lookups'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
-       │   │                      │   └ <property object at 0x7f44d2572b60>
-       │   │                      └ <diterator.wrappers.CodedItem object at 0x7f42e9645e70>
-       │   └ <property object at 0x7f44d2572bb0>
-       └ <diterator.wrappers.CodedItem object at 0x7f42e9645e70>
+       │   │                      │   └ <property object at 0x7efbfe12a7f0>
+       │   │                      └ <diterator.wrappers.CodedItem object at 0x7efa1c7f6770>
+       │   └ <property object at 0x7efbfe12a840>
+       └ <diterator.wrappers.CodedItem object at 0x7efa1c7f6770>
 
 AttributeError: 'NoneType' object has no attribute 'upper'
-2022-02-26 14:32:30.897 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2019191451 is_strict call failed!
+2022-02-27 14:33:53.420 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2019191451 is_strict call failed!
 Traceback (most recent call last):
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 103, in <module>
     facade(
-    └ <function facade at 0x7f44d253db40>
+    └ <function facade at 0x7efbfe0fdb40>
 
   File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/hdx/facades/keyword_arguments.py", line 37, in facade
     projectmainfn(**kwargs)
     │               └ {'hdx_read_only': True, 'user_agent': 'hdx-scraper-iati-viz', 'preprefix': None, 'hdx_site': 'prod', 'project_config_yaml': '...
-    └ <function main at 0x7f44d0126e60>
+    └ <function main at 0x7efbfbce6e60>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 79, in main
     start(
-    └ <function start at 0x7f44d0126d40>
+    └ <function start at 0x7efbfbce6d40>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/main.py", line 117, in start
     activity, skipped = Activity.get_activity(configuration, dactivity)
-    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7f44a56ab2e0>
+    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7efb63e8e290>
     │                   │        │            └ ordereddict([('hdx_prod_site', ordereddict([('url', 'https://data.humdata.org')])), ('hdx_demo_site', ordereddict([('url', 'h...
-    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7f44d01268c0>)>
+    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7efbfbce68c0>)>
     │                   └ <class 'iati.activity.Activity'>
-    └ <iati.activity.Activity object at 0x7f44cf063fa0>
+    └ <iati.activity.Activity object at 0x7efbb28b6560>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 59, in get_activity
     activity = Activity(dactivity)
-               │        └ <diterator.wrappers.Activity object at 0x7f44a56ab2e0>
+               │        └ <diterator.wrappers.Activity object at 0x7efb63e8e290>
                └ <class 'iati.activity.Activity'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 19, in __init__
     self.strict = self.is_strict()
-    │             │    └ <function Activity.is_strict at 0x7f44d0126950>
-    │             └ <iati.activity.Activity object at 0x7f42e9645060>
-    └ <iati.activity.Activity object at 0x7f42e9645060>
+    │             │    └ <function Activity.is_strict at 0x7efbfbce6950>
+    │             └ <iati.activity.Activity object at 0x7efa1c7f5270>
+    └ <iati.activity.Activity object at 0x7efa1c7f5270>
 
 > File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 69, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
-       │       │      │               │    │         └ <property object at 0x7f44d25718f0>
-       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7f44a56ab2e0>
-       │       │      │               └ <iati.activity.Activity object at 0x7f42e9645060>
-       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7f44d253fd90>)>
+       │       │      │               │    │         └ <property object at 0x7efbfe129580>
+       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7efb63e8e290>
+       │       │      │               └ <iati.activity.Activity object at 0x7efa1c7f5270>
+       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7efbfe0ffd90>)>
        │       └ <class 'iati.covid_checks.CovidChecks'>
        └ <class 'iati.lookups.Lookups'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
-       │   │                      │   └ <property object at 0x7f44d2572b60>
-       │   │                      └ <diterator.wrappers.CodedItem object at 0x7f42e9645e70>
-       │   └ <property object at 0x7f44d2572bb0>
-       └ <diterator.wrappers.CodedItem object at 0x7f42e9645e70>
+       │   │                      │   └ <property object at 0x7efbfe12a7f0>
+       │   │                      └ <diterator.wrappers.CodedItem object at 0x7efa1c7f6770>
+       │   └ <property object at 0x7efbfe12a840>
+       └ <diterator.wrappers.CodedItem object at 0x7efa1c7f6770>
 
 AttributeError: 'NoneType' object has no attribute 'upper'
-2022-02-26 14:32:30.905 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2019191448 is_strict call failed!
+2022-02-27 14:33:53.655 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2019191448 is_strict call failed!
 Traceback (most recent call last):
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 103, in <module>
     facade(
-    └ <function facade at 0x7f44d253db40>
+    └ <function facade at 0x7efbfe0fdb40>
 
   File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/hdx/facades/keyword_arguments.py", line 37, in facade
     projectmainfn(**kwargs)
     │               └ {'hdx_read_only': True, 'user_agent': 'hdx-scraper-iati-viz', 'preprefix': None, 'hdx_site': 'prod', 'project_config_yaml': '...
-    └ <function main at 0x7f44d0126e60>
+    └ <function main at 0x7efbfbce6e60>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 79, in main
     start(
-    └ <function start at 0x7f44d0126d40>
+    └ <function start at 0x7efbfbce6d40>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/main.py", line 117, in start
     activity, skipped = Activity.get_activity(configuration, dactivity)
-    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7f44a56ab280>
+    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7efb63e8e1d0>
     │                   │        │            └ ordereddict([('hdx_prod_site', ordereddict([('url', 'https://data.humdata.org')])), ('hdx_demo_site', ordereddict([('url', 'h...
-    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7f44d01268c0>)>
+    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7efbfbce68c0>)>
     │                   └ <class 'iati.activity.Activity'>
-    └ <iati.activity.Activity object at 0x7f42e9645060>
+    └ <iati.activity.Activity object at 0x7efa1c7f6d10>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 59, in get_activity
     activity = Activity(dactivity)
-               │        └ <diterator.wrappers.Activity object at 0x7f44a56ab280>
+               │        └ <diterator.wrappers.Activity object at 0x7efb63e8e1d0>
                └ <class 'iati.activity.Activity'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 19, in __init__
     self.strict = self.is_strict()
-    │             │    └ <function Activity.is_strict at 0x7f44d0126950>
-    │             └ <iati.activity.Activity object at 0x7f44d3dbff70>
-    └ <iati.activity.Activity object at 0x7f44d3dbff70>
+    │             │    └ <function Activity.is_strict at 0x7efbfbce6950>
+    │             └ <iati.activity.Activity object at 0x7efa1c7f7730>
+    └ <iati.activity.Activity object at 0x7efa1c7f7730>
 
 > File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 69, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
-       │       │      │               │    │         └ <property object at 0x7f44d25718f0>
-       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7f44a56ab280>
-       │       │      │               └ <iati.activity.Activity object at 0x7f44d3dbff70>
-       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7f44d253fd90>)>
+       │       │      │               │    │         └ <property object at 0x7efbfe129580>
+       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7efb63e8e1d0>
+       │       │      │               └ <iati.activity.Activity object at 0x7efa1c7f7730>
+       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7efbfe0ffd90>)>
        │       └ <class 'iati.covid_checks.CovidChecks'>
        └ <class 'iati.lookups.Lookups'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
-       │   │                      │   └ <property object at 0x7f44d2572b60>
-       │   │                      └ <diterator.wrappers.CodedItem object at 0x7f42e9647340>
-       │   └ <property object at 0x7f44d2572bb0>
-       └ <diterator.wrappers.CodedItem object at 0x7f42e9647340>
+       │   │                      │   └ <property object at 0x7efbfe12a7f0>
+       │   │                      └ <diterator.wrappers.CodedItem object at 0x7efa1a0a6350>
+       │   └ <property object at 0x7efbfe12a840>
+       └ <diterator.wrappers.CodedItem object at 0x7efa1a0a6350>
 
 AttributeError: 'NoneType' object has no attribute 'upper'
-2022-02-26 14:32:30.912 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2019191446 is_strict call failed!
+2022-02-27 14:33:53.661 | ERROR    | iati.activity:is_strict:78 - Activity FI-3-2020-2019191446 is_strict call failed!
 Traceback (most recent call last):
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 103, in <module>
     facade(
-    └ <function facade at 0x7f44d253db40>
+    └ <function facade at 0x7efbfe0fdb40>
 
   File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/hdx/facades/keyword_arguments.py", line 37, in facade
     projectmainfn(**kwargs)
     │               └ {'hdx_read_only': True, 'user_agent': 'hdx-scraper-iati-viz', 'preprefix': None, 'hdx_site': 'prod', 'project_config_yaml': '...
-    └ <function main at 0x7f44d0126e60>
+    └ <function main at 0x7efbfbce6e60>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/run.py", line 79, in main
     start(
-    └ <function start at 0x7f44d0126d40>
+    └ <function start at 0x7efbfbce6d40>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/main.py", line 117, in start
     activity, skipped = Activity.get_activity(configuration, dactivity)
-    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7f44a56ab220>
+    │                   │        │            │              └ <diterator.wrappers.Activity object at 0x7efb63e8e170>
     │                   │        │            └ ordereddict([('hdx_prod_site', ordereddict([('url', 'https://data.humdata.org')])), ('hdx_demo_site', ordereddict([('url', 'h...
-    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7f44d01268c0>)>
+    │                   │        └ <staticmethod(<function Activity.get_activity at 0x7efbfbce68c0>)>
     │                   └ <class 'iati.activity.Activity'>
-    └ <iati.activity.Activity object at 0x7f44d3dbff70>
+    └ <iati.activity.Activity object at 0x7efa1c7f7730>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 59, in get_activity
     activity = Activity(dactivity)
-               │        └ <diterator.wrappers.Activity object at 0x7f44a56ab220>
+               │        └ <diterator.wrappers.Activity object at 0x7efb63e8e170>
                └ <class 'iati.activity.Activity'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 19, in __init__
     self.strict = self.is_strict()
-    │             │    └ <function Activity.is_strict at 0x7f44d0126950>
-    │             └ <iati.activity.Activity object at 0x7f44cf063fa0>
-    └ <iati.activity.Activity object at 0x7f44cf063fa0>
+    │             │    └ <function Activity.is_strict at 0x7efbfbce6950>
+    │             └ <iati.activity.Activity object at 0x7efbb28b6560>
+    └ <iati.activity.Activity object at 0x7efbb28b6560>
 
 > File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/activity.py", line 69, in is_strict
     or Lookups.checks.has_desired_tag(self.dactivity.tags)
-       │       │      │               │    │         └ <property object at 0x7f44d25718f0>
-       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7f44a56ab220>
-       │       │      │               └ <iati.activity.Activity object at 0x7f44cf063fa0>
-       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7f44d253fd90>)>
+       │       │      │               │    │         └ <property object at 0x7efbfe129580>
+       │       │      │               │    └ <diterator.wrappers.Activity object at 0x7efb63e8e170>
+       │       │      │               └ <iati.activity.Activity object at 0x7efbb28b6560>
+       │       │      └ <staticmethod(<function CovidChecks.has_desired_tag at 0x7efbfe0ffd90>)>
        │       └ <class 'iati.covid_checks.CovidChecks'>
        └ <class 'iati.lookups.Lookups'>
 
   File "/home/runner/work/hdx-scraper-iati-viz/hdx-scraper-iati-viz/iati/covid_checks.py", line 24, in has_desired_tag
     if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
-       │   │                      │   └ <property object at 0x7f44d2572b60>
-       │   │                      └ <diterator.wrappers.CodedItem object at 0x7f42e9644400>
-       │   └ <property object at 0x7f44d2572bb0>
-       └ <diterator.wrappers.CodedItem object at 0x7f42e9644400>
+       │   │                      │   └ <property object at 0x7efbfe12a7f0>
+       │   │                      └ <diterator.wrappers.CodedItem object at 0x7efa1a0a52d0>
+       │   └ <property object at 0x7efbfe12a840>
+       └ <diterator.wrappers.CodedItem object at 0x7efa1a0a52d0>
 
 AttributeError: 'NoneType' object has no attribute 'upper'
