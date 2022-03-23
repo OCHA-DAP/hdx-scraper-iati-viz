@@ -112,20 +112,77 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
 )"
   southsudan_query: "
 SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
-    SELECT aid FROM xson WHERE
-    (
-        root='/iati-activities/iati-activity/humanitarian-scope' AND
-        xson->>'@type'='2' AND
-        xson->>'@vocabulary'='2-1' AND
-        xson->>'@code'='HSSD22'
-    ) OR (
-        root='/iati-activities/iati-activity/humanitarian-scope' AND
-        xson->>'@type'='2' AND
-        xson->>'@vocabulary'='2-1' AND
-        xson->>'@code'='HSSD21'
+    SELECT aid FROM xson WHERE aid IN (
+        SELECT DISTINCT x1.aid FROM (
+        
+            /* The transaction is humanitarian and goes to any of the countries */
+            SELECT aid FROM xson WHERE
+                root = '/iati-activities/iati-activity/transaction' AND
+                xson->>'@humanitarian' = '1' AND
+                xson->>'/recipient-country@code' IN ( 'ET' , 'KN' , 'UG' )
+            
+            UNION
+            
+            /* The activity is humanitarian and lists any of the countries */
+            SELECT aid FROM xson WHERE
+                root = '/iati-activities/iati-activity' AND
+                xson->>'@humanitarian' = '1' AND
+                aid in (
+                    SELECT aid FROM xson WHERE
+                    root = '/iati-activities/iati-activity/recipient-country' AND
+                    xson->>'@code' IN ( 'ET' , 'KN' , 'UG' )
+                )
+            
+            ) AS x1
+            
+            INNER JOIN
+            
+            (
+            
+                /* Narrative search in transaction description */
+                SELECT aid FROM xson WHERE
+                    root='/iati-activities/iati-activity/transaction/description/narrative' AND to_tsvector('simple', xson->>'') @@ to_tsquery('simple','''SOUTH SUDAN''')
+            
+            ) AS x2 ON x1.aid=x2.aid
     ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {} desc
 )"
-  
+  ukraine_query: "
+SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
+    SELECT aid FROM xson WHERE aid IN (
+        SELECT DISTINCT x1.aid FROM (
+        
+            /* The transaction is humanitarian and goes to any of the countries */
+            SELECT aid FROM xson WHERE
+                root = '/iati-activities/iati-activity/transaction' AND
+                xson->>'@humanitarian' = '1' AND
+                xson->>'/recipient-country@code' IN ( 'PL' , 'MD' , 'SK', 'UA' )
+            
+            UNION
+            
+            /* The activity is humanitarian and lists any of the countries */
+            SELECT aid FROM xson WHERE
+                root = '/iati-activities/iati-activity' AND
+                xson->>'@humanitarian' = '1' AND
+                aid in (
+                    SELECT aid FROM xson WHERE
+                    root = '/iati-activities/iati-activity/recipient-country' AND
+                    xson->>'@code' IN ( 'PL' , 'MD' , 'SK', 'UA' )
+                )
+            
+            ) AS x1
+            
+            INNER JOIN
+            
+            (
+            
+                /* Narrative search in transaction description */
+                SELECT aid FROM xson WHERE
+                    root='/iati-activities/iati-activity/transaction/description/narrative' AND to_tsvector('simple', xson->>'') @@ to_tsquery('simple','''UKRAINE''')
+            
+            ) AS x2 ON x1.aid=x2.aid
+    ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {} desc
+)"
+
 lookups:
   filters_url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQxyJ0Y658cIIN1NpbHl4Ah1bZjNnWao7oawdLkl4T_5GC4BF-KMFnzKuzupU-w2Js1_Zy-VmaFJdIW/pub?gid=0&single=true&output=csv"
   blocklist_url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQxyJ0Y658cIIN1NpbHl4Ah1bZjNnWao7oawdLkl4T_5GC4BF-KMFnzKuzupU-w2Js1_Zy-VmaFJdIW/pub?gid=1705733671&single=true&output=csv"
