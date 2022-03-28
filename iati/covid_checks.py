@@ -18,6 +18,10 @@ class CovidChecks:
         return False
 
     @staticmethod
+    def has_desired_marker(markers):
+        return False
+
+    @staticmethod
     def has_desired_tag(tags):
         """Check if the COVID-19 tag is present"""
         for tag in tags:
@@ -37,6 +41,6 @@ class CovidChecks:
     def is_desired_narrative(narratives):
         """Check a dict of different-language text for the string "COVID-19" (case-insensitive)"""
         for lang, text in narratives.items():
-            if "COVID-19" in text.upper():
+            if "covid-19" in text.lower():
                 return True
         return False

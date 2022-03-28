@@ -1,12 +1,18 @@
-class EbolaChecks:
+class UkraineChecks:
     @staticmethod
     def has_desired_scope(scopes):
-        """Check if the Ebola code is present"""
+        """Check if the Ukraine code is present"""
         for scope in scopes:
             if (
+                scope.type == "1"
+                and scope.vocabulary == "1-2"
+                and scope.code.upper() == "OT-2022-000157-UKR"
+            ):
+                return True
+            elif (
                 scope.type == "2"
                 and scope.vocabulary == "2-1"
-                and scope.code.upper() == "OXEBOLA1415"
+                and scope.code.upper() in ("FUKR22", "HUKR22", "RYKRN22")
             ):
                 return True
         return False
@@ -25,8 +31,4 @@ class EbolaChecks:
 
     @staticmethod
     def is_desired_narrative(narratives):
-        """Check a dict of different-language text for the string "EBOLA" (case-insensitive)"""
-        for lang, text in narratives.items():
-            if "ebola" in text.lower():
-                return True
         return False
