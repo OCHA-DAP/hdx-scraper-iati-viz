@@ -29,7 +29,7 @@ jobs:
         python run.py --what=ukraine
         cp errors.log output_ukraine
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.2.5
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages
         folder: output_ukraine
