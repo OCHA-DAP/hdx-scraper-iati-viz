@@ -1,14 +1,14 @@
 Reporting org id,Reporting org name,Reporting org type,Provider org id,Provider org name,Provider org type,Receiver org id,Receiver org name,Receiver org type,Humanitarian?,Strict?,Transaction direction,Total money
 #org+id+reporting,#org+name+reporting,#org+reporting+type,#org+id+provider,#org+name+provider,#org+type+provider,#org+id+receiver,#org+name+receiver,#org+type+receiver,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_direction,#value+total
-xm-dac-21016,International Committee of the Red Cross,40,,,,,(Direct expenditure),,1,0,outgoing,120845254
+xm-dac-21016,International Committee of the Red Cross,40,,,,,(Direct expenditure),,1,0,outgoing,123202978
 xm-dac-21016,International Committee of the Red Cross,40,,Austria,10,,,,1,0,incoming,572977
 xm-dac-21016,International Committee of the Red Cross,40,,Bulgaria,10,,,,1,0,incoming,55300
-xm-dac-21016,International Committee of the Red Cross,40,ca-3,CANADA DFATD GVT,10,,,,1,0,incoming,847242
+xm-dac-21016,International Committee of the Red Cross,40,ca-3,Canada - Global Affairs Canada | Affaires mondiales Canada,10,,,,1,0,incoming,847242
 xm-dac-21016,International Committee of the Red Cross,40,,Denmark RC,22,,,,1,0,incoming,12525
 xm-dac-21016,International Committee of the Red Cross,40,,Estonia,10,,,,1,0,incoming,218513
-xm-dac-21016,International Committee of the Red Cross,40,xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,40,,,,1,0,incoming,10526991
-xm-dac-21016,International Committee of the Red Cross,40,fi-3,FINLAND MFA GVT,10,,,,1,0,incoming,1017227
+xm-dac-21016,International Committee of the Red Cross,40,xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,1,0,incoming,10526991
 xm-dac-21016,International Committee of the Red Cross,40,,"FONDATIONS, FUNDS",60,,,,1,0,incoming,332632
+xm-dac-21016,International Committee of the Red Cross,40,fi-3,Finland - Ministry of Foreign Affairs,10,,,,1,0,incoming,1017227
 xm-dac-21016,International Committee of the Red Cross,40,,Finland RC,22,,,,1,0,incoming,54923
 xm-dac-21016,International Committee of the Red Cross,40,,France,10,,,,1,0,incoming,452900
 xm-dac-21016,International Committee of the Red Cross,40,de-1,Germany,10,,,,1,0,incoming,11445304
