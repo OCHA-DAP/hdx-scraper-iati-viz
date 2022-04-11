@@ -26,7 +26,7 @@ def retrieve_dportal(configuration, retriever, whattorun, dportal_params=""):
     url = dportal_configuration["url"] % quote(
         dportal_configuration[f"{whattorun}_query"].format(dportal_params)
     )
-    return filename, retriever.retrieve_file(
+    return filename, retriever.download_file(
         url, filename, "D-Portal activities", False
     )
 
