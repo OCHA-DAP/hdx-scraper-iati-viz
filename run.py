@@ -21,7 +21,7 @@ VERSION = 3.0
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Covid IATI Explorer")
+    parser = argparse.ArgumentParser(description="IATI Explorer")
     parser.add_argument("-ua", "--user_agent", default=None, help="user agent")
     parser.add_argument("-pp", "--preprefix", default=None, help="preprefix")
     parser.add_argument("-hs", "--hdx_site", default=None, help="HDX site to use")
