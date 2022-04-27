@@ -9715,6 +9715,442 @@
   <related-activity ref="XM-DAC-41121-2022-EUR" type="1"></related-activity>
  </iati-activity>
 
+ <iati-activity default-currency="USD" dstore:dataset="unhcr-2022" dstore:index="68" hierarchy="3" humanitarian="1" iati-activities:version="2.03" xml:lang="EN" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities" xmlns:unhcr="http://reporting.unhcr.org/">
+  <iati-identifier>XM-DAC-41121-2022-EUR-HUNMCO</iati-identifier>
+  <reporting-org ref="XM-DAC-41121" type="40">
+   <narrative xml:lang="EN">United Nations High Commissioner for Refugees (UNHCR)</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="FR">Bureau multipays du HCR en Hongrie</narrative>
+   <narrative xml:lang="EN">UNHCR Hungary Multi-Country Office</narrative>
+  </title>
+  <description type="1">
+   <narrative xml:lang="FR">Cette activit&#xE9; montre les d&#xE9;tails de Hongrie bureau r&#xE9;gional du HCR pour 2022, y compris le budget, les financements, les d&#xE9;penses et les r&#xE9;sultats. Le bureau r&#xE9;gional de Hongrie coordonne les activit&#xE9;s en Hongrie, en R&#xE9;publique tch&#xE8;que et couvre &#xE9;galement la R&#xE9;publique de Moldova, la Slov&#xE9;nie et la Slovaquie.</narrative>
+   <narrative xml:lang="EN">This activity shows details of the UNHCR Hungary Multi-Country Office for 2022 including the budget, funding, expenditure and results.  The Hungary Multi-Country Office coordinates activities in Hungary, the Czech Republic, the Republic of Moldova, the Slovak Republic and Slovenia.</narrative>
+  </description>
+  <description type="3">
+   <narrative xml:lang="FR">Le HCR, l&apos;Agence des Nations Unies pour les r&#xE9;fugi&#xE9;s, est une organisation internationale qui a pour mission de sauver des vies, de prot&#xE9;ger les droits des r&#xE9;fugi&#xE9;s et de construire un avenir meilleur pour les r&#xE9;fugi&#xE9;s, les communaut&#xE9;s d&#xE9;plac&#xE9;es et les apatrides.</narrative>
+   <narrative xml:lang="EN">UNHCR, the UN Refugee Agency, is a global organisation dedicated to saving lives, protecting rights and building a better future for refugees, forcibly displaced communities and stateless people.</narrative>
+  </description>
+  <participating-org role="1" type="22">
+   <narrative xml:lang="EN">Australia for UNHCR</narrative>
+  </participating-org>
+  <participating-org role="1" type="22">
+   <narrative xml:lang="EN">Espa&#xF1;a con ACNUR (Spain)</narrative>
+  </participating-org>
+  <participating-org ref="XI-IATI-EC_ECHO" role="1" type="15">
+   <narrative xml:lang="EN">European Commission - Humanitarian Aid &amp; Civil Protection</narrative>
+  </participating-org>
+  <participating-org role="1" type="22">
+   <narrative xml:lang="EN">Fundaci&#xF3;n ACNUR Comit&#xE9; Argentino (Argentina)</narrative>
+  </participating-org>
+  <participating-org role="1" type="10">
+   <narrative xml:lang="EN">Government of Czechia</narrative>
+  </participating-org>
+  <participating-org role="1" type="10">
+   <narrative xml:lang="EN">Government of Liechtenstein</narrative>
+  </participating-org>
+  <participating-org role="1" type="10">
+   <narrative xml:lang="EN">Governmental donors of unearmarked and flexible funds</narrative>
+  </participating-org>
+  <participating-org role="1" type="22">
+   <narrative xml:lang="EN">Japan for UNHCR</narrative>
+  </participating-org>
+  <participating-org ref="XM-DAC-3-1" role="1" type="10">
+   <narrative xml:lang="EN">Ministry of Foreign Affairs, Denmark</narrative>
+  </participating-org>
+  <participating-org role="1" type="70">
+   <narrative xml:lang="EN">Private donors</narrative>
+  </participating-org>
+  <participating-org role="1" type="22">
+   <narrative xml:lang="EN">Sweden for UNHCR</narrative>
+  </participating-org>
+  <participating-org ref="SE-0" role="1" type="10">
+   <narrative xml:lang="EN">Sweden, through Swedish International Development Cooperation Agency (Sida)</narrative>
+  </participating-org>
+  <participating-org role="1" type="22">
+   <narrative xml:lang="EN">Switzerland for UNHCR</narrative>
+  </participating-org>
+  <participating-org role="1" type="22">
+   <narrative xml:lang="EN">UK for UNHCR</narrative>
+  </participating-org>
+  <participating-org role="1" type="22">
+   <narrative xml:lang="EN">UNO-Fl&#xFC;chtlingshilfe (Germany)</narrative>
+  </participating-org>
+  <participating-org role="1" type="22">
+   <narrative xml:lang="EN">USA for UNHCR</narrative>
+  </participating-org>
+  <participating-org ref="XM-OCHA-CERF" role="1" type="40">
+   <narrative xml:lang="EN">United Nations Central Emergency Response Fund (CERF)</narrative>
+  </participating-org>
+  <participating-org ref="XM-DAC-41121" role="2" type="40">
+   <narrative xml:lang="EN">United Nations High Commissioner for Refugees (UNHCR)</narrative>
+  </participating-org>
+  <participating-org ref="XM-DAC-41121" role="4" type="40">
+   <narrative xml:lang="EN">United Nations High Commissioner for Refugees (UNHCR)</narrative>
+  </participating-org>
+  <activity-status code="1"></activity-status>
+  <activity-date iso-date="2022-01-01" type="1"></activity-date>
+  <activity-date iso-date="2022-01-01" type="2"></activity-date>
+  <activity-date iso-date="2022-12-31" type="3"></activity-date>
+  <contact-info type="1">
+   <organisation>
+    <narrative xml:lang="EN">United Nations High Commissioner for Refugees (UNHCR)</narrative>
+   </organisation>
+   <email>IATI@unhcr.org</email>
+   <website>http://www.unhcr.org/</website>
+   <mailing-address>
+    <narrative xml:lang="EN">Case Postale 2500, CH-1211 Gen&#xE8;ve 2 D&#xE9;p&#xF4;t, Suisse</narrative>
+   </mailing-address>
+  </contact-info>
+  <activity-scope code="4"></activity-scope>
+  <recipient-country code="HU" percentage="100"></recipient-country>
+  <location ref="MDAP000254">
+   <location-reach code="1"></location-reach>
+   <name>
+    <narrative xml:lang="EN">Chisinau</narrative>
+   </name>
+   <description>
+    <narrative xml:lang="EN">UNHCR Country Office</narrative>
+   </description>
+   <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+    <pos>47.0176 28.824</pos>
+   </point>
+   <exactness code="1"></exactness>
+   <location-class code="3"></location-class>
+  </location>
+  <location ref="BLRP000035">
+   <location-reach code="1"></location-reach>
+   <name>
+    <narrative xml:lang="EN">Minsk</narrative>
+   </name>
+   <description>
+    <narrative xml:lang="EN">UNHCR Country Office</narrative>
+   </description>
+   <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+    <pos>53.902 27.557</pos>
+   </point>
+   <exactness code="1"></exactness>
+   <location-class code="3"></location-class>
+  </location>
+  <location ref="SVNP000004">
+   <location-reach code="1"></location-reach>
+   <name>
+    <narrative xml:lang="EN">Lendava</narrative>
+   </name>
+   <description>
+    <narrative xml:lang="EN">UNHCR Field Unit</narrative>
+   </description>
+   <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+    <pos>46.5667 16.45</pos>
+   </point>
+   <exactness code="1"></exactness>
+   <location-class code="3"></location-class>
+  </location>
+  <location ref="HUNP004553">
+   <location-reach code="1"></location-reach>
+   <name>
+    <narrative xml:lang="EN">Szeged</narrative>
+   </name>
+   <description>
+    <narrative xml:lang="EN">UNHCR Field Unit</narrative>
+   </description>
+   <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+    <pos>46.253 20.1414</pos>
+   </point>
+   <exactness code="1"></exactness>
+   <location-class code="3"></location-class>
+  </location>
+  <location ref="CZEP000102">
+   <location-reach code="1"></location-reach>
+   <name>
+    <narrative xml:lang="EN">Praha</narrative>
+   </name>
+   <description>
+    <narrative xml:lang="EN">UNHCR Liaison Office</narrative>
+   </description>
+   <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+    <pos>50.0783 14.4048</pos>
+   </point>
+   <exactness code="1"></exactness>
+   <location-class code="3"></location-class>
+  </location>
+  <location ref="HUNP000749">
+   <location-reach code="1"></location-reach>
+   <name>
+    <narrative xml:lang="EN">Budapest</narrative>
+   </name>
+   <description>
+    <narrative xml:lang="EN">UNHCR Multi-Country Office</narrative>
+   </description>
+   <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+    <pos>47.5162 19.0185</pos>
+   </point>
+   <exactness code="1"></exactness>
+   <location-class code="3"></location-class>
+  </location>
+  <location ref="SVNP000287">
+   <location-reach code="1"></location-reach>
+   <name>
+    <narrative xml:lang="EN">Ljubljana</narrative>
+   </name>
+   <description>
+    <narrative xml:lang="EN">UNHCR National Office</narrative>
+   </description>
+   <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+    <pos>46.064 14.51</pos>
+   </point>
+   <exactness code="1"></exactness>
+   <location-class code="3"></location-class>
+  </location>
+  <sector code="OA1" percentage="14.16" vocabulary="98">
+   <narrative xml:lang="EN">Access to Territory, Registration and Documentation</narrative>
+  </sector>
+  <sector code="IA1" percentage="100" vocabulary="99">
+   <narrative xml:lang="EN">Attaining Favorable Protection Environments</narrative>
+  </sector>
+  <sector code="5403" percentage="5.23" vocabulary="10">
+   <narrative xml:lang="EN">Child Protection</narrative>
+  </sector>
+  <sector code="OA5" percentage="5.06" vocabulary="98">
+   <narrative xml:lang="EN">Child Protection</narrative>
+  </sector>
+  <sector code="OA7" percentage="12.08" vocabulary="98">
+   <narrative xml:lang="EN">Community Engagement and Women&apos;s Empowerment</narrative>
+  </sector>
+  <sector code="2" percentage="18.8" vocabulary="10">
+   <narrative xml:lang="EN">Early Recovery</narrative>
+  </sector>
+  <sector code="EA20" percentage="3.18" vocabulary="98">
+   <narrative xml:lang="EN">External Engagement and Resource Mobilization</narrative>
+  </sector>
+  <sector code="5404" percentage="13.07" vocabulary="10">
+   <narrative xml:lang="EN">Gender Based Violence</narrative>
+  </sector>
+  <sector code="E02" percentage="100" vocabulary="12">
+   <narrative xml:lang="EN">Humanitarian Assistance</narrative>
+  </sector>
+  <sector code="OA16" percentage="18.21" vocabulary="98">
+   <narrative xml:lang="EN">Local Integration and other Local Solutions</narrative>
+  </sector>
+  <sector code="72010" percentage="96.82" vocabulary="1">
+   <narrative xml:lang="EN">Material relief assistance and services</narrative>
+  </sector>
+  <sector code="OA3" percentage="4.04" vocabulary="98">
+   <narrative xml:lang="EN">Protection Policy and Law</narrative>
+  </sector>
+  <sector code="10" percentage="62.9" vocabulary="10">
+   <narrative xml:lang="EN">Protection</narrative>
+  </sector>
+  <sector code="72050" percentage="3.18" vocabulary="1">
+   <narrative xml:lang="EN">Relief co-ordination and support services</narrative>
+  </sector>
+  <sector code="OA6" percentage="8.8" vocabulary="98">
+   <narrative xml:lang="EN">Safety and Access to Justice</narrative>
+  </sector>
+  <sector code="OA4" percentage="12.65" vocabulary="98">
+   <narrative xml:lang="EN">Sexual and Gender-based Violence</narrative>
+  </sector>
+  <sector code="OA2" percentage="21.82" vocabulary="98">
+   <narrative xml:lang="EN">Status Determination</narrative>
+  </sector>
+  <tag code="5" vocabulary="2">
+   <narrative xml:lang="EN">05. Gender equality</narrative>
+  </tag>
+  <tag code="10" vocabulary="2">
+   <narrative xml:lang="EN">10. Reduced inequalities</narrative>
+  </tag>
+  <tag code="16" vocabulary="2">
+   <narrative xml:lang="EN">16. Peace, justice and strong institutions</narrative>
+  </tag>
+  <tag code="17" vocabulary="2">
+   <narrative xml:lang="EN">17. Partnerships for the goals</narrative>
+  </tag>
+  <humanitarian-scope code="GLOBAL-APPEAL-2022" type="2" vocabulary="99" vocabulary-uri="http://reporting.unhcr.org/publications">
+   <narrative xml:lang="FR">Appel global 2022</narrative>
+   <narrative xml:lang="EN">Global Appeal 2022</narrative>
+  </humanitarian-scope>
+  <humanitarian-scope code="RUKRN22" type="2" vocabulary="2-1">
+   <narrative xml:lang="EN">Ukraine Regional Refugee Response Plan 2022 (March - August 2022)</narrative>
+  </humanitarian-scope>
+  <humanitarian-scope code="UKRAINE-SITUATION-2022" type="2" vocabulary="99" vocabulary-uri="https://reporting.unhcr.org/ukraine-situation-supplementary-appeal">
+   <narrative xml:lang="EN">Ukraine Situation - Supplementary Appeal 2022</narrative>
+  </humanitarian-scope>
+  <collaboration-type code="4"></collaboration-type>
+  <default-flow-type code="10"></default-flow-type>
+  <default-finance-type code="110"></default-finance-type>
+  <default-aid-type code="B02" vocabulary="1"></default-aid-type>
+  <default-tied-status code="5"></default-tied-status>
+  <budget status="2" type="2">
+   <period-start iso-date="2022-01-01"></period-start>
+   <period-end iso-date="2022-12-31"></period-end>
+   <value currency="USD" value-date="2021-08-30">92252823</value>
+  </budget>
+  <capital-spend percentage="0"></capital-spend>
+  <transaction ref="F0003">
+   <transaction-type code="11"></transaction-type>
+   <transaction-date iso-date="2021-11-04"></transaction-date>
+   <value currency="SEK" value-date="2021-11-04">10000000</value>
+   <description>
+    <narrative xml:lang="EN">Ukraine Regional Refugee Response Plan (RUKRN22)</narrative>
+   </description>
+   <provider-org ref="SE-0" type="10">
+    <narrative xml:lang="EN">Sweden, through Swedish International Development Cooperation Agency (Sida)</narrative>
+   </provider-org>
+   <aid-type code="2" vocabulary="2"></aid-type>
+   <aid-type code="B03" vocabulary="1"></aid-type>
+   <unhcr:value-USD>1169043.722</unhcr:value-USD>
+  </transaction>
+  <transaction ref="F5023">
+   <transaction-type code="11"></transaction-type>
+   <transaction-date iso-date="2022-01-31"></transaction-date>
+   <value currency="USD" value-date="2022-01-31">335</value>
+   <description>
+    <narrative xml:lang="EN">Monthly contribution summary</narrative>
+   </description>
+   <provider-org type="70">
+    <narrative xml:lang="EN">Private donors</narrative>
+   </provider-org>
+   <aid-type code="3" vocabulary="2"></aid-type>
+   <aid-type code="B03" vocabulary="1"></aid-type>
+   <unhcr:value-USD>335.042</unhcr:value-USD>
+  </transaction>
+  <transaction ref="F5023">
+   <transaction-type code="11"></transaction-type>
+   <transaction-date iso-date="2022-02-28"></transaction-date>
+   <value currency="USD" value-date="2022-02-28">154</value>
+   <description>
+    <narrative xml:lang="EN">Monthly contribution summary</narrative>
+   </description>
+   <provider-org type="70">
+    <narrative xml:lang="EN">Private donors</narrative>
+   </provider-org>
+   <aid-type code="3" vocabulary="2"></aid-type>
+   <aid-type code="B03" vocabulary="1"></aid-type>
+   <unhcr:value-USD>153.746</unhcr:value-USD>
+  </transaction>
+  <transaction ref="F0079">
+   <transaction-type code="11"></transaction-type>
+   <transaction-date iso-date="2022-03-09"></transaction-date>
+   <value currency="CZK" value-date="2022-03-09">25000000</value>
+   <description>
+    <narrative xml:lang="EN">Ukraine Regional Refugee Response Plan (RUKRN22)</narrative>
+   </description>
+   <provider-org type="10">
+    <narrative xml:lang="EN">Government of Czechia</narrative>
+   </provider-org>
+   <aid-type code="3" vocabulary="2"></aid-type>
+   <aid-type code="B03" vocabulary="1"></aid-type>
+   <unhcr:value-USD>1135847.342</unhcr:value-USD>
+  </transaction>
+  <transaction ref="F0020">
+   <transaction-type code="11"></transaction-type>
+   <transaction-date iso-date="2021-12-14"></transaction-date>
+   <value currency="CHF" value-date="2021-12-14">100000</value>
+   <description>
+    <narrative xml:lang="EN">Ukraine Regional Refugee Response Plan (RUKRN22)</narrative>
+   </description>
+   <provider-org type="10">
+    <narrative xml:lang="EN">Government of Liechtenstein</narrative>
+   </provider-org>
+   <aid-type code="3" vocabulary="2"></aid-type>
+   <aid-type code="B03" vocabulary="1"></aid-type>
+   <unhcr:value-USD>108108.108</unhcr:value-USD>
+  </transaction>
+  <transaction ref="F0082">
+   <transaction-type code="11"></transaction-type>
+   <transaction-date iso-date="2022-03-14"></transaction-date>
+   <value currency="DKK" value-date="2022-03-14">25000000</value>
+   <description>
+    <narrative xml:lang="EN">Ukraine Regional Refugee Response Plan (RUKRN22)</narrative>
+   </description>
+   <provider-org ref="XM-DAC-3-1" type="10">
+    <narrative xml:lang="EN">Ministry of Foreign Affairs, Denmark</narrative>
+   </provider-org>
+   <aid-type code="3" vocabulary="2"></aid-type>
+   <aid-type code="B03" vocabulary="1"></aid-type>
+   <unhcr:value-USD>3775294.473</unhcr:value-USD>
+  </transaction>
+  <transaction ref="F3008">
+   <transaction-type code="11"></transaction-type>
+   <transaction-date iso-date="2022-03-15"></transaction-date>
+   <value currency="EUR" value-date="2022-03-15">2997000</value>
+   <description>
+    <narrative xml:lang="EN">Ukraine Regional Refugee Response Plan (RUKRN22)</narrative>
+   </description>
+   <provider-org provider-activity-id="XI-IATI-EC_ECHO-ECHO/UKR/BUD/2022/91008" ref="XI-IATI-EC_ECHO" type="15">
+    <narrative xml:lang="EN">European Commission - Humanitarian Aid &amp; Civil Protection</narrative>
+   </provider-org>
+   <aid-type code="4" vocabulary="2"></aid-type>
+   <aid-type code="C01" vocabulary="1"></aid-type>
+   <unhcr:value-USD>3282584.885</unhcr:value-USD>
+  </transaction>
+  <transaction ref="F0072">
+   <transaction-type code="11"></transaction-type>
+   <transaction-date iso-date="2022-03-02"></transaction-date>
+   <value currency="USD" value-date="2022-03-02">1000090</value>
+   <description>
+    <narrative xml:lang="EN">Ukraine Regional Refugee Response Plan (RUKRN22)</narrative>
+   </description>
+   <provider-org provider-activity-id="XM-OCHA-CERF-22-RR-HCR-007" ref="XM-OCHA-CERF" type="40">
+    <narrative xml:lang="EN">United Nations Central Emergency Response Fund (CERF)</narrative>
+   </provider-org>
+   <aid-type code="4" vocabulary="2"></aid-type>
+   <aid-type code="C01" vocabulary="1"></aid-type>
+   <unhcr:value-USD>1000090</unhcr:value-USD>
+  </transaction>
+  <document-link format="TEXT/HTML" url="https://reporting.unhcr.org/europe">
+   <title>
+    <narrative xml:lang="EN">Operation Website</narrative>
+   </title>
+   <category code="A12"></category>
+   <language code="EN"></language>
+   <document-date iso-date="2022-02-27"></document-date>
+  </document-link>
+  <document-link format="TEXT/HTML" url="https://help.unhcr.org/">
+   <title>
+    <narrative xml:lang="EN">Information for Refugees, Asylum-seekers and Stateless People</narrative>
+   </title>
+   <category code="B16"></category>
+   <language code="EN"></language>
+   <document-date iso-date="2022-02-27"></document-date>
+  </document-link>
+  <document-link format="TEXT/HTML" url="https://www.unhcr.org/">
+   <title>
+    <narrative xml:lang="EN">UNHCR - The UN Refugee Agency</narrative>
+   </title>
+   <category code="B16"></category>
+   <language code="EN"></language>
+   <document-date iso-date="2022-02-27"></document-date>
+  </document-link>
+  <document-link format="TEXT/HTML" url="http://reporting.unhcr.org/iati">
+   <title>
+    <narrative xml:lang="EN">UNHCR IATI Overview</narrative>
+   </title>
+   <category code="B16"></category>
+   <language code="EN"></language>
+   <document-date iso-date="2022-02-27"></document-date>
+  </document-link>
+  <document-link format="TEXT/HTML" url="http://www.unhcr.org/search?page=search&amp;skip=0&amp;docid=&amp;cid=49aea93a7d&amp;coi=HUN&amp;comid=4a098fdd6">
+   <title>
+    <narrative xml:lang="EN">Latest News</narrative>
+   </title>
+   <category code="B17"></category>
+   <language code="EN"></language>
+   <document-date iso-date="2022-02-27"></document-date>
+  </document-link>
+  <document-link format="TEXT/HTML" url="http://refugee-funding-tracker.org/">
+   <title>
+    <narrative xml:lang="EN">Refugee Response Financial Tracking Dashboards</narrative>
+   </title>
+   <category code="B17"></category>
+   <language code="EN"></language>
+   <document-date iso-date="2022-02-27"></document-date>
+  </document-link>
+  <related-activity ref="XM-DAC-41121-2021-EUR-HUNMCO" type="3"></related-activity>
+  <related-activity ref="XM-DAC-41121-2022-EUR" type="1"></related-activity>
+ </iati-activity>
+
  <iati-activity default-currency="USD" dstore:dataset="unhcr-2022" dstore:index="75" hierarchy="3" humanitarian="1" iati-activities:version="2.03" xml:lang="EN" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities" xmlns:unhcr="http://reporting.unhcr.org/">
   <iati-identifier>XM-DAC-41121-2022-EUR-POL</iati-identifier>
   <reporting-org ref="XM-DAC-41121" type="40">
