@@ -155,7 +155,7 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
             SELECT aid FROM xson WHERE
                 root = '/iati-activities/iati-activity/transaction' AND
                 xson->>'@humanitarian' = '1' AND
-                xson->>'/recipient-country@code' IN ( 'PL' , 'MD' , 'SK', 'UA' )
+                xson->>'/recipient-country@code' IN ( 'UA', 'PL', 'HU', 'SK', 'RO', 'MD', 'BY' )
             
             UNION
             
@@ -166,7 +166,7 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
                 aid in (
                     SELECT aid FROM xson WHERE
                     root = '/iati-activities/iati-activity/recipient-country' AND
-                    xson->>'@code' IN ( 'PL' , 'MD' , 'SK', 'UA' )
+                    xson->>'@code' IN ( 'UA', 'PL', 'HU', 'SK', 'RO', 'MD', 'BY' )
                 )
             
             ) AS x1
