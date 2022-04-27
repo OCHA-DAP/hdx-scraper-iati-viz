@@ -1,42 +1,64 @@
 Reporting org id,Reporting org name,Reporting org type,Provider org id,Provider org name,Provider org type,Receiver org id,Receiver org name,Receiver org type,Humanitarian?,Strict?,Transaction direction,Total money
 #org+id+reporting,#org+name+reporting,#org+reporting+type,#org+id+provider,#org+name+provider,#org+type+provider,#org+id+receiver,#org+name+receiver,#org+type+receiver,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_direction,#value+total
-xm-dac-21016,International Committee of the Red Cross,40,,,,,(Direct expenditure),,1,0,outgoing,123202978
-xm-dac-21016,International Committee of the Red Cross,40,,Austria,10,,,,1,0,incoming,572977
+xm-dac-21016,International Committee of the Red Cross,40,,,,,(Direct expenditure),,1,0,outgoing,309134059
+xm-dac-21016,International Committee of the Red Cross,40,,ASSOCIATIONS & SERVICE CLUBS,70,,,,1,0,incoming,4241
+xm-dac-21016,International Committee of the Red Cross,40,,Associations & Service Clubs,70,,,,1,0,incoming,924169
+xm-dac-21016,International Committee of the Red Cross,40,,Austria,10,,,,1,0,incoming,2803059
+xm-dac-21016,International Committee of the Red Cross,40,,Belarus,10,,,,1,0,incoming,76687
 xm-dac-21016,International Committee of the Red Cross,40,,Bulgaria,10,,,,1,0,incoming,55300
-xm-dac-21016,International Committee of the Red Cross,40,ca-3,CANADA DFATD GVT,10,,,,1,0,incoming,847242
-xm-dac-21016,International Committee of the Red Cross,40,,Denmark RC,22,,,,1,0,incoming,12525
-xm-dac-21016,International Committee of the Red Cross,40,,Estonia,10,,,,1,0,incoming,218513
-xm-dac-21016,International Committee of the Red Cross,40,xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,40,,,,1,0,incoming,10526991
-xm-dac-21016,International Committee of the Red Cross,40,fi-3,FINLAND MFA GVT,10,,,,1,0,incoming,1017227
-xm-dac-21016,International Committee of the Red Cross,40,,"FONDATIONS, FUNDS",60,,,,1,0,incoming,332632
-xm-dac-21016,International Committee of the Red Cross,40,,Finland RC,22,,,,1,0,incoming,54923
-xm-dac-21016,International Committee of the Red Cross,40,,France,10,,,,1,0,incoming,452900
-xm-dac-21016,International Committee of the Red Cross,40,de-1,Germany,10,,,,1,0,incoming,11445304
-xm-dac-21016,International Committee of the Red Cross,40,,Japan,10,,,,1,0,incoming,444038
-xm-dac-21016,International Committee of the Red Cross,40,,Japan RC,22,,,,1,0,incoming,18440
+xm-dac-21016,International Committee of the Red Cross,40,ca-3,CANADA DFATD GVT,10,,,,1,0,incoming,6230727
+xm-dac-21016,International Committee of the Red Cross,40,,Canada RC,22,,,,1,0,incoming,4546
+xm-dac-21016,International Committee of the Red Cross,40,,Czech Republic,10,,,,1,0,incoming,432155
+xm-dac-21016,International Committee of the Red Cross,40,,Denmark RC,22,,,,1,0,incoming,64398
+xm-dac-21016,International Committee of the Red Cross,40,,Estonia,10,,,,1,0,incoming,946739
+xm-dac-21016,International Committee of the Red Cross,40,xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,40,,,,1,0,incoming,44506379
+xm-dac-21016,International Committee of the Red Cross,40,fi-3,FINLAND MFA GVT,10,,,,1,0,incoming,2721659
+xm-dac-21016,International Committee of the Red Cross,40,,"FONDATIONS, FUNDS",60,,,,1,0,incoming,808858
+xm-dac-21016,International Committee of the Red Cross,40,,Finland RC,22,,,,1,0,incoming,153655
+xm-dac-21016,International Committee of the Red Cross,40,,"Fondations, Funds",60,,,,1,0,incoming,169365
+xm-dac-21016,International Committee of the Red Cross,40,,France,10,,,,1,0,incoming,1103511
+xm-dac-21016,International Committee of the Red Cross,40,de-1,Germany,10,,,,1,0,incoming,37623743
+xm-dac-21016,International Committee of the Red Cross,40,,Holy See,10,,,,1,0,incoming,1210344
+xm-dac-21016,International Committee of the Red Cross,40,xm-dac-21-1,IRISH AID GVT,10,,,,1,0,incoming,338978
+xm-dac-21016,International Committee of the Red Cross,40,,Iceland RC,22,,,,1,0,incoming,12634
+xm-dac-21016,International Committee of the Red Cross,40,,Italy,10,,,,1,0,incoming,2447221
+xm-dac-21016,International Committee of the Red Cross,40,,Japan,10,,,,1,0,incoming,603893
+xm-dac-21016,International Committee of the Red Cross,40,,Japan RC,22,,,,1,0,incoming,153340
 xm-dac-21016,International Committee of the Red Cross,40,,Kazakhstan,10,,,,1,0,incoming,50285
-xm-dac-21016,International Committee of the Red Cross,40,,Liechtenstein,10,,,,1,0,incoming,110375
-xm-dac-21016,International Committee of the Red Cross,40,,Lithuania,10,,,,1,0,incoming,121706
-xm-dac-21016,International Committee of the Red Cross,40,,Netherlands,10,,,,1,0,incoming,3348370
-xm-dac-21016,International Committee of the Red Cross,40,no-brc-971277882,Norad - Norwegian Agency for Development Cooperation,10,,,,1,0,incoming,1694914
-xm-dac-21016,International Committee of the Red Cross,40,,Norway RC,22,,,,1,0,incoming,10328
-xm-dac-21016,International Committee of the Red Cross,40,,PRIVATE COMPANIES,70,,,,1,0,incoming,236787
-xm-dac-21016,International Committee of the Red Cross,40,,PUBLIC SOURCES,15,,,,1,0,incoming,1272480
-xm-dac-21016,International Committee of the Red Cross,40,,Private Individual Donation,70,,,,1,0,incoming,1293
-xm-dac-21016,International Committee of the Red Cross,40,,Russian Federation,10,,,,1,0,incoming,441501
-xm-dac-21016,International Committee of the Red Cross,40,xm-dac-69-1,SLOVAKIA MFA GVT,10,,,,1,0,incoming,55356
-xm-dac-21016,International Committee of the Red Cross,40,se-0,SWEDEN SIDA GVT,10,,,,1,0,incoming,1883551
-xm-dac-21016,International Committee of the Red Cross,40,ch-4,Switzerland,10,,,,1,0,incoming,1023433
-xm-dac-21016,International Committee of the Red Cross,40,,The Global Fund,40,,,,1,0,incoming,3094366
-xm-dac-21016,International Committee of the Red Cross,40,gb-gov-1,UNITED KINGDOM DFID GVT,10,,,,1,0,incoming,5627510
-xm-dac-21016,International Committee of the Red Cross,40,,Ukraine RC,22,,,,1,0,incoming,6734
+xm-dac-21016,International Committee of the Red Cross,40,,"Korea, Republic of",10,,,,1,0,incoming,1020879
+xm-dac-21016,International Committee of the Red Cross,40,,LEGACIES,90,,,,1,0,incoming,82670
+xm-dac-21016,International Committee of the Red Cross,40,,Liechtenstein,10,,,,1,0,incoming,162044
+xm-dac-21016,International Committee of the Red Cross,40,,Liechtenstein RC,22,,,,1,0,incoming,10070
+xm-dac-21016,International Committee of the Red Cross,40,,Lithuania,10,,,,1,0,incoming,320695
+xm-dac-21016,International Committee of the Red Cross,40,,Médecins Sans Frontières,40,,,,1,0,incoming,45500
+xm-dac-21016,International Committee of the Red Cross,40,,Netherlands,10,,,,1,0,incoming,6456502
+xm-dac-21016,International Committee of the Red Cross,40,no-brc-971277882,Norad - Norwegian Agency for Development Cooperation,10,,,,1,0,incoming,6177610
+xm-dac-21016,International Committee of the Red Cross,40,,Norway RC,22,,,,1,0,incoming,1003981
+xm-dac-21016,International Committee of the Red Cross,40,,PRIVATE COMPANIES,70,,,,1,0,incoming,346202
+xm-dac-21016,International Committee of the Red Cross,40,,PUBLIC SOURCES,15,,,,1,0,incoming,2435596
+xm-dac-21016,International Committee of the Red Cross,40,,Poland,10,,,,1,0,incoming,166492
+xm-dac-21016,International Committee of the Red Cross,40,,Private Companies,70,,,,1,0,incoming,283365
+xm-dac-21016,International Committee of the Red Cross,40,,Private Individual Donation,70,,,,1,0,incoming,230003
+xm-dac-21016,International Committee of the Red Cross,40,,Russian Federation,10,,,,1,0,incoming,1363396
+xm-dac-21016,International Committee of the Red Cross,40,xm-dac-69-1,SLOVAKIA MFA GVT,10,,,,1,0,incoming,189954
+xm-dac-21016,International Committee of the Red Cross,40,se-0,SWEDEN SIDA GVT,10,,,,1,0,incoming,8710837
+xm-dac-21016,International Committee of the Red Cross,40,,Spont. Donat° Private Individ.,70,,,,1,0,incoming,18353
+xm-dac-21016,International Committee of the Red Cross,40,,Sweden RC,22,,,,1,0,incoming,298600
+xm-dac-21016,International Committee of the Red Cross,40,ch-4,Switzerland,10,,,,1,0,incoming,4333918
+xm-dac-21016,International Committee of the Red Cross,40,,Thailand RC,22,,,,1,0,incoming,31457
+xm-dac-21016,International Committee of the Red Cross,40,,The Global Fund,40,,,,1,0,incoming,5355180
+xm-dac-21016,International Committee of the Red Cross,40,gb-gov-1,UNITED KINGDOM DFID GVT,10,,,,1,0,incoming,27921066
+xm-dac-21016,International Committee of the Red Cross,40,gb-chc-220949,UNITED KINGDOM NS,22,,,,1,0,incoming,46518
+xm-dac-21016,International Committee of the Red Cross,40,,Ukraine RC,22,,,,1,0,incoming,15485
 xm-dac-21016,International Committee of the Red Cross,40,,United Kingdom,10,,,,1,0,incoming,3787943
-xm-dac-21016,International Committee of the Red Cross,40,us-usagov,United States,10,,,,1,0,incoming,20426364
-xm-dac-21016,International Committee of the Red Cross,40,,VARIOUS,,,,,1,0,incoming,646
+xm-dac-21016,International Committee of the Red Cross,40,us-usagov,United States,10,,,,1,0,incoming,66456426
+xm-dac-21016,International Committee of the Red Cross,40,,VARIOUS,,,,,1,0,incoming,45858
+xm-dac-21016,International Committee of the Red Cross,40,,Various,,,,,1,0,incoming,5217
 xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41301,Food and Agriculture Organization of the United Nations (FAO),40,1,0,outgoing,500000
 xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-47066,International Organization for Migration (IOM),40,1,0,outgoing,9999996
-xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41313,Office of the High Commissioner for Human Rights,40,1,0,outgoing,2006966
-xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41122,United Nations Children's Fund (UNICEF),40,1,0,outgoing,10000000
-xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41121,United Nations High Commissioner for Refugees (UNHCR),40,1,0,outgoing,11000000
+xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41313,Office of the High Commissioner for Human Rights,40,1,0,outgoing,2771370
+xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41122,United Nations Children's Fund (UNICEF),40,1,0,outgoing,12493132
+xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41121,United Nations High Commissioner for Refugees (UNHCR),40,1,0,outgoing,12777280
 xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41119,United Nations Population Fund,40,1,0,outgoing,1999805
-xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-928,World Health Organization,40,1,0,outgoing,8000000
+xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41140,United Nations World Food Programme (WFP),40,1,0,outgoing,1171964
+xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-928,World Health Organization,40,1,0,outgoing,9553426
