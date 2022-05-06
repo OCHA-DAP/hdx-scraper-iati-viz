@@ -35,7 +35,7 @@ class UkraineChecks:
             for country in countries:
                 if country.code in relevant_countries:
                     country_in_list = True
-                    break
+                    return
 
         def check_narratives(title_or_desc):
             nonlocal text_in_narrative
