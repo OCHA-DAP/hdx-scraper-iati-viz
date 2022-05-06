@@ -1,5 +1,9 @@
 class CovidChecks:
     @staticmethod
+    def exclude_dactivity(dactivity):
+        return False
+
+    @staticmethod
     def has_desired_scope(scopes):
         """Check if the COVID-19 GLIDE number or HRP code is present"""
         for scope in scopes:

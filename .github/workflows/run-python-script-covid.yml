@@ -26,7 +26,7 @@ jobs:
         GSHEET_AUTH: ${{ secrets.GSHEET_AUTH }}
         UPDATESHEETS: ${{ secrets.UPDATESHEETS }}
       run: |
-        python run.py
+        python run.py  --what=covid --date_filter=2020-01
         cp errors.log output_covid
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4

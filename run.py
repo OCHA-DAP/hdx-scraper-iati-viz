@@ -17,7 +17,7 @@ setup_logging()
 logger = logging.getLogger()
 
 
-VERSION = 3.0
+VERSION = 4.0
 
 
 def parse_args():
@@ -45,7 +45,7 @@ def parse_args():
         "-wh", "--what", default="covid", help="What to run eg. covid, ebola"
     )
     parser.add_argument(
-        "-df", "--date_filter", default="2020-01", help="Start date of date filter"
+        "-df", "--date_filter", default=None, help="Start date of date filter"
     )
     args = parser.parse_args()
     return args

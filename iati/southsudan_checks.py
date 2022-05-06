@@ -1,5 +1,9 @@
 class SouthSudanChecks:
     @staticmethod
+    def exclude_dactivity(dactivity):
+        return False
+
+    @staticmethod
     def has_desired_scope(scopes):
         """Check if the South Sudan code is present"""
         for scope in scopes:

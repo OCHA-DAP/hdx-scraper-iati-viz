@@ -148,38 +148,50 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
 )"
   ukraine_query: "
 SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
-    SELECT aid FROM xson WHERE aid IN (
-        SELECT DISTINCT x1.aid FROM (
-        
-            /* The transaction is humanitarian and goes to any of the countries */
-            SELECT aid FROM xson WHERE
-                root = '/iati-activities/iati-activity/transaction' AND
-                xson->>'@humanitarian' = '1' AND
-                xson->>'/recipient-country@code' IN ( 'UA', 'PL', 'HU', 'SK', 'RO', 'MD', 'BY' )
-            
-            UNION
-            
-            /* The activity is humanitarian and lists any of the countries */
-            SELECT aid FROM xson WHERE
-                root = '/iati-activities/iati-activity' AND
-                xson->>'@humanitarian' = '1' AND
-                aid in (
-                    SELECT aid FROM xson WHERE
-                    root = '/iati-activities/iati-activity/recipient-country' AND
-                    xson->>'@code' IN ( 'UA', 'PL', 'HU', 'SK', 'RO', 'MD', 'BY' )
-                )
-            
-            ) AS x1
-            
-            INNER JOIN
-            
-            (
-            
-                /* Narrative search in transaction description */
-                SELECT aid FROM xson WHERE
-                    root='/iati-activities/iati-activity/transaction/description/narrative' AND to_tsvector('simple', xson->>'') @@ to_tsquery('simple','''UKRAINE''')
-            
-            ) AS x2 ON x1.aid=x2.aid
+    SELECT aid FROM xson WHERE
+    (
+    	root='/iati-activities/iati-activity/humanitarian-scope' AND
+    	xson->>'@type'='2' AND
+    	xson->>'@vocabulary'='2-1' AND
+    	xson->>'@code'='FUKR22'
+    ) OR (
+    	root='/iati-activities/iati-activity/humanitarian-scope' AND
+    	xson->>'@type'='2' AND
+    	xson->>'@vocabulary'='2-1' AND
+    	xson->>'@code'='RUKRN22'
+    ) OR (
+    	root='/iati-activities/iati-activity/humanitarian-scope' AND
+    	xson->>'@type'='2' AND
+    	xson->>'@vocabulary'='2-1' AND
+    	xson->>'@code'='HUKR22'
+    ) OR (
+    	root='/iati-activities/iati-activity/humanitarian-scope' AND
+    	xson->>'@type'='1' AND
+    	xson->>'@vocabulary'='1-2' AND
+    	xson->>'@code'='OT-2022-000157-UKR'
+    ) OR (
+	    root='/iati-activities/iati-activity/humanitarian-scope' AND
+	    xson->>'@type'='2' AND
+	    xson->>'@vocabulary'='99' AND
+	    xson->>'@code'='UKRAINE-REGIONAL-RRP-2022'
+	) OR (
+        root = '/iati-activities/iati-activity/recipient-country' AND
+        xson->>'@code' IN ( 'UA', 'PL', 'HU', 'SK', 'RO', 'MD', 'BY', 'RU' )
+    ) OR (
+        root = '/iati-activities/iati-activity/transaction' AND
+        xson->>'/recipient-country@code' IN ( 'UA', 'PL', 'HU', 'SK', 'RO', 'MD', 'BY', 'RU' )
+    ) OR (
+        /* Narrative search in activity title */
+        root='/iati-activities/iati-activity/title/narrative' AND 
+        to_tsvector('simple', xson->>'') @@ to_tsquery('simple','UKRAINE | UKRAINIAN')
+    ) OR (
+        /* Narrative search in activity description */
+        root='/iati-activities/iati-activity/description/narrative' AND 
+        to_tsvector('simple', xson->>'') @@ to_tsquery('simple','UKRAINE | UKRAINIAN')
+    ) OR (
+        /* Narrative search in transaction description */
+        root='/iati-activities/iati-activity/transaction/description/narrative' AND 
+        to_tsvector('simple', xson->>'') @@ to_tsquery('simple','UKRAINE | UKRAINIAN')
     ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {} desc
 )"
 

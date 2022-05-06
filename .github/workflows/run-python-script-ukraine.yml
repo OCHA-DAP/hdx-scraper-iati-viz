@@ -26,7 +26,7 @@ jobs:
         GSHEET_AUTH: ${{ secrets.GSHEET_AUTH }}
         UPDATESHEETS: ${{ secrets.UPDATESHEETS }}
       run: |
-        python run.py --what=ukraine
+        python run.py --what=ukraine --date_filter=2022-02
         cp errors.log output_ukraine
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4

@@ -102,10 +102,16 @@ def start(
     # Build org name lookup
     dactivities = list()
     xmliterator = diterator.XMLIterator(dportal_path)
+    number_query_activities = 0
     for dactivity in xmliterator:
+        number_query_activities += 1
+        if Lookups.checks.exclude_dactivity(dactivity):
+            continue
         Lookups.add_reporting_org(dactivity)
         dactivities.append(dactivity)
     del xmliterator  # Maybe this helps garbage collector?
+    logger.info(f"D-Portal returned {number_query_activities} activities")
+    logger.info(f"Prefiltered to {len(dactivities)} activities")
     #    Lookups.build_reporting_org_blocklist(dactivities)
     Lookups.add_participating_orgs(dactivities)
 
