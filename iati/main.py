@@ -31,6 +31,17 @@ def retrieve_dportal(configuration, retriever, whattorun, dportal_params=""):
     )
 
 
+def write_xml(output_dir, filename, dactivities):
+    logger.info(f"Writing {filename} to {output_dir}")
+    with open(join(output_dir, filename), "w") as writer:
+        writer.write(
+            '<?xml version="1.0" encoding="UTF-8"?>\n<iati-activities version="2.03">\n'
+        )
+        for dactivity in dactivities:
+            writer.write(dactivity.node.toxml())
+        writer.write("\n</iati-activities>")
+
+
 def write(today, output_dir, configuration, configuration_key, rows, skipped=None):
     logger.info(f"Writing {configuration_key} files to {output_dir}")
     file_configuration = configuration[configuration_key]
@@ -111,7 +122,12 @@ def start(
         dactivities.append(dactivity)
     del xmliterator  # Maybe this helps garbage collector?
     logger.info(f"D-Portal returned {number_query_activities} activities")
-    logger.info(f"Prefiltered to {len(dactivities)} activities")
+    number_dactivities = len(dactivities)
+    if number_dactivities == number_query_activities:
+        logger.info(f"No prefiltering performed")
+    else:
+        write_xml(output_dir, "prefiltered.xml", dactivities)
+        logger.info(f"Prefiltered to {number_dactivities} activities")
     #    Lookups.build_reporting_org_blocklist(dactivities)
     Lookups.add_participating_orgs(dactivities)
 
