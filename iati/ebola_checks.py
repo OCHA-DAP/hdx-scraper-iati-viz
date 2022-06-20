@@ -4,16 +4,14 @@ class EbolaChecks:
         return False
 
     @staticmethod
-    def has_desired_scope(scopes):
+    def get_scope_code(scopes):
         """Check if the Ebola code is present"""
         for scope in scopes:
-            if (
-                scope.type == "2"
-                and scope.vocabulary == "2-1"
-                and scope.code.upper() == "OXEBOLA1415"
-            ):
-                return True
-        return False
+            if scope.type == "2" and scope.vocabulary == "2-1":
+                code = scope.code.upper() if scope.code else None
+                if code == "OXEBOLA1415":
+                    return code
+        return None
 
     @staticmethod
     def has_desired_marker(markers):

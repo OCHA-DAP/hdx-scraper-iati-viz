@@ -16,6 +16,9 @@ class Activity:
         self.identifier = dactivity.identifier
         # Get the reporting-org and C19 strictness at activity level
         self.org = Lookups.get_org_info(dactivity.reporting_org, reporting_org=True)
+        self.scope_code = Lookups.checks.get_scope_code(
+            self.dactivity.humanitarian_scopes
+        )
         self.strict = self.is_strict()
         self.humanitarian = dactivity.humanitarian
         # Figure out default country or region/sector percentage splits at the activity level
@@ -65,7 +68,7 @@ class Activity:
             return (
                 True
                 if (
-                    Lookups.checks.has_desired_scope(self.dactivity.humanitarian_scopes)
+                    self.scope_code
                     or Lookups.checks.has_desired_marker(self.dactivity.policy_markers)
                     or Lookups.checks.has_desired_tag(self.dactivity.tags)
                     or Lookups.checks.has_desired_sector(self.dactivity.sectors)
@@ -169,6 +172,7 @@ class Activity:
                     receiver["id"],
                     receiver_name,
                     receiver["type"],
+                    self.scope_code,
                     transaction.is_humanitarian,
                     transaction.is_strict,
                     transaction.get_direction(),

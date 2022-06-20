@@ -1,15 +1,17 @@
-class SouthSudanChecks:
+from iati.lookups import Lookups
+
+
+class HRPChecks:
     @staticmethod
     def exclude_dactivity(dactivity):
         return False
 
     @staticmethod
     def get_scope_code(scopes):
-        """Check if the South Sudan code is present"""
         for scope in scopes:
-            if scope.type == "2" and scope.vocabulary == "2-1":
+            if scope.vocabulary == "2-1":
                 code = scope.code.upper() if scope.code else None
-                if code in ("HSSD21", "HSSD22"):
+                if code in Lookups.hrp_codes:
                     return code
         return None
 

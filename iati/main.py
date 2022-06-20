@@ -102,7 +102,7 @@ def start(
     dportal_filename, dportal_path = retrieve_dportal(
         configuration, retriever, whattorun, dportal_params
     )
-    Lookups.setup(configuration["lookups"])
+    Lookups.setup(configuration["lookups"], retriever)
     Currency.setup(
         retriever=retriever,
         fallback_historic_to_current=True,

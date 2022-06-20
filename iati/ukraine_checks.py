@@ -69,28 +69,23 @@ class UkraineChecks:
         return False
 
     @staticmethod
-    def has_desired_scope(scopes):
+    def get_scope_code(scopes):
         """Check if the Ukraine code is present"""
         for scope in scopes:
-            if (
-                scope.type == "1"
-                and scope.vocabulary == "1-2"
-                and scope.code.upper() == "OT-2022-000157-UKR"
-            ):
-                return True
+            if scope.type == "1" and scope.vocabulary == "1-2":
+                code = scope.code.upper() if scope.code else None
+                if code == "OT-2022-000157-UKR":
+                    return code
             elif scope.type == "2":
-                if scope.vocabulary == "2-1" and scope.code.upper() in (
-                    "FUKR22",
-                    "RUKRN22",
-                    "HUKR22",
-                ):
-                    return True
-                if (
-                    scope.vocabulary == "99"
-                    and scope.code.upper() == "UKRAINE-REGIONAL-RRP-2022"
-                ):
-                    return True
-        return False
+                if scope.vocabulary == "2-1":
+                    code = scope.code.upper() if scope.code else None
+                    if code in ("FUKR22", "RUKRN22", "HUKR22"):
+                        return code
+                if scope.vocabulary == "99":
+                    code = scope.code.upper() if scope.code else None
+                    if code == "UKRAINE-REGIONAL-RRP-2022":
+                        return code
+            return None
 
     @staticmethod
     def has_desired_marker(markers):

@@ -1,7 +1,11 @@
 class ClimateChecks:
     @staticmethod
-    def has_desired_scope(scopes):
+    def exclude_dactivity(dactivity):
         return False
+
+    @staticmethod
+    def get_scope_code(scopes):
+        return None
 
     @staticmethod
     def has_desired_marker(markers):

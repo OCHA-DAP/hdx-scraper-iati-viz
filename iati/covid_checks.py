@@ -4,22 +4,18 @@ class CovidChecks:
         return False
 
     @staticmethod
-    def has_desired_scope(scopes):
+    def get_scope_code(scopes):
         """Check if the COVID-19 GLIDE number or HRP code is present"""
         for scope in scopes:
-            if (
-                scope.type == "1"
-                and scope.vocabulary == "1-2"
-                and scope.code.upper() == "EP-2020-000012-001"
-            ):
-                return True
-            elif (
-                scope.type == "2"
-                and scope.vocabulary == "2-1"
-                and scope.code.upper() == "HCOVD20"
-            ):
-                return True
-        return False
+            if scope.type == "1" and scope.vocabulary == "1-2":
+                code = scope.code.upper() if scope.code else None
+                if code == "EP-2020-000012-001":
+                    return code
+            elif scope.type == "2" and scope.vocabulary == "2-1":
+                code = scope.code.upper() if scope.code else None
+                if code == "HCOVD20":
+                    return code
+        return None
 
     @staticmethod
     def has_desired_marker(markers):

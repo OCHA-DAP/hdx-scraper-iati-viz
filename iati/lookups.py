@@ -41,9 +41,11 @@ class Lookups:
     filter_reporting_orgs_children = dict()
     checks = None
     filter_transaction_date = None
+    hrp_codes = None
+    glide_codes = None
 
     @classmethod
-    def setup(cls, configuration):
+    def setup(cls, configuration, retriever):
         logger.info("Reading in lookups data")
         org_data = load_json(configuration["org_data"])
         """ Map from IATI identifiers to organisation names """
@@ -64,7 +66,12 @@ class Lookups:
         cls.default_org_id = configuration["default_org_id"]
         cls.default_org_name = configuration["default_org_name"]
         cls.default_expenditure_org_name = configuration["default_expenditure_org_name"]
-
+        hrp_url = configuration["hrp_url"]
+        header, iterator = retriever.get_tabular_rows(hrp_url, dict_form=True)
+        cls.hrp_codes = [row["code"] for row in iterator]
+        glide_url = configuration["glide_url"]
+        header, iterator = retriever.get_tabular_rows(glide_url, dict_form=True)
+        cls.glide_codes = [row["code"] for row in iterator]
         cls.default_sector = configuration["default_sector"]
         cls.default_country_region = configuration["default_country_region"]
         for row in hxl.data(configuration["filters_url"]):
