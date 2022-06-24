@@ -1,5 +1,7 @@
 Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient country,Humanitarian?,Strict?,Transaction type,Activity id,Net money,Total money
 #date+month,#org+id,#org+name,#org+type,#sector,#country,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_type,#activity+code,#value+net,#value+total
+2022-02,ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,Emergency Response,Ukraine,1,0,commitments,CA-3-P011317001,25812697,25812697
+2022-02,ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,Emergency Response,Ukraine,1,0,spending,CA-3-P011317001,5646527,5646527
 2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Emergency Response,Armenia,1,0,spending,XM-DAC-5-7-6616696,25992,25992
 2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Emergency Response,Azerbaijan,1,0,spending,XM-DAC-5-7-6616696,86640,86640
 2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Emergency Response,Ukraine,1,0,spending,XM-DAC-5-7-6616248,820192,820192
@@ -1662,25 +1664,14 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-04,xm-dac-41122,UNICEF,40,Water Supply & Sanitation,Ukraine,1,0,spending,XM-DAC-41122-Ukraine-4410/A0/05/887/002,0,51189
 2022-04,xm-dac-41122,UNICEF,40,Water Supply & Sanitation,Ukraine,1,0,spending,XM-DAC-41122-Ukraine-4410/A0/05/887/002,0,11641
 2022-04,xm-dac-41122,UNICEF,40,Water Supply & Sanitation,Ukraine,1,0,spending,XM-DAC-41122-Ukraine-4410/A0/05/887/002,0,11715
-2022-04,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00090129,0,4884630
-2022-04,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00111513,0,63659472
-2022-04,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00112246,0,3524372
-2022-04,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00115372,0,9311508
-2022-04,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00129543,0,1727318
 2022-04,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00090129,0,82757
 2022-04,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00111513,0,151226
 2022-04,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00111513,0,923313
 2022-04,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00112246,0,-1173
 2022-04,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00115372,0,92191
 2022-04,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00129543,0,65344
-2022-04,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00112425,0,8933048
-2022-04,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00113403,0,1979754
-2022-04,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00116378,0,5851238
-2022-04,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00120677,0,1117241
 2022-04,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00116378,0,24924
 2022-04,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00120677,0,7707
-2022-04,xm-dac-41114,United Nations Development Programme,40,Other Social Infrastructure & Services,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00104480,0,2882133
-2022-04,xm-dac-41114,United Nations Development Programme,40,Other Social Infrastructure & Services,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00115487,0,1119721
 2022-04,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,commitments,XM-OCHA-CBPF-UKR-21/UKR_CBPF/SA3/WASH-S-NFI-H-N/NGO/19928,402994,402994
 2022-04,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,commitments,XM-OCHA-CBPF-UKR-22/UKR_CBPF/RA1/FSL/NGO/21364,267824,267824
 2022-04,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,commitments,XM-OCHA-CBPF-UKR-22/UKR_CBPF/RA1/FSL/UN/21353,520000,520000
@@ -1980,12 +1971,25 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-05,xm-dac-5-7,Germany - Federal Foreign Office,10,Emergency Response,Ukraine,1,0,spending,XM-DAC-5-7-6616323,231040,231040
 2022-05,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,Development Food Assistance,Ukraine,1,0,spending,XM-DAC-3-1-286827-35546,39613,39613
 2022-05,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,Unallocated / Unspecified,Ukraine,1,0,spending,XM-DAC-3-1-286840-35555,388235,388235
-2022-05,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00090129,0,69745
-2022-05,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00111513,0,2332150
-2022-05,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00115372,0,27077
-2022-05,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00129543,0,7
-2022-05,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00116378,0,10110
-2022-05,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00120677,0,7048
+2022-05,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00090129,0,5314731
+2022-05,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00111513,0,63659472
+2022-05,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00112246,0,3524372
+2022-05,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00115372,0,9311508
+2022-05,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00129543,0,1727318
+2022-05,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00090129,0,135289
+2022-05,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00111513,0,2952954
+2022-05,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00115372,0,63533
+2022-05,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00129543,0,7346
+2022-05,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00112425,0,8933048
+2022-05,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00113403,0,1979754
+2022-05,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00116378,0,5851238
+2022-05,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00120677,0,1117241
+2022-05,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00113403,0,28015
+2022-05,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00116378,0,9969
+2022-05,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00116378,0,39325
+2022-05,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00120677,0,47417
+2022-05,xm-dac-41114,United Nations Development Programme,40,Other Social Infrastructure & Services,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00104480,0,2882133
+2022-05,xm-dac-41114,United Nations Development Programme,40,Other Social Infrastructure & Services,Ukraine,1,0,commitments,XM-DAC-41114-OUTPUT-00115487,0,1119721
 2022-05,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,commitments,XM-OCHA-CBPF-UKR-22/UKR_CBPF/RA1/H-N/INGO/21375,400000,400000
 2022-05,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,commitments,XM-OCHA-CBPF-UKR-22/UKR_CBPF/RA2/NUT-P/INGO/21717,1000000,1000000
 2022-05,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,commitments,XM-OCHA-CBPF-UKR-22/UKR_CBPF/RA3/E-P/INGO/21915,662276,662276
@@ -2272,6 +2276,13 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-06,gb-chc-1047501,Action Against Hunger,21,Water Supply & Sanitation,Republic of Moldova,1,0,spending,GB-CHC-1047501-22UADA1D,322,322
 2022-06,gb-chc-1047501,Action Against Hunger,21,Water Supply & Sanitation,Romania,1,0,spending,GB-CHC-1047501-22UADA1D,529,529
 2022-06,gb-chc-1047501,Action Against Hunger,21,Water Supply & Sanitation,Ukraine,1,0,spending,GB-CHC-1047501-22UADA1D,920,920
+2022-06,ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,Emergency Response,Ukraine,1,0,spending,CA-3-P011317001,20166169,20166169
+2022-06,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00090129,0,19710
+2022-06,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00111513,0,526024
+2022-06,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00115372,0,1961
+2022-06,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00129543,0,10346
+2022-06,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00116378,0,1529
+2022-06,xm-dac-41114,United Nations Development Programme,40,Government & Civil Society,Ukraine,1,0,spending,XM-DAC-41114-OUTPUT-00120677,0,516
 2022-06,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,commitments,XM-OCHA-CBPF-UKR-22/UKR_CBPF/RA3/E-MPC/NGO/21907,499837,499837
 2022-06,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,commitments,XM-OCHA-CBPF-UKR-22/UKR_CBPF/RA3/ETC/UN/21920,248131,248131
 2022-06,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,commitments,XM-OCHA-CBPF-UKR-22/UKR_CBPF/RA3/FSL-WASH-H-CSS/INGO/21891,391277,391277
@@ -2286,7 +2297,9 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-06,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,commitments,XM-OCHA-CBPF-UKR-22/UKR_CBPF/RA3/S-NFI-WASH/INGO/21888,1000000,1000000
 2022-06,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,commitments,XM-OCHA-CBPF-UKR-22/UKR_CBPF/RA3/WASH-CSS-H-FSL/NGO/21903,871339,871339
 2022-06,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,commitments,XM-OCHA-CBPF-UKR-22/UKR_CBPF/RA3/WASH/INGO/21886,697062,697062
+2022-06,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,spending,XM-OCHA-CBPF-UKR-21/UKR_CBPF/SA3/P-FSL-E-H-N/NGO/19932,125129,125129
 2022-06,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,spending,XM-OCHA-CBPF-UKR-22/UKR_CBPF/RA2/P/NGO/21577,163654,163654
+2022-06,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,spending,XM-OCHA-CBPF-UKR-22/UKR_CBPF/RA3/E-MPC/NGO/21907,399869,399869
 2022-06,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,spending,XM-OCHA-CBPF-UKR-22/UKR_CBPF/RA3/E-P/INGO/21915,264911,264911
 2022-06,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,spending,XM-OCHA-CBPF-UKR-22/UKR_CBPF/RA3/E/INGO/21890,247852,247852
 2022-06,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,spending,XM-OCHA-CBPF-UKR-22/UKR_CBPF/RA3/ETC/UN/21920,248131,248131
