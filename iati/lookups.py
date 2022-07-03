@@ -37,6 +37,7 @@ class Lookups:
     default_sector = None
     region_code_to_name = dict()
     default_country_region = None
+    filter_activities = list()
     filter_reporting_orgs = list()
     filter_reporting_orgs_children = dict()
     checks = None
@@ -75,6 +76,9 @@ class Lookups:
         cls.default_sector = configuration["default_sector"]
         cls.default_country_region = configuration["default_country_region"]
         for row in hxl.data(configuration["filters_url"]):
+            activity_id = row.get("#activity+code")
+            if activity_id:
+                cls.filter_activities.append(activity_id)
             org_id = row.get("#org+reporting+id")
             if org_id:
                 cls.filter_reporting_orgs.append(org_id)
@@ -86,6 +90,10 @@ class Lookups:
             org_id = row.get("#org+reporting+id")
             if org_id:
                 cls.org_ref_blocklist.append(org_id)
+
+    @classmethod
+    def is_filter_activities(cls, activityid):
+        return True if activityid in cls.filter_activities else False
 
     @classmethod
     def is_filter_reporting_orgs(cls, orgid):

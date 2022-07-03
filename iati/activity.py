@@ -50,6 +50,8 @@ class Activity:
         # Skip activities from a secondary reporter
         if dactivity.secondary_reporter:
             return None, len(dactivity.transactions)
+        if Lookups.is_filter_activities(dactivity.identifier):
+            return None, len(dactivity.transactions)
         reporting_org_ref = dactivity.reporting_org.ref
         # Filter out certain orgs
         if Lookups.is_filter_reporting_orgs(reporting_org_ref):

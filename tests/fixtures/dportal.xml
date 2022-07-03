@@ -57762,4 +57762,37 @@ Within this task order the groundwork of the cooperation with the PENDA programm
    </provider-org>
   </transaction>
  </iati-activity>
+ <iati-activity xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities" default-currency="USD" dstore:dataset="mofa-jpn-2020-developing-countries-unspecified" dstore:index="68" hierarchy="1" humanitarian="0" iati-activities:version="2.03" xml:lang="EN">
+    <iati-identifier>XM-DAC-701-2-2020003078</iati-identifier>
+    <reporting-org ref="XM-DAC-701-2" type="10">
+      <narrative xml:lang="EN">MINISTRY OF FOREIGN AFFAIRS IN JAPAN</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="EN">COVID-19 Response Support Program Loan</narrative>
+    </title>
+    <description type="1">
+      <narrative xml:lang="EN">To promote strengthening of health care system, expansion of social security system and financial support for micro, small and medium sized enterprises, through providing budget support</narrative>
+    </description>
+    <participating-org ref="JP-8" role="1" type="10"/>
+    <activity-status code="2"/>
+    <activity-date iso-date="2020-12-02" type="1"/>
+    <activity-date iso-date="2020-12-02" type="2"/>
+    <activity-date iso-date="2021-01-22" type="3"/>
+    <recipient-country code="MA" percentage="100"/>
+    <sector code="51010" percentage="100" vocabulary="1"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="421"/>
+    <transaction>
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2020-12-02"/>
+      <value currency="USD" value-date="2020-12-02">200000000000</value>
+      <provider-org provider-activity-id="JICAMR-F-C1" ref="JP-8" type="10">
+        <narrative xml:lang="EN">Japan International Cooperation Agency</narrative>
+      </provider-org>
+      <receiver-org>
+        <narrative xml:lang="EN">MINISTRY OF ECONOMY, FINANCE AND ADMINISTRATION REFORM</narrative>
+      </receiver-org>
+    </transaction>
+  </iati-activity>
  </iati-activities>
