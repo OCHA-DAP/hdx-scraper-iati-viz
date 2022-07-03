@@ -1,4 +1,4 @@
-Reporting Org Ids,Reporting Org Names,Ids of Reporting Orgs with Children,Names of Reporting Orgs with Children
-#org+reporting+id,#org+reporting+name,#org+reporting_children+id,#org+reporting_children+name
-CZ-ICO-25755277,People in Need,GB-GOV-1,FCDO
-,,47122,"Gavi, The Vaccine Alliance"
+Activity IDs,Activity Title,Reporting Org Ids,Reporting Org Names,Ids of Reporting Orgs with Children,Names of Reporting Orgs with Children,Hierarchy to ignore
+#activity+code,#activity+name,#org+reporting+id,#org+reporting+name,#org+reporting_children+id,#org+reporting_children+name,#org+reporting_children+hierarchy
+XM-DAC-701-2-2020003078,COVID-19 Response Support Program Loan,CZ-ICO-25755277,People in Need,GB-GOV-1,FCDO,1
+,,,,47122,"Gavi, The Vaccine Alliance",1
