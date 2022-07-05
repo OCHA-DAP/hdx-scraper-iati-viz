@@ -5,10 +5,11 @@ from os import getenv, mkdir
 from os.path import join
 from shutil import rmtree
 
-from hdx.facades.keyword_arguments import facade
 from hdx.api.configuration import Configuration
+from hdx.facades.keyword_arguments import facade
 from hdx.utilities.downloader import Download
 from hdx.utilities.easy_logging import setup_logging
+from hdx.utilities.errors_onexit import ErrorsOnExit
 from hdx.utilities.retriever import Retrieve
 
 from iati.main import start
@@ -63,28 +64,30 @@ def main(
 ):
     logger.info(f"##### hdx-scraper-iati-viz version {VERSION:.1f} ####")
     configuration = Configuration.read()
-    output_dir = f"{output_dir}_{whattorun}"
-    rmtree(output_dir, ignore_errors=True)
-    mkdir(output_dir)
-    with Download() as downloader:
-        retriever = Retrieve(
-            downloader,
-            configuration["fallback_dir"],
-            f"{saved_dir}_{whattorun}",
-            output_dir,
-            save,
-            use_saved,
-        )
-        today = datetime.utcnow().isoformat()
-        start(
-            configuration,
-            today,
-            retriever,
-            output_dir,
-            dportal_params,
-            whattorun,
-            filterdate,
-        )
+    with ErrorsOnExit() as errors_on_exit:
+        output_dir = f"{output_dir}_{whattorun}"
+        rmtree(output_dir, ignore_errors=True)
+        mkdir(output_dir)
+        with Download() as downloader:
+            retriever = Retrieve(
+                downloader,
+                configuration["fallback_dir"],
+                f"{saved_dir}_{whattorun}",
+                output_dir,
+                save,
+                use_saved,
+            )
+            today = datetime.utcnow().isoformat()
+            start(
+                configuration,
+                today,
+                retriever,
+                output_dir,
+                dportal_params,
+                whattorun,
+                filterdate,
+                errors_on_exit,
+            )
 
 
 if __name__ == "__main__":

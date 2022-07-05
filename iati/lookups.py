@@ -24,7 +24,7 @@ def clean_region(region):
 
 
 class Lookups:
-    org_ref_blocklist = list()
+    org_ref_spurious = list()
     org_ref_to_name = dict()
     org_ref_to_type = dict()
     org_names_to_ref = dict()
@@ -37,9 +37,10 @@ class Lookups:
     default_sector = None
     region_code_to_name = dict()
     default_country_region = None
-    filter_activities = list()
-    filter_reporting_orgs = list()
-    filter_reporting_orgs_children = dict()
+    skip_activities = list()
+    skip_reporting_orgs = list()
+    skip_reporting_orgs_children = dict()
+    allow_activities = list()
     checks = None
     filter_transaction_date = None
 
@@ -68,37 +69,45 @@ class Lookups:
 
         cls.default_sector = configuration["default_sector"]
         cls.default_country_region = configuration["default_country_region"]
-        for row in hxl.data(configuration["filters_url"]):
+        for row in hxl.data(configuration["skipped_url"]):
             activity_id = row.get("#activity+code")
             if activity_id:
-                cls.filter_activities.append(activity_id)
+                cls.skip_activities.append(activity_id)
             org_id = row.get("#org+reporting+id")
             if org_id:
-                cls.filter_reporting_orgs.append(org_id)
+                cls.skip_reporting_orgs.append(org_id)
             org_id = row.get("#org+reporting_children+id")
             hierarchy = row.get("#org+reporting_children+hierarchy")
             if org_id and hierarchy:
-                cls.filter_reporting_orgs_children[org_id] = hierarchy
-        for row in hxl.data(configuration["blocklist_url"]):
+                cls.skip_reporting_orgs_children[org_id] = hierarchy
+        for row in hxl.data(configuration["allowed_url"]):
+            activity_id = row.get("#activity+code")
+            if activity_id:
+                cls.allow_activities.append(activity_id)
+        for row in hxl.data(configuration["spurious_url"]):
             org_id = row.get("#org+reporting+id")
             if org_id:
-                cls.org_ref_blocklist.append(org_id)
+                cls.org_ref_spurious.append(org_id)
 
     @classmethod
-    def is_filter_activities(cls, activityid):
-        return True if activityid in cls.filter_activities else False
+    def skip_activity(cls, activityid):
+        return True if activityid in cls.skip_activities else False
 
     @classmethod
-    def is_filter_reporting_orgs(cls, orgid):
-        return True if orgid in cls.filter_reporting_orgs else False
+    def skip_reporting_org(cls, orgid):
+        return True if orgid in cls.skip_reporting_orgs else False
 
     @classmethod
-    def is_filter_reporting_orgs_children(cls, orgid, hierarchy):
+    def skip_reporting_org_children(cls, orgid, hierarchy):
         return (
             True
-            if hierarchy and hierarchy == cls.filter_reporting_orgs_children.get(orgid)
+            if hierarchy and hierarchy == cls.skip_reporting_orgs_children.get(orgid)
             else False
         )
+
+    @classmethod
+    def allow_activity(cls, activityid):
+        return True if activityid in cls.allow_activities else False
 
     @staticmethod
     def get_cleaned_ref_name_type(org):
@@ -142,7 +151,7 @@ class Lookups:
                 if cur_ref not in cls.org_ref_to_name:
                     cls.org_ref_to_name[cur_ref] = name
             if ref and ref != lower_name:
-                if is_participating_org and ref in cls.org_ref_blocklist:
+                if is_participating_org and ref in cls.org_ref_spurious:
                     continue
                 if cur_ref:
                     if ref not in cls.org_ref_to_name:
@@ -156,7 +165,7 @@ class Lookups:
             elif org_type and lower_name not in cls.org_names_to_type:
                 cls.org_names_to_type[lower_name] = org_type
         if org_type:
-            if is_participating_org and ref and ref in cls.org_ref_blocklist:
+            if is_participating_org and ref and ref in cls.org_ref_spurious:
                 return
             if ref and ref not in cls.org_ref_to_type:
                 cls.org_ref_to_type[ref] = org_type
@@ -191,7 +200,7 @@ class Lookups:
         i = 0
         while i != len(refs):
             ref_to_consider = refs[i]
-            if not reporting_org and ref_to_consider in cls.org_ref_blocklist:
+            if not reporting_org and ref_to_consider in cls.org_ref_spurious:
                 i += 1
                 continue
             preferred_name = cls.org_ref_to_name.get(ref_to_consider)
@@ -216,7 +225,7 @@ class Lookups:
             if reporting_org:
                 if name != default_org_name:
                     cls.used_reporting_orgs.add((ref, name))
-            elif ref in cls.org_ref_blocklist and name and name != default_org_name:
+            elif ref in cls.org_ref_spurious and name and name != default_org_name:
                 ref = cls.org_names_to_ref.get(name.lower())
             if ref:
                 preferred_type = cls.org_ref_to_type.get(ref)

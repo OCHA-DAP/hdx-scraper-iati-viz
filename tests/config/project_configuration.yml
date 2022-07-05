@@ -42,8 +42,9 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
 )"
 
 lookups:
-  filters_url: "https://github.com/OCHA-DAP/hdx-scraper-iati-viz/raw/main/tests/config/IATI%20Explorer%20Filters%20-%20Skipped%20Activities.csv"
-  blocklist_url: "https://github.com/OCHA-DAP/hdx-scraper-iati-viz/raw/main/tests/config/IATI%20Explorer%20Filters%20-%20Spurious%20References.csv"
+  skipped_url: "https://github.com/OCHA-DAP/hdx-scraper-iati-viz/raw/main/tests/config/IATI%20Explorer%20Filters%20-%20Skipped%20Activities.csv"
+  allowed_url: "https://github.com/OCHA-DAP/hdx-scraper-iati-viz/raw/main/tests/config/IATI%20Explorer%20Filters%20-%20Allowed%20Activities.csv"
+  spurious_url: "https://github.com/OCHA-DAP/hdx-scraper-iati-viz/raw/main/tests/config/IATI%20Explorer%20Filters%20-%20Spurious%20References.csv"
   org_data: "data/IATIOrganisationIdentifier.json"
   sector_data: "data/dac3-sector-map.json"
   region_data: "data/Region.json"
@@ -54,6 +55,8 @@ lookups:
   default_expenditure_org_name: "(Direct expenditure)"
   default_sector: "(Unspecified sector)"
   default_country_region: "(Unspecified country)"
+
+usd_error_threshold: 100000000
 
 calculate_splits:
   default_sector: "99999"

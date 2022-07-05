@@ -196,8 +196,9 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
 )"
 
 lookups:
-  filters_url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQxyJ0Y658cIIN1NpbHl4Ah1bZjNnWao7oawdLkl4T_5GC4BF-KMFnzKuzupU-w2Js1_Zy-VmaFJdIW/pub?gid=0&single=true&output=csv"
-  blocklist_url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQxyJ0Y658cIIN1NpbHl4Ah1bZjNnWao7oawdLkl4T_5GC4BF-KMFnzKuzupU-w2Js1_Zy-VmaFJdIW/pub?gid=1705733671&single=true&output=csv"
+  skipped_url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQxyJ0Y658cIIN1NpbHl4Ah1bZjNnWao7oawdLkl4T_5GC4BF-KMFnzKuzupU-w2Js1_Zy-VmaFJdIW/pub?gid=0&single=true&output=csv"
+  allowed_url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQxyJ0Y658cIIN1NpbHl4Ah1bZjNnWao7oawdLkl4T_5GC4BF-KMFnzKuzupU-w2Js1_Zy-VmaFJdIW/pub?gid=2004238161&single=true&output=csv"
+  spurious_url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQxyJ0Y658cIIN1NpbHl4Ah1bZjNnWao7oawdLkl4T_5GC4BF-KMFnzKuzupU-w2Js1_Zy-VmaFJdIW/pub?gid=1705733671&single=true&output=csv"
   org_data: "data/IATIOrganisationIdentifier.json"
   sector_data: "data/dac3-sector-map.json"
   region_data: "data/Region.json"
@@ -208,6 +209,8 @@ lookups:
   default_expenditure_org_name: "(Direct expenditure)"
   default_sector: "(Unspecified sector)"
   default_country_region: "(Unspecified country)"
+
+usd_error_threshold: 100000000
 
 calculate_splits:
   default_sector: "99999"

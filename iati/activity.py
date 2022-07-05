@@ -25,11 +25,11 @@ class Activity:
         self.sector_splits = CalculateSplits.make_sector_splits(dactivity)
         self.transactions = list()
 
-    def add_transactions(self, configuration):
+    def add_transactions(self, configuration, errors_on_exit):
         skipped = 0
         for dtransaction in self.dactivity.transactions:
             transaction = Transaction.get_transaction(
-                configuration, dtransaction, self.identifier
+                configuration, dtransaction, self.identifier, errors_on_exit
             )
             if not transaction:
                 skipped += 1
@@ -38,7 +38,7 @@ class Activity:
         return skipped
 
     @staticmethod
-    def get_activity(configuration, dactivity):
+    def get_activity(configuration, dactivity, errors_on_exit):
         """
         We exclude activities from secondary reporters and certain sorts
         of organisations where the data is very poor quality. We also
@@ -48,19 +48,17 @@ class Activity:
         if dactivity.secondary_reporter:
             return None, len(dactivity.transactions)
         # Filter out certain activities
-        if Lookups.is_filter_activities(dactivity.identifier):
+        if Lookups.skip_activity(dactivity.identifier):
             return None, len(dactivity.transactions)
         reporting_org_ref = dactivity.reporting_org.ref
         # Filter out certain orgs
-        if Lookups.is_filter_reporting_orgs(reporting_org_ref):
+        if Lookups.skip_reporting_org(reporting_org_ref):
             return None, len(dactivity.transactions)
         # Filter out eg. GAVI and FCDO activities that have children (ie. filter out h=1)
-        if Lookups.is_filter_reporting_orgs_children(
-            reporting_org_ref, dactivity.hierarchy
-        ):
+        if Lookups.skip_reporting_org_children(reporting_org_ref, dactivity.hierarchy):
             return None, len(dactivity.transactions)
         activity = Activity(dactivity)
-        skipped = activity.add_transactions(configuration)
+        skipped = activity.add_transactions(configuration, errors_on_exit)
         return activity, skipped
 
     def is_strict(self):

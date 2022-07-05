@@ -90,7 +90,14 @@ def write(today, output_dir, configuration, configuration_key, rows, skipped=Non
 
 
 def start(
-    configuration, today, retriever, output_dir, dportal_params, whattorun, filterdate
+    configuration,
+    today,
+    retriever,
+    output_dir,
+    dportal_params,
+    whattorun,
+    filterdate,
+    errors_on_exit,
 ):
     if filterdate:
         text = f"removing transactions before {filterdate}"
@@ -136,7 +143,9 @@ def start(
     transactions = list()
     all_skipped = 0
     for i, dactivity in enumerate(reversed(dactivities)):
-        activity, skipped = Activity.get_activity(configuration, dactivity)
+        activity, skipped = Activity.get_activity(
+            configuration, dactivity, errors_on_exit
+        )
         all_skipped += skipped
         if activity:
             all_skipped += activity.process(today[:7], flows, transactions)
