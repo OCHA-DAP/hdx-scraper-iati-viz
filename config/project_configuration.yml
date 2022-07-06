@@ -210,7 +210,7 @@ lookups:
   default_sector: "(Unspecified sector)"
   default_country_region: "(Unspecified country)"
 
-usd_error_threshold: 100000000
+usd_error_threshold: 500000000
 
 calculate_splits:
   default_sector: "99999"
