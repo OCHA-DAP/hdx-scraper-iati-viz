@@ -12,6 +12,7 @@ from . import checks
 from .activity import Activity
 from .calculatesplits import CalculateSplits
 from .lookups import Lookups
+from .smalldactivity import SmallDActivity
 
 logger = logging.getLogger(__name__)
 
@@ -129,7 +130,7 @@ def start(
         if Lookups.checks.exclude_dactivity(dactivity):
             continue
         Lookups.add_reporting_org(dactivity)
-        dactivities.append(dactivity)
+        dactivities.append(SmallDActivity(dactivity))
         del dactivity
     del xmliterator  # Maybe this helps garbage collector?
     logger.info(f"D-Portal returned {number_query_activities} activities")
