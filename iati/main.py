@@ -118,15 +118,19 @@ def start(
     CalculateSplits.setup(configuration["calculate_splits"])
 
     # Build org name lookup
+    logger.info("Reading activities")
     dactivities = list()
     xmliterator = diterator.XMLIterator(dportal_path)
     number_query_activities = 0
     for dactivity in xmliterator:
         number_query_activities += 1
+        if number_query_activities % 1000 == 0:
+            logger.info(f"Read {number_query_activities} activities")
         if Lookups.checks.exclude_dactivity(dactivity):
             continue
         Lookups.add_reporting_org(dactivity)
         dactivities.append(dactivity)
+        del dactivity
     del xmliterator  # Maybe this helps garbage collector?
     logger.info(f"D-Portal returned {number_query_activities} activities")
     number_dactivities = len(dactivities)
@@ -139,6 +143,7 @@ def start(
     Lookups.add_participating_orgs(dactivities)
 
     # Build the accumulators from the IATI activities and transactions
+    logger.info("Processing activities")
     flows = dict()
     transactions = list()
     all_skipped = 0
