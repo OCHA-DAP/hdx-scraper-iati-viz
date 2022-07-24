@@ -32,17 +32,6 @@ def retrieve_dportal(configuration, retriever, whattorun, dportal_params=""):
     )
 
 
-def write_xml(output_dir, filename, dactivities):
-    logger.info(f"Writing {filename} to {output_dir}")
-    with open(join(output_dir, filename), "w") as writer:
-        writer.write(
-            '<?xml version="1.0" encoding="UTF-8"?>\n<iati-activities version="2.03">\n'
-        )
-        for dactivity in dactivities:
-            writer.write(dactivity.node.toxml())
-        writer.write("\n</iati-activities>")
-
-
 def write(today, output_dir, configuration, configuration_key, rows, skipped=None):
     logger.info(f"Writing {configuration_key} files to {output_dir}")
     file_configuration = configuration[configuration_key]
@@ -123,22 +112,32 @@ def start(
     dactivities = list()
     xmliterator = diterator.XMLIterator(dportal_path)
     number_query_activities = 0
-    for dactivity in xmliterator:
-        number_query_activities += 1
-        if number_query_activities % 1000 == 0:
-            logger.info(f"Read {number_query_activities} activities")
-        if Lookups.checks.exclude_dactivity(dactivity):
-            continue
-        Lookups.add_reporting_org(dactivity)
-        dactivities.append(SmallDActivity(dactivity))
-        del dactivity
+    prefiltered_path = join(output_dir, "prefiltered.xml")
+    with open(prefiltered_path, "w") as writer:
+        writer.write(
+            '<?xml version="1.0" encoding="UTF-8"?>\n<iati-activities version="2.03">\n'
+        )
+        for dactivity in xmliterator:
+            number_query_activities += 1
+            if number_query_activities % 1000 == 0:
+                logger.info(f"Read {number_query_activities} activities")
+            if Lookups.checks.exclude_dactivity(dactivity):
+                continue
+            Lookups.add_reporting_org(dactivity)
+            dactivities.append(SmallDActivity(dactivity))
+            writer.write(dactivity.node.toxml())
+            del dactivity
+        writer.write("\n</iati-activities>")
     del xmliterator  # Maybe this helps garbage collector?
     logger.info(f"D-Portal returned {number_query_activities} activities")
     number_dactivities = len(dactivities)
     if number_dactivities == number_query_activities:
         logger.info(f"No prefiltering performed")
+        try:
+            remove(prefiltered_path)
+        except FileNotFoundError:
+            pass
     else:
-        write_xml(output_dir, "prefiltered.xml", dactivities)
         logger.info(f"Prefiltered to {number_dactivities} activities")
     #    Lookups.build_reporting_org_blocklist(dactivities)
     Lookups.add_participating_orgs(dactivities)
