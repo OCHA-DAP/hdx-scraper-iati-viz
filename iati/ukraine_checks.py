@@ -6,10 +6,10 @@ class UkraineChecks:
     def exclude_dactivity(cls, dactivity):
         if cls.has_desired_scope(dactivity.humanitarian_scopes):
             return False
-        if not dactivity.humanitarian:
-            return True
-        if dactivity.activity_status != "2":
-            return True
+#        if not dactivity.humanitarian:
+#            return True
+#        if dactivity.activity_status != "2":
+#            return True
         conflict_start_date = parse_date("2022-02-24")
         relevant_countries = ("UA", "PL", "HU", "SK", "RO", "MD", "BY", "RU")
         start_date_in_conflict = False
@@ -50,14 +50,14 @@ class UkraineChecks:
                     return
 
         check_date(dactivity.start_date_actual)
-        check_countries(dactivity.recipient_countries)
+#        check_countries(dactivity.recipient_countries)
         check_narratives(dactivity.title)
         check_narratives(dactivity.description)
 
         for dtransaction in dactivity.transactions:
             check_date(dtransaction.date)
             check_date(dtransaction.value_date)
-            check_countries(dtransaction.recipient_countries)
+#            check_countries(dtransaction.recipient_countries)
             check_narratives(dtransaction.description)
 
         if not country_in_list:
