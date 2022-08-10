@@ -50,18 +50,18 @@ class UkraineChecks:
                     return
 
         check_date(dactivity.start_date_actual)
-#        check_countries(dactivity.recipient_countries)
+        check_countries(dactivity.recipient_countries)
         check_narratives(dactivity.title)
         check_narratives(dactivity.description)
 
         for dtransaction in dactivity.transactions:
             check_date(dtransaction.date)
             check_date(dtransaction.value_date)
-#            check_countries(dtransaction.recipient_countries)
+            check_countries(dtransaction.recipient_countries)
             check_narratives(dtransaction.description)
 
-        if not country_in_list:
-            return True
+#        if not country_in_list:
+#            return True
         if not start_date_in_conflict:
             return True
         if not text_in_narrative:
