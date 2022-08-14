@@ -9,6 +9,7 @@ from hdx.utilities.downloader import Download
 from hdx.utilities.errors_onexit import ErrorsOnExit
 from hdx.utilities.path import temp_dir
 from hdx.utilities.retriever import Retrieve
+
 from iati.main import start
 
 
@@ -33,7 +34,11 @@ class TestIATI:
     def fixtures_dir(self):
         return join("tests", "fixtures")
 
-    def test_run(self, configuration, fixtures_dir):
+    @pytest.fixture(scope="class")
+    def input_dir(self, fixtures_dir):
+        return join(fixtures_dir, "input")
+
+    def test_run(self, configuration, fixtures_dir, input_dir):
         with ErrorsOnExit() as errors_on_exit:
             with temp_dir(
                 "TestIATIViz", delete_on_success=True, delete_on_failure=False
@@ -42,7 +47,7 @@ class TestIATI:
                     retriever = Retrieve(
                         downloader,
                         tempdir,
-                        fixtures_dir,
+                        input_dir,
                         tempdir,
                         save=False,
                         use_saved=True,
