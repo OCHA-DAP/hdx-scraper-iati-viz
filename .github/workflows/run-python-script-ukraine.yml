@@ -29,6 +29,7 @@ jobs:
         python run.py --what=ukraine --date_filter=2022-02
         cp errors.log output_ukraine
     - name: Deploy 🚀
+      if: always()
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages

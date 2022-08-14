@@ -29,6 +29,7 @@ jobs:
         python run.py --what=climate
         cp errors.log output_climate
     - name: Deploy 🚀
+      if: always()
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages
