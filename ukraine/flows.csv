@@ -1,8 +1,527 @@
 Reporting org id,Reporting org name,Reporting org type,Provider org id,Provider org name,Provider org type,Receiver org id,Receiver org name,Receiver org type,Humanitarian?,Strict?,Transaction direction,Total money
 #org+id+reporting,#org+name+reporting,#org+reporting+type,#org+id+provider,#org+name+provider,#org+type+provider,#org+id+receiver,#org+name+receiver,#org+type+receiver,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_direction,#value+total
+dk-cvr-20074035,ADRA Danmark,22,,(Unspecified org),,,,,1,0,incoming,791999
+xm-dac-50-21,AECID Spanish Agency for International Development Cooperation,10,,,,,CICR - Comité Internacional de la C,,1,0,outgoing,5776000
+xm-dac-6-4,AICS - Italian Agency for Cooperation and Development,10,,,,,IFRCRCS - INTERNATIONAL FEDERATION OF RED CROSS AND RED CRESCENT,21,1,0,outgoing,2310400
+xm-dac-6-4,AICS - Italian Agency for Cooperation and Development,10,,,,,MINISTRY OF FINANCE OF UKRAINE ALT,10,1,0,outgoing,127072000
+xm-dac-6-4,AICS - Italian Agency for Cooperation and Development,10,,,,xm-dac-41122,UNICEF,40,1,0,outgoing,6931200
+xm-dac-6-4,AICS - Italian Agency for Cooperation and Development,10,,,,xm-dac-41121,United Nations High Commissioner for Refugees (UNHCR),40,1,0,outgoing,9241600
+xm-dac-6-4,AICS - Italian Agency for Cooperation and Development,10,,,,xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,1,0,outgoing,6931200
+gb-chc-1047501,Action Against Hunger,21,,,,,(Direct expenditure),,1,0,outgoing,13742
+gb-chc-274467,ActionAid UK,21,,,,,Alianza por la Solidaridad (ActionAid Spain),22,1,0,outgoing,3983216
+gb-chc-274467,ActionAid UK,21,gb-chc-1062638,Disaster Emergency Committee,22,,,,1,0,incoming,4245576
+gb-chc-1128267-8,Age International UK (HelpAge International UK),22,,,,gb-coh-1762840,HelpAge International,21,1,0,outgoing,12317400
+gb-chc-1128267-8,Age International UK (HelpAge International UK),22,gb-chc-1062638,Disaster Emergency Committee,22,,,,1,0,incoming,12317400
+gb-chc-285776,CAFOD,21,,,,,Anonymous - excluded for security reasons,21,0,0,outgoing,5447595
+gb-chc-285776,CAFOD,21,,,,,Catholic Relief Services - US Conference of Catholic Bishops,21,0,0,outgoing,955015
+gb-chc-285776,CAFOD,21,,,,,Jesuit Refugee Services Europe,23,0,0,outgoing,527992
+gb-chc-285776,CAFOD,21,,CAFOD General Funds,,,,,0,0,incoming,8491569
+gb-chc-292506,CARE International UK,21,gb-chc-1062638,Disaster Emergency Committee,22,,,,1,0,incoming,1476919
+dk-cvr-19348407,CISU Civil Society in Development,22,,,,,(Unspecified org),,0,0,outgoing,8630
+dk-cvr-19348407,CISU Civil Society in Development,22,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,0,0,incoming,585391
+dk-cvr-29439915,Caritas Denmark,22,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,1,0,incoming,3292232
+gb-chc-1105851,Christian Aid,21,,,,,(Direct expenditure),,1,0,outgoing,344891
+gb-chc-1105851,Christian Aid,21,,,,,Crown Agents,22,1,0,outgoing,2737200
+gb-chc-1105851,Christian Aid,21,,(Unspecified org),,,,,1,0,incoming,8669948
 nl-kvk-41160054,Cordaid,21,,,,ch-fdjp-66006990023,ACT Alliance,21,1,1,outgoing,128641
 nl-kvk-41160054,Cordaid,21,,,,,Caritas Moldova,22,1,1,outgoing,115520
 nl-kvk-41160054,Cordaid,21,,,,,Caritas Ukraine,22,1,1,outgoing,3581120
 nl-kvk-41160054,Cordaid,21,,,,,Caritas Ukraine - SPES,22,1,1,outgoing,231040
 nl-kvk-41160054,Cordaid,21,nl-kvk-41236410,Dorcas Aid International,21,,,,1,1,incoming,1017958
-nl-kvk-41160054,Cordaid,21,nl-kvk-27302841,Stichting Samenwerkende Hulporganisaties,21,,,,1,1,incoming,10108000
+nl-kvk-41160054,Cordaid,21,nl-kvk-27302841,Stichting SHO - Giro555,22,,,,1,1,incoming,10108000
+dk-cvr-12006004,Danish Mission Council Development Organisation,22,,,,dk-cvr-36139323,dk-cvr-36139323,22,0,0,outgoing,2943
+dk-cvr-20699310,Danish Refugee Council,21,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,1,0,incoming,17819983
+ca-4,Department of Finance Canada,10,,,,43000,International Monetary Fund (IMF),40,0,0,outgoing,806646769
+ca-4,Department of Finance Canada,10,,,,12000,Recipient Government,10,0,0,outgoing,241994031
+xm-dac-2-10,Directorate-general Development Cooperation and Humanitarian Aid,10,,,,41122,UNICEF/United Nations Children's Fund,40,0,0,outgoing,2310400
+nl-kvk-41236410,Dorcas Aid International,21,,,,,(Direct expenditure),,1,0,outgoing,440828
+nl-kvk-41236410,Dorcas Aid International,21,nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,1,0,incoming,2888000
+nl-kvk-41236410,Dorcas Aid International,21,nl-kvk-27302841,Stichting SHO - Giro555,22,,,,1,0,incoming,1039208
+xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,ENERGY EFFICIENCY COMPANY OF THE CITY OF DNIPRO,70,0,0,outgoing,453387
+xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,NATIONAL POWER COMPANY UKRENERGO PJSC,11,0,0,outgoing,57794688
+xi-iati-ebrd,European Bank for Reconstruction and Development,40,,,,,UKRPOSHTA SC,11,0,0,outgoing,7156676
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,fr-siret-4028868160030,ACTED (FR),21,1,0,outgoing,23104000
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,,"ADRA, o.p.s.",21,1,0,outgoing,2310400
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,fr-rcs-31899089200065,Action Contre La Faim (FR),21,1,0,outgoing,1848320
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,,CHARITA CESKA REPUBLIKA,21,1,0,outgoing,1848320
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,,Caritas Österreich,21,1,0,outgoing,1848320
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,dk-cvr-20699310,Danish Refugee Council,21,1,0,outgoing,2772480
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,fr-rcs-519655997,FEDERATION HANDICAP INTERNATIONAL,21,1,0,outgoing,1848320
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,it-cf-97091470589,INTERSOS Onlus,21,1,0,outgoing,924160
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,xm-dac-21016,International Committee of the Red Cross,40,1,0,outgoing,18021120
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,xm-dac-21018,International Federation of Red Cross and Red Crescent Societies,90,1,0,outgoing,66332
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,,International NGO Safety Organisation,21,1,0,outgoing,380674
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,xm-dac-47066,International Organization for Migration (IOM),40,1,0,outgoing,50828800
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,fi-pro-0998454-4,KIRKON ULKOMAANAPU SR,21,1,0,outgoing,12938240
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,no-brc-977538319,NORWEGIAN REFUGEE COUNCIL (NOR),21,1,0,outgoing,2772480
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,xm-dac-41122-vn-235823,PREMIERE URGENCE INTERNATIONALE,21,1,0,outgoing,1848320
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,cz-ico-25755277,People in Need,21,1,0,outgoing,1848320
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,,Polska Akcja Humanitarna,21,1,0,outgoing,1848320
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,,Radda Barnens Riksforbund,21,1,0,outgoing,4620800
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,fr-rcs-389515180,"SOLIDARITES INTERNATIONAL, (FR)",21,1,0,outgoing,3696640
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,xm-dac-41122,UNICEF,40,1,0,outgoing,28186880
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,xm-ocha-fts,"UNITED NATIONS, OFFICE FOR THE COORDINATION OF HUMANITARIAN AFFAIRS",21,1,0,outgoing,924160
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,xm-dac-41121,United Nations High Commissioner for Refugees (UNHCR),40,1,0,outgoing,5974694
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,41119,United Nations Population Fund,40,1,0,outgoing,462080
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,xm-dac-41140,World Food Programme,40,1,0,outgoing,39738880
+xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,xm-dac-928,World Health Organization,40,1,0,outgoing,15710720
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Bge Technology Gmbh,,0,0,outgoing,345003
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Enconet Consulting Gmbh,,0,0,outgoing,443608
+xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Science And Technology Center In Ukraine,,0,0,outgoing,1039680
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,gb-rev-05256920,Albany Associates International Ltd,70,0,0,outgoing,375949
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Association Of Local Government Bodies Bukovynian Communities Development Agency,,0,0,outgoing,277242
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Association Reporters Sans Frontieres,,0,0,outgoing,924160
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Bioethic Shelter And Emergency Srl,,0,0,outgoing,812850
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Business And Strategies In Europe,,0,0,outgoing,1434466
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Charitable Organization Network Of100 Percent Life Rivne,,0,0,outgoing,780184
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Corporate & Public Managment Consulting International Ou,,0,0,outgoing,528261
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Dai Global Austria Gmbh & Co Kg,,0,0,outgoing,996948
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Deutsche Gesellschaft Fur Internationale Zusammenarbeit (Giz) Gmbh*,,0,0,outgoing,20267618
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,E-Riigi Akadeemia Sihtasutus*E-Governance Academy Ega,,0,0,outgoing,12450746
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,East Europe Foundation International Charitable Organisation*Eef,,0,0,outgoing,181064
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Ecorys Europe Eeig - Geie,,0,0,outgoing,295515
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Ecorys Nederland Bv,,0,0,outgoing,29340
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Eesti Vabariik*Republique D Estonierepublic Of Estonia,,0,0,outgoing,4620800
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Egis International,,0,0,outgoing,564532
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,European Investment Bank*Banque Europeenne D Investissement,,0,0,outgoing,3142745
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Eurosupport - Fineurop Support Srl*,,0,0,outgoing,106602
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Fond Rozvytku Zmi*Media Development Foundation,,0,0,outgoing,265289
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Gfa Consulting Group Gmbh,,0,0,outgoing,523331
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Gustav Stresemann Institut Ev,,0,0,outgoing,253046
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Institute For Economic Research And Policy Consulting Civic Organisation,,0,0,outgoing,398684
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,International Organization For Migration,40,0,0,outgoing,5776000
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,International Renaissance Foundation,,0,0,outgoing,1324836
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Jsc Public Broadcasting Company Ofukraine,,0,0,outgoing,1475587
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Kreditanstalt Fur Wiederaufbau,,0,0,outgoing,1617280
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Lietuvos Respublikos Rysiu Reguliavimo Tarnyba*Communications Regulatory Authority Of The Republic Of Lithuania,,0,0,outgoing,42684
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,London Jewish Family Centre,,0,0,outgoing,1372743
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Narodowy Bank Polski Nbp*Nationalbank Of Poland,,0,0,outgoing,370819
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Niras Ic Sp Zoo,,0,0,outgoing,371110
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,"Non Governmental Organization Anti-Corruption Action Center, Ngo Antac",,0,0,outgoing,200315
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Novemisto Village Council Of Starosambirskyy Rayon Of Iviv Oblast*Nove Misto Amalgamated Territorial Community Counsil,,0,0,outgoing,5474
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Oca Global Consulting And Technical Advisory Services Sl,,0,0,outgoing,905621
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Pricewaterhousecoopers Eu Services,,0,0,outgoing,287663
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Public Union Ukrainian Academy Ofmediation,,0,0,outgoing,231040
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Reseau De Recherche Et D'Action Encontentieux Penitentiaire (Rcp),,0,0,outgoing,440076
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,The International Centre For Migration Policy Development,,0,0,outgoing,2546082
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Ukraina*Ukraine,,0,0,outgoing,13949040
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,United Nations Office For Project Services*Bureau Des Nations Unies Pour Les Services D'Appui Aux Projets,,0,0,outgoing,3856576
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Verein Sos-Kinderdorf*,,0,0,outgoing,184159
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,World Health Organization*Organisation Mondiale De La Sante,,0,0,outgoing,1355923
+xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,,,,,Wyg Savjetovanje Doo*Wyg Consultingltd,,0,0,outgoing,513062
+xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,Center For Civilians In Conflict,,0,0,outgoing,62011
+xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,,,,,The Halo Trust Lbg,,0,0,outgoing,305500
+xm-dac-918-3,European Investment Bank,15,,,,xm-ocha-cbpf-ukr81,Ukraine Humanitarian Fund,40,0,0,outgoing,338930165
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,(Direct expenditure),,0,0,outgoing,83869776
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,(Unspecified org),,0,0,outgoing,7544090
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,MINISTRY OF REINTEGRATION OF  TEMPORARILYOCCUPIEDTERRITORIES,,0,0,outgoing,369662
+de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,,STAAT UKRAINE MINISTERKABINETT,,0,0,outgoing,14908739
+xm-dac-41301,Food and Agriculture Organization (FAO),40,,,,,(Direct expenditure),,0,0,outgoing,4149061
+xm-dac-41301,Food and Agriculture Organization (FAO),40,,(Unspecified org),,,,,0,0,incoming,219742
+xm-dac-41301,Food and Agriculture Organization (FAO),40,xm-dac-801,Australia,10,,,,0,0,incoming,110772
+xm-dac-41301,Food and Agriculture Organization (FAO),40,xm-dac-2,Belgium,10,,,,0,0,incoming,500000
+xm-dac-41301,Food and Agriculture Organization (FAO),40,xm-dac-4,France,10,,,,0,0,incoming,2111932
+xm-dac-41301,Food and Agriculture Organization (FAO),40,xm-dac-701,Japan,10,,,,0,0,incoming,3000000
+xm-dac-41301,Food and Agriculture Organization (FAO),40,xm-dac-41114,United Nations Development Programme,40,,,,0,0,incoming,2000000
+xm-dac-41301,Food and Agriculture Organization (FAO),40,xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,,,,0,0,incoming,3577475
+xm-dac-41301,Food and Agriculture Organization (FAO),40,xm-dac-302,United States,10,,,,0,0,incoming,94592
+ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,,,,ca-cra_acr-3120560594,Uncoded,22,0,0,outgoing,2848121
+ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,,,,xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,1,0,outgoing,52754699
+gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,,Abt Britain Ltd,,0,0,outgoing,3997384
+47122,"Gavi, The Vaccine Alliance",40,,,,xm-dac-41122,UNICEF,40,0,0,outgoing,13570770
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Arbeiter-Samariter-Bund Deutschland e.V.,22,1,0,outgoing,3708192
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,ChildFund Deutschland e.V.,22,0,0,outgoing,-1701
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Dekabristen e.V.,22,0,0,outgoing,52562
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Deutsch-Russischer-Austausch e.V.,22,0,0,outgoing,34401
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Deutscher Caritasverband e.V. - Caritas International,22,1,0,outgoing,1260449
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Europäischer Austausch gGmbH,22,0,0,outgoing,32309
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,GK Breslau,10,1,0,outgoing,27725
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,GS-Foundation,22,0,0,outgoing,1340032
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Germany-based NGO,22,0,0,outgoing,52279
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,HELP - Hilfe zur Selbsthilfe e.V.,22,1,0,outgoing,462080
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,HKNM - Hoher Kommissar für Nationale Minderheiten,40,0,0,outgoing,98885
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Hanns-Seidel-Stiftung e.V.,22,0,0,outgoing,43867
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Heinrich-Böll-Stiftung e.V.,22,0,0,outgoing,45955
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,"Institute for Democracy, Media and Cultural Exchange IDEM e.V.",22,0,0,outgoing,3170
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Interlink Academy for International Dialog and Journalism gUG,22,0,0,outgoing,41587
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Interlink Academy for International Dialog and Journalism guG,22,0,0,outgoing,46208
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,xm-dac-21016,International Committee of the Red Cross,40,1,0,outgoing,46496800
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,International Organisation for Migration,40,1,0,outgoing,51984000
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,KUNSTrePUBLIK e.V.,22,0,0,outgoing,24148
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Malteser International,22,1,0,outgoing,1732800
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Micro Finance Institutions (deposit and non-deposit) in third country,70,0,0,outgoing,8086
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,ODIHR,40,0,0,outgoing,115520
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,OWEN Mobile Akademie für Geschlechterdemokratie und Friedensförderung,22,0,0,outgoing,140698
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Office for Democratic Institutions and Human Rights (ODIHR),40,0,0,outgoing,231040
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Organization for Security and Co-operation in Europe,40,0,0,outgoing,6736374
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Small Arms Survey,30,0,0,outgoing,145421
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Stiftung Friedensbewegung PAX Niederlande,21,0,0,outgoing,265696
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,1,0,outgoing,19638400
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Universität Heidelberg,80,0,0,outgoing,20972
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,filia.die Frauenstiftung,22,0,0,outgoing,6671
+xm-dac-5-7,Germany - Federal Foreign Office,10,,,,,Ärzte der Welt e.V.,22,1,0,outgoing,833941
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-1099,xi-gg-1099,,0,0,outgoing,39896
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-11442,xi-gg-11442,,0,0,outgoing,142827
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-11571,xi-gg-11571,,0,0,outgoing,250
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-12016,xi-gg-12016,,0,0,outgoing,1554
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-13229,xi-gg-13229,,0,0,outgoing,72387
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-15717,xi-gg-15717,,0,0,outgoing,632
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-16052,xi-gg-16052,,0,0,outgoing,1371
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-16569,xi-gg-16569,,0,0,outgoing,3022
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-189,xi-gg-189,,0,0,outgoing,10341608
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-28771,xi-gg-28771,,0,0,outgoing,40420
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-31029,xi-gg-31029,,0,0,outgoing,9004
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-31531,xi-gg-31531,,0,0,outgoing,72453
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-32321,xi-gg-32321,,0,0,outgoing,628878
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-33107,xi-gg-33107,,0,0,outgoing,65494
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-33993,xi-gg-33993,,0,0,outgoing,39412
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-34119,xi-gg-34119,,0,0,outgoing,210
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-36366,xi-gg-36366,,0,0,outgoing,4885
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-3643,xi-gg-3643,,0,0,outgoing,31150
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-37080,xi-gg-37080,,0,0,outgoing,1389
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-39795,xi-gg-39795,,0,0,outgoing,14571
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-45169,xi-gg-45169,,0,0,outgoing,4203
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-45185,xi-gg-45185,,0,0,outgoing,13075
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-46266,xi-gg-46266,,0,0,outgoing,51907
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-4697,xi-gg-4697,,0,0,outgoing,1652
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-601,xi-gg-601,,0,0,outgoing,45234
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-6431,xi-gg-6431,,0,0,outgoing,14851
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-64891,xi-gg-64891,,0,0,outgoing,7538
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-6902,xi-gg-6902,,0,0,outgoing,890
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-7246,xi-gg-7246,,0,0,outgoing,2859
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-72590,xi-gg-72590,,0,0,outgoing,1462
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-72730,xi-gg-72730,,0,0,outgoing,25441
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-744,xi-gg-744,,0,0,outgoing,1401
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-74559,xi-gg-74559,,0,0,outgoing,148442
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-76233,xi-gg-76233,,0,0,outgoing,403
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-77011,xi-gg-77011,,0,0,outgoing,58841
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-77538,xi-gg-77538,,0,0,outgoing,3818
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-78442,xi-gg-78442,,0,0,outgoing,2469
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-79229,xi-gg-79229,,0,0,outgoing,2728
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-79908,xi-gg-79908,,0,0,outgoing,14926
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-80020,xi-gg-80020,,0,0,outgoing,19279
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-832,xi-gg-832,,0,0,outgoing,20046
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-868,xi-gg-868,,0,0,outgoing,10031
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-93872,xi-gg-93872,,0,0,outgoing,481
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-95450,xi-gg-95450,,0,0,outgoing,7840
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-9554,xi-gg-9554,,0,0,outgoing,270
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-97435,xi-gg-97435,,0,0,outgoing,1180
+us-ein-300108263,GlobalGiving,21,,,,xi-gg-98107,xi-gg-98107,,0,0,outgoing,1833
+gb-coh-2153193,International Alert,21,,,,,(Direct expenditure),,0,0,outgoing,3576
+xm-dac-21016,International Committee of the Red Cross,40,,,,,(Direct expenditure),,1,0,outgoing,41700994
+xm-dac-47059,International Development Law Organization (IDLO),40,,,,,(Direct expenditure),,0,0,outgoing,443857
+xm-dac-47059,International Development Law Organization (IDLO),40,gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,0,0,incoming,13414
+xm-dac-47059,International Development Law Organization (IDLO),40,xm-dac-5-7,Germany - Federal Foreign Office,10,,,,0,0,incoming,284451
+xm-dac-21018,International Federation of Red Cross and Red Crescent Societies,90,,,,,(Direct expenditure),,1,0,outgoing,227161
+dk-cvr-26487013,International Media Support,21,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,0,0,incoming,2220704
+fi-3,Ministry for Foreign Affairs of Finland,10,,,,,(Unspecified org),,0,0,outgoing,9550971
+xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,,DEVELOPING COUNTRY-BASED NGO,23,0,0,outgoing,101390
+xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,gb-chc-1001813,The HALO Trust,21,0,0,outgoing,1087995
+xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,1,0,outgoing,61225600
+xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,,(Unspecified org),,0,0,outgoing,3903601
+xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,,(Unspecified org),,1,0,outgoing,524130
+xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,dk-cvr-20700211,Dansk Røde Kors,22,1,0,outgoing,3105879
+xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,xm-dac-44001,International Bank for Reconstruction and Development,40,0,0,outgoing,23294096
+xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,xm-dac-41122,UNICEF,40,1,0,outgoing,3882349
+xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,xm-dac-41114,United Nations Development Programme,40,0,0,outgoing,931764
+xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,xm-dac-41121,United Nations High Commissioner for Refugees (UNHCR),40,1,0,outgoing,7764699
+xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,1,0,outgoing,4658819
+nl-kvk-27378529,Netherlands Enterprise Agency,10,,,,,(Unspecified org),90,0,0,outgoing,68407
+nl-kvk-27378529,Netherlands Enterprise Agency,10,,,,,IOM,90,0,0,outgoing,63395
+nl-kvk-27108436,Oxfam Novib,21,,,,,(Direct expenditure),,1,0,outgoing,118128
+nl-kvk-30214009,PAX,21,,,,,(Unspecified org),,0,0,outgoing,170799
+nl-kvk-30214009,PAX,21,nl-kvk-27302841,Stichting SHO - Giro555,22,,,,0,0,incoming,1021657
+nl-kvk-41201463,Save the Children Netherlands,21,nl-kvk-41236410,Dorcas Aid International,21,,,,1,0,incoming,832874
+nl-kvk-41201463,Save the Children Netherlands,21,nl-kvk-27302841,Stichting SHO - Giro555,22,,,,1,0,incoming,13185283
+nl-kvk-41149486,Stichting Vluchteling,21,,,,it-cf-97091470589,INTERSOS Onlus,21,1,0,outgoing,884509
+nl-kvk-41149486,Stichting Vluchteling,21,,,,,Mines Advisory Group,21,1,0,outgoing,519840
+nl-kvk-41149486,Stichting Vluchteling,21,,,,cz-ico-25755277,People in Need,21,1,0,outgoing,779760
+nl-kvk-41149486,Stichting Vluchteling,21,,,,,Polish Humanitarian Action,21,1,0,outgoing,779760
+se-0,Sweden,10,,,,,CIVIC/Center for Civilians in Conflict,21,0,0,outgoing,530495
+se-0,Sweden,10,,,,,EcoContact A.O.,23,0,0,outgoing,75194
+se-0,Sweden,10,,,,,FCDO/Foreign Commonwealth and Development Office,10,0,0,outgoing,3497767
+se-0,Sweden,10,,,,21050,Geneva Call,22,0,0,outgoing,617939
+se-0,Sweden,10,,,,gb-coh-1762840,HelpAge International,21,0,0,outgoing,1457403
+se-0,Sweden,10,,,,,IRF/International Renaissance Foundation,23,0,0,outgoing,816146
+se-0,Sweden,10,,,,,"Kyiv School of Economics (formerly called EERC/Economics, Education and Research Consortium Inc)",80,0,0,outgoing,518812
+se-0,Sweden,10,,,,90000,Nordic Consulting Group A/S,90,0,0,outgoing,79114
+se-0,Sweden,10,,,,,SKR/Sveriges Kommuner och Regioner,22,0,0,outgoing,2862490
+se-0,Sweden,10,,,,,Sida,10,0,0,outgoing,96462
+se-0,Sweden,10,,,,,Skatteverket,10,0,0,outgoing,305248
+se-0,Sweden,10,,,,,Svenska Röda Korset,21,1,0,outgoing,-200470
+se-0,Sweden,10,,,,41122,UNICEF/United Nations Children's Fund,40,1,0,outgoing,53632431
+se-0,Sweden,10,,,,41146,UNWOMEN/United Nations Entity for Gender Equality and the Empowerment of Women,40,0,0,outgoing,1457403
+se-0,Sweden,10,,,,,Utrikespolitiska Institutet,80,0,0,outgoing,286351
+se-0,Sweden,10,,,,,WWF-CEE/Umweltorganisation WWF Central and Eastern Europe,21,0,0,outgoing,349777
+nl-kvk-41177385,Tearfund Nederland,21,,,,,(Direct expenditure),,1,0,outgoing,75573
+nl-kvk-41177385,Tearfund Nederland,21,,,,,Integra,21,1,0,outgoing,1079627
+nl-kvk-41177385,Tearfund Nederland,21,nl-kvk-27302841,Stichting SHO - Giro555,22,,,,1,0,incoming,1039680
+nl-kvk-41149287,Terre des Hommes Netherlands,21,,SHO GIRO 555,21,,,,0,0,incoming,4620800
+47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,,,,,(Unspecified org),,0,0,outgoing,48853959
+xm-dac-41146,UN Women,40,,,,,(Direct expenditure),,0,0,outgoing,38067
+xm-dac-41122,UNICEF,40,,,,,(Direct expenditure),,1,0,outgoing,44876749
+xm-dac-41122,UNICEF,40,,,,,(Unspecified org),,0,0,outgoing,46
+xm-dac-41122,UNICEF,40,,,,,(Unspecified org),,1,0,outgoing,166129817
+xm-dac-41122,UNICEF,40,xm-dac-6-4,AICS - Italian Agency for Cooperation and Development,10,,,,1,0,incoming,10917507
+xm-dac-41122,UNICEF,40,,Australian Committee for UNICEF,,,,,1,0,incoming,341797
+xm-dac-41122,UNICEF,40,xm-dac-41122-c03001,Austrian Committee for UNICEF,30,,,,1,0,incoming,1512165
+xm-dac-41122,UNICEF,40,be-bce_kbo-0407562029,Belgian Committee for UNICEF,30,,,,1,0,incoming,6419986
+xm-dac-41122,UNICEF,40,xm-dac-2,Belgium,10,,,,1,0,incoming,1991239
+xm-dac-41122,UNICEF,40,xm-dac-41122-c49902,Consolidated Funds from NatComs,30,,,,1,0,incoming,828347
+xm-dac-41122,UNICEF,40,xm-dac-41122-g11301,Czech Republic (The),10,,,,1,0,incoming,959822
+xm-dac-41122,UNICEF,40,xm-dac-41122-c12001,Danish Committee for UNICEF,30,,,,1,0,incoming,2721961
+xm-dac-41122,UNICEF,40,xm-dac-82-1,ESTONIA,10,,,,1,0,incoming,10910
+xm-dac-41122,UNICEF,40,xm-dac-41122-i49936,Education Cannot Wait Fund,40,,,,1,0,incoming,2120000
+xm-dac-41122,UNICEF,40,xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,1,0,incoming,30474609
+xm-dac-41122,UNICEF,40,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,1,0,incoming,741039
+xm-dac-41122,UNICEF,40,xm-dac-4,France,10,,,,1,0,incoming,2933239
+xm-dac-41122,UNICEF,40,xm-dac-41122-c14701,French Committee for UNICEF,30,,,,1,0,incoming,21952
+xm-dac-41122,UNICEF,40,xm-dac-41122-i49928,GAVI The Vaccine Alliance,40,,,,1,0,incoming,2008134
+xm-dac-41122,UNICEF,40,xm-dac-41122-c52501,German Committee for UNICEF,30,,,,1,0,incoming,7039319
+xm-dac-41122,UNICEF,40,,German Federal Foreign Office,,,,,1,0,incoming,18162434
+xm-dac-41122,UNICEF,40,,Global - Child Protection,40,,,,1,0,incoming,1309
+xm-dac-41122,UNICEF,40,,Global - Education,40,,,,1,0,incoming,527927
+xm-dac-41122,UNICEF,40,,Global - HIV and AIDS,40,,,,1,0,incoming,386170
+xm-dac-41122,UNICEF,40,,Global - Health,40,,,,1,0,incoming,21459
+xm-dac-41122,UNICEF,40,,Global - Nutrition,40,,,,1,0,incoming,5952
+xm-dac-41122,UNICEF,40,,Global - Social Policy & Social,40,,,,1,0,incoming,-3
+xm-dac-41122,UNICEF,40,,Global - Thematic Humanitarian Resp,40,,,,1,0,incoming,307742284
+xm-dac-41122,UNICEF,40,,Global - Water Sanitation & Hygiene,40,,,,1,0,incoming,12234
+xm-dac-41122,UNICEF,40,xm-dac-47501,Global Partnership for Education,40,,,,1,0,incoming,54
+xm-dac-41122,UNICEF,40,xm-dac-41122-g03001,Government of Austria,10,,,,1,0,incoming,3357929
+xm-dac-41122,UNICEF,40,xm-dac-41122-g24701,Government of Latvia,10,,,,1,0,incoming,113674
+xm-dac-41122,UNICEF,40,xm-dac-41122-g16501,Greece,10,,,,1,0,incoming,195549
+xm-dac-41122,UNICEF,40,xm-dac-21-1,Ireland - Department of Foreign Affairs and Trade,10,,,,1,0,incoming,921152
+xm-dac-41122,UNICEF,40,xm-dac-41122-c22201,Italian Committee for UNICEF,30,,,,1,0,incoming,486306
+xm-dac-41122,UNICEF,40,xm-dac-701,Japan,10,,,,1,0,incoming,18873869
+xm-dac-41122,UNICEF,40,,KfW - Germany,10,,,,1,0,incoming,4806717
+xm-dac-41122,UNICEF,40,xm-dac-41122-c26401,Luxembourg Committee for UNICEF,30,,,,1,0,incoming,57704
+xm-dac-41122,UNICEF,40,kr-gov-010,Ministry of Foreign Affairs and Trade of the Republic of korea,10,,,,1,0,incoming,4316111
+xm-dac-41122,UNICEF,40,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,1,0,incoming,100000
+xm-dac-41122,UNICEF,40,xm-dac-8-1,NORWAY,10,,,,1,0,incoming,6418794
+xm-dac-41122,UNICEF,40,xm-dac-76-1,POLAND,10,,,,1,0,incoming,99482
+xm-dac-41122,UNICEF,40,,PSFR - consolidated pool funding,30,,,,1,0,incoming,113973
+xm-dac-41122,UNICEF,40,xm-dac-41122-g37001,Russian Federation,10,,,,1,0,incoming,14355
+xm-dac-41122,UNICEF,40,es-dir3-e04585801,SPAIN,10,,,,1,0,incoming,3300000
+xm-dac-41122,UNICEF,40,ch-4,SWISS AGENCY FOR DEVELOPMENT AND COOPERATION - SDC,10,,,,1,0,incoming,904068
+xm-dac-41122,UNICEF,40,xm-dac-61-2,Slovenia - Ministry of Foreign Affairs,10,,,,1,0,incoming,740000
+xm-dac-41122,UNICEF,40,,Spanish Committee for UNICEF,,,,,1,0,incoming,58541
+xm-dac-41122,UNICEF,40,se-0,Sweden,10,,,,1,0,incoming,4799809
+xm-dac-41122,UNICEF,40,xm-dac-41122-c41101,Swedish Committee for UNICEF,30,,,,1,0,incoming,224290
+xm-dac-41122,UNICEF,40,xm-dac-41122-c57501,Swiss Committee for UNICEF,30,,,,1,0,incoming,8595668
+xm-dac-41122,UNICEF,40,xm-dac-41122-g42001,Thailand,10,,,,1,0,incoming,13771
+xm-dac-41122,UNICEF,40,xm-dac-41122-i49930,The Global Fund to Fight AIDS,40,,,,1,0,incoming,12757009
+xm-dac-41122,UNICEF,40,,UNICEF (FOR GR ALLOCATIONS ONLY),,,,,0,0,incoming,788
+xm-dac-41122,UNICEF,40,,UNICEF (FOR GR ALLOCATIONS ONLY),,,,,1,0,incoming,1845008
+xm-dac-41122,UNICEF,40,nl-kvk-27102631,UNICEF Netherlands National Committee,22,,,,1,0,incoming,19830583
+xm-dac-41122,UNICEF,40,,UNICEF-Belarus,30,,,,1,0,incoming,66778
+xm-dac-41122,UNICEF,40,,UNICEF-Romania,30,,,,1,0,incoming,1967086
+xm-dac-41122,UNICEF,40,,UNICEF-Saudi Arabia,30,,,,1,0,incoming,61
+xm-dac-41122,UNICEF,40,,UNICEF-Ukraine,30,,,,1,0,incoming,603405
+xm-dac-41122,UNICEF,40,xm-ocha-cbpf-ukr81,Ukraine Humanitarian Fund,40,,,,1,0,incoming,13999720
+xm-dac-41122,UNICEF,40,xm-dac-41122-c45301,United Kingdom Committee for UNICEF,30,,,,1,0,incoming,3501136
+xm-dac-41122,UNICEF,40,xm-dac-41110,United Nations Joint Programme on HIV and AIDS Secretariat (UNAIDS),40,,,,1,0,incoming,54217
+xm-dac-41122,UNICEF,40,xm-dac-41122-u99967,United Nations Multi Partner Trust,40,,,,1,0,incoming,306731
+xm-dac-41122,UNICEF,40,xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,,,,1,0,incoming,7478502
+xm-dac-41122,UNICEF,40,us-usagov,United States,10,,,,1,0,incoming,4734291
+xm-dac-41122,UNICEF,40,us-gov-1,United States Agency for International Development (USAID),10,,,,1,0,incoming,56078364
+xm-dac-41122,UNICEF,40,xm-dac-41122-c45601,United States Fund for UNICEF,30,,,,1,0,incoming,9736043
+nl-kvk-27102631,UNICEF Netherlands National Committee,22,,,,nl-kvk-27102631-sh-2022 ukraine,UNICEF Ukraine,40,0,0,outgoing,20411310
+nl-kvk-27102631,UNICEF Netherlands National Committee,22,nl-kvk-27302841,Stichting SHO - Giro555,22,,,,0,0,incoming,24998853
+xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41301,Food and Agriculture Organization (FAO),40,1,0,outgoing,4000000
+xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-47066,International Organization for Migration (IOM),40,1,0,outgoing,9999996
+xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41313,Office of the High Commissioner for Human Rights,40,1,0,outgoing,2006966
+xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41122,UNICEF,40,1,0,outgoing,10000000
+xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41121,United Nations High Commissioner for Refugees (UNHCR),40,1,0,outgoing,12000090
+xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41119,United Nations Population Fund,40,1,0,outgoing,1999805
+xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-928,World Health Organization,40,1,0,outgoing,8000000
+xm-dac-41114,United Nations Development Programme,40,,,,,(Direct expenditure),,0,0,outgoing,15068864
+xm-dac-41114,United Nations Development Programme,40,,,,,(Direct expenditure),,1,0,outgoing,10872209
+xm-dac-41114,United Nations Development Programme,40,,,,,Government of Ukraine,10,0,0,outgoing,35904
+xm-dac-41114,United Nations Development Programme,40,,,,,Government of Ukraine,10,1,0,outgoing,197969
+xm-dac-41114,United Nations Development Programme,40,xm-dac-918-3,European Investment Bank,15,,,,1,0,incoming,-54433
+xm-dac-41114,United Nations Development Programme,40,ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,,,,1,0,incoming,7796055
+xm-dac-41114,United Nations Development Programme,40,dk-1,GOVERNMENT OF DENMARK,10,,,,0,0,incoming,-81715
+xm-dac-41114,United Nations Development Programme,40,gb-6,GOVERNMENT OF UNITED KINGDOM,10,,,,1,0,incoming,-3148
+xm-dac-41114,United Nations Development Programme,40,se-0,Sweden,10,,,,1,0,incoming,-212107
+xm-dac-41114,United Nations Development Programme,40,xi-iati-unpf,UN Pooled funds,40,,,,0,0,incoming,385000
+xm-dac-41123,United Nations Industrial Development Organization,40,,Regular Programme Of Technical Cooperati,,,,,0,0,incoming,21749
+xm-dac-41123,United Nations Industrial Development Organization,40,,UN Joint SDG Fund,,,,,0,0,incoming,84112
+xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,,,,,(Direct expenditure),,1,0,outgoing,2701756
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,AVSI Foundation,21,1,0,outgoing,264911
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,fr-rcs-31899089200065,Action Contre La Faim (FR),21,1,0,outgoing,278825
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Adventist Development and Relief Agency – Ukraine,22,1,0,outgoing,195000
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Agency for Technical Cooperation and Development,21,1,0,outgoing,4921208
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,"CHARITABLE FOUNDATION ""HUMANITARIAN AID AND DEVELOPMENT CENTRE""",22,1,0,outgoing,286566
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,"Charitable Organization ""Charity Fund ""POSMISHKA UA""",22,1,0,outgoing,399869
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Charity Foundation “NEW WAY”,22,1,0,outgoing,1238945
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Cooperative Housing Foundation,21,1,0,outgoing,279765
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,dk-cvr-20699310,Danish Refugee Council,21,1,0,outgoing,2904884
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Donbass Development Center,22,1,0,outgoing,1551110
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Estonian Refugee Council,21,1,0,outgoing,832121
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,fr-rcs-519655997,FEDERATION HANDICAP INTERNATIONAL,21,1,0,outgoing,1200000
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Food and Agriculture Organization of the United Nations,40,1,0,outgoing,7490993
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Foundazione di Religione “Opera San Francesco Saverio” - Collegio Universitario Aspiranti Medici Missionari - C.U.A.M.M.,21,1,0,outgoing,309704
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,ICF Caritas Ukraine,22,1,0,outgoing,5974175
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,it-cf-97091470589,INTERSOS Onlus,21,1,0,outgoing,1320000
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,International Organization for Migration,40,1,0,outgoing,3480000
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Internationale Gesellschaft für Menschenrechte,21,1,0,outgoing,195639
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Medicos del Mundo,21,1,0,outgoing,1600000
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,NGO Resource Center,22,1,0,outgoing,15463
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Norwegian Refugee Council,21,1,0,outgoing,7513000
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,cz-ico-25755277,People in Need,21,1,0,outgoing,3636943
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Polish Humanitarian Action,21,1,0,outgoing,1150901
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Première Urgence Internationale,21,1,0,outgoing,500000
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Proliska,22,1,0,outgoing,2298952
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,gb-chc-1076822,Save the Children International,21,1,0,outgoing,800000
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Solidarités International,21,1,0,outgoing,1760000
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Street Child,21,1,0,outgoing,247852
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Triangle Generation Humanitaire,21,1,0,outgoing,1431957
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,xm-dac-41122,UNICEF,40,1,0,outgoing,5364382
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Ukrainian Deminers Association,22,1,0,outgoing,577560
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,xm-dac-41121,United Nations High Commissioner for Refugees (UNHCR),40,1,0,outgoing,6051015
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,41aaa,United Nations Office for Project Services,40,1,0,outgoing,2192468
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,41119,United Nations Population Fund,40,1,0,outgoing,1132450
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,xm-dac-41140,World Food Programme,40,1,0,outgoing,1248131
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,xm-dac-928,World Health Organization,40,1,0,outgoing,3748031
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,,,,Youth Organization MAXIMAL,22,1,0,outgoing,161198
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,xm-dac-6-4,AICS - Italian Agency for Cooperation and Development,10,,,,1,0,incoming,6571742
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,au-5,Australia - Department of Foreign Affairs and Trade,10,,,,1,0,incoming,11057065
+xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,xm-dac-72-1,BULGARIA,10,,,,1,0,incoming,52521
+xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,xm-dac-301-1,CANADA,10,,,,1,0,incoming,156138
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,Cyprus,10,,,,1,0,incoming,110515
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,xm-dac-82-1,ESTONIA,10,,,,1,0,incoming,194506
+xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,1,0,incoming,811359
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,1,0,incoming,18538249
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,,,,1,0,incoming,25462320
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,1,0,incoming,44471902
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,fr-6,France - Ministry for Europe and Foreign Affairs,10,,,,1,0,incoming,2111932
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,xm-dac-701-2,GOVERNMENT OF JAPAN,10,,,,1,0,incoming,5000000
+xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,xm-dac-5-7,Germany - Federal Foreign Office,10,,,,1,0,incoming,337079
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,Iceland,10,,,,1,0,incoming,531063
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,xm-dac-21-1,Ireland - Department of Foreign Affairs and Trade,10,,,,1,0,incoming,3285871
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,Jersey,10,,,,1,0,incoming,160643
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,kr-gov-021,Korea,10,,,,1,0,incoming,500000
+xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,xm-dac-83-1,LATVIA,10,,,,1,0,incoming,133929
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,xm-dac-84,"Lithuania, Ministry of Foreign Affairs",10,,,,1,0,incoming,337079
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,xm-dac-41122-g26401,Luxembourg,10,,,,1,0,incoming,380435
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,1,0,incoming,22321429
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,1,0,incoming,4509126
+xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,xm-dac-8-1,NORWAY,10,,,,1,0,incoming,1362881
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,nz-1,New Zealand - Ministry of Foreign Affairs and Trade - New Zealand Aid Programme,10,,,,1,0,incoming,1363400
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,no-brc-971277882,Norad - Norwegian Agency for Development Cooperation,10,,,,1,0,incoming,6128542
+xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,xm-dac-76-1,POLAND,10,,,,1,0,incoming,500000
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,Philippines,10,,,,1,0,incoming,100000
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,,Private donations (through UNF),10,,,,1,0,incoming,7654289
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,es-dir3-e04585801,SPAIN,10,,,,1,0,incoming,5376344
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,ch-4,SWISS AGENCY FOR DEVELOPMENT AND COOPERATION - SDC,10,,,,1,0,incoming,808190
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,xm-dac-61-2,Slovenia - Ministry of Foreign Affairs,10,,,,1,0,incoming,438116
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,se-0,Sweden,10,,,,1,0,incoming,7117245
+xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,us-usagov,United States,10,,,,1,0,incoming,20000000
+xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,us-gov-1,United States Agency for International Development (USAID),10,,,,1,0,incoming,2500000
+41119,United Nations Population Fund,40,,,,,(Direct expenditure),,0,0,outgoing,6315
+us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-042347643,"Abt Associates, Inc.",70,0,0,outgoing,14436748
+us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-52-2145827,"Chemonics International, Inc.",70,0,0,outgoing,6903044
+us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-602539111,CloudBurst Group,70,0,0,outgoing,455665
+us-gov-1,United States Agency for International Development (USAID),10,,,,,"CounterTrade Products, Inc.",70,0,0,outgoing,103382
+us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-805875718,"Credence Management Solutions, LLC",70,0,0,outgoing,27566590
+us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-805875718,"Credence Management Solutions, LLC",70,1,0,outgoing,1047453
+us-gov-1,United States Agency for International Development (USAID),10,,,,us-gov-11,Department of State,10,0,0,outgoing,2098086
+us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-782053979,"Fintrac, Inc.",70,0,0,outgoing,910368
+us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-186295239,Futures Group Global,70,0,0,outgoing,998925
+us-gov-1,United States Agency for International Development (USAID),10,,,,gb-coh-04161656,ICF International,70,0,0,outgoing,2839554
+us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-961739898,"Integra, LLC",70,0,0,outgoing,528983
+us-gov-1,United States Agency for International Development (USAID),10,,,,,Invitational Travelers - USAID,,0,0,outgoing,30829
+us-gov-1,United States Agency for International Development (USAID),10,,,,,Invitational Travelers - USAID,,1,0,outgoing,540
+us-gov-1,United States Agency for International Development (USAID),10,,,,,"Management Concepts, Inc.",70,0,0,outgoing,22819
+us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-071713085,Management Sciences for Health,22,0,0,outgoing,1026667
+us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-048407589,Management Systems International,70,0,0,outgoing,703035
+us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-069512291,NORC at the University of Chicago,22,0,0,outgoing,1626247
+us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-637288759,Right to Care (South Africa),23,0,0,outgoing,11368446
+us-gov-1,United States Agency for International Development (USAID),10,,,,us-gov-2,U.S. Government - Department of Agriculture,10,1,0,outgoing,-576876
+us-gov-1,United States Agency for International Development (USAID),10,,,,us-gov-20,U.S. Government - Department of Energy,10,0,0,outgoing,1715110
+us-gov-1,United States Agency for International Development (USAID),10,,,,us-gov-14,U.S. Government - Department of Health and Human Services,10,0,0,outgoing,107991
+us-gov-1,United States Agency for International Development (USAID),10,,,,us-gov-23,U.S. Government - Federal Trade Commission,10,0,0,outgoing,268988
+us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-41122,UNICEF,40,0,0,outgoing,2565718
+us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-618022149,USAID redacted this field in accordance with the exceptions outlined in the Foreign Aid Transparency and Accountability Act of 2016.,22,0,0,outgoing,184141135
+us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-618022149,USAID redacted this field in accordance with the exceptions outlined in the Foreign Aid Transparency and Accountability Act of 2016.,22,1,0,outgoing,873680
+us-gov-1,United States Agency for International Development (USAID),10,,,,41aaa,United Nations Office for Project Services,40,0,0,outgoing,58161572
+us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-928,World Health Organization,40,0,0,outgoing,24675529
+44000,World Bank,40,,,,,(Unspecified org),,0,0,outgoing,13324705
+44000,World Bank,40,,,,,Ministry of Agrarian Policy and Food of Ukraine,,0,0,outgoing,34500000
+44000,World Bank,40,,,,,Ministry of Education and Science of Ukraine,,0,0,outgoing,100000000
+44000,World Bank,40,,,,12562,Ministry of Health of Ukraine,10,0,0,outgoing,111275967
+44000,World Bank,40,,,,,Ministry of Social Policy of Ukraine,,0,0,outgoing,40980995
+44000,World Bank,40,,,,,UKRAVTODOR,,0,0,outgoing,20993326
+xi-iati-wbtf,World Bank Trust Funds (WBTF),40,,,,xm-ocha-cbpf-ukr81,Ukraine Humanitarian Fund,40,0,0,outgoing,260829
+xm-dac-41140,World Food Programme,40,,,,,(Direct expenditure),,0,0,outgoing,5881380
+xm-dac-41140,World Food Programme,40,,,,,(Direct expenditure),,1,0,outgoing,302080703
+xm-dac-41140,World Food Programme,40,xm-dac-801,Australia,10,,,,0,0,incoming,68847
+xm-dac-41140,World Food Programme,40,au-5,Australia - Department of Foreign Affairs and Trade,10,,,,0,0,incoming,248417
+xm-dac-41140,World Food Programme,40,au-5,Australia - Department of Foreign Affairs and Trade,10,,,,1,0,incoming,6745348
+xm-dac-41140,World Food Programme,40,xm-dac-2,Belgium,10,,,,0,0,incoming,269120
+xm-dac-41140,World Food Programme,40,xm-dac-2,Belgium,10,,,,1,0,incoming,616975
+xm-dac-41140,World Food Programme,40,cze,CZECH REP,,,,,0,0,incoming,1049
+xm-dac-41140,World Food Programme,40,cze,CZECH REP,,,,,1,0,incoming,1016545
+xm-dac-41140,World Food Programme,40,etm,EAST TIMOR,,,,,0,0,incoming,28294
+xm-dac-41140,World Food Programme,40,etm,EAST TIMOR,,,,,1,0,incoming,1380157
+xm-dac-41140,World Food Programme,40,xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,0,0,incoming,1556201
+xm-dac-41140,World Food Programme,40,xi-iati-ec_echo,European Commission - Humanitarian Aid & Civil Protection,15,,,,1,0,incoming,39719657
+xm-dac-41140,World Food Programme,40,mic,FEDERATED STATES OF MICRONESIA,,,,,0,0,incoming,96154
+xm-dac-41140,World Food Programme,40,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,0,0,incoming,241101
+xm-dac-41140,World Food Programme,40,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,,,,1,0,incoming,1468039
+xm-dac-41140,World Food Programme,40,ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,,,,0,0,incoming,428803
+xm-dac-41140,World Food Programme,40,ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,,,,1,0,incoming,67527722
+xm-dac-41140,World Food Programme,40,xm-dac-4,France,10,,,,0,0,incoming,52106
+xm-dac-41140,World Food Programme,40,xm-dac-4,France,10,,,,1,0,incoming,733190
+xm-dac-41140,World Food Programme,40,fr-6,France - Ministry for Europe and Foreign Affairs,10,,,,0,0,incoming,20502
+xm-dac-41140,World Food Programme,40,fr-6,France - Ministry for Europe and Foreign Affairs,10,,,,1,0,incoming,4911048
+xm-dac-41140,World Food Programme,40,gib,GIBRALTAR,,,,,0,0,incoming,345668
+xm-dac-41140,World Food Programme,40,gib,GIBRALTAR,,,,,1,0,incoming,644070
+xm-dac-41140,World Food Programme,40,xm-dac-701-2,GOVERNMENT OF JAPAN,10,,,,0,0,incoming,1625881
+xm-dac-41140,World Food Programme,40,xm-dac-701-2,GOVERNMENT OF JAPAN,10,,,,1,0,incoming,19426292
+xm-dac-41140,World Food Programme,40,xm-dac-5-7,Germany - Federal Foreign Office,10,,,,0,0,incoming,3075782
+xm-dac-41140,World Food Programme,40,xm-dac-5-7,Germany - Federal Foreign Office,10,,,,1,0,incoming,60632844
+xm-dac-41140,World Food Programme,40,ice,ICELAND,10,,,,0,0,incoming,10202
+xm-dac-41140,World Food Programme,40,ice,ICELAND,10,,,,1,0,incoming,488415
+xm-dac-41140,World Food Programme,40,xm-dac-21-1,Ireland - Department of Foreign Affairs and Trade,10,,,,0,0,incoming,34457
+xm-dac-41140,World Food Programme,40,xm-dac-21-1,Ireland - Department of Foreign Affairs and Trade,10,,,,1,0,incoming,227531
+xm-dac-41140,World Food Programme,40,xm-dac-701,Japan,10,,,,0,0,incoming,27340
+xm-dac-41140,World Food Programme,40,xm-dac-701,Japan,10,,,,1,0,incoming,7744137
+xm-dac-41140,World Food Programme,40,kor,KOREA REP. OF,,,,,0,0,incoming,180066
+xm-dac-41140,World Food Programme,40,kor,KOREA REP. OF,,,,,1,0,incoming,757683
+xm-dac-41140,World Food Programme,40,kuw,KUWAIT,,,,,0,0,incoming,469484
+xm-dac-41140,World Food Programme,40,xm-dac-41122-g26401,Luxembourg,10,,,,0,0,incoming,73981
+xm-dac-41140,World Food Programme,40,xm-dac-41122-g26401,Luxembourg,10,,,,1,0,incoming,193379
+xm-dac-41140,World Food Programme,40,kr-gov-010,Ministry of Foreign Affairs and Trade of the Republic of korea,10,,,,0,0,incoming,221281
+xm-dac-41140,World Food Programme,40,kr-gov-010,Ministry of Foreign Affairs and Trade of the Republic of korea,10,,,,1,0,incoming,3083967
+xm-dac-41140,World Food Programme,40,xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,0,0,incoming,243217
+xm-dac-41140,World Food Programme,40,xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,1,0,incoming,27367440
+xm-dac-41140,World Food Programme,40,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,0,0,incoming,76631
+xm-dac-41140,World Food Programme,40,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,,,,1,0,incoming,3806382
+xm-dac-41140,World Food Programme,40,mu,Multilateral,,,,,0,0,incoming,321742
+xm-dac-41140,World Food Programme,40,mu,Multilateral,,,,,1,0,incoming,0
+xm-dac-41140,World Food Programme,40,xm-dac-8-1,NORWAY,10,,,,0,0,incoming,1181000
+xm-dac-41140,World Food Programme,40,xm-dac-8-1,NORWAY,10,,,,1,0,incoming,27114498
+xm-dac-41140,World Food Programme,40,sin,SINGAPORE,,,,,0,0,incoming,108023
+xm-dac-41140,World Food Programme,40,sin,SINGAPORE,,,,,1,0,incoming,830945
+xm-dac-41140,World Food Programme,40,slo,SLOVAKIA,,,,,0,0,incoming,125755
+xm-dac-41140,World Food Programme,40,ch-4,SWISS AGENCY FOR DEVELOPMENT AND COOPERATION - SDC,10,,,,0,0,incoming,327395
+xm-dac-41140,World Food Programme,40,ch-4,SWISS AGENCY FOR DEVELOPMENT AND COOPERATION - SDC,10,,,,1,0,incoming,24906543
+xm-dac-41140,World Food Programme,40,xm-dac-61-2,Slovenia - Ministry of Foreign Affairs,10,,,,0,0,incoming,100964
+xm-dac-41140,World Food Programme,40,se-0,Sweden,10,,,,0,0,incoming,754307
+xm-dac-41140,World Food Programme,40,se-0,Sweden,10,,,,1,0,incoming,10428402
+xm-dac-41140,World Food Programme,40,uk,U.K.,,,,,0,0,incoming,1138060
+xm-dac-41140,World Food Programme,40,uk,U.K.,,,,,1,0,incoming,993220
+xm-dac-41140,World Food Programme,40,usa,U.S.A.,,,,,0,0,incoming,11562917
+xm-dac-41140,World Food Programme,40,usa,U.S.A.,,,,,1,0,incoming,283858445
+xm-dac-41140,World Food Programme,40,uae,UNITED ARAB EMIRATES,,,,,1,0,incoming,158775
+xm-dac-41140,World Food Programme,40,xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,0,0,incoming,1508291
+xm-dac-41140,World Food Programme,40,xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,1,0,incoming,9364603
+xm-dac-41140,World Food Programme,40,uns,UNSPECIFIED,,,,,0,0,incoming,97055
+xm-dac-41140,World Food Programme,40,uns,UNSPECIFIED,,,,,1,0,incoming,2398495
+xm-dac-41140,World Food Programme,40,xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,,,,0,0,incoming,24562
+gb-chc-285908,World Vision United Kingdom,21,,,,,World Vision Moldova,21,1,0,outgoing,322758
+gb-chc-285908,World Vision United Kingdom,21,,,,,World Vision Romania,21,1,0,outgoing,898684
+gb-chc-285908,World Vision United Kingdom,21,,,,,World Vision Ukraine,21,1,0,outgoing,639539
+gb-chc-285908,World Vision United Kingdom,21,gb-chc-1062638,Disaster Emergency Committee,22,,,,1,0,incoming,3196447
