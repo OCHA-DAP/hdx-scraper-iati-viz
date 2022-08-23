@@ -6,13 +6,15 @@ class UkraineChecks:
     def exclude_dactivity(cls, dactivity):
         if cls.has_desired_scope(dactivity.humanitarian_scopes):
             return False
-#        if not dactivity.humanitarian:
-#            return True
-#        if dactivity.activity_status != "2":
-#            return True
+        #        if not dactivity.humanitarian:
+        #            return True
+        #        if dactivity.activity_status != "2":
+        #            return True
         conflict_start_date = parse_date("2022-02-24")
+        excluded_aid_types = ("A01",)
         relevant_countries = ("UA", "PL", "HU", "SK", "RO", "MD", "BY", "RU")
         start_date_in_conflict = False
+        included_aid_type = False
         country_in_list = False
         text_in_narrative = False
 
@@ -25,6 +27,17 @@ class UkraineChecks:
             start_date = parse_date(date)
             if start_date >= conflict_start_date:
                 start_date_in_conflict = True
+
+        def check_aid_types(aid_types):
+            nonlocal excluded_aid_types, included_aid_type
+            if included_aid_type:
+                return
+            if not aid_types:
+                return
+            for aid_type in aid_types:
+                if aid_type.code not in excluded_aid_types:
+                    included_aid_type = True
+                    return
 
         def check_countries(countries):
             nonlocal relevant_countries, country_in_list
@@ -50,6 +63,7 @@ class UkraineChecks:
                     return
 
         check_date(dactivity.start_date_actual)
+        check_aid_types(dactivity.default_aid_types)
         check_countries(dactivity.recipient_countries)
         check_narratives(dactivity.title)
         check_narratives(dactivity.description)
@@ -57,11 +71,14 @@ class UkraineChecks:
         for dtransaction in dactivity.transactions:
             check_date(dtransaction.date)
             check_date(dtransaction.value_date)
+            check_aid_types(dtransaction.aid_types)
             check_countries(dtransaction.recipient_countries)
             check_narratives(dtransaction.description)
 
-#        if not country_in_list:
-#            return True
+        #        if not country_in_list:
+        #            return True
+        if not included_aid_type:
+            return True
         if not start_date_in_conflict:
             return True
         if not text_in_narrative:
