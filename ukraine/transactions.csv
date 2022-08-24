@@ -1,9 +1,5 @@
 Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient country,Humanitarian?,Strict?,Transaction type,Activity id,Net money,Total money
 #date+month,#org+id,#org+name,#org+type,#sector,#country,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_type,#activity+code,#value+net,#value+total
-2022-02,xm-dac-6-4,AICS - Italian Agency for Cooperation and Development,10,General Budget Support,Ukraine,1,0,commitments,XM-DAC-6-4-012586-01-0,123172044,123172044
-2022-02,xm-dac-6-4,AICS - Italian Agency for Cooperation and Development,10,General Budget Support,Ukraine,1,0,spending,XM-DAC-6-4-012586-01-0,122991600,122991600
-2022-02,dk-cvr-12006004,Danish Mission Council Development Organisation,22,Government & Civil Society,Ukraine,0,0,spending,DK-CVR-12006004 GTS 21-41,2850,2850
-2022-02,dk-cvr-12006004,Danish Mission Council Development Organisation,22,Government & Civil Society,Ukraine,0,0,spending,DK-CVR-12006004 GTS 21-41,2850,2850
 2022-02,xi-iati-ebrd,European Bank for Reconstruction and Development,40,Communications,Ukraine,0,0,spending,XI-IATI-EBRD-51975,1109443,1109443
 2022-02,xi-iati-ebrd,European Bank for Reconstruction and Development,40,Unallocated / Unspecified,Ukraine,0,0,spending,XI-IATI-EBRD-51563,446050,446050
 2022-02,xi-iati-ec_intpa,European Commission - International Partnerships,15,Energy,Ukraine,0,0,commitments,XI-IATI-EC_INTPA-2013/24796/0,-5,-5
@@ -717,7 +713,6 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-03,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,"Agriculture, Forestry, Fishing",Ukraine,0,0,spending,XI-IATI-EC_NEAR-2018/400-315,87581,87581
 2022-03,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,Banking & Financial Services,Ukraine,0,0,spending,XI-IATI-EC_NEAR-2017/385-767,163287,163287
 2022-03,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,Communications,Ukraine,0,0,spending,XI-IATI-EC_NEAR-2022/432-474,5496904,5496904
-2022-03,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,General Budget Support,Ukraine,0,0,commitments,XI-IATI-EC_NEAR-2022/44258/1,122402768,122402768
 2022-03,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,General Environment Protection,Ukraine,0,0,spending,XI-IATI-EC_NEAR-2020/408-186,333604,333604
 2022-03,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,Government & Civil Society,Developing countries (no country specified),0,0,commitments,XI-IATI-EC_NEAR-2022/44255/2,15300346,15300346
 2022-03,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,Government & Civil Society,Europe (no country specified),0,0,commitments,XI-IATI-EC_NEAR-2021/42994/0,10200231,10200231
@@ -738,7 +733,6 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-03,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,Transport & Storage,Ukraine,0,0,spending,XI-IATI-EC_NEAR-2019/411-746,498473,498473
 2022-03,xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,Government & Civil Society,Ukraine,0,0,commitments,XI-IATI-EC_FPI-2019/42468/0,-186166,-186166
 2022-03,xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,Government & Civil Society,Ukraine,0,0,spending,XI-IATI-EC_FPI-2019/407-032,269751,269751
-2022-03,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Social Infrastructure & Services,Ukraine,0,0,spending,DE-1-201670363,351018,351018
 2022-03,xm-dac-41301,Food and Agriculture Organization (FAO),40,(Unspecified sector),Ukraine,0,0,spending,XM-DAC-41301-661882,0,606709
 2022-03,xm-dac-41301,Food and Agriculture Organization (FAO),40,"Agriculture, Forestry, Fishing",(Unspecified country),0,0,spending,XM-DAC-41301-669325,0,47815
 2022-03,xm-dac-41301,Food and Agriculture Organization (FAO),40,"Agriculture, Forestry, Fishing",Ukraine,0,0,commitments,XM-DAC-41301-651123,0,-52014
@@ -6192,8 +6186,6 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-04,nl-kvk-41160054,Cordaid,21,Emergency Response,Ukraine,1,1,commitments,NL-KVK-41160054-201146,0,290913
 2022-04,nl-kvk-41160054,Cordaid,21,Other Multisector,Ukraine,1,1,commitments,NL-KVK-41160054-201146,0,282356
 2022-04,nl-kvk-41160054,Cordaid,21,Water Supply & Sanitation,Ukraine,1,1,commitments,NL-KVK-41160054-201146,0,282356
-2022-04,ca-4,Department of Finance Canada,10,Other Multisector,Ukraine,0,0,commitments,CA-4-2022040001,238025339,238025339
-2022-04,ca-4,Department of Finance Canada,10,Other Multisector,Ukraine,0,0,spending,CA-4-2022040001,238025339,238025339
 2022-04,xm-dac-2-10,Directorate-general Development Cooperation and Humanitarian Aid,10,Unallocated / Unspecified,Developing countries (no country specified),0,0,commitments,XM-DAC-2-10-4116,2162209,2162209
 2022-04,nl-kvk-41236410,Dorcas Aid International,21,Emergency Response,Ukraine,1,0,commitments,NL-KVK-41236410-UKR-DRA(JR)-LEAD,0,796485
 2022-04,nl-kvk-41236410,Dorcas Aid International,21,Emergency Response,Ukraine,1,0,commitments,NL-KVK-41236410-UKR-DRA(JR)-LEAD,0,959177
@@ -6246,7 +6238,6 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-04,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,Other Social Infrastructure & Services,Ukraine,0,0,spending,XI-IATI-EC_NEAR-2018/400-195,25907,25907
 2022-04,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,Trade Policies & Regulations,Ukraine,0,0,spending,XI-IATI-EC_NEAR-2019/412-381,2248150,2248150
 2022-04,xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,Government & Civil Society,Ukraine,0,0,commitments,XI-IATI-EC_FPI-2022/44275/1,7650173,7650173
-2022-04,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Education,Ukraine,0,0,spending,DE-1-202006005-5091,335172,335172
 2022-04,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Reconstruction Relief & Rehabilitation,Ukraine,0,0,spending,DE-1-201640747-0,5083442,5083442
 2022-04,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Reconstruction Relief & Rehabilitation,Ukraine,0,0,spending,DE-1-201831486-0,843200,843200
 2022-04,47122,"Gavi, The Vaccine Alliance",40,Health,Ukraine,0,0,spending,47122-UKR-COVAX,-103682,-103682
@@ -6757,10 +6748,6 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-04,xm-dac-41122,UNICEF,40,Water Supply & Sanitation,Ukraine,1,0,spending,XM-DAC-41122-Ukraine-4410/A0/05/887/002,0,57756
 2022-04,xm-dac-41122,UNICEF,40,Water Supply & Sanitation,Ukraine,1,0,spending,XM-DAC-41122-Ukraine-4410/A0/05/887/002,0,14029
 2022-04,xm-dac-41122,UNICEF,40,Water Supply & Sanitation,Ukraine,1,0,spending,XM-DAC-41122-Ukraine-4410/A0/05/887/002,0,2836
-2022-04,nl-kvk-27102631,UNICEF Netherlands National Committee,22,Emergency Response,Netherlands,0,0,commitments,NL-KVK-27102631-SH-2022 UKRAINE,28640535,28640535
-2022-04,nl-kvk-27102631,UNICEF Netherlands National Committee,22,Emergency Response,Netherlands,0,0,spending,NL-KVK-27102631-SH-2022 UKRAINE,14447020,14447020
-2022-04,nl-kvk-27102631,UNICEF Netherlands National Committee,22,Emergency Response,Ukraine,0,0,commitments,NL-KVK-27102631-SH-2022 UKRAINE,2226519669,2226519669
-2022-04,nl-kvk-27102631,UNICEF Netherlands National Committee,22,Emergency Response,Ukraine,0,0,spending,NL-KVK-27102631-SH-2022 UKRAINE,1123113608,1123113608
 2022-04,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,0,0,spending,XM-DAC-41114-OUTPUT-00108795,0,4564
 2022-04,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,0,0,spending,XM-DAC-41114-OUTPUT-00116526,0,22863
 2022-04,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,0,0,spending,XM-DAC-41114-OUTPUT-00122538,0,5818
@@ -7341,18 +7328,6 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-04,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,29983
 2022-05,xm-dac-50-21,AECID Spanish Agency for International Development Cooperation,10,Emergency Response,Developing countries (no country specified),1,0,spending,XM-DAC-50-21-Z03-22-01-01200,5254529,5254529
 2022-05,xm-dac-50-21,AECID Spanish Agency for International Development Cooperation,10,Emergency Response,Ukraine,1,0,spending,XM-DAC-50-21-Z03-22-01-01200,5254529,5254529
-2022-05,gb-chc-1047501,Action Against Hunger,21,Emergency Response,Poland,1,0,spending,GB-CHC-1047501-22UADA1D,257,257
-2022-05,gb-chc-1047501,Action Against Hunger,21,Emergency Response,Republic of Moldova,1,0,spending,GB-CHC-1047501-22UADA1D,156,156
-2022-05,gb-chc-1047501,Action Against Hunger,21,Emergency Response,Romania,1,0,spending,GB-CHC-1047501-22UADA1D,257,257
-2022-05,gb-chc-1047501,Action Against Hunger,21,Emergency Response,Ukraine,1,0,spending,GB-CHC-1047501-22UADA1D,447,447
-2022-05,gb-chc-1047501,Action Against Hunger,21,General Budget Support,Poland,1,0,spending,GB-CHC-1047501-22UADA1D,642,642
-2022-05,gb-chc-1047501,Action Against Hunger,21,General Budget Support,Republic of Moldova,1,0,spending,GB-CHC-1047501-22UADA1D,391,391
-2022-05,gb-chc-1047501,Action Against Hunger,21,General Budget Support,Romania,1,0,spending,GB-CHC-1047501-22UADA1D,642,642
-2022-05,gb-chc-1047501,Action Against Hunger,21,General Budget Support,Ukraine,1,0,spending,GB-CHC-1047501-22UADA1D,1117,1117
-2022-05,gb-chc-1047501,Action Against Hunger,21,Water Supply & Sanitation,Poland,1,0,spending,GB-CHC-1047501-22UADA1D,385,385
-2022-05,gb-chc-1047501,Action Against Hunger,21,Water Supply & Sanitation,Republic of Moldova,1,0,spending,GB-CHC-1047501-22UADA1D,234,234
-2022-05,gb-chc-1047501,Action Against Hunger,21,Water Supply & Sanitation,Romania,1,0,spending,GB-CHC-1047501-22UADA1D,385,385
-2022-05,gb-chc-1047501,Action Against Hunger,21,Water Supply & Sanitation,Ukraine,1,0,spending,GB-CHC-1047501-22UADA1D,670,670
 2022-05,gb-chc-274467,ActionAid UK,21,Emergency Response,Poland,1,0,spending,GB-CHC-274467-102474,0,1525204
 2022-05,gb-chc-274467,ActionAid UK,21,Emergency Response,Romania,1,0,spending,GB-CHC-274467-102474,0,455285
 2022-05,gb-chc-274467,ActionAid UK,21,Emergency Response,Spain,1,0,spending,GB-CHC-274467-102474,0,113821
@@ -8722,18 +8697,6 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-05,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,9869
 2022-05,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,3406
 2022-05,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,24730
-2022-06,gb-chc-1047501,Action Against Hunger,21,Emergency Response,Poland,1,0,spending,GB-CHC-1047501-22UADA1D,325,325
-2022-06,gb-chc-1047501,Action Against Hunger,21,Emergency Response,Republic of Moldova,1,0,spending,GB-CHC-1047501-22UADA1D,198,198
-2022-06,gb-chc-1047501,Action Against Hunger,21,Emergency Response,Romania,1,0,spending,GB-CHC-1047501-22UADA1D,325,325
-2022-06,gb-chc-1047501,Action Against Hunger,21,Emergency Response,Ukraine,1,0,spending,GB-CHC-1047501-22UADA1D,565,565
-2022-06,gb-chc-1047501,Action Against Hunger,21,General Budget Support,Poland,1,0,spending,GB-CHC-1047501-22UADA1D,812,812
-2022-06,gb-chc-1047501,Action Against Hunger,21,General Budget Support,Republic of Moldova,1,0,spending,GB-CHC-1047501-22UADA1D,494,494
-2022-06,gb-chc-1047501,Action Against Hunger,21,General Budget Support,Romania,1,0,spending,GB-CHC-1047501-22UADA1D,812,812
-2022-06,gb-chc-1047501,Action Against Hunger,21,General Budget Support,Ukraine,1,0,spending,GB-CHC-1047501-22UADA1D,1412,1412
-2022-06,gb-chc-1047501,Action Against Hunger,21,Water Supply & Sanitation,Poland,1,0,spending,GB-CHC-1047501-22UADA1D,487,487
-2022-06,gb-chc-1047501,Action Against Hunger,21,Water Supply & Sanitation,Republic of Moldova,1,0,spending,GB-CHC-1047501-22UADA1D,297,297
-2022-06,gb-chc-1047501,Action Against Hunger,21,Water Supply & Sanitation,Romania,1,0,spending,GB-CHC-1047501-22UADA1D,487,487
-2022-06,gb-chc-1047501,Action Against Hunger,21,Water Supply & Sanitation,Ukraine,1,0,spending,GB-CHC-1047501-22UADA1D,847,847
 2022-06,gb-chc-285776,CAFOD,21,Emergency Response,Romania,0,0,spending,GB-CHC-285776-ROM014,0,190408
 2022-06,gb-chc-285776,CAFOD,21,Emergency Response,Romania,0,0,spending,GB-CHC-285776-ROM014,0,47602
 2022-06,gb-chc-285776,CAFOD,21,Emergency Response,Ukraine,0,0,spending,GB-CHC-285776-UKR004,0,46898
@@ -8748,8 +8711,6 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-06,gb-chc-285776,CAFOD,21,Reconstruction Relief & Rehabilitation,Romania,0,0,spending,GB-CHC-285776-ROM014,0,238010
 2022-06,gb-chc-285776,CAFOD,21,Reconstruction Relief & Rehabilitation,Ukraine,0,0,spending,GB-CHC-285776-UKR004,0,93795
 2022-06,gb-chc-285776,CAFOD,21,Reconstruction Relief & Rehabilitation,Ukraine,0,0,spending,GB-CHC-285776-UKR004,0,523191
-2022-06,dk-cvr-19348407,CISU Civil Society in Development,22,Government & Civil Society,Ukraine,0,0,spending,DK-CVR-19348407-20-3119-CSP,0,3995
-2022-06,dk-cvr-19348407,CISU Civil Society in Development,22,Government & Civil Society,Ukraine,0,0,spending,DK-CVR-19348407-20-3119-CSP,0,3995
 2022-06,gb-chc-1105851,Christian Aid,21,(Unspecified sector),(Unspecified country),1,0,spending,GB-CHC-1105851-AD4833,0,45444
 2022-06,gb-chc-1105851,Christian Aid,21,(Unspecified sector),(Unspecified country),1,0,spending,GB-CHC-1105851-AD4833,0,4735
 2022-06,nl-kvk-41160054,Cordaid,21,Emergency Response,Ukraine,1,1,commitments,NL-KVK-41160054-201149,0,42256
@@ -8767,8 +8728,6 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-06,nl-kvk-41160054,Cordaid,21,Water Supply & Sanitation,Ukraine,1,1,commitments,NL-KVK-41160054-201149,0,42256
 2022-06,nl-kvk-41160054,Cordaid,21,Water Supply & Sanitation,Ukraine,1,1,spending,NL-KVK-41160054-201149,0,23760
 2022-06,nl-kvk-41160054,Cordaid,21,Water Supply & Sanitation,Ukraine,1,1,spending,NL-KVK-41160054-201149,0,42324
-2022-06,ca-4,Department of Finance Canada,10,Other Multisector,Ukraine,0,0,commitments,CA-4-2022060001,796685769,796685769
-2022-06,ca-4,Department of Finance Canada,10,Other Multisector,Ukraine,0,0,spending,CA-4-2022060001,796685769,796685769
 2022-06,xm-dac-2-10,Directorate-general Development Cooperation and Humanitarian Aid,10,Unallocated / Unspecified,Developing countries (no country specified),0,0,spending,XM-DAC-2-10-4116,2150214,2150214
 2022-06,nl-kvk-41236410,Dorcas Aid International,21,Emergency Response,Ukraine,1,0,commitments,NL-KVK-41236410-UKR-DRA(JR)-LEAD,0,836846
 2022-06,nl-kvk-41236410,Dorcas Aid International,21,Emergency Response,Ukraine,1,0,spending,NL-KVK-41236410-NL-KVK-41236410-UKR1385,0,240728
@@ -8810,61 +8769,32 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-06,xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,Government & Civil Society,Ukraine,0,0,commitments,XI-IATI-EC_FPI-2022/44296/1,20400461,20400461
 2022-06,xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,Government & Civil Society,Ukraine,0,0,commitments,XI-IATI-EC_FPI-2022/44297/1,20400461,20400461
 2022-06,xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,Government & Civil Society,Ukraine,0,0,commitments,XI-IATI-EC_FPI-2022/44310/1,7395167,7395167
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,"Agriculture, Forestry, Fishing",Ukraine,0,0,spending,DE-1-202139046-0,208932,208932
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Banking & Financial Services,Developing countries (no country specified),0,0,spending,DE-1-202110005-0,2894208,2894208
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Business & Other Services,Ukraine,0,0,spending,DE-1-201710060-0,1642100,1642100
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Business & Other Services,Ukraine,0,0,spending,DE-1-201740562,0,727405
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Education,Ukraine,0,0,spending,DE-1-201740562,0,5819240
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Education,Ukraine,0,0,spending,DE-1-201832260-0,223870,223870
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Education,Ukraine,0,0,spending,DE-1-201923028,3986838,3986838
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Education,Ukraine,0,0,spending,DE-1-201939446-0,41786,41786
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Education,Ukraine,0,0,spending,DE-1-202010171-0,417864,417864
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Education,Ukraine,0,0,spending,DE-1-202033645-0,417864,417864
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Education,Ukraine,0,0,spending,DE-1-202106003-5729,86792,86792
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Education,Ukraine,0,0,spending,DE-1-202110237-0,104466,104466
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Education,Ukraine,0,0,spending,DE-1-202133015-0,208932,208932
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Education,Ukraine,0,0,spending,DE-1-202133023-0,52233,52233
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Energy,Ukraine,0,0,spending,DE-1-201922905,0,3758561
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Energy,Ukraine,0,0,spending,DE-1-202006005-5003,462040,462040
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,General Environment Protection,Ukraine,0,0,spending,DE-1-201166123,6872453,6872453
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Government & Civil Society,North Macedonia,0,0,spending,DE-1-202106003-5835,467237,467237
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Government & Civil Society,Ukraine,0,0,spending,DE-1-201469014,8050917,8050917
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Government & Civil Society,Ukraine,0,0,spending,DE-1-201567114,2884543,2884543
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Government & Civil Society,Ukraine,0,0,spending,DE-1-201921865,0,4576246
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Government & Civil Society,Ukraine,0,0,spending,DE-1-202021889,1958925,1958925
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Government & Civil Society,Ukraine,0,0,spending,DE-1-202028199-0,1086446,1086446
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Government & Civil Society,Ukraine,0,0,spending,DE-1-202106003-5766,82271,82271
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Government & Civil Society,Ukraine,0,0,spending,DE-1-202132991-0,78349,78349
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Government & Civil Society,Ukraine,0,0,spending,DE-1-202133981-0,208932,208932
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Health,Ukraine,0,0,spending,DE-1-201567114,2771424,2771424
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Health,Ukraine,0,0,spending,DE-1-201821982,171959,3793101
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Health,Ukraine,0,0,spending,DE-1-201821982,171959,3793101
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Health,Ukraine,0,0,spending,DE-1-201821982,229279,5057468
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Health,Ukraine,0,0,spending,DE-1-202018729-0,1086446,1086446
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,"Industry, Mining, Construction",Developing countries (no country specified),0,0,spending,DE-1-202110039-0,250718,250718
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,"Industry, Mining, Construction",Ukraine,0,0,spending,DE-1-201821974,0,1984131
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Multisector,Developing countries (no country specified),0,0,spending,DE-1-202039709-0,177592,177592
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Multisector,Ukraine,0,0,spending,DE-1-201735075,2722399,2722399
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Multisector,Ukraine,0,0,spending,DE-1-201839794-0,83573,83573
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Multisector,Ukraine,0,0,spending,DE-1-201922897,0,2277504
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Multisector,Ukraine,0,0,spending,DE-1-201923028,2657892,2657892
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Multisector,Ukraine,0,0,spending,DE-1-202033439-0,208932,208932
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Social Infrastructure & Services,Europe (no country specified),0,0,spending,DE-1-202176824-0,25075,25075
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Social Infrastructure & Services,Ukraine,0,0,spending,DE-1-201740562,0,727405
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Social Infrastructure & Services,Ukraine,0,0,spending,DE-1-201839752-0,271611,271611
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Social Infrastructure & Services,Ukraine,0,0,spending,DE-1-201918135,7534851,7534851
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Social Infrastructure & Services,Ukraine,0,0,spending,DE-1-201931625-0,65291,65291
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Social Infrastructure & Services,Ukraine,0,0,spending,DE-1-201939040-0,78349,78349
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Social Infrastructure & Services,Ukraine,0,0,spending,DE-1-201940519,3162577,3162577
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Social Infrastructure & Services,Ukraine,0,0,spending,DE-1-202018364-0,1004962,1004962
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Social Infrastructure & Services,Ukraine,0,0,spending,DE-1-202030575-0,214782,214782
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Social Infrastructure & Services,Ukraine,0,0,spending,DE-1-202030757-0,73126,73126
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Social Infrastructure & Services,Ukraine,0,0,spending,DE-1-202032639-0,52233,52233
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Other Social Infrastructure & Services,Ukraine,0,0,spending,DE-1-202033421-0,208932,208932
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,spending,DE-1-201975168-0,304036,304036
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,spending,DE-1-202176840-0,42835,42835
 2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Trade Policies & Regulations,Ukraine,0,0,spending,DE-1-201821974,0,2065115
-2022-06,de-1,Federal Ministry for Economic Cooperation and Development  (BMZ),10,Water Supply & Sanitation,Ukraine,0,0,spending,DE-1-202106003-5942,45703,45703
 2022-06,xm-dac-41301,Food and Agriculture Organization (FAO),40,(Unspecified sector),Ukraine,0,0,spending,XM-DAC-41301-661882,0,488170
 2022-06,xm-dac-41301,Food and Agriculture Organization (FAO),40,"Agriculture, Forestry, Fishing",(Unspecified country),0,0,spending,XM-DAC-41301-669325,0,-19802
 2022-06,xm-dac-41301,Food and Agriculture Organization (FAO),40,"Agriculture, Forestry, Fishing",Armenia,0,0,commitments,XM-DAC-41301-725162,0,300000
@@ -9529,10 +9459,6 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-06,xm-dac-41122,UNICEF,40,Water Supply & Sanitation,Ukraine,1,0,spending,XM-DAC-41122-Ukraine-4410/A0/05/887/002,0,193854
 2022-06,xm-dac-41122,UNICEF,40,Water Supply & Sanitation,Ukraine,1,0,spending,XM-DAC-41122-Ukraine-4410/A0/05/887/002,0,47086
 2022-06,xm-dac-41122,UNICEF,40,Water Supply & Sanitation,Ukraine,1,0,spending,XM-DAC-41122-Ukraine-4410/A0/05/887/002,0,9517
-2022-06,nl-kvk-27102631,UNICEF Netherlands National Committee,22,Emergency Response,Netherlands,0,0,spending,NL-KVK-27102631-SH-2022 UKRAINE,121155,121155
-2022-06,nl-kvk-27102631,UNICEF Netherlands National Committee,22,Emergency Response,Netherlands,0,0,spending,NL-KVK-27102631-SH-2022 UKRAINE,9325025,9325025
-2022-06,nl-kvk-27102631,UNICEF Netherlands National Committee,22,Emergency Response,Ukraine,0,0,spending,NL-KVK-27102631-SH-2022 UKRAINE,9418590,9418590
-2022-06,nl-kvk-27102631,UNICEF Netherlands National Committee,22,Emergency Response,Ukraine,0,0,spending,NL-KVK-27102631-SH-2022 UKRAINE,724928910,724928910
 2022-06,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Serbia,0,0,spending,XM-DAC-41114-OUTPUT-00131504,0,2169
 2022-06,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,0,0,spending,XM-DAC-41114-OUTPUT-00108795,0,20764
 2022-06,xm-dac-41114,United Nations Development Programme,40,Disaster Prevention & Preparedness,Ukraine,0,0,spending,XM-DAC-41114-OUTPUT-00116526,0,28924
@@ -10088,14 +10014,10 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-07,gb-chc-274467,ActionAid UK,21,Emergency Response,Ukraine,1,0,spending,GB-CHC-274467-102474,0,12985
 2022-07,gb-chc-274467,ActionAid UK,21,Emergency Response,United Kingdom,1,0,spending,GB-CHC-274467-102474,0,90894
 2022-07,xm-dac-46002,African Development Bank,40,"Agriculture, Forestry, Fishing",Central African Republic,0,0,commitments,46002-P-CF-AA0-016,5303557,5303557
-2022-07,xm-dac-46002,African Development Bank,40,"Agriculture, Forestry, Fishing",Kenya,0,0,commitments,46002-P-KE-A00-002,64358594,64358594
-2022-07,xm-dac-46002,African Development Bank,40,"Agriculture, Forestry, Fishing",Liberia,0,0,commitments,46002-P-LR-AA0-013,5303017,5303017
-2022-07,xm-dac-46002,African Development Bank,40,"Agriculture, Forestry, Fishing",Sierra Leone,0,0,commitments,46002-P-SL-AA0-023,1988631,1988631
 2022-07,xm-dac-46002,African Development Bank,40,"Agriculture, Forestry, Fishing",United Republic of Tanzania,0,0,commitments,46002-P-TZ-A00-014,2412873,2412873
 2022-07,xm-dac-46002,African Development Bank,40,"Agriculture, Forestry, Fishing",United Republic of Tanzania,0,0,commitments,46002-P-TZ-A00-014,69721415,69721415
 2022-07,xm-dac-46002,African Development Bank,40,"Agriculture, Forestry, Fishing",Zimbabwe,0,0,commitments,46002-P-ZW-AA0-021,4905291,4905291
 2022-07,xm-dac-46002,African Development Bank,40,"Agriculture, Forestry, Fishing",Zimbabwe,0,0,commitments,46002-P-ZW-AA0-021,20284040,20284040
-2022-07,xm-dac-46002,African Development Bank,40,Government & Civil Society,Egypt,0,0,commitments,46002-P-EG-K00-017,271441069,271441069
 2022-07,gb-chc-285776,CAFOD,21,(Unspecified sector),Ukraine,0,0,spending,GB-CHC-285776-UKR006,0,175013
 2022-07,gb-chc-285776,CAFOD,21,Emergency Response,Ukraine,0,0,spending,GB-CHC-285776-UKR006,0,175013
 2022-07,gb-chc-285776,CAFOD,21,Emergency Response,Ukraine,0,0,spending,GB-CHC-285776-UKR006,0,175013
