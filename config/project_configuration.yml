@@ -240,39 +240,24 @@ transaction_type_info:
 
 outputs:
   transactions:
-    headers:
-      - "Month"
-      - "Reporting org id"
-      - "Reporting org name"
-      - "Reporting org type"
-      - "Sector"
-      - "Recipient country"
-      - "Humanitarian?"
-      - "Strict?"
-      - "Transaction type"
-      - "Activity id"
-      - "Net money"
-      - "Total money"
-    hxltags:
-      - "#date+month"
-      - "#org+id"
-      - "#org+name"
-      - "#org+type"
-      - "#sector"
-      - "#country"
-      - "#indicator+bool+humanitarian"
-      - "#indicator+bool+strict"
-      - "#x_transaction_type"
-      - "#activity+code"
-      - "#value+net"
-      - "#value+total"
-    csv:
-      filename: "transactions.csv"
-    json:
-      filename: "transactions.json"
+    input:
+      headers:
+        - "Month"
+        - "Reporting org id"
+        - "Reporting org name"
+        - "Reporting org type"
+        - "Sector"
+        - "Recipient country"
+        - "Humanitarian?"
+        - "Strict?"
+        - "Transaction type"
+        - "Activity id"
+        - "Net money"
+        - "Total money"
       hxltags:
         - "#date+month"
         - "#org+id"
+        - "#org+name"
         - "#org+type"
         - "#sector"
         - "#country"
@@ -282,56 +267,87 @@ outputs:
         - "#activity+code"
         - "#value+net"
         - "#value+total"
+    output:
+      csv:
+        filename: "transactions.csv"
+      json:
+        filename: "transactions.json"
+        metadata:
+          "#date+run": "{{today}}"
+          "#meta+transactions+num": "{{num_transactions}}"
+          "#meta+transactions+skipped+num": "{{num_skipped}}"
+        hxltags:
+          - "#date+month"
+          - "#org+id"
+          - "#org+type"
+          - "#sector"
+          - "#country"
+          - "#indicator+bool+humanitarian"
+          - "#indicator+bool+strict"
+          - "#x_transaction_type"
+          - "#activity+code"
+          - "#value+net"
+          - "#value+total"
   flows:
-    headers:
-      - "Reporting org id"
-      - "Reporting org name"
-      - "Reporting org type"
-      - "Provider org id"
-      - "Provider org name"
-      - "Provider org type"
-      - "Receiver org id"
-      - "Receiver org name"
-      - "Receiver org type"
-      - "Humanitarian?"
-      - "Strict?"
-      - "Transaction direction"
-      - "Total money"
-    hxltags:
-      - "#org+id+reporting"
-      - "#org+name+reporting"
-      - "#org+reporting+type"
-      - "#org+id+provider"
-      - "#org+name+provider"
-      - "#org+type+provider"
-      - "#org+id+receiver"
-      - "#org+name+receiver"
-      - "#org+type+receiver"
-      - "#indicator+bool+humanitarian"
-      - "#indicator+bool+strict"
-      - "#x_transaction_direction"
-      - "#value+total"
-    csv:
-      filename: "flows.csv"
-    json:
-      filename: "flows.json"
+    input:
+      headers:
+        - "Reporting org id"
+        - "Reporting org name"
+        - "Reporting org type"
+        - "Provider org id"
+        - "Provider org name"
+        - "Provider org type"
+        - "Receiver org id"
+        - "Receiver org name"
+        - "Receiver org type"
+        - "Humanitarian?"
+        - "Strict?"
+        - "Transaction direction"
+        - "Total money"
       hxltags:
         - "#org+id+reporting"
+        - "#org+name+reporting"
         - "#org+reporting+type"
+        - "#org+id+provider"
         - "#org+name+provider"
+        - "#org+type+provider"
+        - "#org+id+receiver"
         - "#org+name+receiver"
+        - "#org+type+receiver"
         - "#indicator+bool+humanitarian"
         - "#indicator+bool+strict"
         - "#x_transaction_direction"
         - "#value+total"
+    output:
+      csv:
+        filename: "flows.csv"
+      json:
+        filename: "flows.json"
+        metadata:
+          "#date+run": "{{today}}"
+          "#meta+flows+num": "{{num_flows}}"
+        hxltags:
+          - "#org+id+reporting"
+          - "#org+reporting+type"
+          - "#org+name+provider"
+          - "#org+name+receiver"
+          - "#indicator+bool+humanitarian"
+          - "#indicator+bool+strict"
+          - "#x_transaction_direction"
+          - "#value+total"
   orgs:
-    headers:
-      - "Reporting org id"
-      - "Reporting org name"
-    hxltags:
-      - "#org+id+reporting"
-      - "#org+name+reporting"
-    csv:
-      filename: "reporting_orgs.csv"
-    json:
-      filename: "reporting_orgs.json"
+    input:
+      headers:
+        - "Reporting org id"
+        - "Reporting org name"
+      hxltags:
+        - "#org+id+reporting"
+        - "#org+name+reporting"
+    output:
+      csv:
+        filename: "reporting_orgs.csv"
+      json:
+        filename: "reporting_orgs.json"
+        metadata:
+          "#date+run": "{{today}}"
+          "#meta+orgs+num": "{{num_orgs}}"

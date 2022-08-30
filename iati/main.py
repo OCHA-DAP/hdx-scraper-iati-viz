@@ -1,12 +1,11 @@
-import json
 import logging
 from os import remove
 from os.path import join
 from urllib.parse import quote
 
 import diterator
-import unicodecsv
 from hdx.location.currency import Currency
+from hdx.utilities.saver import save_hxlated_output
 
 from . import checks
 from .activity import Activity
@@ -30,53 +29,6 @@ def retrieve_dportal(configuration, retriever, whattorun, dportal_params=""):
     return filename, retriever.download_file(
         url, filename, "D-Portal activities", False
     )
-
-
-def write(today, output_dir, configuration, configuration_key, rows, skipped=None):
-    logger.info(f"Writing {configuration_key} files to {output_dir}")
-    file_configuration = configuration[configuration_key]
-    headers = file_configuration["headers"]
-    hxltags = file_configuration["hxltags"]
-    process_cols = file_configuration.get("process_cols", dict())
-    csv_configuration = file_configuration["csv"]
-    json_configuration = file_configuration["json"]
-    csv_hxltags = csv_configuration.get("hxltags", hxltags)
-    json_hxltags = json_configuration.get("hxltags", hxltags)
-    hxltag_to_header = dict(zip(hxltags, headers))
-    csv_headers = [hxltag_to_header[hxltag] for hxltag in csv_hxltags]
-    metadata = {"#date+run": today, f"#meta+{configuration_key}+num": len(rows)}
-    if skipped is not None:
-        metadata[f"#meta+{configuration_key}+skipped+num"] = skipped
-    metadata_json = json.dumps(metadata, indent=None, separators=(",", ":"))
-    with open(join(output_dir, csv_configuration["filename"]), "wb") as output_csv:
-        writer = unicodecsv.writer(output_csv, encoding="utf-8", lineterminator="\n")
-        writer.writerow(csv_headers)
-        writer.writerow(csv_hxltags)
-        with open(join(output_dir, json_configuration["filename"]), "w") as output_json:
-            output_json.write(f'{{"metadata":{metadata_json},"data":[\n')
-
-            def write_row(inrow, ending):
-                def get_outrow(file_hxltags):
-                    outrow = dict()
-                    for file_hxltag in file_hxltags:
-                        expression = process_cols.get(file_hxltag)
-                        if expression:
-                            for i, hxltag in enumerate(hxltags):
-                                expression = expression.replace(hxltag, f"inrow[{i}]")
-                            outrow[file_hxltag] = eval(expression)
-                        else:
-                            outrow[file_hxltag] = inrow[hxltags.index(file_hxltag)]
-                    return outrow
-
-                writer.writerow(get_outrow(csv_hxltags).values())
-                row = get_outrow(json_hxltags)
-                output_json.write(
-                    json.dumps(row, indent=None, separators=(",", ":")) + ending
-                )
-
-            [write_row(row, ",\n") for row in rows[:-1]]
-            write_row(rows[-1], "]")
-            output_json.write("}")
 
 
 def start(
@@ -164,37 +116,48 @@ def start(
     outputs_configuration = configuration["outputs"]
 
     # Prepare and write flows
-    write(
-        today,
-        output_dir,
-        outputs_configuration,
-        "flows",
-        [
-            flows[key]["row"] + [int(round(flows[key]["value"]))]
-            for key in sorted(flows)
-        ],
+    logger.info(f"Writing flows files to {output_dir}")
+    out_flows = [
+        flows[key]["row"] + [int(round(flows[key]["value"]))] for key in sorted(flows)
+    ]
+    save_hxlated_output(
+        outputs_configuration["flows"],
+        out_flows,
+        includes_header=False,
+        includes_hxltags=False,
+        output_dir=output_dir,
+        today=today,
+        num_flows=len(out_flows),
     )
 
     # Write transactions
-    write(
-        today,
-        output_dir,
-        outputs_configuration,
-        "transactions",
-        sorted(
-            transactions,
-            key=lambda x: (x[0], x[2], x[3], x[4], x[5], x[6], x[7], x[8], x[9], x[10]),
-        ),
-        all_skipped,
+    logger.info(f"Writing transactions files to {output_dir}")
+    out_transactions = sorted(
+        transactions,
+        key=lambda x: (x[0], x[2], x[3], x[4], x[5], x[6], x[7], x[8], x[9], x[10]),
+    )
+    save_hxlated_output(
+        outputs_configuration["transactions"],
+        out_transactions,
+        includes_header=False,
+        includes_hxltags=False,
+        output_dir=output_dir,
+        today=today,
+        num_transactions=len(out_transactions),
+        num_skipped=all_skipped,
     )
 
     # Write orgs
-    write(
-        today,
-        output_dir,
-        outputs_configuration,
-        "orgs",
-        sorted(Lookups.used_reporting_orgs, key=lambda x: (x[1], x[0])),
+    logger.info(f"Writing orgs files to {output_dir}")
+    orgs = sorted(Lookups.used_reporting_orgs, key=lambda x: (x[1], x[0]))
+    save_hxlated_output(
+        outputs_configuration["orgs"],
+        orgs,
+        includes_header=False,
+        includes_hxltags=False,
+        output_dir=output_dir,
+        today=today,
+        num_orgs=len(orgs),
     )
     try:
         remove(join(output_dir, dportal_filename))
