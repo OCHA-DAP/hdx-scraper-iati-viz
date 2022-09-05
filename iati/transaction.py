@@ -24,14 +24,12 @@ class Transaction:
         self.value = value
 
     @staticmethod
-    def get_transaction(
-        configuration, dtransaction, activity_identifier, errors_on_exit
-    ):
+    def get_transaction(dtransaction, activity_identifier):
         # We're not interested in transactions that have no value
         if not dtransaction.value:
             return None
         # We're only interested in some transaction types
-        transaction_type_info = configuration["transaction_type_info"].get(
+        transaction_type_info = Lookups.configuration["transaction_type_info"].get(
             dtransaction.type
         )
         if not transaction_type_info:
@@ -52,7 +50,7 @@ class Transaction:
             value = Currency.get_historic_value_in_usd(
                 dtransaction.value, currency, parse_date(date)
             )
-            if value > configuration[
+            if value > Lookups.configuration[
                 "usd_error_threshold"
             ] and not Lookups.allow_activity(activity_identifier):
                 errors_on_exit.add(

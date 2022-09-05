@@ -25,12 +25,10 @@ class Activity:
         self.sector_splits = CalculateSplits.make_sector_splits(dactivity)
         self.transactions = list()
 
-    def add_transactions(self, configuration, errors_on_exit):
+    def add_transactions(self):
         skipped = 0
         for dtransaction in self.dactivity.transactions:
-            transaction = Transaction.get_transaction(
-                configuration, dtransaction, self.identifier, errors_on_exit
-            )
+            transaction = Transaction.get_transaction(dtransaction, self.identifier)
             if not transaction:
                 skipped += 1
                 continue
@@ -38,7 +36,7 @@ class Activity:
         return skipped
 
     @staticmethod
-    def get_activity(configuration, dactivity, errors_on_exit):
+    def get_activity(dactivity):
         """
         We exclude activities from secondary reporters and certain sorts
         of organisations where the data is very poor quality. We also
@@ -58,7 +56,7 @@ class Activity:
         if Lookups.skip_reporting_org_children(reporting_org_ref, dactivity.hierarchy):
             return None, len(dactivity.transactions)
         activity = Activity(dactivity)
-        skipped = activity.add_transactions(configuration, errors_on_exit)
+        skipped = activity.add_transactions()
         return activity, skipped
 
     def is_strict(self):
