@@ -1,9 +1,13 @@
+from iati.lookups import Lookups
+
+
 class CalculateSplits:
     default_sector = None
     default_country_region = None
 
     @classmethod
-    def setup(cls, configuration):
+    def setup(cls):
+        configuration = Lookups.configuration["calculate_splits"]
         cls.default_sector = configuration["default_sector"]
         cls.default_country_region = configuration["default_country_region"]
 

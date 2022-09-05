@@ -1,34 +1,23 @@
-class EbolaChecks:
-    @staticmethod
-    def exclude_dactivity(dactivity):
-        return False
+from .base_checks import BaseChecks
 
-    @staticmethod
-    def has_desired_scope(scopes):
+
+class EbolaChecks(BaseChecks):
+    def __init__(self, errors_on_exit):
+        super().__init__(errors_on_exit)
+
         """Check if the Ebola code is present"""
-        for scope in scopes:
+        def check_scope(scope):
             if (
                 scope.type == "2"
                 and scope.vocabulary == "2-1"
                 and scope.code.upper() == "OXEBOLA1415"
             ):
                 return True
-        return False
+            return False
 
-    @staticmethod
-    def has_desired_marker(markers):
-        return False
+        self.add_scope_check(check_scope)
 
-    @staticmethod
-    def has_desired_tag(tags):
-        return False
-
-    @staticmethod
-    def has_desired_sector(sectors):
-        return False
-
-    @staticmethod
-    def is_desired_narrative(narratives):
+    def is_desired_narrative(self, narratives):
         """Check a dict of different-language text for the string "EBOLA" (case-insensitive)"""
         for lang, text in narratives.items():
             if "ebola" in text.lower():

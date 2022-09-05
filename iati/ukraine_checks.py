@@ -1,10 +1,38 @@
 from hdx.utilities.dateparse import parse_date
 
+from .base_checks import BaseChecks
 
-class UkraineChecks:
-    @classmethod
-    def exclude_dactivity(cls, dactivity):
-        if cls.has_desired_scope(dactivity.humanitarian_scopes):
+
+class UkraineChecks(BaseChecks):
+    def __init__(self, errors_on_exit):
+        super().__init__(errors_on_exit)
+
+        """Check if the Ukraine code is present"""
+        def check_scope(scope):
+            if (
+                    scope.type == "1"
+                    and scope.vocabulary == "1-2"
+                    and scope.code.upper() == "OT-2022-000157-UKR"
+            ):
+                return True
+            elif scope.type == "2":
+                if scope.vocabulary == "2-1" and scope.code.upper() in (
+                        "FUKR22",
+                        "RUKRN22",
+                        "HUKR22",
+                ):
+                    return True
+                if (
+                        scope.vocabulary == "99"
+                        and scope.code.upper() == "UKRAINE-REGIONAL-RRP-2022"
+                ):
+                    return True
+            return False
+
+        self.add_scope_check(check_scope)
+
+    def exclude_dactivity(self, dactivity):
+        if self.has_desired_scope(dactivity):
             return False
         #        if not dactivity.humanitarian:
         #            return True
@@ -83,44 +111,4 @@ class UkraineChecks:
             return True
         if not text_in_narrative:
             return True
-        return False
-
-    @staticmethod
-    def has_desired_scope(scopes):
-        """Check if the Ukraine code is present"""
-        for scope in scopes:
-            if (
-                scope.type == "1"
-                and scope.vocabulary == "1-2"
-                and scope.code.upper() == "OT-2022-000157-UKR"
-            ):
-                return True
-            elif scope.type == "2":
-                if scope.vocabulary == "2-1" and scope.code.upper() in (
-                    "FUKR22",
-                    "RUKRN22",
-                    "HUKR22",
-                ):
-                    return True
-                if (
-                    scope.vocabulary == "99"
-                    and scope.code.upper() == "UKRAINE-REGIONAL-RRP-2022"
-                ):
-                    return True
-        return False
-
-    @staticmethod
-    def has_desired_marker(markers):
-        return False
-
-    @staticmethod
-    def has_desired_tag(tags):
-        return False
-
-    @staticmethod
-    def has_desired_sector(sectors):
-        return False
-
-    @staticmethod
-    def is_desired_narrative(narratives):
         return False

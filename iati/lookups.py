@@ -41,12 +41,14 @@ class Lookups:
     skip_reporting_orgs = list()
     skip_reporting_orgs_children = dict()
     allow_activities = list()
+    configuration = None
     checks = None
     filter_transaction_date = None
 
     @classmethod
-    def setup(cls, configuration):
+    def setup(cls):
         logger.info("Reading in lookups data")
+        configuration = cls.configuration["lookups"]
         org_data = load_json(configuration["org_data"])
         """ Map from IATI identifiers to organisation names """
         # Prime with org identifiers from code4iati

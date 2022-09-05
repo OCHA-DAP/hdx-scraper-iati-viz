@@ -16,12 +16,12 @@ from .smalldactivity import SmallDActivity
 logger = logging.getLogger(__name__)
 
 
-def retrieve_dportal(configuration, retriever, whattorun, dportal_params=""):
+def retrieve_dportal(retriever, whattorun, dportal_params=""):
     """
     Downloads activity data from D-Portal. Filters them and returns a
     list of activities.
     """
-    dportal_configuration = configuration["dportal"]
+    dportal_configuration = Lookups.configuration["dportal"]
     filename = dportal_configuration["filename"]
     url = dportal_configuration["url"] % quote(
         dportal_configuration[f"{whattorun}_query"].format(dportal_params)
@@ -46,18 +46,19 @@ def start(
     else:
         text = "without removing transactions before a certain date"
     logger.info(f"Running {whattorun} {text}")
-    Lookups.checks = checks[whattorun]
+    Lookups.configuration = configuration
+    Lookups.checks = checks[whattorun](errors_on_exit)
     Lookups.filter_transaction_date = filterdate
     dportal_filename, dportal_path = retrieve_dportal(
-        configuration, retriever, whattorun, dportal_params
+        retriever, whattorun, dportal_params
     )
-    Lookups.setup(configuration["lookups"])
+    Lookups.setup()
     Currency.setup(
         retriever=retriever,
         fallback_historic_to_current=True,
         fallback_current_to_static=True,
     )
-    CalculateSplits.setup(configuration["calculate_splits"])
+    CalculateSplits.setup()
 
     # Build org name lookup
     logger.info("Reading activities")
@@ -81,6 +82,10 @@ def start(
             del dactivity
         writer.write("\n</iati-activities>")
     del xmliterator  # Maybe this helps garbage collector?
+    try:
+        remove(join(output_dir, dportal_filename))
+    except FileNotFoundError:
+        pass
     logger.info(f"D-Portal returned {number_query_activities} activities")
     number_dactivities = len(dactivities)
     if number_dactivities == number_query_activities:
@@ -100,9 +105,7 @@ def start(
     transactions = list()
     all_skipped = 0
     for i, dactivity in enumerate(reversed(dactivities)):
-        activity, skipped = Activity.get_activity(
-            configuration, dactivity, errors_on_exit
-        )
+        activity, skipped = Activity.get_activity(dactivity)
         all_skipped += skipped
         if activity:
             all_skipped += activity.process(today[:7], flows, transactions)
@@ -159,7 +162,3 @@ def start(
         today=today,
         num_orgs=len(orgs),
     )
-    try:
-        remove(join(output_dir, dportal_filename))
-    except FileNotFoundError:
-        pass

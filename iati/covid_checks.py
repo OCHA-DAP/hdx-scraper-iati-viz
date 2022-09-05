@@ -1,12 +1,12 @@
-class CovidChecks:
-    @staticmethod
-    def exclude_dactivity(dactivity):
-        return False
+from .base_checks import BaseChecks
 
-    @staticmethod
-    def has_desired_scope(scopes):
+
+class CovidChecks(BaseChecks):
+    def __init__(self, errors_on_exit):
+        super().__init__(errors_on_exit)
+
         """Check if the COVID-19 GLIDE number or HRP code is present"""
-        for scope in scopes:
+        def check_scope(scope):
             if (
                 scope.type == "1"
                 and scope.vocabulary == "1-2"
@@ -19,30 +19,27 @@ class CovidChecks:
                 and scope.code.upper() == "HCOVD20"
             ):
                 return True
-        return False
+            return False
 
-    @staticmethod
-    def has_desired_marker(markers):
-        return False
+        self.add_scope_check(check_scope)
 
-    @staticmethod
-    def has_desired_tag(tags):
         """Check if the COVID-19 tag is present"""
-        for tag in tags:
+        def check_tag(tag):
             if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
                 return True
-        return False
+            return False
 
-    @staticmethod
-    def has_desired_sector(sectors):
+        self.add_tag_check(check_tag)
+
         """Check if the DAC COVID-19 sector code is present"""
-        for sector in sectors:
+        def check_sector(sector):
             if sector.vocabulary == "1" and sector.code == "12264":
                 return True
-        return False
+            return False
 
-    @staticmethod
-    def is_desired_narrative(narratives):
+        self.add_sector_check(check_sector)
+
+    def is_desired_narrative(self, narratives):
         """Check a dict of different-language text for the string "COVID-19" (case-insensitive)"""
         for lang, text in narratives.items():
             if "covid-19" in text.lower():
