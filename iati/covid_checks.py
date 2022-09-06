@@ -1,10 +1,8 @@
-class CovidChecks:
-    @staticmethod
-    def exclude_dactivity(dactivity):
-        return False
+from .base_checks import BaseChecks
 
-    @staticmethod
-    def has_desired_scope(dactivity):
+
+class CovidChecks(BaseChecks):
+    def has_desired_scope(self, dactivity):
         """Check if the COVID-19 GLIDE number or HRP code is present"""
         for scope in dactivity.humanitarian_scopes:
             if (
@@ -21,28 +19,21 @@ class CovidChecks:
                 return True
         return False
 
-    @staticmethod
-    def has_desired_marker(dactivity):
-        return False
-
-    @staticmethod
-    def has_desired_tag(dactivity):
+    def has_desired_tag(self, dactivity):
         """Check if the COVID-19 tag is present"""
         for tag in dactivity.tags:
             if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
                 return True
         return False
 
-    @staticmethod
-    def has_desired_sector(dactivity):
+    def has_desired_sector(self, dactivity):
         """Check if the DAC COVID-19 sector code is present"""
         for sector in dactivity.sectors:
             if sector.vocabulary == "1" and sector.code == "12264":
                 return True
         return False
 
-    @staticmethod
-    def is_desired_narrative(narratives):
+    def is_desired_narrative(self, narratives):
         """Check a dict of different-language text for the string "COVID-19" (case-insensitive)"""
         for lang, text in narratives.items():
             if "covid-19" in text.lower():

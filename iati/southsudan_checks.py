@@ -1,10 +1,8 @@
-class SouthSudanChecks:
-    @staticmethod
-    def exclude_dactivity(dactivity):
-        return False
+from .base_checks import BaseChecks
 
-    @staticmethod
-    def has_desired_scope(dactivity):
+
+class SouthSudanChecks(BaseChecks):
+    def has_desired_scope(self, dactivity):
         """Check if the South Sudan code is present"""
         for scope in dactivity.humanitarian_scopes:
             if (
@@ -13,20 +11,4 @@ class SouthSudanChecks:
                 and scope.code.upper() in ("HSSD21", "HSSD22")
             ):
                 return True
-        return False
-
-    @staticmethod
-    def has_desired_marker(dactivity):
-        return False
-
-    @staticmethod
-    def has_desired_tag(dactivity):
-        return False
-
-    @staticmethod
-    def has_desired_sector(dactivity):
-        return False
-
-    @staticmethod
-    def is_desired_narrative(narratives):
         return False

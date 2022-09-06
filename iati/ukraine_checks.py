@@ -1,10 +1,11 @@
 from hdx.utilities.dateparse import parse_date
 
+from .base_checks import BaseChecks
 
-class UkraineChecks:
-    @classmethod
-    def exclude_dactivity(cls, dactivity):
-        if cls.has_desired_scope(dactivity):
+
+class UkraineChecks(BaseChecks):
+    def exclude_dactivity(self, dactivity):
+        if self.has_desired_scope(dactivity):
             return False
         #        if not dactivity.humanitarian:
         #            return True
@@ -85,8 +86,7 @@ class UkraineChecks:
             return True
         return False
 
-    @staticmethod
-    def has_desired_scope(dactivity):
+    def has_desired_scope(self, dactivity):
         """Check if the Ukraine code is present"""
         for scope in dactivity.humanitarian_scopes:
             if (
@@ -107,20 +107,4 @@ class UkraineChecks:
                     and scope.code.upper() == "UKRAINE-REGIONAL-RRP-2022"
                 ):
                     return True
-        return False
-
-    @staticmethod
-    def has_desired_marker(dactivity):
-        return False
-
-    @staticmethod
-    def has_desired_tag(dactivity):
-        return False
-
-    @staticmethod
-    def has_desired_sector(dactivity):
-        return False
-
-    @staticmethod
-    def is_desired_narrative(narratives):
         return False

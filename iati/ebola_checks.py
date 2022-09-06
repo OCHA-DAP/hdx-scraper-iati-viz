@@ -1,10 +1,8 @@
-class EbolaChecks:
-    @staticmethod
-    def exclude_dactivity(dactivity):
-        return False
+from .base_checks import BaseChecks
 
-    @staticmethod
-    def has_desired_scope(dactivity):
+
+class EbolaChecks(BaseChecks):
+    def has_desired_scope(self, dactivity):
         """Check if the Ebola code is present"""
         for scope in dactivity.humanitarian_scopes:
             if (
@@ -15,20 +13,7 @@ class EbolaChecks:
                 return True
         return False
 
-    @staticmethod
-    def has_desired_marker(dactivity):
-        return False
-
-    @staticmethod
-    def has_desired_tag(dactivity):
-        return False
-
-    @staticmethod
-    def has_desired_sector(dactivity):
-        return False
-
-    @staticmethod
-    def is_desired_narrative(narratives):
+    def is_desired_narrative(self, narratives):
         """Check a dict of different-language text for the string "EBOLA" (case-insensitive)"""
         for lang, text in narratives.items():
             if "ebola" in text.lower():

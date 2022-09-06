@@ -47,7 +47,7 @@ def start(
         text = "without removing transactions before a certain date"
     logger.info(f"Running {whattorun} {text}")
     Lookups.configuration = configuration
-    Lookups.checks = checks[whattorun]
+    Lookups.checks = checks[whattorun](errors_on_exit)
     Lookups.errors_on_exit = errors_on_exit
     Lookups.filter_transaction_date = filterdate
     dportal_filename, dportal_path = retrieve_dportal(
