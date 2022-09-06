@@ -25,20 +25,6 @@ class BaseChecks:
     def has_desired_marker(self, dactivity):
         return False
 
-    def add_marker_check(self, fn):
-        def check_fn(dactivity):
-            for marker in dactivity.policy_markers:
-                if marker.code is None:
-                    self.errors_on_exit.add(
-                        f"Activity {dactivity.identifier} has no policy marker code!"
-                    )
-                    continue
-                if fn(marker):
-                    return True
-            return False
-
-        self.has_desired_marker = check_fn
-
     def has_desired_tag(self, dactivity):
         return False
 
@@ -58,20 +44,6 @@ class BaseChecks:
 
     def has_desired_sector(self, dactivity):
         return False
-
-    def add_sector_check(self, fn):
-        def check_fn(dactivity):
-            for sector in dactivity.sectors:
-                if sector.code is None:
-                    self.errors_on_exit.add(
-                        f"Activity {dactivity.identifier} has no sector code!"
-                    )
-                    continue
-                if fn(sector):
-                    return True
-            return False
-
-        self.has_desired_sector = check_fn
 
     def is_desired_narrative(self, narratives):
         return False

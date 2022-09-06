@@ -2,9 +2,11 @@ from .base_checks import BaseChecks
 
 
 class CovidChecks(BaseChecks):
-    def has_desired_scope(self, dactivity):
+    def __init__(self, errors_on_exit):
+        super().__init__(errors_on_exit)
         """Check if the COVID-19 GLIDE number or HRP code is present"""
-        for scope in dactivity.humanitarian_scopes:
+
+        def check_scope(scope):
             if (
                 scope.type == "1"
                 and scope.vocabulary == "1-2"
@@ -17,14 +19,18 @@ class CovidChecks(BaseChecks):
                 and scope.code.upper() == "HCOVD20"
             ):
                 return True
-        return False
+            return False
 
-    def has_desired_tag(self, dactivity):
+        self.add_scope_check(check_scope)
+
         """Check if the COVID-19 tag is present"""
-        for tag in dactivity.tags:
+
+        def check_tag(tag):
             if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
                 return True
-        return False
+            return False
+
+        self.add_tag_check(check_tag)
 
     def has_desired_sector(self, dactivity):
         """Check if the DAC COVID-19 sector code is present"""

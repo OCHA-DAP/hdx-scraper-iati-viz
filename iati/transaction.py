@@ -53,7 +53,7 @@ class Transaction:
             if value > Lookups.configuration[
                 "usd_error_threshold"
             ] and not Lookups.allow_activity(activity_identifier):
-                Lookups.errors_on_exit.add(
+                Lookups.checks.errors_on_exit.add(
                     f"Transaction with value {dtransaction.value} in activity {activity_identifier} is probably an error!"
                 )
         except (ValueError, CurrencyError):

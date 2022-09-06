@@ -2,16 +2,21 @@ from .base_checks import BaseChecks
 
 
 class EbolaChecks(BaseChecks):
-    def has_desired_scope(self, dactivity):
+    def __init__(self, errors_on_exit):
+        super().__init__(errors_on_exit)
+
         """Check if the Ebola code is present"""
-        for scope in dactivity.humanitarian_scopes:
+
+        def check_scope(scope):
             if (
                 scope.type == "2"
                 and scope.vocabulary == "2-1"
                 and scope.code.upper() == "OXEBOLA1415"
             ):
                 return True
-        return False
+            return False
+
+        self.add_scope_check(check_scope)
 
     def is_desired_narrative(self, narratives):
         """Check a dict of different-language text for the string "EBOLA" (case-insensitive)"""
