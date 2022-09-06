@@ -64,10 +64,10 @@ class Activity:
             return (
                 True
                 if (
-                    Lookups.checks.has_desired_scope(self.dactivity.humanitarian_scopes)
-                    or Lookups.checks.has_desired_marker(self.dactivity.policy_markers)
-                    or Lookups.checks.has_desired_tag(self.dactivity.tags)
-                    or Lookups.checks.has_desired_sector(self.dactivity.sectors)
+                    Lookups.checks.has_desired_scope(self.dactivity)
+                    or Lookups.checks.has_desired_marker(self.dactivity)
+                    or Lookups.checks.has_desired_tag(self.dactivity)
+                    or Lookups.checks.has_desired_sector(self.dactivity)
                     or Lookups.checks.is_desired_narrative(
                         self.dactivity.title.narratives
                     )

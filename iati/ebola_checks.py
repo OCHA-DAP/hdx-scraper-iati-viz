@@ -4,9 +4,9 @@ class EbolaChecks:
         return False
 
     @staticmethod
-    def has_desired_scope(scopes):
+    def has_desired_scope(dactivity):
         """Check if the Ebola code is present"""
-        for scope in scopes:
+        for scope in dactivity.humanitarian_scopes:
             if (
                 scope.type == "2"
                 and scope.vocabulary == "2-1"
@@ -16,15 +16,15 @@ class EbolaChecks:
         return False
 
     @staticmethod
-    def has_desired_marker(markers):
+    def has_desired_marker(dactivity):
         return False
 
     @staticmethod
-    def has_desired_tag(tags):
+    def has_desired_tag(dactivity):
         return False
 
     @staticmethod
-    def has_desired_sector(sectors):
+    def has_desired_sector(dactivity):
         return False
 
     @staticmethod

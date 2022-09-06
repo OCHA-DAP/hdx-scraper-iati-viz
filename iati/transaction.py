@@ -114,7 +114,7 @@ class Transaction:
             is_strict = (
                 True
                 if (
-                    Lookups.checks.has_desired_sector(self.dtransaction.sectors)
+                    Lookups.checks.has_desired_sector(self.dtransaction)
                     or (
                         self.dtransaction.description
                         and Lookups.checks.is_desired_narrative(

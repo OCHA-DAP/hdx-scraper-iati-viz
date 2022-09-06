@@ -4,9 +4,9 @@ class CovidChecks:
         return False
 
     @staticmethod
-    def has_desired_scope(scopes):
+    def has_desired_scope(dactivity):
         """Check if the COVID-19 GLIDE number or HRP code is present"""
-        for scope in scopes:
+        for scope in dactivity.humanitarian_scopes:
             if (
                 scope.type == "1"
                 and scope.vocabulary == "1-2"
@@ -22,21 +22,21 @@ class CovidChecks:
         return False
 
     @staticmethod
-    def has_desired_marker(markers):
+    def has_desired_marker(dactivity):
         return False
 
     @staticmethod
-    def has_desired_tag(tags):
+    def has_desired_tag(dactivity):
         """Check if the COVID-19 tag is present"""
-        for tag in tags:
+        for tag in dactivity.tags:
             if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
                 return True
         return False
 
     @staticmethod
-    def has_desired_sector(sectors):
+    def has_desired_sector(dactivity):
         """Check if the DAC COVID-19 sector code is present"""
-        for sector in sectors:
+        for sector in dactivity.sectors:
             if sector.vocabulary == "1" and sector.code == "12264":
                 return True
         return False

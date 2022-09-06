@@ -4,7 +4,7 @@ from hdx.utilities.dateparse import parse_date
 class UkraineChecks:
     @classmethod
     def exclude_dactivity(cls, dactivity):
-        if cls.has_desired_scope(dactivity.humanitarian_scopes):
+        if cls.has_desired_scope(dactivity):
             return False
         #        if not dactivity.humanitarian:
         #            return True
@@ -86,9 +86,9 @@ class UkraineChecks:
         return False
 
     @staticmethod
-    def has_desired_scope(scopes):
+    def has_desired_scope(dactivity):
         """Check if the Ukraine code is present"""
-        for scope in scopes:
+        for scope in dactivity.humanitarian_scopes:
             if (
                 scope.type == "1"
                 and scope.vocabulary == "1-2"
@@ -110,15 +110,15 @@ class UkraineChecks:
         return False
 
     @staticmethod
-    def has_desired_marker(markers):
+    def has_desired_marker(dactivity):
         return False
 
     @staticmethod
-    def has_desired_tag(tags):
+    def has_desired_tag(dactivity):
         return False
 
     @staticmethod
-    def has_desired_sector(sectors):
+    def has_desired_sector(dactivity):
         return False
 
     @staticmethod

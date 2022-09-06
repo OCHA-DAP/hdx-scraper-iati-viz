@@ -1,11 +1,11 @@
 class ClimateChecks:
     @staticmethod
-    def has_desired_scope(scopes):
+    def has_desired_scope(dactivity):
         return False
 
     @staticmethod
-    def has_desired_marker(markers):
-        for marker in markers:
+    def has_desired_marker(dactivity):
+        for marker in dactivity.policy_markers:
             if marker.vocabulary != "1":
                 continue
             if marker.code not in ("6", "7"):
@@ -15,11 +15,11 @@ class ClimateChecks:
         return False
 
     @staticmethod
-    def has_desired_tag(tags):
+    def has_desired_tag(dactivity):
         return False
 
     @staticmethod
-    def has_desired_sector(sectors):
+    def has_desired_sector(dactivity):
         return False
 
     @staticmethod
