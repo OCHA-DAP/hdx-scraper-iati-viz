@@ -40,7 +40,7 @@ class UkraineChecks(BaseChecks):
         #        if dactivity.activity_status != "2":
         #            return True
         conflict_start_date = parse_date("2022-02-24")
-        excluded_aid_types = ("A01",)
+        excluded_aid_types = ("A01", "A02", "F01")
         relevant_countries = ("UA", "PL", "HU", "SK", "RO", "MD", "BY", "RU")
         start_date_in_conflict = False
         included_aid_type = False
