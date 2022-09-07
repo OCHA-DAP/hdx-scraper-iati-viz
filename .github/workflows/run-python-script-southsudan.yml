@@ -22,9 +22,6 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run script
-      env:
-        GSHEET_AUTH: ${{ secrets.GSHEET_AUTH }}
-        UPDATESHEETS: ${{ secrets.UPDATESHEETS }}
       run: |
         python run.py --what=southsudan
         cp errors.log output_southsudan

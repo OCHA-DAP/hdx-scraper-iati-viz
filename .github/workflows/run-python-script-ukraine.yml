@@ -22,9 +22,6 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run script
-      env:
-        GSHEET_AUTH: ${{ secrets.GSHEET_AUTH }}
-        UPDATESHEETS: ${{ secrets.UPDATESHEETS }}
       run: |
         python run.py --what=ukraine --date_filter=2022-02
         cp errors.log output_ukraine
