@@ -40,7 +40,7 @@ def parse_args():
         "-dp",
         "--dportal_params",
         default="",
-        help="Parameters for DPortal query (eg. limit X, offset Y",
+        help="Parameters for DPortal query (eg. limit X, offset Y)",
     )
     parser.add_argument(
         "-wh", "--what", default="covid", help="What to run eg. covid, ebola"
