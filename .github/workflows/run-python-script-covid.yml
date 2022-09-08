@@ -23,7 +23,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run script
       run: |
-        python run.py  --what=covid --date_filter=2020-01
+        python run.py  --what=covid --date_filter=2020-01-01
         cp errors.log output_covid
     - name: Deploy 🚀
       if: always()
