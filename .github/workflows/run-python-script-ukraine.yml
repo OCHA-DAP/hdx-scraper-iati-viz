@@ -23,7 +23,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run script
       run: |
-        python run.py --what=ukraine --date_filter=2022-02-24
+        python run.py --what=ukraine --date_filter=2022-02-24 --save_prefiltered
         cp errors.log output_ukraine
     - name: Deploy 🚀
       if: always()
