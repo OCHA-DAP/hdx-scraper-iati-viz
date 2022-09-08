@@ -44,7 +44,7 @@ class Lookups:
     configuration = None
     checks = None
     errors_on_exit = None
-    filter_transaction_date = None
+    start_date = None
 
     @classmethod
     def setup(cls):

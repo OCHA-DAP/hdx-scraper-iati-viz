@@ -4,8 +4,10 @@ from .base_checks import BaseChecks
 class CovidChecks(BaseChecks):
     def __init__(self, errors_on_exit):
         super().__init__(errors_on_exit)
-        """Check if the COVID-19 GLIDE number or HRP code is present"""
 
+        self.excluded_aid_types = ("A01", "A02", "F01")
+
+        # Check if the COVID-19 GLIDE number or HRP code is present
         def check_scope(scope):
             if (
                 scope.type == "1"
@@ -23,8 +25,7 @@ class CovidChecks(BaseChecks):
 
         self.add_scope_check(check_scope)
 
-        """Check if the COVID-19 tag is present"""
-
+        # Check if the COVID-19 tag is present
         def check_tag(tag):
             if tag.vocabulary == "99" and tag.code.upper() == "COVID-19":
                 return True

@@ -18,9 +18,9 @@ class Transaction:
         self.dtransaction = dtransaction
         # Use date falling back on value-date
         if dtransaction.date:
-            self.year_month = dtransaction.date[:7]
+            self.date = parse_date(dtransaction.date)
         else:
-            self.year_month = dtransaction.value_date[:7]
+            self.date = parse_date(dtransaction.value_date)
         self.value = value
 
     @staticmethod
@@ -72,13 +72,13 @@ class Transaction:
     def get_direction(self):
         return self.transaction_type_info["direction"]
 
-    def process(self, today_year_month, activity):
+    def process(self, today, activity):
         if self.value:
             if (
-                Lookups.filter_transaction_date
-                and self.year_month < Lookups.filter_transaction_date
-            ) or self.year_month > today_year_month:
-                # Skip transactions with out-of-range months
+                Lookups.start_date
+                and self.date < Lookups.start_date
+            ) or self.date > today:
+                # Skip transactions with out-of-range dates
                 return False
         else:
             return False

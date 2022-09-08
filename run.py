@@ -48,6 +48,9 @@ def parse_args():
     parser.add_argument(
         "-df", "--date_filter", default=None, help="Start date of date filter"
     )
+    parser.add_argument(
+        "-sp", "--save_prefiltered", default=False, action="store_true", help="Save prefiltered DPortal XML"
+    )
     args = parser.parse_args()
     return args
 
@@ -59,7 +62,8 @@ def main(
     use_saved,
     dportal_params,
     whattorun,
-    filterdate,
+    startdate,
+    saveprefiltered,
     **ignore,
 ):
     logger.info(f"##### hdx-scraper-iati-viz version {VERSION:.1f} ####")
@@ -85,7 +89,8 @@ def main(
                 output_dir,
                 dportal_params,
                 whattorun,
-                filterdate,
+                startdate,
+                saveprefiltered,
                 errors_on_exit,
             )
 
@@ -116,5 +121,6 @@ if __name__ == "__main__":
         use_saved=args.use_saved,
         dportal_params=args.dportal_params,
         whattorun=args.what,
-        filterdate=args.date_filter,
+        startdate=args.date_filter,
+        saveprefiltered=args.save_prefiltered,
     )

@@ -9,6 +9,7 @@ from hdx.utilities.downloader import Download
 from hdx.utilities.errors_onexit import ErrorsOnExit
 from hdx.utilities.path import temp_dir
 from hdx.utilities.retriever import Retrieve
+
 from iati.main import start
 
 
@@ -51,7 +52,7 @@ class TestIATI:
                         save=False,
                         use_saved=True,
                     )
-                    today = "2021-05-06"
+                    today = "2021-05-30"
                     start(
                         configuration,
                         today,
@@ -59,7 +60,8 @@ class TestIATI:
                         tempdir,
                         dportal_params=None,
                         whattorun="covid",
-                        filterdate="2020-01",
+                        startdate="2020-01-01",
+                        saveprefiltered=False,
                         errors_on_exit=errors_on_exit,
                     )
                     for filename in ("flows", "transactions", "reporting_orgs"):

@@ -1,6 +1,5 @@
 Reporting org id,Reporting org name,Reporting org type,Provider org id,Provider org name,Provider org type,Receiver org id,Receiver org name,Receiver org type,Humanitarian?,Strict?,Transaction direction,Total money
 #org+id+reporting,#org+name+reporting,#org+reporting+type,#org+id+provider,#org+name+provider,#org+type+provider,#org+id+receiver,#org+name+receiver,#org+type+receiver,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_direction,#value+total
-lb-moi-497,ABAAD- Resource Center for Gender Equality,22,,,,,(Direct expenditure),,1,0,outgoing,1112742
 gb-coh-294860,ADD International,21,,,,,(Direct expenditure),,0,0,outgoing,2154
 gb-coh-294860,ADD International,21,,,,,(Direct expenditure),,0,1,outgoing,165316
 gb-coh-294860,ADD International,21,gb-chc-207544,Sightsavers,21,,,,0,0,incoming,96855
@@ -84,7 +83,7 @@ gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,41122,UNITED NATIO
 gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,41119,UNITED NATIONS POPULATION FUND,40,0,1,outgoing,12454231
 gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,xm-dac-41121,United Nations High Commissioner for Refugees (UNHCR),40,0,1,outgoing,25170214
 gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,xm-dac-41121,United Nations High Commissioner for Refugees (UNHCR),40,1,1,outgoing,10717038
-gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,xm-dac-41127,United Nations Office for the Coordination of Huma,40,1,1,outgoing,4922570
+gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs (OCHA),40,1,1,outgoing,4922570
 gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,us-gov-1,United States Agency for International Development (USAID),10,0,1,outgoing,612078
 gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,xm-dac-928,World Health Organization (WHO),40,0,0,outgoing,86067285
 gb-coh-1762840,HelpAge International,21,,,,,(Direct expenditure),,0,1,outgoing,25005
@@ -102,15 +101,6 @@ gb-coh-1762840,HelpAge International,21,gb-chc-1128267-8,Age International,21,,,
 gb-coh-1762840,HelpAge International,21,gb-chc-1128267-8,Age International,21,,,,1,1,incoming,559176
 gb-coh-1762840,HelpAge International,21,,HelpAge Canada,21,,,,0,1,incoming,21107
 nl-kvk-27108436,Oxfam Novib,21,,,,,Center for Education Promotion and CEPEW,,0,0,outgoing,16800
-ng-cac-30547,PARADIGM INITIATIVE,21,,,,,(Direct expenditure),,1,0,outgoing,-225801
-ng-cac-30547,PARADIGM INITIATIVE,21,,,,,(Direct expenditure),,1,1,outgoing,-58465
-ng-cac-30547,PARADIGM INITIATIVE,21,xm-dac-7,GOVERNMENT OF NETHERLANDS,10,,,,1,0,incoming,453363
-gb-coh-871954,Practical Action,21,,,,,(Direct expenditure),,0,0,outgoing,374107
-gb-coh-871954,Practical Action,21,,,,,(Direct expenditure),,0,1,outgoing,15527
-gb-coh-871954,Practical Action,21,,AECF (Africa Enterprise Challenge Fund),,,,,0,1,incoming,18058
-gb-coh-871954,Practical Action,21,dac-1601,Bill and Melinda Gates Foundation,60,,,,0,0,incoming,6215
-gb-coh-871954,Practical Action,21,dac-1601,Bill and Melinda Gates Foundation,60,,,,0,1,incoming,0
-gb-coh-871954,Practical Action,21,,Poul Due Jensen Foundation (Grundfos),,,,,0,1,incoming,346920
 gb-coh-213890,Save The Children UK,21,,,,gb-chc-1076822,Save The Children International,21,0,0,outgoing,50473
 gb-coh-213890,Save The Children UK,21,,,,gb-chc-1076822,Save The Children International,21,1,0,outgoing,10065
 gb-coh-213890,Save The Children UK,21,,,,gb-chc-1076822,Save The Children International,21,1,1,outgoing,4730906
@@ -142,6 +132,3 @@ xm-dac-41114,United Nations Development Programme,40,00085,"GOVERNMENT OF CAMERO
 xm-dac-41114,United Nations Development Programme,40,xm-dac-301-2,International Development Research Centre,10,,,,0,0,incoming,417045
 xm-dac-41114,United Nations Development Programme,40,12994,MPTFO - Joint SDG Fund (previously known as The Joint Fund for the 2030 Agenda),40,,,,0,1,incoming,150762
 xm-dac-41114,United Nations Development Programme,40,10500,UNITED NATIONS FOUNDATION,,,,,0,0,incoming,368317
-lk-drc-ga139,Women's Fund Asia,23,,,,,(Direct expenditure),,0,0,outgoing,84192
-lk-drc-ga139,Women's Fund Asia,23,,,,,(Unspecified org),,0,0,outgoing,17500
-lk-drc-ga139,Women's Fund Asia,23,,,,,(Unspecified org),,0,1,outgoing,28363

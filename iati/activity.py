@@ -35,30 +35,6 @@ class Activity:
             self.transactions.append(transaction)
         return skipped
 
-    @staticmethod
-    def get_activity(dactivity):
-        """
-        We exclude activities from secondary reporters and certain sorts
-        of organisations where the data is very poor quality. We also
-        exclude hierarchy=1 activities for GAVI (47122) and FCDO (GB-GOV-1).
-        """
-        # Skip activities from a secondary reporter
-        if dactivity.secondary_reporter:
-            return None, len(dactivity.transactions)
-        # Filter out certain activities
-        if Lookups.skip_activity(dactivity.identifier):
-            return None, len(dactivity.transactions)
-        reporting_org_ref = dactivity.reporting_org.ref
-        # Filter out certain orgs
-        if Lookups.skip_reporting_org(reporting_org_ref):
-            return None, len(dactivity.transactions)
-        # Filter out eg. GAVI and FCDO activities that have children (ie. filter out h=1)
-        if Lookups.skip_reporting_org_children(reporting_org_ref, dactivity.hierarchy):
-            return None, len(dactivity.transactions)
-        activity = Activity(dactivity)
-        skipped = activity.add_transactions()
-        return activity, skipped
-
     def is_strict(self):
         try:
             return (
@@ -206,7 +182,7 @@ class Activity:
                     # add to transactions
                     out_transactions.append(
                         [
-                            transaction.year_month,
+                            transaction.date.strftime("%Y-%m"),
                             self.org["id"],
                             self.org["name"],
                             self.org["type"],
@@ -238,7 +214,7 @@ class Activity:
                 implementer = org
         return funder, implementer
 
-    def process(self, today_year_month, out_flows, out_transactions):
+    def process(self, today, out_flows, out_transactions):
         self.factor_new_money()
         #
         # Walk through the activity's transactions one-by-one, and split by country/sector
@@ -246,7 +222,7 @@ class Activity:
         funder, implementer = self.get_funder_implementer()
         skipped = 0
         for transaction in self.transactions:
-            if not transaction.process(today_year_month, self):
+            if not transaction.process(today, self):
                 skipped += 1
                 continue
             self.add_to_flows(out_flows, transaction, funder, implementer)

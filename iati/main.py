@@ -5,6 +5,7 @@ from urllib.parse import quote
 
 import diterator
 from hdx.location.currency import Currency
+from hdx.utilities.dateparse import parse_date
 from hdx.utilities.saver import save_hxlated_output
 
 from . import checks
@@ -38,17 +39,20 @@ def start(
     output_dir,
     dportal_params,
     whattorun,
-    filterdate,
+    startdate,
+    saveprefiltered,
     errors_on_exit,
 ):
-    if filterdate:
-        text = f"removing transactions before {filterdate}"
+    if startdate:
+        text = f"removing activities and transactions before {startdate}"
     else:
-        text = "without removing transactions before a certain date"
+        text = "with no date filtering"
     logger.info(f"Running {whattorun} {text}")
     Lookups.configuration = configuration
     Lookups.checks = checks[whattorun](errors_on_exit)
-    Lookups.filter_transaction_date = filterdate
+    if startdate is not None:
+        startdate = parse_date(startdate)
+    Lookups.start_date = startdate
     dportal_filename, dportal_path = retrieve_dportal(
         retriever, whattorun, dportal_params
     )
@@ -65,31 +69,32 @@ def start(
     dactivities = list()
     xmliterator = diterator.XMLIterator(dportal_path)
     number_query_activities = 0
-    prefiltered_path = join(output_dir, "prefiltered.xml")
-    with open(prefiltered_path, "w") as writer:
+    if saveprefiltered:
+        writer = open(join(output_dir, "prefiltered.xml"), "w")
         writer.write(
             '<?xml version="1.0" encoding="UTF-8"?>\n<iati-activities version="2.03">\n'
         )
-        for dactivity in xmliterator:
-            number_query_activities += 1
-            if number_query_activities % 1000 == 0:
-                logger.info(f"Read {number_query_activities} activities")
-            if Lookups.checks.exclude_dactivity(dactivity):
-                continue
-            Lookups.add_reporting_org(dactivity)
-            dactivities.append(SmallDActivity(dactivity))
+    else:
+        writer = None
+    for dactivity in xmliterator:
+        number_query_activities += 1
+        if number_query_activities % 1000 == 0:
+            logger.info(f"Read {number_query_activities} activities")
+        if Lookups.checks.exclude_dactivity(dactivity):
+            continue
+        Lookups.add_reporting_org(dactivity)
+        dactivities.append(SmallDActivity(dactivity))
+        if writer:
             writer.write(dactivity.node.toxml())
-            del dactivity
+        del dactivity
+    if writer:
         writer.write("\n</iati-activities>")
+        writer.close()
     del xmliterator  # Maybe this helps garbage collector?
     logger.info(f"D-Portal returned {number_query_activities} activities")
     number_dactivities = len(dactivities)
     if number_dactivities == number_query_activities:
-        logger.info(f"No prefiltering performed")
-        try:
-            remove(prefiltered_path)
-        except FileNotFoundError:
-            pass
+        logger.info(f"Prefiltering did not remove any activities")
     else:
         logger.info(f"Prefiltered to {number_dactivities} activities")
     #    Lookups.build_reporting_org_blocklist(dactivities)
@@ -99,18 +104,18 @@ def start(
     logger.info("Processing activities")
     flows = dict()
     transactions = list()
-    all_skipped = 0
+    no_skipped_transactions = 0
+    today_date = parse_date(today)
     for i, dactivity in enumerate(reversed(dactivities)):
-        activity, skipped = Activity.get_activity(dactivity)
-        all_skipped += skipped
-        if activity:
-            all_skipped += activity.process(today[:7], flows, transactions)
+        activity = Activity(dactivity)
+        no_skipped_transactions += activity.add_transactions()
+        no_skipped_transactions += activity.process(today_date, flows, transactions)
         if i % 1000 == 0:
             logger.info(f"Processed {i} activities")
 
     logger.info(f"Processed {len(flows)} flows")
     logger.info(f"Processed {len(transactions)} transactions")
-    logger.info(f"Skipped {all_skipped} transactions")
+    logger.info(f"{no_skipped_transactions} transactions were skipped")
 
     outputs_configuration = configuration["outputs"]
 
@@ -143,7 +148,6 @@ def start(
         output_dir=output_dir,
         today=today,
         num_transactions=len(out_transactions),
-        num_skipped=all_skipped,
     )
 
     # Write orgs
