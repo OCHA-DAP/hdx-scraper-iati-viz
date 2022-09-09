@@ -1,46 +1,6 @@
 Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient country,Humanitarian?,Strict?,Transaction type,Activity id,Net money,Total money
 #date+month,#org+id,#org+name,#org+type,#sector,#country,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_type,#activity+code,#value+net,#value+total
-2022-02,xi-iati-ebrd,European Bank for Reconstruction and Development,40,Communications,Ukraine,0,0,spending,XI-IATI-EBRD-51975,1109443,1109443
-2022-02,xi-iati-ebrd,European Bank for Reconstruction and Development,40,Unallocated / Unspecified,Ukraine,0,0,spending,XI-IATI-EBRD-51563,446050,446050
-2022-02,xi-iati-ec_intpa,European Commission - International Partnerships,15,Energy,Ukraine,0,0,commitments,XI-IATI-EC_INTPA-2013/24796/0,-5,-5
-2022-02,xi-iati-ec_intpa,European Commission - International Partnerships,15,Energy,Ukraine,0,0,commitments,XI-IATI-EC_INTPA-2016/38889/0,-137,-137
-2022-02,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,Banking & Financial Services,Ukraine,0,0,spending,XI-IATI-EC_NEAR-2020/418-569,319938,319938
-2022-02,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,Education,Ukraine,0,0,spending,XI-IATI-EC_NEAR-2021/427-708,338875,338875
-2022-02,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,Government & Civil Society,Ukraine,0,0,spending,XI-IATI-EC_NEAR-2019/410-880,56231,56231
-2022-02,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,Government & Civil Society,Ukraine,0,0,spending,XI-IATI-EC_NEAR-2019/410-880,56231,56231
-2022-02,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,Government & Civil Society,Ukraine,0,0,spending,XI-IATI-EC_NEAR-2021/424-501,1273116,1273116
-2022-02,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,Other Multisector,Ukraine,0,0,spending,XI-IATI-EC_NEAR-2021/428-370,705657,705657
-2022-02,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,Other Social Infrastructure & Services,Ukraine,0,0,spending,XI-IATI-EC_NEAR-2018/399-744,8883,8883
-2022-02,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,Transport & Storage,Ukraine,0,0,spending,XI-IATI-EC_NEAR-2021/428-370,235219,235219
-2022-02,xi-iati-ec_near,European Commission - Neighbourhood and Enlargement Negotiations,15,Transport & Storage,Ukraine,0,0,spending,XI-IATI-EC_NEAR-2021/428-370,235219,235219
-2022-02,xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,Government & Civil Society,Ukraine,0,0,commitments,XI-IATI-EC_FPI-2016/39939/0,-305735,-305735
-2022-02,xi-iati-ec_fpi,European Commission – Service for Foreign Policy Instruments,15,Government & Civil Society,Ukraine,0,0,spending,XI-IATI-EC_FPI-2020/411-685,53503,53503
-2022-02,ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,Emergency Response,Ukraine,1,0,commitments,CA-3-P011317001,25107293,25107293
-2022-02,ca-3,"Foreign Affairs, Trade and Development Canada (DFATD)",10,Emergency Response,Ukraine,1,0,spending,CA-3-P011317001,5526781,5526781
-2022-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Europe (no country specified),0,0,spending,GB-1-205093-105,56328,56328
-2022-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Government & Civil Society,Europe (no country specified),0,0,spending,GB-1-205093-105,1351871,1351871
 2022-02,47122,"Gavi, The Vaccine Alliance",40,Health,Ukraine,0,0,spending,47122-UKR-COVAX,103682,103682
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Emergency Response,Armenia,1,0,spending,XM-DAC-5-7-6616696,25439,25439
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Emergency Response,Azerbaijan,1,0,spending,XM-DAC-5-7-6616696,84798,84798
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Emergency Response,Ukraine,1,0,spending,XM-DAC-5-7-6616248,802750,802750
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Emergency Response,Ukraine,1,0,spending,XM-DAC-5-7-6616323,389128,389128
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Emergency Response,Ukraine,1,0,spending,XM-DAC-5-7-6616696,172422,172422
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Government & Civil Society,Belarus,0,0,spending,XM-DAC-5-7-6616285,5936,5936
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Government & Civil Society,Belarus,0,0,spending,XM-DAC-5-7-6616662,4342,4342
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Government & Civil Society,Georgia,0,0,spending,XM-DAC-5-7-6616285,5936,5936
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Government & Civil Society,Republic of Moldova,0,0,spending,XM-DAC-5-7-6616285,5936,5936
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Government & Civil Society,South of Sahara (no country specified),0,0,spending,XM-DAC-5-7-6614164,-52,-52
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Government & Civil Society,Ukraine,0,0,commitments,XM-DAC-5-7-6617358,113651,113651
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Government & Civil Society,Ukraine,0,0,commitments,XM-DAC-5-7-6617367,85176,85176
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Government & Civil Society,Ukraine,0,0,commitments,XM-DAC-5-7-6617374,56784,56784
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Government & Civil Society,Ukraine,0,0,commitments,XM-DAC-5-7-6617375,113568,113568
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Government & Civil Society,Ukraine,0,0,spending,XM-DAC-5-7-6613128,107410,107410
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Government & Civil Society,Ukraine,0,0,spending,XM-DAC-5-7-6614164,-52,-52
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Government & Civil Society,Ukraine,0,0,spending,XM-DAC-5-7-6614245,57137,57137
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Government & Civil Society,Ukraine,0,0,spending,XM-DAC-5-7-6615504,-45225,-45225
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Government & Civil Society,Ukraine,0,0,spending,XM-DAC-5-7-6616285,5936,5936
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Government & Civil Society,Ukraine,0,0,spending,XM-DAC-5-7-6616662,4749,4749
-2022-02,xm-dac-5-7,Germany - Federal Foreign Office,10,Government & Civil Society,Ukraine,0,0,spending,XM-DAC-5-7-6616860,4810,4810
 2022-02,xm-dac-21016,International Committee of the Red Cross,40,(Unspecified sector),(Unspecified country),1,0,spending,XM-DAC-21016-2022-EURASIA-MOS,3111,4019
 2022-02,xm-dac-21016,International Committee of the Red Cross,40,(Unspecified sector),(Unspecified country),1,0,spending,XM-DAC-21016-2022-EURASIA-MOS,8227,10630
 2022-02,xm-dac-21016,International Committee of the Red Cross,40,(Unspecified sector),(Unspecified country),1,0,spending,XM-DAC-21016-2022-EURASIA-MOS,52875,68315
@@ -58,13 +18,10 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-02,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,Emergency Response,Ukraine,1,0,commitments,XM-DAC-3-1-286781-35507,3004943,3004943
 2022-02,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,Energy,Ukraine,0,0,spending,XM-DAC-3-1-286379-35075,-8516,-8516
 2022-02,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,Energy,Ukraine,0,0,spending,XM-DAC-3-1-286379-35075,-1479,-1479
-2022-02,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,Energy,Ukraine,0,0,spending,XM-DAC-3-1-286379-35075,9,9
-2022-02,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,Energy,Ukraine,0,0,spending,XM-DAC-3-1-286379-35075,534,534
 2022-02,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,Energy,Ukraine,0,0,spending,XM-DAC-3-1-286379-35075,1479,1479
 2022-02,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,Energy,Ukraine,0,0,spending,XM-DAC-3-1-286379-35075,1479,1479
 2022-02,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,Energy,Ukraine,0,0,spending,XM-DAC-3-1-286379-35075,8516,8516
 2022-02,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,Energy,Ukraine,0,0,spending,XM-DAC-3-1-286379-35075,8516,8516
-2022-02,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,Government & Civil Society,Ukraine,0,0,commitments,XM-DAC-3-1-286292-34924,140358,140358
 2022-02,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,Government & Civil Society,Ukraine,0,0,spending,XM-DAC-3-1-285852-34409,-8391,-8391
 2022-02,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,Government & Civil Society,Ukraine,0,0,spending,XM-DAC-3-1-285852-34409,-4878,-4878
 2022-02,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,Government & Civil Society,Ukraine,0,0,spending,XM-DAC-3-1-285852-34409,-1945,-1945
@@ -83,34 +40,8 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-02,se-0,Sweden,10,Government & Civil Society,Developing countries (no country specified),0,0,spending,SE-0-SE-6-13842A0101-GGG-15220,617939,617939
 2022-02,se-0,Sweden,10,Government & Civil Society,Ukraine,0,0,spending,SE-0-SE-6-12839A0102-UKR-15150,54056,54056
 2022-02,se-0,Sweden,10,Unallocated / Unspecified,Ukraine,0,0,spending,SE-0-SE-6-13097A0101-UKR-99810,16078,16078
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,commitments,47045-UKR-C-AUN,-2570307,-2570307
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,commitments,47045-UKR-C-AUN,-164669,-164669
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,commitments,47045-UKR-C-AUN,-3815,-3815
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,commitments,47045-UKR-C-AUN,2877,2877
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,commitments,47045-UKR-C-AUN,159213,159213
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,commitments,47045-UKR-C-AUN,2570774,2570774
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,commitments,47045-UKR-C-PHC,-220970,-220970
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,commitments,47045-UKR-C-PHC,-97290,-97290
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,commitments,47045-UKR-C-PHC,-87688,-87688
 2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,commitments,47045-UKR-C-PHC,50000,50000
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,commitments,47045-UKR-C-PHC,95663,95663
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,commitments,47045-UKR-C-PHC,97290,97290
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,commitments,47045-UKR-C-PHC,900229,900229
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,commitments,47045-UKR-C-PHC,1049930,1049930
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,commitments,47045-UKR-C-PHC,2370116,2370116
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,spending,47045-UKR-C-AUA,148087,148087
 2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,spending,47045-UKR-C-AUA,319028,319028
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,spending,47045-UKR-C-AUA,412190,412190
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,spending,47045-UKR-C-AUA,2387080,2387080
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,spending,47045-UKR-C-AUN,91,91
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,spending,47045-UKR-C-AUN,855,855
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,spending,47045-UKR-C-AUN,1903,1903
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,spending,47045-UKR-C-AUN,1261592,1261592
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,spending,47045-UKR-C-AUN,1971789,1971789
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,spending,47045-UKR-C-PHC,3475,3475
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,spending,47045-UKR-C-PHC,9651,9651
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,spending,47045-UKR-C-PHC,94080,94080
-2022-02,47045,"The Global Fund to Fight AIDS, Tuberculosis and Malaria",30,Population Policies/Programmes & Reproductive Health,Ukraine,0,0,spending,47045-UKR-C-PHC,107740,107740
 2022-02,xm-dac-41146,UN Women,40,Unallocated / Unspecified,Ukraine,0,0,spending,XM-DAC-41146-UKR_O_3.1,0,5985
 2022-02,xm-dac-41122,UNICEF,40,Administrative Costs of Donors,Ukraine,1,0,spending,XM-DAC-41122-Ukraine-4410/A0/04/881/005,73,5481
 2022-02,xm-dac-41122,UNICEF,40,Administrative Costs of Donors,Ukraine,1,0,spending,XM-DAC-41122-Ukraine-4410/A0/05/886/001,47,8999
@@ -265,7 +196,6 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-02,xm-dac-41114,United Nations Development Programme,40,Other Social Infrastructure & Services,Ukraine,0,0,spending,XM-DAC-41114-OUTPUT-00125717,0,45279
 2022-02,xm-dac-41114,United Nations Development Programme,40,Other Social Infrastructure & Services,Ukraine,0,0,spending,XM-DAC-41114-OUTPUT-00129705,0,3280
 2022-02,xm-dac-41114,United Nations Development Programme,40,Other Social Infrastructure & Services,Ukraine,0,0,spending,XM-DAC-41114-OUTPUT-00129716,0,36027
-2022-02,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,commitments,XM-OCHA-CBPF-UKR-21/UKR_CBPF/SA3/FSL-H-N-WASH-P-S-NFI/NGO/19923,456637,456637
 2022-02,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Ukraine,1,0,spending,XM-OCHA-CBPF-UKR-21/UKR_CBPF/SA3/FSL-H-N-WASH-P-S-NFI/NGO/19923,365309,365309
 2022-02,us-gov-1,United States Agency for International Development (USAID),10,Administrative Costs of Donors,(Unspecified country),0,0,commitments,US-GOV-1-720202250536,680,680
 2022-02,us-gov-1,United States Agency for International Development (USAID),10,Administrative Costs of Donors,(Unspecified country),1,0,spending,US-GOV-1-720202251719,4078,4078
@@ -505,74 +435,22 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-02,us-gov-1,United States Agency for International Development (USAID),10,Water Supply & Sanitation,(Unspecified country),0,0,spending,US-GOV-1-AID-OAA-C-17-00090,28777,28777
 2022-02,xi-iati-wbtf,World Bank Trust Funds (WBTF),40,Other Multisector,Ukraine,0,0,spending,XI-IATI-WBTF-P132386,0,247787
 2022-02,xi-iati-wbtf,World Bank Trust Funds (WBTF),40,Water Supply & Sanitation,Ukraine,0,0,spending,XI-IATI-WBTF-P132386,0,13041
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Hungary,1,1,spending,XM-DAC-928-HU-2022-23-13.003.EU01.HUN02,0,2142
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,1003
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,8480
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,6084
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,4615
 2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,15744
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,398
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,49
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,49
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,196
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,2658
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,1359
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,10292
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,4936
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,1537
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,724
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,98
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,196
 2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,245
 2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,196
 2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,49
 2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Republic of Moldova,1,1,spending,XM-DAC-928-MD-2022-23-13.003.EU01.MDA02,0,196
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,9100
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,7816
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,11117
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,18316
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,8194
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,3872
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,2100
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,2000
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,19222
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,142
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,85
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,3760
 2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,10051
 2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,7250
 2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,3220
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,14046
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,126
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,115
 2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,1908
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,432263
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,3257
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,2361
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,43326
 2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,2848
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,637
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR02,0,5359
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,4905
 2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,3997
 2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,60613
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,1776
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,3392
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,1017
 2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,1328
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,8500
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,36269
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,6000
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,2362
 2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,4340
 2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,1113
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,18922
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,14591
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,3574
 2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,53906
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,89
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,609
-2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,686
 2022-02,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,26684
 2022-03,xm-dac-6-4,AICS - Italian Agency for Cooperation and Development,10,Emergency Response,Europe (no country specified),1,0,commitments,XM-DAC-6-4-012592-01-2,8817564,8817564
 2022-03,xm-dac-6-4,AICS - Italian Agency for Cooperation and Development,10,Emergency Response,Europe (no country specified),1,0,commitments,XM-DAC-6-4-012592-01-4,2204391,2204391
@@ -12719,7 +12597,5 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2022-08,xm-dac-928,World Health Organization,40,Emergency Response,Ukraine,1,1,spending,XM-DAC-928-UA-2022-23-13.003.EU01.UKR03,0,6451
 2022-08,gb-chc-285908,World Vision United Kingdom,21,Government & Civil Society,Macao,1,0,spending,GB-CHC-285908-219616,322758,322758
 2022-08,gb-chc-285908,World Vision United Kingdom,21,Government & Civil Society,Ukraine,1,0,spending,GB-CHC-285908-219526,639539,639539
-2022-09,gb-chc-1105851,Christian Aid,21,(Unspecified sector),(Unspecified country),1,0,spending,GB-CHC-1105851-AD4833,0,1528
-2022-09,gb-chc-1105851,Christian Aid,21,(Unspecified sector),(Unspecified country),1,0,spending,GB-CHC-1105851-AD4833,0,1103
 2022-09,xm-dac-3-1,"Ministry of Foreign Affairs, Denmark",10,Government & Civil Society,Ukraine,0,0,spending,XM-DAC-3-1-286116-34671,1204369,1204369
 2022-09,xm-ocha-cbpf,United Nations Office for the Coordination of Humanitarian Affairs,22,Other Multisector,Afghanistan,1,0,commitments,XM-OCHA-CBPF-AFG-22/3481/SA1/FSAC/NGO/22183,564551,564551
