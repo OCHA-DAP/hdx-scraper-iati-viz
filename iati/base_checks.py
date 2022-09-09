@@ -11,10 +11,7 @@ class BaseChecks:
         self.relevant_countries = None
         self.relevant_words = None
 
-    def exclude_dactivity(
-        self,
-        dactivity,
-    ):
+    def specific_exclusions(self, dactivity):
         if dactivity.secondary_reporter:
             return True
         # Filter out certain activities
@@ -27,10 +24,15 @@ class BaseChecks:
         # Filter out eg. GAVI and FCDO activities that have children (ie. filter out h=1)
         if Lookups.skip_reporting_org_children(reporting_org_ref, dactivity.hierarchy):
             return True
+        return False
 
+    def exclude_dactivity(
+        self,
+        dactivity,
+    ):
         if self.include_scope:
             if self.has_desired_scope(dactivity):
-                return False
+                return self.specific_exclusions(dactivity)
 
         if Lookups.start_date is None:
             date_after_start_date = True
@@ -114,7 +116,7 @@ class BaseChecks:
             return True
         if not text_in_narrative:
             return True
-        return False
+        return self.specific_exclusions(dactivity)
 
     def has_desired_scope(self, dactivity):
         return False
