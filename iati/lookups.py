@@ -43,8 +43,6 @@ class Lookups:
     allow_activities = list()
     configuration = None
     checks = None
-    errors_on_exit = None
-    start_date = None
 
     @classmethod
     def setup(cls):

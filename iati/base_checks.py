@@ -36,10 +36,10 @@ class BaseChecks:
             if self.has_desired_scope(dactivity):
                 return self.specific_exclusions(dactivity)
 
-        if Lookups.start_date is None:
-            date_after_start_date = True
+        if self.start_date is None:
+            date_in_range = True
         else:
-            date_after_start_date = False
+            date_in_range = False
         if self.excluded_aid_types is None:
             included_aid_type = True
         else:
@@ -54,14 +54,14 @@ class BaseChecks:
             text_in_narrative = False
 
         def check_date(datestr):
-            nonlocal date_after_start_date
-            if date_after_start_date:
+            nonlocal date_in_range
+            if date_in_range:
                 return
             if not datestr:
                 return
             date = parse_date(datestr)
-            if date >= Lookups.start_date:
-                date_after_start_date = True
+            if self.start_date <= date <= self.today:
+                date_in_range = True
 
         def check_aid_types(aid_types):
             nonlocal included_aid_type
@@ -110,7 +110,7 @@ class BaseChecks:
             check_countries(dtransaction.recipient_countries)
             check_narratives(dtransaction.description)
 
-        if not date_after_start_date:
+        if not date_in_range:
             return True
         if not included_aid_type:
             return True
