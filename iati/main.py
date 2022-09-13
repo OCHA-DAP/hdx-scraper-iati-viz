@@ -49,10 +49,9 @@ def start(
         text = "with no date filtering"
     logger.info(f"Running {whattorun} {text}")
     Lookups.configuration = configuration
-    Lookups.checks = checks[whattorun](errors_on_exit)
     if startdate is not None:
         startdate = parse_date(startdate)
-    Lookups.start_date = startdate
+    Lookups.checks = checks[whattorun](parse_date(today), startdate, errors_on_exit)
     dportal_filename, dportal_path = retrieve_dportal(
         retriever, whattorun, dportal_params
     )
@@ -76,12 +75,15 @@ def start(
         )
     else:
         writer = None
+    no_removed_transactions = 0
     for dactivity in xmliterator:
         number_query_activities += 1
         if number_query_activities % 1000 == 0:
             logger.info(f"Read {number_query_activities} activities")
-        if Lookups.checks.exclude_dactivity(dactivity):
+        exclude, removed = Lookups.checks.exclude_activity(dactivity)
+        if exclude:
             continue
+        no_removed_transactions += removed
         Lookups.add_reporting_org(dactivity)
         dactivities.append(SmallDActivity(dactivity))
         if writer:
@@ -97,6 +99,9 @@ def start(
         logger.info(f"Prefiltering did not remove any activities")
     else:
         logger.info(f"Prefiltered to {number_dactivities} activities")
+    logger.info(
+        f"Prefiltering removed {no_removed_transactions} transactions within included activities"
+    )
     #    Lookups.build_reporting_org_blocklist(dactivities)
     Lookups.add_participating_orgs(dactivities)
 
@@ -105,11 +110,9 @@ def start(
     flows = dict()
     transactions = list()
     no_skipped_transactions = 0
-    today_date = parse_date(today)
     for i, dactivity in enumerate(reversed(dactivities)):
         activity = Activity(dactivity)
-        no_skipped_transactions += activity.add_transactions()
-        no_skipped_transactions += activity.process(today_date, flows, transactions)
+        no_skipped_transactions += activity.process(flows, transactions)
         if i % 1000 == 0:
             logger.info(f"Processed {i} activities")
 

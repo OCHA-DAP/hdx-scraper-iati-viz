@@ -2,8 +2,8 @@ from .base_checks import BaseChecks
 
 
 class EbolaChecks(BaseChecks):
-    def __init__(self, errors_on_exit):
-        super().__init__(errors_on_exit)
+    def __init__(self, today, start_date, errors_on_exit):
+        super().__init__(today, start_date, errors_on_exit)
 
         """Check if the Ebola code is present"""
 

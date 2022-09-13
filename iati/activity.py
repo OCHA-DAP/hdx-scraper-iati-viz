@@ -24,16 +24,13 @@ class Activity:
         )
         self.sector_splits = CalculateSplits.make_sector_splits(dactivity)
         self.transactions = list()
-
-    def add_transactions(self):
-        skipped = 0
         for dtransaction in self.dactivity.transactions:
-            transaction = Transaction.get_transaction(dtransaction, self.identifier)
-            if not transaction:
-                skipped += 1
-                continue
+            transaction = Transaction(
+                Lookups.configuration["transaction_type_info"][dtransaction.type],
+                dtransaction,
+                self,
+            )
             self.transactions.append(transaction)
-        return skipped
 
     def is_strict(self):
         try:
@@ -214,7 +211,7 @@ class Activity:
                 implementer = org
         return funder, implementer
 
-    def process(self, today, out_flows, out_transactions):
+    def process(self, out_flows, out_transactions):
         self.factor_new_money()
         #
         # Walk through the activity's transactions one-by-one, and split by country/sector
@@ -222,10 +219,8 @@ class Activity:
         funder, implementer = self.get_funder_implementer()
         skipped = 0
         for transaction in self.transactions:
-            if not transaction.process(today, self):
-                skipped += 1
-                continue
             self.add_to_flows(out_flows, transaction, funder, implementer)
+            transaction.calculate_net_value(self)
             if transaction.net_value is None:
                 skipped += 1
                 continue

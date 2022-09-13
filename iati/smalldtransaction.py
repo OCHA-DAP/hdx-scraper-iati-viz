@@ -3,11 +3,10 @@ from .flatten import flatten
 
 class SmallDTransaction:
     __slots__ = [
-        "value",
         "type",
-        "value_date",
-        "date",
+        "usddate",
         "currency",
+        "usdvalue",
         "humanitarian",
         "sectors",
         "description",
@@ -18,11 +17,10 @@ class SmallDTransaction:
     ]
 
     def __init__(self, dtransaction):
-        self.value = dtransaction.value
         self.type = dtransaction.type
-        self.value_date = dtransaction.value_date
-        self.date = dtransaction.date
+        self.usddate = dtransaction.usddate
         self.currency = dtransaction.currency
+        self.usdvalue = dtransaction.usdvalue
         self.humanitarian = dtransaction.humanitarian
         self.sectors = flatten(dtransaction.sectors)
         self.description = flatten(dtransaction.description)
