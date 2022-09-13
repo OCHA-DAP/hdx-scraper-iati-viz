@@ -32,23 +32,27 @@ class BaseChecks:
         self,
         dactivity,
     ):
+        if self.specific_exclusions(dactivity):
+            return True
+
+        do_checks = True
         if self.include_scope:
             if self.has_desired_scope(dactivity):
-                return self.specific_exclusions(dactivity)
+                do_checks = False
 
-        if self.start_date is None:
+        if not do_checks or self.start_date is None:
             date_in_range = True
         else:
             date_in_range = False
-        if self.excluded_aid_types is None:
+        if not do_checks or self.excluded_aid_types is None:
             included_aid_type = True
         else:
             included_aid_type = False
-        if self.relevant_countries is None:
+        if not do_checks or self.relevant_countries is None:
             country_in_list = True
         else:
             country_in_list = False
-        if self.relevant_words is None:
+        if not do_checks or self.relevant_words is None:
             text_in_narrative = True
         else:
             text_in_narrative = False
@@ -118,7 +122,7 @@ class BaseChecks:
             return True
         if not text_in_narrative:
             return True
-        return self.specific_exclusions(dactivity)
+        return False
 
     def has_desired_scope(self, dactivity):
         return False
