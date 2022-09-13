@@ -214,7 +214,7 @@ class Activity:
                 implementer = org
         return funder, implementer
 
-    def process(self, today, out_flows, out_transactions):
+    def process(self, out_flows, out_transactions):
         self.factor_new_money()
         #
         # Walk through the activity's transactions one-by-one, and split by country/sector
@@ -222,7 +222,7 @@ class Activity:
         funder, implementer = self.get_funder_implementer()
         skipped = 0
         for transaction in self.transactions:
-            if not transaction.process(today, self):
+            if not transaction.process(self):
                 skipped += 1
                 continue
             self.add_to_flows(out_flows, transaction, funder, implementer)

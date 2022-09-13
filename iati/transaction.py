@@ -72,12 +72,11 @@ class Transaction:
     def get_direction(self):
         return self.transaction_type_info["direction"]
 
-    def process(self, today, activity):
+    def process(self, activity):
         if self.value:
             if (
-                Lookups.start_date
-                and self.date < Lookups.start_date
-            ) or self.date > today:
+                Lookups.checks.start_date and self.date < Lookups.checks.start_date
+            ) or self.date > Lookups.checks.today:
                 # Skip transactions with out-of-range dates
                 return False
         else:

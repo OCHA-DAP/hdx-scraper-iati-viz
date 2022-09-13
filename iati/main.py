@@ -49,10 +49,9 @@ def start(
         text = "with no date filtering"
     logger.info(f"Running {whattorun} {text}")
     Lookups.configuration = configuration
-    Lookups.checks = checks[whattorun](errors_on_exit)
     if startdate is not None:
         startdate = parse_date(startdate)
-    Lookups.start_date = startdate
+    Lookups.checks = checks[whattorun](parse_date(today), startdate, errors_on_exit)
     dportal_filename, dportal_path = retrieve_dportal(
         retriever, whattorun, dportal_params
     )
@@ -105,11 +104,10 @@ def start(
     flows = dict()
     transactions = list()
     no_skipped_transactions = 0
-    today_date = parse_date(today)
     for i, dactivity in enumerate(reversed(dactivities)):
         activity = Activity(dactivity)
         no_skipped_transactions += activity.add_transactions()
-        no_skipped_transactions += activity.process(today_date, flows, transactions)
+        no_skipped_transactions += activity.process(flows, transactions)
         if i % 1000 == 0:
             logger.info(f"Processed {i} activities")
 

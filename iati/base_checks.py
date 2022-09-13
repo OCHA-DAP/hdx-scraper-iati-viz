@@ -4,7 +4,9 @@ from .lookups import Lookups
 
 
 class BaseChecks:
-    def __init__(self, errors_on_exit):
+    def __init__(self, today, start_date, errors_on_exit):
+        self.today = today
+        self.start_date = start_date
         self.errors_on_exit = errors_on_exit
         self.include_scope = True
         self.excluded_aid_types = None

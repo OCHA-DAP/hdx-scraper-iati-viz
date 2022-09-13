@@ -2,8 +2,8 @@ from .base_checks import BaseChecks
 
 
 class UkraineChecks(BaseChecks):
-    def __init__(self, errors_on_exit):
-        super().__init__(errors_on_exit)
+    def __init__(self, today, start_date, errors_on_exit):
+        super().__init__(today, start_date, errors_on_exit)
         self.include_scope = True
         self.excluded_aid_types = ("A01", "A02", "F01")
         self.relevant_words = ("ukraine", "ukrainian")
