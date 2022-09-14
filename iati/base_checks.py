@@ -28,7 +28,7 @@ class BaseChecks:
             return True
         return False
 
-    def exclude_dactivity(
+    def exclude_activity(
         self,
         dactivity,
     ):
@@ -107,12 +107,15 @@ class BaseChecks:
         check_countries(dactivity.recipient_countries)
         check_narratives(dactivity.title)
         check_narratives(dactivity.description)
+
+        included_transactions = list()
         for dtransaction in dactivity.transactions:
             check_date(dtransaction.date)
             check_date(dtransaction.value_date)
             check_aid_types(dtransaction.aid_types)
             check_countries(dtransaction.recipient_countries)
             check_narratives(dtransaction.description)
+            included_transactions.append(dtransaction)
 
         if not date_in_range:
             return True
@@ -122,6 +125,7 @@ class BaseChecks:
             return True
         if not text_in_narrative:
             return True
+        dactivity.included_transactions = included_transactions
         return False
 
     def has_desired_scope(self, dactivity):

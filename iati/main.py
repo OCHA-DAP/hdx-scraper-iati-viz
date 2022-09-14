@@ -79,7 +79,8 @@ def start(
         number_query_activities += 1
         if number_query_activities % 1000 == 0:
             logger.info(f"Read {number_query_activities} activities")
-        if Lookups.checks.exclude_dactivity(dactivity):
+        exclude = Lookups.checks.exclude_activity(dactivity)
+        if exclude:
             continue
         Lookups.add_reporting_org(dactivity)
         dactivities.append(SmallDActivity(dactivity))
