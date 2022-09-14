@@ -127,8 +127,14 @@ class BaseChecks:
             return True, 0
         if not text_in_narrative:
             return True, 0
+        no_included_transactions = len(included_transactions)
+        if no_included_transactions == 0:
+            return True, 0
+        for error in transaction_errors:
+            Lookups.checks.errors_on_exit.add(error)
+        removed = len(dactivity.transactions) - no_included_transactions
         dactivity.included_transactions = included_transactions
-        return False, 0
+        return False, removed
 
     def has_desired_scope(self, dactivity):
         return False
