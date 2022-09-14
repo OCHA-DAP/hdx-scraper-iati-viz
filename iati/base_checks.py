@@ -132,18 +132,24 @@ class BaseChecks:
                     f"Excluding transaction with no currency (activity id {activityid}, value {value})!"
                 )
                 continue
-            # Use value-date falling back on date
-            date = dtransaction.value_date
-            if not date:
-                date = dtransaction.date
-            if date:
-                dtransaction.usddate = date
+            # We check the transaction date falling back on value date for the purposes
+            # of filtering
+            transaction_date = dtransaction.date
+            valuation_date = dtransaction.value_date
+            if not transaction_date:
+                transaction_date = valuation_date
+            if transaction_date:
+                dtransaction.transaction_date = transaction_date
             else:
                 transaction_errors.append(
                     f"Excluding transaction with no date (activity id {activityid}, value {value})!"
                 )
                 continue
-            check_date(date)
+            check_date(transaction_date)
+
+            # For valuation, we use the value date falling back on transaction date
+            if not valuation_date:
+                valuation_date = transaction_date
             included_transactions.append(dtransaction)
 
         if not date_in_range:
