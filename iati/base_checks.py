@@ -33,7 +33,7 @@ class BaseChecks:
         dactivity,
     ):
         if self.specific_exclusions(dactivity):
-            return True
+            return True, 0
 
         do_checks = True
         if self.include_scope:
@@ -108,7 +108,9 @@ class BaseChecks:
         check_narratives(dactivity.title)
         check_narratives(dactivity.description)
 
+        activityid = dactivity.identifier
         included_transactions = list()
+        transaction_errors = list()
         for dtransaction in dactivity.transactions:
             check_date(dtransaction.date)
             check_date(dtransaction.value_date)
@@ -118,15 +120,15 @@ class BaseChecks:
             included_transactions.append(dtransaction)
 
         if not date_in_range:
-            return True
+            return True, 0
         if not included_aid_type:
-            return True
+            return True, 0
         if not country_in_list:
-            return True
+            return True, 0
         if not text_in_narrative:
-            return True
+            return True, 0
         dactivity.included_transactions = included_transactions
-        return False
+        return False, 0
 
     def has_desired_scope(self, dactivity):
         return False

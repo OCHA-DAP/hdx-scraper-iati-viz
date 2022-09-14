@@ -75,13 +75,16 @@ def start(
         )
     else:
         writer = None
+
+    no_removed_transactions = 0
     for dactivity in xmliterator:
         number_query_activities += 1
         if number_query_activities % 1000 == 0:
             logger.info(f"Read {number_query_activities} activities")
-        exclude = Lookups.checks.exclude_activity(dactivity)
+        exclude, removed = Lookups.checks.exclude_activity(dactivity)
         if exclude:
             continue
+        no_removed_transactions += removed
         Lookups.add_reporting_org(dactivity)
         dactivities.append(SmallDActivity(dactivity))
         if writer:
@@ -97,6 +100,9 @@ def start(
         logger.info(f"Prefiltering did not remove any activities")
     else:
         logger.info(f"Prefiltered to {number_dactivities} activities")
+    logger.info(
+        f"Prefiltering removed {no_removed_transactions} transactions within included activities"
+    )
     #    Lookups.build_reporting_org_blocklist(dactivities)
     Lookups.add_participating_orgs(dactivities)
 
