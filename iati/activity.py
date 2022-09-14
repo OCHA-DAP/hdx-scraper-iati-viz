@@ -23,17 +23,9 @@ class Activity:
             dactivity
         )
         self.sector_splits = CalculateSplits.make_sector_splits(dactivity)
-        self.transactions = list()
-
-    def add_transactions(self):
-        skipped = 0
-        for dtransaction in self.dactivity.transactions:
-            transaction = Transaction.get_transaction(dtransaction, self.identifier)
-            if not transaction:
-                skipped += 1
-                continue
-            self.transactions.append(transaction)
-        return skipped
+        self.transactions = [
+            Transaction(dtransaction) for dtransaction in dactivity.transactions
+        ]
 
     def is_strict(self):
         try:
@@ -58,7 +50,7 @@ class Activity:
         totals = dict()
         for transaction in self.transactions:
             key = f"{transaction.get_direction()} {transaction.get_classification()}"
-            totals[key] = totals.get(key, 0) + transaction.value
+            totals[key] = totals.get(key, 0) + transaction.usd_value
         return totals
 
     def factor_new_money(self):
@@ -132,7 +124,7 @@ class Activity:
             )
             # ignore internal transactions or unknown reporting orgs
             cur_output = out_flows.get(key, dict())
-            cur_output["value"] = cur_output.get("value", 0) + transaction.value
+            cur_output["value"] = cur_output.get("value", 0) + transaction.usd_value
             if "row" not in cur_output:
                 cur_output["row"] = [
                     self.org["id"],
@@ -170,7 +162,9 @@ class Activity:
                 #
 
                 total_money = int(
-                    round(transaction.value * country_percentage * sector_percentage)
+                    round(
+                        transaction.usd_value * country_percentage * sector_percentage
+                    )
                 )
                 net_money = int(
                     round(

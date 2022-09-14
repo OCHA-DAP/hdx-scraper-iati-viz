@@ -1,6 +1,5 @@
 import logging
 
-from hdx.location.currency import Currency, CurrencyError
 from hdx.utilities.dateparse import parse_date
 
 from .calculatesplits import CalculateSplits
@@ -10,39 +9,16 @@ logger = logging.getLogger(__name__)
 
 
 class Transaction:
-    def __init__(self, dtransaction, value):
+    def __init__(self, dtransaction):
         """
         Use the get_transaction static method to construct
         """
+        self.dtransaction = dtransaction
         self.transaction_type_info = Lookups.configuration["transaction_type_info"][
             dtransaction.type
         ]
-        self.dtransaction = dtransaction
         self.transaction_date = parse_date(dtransaction.transaction_date)
-        self.value = value
-
-    @staticmethod
-    def get_transaction(dtransaction, activity_identifier):
-        # We're not interested in transactions that can't be valued
-        try:
-            # Convert the transaction value to USD
-            value = Currency.get_historic_value_in_usd(
-                dtransaction.value,
-                dtransaction.currency,
-                parse_date(dtransaction.valuation_date),
-            )
-            if value > Lookups.configuration[
-                "usd_error_threshold"
-            ] and not Lookups.allow_activity(activity_identifier):
-                Lookups.checks.errors_on_exit.add(
-                    f"Transaction with value {dtransaction.value} in activity {activity_identifier} is probably an error!"
-                )
-        except (ValueError, CurrencyError):
-            logger.exception(
-                f"Activity {activity_identifier} transaction with value {dtransaction.value} USD conversion failed!"
-            )
-            return None
-        return Transaction(dtransaction, value)
+        self.usd_value = dtransaction.usd_value
 
     def get_label(self):
         return self.transaction_type_info["label"]
@@ -54,7 +30,7 @@ class Transaction:
         return self.transaction_type_info["direction"]
 
     def process(self, activity):
-        if self.value:
+        if self.usd_value:
             if (
                 Lookups.checks.start_date
                 and self.transaction_date < Lookups.checks.start_date
@@ -77,9 +53,9 @@ class Transaction:
         # Set the net (new money) factors based on the type (commitments or spending)
         if self.get_direction() == "outgoing":
             if self.get_classification() == "commitments":
-                return self.value * commitment_factor
+                return self.usd_value * commitment_factor
             else:
-                return self.value * spending_factor
+                return self.usd_value * spending_factor
         return None
 
     def is_humanitarian(self, activity_humanitarian):
@@ -107,7 +83,7 @@ class Transaction:
             )
         except AttributeError:
             logger.exception(
-                f"Activity {activity.identifier} transaction with value {self.dtransaction.value} is_strict call failed!"
+                f"Activity {activity.identifier} transaction with value {self.dtransaction.usd_value} is_strict call failed!"
             )
             is_strict = False
         is_strict = is_strict or activity.strict

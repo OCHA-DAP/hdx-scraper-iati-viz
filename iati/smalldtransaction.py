@@ -5,9 +5,7 @@ class SmallDTransaction:
     __slots__ = [
         "type",
         "transaction_date",
-        "currency",
-        "valuation_date",
-        "value",
+        "usd_value",
         "humanitarian",
         "sectors",
         "description",
@@ -20,9 +18,7 @@ class SmallDTransaction:
     def __init__(self, dtransaction):
         self.type = dtransaction.type
         self.transaction_date = dtransaction.transaction_date
-        self.currency = dtransaction.currency
-        self.valuation_date = dtransaction.valuation_date
-        self.value = dtransaction.value
+        self.usd_value = dtransaction.usd_value
         self.humanitarian = dtransaction.humanitarian
         self.sectors = flatten(dtransaction.sectors)
         self.description = flatten(dtransaction.description)

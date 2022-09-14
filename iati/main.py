@@ -113,7 +113,6 @@ def start(
     no_skipped_transactions = 0
     for i, dactivity in enumerate(reversed(dactivities)):
         activity = Activity(dactivity)
-        no_skipped_transactions += activity.add_transactions()
         no_skipped_transactions += activity.process(flows, transactions)
         if i % 1000 == 0:
             logger.info(f"Processed {i} activities")

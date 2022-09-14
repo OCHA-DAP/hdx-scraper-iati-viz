@@ -1,3 +1,4 @@
+from hdx.location.currency import Currency, CurrencyError
 from hdx.utilities.dateparse import parse_date
 
 from .lookups import Lookups
@@ -108,7 +109,7 @@ class BaseChecks:
         check_narratives(dactivity.title)
         check_narratives(dactivity.description)
 
-        activityid = dactivity.identifier
+        activity_identifier = dactivity.identifier
         concrete_transactions = list()
         transaction_errors = list()
         for dtransaction in dactivity.transactions:
@@ -129,7 +130,7 @@ class BaseChecks:
             currency = dtransaction.currency
             if currency is None:
                 transaction_errors.append(
-                    f"Excluding transaction with no currency (activity id {activityid}, value {value})!"
+                    f"Excluding transaction with no currency (activity id {activity_identifier}, value {value})!"
                 )
                 continue
             # We check the transaction date falling back on value date for the purposes
@@ -140,16 +141,35 @@ class BaseChecks:
                 transaction_date = valuation_date
                 if not transaction_date:
                     transaction_errors.append(
-                        f"Excluding transaction with no date (activity id {activityid}, value {value})!"
+                        f"Excluding transaction with no date (activity id {activity_identifier}, value {value})!"
                     )
                     continue
             check_date(transaction_date)
+
             # For valuation, we use the value date falling back on transaction date
             if not valuation_date:
                 valuation_date = transaction_date
+            try:
+                # Convert the transaction value to USD
+                usd_value = Currency.get_historic_value_in_usd(
+                    value,
+                    currency,
+                    parse_date(valuation_date),
+                )
+            except (ValueError, CurrencyError):
+                Lookups.checks.errors_on_exit.add(
+                    f"Excluding transaction that cannot be converted to USD (activity id {activity_identifier}, value {value})!"
+                )
+                continue
 
+            if usd_value > Lookups.configuration[
+                "usd_error_threshold"
+            ] and not Lookups.allow_activity(activity_identifier):
+                Lookups.checks.errors_on_exit.add(
+                    f"Transaction with value {value} in activity {activity_identifier} exceeds threshold!"
+                )
             dtransaction.transaction_date = transaction_date
-            dtransaction.valuation_date = valuation_date
+            dtransaction.usd_value = usd_value
             concrete_transactions.append(dtransaction)
 
         if not date_in_range:
