@@ -29,6 +29,11 @@ class BaseChecks:
             return True
         return False
 
+    def is_date_in_range(self, date):
+        if date > self.today or (self.start_date and date < self.start_date):
+            return False
+        return True
+
     # Prefilters either full activities and transactions that cannot be valued
     # Does not filter transactions that are out of scope as that must happen after
     # factoring new money
@@ -44,7 +49,7 @@ class BaseChecks:
             if self.has_desired_scope(dactivity):
                 do_checks = False
 
-        if not do_checks or self.start_date is None:
+        if not do_checks:
             date_in_range = True
         else:
             date_in_range = False
@@ -67,8 +72,7 @@ class BaseChecks:
                 return
             if not datestr:
                 return
-            date = parse_date(datestr)
-            if self.start_date <= date <= self.today:
+            if self.is_date_in_range(parse_date(datestr)):
                 date_in_range = True
 
         def check_aid_types(aid_types):
@@ -161,7 +165,7 @@ class BaseChecks:
                     parse_date(valuation_date),
                 )
             except (ValueError, CurrencyError):
-                Lookups.checks.errors_on_exit.add(
+                transaction_errors.append(
                     f"Excluding transaction that cannot be converted to USD (activity id {activity_identifier}, value {value})!"
                 )
                 continue
@@ -170,7 +174,7 @@ class BaseChecks:
             if usd_value > usd_error_threshold and not Lookups.allow_activity(
                 activity_identifier
             ):
-                Lookups.checks.errors_on_exit.add(
+                transaction_errors.append(
                     f"Transaction with value {value} in activity {activity_identifier} exceeds threshold!"
                 )
             dtransaction.transaction_date = transaction_date
