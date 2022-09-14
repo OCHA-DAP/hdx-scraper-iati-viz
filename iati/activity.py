@@ -215,13 +215,15 @@ class Activity:
         #
         funder, implementer = self.get_funder_implementer()
         skipped = 0
+        incoming = 0
         for transaction in self.transactions:
-            if not transaction.process(self):
+            if transaction.skip():
                 skipped += 1
                 continue
+            transaction.process(self)
             self.add_to_flows(out_flows, transaction, funder, implementer)
             if transaction.net_value is None:
-                skipped += 1
+                incoming += 1
                 continue
             self.generate_split_transactions(out_transactions, transaction)
-        return skipped
+        return skipped, incoming

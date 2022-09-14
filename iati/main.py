@@ -111,15 +111,19 @@ def start(
     flows = dict()
     transactions = list()
     no_skipped_transactions = 0
+    no_incoming_transactions = 0
     for i, dactivity in enumerate(reversed(dactivities)):
         activity = Activity(dactivity)
-        no_skipped_transactions += activity.process(flows, transactions)
+        skipped, incoming = activity.process(flows, transactions)
+        no_skipped_transactions += skipped
+        no_incoming_transactions += incoming
         if i % 1000 == 0:
             logger.info(f"Processed {i} activities")
 
     logger.info(f"Processed {len(flows)} flows")
     logger.info(f"Processed {len(transactions)} transactions")
     logger.info(f"{no_skipped_transactions} transactions were skipped")
+    logger.info(f"{no_incoming_transactions} incoming transactions (no net value)")
 
     outputs_configuration = configuration["outputs"]
 

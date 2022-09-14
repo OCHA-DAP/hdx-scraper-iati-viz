@@ -115,6 +115,7 @@ class BaseChecks:
         activity_identifier = dactivity.identifier
         concrete_transactions = list()
         transaction_errors = list()
+        usd_error_threshold = Lookups.configuration["usd_error_threshold"]
         for dtransaction in dactivity.transactions:
             check_aid_types(dtransaction.aid_types)
             check_countries(dtransaction.recipient_countries)
@@ -166,9 +167,9 @@ class BaseChecks:
                 continue
             if not usd_value:
                 continue
-            if usd_value > Lookups.configuration[
-                "usd_error_threshold"
-            ] and not Lookups.allow_activity(activity_identifier):
+            if usd_value > usd_error_threshold and not Lookups.allow_activity(
+                activity_identifier
+            ):
                 Lookups.checks.errors_on_exit.add(
                     f"Transaction with value {value} in activity {activity_identifier} exceeds threshold!"
                 )
