@@ -117,6 +117,23 @@ class BaseChecks:
             check_aid_types(dtransaction.aid_types)
             check_countries(dtransaction.recipient_countries)
             check_narratives(dtransaction.description)
+            # We're only interested in some transaction types
+            transaction_type_info = Lookups.configuration["transaction_type_info"].get(
+                dtransaction.type
+            )
+            if not transaction_type_info:
+                continue
+            # We're not interested in transactions that have no value
+            value = dtransaction.value
+            if not value:
+                continue
+            # We're not interested in transactions that have no currency
+            currency = dtransaction.currency
+            if currency is None:
+                transaction_errors.append(
+                    f"Excluding transaction with no currency (activity id {activityid}, value {value})!"
+                )
+                continue
             included_transactions.append(dtransaction)
 
         if not date_in_range:
