@@ -143,12 +143,12 @@ class BaseChecks:
                         f"Excluding transaction with no date (activity id {activityid}, value {value})!"
                     )
                     continue
-            dtransaction.transaction_date = transaction_date
             check_date(transaction_date)
-
             # For valuation, we use the value date falling back on transaction date
             if not valuation_date:
                 valuation_date = transaction_date
+
+            dtransaction.transaction_date = transaction_date
             dtransaction.valuation_date = valuation_date
             concrete_transactions.append(dtransaction)
 

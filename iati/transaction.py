@@ -10,37 +10,26 @@ logger = logging.getLogger(__name__)
 
 
 class Transaction:
-    def __init__(self, transaction_type_info, dtransaction, value):
+    def __init__(self, dtransaction, value):
         """
         Use the get_transaction static method to construct
         """
-        self.transaction_type_info = transaction_type_info
+        self.transaction_type_info = Lookups.configuration["transaction_type_info"][
+            dtransaction.type
+        ]
         self.dtransaction = dtransaction
         self.transaction_date = parse_date(dtransaction.transaction_date)
         self.value = value
 
     @staticmethod
     def get_transaction(dtransaction, activity_identifier):
-        # We're not interested in transactions that have no value
-        if not dtransaction.value:
-            return None
-        # We're only interested in some transaction types
-        transaction_type_info = Lookups.configuration["transaction_type_info"].get(
-            dtransaction.type
-        )
-        if not transaction_type_info:
-            return None
         # We're not interested in transactions that can't be valued
         try:
             # Convert the transaction value to USD
-            currency = dtransaction.currency
-            if currency is None:
-                logger.error(
-                    f"Activity {activity_identifier} transaction with value {dtransaction.value} currency error!"
-                )
-                return None
             value = Currency.get_historic_value_in_usd(
-                dtransaction.value, currency, parse_date(dtransaction.valuation_date)
+                dtransaction.value,
+                dtransaction.currency,
+                parse_date(dtransaction.valuation_date),
             )
             if value > Lookups.configuration[
                 "usd_error_threshold"
@@ -53,7 +42,7 @@ class Transaction:
                 f"Activity {activity_identifier} transaction with value {dtransaction.value} USD conversion failed!"
             )
             return None
-        return Transaction(transaction_type_info, dtransaction, value)
+        return Transaction(dtransaction, value)
 
     def get_label(self):
         return self.transaction_type_info["label"]
