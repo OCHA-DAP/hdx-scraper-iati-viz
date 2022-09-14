@@ -182,7 +182,7 @@ class Activity:
                     # add to transactions
                     out_transactions.append(
                         [
-                            transaction.date.strftime("%Y-%m"),
+                            transaction.transaction_date.strftime("%Y-%m"),
                             self.org["id"],
                             self.org["name"],
                             self.org["type"],

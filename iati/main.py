@@ -101,7 +101,7 @@ def start(
     else:
         logger.info(f"Prefiltered to {number_dactivities} activities")
     logger.info(
-        f"Prefiltering removed {no_removed_transactions} transactions within included activities"
+        f"Prefiltering removed {no_removed_transactions} transactions that cannot be valued within included activities"
     )
     #    Lookups.build_reporting_org_blocklist(dactivities)
     Lookups.add_participating_orgs(dactivities)

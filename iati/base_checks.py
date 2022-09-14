@@ -109,7 +109,7 @@ class BaseChecks:
         check_narratives(dactivity.description)
 
         activityid = dactivity.identifier
-        included_transactions = list()
+        concrete_transactions = list()
         transaction_errors = list()
         for dtransaction in dactivity.transactions:
             check_aid_types(dtransaction.aid_types)
@@ -138,19 +138,19 @@ class BaseChecks:
             valuation_date = dtransaction.value_date
             if not transaction_date:
                 transaction_date = valuation_date
-            if transaction_date:
-                dtransaction.transaction_date = transaction_date
-            else:
-                transaction_errors.append(
-                    f"Excluding transaction with no date (activity id {activityid}, value {value})!"
-                )
-                continue
+                if not transaction_date:
+                    transaction_errors.append(
+                        f"Excluding transaction with no date (activity id {activityid}, value {value})!"
+                    )
+                    continue
+            dtransaction.transaction_date = transaction_date
             check_date(transaction_date)
 
             # For valuation, we use the value date falling back on transaction date
             if not valuation_date:
                 valuation_date = transaction_date
-            included_transactions.append(dtransaction)
+            dtransaction.valuation_date = valuation_date
+            concrete_transactions.append(dtransaction)
 
         if not date_in_range:
             return True, 0
@@ -160,13 +160,13 @@ class BaseChecks:
             return True, 0
         if not text_in_narrative:
             return True, 0
-        no_included_transactions = len(included_transactions)
-        if no_included_transactions == 0:
+        no_transactions = len(concrete_transactions)
+        if no_transactions == 0:
             return True, 0
         for error in transaction_errors:
             Lookups.checks.errors_on_exit.add(error)
-        removed = len(dactivity.transactions) - no_included_transactions
-        dactivity.included_transactions = included_transactions
+        removed = len(dactivity.transactions) - no_transactions
+        dactivity.included_transactions = concrete_transactions
         return False, removed
 
     def has_desired_scope(self, dactivity):

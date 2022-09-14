@@ -16,11 +16,7 @@ class Transaction:
         """
         self.transaction_type_info = transaction_type_info
         self.dtransaction = dtransaction
-        # Use date falling back on value-date
-        if dtransaction.date:
-            self.date = parse_date(dtransaction.date)
-        else:
-            self.date = parse_date(dtransaction.value_date)
+        self.transaction_date = parse_date(dtransaction.transaction_date)
         self.value = value
 
     @staticmethod
@@ -36,10 +32,6 @@ class Transaction:
             return None
         # We're not interested in transactions that can't be valued
         try:
-            # Use value-date falling back on date
-            date = dtransaction.value_date
-            if not date:
-                date = dtransaction.date
             # Convert the transaction value to USD
             currency = dtransaction.currency
             if currency is None:
@@ -48,7 +40,7 @@ class Transaction:
                 )
                 return None
             value = Currency.get_historic_value_in_usd(
-                dtransaction.value, currency, parse_date(date)
+                dtransaction.value, currency, parse_date(dtransaction.valuation_date)
             )
             if value > Lookups.configuration[
                 "usd_error_threshold"
@@ -75,8 +67,9 @@ class Transaction:
     def process(self, activity):
         if self.value:
             if (
-                Lookups.checks.start_date and self.date < Lookups.checks.start_date
-            ) or self.date > Lookups.checks.today:
+                Lookups.checks.start_date
+                and self.transaction_date < Lookups.checks.start_date
+            ) or self.transaction_date > Lookups.checks.today:
                 # Skip transactions with out-of-range dates
                 return False
         else:
