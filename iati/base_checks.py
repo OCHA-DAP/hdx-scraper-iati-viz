@@ -112,8 +112,6 @@ class BaseChecks:
         included_transactions = list()
         transaction_errors = list()
         for dtransaction in dactivity.transactions:
-            check_date(dtransaction.date)
-            check_date(dtransaction.value_date)
             check_aid_types(dtransaction.aid_types)
             check_countries(dtransaction.recipient_countries)
             check_narratives(dtransaction.description)
@@ -134,6 +132,18 @@ class BaseChecks:
                     f"Excluding transaction with no currency (activity id {activityid}, value {value})!"
                 )
                 continue
+            # Use value-date falling back on date
+            date = dtransaction.value_date
+            if not date:
+                date = dtransaction.date
+            if date:
+                dtransaction.usddate = date
+            else:
+                transaction_errors.append(
+                    f"Excluding transaction with no date (activity id {activityid}, value {value})!"
+                )
+                continue
+            check_date(date)
             included_transactions.append(dtransaction)
 
         if not date_in_range:
