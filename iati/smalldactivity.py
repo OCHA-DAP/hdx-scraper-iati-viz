@@ -37,5 +37,5 @@ class SmallDActivity:
         self.participating_orgs = flatten(dactivity.participating_orgs)
         self.participating_orgs_by_role = flatten(dactivity.participating_orgs_by_role)
         self.transactions = [
-            SmallDTransaction(t) for t in dactivity.included_transactions
+            SmallDTransaction(t) for t in dactivity.concrete_transactions
         ]

@@ -30,14 +30,11 @@ class Transaction:
         return self.transaction_type_info["direction"]
 
     def process(self, activity):
-        if self.usd_value:
-            if (
-                Lookups.checks.start_date
-                and self.transaction_date < Lookups.checks.start_date
-            ) or self.transaction_date > Lookups.checks.today:
-                # Skip transactions with out-of-range dates
-                return False
-        else:
+        if (
+            Lookups.checks.start_date
+            and self.transaction_date < Lookups.checks.start_date
+        ) or self.transaction_date > Lookups.checks.today:
+            # Skip transactions with out-of-range dates
             return False
 
         # Set the net (new money) factors based on the type (commitments or spending)

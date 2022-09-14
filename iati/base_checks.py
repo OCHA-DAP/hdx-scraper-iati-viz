@@ -29,6 +29,9 @@ class BaseChecks:
             return True
         return False
 
+    # Prefilters either full activities and transactions that cannot be valued
+    # Does not filter transactions that are out of scope as that must happen after
+    # factoring new money
     def exclude_activity(
         self,
         dactivity,
@@ -161,7 +164,8 @@ class BaseChecks:
                     f"Excluding transaction that cannot be converted to USD (activity id {activity_identifier}, value {value})!"
                 )
                 continue
-
+            if not usd_value:
+                continue
             if usd_value > Lookups.configuration[
                 "usd_error_threshold"
             ] and not Lookups.allow_activity(activity_identifier):
@@ -186,7 +190,7 @@ class BaseChecks:
         for error in transaction_errors:
             Lookups.checks.errors_on_exit.add(error)
         removed = len(dactivity.transactions) - no_transactions
-        dactivity.included_transactions = concrete_transactions
+        dactivity.concrete_transactions = concrete_transactions
         return False, removed
 
     def has_desired_scope(self, dactivity):
