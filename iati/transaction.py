@@ -19,6 +19,7 @@ class Transaction:
         ]
         self.transaction_date = parse_date(dtransaction.transaction_date)
         self.usd_value = dtransaction.usd_value
+        self.is_strict = dtransaction.is_strict
 
     def get_label(self):
         return self.transaction_type_info["label"]
@@ -48,7 +49,6 @@ class Transaction:
         )
         # transaction status defaults to activity
         self.is_humanitarian = self.is_humanitarian(activity.humanitarian)
-        self.is_strict = self.is_strict(activity)
 
     def get_usd_net_value(self, commitment_factor, spending_factor):
         # Set the net (new money) factors based on the type (commitments or spending)
@@ -66,29 +66,6 @@ class Transaction:
         else:
             is_humanitarian = transaction_humanitarian
         return 1 if is_humanitarian else 0
-
-    def is_strict(self, activity):
-        try:
-            is_strict = (
-                True
-                if (
-                    Lookups.checks.has_desired_sector(self.dtransaction)
-                    or (
-                        self.dtransaction.description
-                        and Lookups.checks.is_desired_narrative(
-                            self.dtransaction.description.narratives
-                        )
-                    )
-                )
-                else False
-            )
-        except AttributeError:
-            logger.exception(
-                f"Activity {activity.identifier} transaction with value {self.dtransaction.usd_value} is_strict call failed!"
-            )
-            is_strict = False
-        is_strict = is_strict or activity.strict
-        return 1 if is_strict else 0
 
     def make_country_or_region_splits(self, activity_country_splits):
         return CalculateSplits.make_country_or_region_splits(

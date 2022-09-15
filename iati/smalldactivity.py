@@ -1,38 +1,56 @@
 from .flatten import flatten
+from .lookups import Lookups
+from .smalldtransaction import create_small_transaction
 
 
 class SmallDActivity:
     __slots__ = [
         "identifier",
         "reporting_org",
-        "humanitarian_scopes",
-        "policy_markers",
-        "tags",
         "sectors",
-        "title",
         "humanitarian",
         "recipient_countries",
         "recipient_regions",
-        "secondary_reporter",
-        "hierarchy",
         "participating_orgs",
         "participating_orgs_by_role",
         "transactions",
     ]
 
-    def __init__(self, dactivity):
+    def __init__(self, dactivity, activity_is_strict):
         self.identifier = dactivity.identifier
         self.reporting_org = flatten(dactivity.reporting_org)
-        self.humanitarian_scopes = flatten(dactivity.humanitarian_scopes)
-        self.policy_markers = flatten(dactivity.policy_markers)
-        self.tags = flatten(dactivity.tags)
         self.sectors = flatten(dactivity.sectors)
-        self.title = flatten(dactivity.title)
         self.humanitarian = dactivity.humanitarian
         self.recipient_countries = flatten(dactivity.recipient_countries)
         self.recipient_regions = flatten(dactivity.recipient_regions)
-        self.secondary_reporter = flatten(dactivity.secondary_reporter)
-        self.hierarchy = dactivity.hierarchy
         self.participating_orgs = flatten(dactivity.participating_orgs)
         self.participating_orgs_by_role = flatten(dactivity.participating_orgs_by_role)
-        self.transactions = dactivity.concrete_transactions
+        self.transactions = [
+            create_small_transaction(self.identifier, activity_is_strict, dtransaction)
+            for dtransaction in dactivity.concrete_transactions
+        ]
+
+
+def get_activity_is_strict(dactivity):
+    try:
+        return (
+            True
+            if (
+                Lookups.checks.has_desired_scope(dactivity)
+                or Lookups.checks.has_desired_marker(dactivity)
+                or Lookups.checks.has_desired_tag(dactivity)
+                or Lookups.checks.has_desired_sector(dactivity)
+                or Lookups.checks.is_desired_narrative(dactivity.title.narratives)
+            )
+            else False
+        )
+    except AttributeError:
+        Lookups.checks.errors_on_exit.add(
+            f"Activity {dactivity.identifier} is_strict call failed!"
+        )
+        return False
+
+
+def create_small_dactivity(dactivity):
+    activity_is_strict = get_activity_is_strict(dactivity)
+    return SmallDActivity(dactivity, activity_is_strict)

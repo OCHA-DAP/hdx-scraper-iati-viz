@@ -13,7 +13,7 @@ from . import checks
 from .activity import Activity
 from .calculatesplits import CalculateSplits
 from .lookups import Lookups
-from .smalldactivity import SmallDActivity
+from .smalldactivity import create_small_dactivity
 
 logger = logging.getLogger(__name__)
 
@@ -89,7 +89,7 @@ def start(
             continue
         no_removed_transactions += removed
         Lookups.add_reporting_org(dactivity)
-        dactivities.append(SmallDActivity(dactivity))
+        dactivities.append(create_small_dactivity(dactivity))
         if writer:
             writer.write(dactivity.node.toxml())
         del dactivity

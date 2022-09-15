@@ -2,7 +2,6 @@ from hdx.location.currency import Currency, CurrencyError
 from hdx.utilities.dateparse import parse_date
 
 from .lookups import Lookups
-from .smalldtransaction import SmallDTransaction
 
 
 class Exclusions:
@@ -211,8 +210,7 @@ class Exclusions:
                     f"Transaction with value {value} in activity {activity_identifier} exceeds threshold!"
                 )
             dtransaction.usd_value = usd_value
-            smalldtransaction = SmallDTransaction(dtransaction)
-            concrete_transactions.append(smalldtransaction)
+            concrete_transactions.append(dtransaction)
 
         no_concrete_transactions = len(concrete_transactions)
         if no_concrete_transactions == 0:

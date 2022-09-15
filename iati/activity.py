@@ -16,7 +16,6 @@ class Activity:
         self.identifier = dactivity.identifier
         # Get the reporting-org and C19 strictness at activity level
         self.org = Lookups.get_org_info(dactivity.reporting_org, reporting_org=True)
-        self.strict = self.is_strict()
         self.humanitarian = dactivity.humanitarian
         # Figure out default country or region/sector percentage splits at the activity level
         self.countryregion_splits = CalculateSplits.make_country_or_region_splits(
@@ -26,25 +25,6 @@ class Activity:
         self.transactions = [
             Transaction(dtransaction) for dtransaction in dactivity.transactions
         ]
-
-    def is_strict(self):
-        try:
-            return (
-                True
-                if (
-                    Lookups.checks.has_desired_scope(self.dactivity)
-                    or Lookups.checks.has_desired_marker(self.dactivity)
-                    or Lookups.checks.has_desired_tag(self.dactivity)
-                    or Lookups.checks.has_desired_sector(self.dactivity)
-                    or Lookups.checks.is_desired_narrative(
-                        self.dactivity.title.narratives
-                    )
-                )
-                else False
-            )
-        except AttributeError:
-            logger.exception(f"Activity {self.identifier} is_strict call failed!")
-            return False
 
     def sum_transactions_by_type(self):
         totals = dict()
