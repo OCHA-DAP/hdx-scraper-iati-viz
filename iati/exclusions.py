@@ -129,7 +129,7 @@ class Exclusions:
         check_narratives(dactivity.description)
 
         activity_identifier = dactivity.identifier
-        concrete_transactions = list()
+        filtered_transactions = list()
         transaction_errors = list()
         usd_error_threshold = Lookups.configuration["usd_error_threshold"]
         for dtransaction in dactivity.transactions:
@@ -156,24 +156,41 @@ class Exclusions:
             # We check the transaction date falling back on value date for the purposes
             # of filtering
             transaction_date = dtransaction.date
-            valuation_date = dtransaction.value_date
             if not transaction_date:
-                transaction_date = valuation_date
+                transaction_date = dtransaction.value_date
                 if not transaction_date:
                     transaction_errors.append(
                         f"Excluding transaction with no date (activity id {activity_identifier}, value {value})!"
                     )
                     continue
             check_date(transaction_date)
+            dtransaction.transaction_date = transaction_date
+            filtered_transactions.append(dtransaction)
 
+        if not date_in_range:
+            return True, 0
+        if not included_aid_type:
+            return True, 0
+        if not country_in_list:
+            return True, 0
+        if not text_in_narrative:
+            return True, 0
+        no_transactions = len(filtered_transactions)
+        if no_transactions == 0:
+            return True, 0
+
+        concrete_transactions = list()
+        for dtransaction in filtered_transactions:
             # For valuation, we use the value date falling back on transaction date
+            valuation_date = dtransaction.value_date
             if not valuation_date:
-                valuation_date = transaction_date
+                valuation_date = dtransaction.date
+            value = dtransaction.value
             try:
                 # Convert the transaction value to USD
                 usd_value = Currency.get_historic_value_in_usd(
                     value,
-                    currency,
+                    dtransaction.currency,
                     parse_date(valuation_date),
                 )
             except (ValueError, CurrencyError):
@@ -189,18 +206,9 @@ class Exclusions:
                 transaction_errors.append(
                     f"Transaction with value {value} in activity {activity_identifier} exceeds threshold!"
                 )
-            dtransaction.transaction_date = transaction_date
             dtransaction.usd_value = usd_value
             concrete_transactions.append(dtransaction)
 
-        if not date_in_range:
-            return True, 0
-        if not included_aid_type:
-            return True, 0
-        if not country_in_list:
-            return True, 0
-        if not text_in_narrative:
-            return True, 0
         no_transactions = len(concrete_transactions)
         if no_transactions == 0:
             return True, 0
