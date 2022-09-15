@@ -1,3 +1,4 @@
+import gc
 import logging
 from os import remove
 from os.path import join
@@ -80,9 +81,11 @@ def start(
     for dactivity in xmliterator:
         number_query_activities += 1
         if number_query_activities % 1000 == 0:
+            gc.collect()
             logger.info(f"Read {number_query_activities} activities")
         exclude, removed = Lookups.checks.exclude_activity(dactivity)
         if exclude:
+            del dactivity
             continue
         no_removed_transactions += removed
         Lookups.add_reporting_org(dactivity)
@@ -94,6 +97,7 @@ def start(
         writer.write("\n</iati-activities>")
         writer.close()
     del xmliterator  # Maybe this helps garbage collector?
+    gc.collect()
     logger.info(f"D-Portal returned {number_query_activities} activities")
     number_dactivities = len(dactivities)
     if number_dactivities == number_query_activities:

@@ -1,5 +1,4 @@
 from .flatten import flatten
-from .smalldtransaction import SmallDTransaction
 
 
 class SmallDActivity:
@@ -36,6 +35,4 @@ class SmallDActivity:
         self.hierarchy = dactivity.hierarchy
         self.participating_orgs = flatten(dactivity.participating_orgs)
         self.participating_orgs_by_role = flatten(dactivity.participating_orgs_by_role)
-        self.transactions = [
-            SmallDTransaction(t) for t in dactivity.concrete_transactions
-        ]
+        self.transactions = dactivity.concrete_transactions
