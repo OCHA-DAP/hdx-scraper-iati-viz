@@ -30,7 +30,16 @@ class Transaction:
         return self.transaction_type_info["direction"]
 
     def skip(self):
-        return not Lookups.checks.is_date_in_range(self.transaction_date)
+        if not Lookups.checks.is_date_in_range(self.transaction_date):
+            return True
+        if Lookups.checks.is_excluded_aid_type(self.dtransaction.aid_types):
+            return True
+        # We need to add these to smalldtransaction to make the filters below work
+        # if Lookups.checks.is_irrelevant_country(self.dtransaction.recipient_countries):
+        #     return True
+        # if Lookups.checks.is_irrelevant_text(self.dtransaction.description):
+        #     return True
+        return False
 
     def process(self, activity):
         # Set the net (new money) factors based on the type (commitments or spending)
@@ -40,7 +49,6 @@ class Transaction:
         # transaction status defaults to activity
         self.is_humanitarian = self.is_humanitarian(activity.humanitarian)
         self.is_strict = self.is_strict(activity)
-        return True
 
     def get_usd_net_value(self, commitment_factor, spending_factor):
         # Set the net (new money) factors based on the type (commitments or spending)

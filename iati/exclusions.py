@@ -35,6 +35,38 @@ class Exclusions:
             return False
         return True
 
+    def is_excluded_aid_type(self, aid_types):
+        if not self.excluded_aid_types:
+            return False
+        if not aid_types:
+            return False
+        for aid_type in aid_types:
+            if aid_type.code not in self.excluded_aid_types:
+                return False
+        return True
+
+    def is_irrelevant_country(self, countries):
+        if not self.relevant_countries:
+            return False
+        if not countries:
+            return False
+        for country in countries:
+            if country.code in self.relevant_countries:
+                return False
+        return True
+
+    def is_irrelevant_text(self, title_or_desc):
+        if not self.relevant_words:
+            return False
+        if not title_or_desc:
+            return False
+        for lang, text in title_or_desc.narratives.items():
+            text_lower = text.lower()
+            for word in self.relevant_words:
+                if word in text_lower:
+                    return False
+        return True
+
     # Prefilters either full activities and transactions that cannot be valued
     # Does not filter transactions oteh than those that cannot be valued as that must
     # happen after factoring new money
@@ -73,36 +105,22 @@ class Exclusions:
             nonlocal included_aid_type
             if included_aid_type:
                 return
-            if not aid_types:
-                return
-            for aid_type in aid_types:
-                if aid_type.code not in self.excluded_aid_types:
-                    included_aid_type = True
-                    return
+            if not self.is_excluded_aid_type(aid_types):
+                included_aid_type = True
 
         def check_countries(countries):
             nonlocal country_in_list
             if country_in_list:
                 return
-            if not countries:
-                return
-            for country in countries:
-                if country.code in self.relevant_countries:
-                    country_in_list = True
-                    return
+            if not self.is_irrelevant_country(countries):
+                country_in_list = True
 
         def check_narratives(title_or_desc):
             nonlocal text_in_narrative
             if text_in_narrative:
                 return
-            if not title_or_desc:
-                return
-            for lang, text in title_or_desc.narratives.items():
-                text_lower = text.lower()
-                for word in self.relevant_words:
-                    if word in text_lower:
-                        text_in_narrative = True
-                        return
+            if not self.is_irrelevant_text(title_or_desc):
+                text_in_narrative = True
 
         check_date(dactivity.start_date_actual)
         check_aid_types(dactivity.default_aid_types)

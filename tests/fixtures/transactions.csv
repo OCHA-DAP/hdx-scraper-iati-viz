@@ -2,6 +2,13 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 #date+month,#org+id,#org+name,#org+type,#sector,#country,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_type,#activity+code,#value+net,#value+total
 2020-01,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,commitments,DAC-1601-INV-005765,3000000,3000000
 2020-01,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,spending,DAC-1601-INV-005765,3000000,3000000
+2020-01,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-22675
+2020-01,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-2621
+2020-01,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-6349
+2020-01,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-3411
+2020-01,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,1,spending,NG-CAC-30547-CSSOFE1,0,-9890
+2020-01,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,1,spending,NG-CAC-30547-CSSOFE1,0,-15330
+2020-01,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,0,spending,LK-DRC-GA139-LFS1.2,5000,5000
 2020-02,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-005839,50000,50000
 2020-02,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-005840,250000,250000
 2020-02,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-006080,199653,199653
@@ -17,6 +24,16 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Emergency Response,Developing countries (no country specified),1,0,commitments,GB-GOV-1-301150-104,59250,59250
 2020-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,commitments,GB-GOV-1-301150-101,6501105,6501105
 2020-02,gb-gov-1,"Foreign, Commonwealth and Development Office",10,Health,Developing countries (no country specified),0,0,commitments,GB-GOV-1-301150-103,966953,966953
+2020-02,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-10635
+2020-02,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-55767
+2020-02,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-17157
+2020-02,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-3324
+2020-02,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,1,spending,NG-CAC-30547-CSSOFE1,0,-33244
+2020-02,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,0,spending,LK-DRC-GA139-LFS1.2,2500,2500
+2020-02,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,0,spending,LK-DRC-GA139-LFS1.2,2500,2500
+2020-02,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,0,spending,LK-DRC-GA139-LFS1.2,2500,2500
+2020-02,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,0,spending,LK-DRC-GA139-LFS1.2,2500,2500
+2020-02,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,0,spending,LK-DRC-GA139-LFS1.2,2500,2500
 2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,commitments,DAC-1601-INV-005999,499725,499725
 2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,commitments,DAC-1601-INV-006008,2500000,2500000
 2020-03,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,commitments,DAC-1601-INV-006010,157929,157929
@@ -74,6 +91,7 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-03,gb-coh-213890,Save The Children UK,21,Education,Uganda,1,1,commitments,GB-COH-213890-82604729,1432,120884
 2020-03,gb-coh-213890,Save The Children UK,21,Unallocated / Unspecified,(Unspecified country),0,1,commitments,GB-COH-213890-82690119,509912,509912
 2020-03,ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,Emergency Response,Iraq,1,0,spending,CH-FDJP-CHE106823242-2019723a,0,238603
+2020-03,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,0,spending,LK-DRC-GA139-LFS1.2,84168,84168
 2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-005837,200000,200000
 2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,commitments,DAC-1601-INV-005838,200000,200000
 2020-04,dac-1601,Bill and Melinda Gates Foundation,60,Health,China,0,1,spending,DAC-1601-INV-005837,200000,200000
@@ -157,6 +175,7 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-05,gb-coh-1762840,HelpAge International,21,Emergency Response,Ukraine,1,1,spending,GB-COH-1762840-UKR040-UN99-01,0,42772
 2020-05,gb-coh-1762840,HelpAge International,21,Health,Ukraine,0,1,spending,GB-COH-1762840-UKR041-HC01-01,53,343
 2020-05,gb-coh-1762840,HelpAge International,21,Reconstruction Relief & Rehabilitation,Ukraine,1,1,spending,GB-COH-1762840-UKR040-UN99-01,0,42772
+2020-05,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-17459
 2020-05,gb-coh-213890,Save The Children UK,21,Health,United Republic of Tanzania,1,1,commitments,GB-COH-213890-82604730,0,318253
 2020-05,ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,Emergency Response,Iraq,1,0,spending,CH-FDJP-CHE106823242-2019723a,0,143252
 2020-06,dac-1601,Bill and Melinda Gates Foundation,60,Health,Africa (no country specified),0,1,commitments,DAC-1601-INV-006124,711349,711349
@@ -208,6 +227,8 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-06,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,4325
 2020-06,gb-coh-1762840,HelpAge International,21,Health,Ukraine,0,1,spending,GB-COH-1762840-UKR041-HC01-01,55,355
 2020-06,gb-coh-1762840,HelpAge International,21,Reconstruction Relief & Rehabilitation,Ukraine,1,1,spending,GB-COH-1762840-UKR040-UN99-01,0,25524
+2020-06,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-35939
+2020-06,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-402
 2020-06,gb-coh-213890,Save The Children UK,21,Education,Ethiopia,1,1,spending,GB-COH-213890-82604710,0,13734
 2020-06,gb-coh-213890,Save The Children UK,21,Education,Ethiopia,1,1,spending,GB-COH-213890-82604710,0,13734
 2020-06,gb-coh-213890,Save The Children UK,21,Education,Uganda,1,1,spending,GB-COH-213890-82604712,1799,293237
@@ -217,6 +238,7 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-06,gb-coh-213890,Save The Children UK,21,Health,United Republic of Tanzania,1,1,spending,GB-COH-213890-82604730,0,18881
 2020-06,ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,Emergency Response,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,69400
 2020-06,ch-fdjp-che106823242,Terre des hommes - Helping children worldwide - Foundation,21,Health,Iraq,0,1,spending,CH-FDJP-CHE-106823242-20119723b,0,17350
+2020-06,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,0,spending,LK-DRC-GA139-LFS1.2,24,24
 2020-07,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-005779,4233842,4233842
 2020-07,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,spending,DAC-1601-INV-005779,3055000,3055000
 2020-07,ch-fdjp-f7f0b51e-7432-4c0c-a6c0-7df1101d7983,Fondation Hirondelle,21,Communications,Guinea,1,1,spending,CH-FDJP-f7f0b51e-7432-4c0c-a6c0-7df1101d7983-FH-projet Covid H2H,1298,2844
@@ -330,6 +352,11 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-08,gb-coh-1762840,HelpAge International,21,Health,Ukraine,0,1,spending,GB-COH-1762840-UKR041-HC01-01,344,2204
 2020-08,gb-coh-1762840,HelpAge International,21,Reconstruction Relief & Rehabilitation,Ukraine,1,1,spending,GB-COH-1762840-UKR040-UN99-01,0,3620
 2020-08,gb-coh-213890,Save The Children UK,21,Education,Ethiopia,1,1,commitments,GB-COH-213890-82604858,30359,509670
+2020-08,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,1,spending,LK-DRC-GA139-LFS1.2,5089,5089
+2020-08,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,1,spending,LK-DRC-GA139-LFS1.2,5696,5696
+2020-08,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,1,spending,LK-DRC-GA139-LFS1.2,5807,5807
+2020-08,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,1,spending,LK-DRC-GA139-LFS1.2,5881,5881
+2020-08,lk-drc-ga139,Women's Fund Asia,23,Government & Civil Society,Asia (no country specified),0,1,spending,LK-DRC-GA139-LFS1.2,5890,5890
 2020-09,gb-coh-294860,ADD International,21,Other Multisector,Bangladesh,0,1,spending,GB-COH-294860-PR9915,3765,69904
 2020-09,gb-coh-294860,ADD International,21,Other Multisector,United Republic of Tanzania,0,1,spending,GB-COH-294860-PR9916,0,6896
 2020-09,dac-1601,Bill and Melinda Gates Foundation,60,Health,Developing countries (no country specified),0,1,commitments,DAC-1601-INV-004954,100000,100000
@@ -366,6 +393,11 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-09,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,3735
 2020-09,gb-coh-1762840,HelpAge International,21,Health,Ukraine,0,1,spending,GB-COH-1762840-UKR041-HC01-01,0,1
 2020-09,gb-coh-1762840,HelpAge International,21,Reconstruction Relief & Rehabilitation,Ukraine,1,1,spending,GB-COH-1762840-UKR040-UN99-01,0,1962
+2020-09,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-17413
+2020-09,gb-coh-871954,Practical Action,21,Emergency Response,Kenya,0,0,spending,GB-COH-871954-QR00580,0,307131
+2020-09,gb-coh-871954,Practical Action,21,Energy,Kenya,0,1,spending,GB-COH-871954-QR00582,0,15559
+2020-09,gb-coh-871954,Practical Action,21,"Industry, Mining, Construction",United Kingdom,0,0,spending,GB-COH-871954-QR00575,6874,6874
+2020-09,gb-coh-871954,Practical Action,21,Water Supply & Sanitation,India,0,0,spending,GB-COH-871954-QR00133,25220,51964
 2020-09,gb-coh-213890,Save The Children UK,21,Banking & Financial Services,Nepal,1,1,spending,GB-COH-213890-82604802,4181,99705
 2020-09,gb-coh-213890,Save The Children UK,21,Education,Ethiopia,1,1,spending,GB-COH-213890-82604710,0,202265
 2020-09,gb-coh-213890,Save The Children UK,21,Education,Ethiopia,1,1,spending,GB-COH-213890-82604710,0,202265
@@ -442,6 +474,7 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-10,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1298
 2020-10,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1812
 2020-10,gb-coh-1762840,HelpAge International,21,Emergency Response,Viet Nam,1,1,spending,GB-COH-1762840-VIE082-UN03-01,264,3339
+2020-11,lb-moi-497,ABAAD- Resource Center for Gender Equality,22,Government & Civil Society,Lebanon,1,0,spending,LB-MOI-497-XM-DAC-7-PPR-4000003882,1112742,1112742
 2020-11,dac-1601,Bill and Melinda Gates Foundation,60,Health,Nigeria,0,1,commitments,DAC-1601-INV-005914,1138565,1138565
 2020-11,dac-1601,Bill and Melinda Gates Foundation,60,Health,Nigeria,0,1,spending,DAC-1601-INV-005914,825000,825000
 2020-11,dac-1601,Bill and Melinda Gates Foundation,60,Population Policies/Programmes & Reproductive Health,India,0,0,commitments,DAC-1601-INV-005891,896799,896799
@@ -480,6 +513,7 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,1827
 2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,3462
 2020-11,gb-coh-1762840,HelpAge International,21,Emergency Response,Viet Nam,1,1,spending,GB-COH-1762840-VIE082-UN03-01,725,9174
+2020-11,ng-cac-30547,PARADIGM INITIATIVE,21,Government & Civil Society,Nigeria,1,0,spending,NG-CAC-30547-CSSOFE1,0,-32648
 2020-12,gb-coh-294860,ADD International,21,Other Multisector,Bangladesh,0,1,spending,GB-COH-294860-PR9915,4374,81211
 2020-12,gb-coh-294860,ADD International,21,Other Multisector,United Republic of Tanzania,0,1,spending,GB-COH-294860-PR9916,0,7305
 2020-12,dac-1601,Bill and Melinda Gates Foundation,60,Population Policies/Programmes & Reproductive Health,India,0,0,spending,DAC-1601-INV-005891,250000,250000
@@ -554,6 +588,8 @@ Month,Reporting org id,Reporting org name,Reporting org type,Sector,Recipient co
 2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,61
 2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,United Republic of Tanzania,1,0,spending,GB-COH-1762840-TAN307-DF01-01,0,6955
 2020-12,gb-coh-1762840,HelpAge International,21,Emergency Response,Viet Nam,1,1,spending,GB-COH-1762840-VIE082-UN03-01,3978,50340
+2020-12,gb-coh-871954,Practical Action,21,Emergency Response,Kenya,0,0,spending,GB-COH-871954-QR00580,0,8139
+2020-12,gb-coh-871954,Practical Action,21,Energy,Kenya,0,1,spending,GB-COH-871954-QR00582,0,-32
 2020-12,gb-coh-213890,Save The Children UK,21,Banking & Financial Services,Ethiopia,0,0,commitments,GB-COH-213890-82604850,0,524139
 2020-12,gb-coh-213890,Save The Children UK,21,Banking & Financial Services,Ethiopia,0,0,spending,GB-COH-213890-82604850,0,134
 2020-12,gb-coh-213890,Save The Children UK,21,Banking & Financial Services,Nepal,1,1,spending,GB-COH-213890-82604802,25536,608906
