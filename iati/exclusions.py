@@ -124,7 +124,7 @@ class Exclusions:
 
         no_transactions = len(dactivity.transactions)
         if no_transactions == 0:
-            return True, 0
+            return True, None
 
         check_date(dactivity.start_date_actual)
         check_aid_types(dactivity.default_aid_types)
@@ -133,10 +133,10 @@ class Exclusions:
         check_narratives(dactivity.description)
 
         activity_identifier = dactivity.identifier
-        filtered_transactions = list()
+        removed_transactions = list()
+        remaining_transactions = 0
         transaction_errors = list()
-        usd_error_threshold = Lookups.configuration["usd_error_threshold"]
-        for dtransaction in dactivity.transactions:
+        for i, dtransaction in enumerate(dactivity.transactions):
             check_aid_types(dtransaction.aid_types)
             check_countries(dtransaction.recipient_countries)
             check_narratives(dtransaction.description)
@@ -145,10 +145,12 @@ class Exclusions:
                 dtransaction.type
             )
             if not transaction_type_info:
+                removed_transactions.append(i)
                 continue
             # We're not interested in transactions that have no value
             value = dtransaction.value
             if not value:
+                removed_transactions.append(i)
                 continue
             # We're not interested in transactions that have no currency
             currency = dtransaction.currency
@@ -156,6 +158,7 @@ class Exclusions:
                 transaction_errors.append(
                     f"Excluding transaction with no currency (activity id {activity_identifier}, value {value})!"
                 )
+                removed_transactions.append(i)
                 continue
             # We check the transaction date falling back on value date for the purposes
             # of filtering
@@ -166,24 +169,30 @@ class Exclusions:
                     transaction_errors.append(
                         f"Excluding transaction with no date (activity id {activity_identifier}, value {value})!"
                     )
+                    removed_transactions.append(i)
                     continue
             check_date(transaction_date)
-            dtransaction.transaction_date = transaction_date
-            filtered_transactions.append(dtransaction)
+            remaining_transactions += 1
 
-        no_filtered_transactions = len(filtered_transactions)
         if (
             not date_in_range
             or not included_aid_type
             or not country_in_list
             or not text_in_narrative
-            or no_filtered_transactions == 0
+            or remaining_transactions == 0
         ):
-            del filtered_transactions
-            return True, 0
+            return True, None
 
-        concrete_transactions = list()
-        for dtransaction in filtered_transactions:
+        for error in transaction_errors:
+            Lookups.checks.errors_on_exit.add(error)
+        return False, removed_transactions
+
+    def exclude_transactions(self, dactivity):
+        usd_error_threshold = Lookups.configuration["usd_error_threshold"]
+        activity_identifier = dactivity.identifier
+        filtered_transactions = list()
+        transaction_errors = list()
+        for dtransaction in dactivity.transactions:
             # For valuation, we use the value date falling back on transaction date
             valuation_date = dtransaction.value_date
             if not valuation_date:
@@ -209,17 +218,8 @@ class Exclusions:
                 transaction_errors.append(
                     f"Transaction with value {value} in activity {activity_identifier} exceeds threshold!"
                 )
-            dtransaction.usd_value = usd_value
-            concrete_transactions.append(dtransaction)
+            dtransaction.value = usd_value
+            filtered_transactions.append(dtransaction)
 
-        no_concrete_transactions = len(concrete_transactions)
-        if no_concrete_transactions == 0:
-            del filtered_transactions
-            del concrete_transactions
-            return True, 0
-        for error in transaction_errors:
-            Lookups.checks.errors_on_exit.add(error)
-        removed = no_transactions - no_concrete_transactions
-        dactivity.concrete_transactions = concrete_transactions
-        del filtered_transactions
-        return False, removed
+        dactivity.transactions = filtered_transactions
+        return len(filtered_transactions)

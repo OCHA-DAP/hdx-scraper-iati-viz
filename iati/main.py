@@ -1,4 +1,3 @@
-import gc
 import logging
 from os import remove
 from os.path import join
@@ -66,7 +65,7 @@ def start(
 
     # Build org name lookup
     logger.info("Reading activities")
-    dactivities = list()
+    prefiltered_dactivities = list()
     xmliterator = diterator.XMLIterator(dportal_path)
     number_query_activities = 0
     if saveprefiltered:
@@ -77,19 +76,17 @@ def start(
     else:
         writer = None
 
-    no_removed_transactions = 0
     for dactivity in xmliterator:
         number_query_activities += 1
         if number_query_activities % 1000 == 0:
-            gc.collect()
             logger.info(f"Read {number_query_activities} activities")
-        exclude, removed = Lookups.checks.exclude_activity(dactivity)
+        exclude, removed_transactions = Lookups.checks.exclude_activity(dactivity)
         if exclude:
             del dactivity
             continue
-        no_removed_transactions += removed
-        Lookups.add_reporting_org(dactivity)
-        dactivities.append(create_small_dactivity(dactivity))
+        prefiltered_dactivities.append(
+            create_small_dactivity(dactivity, removed_transactions)
+        )
         if writer:
             writer.write(dactivity.node.toxml())
         del dactivity
@@ -97,18 +94,37 @@ def start(
         writer.write("\n</iati-activities>")
         writer.close()
     del xmliterator  # Maybe this helps garbage collector?
-    gc.collect()
     logger.info(f"D-Portal returned {number_query_activities} activities")
-    number_dactivities = len(dactivities)
+    number_dactivities = len(prefiltered_dactivities)
     if number_dactivities == number_query_activities:
-        logger.info(f"Prefiltering did not remove any activities")
+        logger.info(f"Activity Prefiltering did not remove any activities")
     else:
-        logger.info(f"Prefiltered to {number_dactivities} activities")
+        logger.info(f"Activity Prefiltering results in {number_dactivities} activities")
+
+    no_removed_activities = 0
+    no_removed_transactions = 0
+    dactivities = list()
+    for i, dactivity in enumerate(prefiltered_dactivities):
+        if i % 1000 == 0:
+            logger.info(f"Read {i} prefiltered activities")
+        no_transactions = len(dactivity.transactions)
+        no_remaining_transactions = Lookups.checks.exclude_transactions(dactivity)
+        if no_remaining_transactions == 0:
+            no_removed_activities += 1
+            continue
+        no_removed_transactions += no_transactions - no_remaining_transactions
+        dactivities.append(dactivity)
     logger.info(
-        f"Prefiltering removed {no_removed_transactions} transactions that cannot be valued within included activities"
+        f"Transaction Prefiltering removed {no_removed_activities} activities where all transactions cannot be valued"
+    )
+    logger.info(
+        f"Transaction Prefiltering removed {no_removed_transactions} transactions within remaining activties that cannot be valued"
     )
     #    Lookups.build_reporting_org_blocklist(dactivities)
+    Lookups.add_reporting_orgs(dactivities)
+    logger.info("Added reporting orgs to lookup")
     Lookups.add_participating_orgs(dactivities)
+    logger.info("Added participating orgs to lookup")
 
     # Build the accumulators from the IATI activities and transactions
     logger.info("Processing activities")

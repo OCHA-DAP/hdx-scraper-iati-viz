@@ -17,8 +17,11 @@ class Transaction:
         self.transaction_type_info = Lookups.configuration["transaction_type_info"][
             dtransaction.type
         ]
-        self.transaction_date = parse_date(dtransaction.transaction_date)
-        self.usd_value = dtransaction.usd_value
+        date = dtransaction.date
+        if not date:
+            date = dtransaction.value_date
+        self.transaction_date = parse_date(date)
+        self.usd_value = dtransaction.value
         self.is_strict = dtransaction.is_strict
 
     def get_label(self):

@@ -4,10 +4,12 @@ from .lookups import Lookups
 
 class SmallDTransaction:
     __slots__ = [
+        "date",
         "type",
         "aid_types",
-        "transaction_date",
-        "usd_value",
+        "value_date",
+        "currency",
+        "value",
         "humanitarian",
         "sectors",
         "is_strict",
@@ -18,10 +20,12 @@ class SmallDTransaction:
     ]
 
     def __init__(self, dtransaction, transaction_is_strict):
+        self.date = dtransaction.date
         self.type = dtransaction.type
         self.aid_types = dtransaction.aid_types
-        self.transaction_date = dtransaction.transaction_date
-        self.usd_value = dtransaction.usd_value
+        self.value_date = dtransaction.value_date
+        self.currency = dtransaction.currency
+        self.value = dtransaction.value
         self.humanitarian = dtransaction.humanitarian
         self.sectors = flatten(dtransaction.sectors)
         self.is_strict = transaction_is_strict
