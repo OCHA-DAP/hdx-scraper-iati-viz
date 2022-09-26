@@ -127,7 +127,10 @@ def start(
     for i, full_dactivity in enumerate(xmliterator):
         dactivity = create_small_dactivity(full_dactivity)
         del full_dactivity
-        no_valued_transactions, unvaluable_transactions = Lookups.checks.exclude_transactions(dactivity)
+        (
+            no_valued_transactions,
+            unvaluable_transactions,
+        ) = Lookups.checks.exclude_transactions(dactivity)
         if no_valued_transactions == 0:
             no_unvaluable_activities += 1
             continue
@@ -139,7 +142,9 @@ def start(
         if i % 1000 == 0:
             logger.info(f"Processed {i} activities")
     del xmliterator
-    logger.info(f"Processing found {no_unvaluable_activities} activities with no transactions that could be valued")
+    logger.info(
+        f"Processing found {no_unvaluable_activities} activities with no transactions that could be valued"
+    )
     logger.info(
         f"Processing found {no_unvaluable_transactions} transactions that could not be valued from within remaining activities"
     )
