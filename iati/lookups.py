@@ -253,12 +253,14 @@ class Lookups:
     def add_reporting_orgs(cls, dactivities):
         for dactivity in dactivities:
             cls.add_to_org_lookup(dactivity.reporting_org)
+            del dactivity
 
     @classmethod
     def add_participating_orgs(cls, dactivities):
         for dactivity in dactivities:
             for org in dactivity.participating_orgs:
                 cls.add_to_org_lookup(org, is_participating_org=True)
+            del dactivity
 
     @classmethod
     def get_sector_group_name(cls, code):

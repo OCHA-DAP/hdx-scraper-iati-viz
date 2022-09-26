@@ -16,7 +16,7 @@ class SmallDActivity:
         "transactions",
     ]
 
-    def __init__(self, dactivity, activity_is_strict, removed_transactions):
+    def __init__(self, dactivity, activity_is_strict):
         self.identifier = dactivity.identifier
         self.reporting_org = flatten(dactivity.reporting_org)
         self.sectors = flatten(dactivity.sectors)
@@ -27,8 +27,7 @@ class SmallDActivity:
         self.participating_orgs_by_role = flatten(dactivity.participating_orgs_by_role)
         self.transactions = [
             create_small_transaction(self.identifier, activity_is_strict, dtransaction)
-            for i, dtransaction in enumerate(dactivity.transactions)
-            if i not in removed_transactions
+            for dtransaction in dactivity.transactions
         ]
 
 
@@ -52,6 +51,6 @@ def get_activity_is_strict(dactivity):
         return False
 
 
-def create_small_dactivity(dactivity, removed_transactions):
+def create_small_dactivity(dactivity):
     activity_is_strict = get_activity_is_strict(dactivity)
-    return SmallDActivity(dactivity, activity_is_strict, removed_transactions)
+    return SmallDActivity(dactivity, activity_is_strict)

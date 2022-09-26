@@ -192,7 +192,9 @@ class Exclusions:
         activity_identifier = dactivity.identifier
         filtered_transactions = list()
         transaction_errors = list()
+        no_transactions = 0
         for dtransaction in dactivity.transactions:
+            no_transactions += 1
             # For valuation, we use the value date falling back on transaction date
             valuation_date = dtransaction.value_date
             if not valuation_date:
@@ -222,4 +224,5 @@ class Exclusions:
             filtered_transactions.append(dtransaction)
 
         dactivity.transactions = filtered_transactions
-        return len(filtered_transactions)
+        no_valued_transactions = len(filtered_transactions)
+        return no_valued_transactions, no_transactions - no_valued_transactions
