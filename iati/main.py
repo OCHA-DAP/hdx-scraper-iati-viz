@@ -86,9 +86,8 @@ def start(
         no_removed_transactions += len(removed_transactions)
         activity_node = dactivity.node
         transaction_nodes = dactivity.get_nodes("transaction")
-        if removed_transactions:
-            for i in removed_transactions:
-                activity_node.removeChild(transaction_nodes[i])
+        for i in removed_transactions:
+            activity_node.removeChild(transaction_nodes[i])
         writer.write(activity_node.toxml(standalone=True))
         del dactivity
     writer.write("\n</iati-activities>")
