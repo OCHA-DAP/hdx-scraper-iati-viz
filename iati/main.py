@@ -101,7 +101,7 @@ def start(
         no_remaining = no_query_activities - no_removed_transactions
         logger.info(f"{no_remaining} activities after Activity Prefiltering")
     logger.info(
-        f"Activity Prefiltering removed {no_removed_transactions} from within remaining activities"
+        f"Activity Prefiltering removed {no_removed_transactions} transactions from within remaining activities"
     )
 
     xmliterator = diterator.XMLIterator(prefiltered_path)
