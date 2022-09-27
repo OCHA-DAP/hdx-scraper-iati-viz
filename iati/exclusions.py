@@ -18,10 +18,16 @@ class Exclusions:
     def specific_exclusions(dactivity):
         if dactivity.secondary_reporter:
             return True
+        activity_identifier = dactivity.identifier
         # Filter out certain activities
-        if Lookups.skip_activity(dactivity.identifier):
+        if Lookups.skip_activity(activity_identifier):
             return True
-        reporting_org_ref = dactivity.reporting_org.ref
+        reporting_org = dactivity.reporting_org
+        if reporting_org is None:
+            error = f"Excluding activity with no reporting org (activity id {activity_identifier})!"
+            Lookups.checks.errors_on_exit.add(error)
+            return True
+        reporting_org_ref = reporting_org.ref
         # Filter out certain orgs
         if Lookups.skip_reporting_org(reporting_org_ref):
             return True
