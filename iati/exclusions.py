@@ -1,3 +1,4 @@
+from dateutil.parser import ParserError
 from hdx.location.currency import Currency, CurrencyError
 from hdx.utilities.dateparse import parse_date
 
@@ -177,7 +178,15 @@ class Exclusions:
                     )
                     removed_transactions.append(i)
                     continue
-            check_date(transaction_date)
+            try:
+                check_date(transaction_date)
+            except ParserError:
+                transaction_errors.append(
+                    f"Excluding transaction with invalid date (activity id {activity_identifier}, value {value})!"
+                )
+                removed_transactions.append(i)
+                continue
+
             remaining_transactions += 1
 
         if (
