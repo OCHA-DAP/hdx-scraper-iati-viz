@@ -194,6 +194,40 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
         to_tsvector('simple', xson->>'') @@ to_tsquery('simple','UKRAINE | UKRAINIAN')
     ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {} desc
 )"
+  foodsecurity_query: "
+SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
+    SELECT aid FROM xson WHERE
+    (
+        root='/iati-activities/iati-activity/title/narrative' AND
+        to_tsvector('simple', xson->>'') @@ to_tsquery('simple','''FOOD SECURITY'' | ''FOOD INSECURITY''')
+    ) OR (
+        root='/iati-activities/iati-activity/description/narrative' AND
+        to_tsvector('simple', xson->>'') @@ to_tsquery('simple','''FOOD SECURITY'' | ''FOOD INSECURITY''')
+    ) OR (
+        root='/iati-activities/iati-activity/transaction/description/narrative' AND
+        to_tsvector('simple', xson->>'') @@ to_tsquery('simple','''FOOD SECURITY'' | ''FOOD INSECURITY''')
+    )
+)
+AND aid IN (
+    SELECT aid FROM xson WHERE
+    (
+        root='/iati-activities/iati-activity/sector' AND
+        xson->>'@code' IN ('31110','31120','31130','31140','31150','31161','31162','31163','31164','31165','31166','31181','31182','31191','31192','31193','31194','31195','31310','31320','31381','31382','31391','14010','14015','14020','14030','14031','14032','15220','15230','16010','16011','16012','16015','16020','16050','33110','33120','52010','72040','72050','73010','12110','12181','12182','12191','12196','12220','12230','12240','12250','12261','12264','12281','72010','72011') AND
+        xson->>'@vocabulary'='1'
+    ) OR (
+        root='/iati-activities/iati-activity/transaction/sector' AND
+        xson->>'@code' IN ('31110','31120','31130','31140','31150','31161','31162','31163','31164','31165','31166','31181','31182','31191','31192','31193','31194','31195','31310','31320','31381','31382','31391','14010','14015','14020','14030','14031','14032','15220','15230','16010','16011','16012','16015','16020','16050','33110','33120','52010','72040','72050','73010','12110','12181','12182','12191','12196','12220','12230','12240','12250','12261','12264','12281','72010','72011') AND
+        xson->>'@vocabulary'='1'
+    ) OR (
+        root='/iati-activities/iati-activity/sector' AND
+        xson->>'@code'='6' AND
+        xson->>'@vocabulary'='10'
+    ) OR (
+        root='/iati-activities/iati-activity/transaction/sector' AND
+        xson->>'@code'='6' AND
+        xson->>'@vocabulary'='10'
+    ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {} desc
+)"
 
 lookups:
   skipped_url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQxyJ0Y658cIIN1NpbHl4Ah1bZjNnWao7oawdLkl4T_5GC4BF-KMFnzKuzupU-w2Js1_Zy-VmaFJdIW/pub?gid=0&single=true&output=csv"

@@ -1,8 +1,9 @@
-from iati.climate_checks import ClimateChecks
-from iati.covid_checks import CovidChecks
-from iati.ebola_checks import EbolaChecks
-from iati.southsudan_checks import SouthSudanChecks
-from iati.ukraine_checks import UkraineChecks
+from .climate_checks import ClimateChecks
+from .covid_checks import CovidChecks
+from .ebola_checks import EbolaChecks
+from .foodsecurity_checks import FoodSecurityChecks
+from .southsudan_checks import SouthSudanChecks
+from .ukraine_checks import UkraineChecks
 
 checks = {
     "covid": CovidChecks,
@@ -10,4 +11,5 @@ checks = {
     "climate": ClimateChecks,
     "southsudan": SouthSudanChecks,
     "ukraine": UkraineChecks,
+    "foodsecurity": FoodSecurityChecks,
 }

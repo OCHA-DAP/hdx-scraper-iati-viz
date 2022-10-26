@@ -75,7 +75,7 @@ class Exclusions:
         return True
 
     # Prefilters either full activities and transactions that cannot be valued
-    # Does not filter transactions oteh than those that cannot be valued as that must
+    # Does not filter transactions other than those that cannot be valued as that must
     # happen after factoring new money
     def _exclude_activity(
         self,
