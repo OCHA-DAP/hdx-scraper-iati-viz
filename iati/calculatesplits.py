@@ -53,11 +53,7 @@ class CalculateSplits:
         splits = {}
         sectors = entity.sectors
 
-        # Prefer 3-digit codes to 5-digit
-        if "2" in [sector.vocabulary for sector in sectors]:
-            vocabulary_code = "2"
-        else:
-            vocabulary_code = "1"
+        vocabulary_code = Lookups.sector_lookups.get_vocabulary_code(sectors)
 
         for sector in sectors:
             code = sector.code

@@ -11,3 +11,10 @@ class BaseSectorLookups:
             return self.sector_info[code]["dac-group"]
         else:
             return self.default_sector
+
+    @staticmethod
+    def get_vocabulary_code(sectors):
+        # Prefer 3-digit codes to 5-digit
+        if "2" in [sector.vocabulary for sector in sectors]:
+            return "2"
+        return "1"

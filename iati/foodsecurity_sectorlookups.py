@@ -15,3 +15,10 @@ class FoodSecuritySectorLookups(BaseSectorLookups):
             return self.sector_info[code]
         else:
             return self.default_sector
+
+    @staticmethod
+    def get_vocabulary_code(sectors):
+        # Prefer 5-digit codes to 3-digit
+        if "1" in [sector.vocabulary for sector in sectors]:
+            return "1"
+        return "2"

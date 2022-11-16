@@ -260,10 +260,6 @@ class Lookups:
             del dactivity
 
     @classmethod
-    def get_sector_group_name(cls, code):
-        return cls.sector_lookups.get_sector_group_name(code)
-
-    @classmethod
     def get_country_region_name(cls, code):
         countryname = Country.get_country_name_from_iso2(code, shortname=True)
         if countryname:
