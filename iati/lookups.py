@@ -33,8 +33,7 @@ class Lookups:
     default_org_id = None
     default_org_name = None
     default_expenditure_org_name = None
-    sector_info = None
-    default_sector = None
+    sector_lookups = None
     region_code_to_name = dict()
     default_country_region = None
     skip_activities = list()
@@ -56,7 +55,6 @@ class Lookups:
             name = clean_string(entry["name"])
             cls.org_ref_to_name[code] = name
             cls.org_names_to_ref[name.lower()] = code
-        cls.sector_info = load_json(configuration["sector_data"])
         region_data = load_json(configuration["region_data"])
         """ Map from region codes to region names """
         # Prime with region codes from code4iati
@@ -68,7 +66,6 @@ class Lookups:
         cls.default_org_name = configuration["default_org_name"]
         cls.default_expenditure_org_name = configuration["default_expenditure_org_name"]
 
-        cls.default_sector = configuration["default_sector"]
         cls.default_country_region = configuration["default_country_region"]
         for row in hxl.data(configuration["skipped_url"]):
             activity_id = row.get("#activity+code")
@@ -264,12 +261,7 @@ class Lookups:
 
     @classmethod
     def get_sector_group_name(cls, code):
-        """Look up a group name for a 3- or 5-digit sector code."""
-        code = code[:3]
-        if code in cls.sector_info:
-            return cls.sector_info.get(code)["dac-group"]
-        else:
-            return cls.default_sector
+        return cls.sector_lookups.get_sector_group_name(code)
 
     @classmethod
     def get_country_region_name(cls, code):

@@ -8,7 +8,7 @@ from hdx.location.currency import Currency
 from hdx.utilities.dateparse import parse_date
 from hdx.utilities.saver import save_hxlated_output
 
-from . import checks
+from . import checks, sector_lookups
 from .activity import Activity
 from .calculatesplits import CalculateSplits
 from .lookups import Lookups
@@ -52,6 +52,9 @@ def start(
     if startdate is not None:
         startdate = parse_date(startdate)
     Lookups.checks = checks[whattorun](parse_date(today), startdate, errors_on_exit)
+    Lookups.sector_lookups = sector_lookups[whattorun](
+        retriever, configuration["lookups"]
+    )
     dportal_filename, dportal_path = retrieve_dportal(
         retriever, whattorun, dportal_params
     )

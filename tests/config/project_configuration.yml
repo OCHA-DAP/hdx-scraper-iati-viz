@@ -46,7 +46,9 @@ lookups:
   allowed_url: "https://github.com/OCHA-DAP/hdx-scraper-iati-viz/raw/main/tests/config/IATI%20Explorer%20Filters%20-%20Allowed%20Activities.csv"
   spurious_url: "https://github.com/OCHA-DAP/hdx-scraper-iati-viz/raw/main/tests/config/IATI%20Explorer%20Filters%20-%20Spurious%20References.csv"
   org_data: "data/IATIOrganisationIdentifier.json"
-  sector_data: "data/dac3-sector-map.json"
+  sector_data:
+    default: "data/dac3-sector-map.json"
+    foodsecurity: "https://iatistandard.org/reference_downloads/203/codelists/downloads/clv3/json/en/Sector.json"
   region_data: "data/Region.json"
   rates_url: "https://codeforiati.org/exchangerates-scraper/consolidated.csv"
   fallback_rates_url: "https://api.exchangerate.host/latest?base=usd"
