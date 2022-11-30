@@ -14,7 +14,7 @@ class Activity:
         """
         self.dactivity = dactivity
         self.identifier = dactivity.identifier
-        # Get the reporting-org and C19 strictness at activity level
+        # Get the reporting-org and strictness at activity level
         self.org = Lookups.get_org_info(dactivity.reporting_org, reporting_org=True)
         self.humanitarian = dactivity.humanitarian
         # Figure out default country or region/sector percentage splits at the activity level

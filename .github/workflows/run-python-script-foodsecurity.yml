@@ -23,7 +23,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run script
       run: |
-        python run.py --what=foodsecurity
+        python run.py --what=foodsecurity --date_filter=2021-01-01
         cp errors.log output_foodsecurity
     - name: Deploy 🚀
       if: always()
