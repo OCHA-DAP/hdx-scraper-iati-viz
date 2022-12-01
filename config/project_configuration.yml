@@ -196,7 +196,9 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
 )"
   foodsecurity_query: "
 SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
-  SELECT act.aid FROM act, xson WHERE act.day_start >= FLOOR(EXTRACT(epoch FROM '2021-01-01'::DATE)/(60*60*24)) AND act.aid=xson.aid AND 
+  SELECT aid FROM xson WHERE aid IN 
+  (SELECT aid from act WHERE day_start >= FLOOR(EXTRACT(epoch FROM '2021-01-01'::DATE)/(60*60*24)))
+  AND 
   (
       (
           root='/iati-activities/iati-activity/title/narrative' AND
@@ -224,7 +226,7 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
           xson->>'@code' IN ('311','312','313') AND
           xson->>'@vocabulary'='2'
       ) 
-  ) GROUP BY act.aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), act.aid {} desc
+  ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {} desc
 )"
 
 lookups:
