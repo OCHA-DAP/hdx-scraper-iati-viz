@@ -99,13 +99,13 @@ class Exclusions:
         else:
             text_in_narrative = False
 
-        def check_date(datestr):
+        def check_date(date):
             nonlocal date_in_range
             if date_in_range:
                 return
-            if not datestr:
+            if not date:
                 return
-            if self.is_date_in_range(parse_date(datestr)):
+            if self.is_date_in_range(date):
                 date_in_range = True
 
         def check_aid_types(aid_types):
@@ -133,7 +133,20 @@ class Exclusions:
         if no_transactions == 0:
             return True, None
 
-        check_date(dactivity.start_date_actual)
+        start_date = dactivity.start_date_actual
+        if start_date:
+            try:
+                start_date = parse_date(start_date)
+            except ParserError:
+                start_date = None
+        if not start_date:
+            start_date = dactivity.start_date_planned
+            if start_date:
+                try:
+                    start_date = parse_date(start_date)
+                except ParserError:
+                    start_date = None
+        check_date(start_date)
         check_aid_types(dactivity.default_aid_types)
         check_countries(dactivity.recipient_countries)
         check_narratives(dactivity.title)
@@ -170,22 +183,28 @@ class Exclusions:
             # We check the transaction date falling back on value date for the purposes
             # of filtering
             transaction_date = dtransaction.date
+            if transaction_date:
+                try:
+                    transaction_date = parse_date(transaction_date)
+                except ParserError:
+                    transaction_date = None
             if not transaction_date:
                 transaction_date = dtransaction.value_date
+                try:
+                    transaction_date = parse_date(transaction_date)
+                except ParserError:
+                    transaction_errors.append(
+                        f"Excluding transaction with invalid date (activity id {activity_identifier}, value {value})!"
+                    )
+                    removed_transactions.append(i)
+                    continue
                 if not transaction_date:
                     transaction_errors.append(
                         f"Excluding transaction with no date (activity id {activity_identifier}, value {value})!"
                     )
                     removed_transactions.append(i)
                     continue
-            try:
-                check_date(transaction_date)
-            except ParserError:
-                transaction_errors.append(
-                    f"Excluding transaction with invalid date (activity id {activity_identifier}, value {value})!"
-                )
-                removed_transactions.append(i)
-                continue
+            check_date(transaction_date)
 
             remaining_transactions += 1
 
