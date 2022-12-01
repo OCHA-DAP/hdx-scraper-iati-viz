@@ -101,7 +101,7 @@ def start(
         logger.info(f"Activity Prefiltering did not remove any activities")
     else:
         logger.info(f"Activity Prefiltering removed {no_removed_activities} activities")
-        no_remaining = no_query_activities - no_removed_transactions
+        no_remaining = no_query_activities - no_removed_activities
         logger.info(f"{no_remaining} activities after Activity Prefiltering")
     logger.info(
         f"Activity Prefiltering removed {no_removed_transactions} transactions from within remaining activities"

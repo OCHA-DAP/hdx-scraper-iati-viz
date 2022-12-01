@@ -12,6 +12,7 @@ class Exclusions:
         self.errors_on_exit = errors_on_exit
         self.include_scope = True
         self.excluded_aid_types = None
+        self.relevant_sectors = None
         self.relevant_countries = None
         self.relevant_words = None
 
@@ -52,6 +53,18 @@ class Exclusions:
                 return False
         return True
 
+    def is_irrelevant_sector(self, sectors):
+        if not self.relevant_sectors:
+            return False
+        if not sectors:
+            return False
+        for sector in sectors:
+            sectors_for_vocabulary = self.relevant_sectors.get(sector.vocabulary)
+            if sectors_for_vocabulary:
+                if sector.code in sectors_for_vocabulary:
+                    return False
+        return True
+
     def is_irrelevant_country(self, countries):
         if not self.relevant_countries:
             return False
@@ -90,6 +103,10 @@ class Exclusions:
             included_aid_type = True
         else:
             included_aid_type = False
+        if not do_checks or self.relevant_sectors is None:
+            sector_in_list = True
+        else:
+            sector_in_list = False
         if not do_checks or self.relevant_countries is None:
             country_in_list = True
         else:
@@ -114,6 +131,13 @@ class Exclusions:
                 return
             if not self.is_excluded_aid_type(aid_types):
                 included_aid_type = True
+
+        def check_sectors(sectors):
+            nonlocal sector_in_list
+            if sector_in_list:
+                return
+            if not self.is_irrelevant_sector(sectors):
+                sector_in_list = True
 
         def check_countries(countries):
             nonlocal country_in_list
@@ -148,6 +172,7 @@ class Exclusions:
                     start_date = None
         check_date(start_date)
         check_aid_types(dactivity.default_aid_types)
+        check_sectors(dactivity.sectors)
         check_countries(dactivity.recipient_countries)
         check_narratives(dactivity.title)
         check_narratives(dactivity.description)
@@ -158,6 +183,7 @@ class Exclusions:
         transaction_errors = list()
         for i, dtransaction in enumerate(dactivity.transactions):
             check_aid_types(dtransaction.aid_types)
+            check_sectors(dtransaction.sectors)
             check_countries(dtransaction.recipient_countries)
             check_narratives(dtransaction.description)
             # We're only interested in some transaction types
@@ -211,6 +237,7 @@ class Exclusions:
         if (
             not date_in_range
             or not included_aid_type
+            or not sector_in_list
             or not country_in_list
             or not text_in_narrative
             or remaining_transactions == 0

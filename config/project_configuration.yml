@@ -195,39 +195,11 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
     ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {} desc
 )"
   foodsecurity_query: "
-SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
-  SELECT aid FROM xson WHERE aid IN 
-  (SELECT aid from act WHERE day_start >= FLOOR(EXTRACT(epoch FROM '2021-01-01'::DATE)/(60*60*24)))
-  AND 
-  (
-      (
-          root='/iati-activities/iati-activity/sector' AND
-          xson->>'@code' IN ('311','312','313') AND
-          xson->>'@vocabulary'='2'
-      ) OR (
-          root='/iati-activities/iati-activity/sector' AND
-          xson->>'@code' IN ('11250','12240','31110','31120','31130','31140','31150','31161','31162','31163','31164','31165','31166','31181','31182','31191','31192','31193','31194','31195','31210','31220','31261','31281','31282','31291','31310','31320','31381','31382','31391','32161','32162','43040','43071','43072','43073','52010') AND
-          xson->>'@vocabulary'='1'
-      ) OR (
-          root='/iati-activities/iati-activity/title/narrative' AND
-          to_tsvector('simple', xson->>'') @@ to_tsquery('simple','''FOOD SECURITY'' | ''FOOD INSECURITY''')
-      ) OR (
-          root='/iati-activities/iati-activity/transaction/sector' AND
-          xson->>'@code' IN ('311','312','313') AND
-          xson->>'@vocabulary'='2'
-      ) OR (
-          root='/iati-activities/iati-activity/transaction/sector' AND
-          xson->>'@code' IN ('11250','12240','31110','31120','31130','31140','31150','31161','31162','31163','31164','31165','31166','31181','31182','31191','31192','31193','31194','31195','31210','31220','31261','31281','31282','31291','31310','31320','31381','31382','31391','32161','32162','43040','43071','43072','43073','52010') AND
-          xson->>'@vocabulary'='1'
-      ) OR (
-          root='/iati-activities/iati-activity/description/narrative' AND
-          to_tsvector('simple', xson->>'') @@ to_tsquery('simple','''FOOD SECURITY'' | ''FOOD INSECURITY''')
-      ) OR (
-          root='/iati-activities/iati-activity/transaction/description/narrative' AND
-          to_tsvector('simple', xson->>'') @@ to_tsquery('simple','''FOOD SECURITY'' | ''FOOD INSECURITY''')
-      ) 
-  ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {} desc
-)"
+SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN 
+(
+  SELECT aid from act WHERE day_start >= FLOOR(EXTRACT(epoch FROM '2021-01-01'::DATE)/(60*60*24)) GROUP by aid ORDER BY day_start, aid desc
+)
+"
 
 lookups:
   skipped_url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQxyJ0Y658cIIN1NpbHl4Ah1bZjNnWao7oawdLkl4T_5GC4BF-KMFnzKuzupU-w2Js1_Zy-VmaFJdIW/pub?gid=0&single=true&output=csv"
