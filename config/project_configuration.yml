@@ -197,7 +197,7 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
   foodsecurity_query: "
 SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN 
 (
-  SELECT aid from act WHERE day_start >= FLOOR(EXTRACT(epoch FROM '2021-01-01'::DATE)/(60*60*24)) GROUP by aid ORDER BY day_start, aid desc
+  SELECT aid from act WHERE day_start >= FLOOR(EXTRACT(epoch FROM '2021-01-01'::DATE)/(60*60*24)) GROUP by aid ORDER BY day_start, aid {} desc
 )
 "
 
