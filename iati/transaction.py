@@ -36,14 +36,7 @@ class Transaction:
     def skip(self):
         if not Lookups.checks.is_date_in_range(self.transaction_date):
             return True
-        if Lookups.checks.is_excluded_aid_type(self.dtransaction.aid_types):
-            return True
-        # We need to add these to smalldtransaction to make the filters below work
-        # if Lookups.checks.is_irrelevant_country(self.dtransaction.recipient_countries):
-        #     return True
-        # if Lookups.checks.is_irrelevant_text(self.dtransaction.description):
-        #     return True
-        return False
+        return self.dtransaction.should_skip_transaction
 
     def process(self, activity):
         # Set the net (new money) factors based on the type (commitments or spending)

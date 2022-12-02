@@ -26,7 +26,7 @@ class SmallDActivity:
         self.participating_orgs = flatten(dactivity.participating_orgs)
         self.participating_orgs_by_role = flatten(dactivity.participating_orgs_by_role)
         self.transactions = [
-            create_small_transaction(self.identifier, activity_is_strict, dtransaction)
+            create_small_transaction(dactivity, activity_is_strict, dtransaction)
             for dtransaction in dactivity.transactions
         ]
 

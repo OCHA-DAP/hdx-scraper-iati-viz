@@ -60,3 +60,8 @@ class BaseChecks(Exclusions):
 
     def is_desired_narrative(self, narratives):
         return False
+
+    def should_skip_transaction(self, dactivity, dtransaction):
+        if self.is_excluded_aid_type(dtransaction.aid_types):
+            return True
+        return False

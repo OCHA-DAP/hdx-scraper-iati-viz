@@ -55,3 +55,13 @@ class FoodSecurityChecks(BaseChecks):
             if any(x in text.lower() for x in ("food security", "food insecurity")):
                 return True
         return False
+
+    def should_skip_transaction(self, dactivity, dtransaction):
+        if (
+            self.is_irrelevant_text(dactivity.title)
+            and self.is_irrelevant_text(dactivity.description)
+            and self.is_irrelevant_text(dtransaction.description)
+            and self.is_irrelevant_sector(dtransaction.sectors)
+        ):
+            return True
+        return False
