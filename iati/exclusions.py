@@ -1,8 +1,7 @@
-from dateutil.parser import ParserError
 from hdx.location.currency import Currency, CurrencyError
-from hdx.utilities.dateparse import parse_date
 
 from .lookups import Lookups
+from .utilities import get_date_with_fallback
 
 
 class Exclusions:
@@ -157,19 +156,9 @@ class Exclusions:
         if no_transactions == 0:
             return True, None
 
-        start_date = dactivity.start_date_actual
-        if start_date:
-            try:
-                start_date = parse_date(start_date)
-            except ParserError:
-                start_date = None
-        if not start_date:
-            start_date = dactivity.start_date_planned
-            if start_date:
-                try:
-                    start_date = parse_date(start_date)
-                except ParserError:
-                    start_date = None
+        start_date = get_date_with_fallback(
+            dactivity.start_date_actual, dactivity.start_date_planned
+        )
         check_date(start_date)
         check_aid_types(dactivity.default_aid_types)
         check_sectors(dactivity.sectors)
@@ -208,28 +197,15 @@ class Exclusions:
                 continue
             # We check the transaction date falling back on value date for the purposes
             # of filtering
-            transaction_date = dtransaction.date
-            if transaction_date:
-                try:
-                    transaction_date = parse_date(transaction_date)
-                except ParserError:
-                    transaction_date = None
-            if not transaction_date:
-                transaction_date = dtransaction.value_date
-                try:
-                    transaction_date = parse_date(transaction_date)
-                except ParserError:
-                    transaction_errors.append(
-                        f"Excluding transaction with invalid date (activity id {activity_identifier}, value {value})!"
-                    )
-                    removed_transactions.append(i)
-                    continue
-                if not transaction_date:
-                    transaction_errors.append(
-                        f"Excluding transaction with no date (activity id {activity_identifier}, value {value})!"
-                    )
-                    removed_transactions.append(i)
-                    continue
+            transaction_date = get_date_with_fallback(
+                dtransaction.date, dtransaction.value_date
+            )
+            if transaction_date is None:
+                transaction_errors.append(
+                    f"Excluding transaction with invalid or no date (activity id {activity_identifier}, value {value})!"
+                )
+                removed_transactions.append(i)
+                continue
             check_date(transaction_date)
 
             remaining_transactions += 1
@@ -256,17 +232,13 @@ class Exclusions:
         no_transactions = 0
         for dtransaction in dactivity.transactions:
             no_transactions += 1
-            # For valuation, we use the value date falling back on transaction date
-            valuation_date = dtransaction.value_date
-            if not valuation_date:
-                valuation_date = dtransaction.date
             value = dtransaction.value
             try:
                 # Convert the transaction value to USD
                 usd_value = Currency.get_historic_value_in_usd(
                     value,
                     dtransaction.currency,
-                    parse_date(valuation_date),
+                    dtransaction.valuation_date,
                 )
             except (ValueError, CurrencyError):
                 transaction_errors.append(

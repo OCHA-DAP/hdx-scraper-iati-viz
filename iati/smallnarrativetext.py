@@ -1,4 +1,4 @@
-import iati.flatten as flatten
+import iati.utilities as flatten
 
 
 class SmallNarrativeText:
