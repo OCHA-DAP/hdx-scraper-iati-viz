@@ -1,6 +1,6 @@
-from .flatten import flatten
 from .lookups import Lookups
 from .smalldtransaction import create_small_transaction
+from .utilities import flatten
 
 
 class SmallDActivity:

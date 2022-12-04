@@ -1,4 +1,6 @@
+from dateutil.parser import ParserError
 from diterator.wrappers import CodedItem, NarrativeText, Organisation
+from hdx.utilities.dateparse import parse_date
 
 from .smallnarrativetext import SmallNarrativeText
 
@@ -34,3 +36,22 @@ def flatten(obj):
         )()
     else:
         return obj
+
+
+def get_date_with_fallback(date1, date2):
+    output_date = date1
+    if output_date:
+        try:
+            output_date = parse_date(output_date)
+        except ParserError:
+            output_date = None
+    if not output_date:
+        output_date = date2
+        if output_date:
+            try:
+                output_date = parse_date(output_date)
+            except ParserError:
+                output_date = None
+        else:
+            output_date = None
+    return output_date

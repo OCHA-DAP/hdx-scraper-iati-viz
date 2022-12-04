@@ -17,10 +17,8 @@ class Transaction:
         self.transaction_type_info = Lookups.configuration["transaction_type_info"][
             dtransaction.type
         ]
-        date = dtransaction.date
-        if not date:
-            date = dtransaction.value_date
-        self.transaction_date = parse_date(date)
+        self.transaction_date = dtransaction.transaction_date
+        self.valuation_date = dtransaction.valuation_date
         self.usd_value = dtransaction.value
         self.is_strict = dtransaction.is_strict
 
@@ -34,8 +32,6 @@ class Transaction:
         return self.transaction_type_info["direction"]
 
     def skip(self):
-        if not Lookups.checks.is_date_in_range(self.transaction_date):
-            return True
         return self.dtransaction.should_skip_transaction
 
     def process(self, activity):

@@ -1,8 +1,7 @@
-from dateutil.parser import ParserError
 from hdx.location.currency import Currency, CurrencyError
-from hdx.utilities.dateparse import parse_date
 
 from .lookups import Lookups
+from .utilities import get_date_with_fallback
 
 
 class Exclusions:
@@ -87,25 +86,6 @@ class Exclusions:
                     return False
         return True
 
-    @staticmethod
-    def get_date_with_fallback(date1, date2):
-        output_date = date1
-        if output_date:
-            try:
-                output_date = parse_date(output_date)
-            except ParserError:
-                output_date = None
-        if not output_date:
-            output_date = date2
-            if output_date:
-                try:
-                    output_date = parse_date(output_date)
-                except ParserError:
-                    output_date = None
-            else:
-                output_date = None
-        return output_date
-
     # Prefilters either full activities and transactions that cannot be valued
     # Does not filter transactions other than those that cannot be valued as that must
     # happen after factoring new money
@@ -176,7 +156,7 @@ class Exclusions:
         if no_transactions == 0:
             return True, None
 
-        start_date = self.get_date_with_fallback(
+        start_date = get_date_with_fallback(
             dactivity.start_date_actual, dactivity.start_date_planned
         )
         check_date(start_date)
@@ -217,7 +197,7 @@ class Exclusions:
                 continue
             # We check the transaction date falling back on value date for the purposes
             # of filtering
-            transaction_date = self.get_date_with_fallback(
+            transaction_date = get_date_with_fallback(
                 dtransaction.date, dtransaction.value_date
             )
             if transaction_date is None:
@@ -252,17 +232,13 @@ class Exclusions:
         no_transactions = 0
         for dtransaction in dactivity.transactions:
             no_transactions += 1
-            # For valuation, we use the value date falling back on transaction date
-            valuation_date = self.get_date_with_fallback(
-                dtransaction.value_date, dtransaction.date
-            )
             value = dtransaction.value
             try:
                 # Convert the transaction value to USD
                 usd_value = Currency.get_historic_value_in_usd(
                     value,
                     dtransaction.currency,
-                    valuation_date,
+                    dtransaction.valuation_date,
                 )
             except (ValueError, CurrencyError):
                 transaction_errors.append(

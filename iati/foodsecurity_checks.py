@@ -56,7 +56,9 @@ class FoodSecurityChecks(BaseChecks):
                 return True
         return False
 
-    def should_skip_transaction(self, dactivity, dtransaction):
+    def should_skip_transaction(self, dactivity, dtransaction, transaction_date):
+        if not self.is_date_in_range(transaction_date):
+            return True
         if (
             self.is_irrelevant_text(dactivity.title)
             and self.is_irrelevant_text(dactivity.description)
