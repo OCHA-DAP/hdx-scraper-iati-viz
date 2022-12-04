@@ -13,7 +13,7 @@ from hdx.utilities.retriever import Retrieve
 from iati.main import start
 
 
-class TestIATI:
+class TestIATICovid:
     @pytest.fixture(scope="function")
     def configuration(self):
         Configuration._create(
@@ -32,7 +32,7 @@ class TestIATI:
 
     @pytest.fixture(scope="class")
     def fixtures_dir(self):
-        return join("tests", "fixtures")
+        return join("tests", "fixtures", "covid")
 
     @pytest.fixture(scope="class")
     def input_dir(self, fixtures_dir):
