@@ -40,6 +40,12 @@ SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN (
         (xson->>'@vocabulary'='1' OR xson->>'@vocabulary'='' OR xson->>'@vocabulary' IS NULL)
     ) GROUP BY aid ORDER BY max(xson->>'@iati-activities:generated-datetime'), max(xson->>'@last-updated-datetime'), aid {} desc
 )"
+  foodsecurity_query: "
+SELECT * FROM xson WHERE root = '/iati-activities/iati-activity' AND aid IN 
+(
+  SELECT aid from act WHERE day_start >= FLOOR(EXTRACT(epoch FROM '2021-01-01'::DATE)/(60*60*24)) GROUP by aid ORDER BY day_start, aid {} desc
+)
+"
 
 lookups:
   skipped_url: "https://github.com/OCHA-DAP/hdx-scraper-iati-viz/raw/main/tests/config/IATI%20Explorer%20Filters%20-%20Skipped%20Activities.csv"

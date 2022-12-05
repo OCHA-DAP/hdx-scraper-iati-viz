@@ -44,6 +44,27 @@ class Lookups:
     checks = None
 
     @classmethod
+    def clear(cls):
+        cls.org_ref_spurious = list()
+        cls.org_ref_to_name = dict()
+        cls.org_ref_to_type = dict()
+        cls.org_names_to_ref = dict()
+        cls.org_names_to_type = dict()
+        cls.used_reporting_orgs = set()
+        cls.default_org_id = None
+        cls.default_org_name = None
+        cls.default_expenditure_org_name = None
+        cls.sector_lookups = None
+        cls.region_code_to_name = dict()
+        cls.default_country_region = None
+        cls.skip_activities = list()
+        cls.skip_reporting_orgs = list()
+        cls.skip_reporting_orgs_children = dict()
+        cls.allow_activities = list()
+        cls.configuration = None
+        cls.checks = None
+
+    @classmethod
     def setup(cls):
         logger.info("Reading in lookups data")
         configuration = cls.configuration["lookups"]

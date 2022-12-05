@@ -10,6 +10,7 @@ from hdx.utilities.errors_onexit import ErrorsOnExit
 from hdx.utilities.path import temp_dir
 from hdx.utilities.retriever import Retrieve
 
+from iati.lookups import Lookups
 from iati.main import start
 
 
@@ -41,7 +42,7 @@ class TestIATICovid:
     def test_run(self, configuration, fixtures_dir, input_dir):
         with ErrorsOnExit() as errors_on_exit:
             with temp_dir(
-                "TestIATIViz", delete_on_success=True, delete_on_failure=False
+                "TestIATICovid", delete_on_success=True, delete_on_failure=False
             ) as tempdir:
                 with Download(user_agent="test") as downloader:
                     retriever = Retrieve(
@@ -53,6 +54,7 @@ class TestIATICovid:
                         use_saved=True,
                     )
                     today = "2021-05-30"
+                    Lookups.clear()
                     start(
                         configuration,
                         today,

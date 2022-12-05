@@ -1,0 +1,1792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iati-activities xmlns:ns0="http://d-portal.org/xmlns/dstore" xmlns:ns1="http://d-portal.org/xmlns/iati-activities" xmlns:ns2="xml" version="2.03">
+ <iati-activity default-currency="EUR" dstore:dataset="ec-intpa-cg" dstore:index="594" hierarchy="2" humanitarian="0" iati-activities:version="2.03" xml:lang="EN" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>XI-IATI-EC_INTPA-2021/429-054</iati-identifier>
+  <reporting-org ref="XI-IATI-EC_INTPA" secondary-reporter="0" type="15">
+   <narrative xml:lang="EN">European Commission - International Partnerships</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">PRCCE II - Lot n3 Matériels et équipements destinés à un atelier de fabrication de meubles et scierie mobile</narrative>
+  </title>
+  <description type="1">
+   <narrative xml:lang="EN">L'objet du marché est la fourniture, l'installation et la mise en service des équipements et matériels destinés à un atelier de fabrication de meubles et scierie mobile Lot n3 négocié du marché de fourniture de matériels destinés aux clusters chargés de laccompagnement et de la formation des entrepreneurs du secteur du mas, de lagroalimentaire, du bois et de sa transformation (référence NEGO-INTPA/BZV/2021/EA-OP/0058) lancé dans le cadre du Programme de Renforcement des Capacités Commerc</narrative>
+  </description>
+  <participating-org activity-id="XI-IATI-EC_INTPA-2021/429-054" ref="N/A" role="4" type="15">
+   <narrative xml:lang="EN">EC_INTPA</narrative>
+  </participating-org>
+  <participating-org activity-id="XI-IATI-EC_INTPA-2021/429-054" ref="XI-IATI-EC_INTPA" role="1" type="15">
+   <narrative xml:lang="EN">European Commission - Directorate-General for International Partnerships (INTPA)</narrative>
+  </participating-org>
+  <participating-org activity-id="XI-IATI-EC_INTPA-2021/429-054" ref="XT-IATI-EC_INTPA" role="3" type="15">
+   <narrative xml:lang="EN">European Development Fund</narrative>
+  </participating-org>
+  <participating-org activity-id="XI-IATI-EC_INTPA-2021/429-054" ref="12000" role="2">
+   <narrative xml:lang="EN">Recipient Government</narrative>
+  </participating-org>
+  <other-identifier ref="2016000504014" type="A2"/>
+  <other-identifier ref="XI-IATI-EC_DEVCO" type="B1"/>
+  <activity-status code="2"/>
+  <activity-date iso-date="2022-01-17" type="2">
+   <narrative xml:lang="EN">Actual Start: 17-JAN-22</narrative>
+  </activity-date>
+  <activity-date iso-date="2022-10-13" type="3">
+   <narrative xml:lang="EN">Planned End: 13-OCT-22</narrative>
+  </activity-date>
+  <activity-date iso-date="2021-12-13" type="1">
+   <narrative xml:lang="EN">Planned Start: 13-DEC-21</narrative>
+  </activity-date>
+  <contact-info type="1">
+   <organisation>
+    <narrative xml:lang="EN">Delegation of the European Union to Congo</narrative>
+   </organisation>
+   <department>
+    <narrative xml:lang="EN">Delegation of the European Union to Congo</narrative>
+   </department>
+   <telephone>242) 05 521 74 00/ (242) 05 521 74 01/ (242) 05 521 74 02</telephone>
+   <email>delegation-rep-of-congo@eeas.europa.eu</email>
+   <website>http://eeas.europa.eu/delegations/congo/index_fr.htm</website>
+  </contact-info>
+  <activity-scope code="1"/>
+  <recipient-country code="CG" percentage="100">
+   <narrative xml:lang="EN">Congo</narrative>
+  </recipient-country>
+  <location>
+   <description>
+    <narrative xml:lang="EN">En République du Congo, plus spécifiquement les équipements sont à livrer à Brazzaville, Pointe-Noire et Sibiti</narrative>
+   </description>
+   <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+    <pos>-4.2592 15.2847</pos>
+   </point>
+  </location>
+  <sector code="32140" percentage="25" vocabulary="1">
+   <narrative xml:lang="EN">Cottage industries and handicraft</narrative>
+  </sector>
+  <sector code="32162" percentage="25" vocabulary="1">
+   <narrative xml:lang="EN">Forest industries</narrative>
+  </sector>
+  <sector code="32130" percentage="50" vocabulary="1">
+   <narrative xml:lang="EN">Small and medium-sized enterprises (SME) development</narrative>
+  </sector>
+  <tag code="1" vocabulary="2">
+   <narrative xml:lang="EN">SDG 01: No Poverty</narrative>
+  </tag>
+  <tag code="9" vocabulary="2">
+   <narrative xml:lang="EN">SDG 09: Industry, Innovation and Infrastructure</narrative>
+  </tag>
+  <policy-marker code="5" significance="0" vocabulary="1">
+   <narrative xml:lang="EN">Aid Targeting the Objectives of the Convention on Biological Diversity</narrative>
+  </policy-marker>
+  <policy-marker code="8" significance="0" vocabulary="1">
+   <narrative xml:lang="EN">Aid Targeting the Objectives of the Convention to Combat Desertification</narrative>
+  </policy-marker>
+  <policy-marker code="7" significance="0" vocabulary="1">
+   <narrative xml:lang="EN">Aid Targeting the Objectives of the Framework Convention on Climate Change - Adaptation</narrative>
+  </policy-marker>
+  <policy-marker code="6" significance="0" vocabulary="1">
+   <narrative xml:lang="EN">Aid Targeting the Objectives of the Framework Convention on Climate Change - Mitigation</narrative>
+  </policy-marker>
+  <policy-marker code="2" significance="0" vocabulary="1">
+   <narrative xml:lang="EN">Aid to Environment</narrative>
+  </policy-marker>
+  <policy-marker code="11" significance="0" vocabulary="1">
+   <narrative xml:lang="EN">Disability</narrative>
+  </policy-marker>
+  <policy-marker code="10" significance="0" vocabulary="1">
+   <narrative xml:lang="EN">Disaster Risk Reduction (DRR)</narrative>
+  </policy-marker>
+  <policy-marker code="1" significance="0" vocabulary="1">
+   <narrative xml:lang="EN">Gender Equality</narrative>
+  </policy-marker>
+  <policy-marker code="12" significance="0" vocabulary="1">
+   <narrative xml:lang="EN">Nutrition</narrative>
+  </policy-marker>
+  <policy-marker code="3" significance="0" vocabulary="1">
+   <narrative xml:lang="EN">Participatory Development/Good Governance</narrative>
+  </policy-marker>
+  <policy-marker code="9" significance="0" vocabulary="1">
+   <narrative xml:lang="EN">Reproductive, Maternal, Newborn and Child Health (RMNCH)</narrative>
+  </policy-marker>
+  <policy-marker code="4" significance="0" vocabulary="1">
+   <narrative xml:lang="EN">Trade Development</narrative>
+  </policy-marker>
+  <collaboration-type code="1"/>
+  <default-flow-type code="10"/>
+  <default-finance-type code="110"/>
+  <default-aid-type code="C01" vocabulary="1"/>
+  <budget status="2" type="1">
+   <period-start iso-date="2023-01-01"/>
+   <period-end iso-date="2023-12-31"/>
+   <value currency="EUR" value-date="2022-11-23">0</value>
+  </budget>
+  <capital-spend percentage="0"/>
+  <transaction humanitarian="0" ref="XI-IATI-EC_INTPA-2021/429-054/FED/2021/429-054-PRCCE II - LOT N3 MATÉRIELS ET ÉQUIPEMENTS DESTINÉS À UN ATELIER DE FABRICATION DE MEUBLES ET SCIERIE MOBILE">
+   <transaction-type code="4"/>
+   <transaction-date iso-date="2021-12-28"/>
+   <value currency="EUR" value-date="2022-11-23">116091.44</value>
+   <provider-org provider-activity-id="XI-IATI-EC_INTPA-2021/429-054" ref="XI-IATI-EC_INTPA" type="15"/>
+   <receiver-org>
+    <narrative xml:lang="EN">Agence Commerciale Industrielle Etagricole (Acia) Sas*</narrative>
+   </receiver-org>
+   <disbursement-channel code="2"/>
+   <flow-type code="10"/>
+   <finance-type code="110"/>
+   <aid-type code="C01" vocabulary="1"/>
+  </transaction>
+  <related-activity ref="XI-IATI-EC_INTPA-2016/38622/0" type="1"/>
+  <conditions attached="0"/>
+ </iati-activity>
+  <iati-activity default-currency="EUR" dstore:dataset="pax-pax-scc-iati-activitiesfile" dstore:index="1" hierarchy="1" humanitarian="0" iati-activities:version="2.03" xml:lang="ENG" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://iatistandard.org/203/schema/downloads/iati-activities-schema.xsd">
+  <iati-identifier>NL-KVK-30214009-C380</iati-identifier>
+  <reporting-org ref="NL-KVK-30214009" type="21">
+   <narrative xml:lang="ENG">PAX</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="ENG">Strengthening Civil Courage &#x2013; Partnership</narrative>
+  </title>
+  <description type="4">
+   <narrative xml:lang="ENG">The Strengthening Civil Courage Programme consists of 11 country programmes in Africa and the Middle East, a regional programme in the Sahel and a programme at international level. Country and regional programmes are published as separate IATI activities as well.</narrative>
+  </description>
+  <description type="1">
+   <narrative xml:lang="ENG">The Strengthening Civil Courage programme builds on hope, the hope that emanates from the emerging citizens protest movements that reflect civil courage and the inexhaustible and universal desire for peace and fundamental rights. All over the world, people stand up, organize themselves and raise their voices, despite many challenges and obstacles. Democracy and pluralism are under assault in many countries, political violence is rising, violence against women continues, civic space is under attack, arms trade is flourishing, conflicts affect environments and climate change aggravates inequality and strife. The Strengthening Civil Courage Alliance intends to stand with these courageous people and support them. The Alliance consists of ABAAD &#x2013; Resource Center for Gender Equality, Amnesty International The Netherlands, DefendDefenders and PAX.</narrative>
+  </description>
+  <description type="3">
+   <narrative xml:lang="ENG">The alliance works primarily with civil society organisations in the programme countries, victim groups, (women) human rights defenders, local communities, traditional and religious leaders with a special focus on supporting youth and female leadership.</narrative>
+  </description>
+  <description type="2">
+   <narrative xml:lang="ENG">The programme aspires to contribute to more equal power relations for realising inclusive peace and justice. Together with its in-country partner networks, it will defend and increase civic space, transform (local) conflicts, protect human rights, pursue gender equality and work on mitigation of external stress factors like illegal arms trade and unresponsible business conduct.</narrative>
+  </description>
+  <participating-org ref="LB-MOI-497" role="4" type="22">
+   <narrative xml:lang="ENG">ABAAD &#x2013; Resource Center for Gender Equality</narrative>
+  </participating-org>
+  <participating-org activity-id="NL-KVK-40530953-SCC1" ref="NL-KVK-40530953" role="4" type="21">
+   <narrative xml:lang="ENG">Amnesty International The Netherlands</narrative>
+  </participating-org>
+  <participating-org ref="UG-NGO-1406" role="4" type="80">
+   <narrative xml:lang="ENG">DefendDefenders</narrative>
+  </participating-org>
+  <participating-org activity-id="XM-DAC-7-PPR-4000004336" ref="XM-DAC-7" role="1" type="10">
+   <narrative xml:lang="ENG">Netherlands &#x2013; Ministry of Foreign Affairs</narrative>
+  </participating-org>
+  <participating-org activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" role="2" type="21">
+   <narrative xml:lang="ENG">PAX</narrative>
+  </participating-org>
+  <participating-org activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" role="4" type="21">
+   <narrative xml:lang="ENG">PAX</narrative>
+  </participating-org>
+  <activity-status code="2"></activity-status>
+  <activity-date iso-date="2021-01-01" type="2"></activity-date>
+  <activity-date iso-date="2025-12-31" type="3"></activity-date>
+  <contact-info type="1">
+   <organisation>
+    <narrative xml:lang="ENG">PAX</narrative>
+   </organisation>
+   <email>iati-pax@paxforpeace.nl</email>
+   <website>www.paxforpeace.nl</website>
+   <mailing-address>
+    <narrative xml:lang="ENG">P.O. Box 19318
+  3501 DH Utrecht
+  The Netherlands</narrative>
+   </mailing-address>
+  </contact-info>
+  <recipient-region code="298" percentage="55" vocabulary="1">
+   <narrative xml:lang="ENG">Africa</narrative>
+  </recipient-region>
+  <recipient-region code="589" percentage="45" vocabulary="1">
+   <narrative xml:lang="ENG">Middle East</narrative>
+  </recipient-region>
+  <sector code="15220" percentage="50" vocabulary="1">
+   <narrative xml:lang="ENG">Civilian peacebuilding, conflict prevention and resolution</narrative>
+  </sector>
+  <sector code="15180" percentage="10" vocabulary="1">
+   <narrative xml:lang="ENG">Ending violence against women and girls</narrative>
+  </sector>
+  <sector code="15160" percentage="30" vocabulary="1">
+   <narrative xml:lang="ENG">Human Rights</narrative>
+  </sector>
+  <sector code="25040" percentage="10" vocabulary="1">
+   <narrative xml:lang="ENG">Responsible business conduct</narrative>
+  </sector>
+  <policy-marker code="1" significance="1" vocabulary="1"></policy-marker>
+  <policy-marker code="3" significance="1" vocabulary="1"></policy-marker>
+  <collaboration-type code="1"></collaboration-type>
+  <default-flow-type code="30"></default-flow-type>
+  <default-finance-type code="110"></default-finance-type>
+  <default-aid-type code="C01" vocabulary="1"></default-aid-type>
+  <default-tied-status code="5"></default-tied-status>
+  <budget>
+   <period-start iso-date="2021-01-01"></period-start>
+   <period-end iso-date="2021-12-31"></period-end>
+   <value currency="EUR" value-date="2021-01-01">11461986</value>
+  </budget>
+  <budget>
+   <period-start iso-date="2022-01-01"></period-start>
+   <period-end iso-date="2022-12-31"></period-end>
+   <value currency="EUR" value-date="2021-01-01">11419754</value>
+  </budget>
+  <budget>
+   <period-start iso-date="2023-01-01"></period-start>
+   <period-end iso-date="2023-12-31"></period-end>
+   <value currency="EUR" value-date="2021-01-01">11516242</value>
+  </budget>
+  <budget>
+   <period-start iso-date="2024-01-01"></period-start>
+   <period-end iso-date="2024-12-31"></period-end>
+   <value currency="EUR" value-date="2021-01-01">11277409</value>
+  </budget>
+  <budget>
+   <period-start iso-date="2025-01-01"></period-start>
+   <period-end iso-date="2025-12-31"></period-end>
+   <value currency="EUR" value-date="2021-01-01">11349317</value>
+  </budget>
+  <transaction>
+   <transaction-type code="4"></transaction-type>
+   <transaction-date iso-date="2021-12-31"></transaction-date>
+   <value currency="EUR" value-date="2021-12-31">1095751</value>
+   <description>
+    <narrative xml:lang="ENG">2021 Total Expenditure on crosscutting supporting strategies</narrative>
+   </description>
+  </transaction>
+  <transaction>
+   <transaction-type code="4"></transaction-type>
+   <transaction-date iso-date="2021-12-31"></transaction-date>
+   <value currency="EUR" value-date="2021-12-31">534071</value>
+   <description>
+    <narrative xml:lang="ENG">2021 Total Expenditure on international level activities</narrative>
+   </description>
+  </transaction>
+  <transaction>
+   <transaction-type code="4"></transaction-type>
+   <transaction-date iso-date="2021-12-31"></transaction-date>
+   <value currency="EUR" value-date="2021-12-31">704635</value>
+   <description>
+    <narrative xml:lang="ENG">2021 Total Expenditure on programme management</narrative>
+   </description>
+  </transaction>
+  <transaction>
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-12-31"></transaction-date>
+   <value currency="EUR" value-date="2021-12-31">4691967</value>
+   <description>
+    <narrative xml:lang="ENG">2021 Total financing PAX SCC country programmes</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="11"></transaction-type>
+   <transaction-date iso-date="2020-12-17"></transaction-date>
+   <value currency="EUR" value-date="2020-12-17">57024708</value>
+   <description>
+    <narrative xml:lang="ENG">Grant decision &#x201C;Strengthening Civil Courage-PoV&#x201D; 2021-2025</narrative>
+   </description>
+   <provider-org provider-activity-id="XM-DAC-7-PPR-4000004336" ref="XM-DAC-7" type="10">
+    <narrative xml:lang="ENG">Netherlands &#x2013; Ministry of Foreign Affairs</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction ref="221027">
+   <transaction-type code="1"></transaction-type>
+   <transaction-date iso-date="2020-12-21"></transaction-date>
+   <value currency="EUR" value-date="2020-12-21">5000000</value>
+   <description>
+    <narrative xml:lang="ENG">SCC 2021-2025 tranche 1 part 1</narrative>
+   </description>
+   <provider-org provider-activity-id="XM-DAC-7-PPR-4000004336" ref="XM-DAC-7" type="10">
+    <narrative xml:lang="ENG">Netherlands &#x2013; Ministry of Foreign Affairs</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction ref="221035">
+   <transaction-type code="1"></transaction-type>
+   <transaction-date iso-date="2021-02-01"></transaction-date>
+   <value currency="EUR" value-date="2021-02-01">6461986</value>
+   <description>
+    <narrative xml:lang="ENG">SCC 2021-2025 tranche 1 part 2</narrative>
+   </description>
+   <provider-org provider-activity-id="XM-DAC-7-PPR-4000004336" ref="XM-DAC-7" type="10">
+    <narrative xml:lang="ENG">Netherlands &#x2013; Ministry of Foreign Affairs</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction ref="222009">
+   <transaction-type code="1"></transaction-type>
+   <transaction-date iso-date="2022-02-01"></transaction-date>
+   <value currency="EUR" value-date="2022-02-01">10943917</value>
+   <description>
+    <narrative xml:lang="ENG">SCC 2021-2025 tranche 2</narrative>
+   </description>
+   <provider-org provider-activity-id="XM-DAC-7-PPR-4000004336" ref="XM-DAC-7" type="10">
+    <narrative xml:lang="ENG">Netherlands &#x2013; Ministry of Foreign Affairs</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="2"></transaction-type>
+   <transaction-date iso-date="2021-02-01"></transaction-date>
+   <value currency="EUR" value-date="2021-02-01">5702470</value>
+   <description>
+    <narrative xml:lang="ENG">SCC Partnership Agreement 2021-2025 - Addendum</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org ref="LB-MOI-497" type="22">
+    <narrative xml:lang="ENG">ABAAD &#x2013; Resource Center for Gender Equality</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="2"></transaction-type>
+   <transaction-date iso-date="2021-02-01"></transaction-date>
+   <value currency="EUR" value-date="2021-02-01">5702470</value>
+   <description>
+    <narrative xml:lang="ENG">SCC Partnership Agreement 2021-2025 - Addendum</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-40530953-SCC1" ref="NL-KVK-40530953" type="21">
+    <narrative xml:lang="ENG">Amnesty International The Netherlands</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="2"></transaction-type>
+   <transaction-date iso-date="2021-02-01"></transaction-date>
+   <value currency="EUR" value-date="2021-02-01">5702470</value>
+   <description>
+    <narrative xml:lang="ENG">SCC Partnership Agreement 2021-2025 - Addendum</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org ref="UG-NGO-1406" type="80">
+    <narrative xml:lang="ENG">DefendDefenders</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="2"></transaction-type>
+   <transaction-date iso-date="2021-01-01"></transaction-date>
+   <value currency="EUR" value-date="2021-01-01">3402769</value>
+   <description>
+    <narrative xml:lang="ENG">SCC budget 2021-2025 for PAX projects</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-30214009-SCC-CD" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="2"></transaction-type>
+   <transaction-date iso-date="2021-01-01"></transaction-date>
+   <value currency="EUR" value-date="2021-01-01">3648555</value>
+   <description>
+    <narrative xml:lang="ENG">SCC budget 2021-2025 for PAX projects</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-30214009-SCC-ESF" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="2"></transaction-type>
+   <transaction-date iso-date="2021-01-01"></transaction-date>
+   <value currency="EUR" value-date="2021-01-01">5160549</value>
+   <description>
+    <narrative xml:lang="ENG">SCC budget 2021-2025 for PAX projects</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-30214009-SCC-IQ" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="2"></transaction-type>
+   <transaction-date iso-date="2021-01-01"></transaction-date>
+   <value currency="EUR" value-date="2021-01-01">1725464</value>
+   <description>
+    <narrative xml:lang="ENG">SCC budget 2021-2025 for PAX projects</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-30214009-SCC-LB" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="2"></transaction-type>
+   <transaction-date iso-date="2021-01-01"></transaction-date>
+   <value currency="EUR" value-date="2021-01-01">1544280</value>
+   <description>
+    <narrative xml:lang="ENG">SCC budget 2021-2025 for PAX projects</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-30214009-SCC-PS" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="2"></transaction-type>
+   <transaction-date iso-date="2021-01-01"></transaction-date>
+   <value currency="EUR" value-date="2021-01-01">3320262</value>
+   <description>
+    <narrative xml:lang="ENG">SCC budget 2021-2025 for PAX projects</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-30214009-SCC-SAH" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="2"></transaction-type>
+   <transaction-date iso-date="2021-01-01"></transaction-date>
+   <value currency="EUR" value-date="2021-01-01">5553772</value>
+   <description>
+    <narrative xml:lang="ENG">SCC budget 2021-2025 for PAX projects</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-30214009-SCC-SS" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="2"></transaction-type>
+   <transaction-date iso-date="2021-01-01"></transaction-date>
+   <value currency="EUR" value-date="2021-01-01">2650498</value>
+   <description>
+    <narrative xml:lang="ENG">SCC budget 2021-2025 for PAX projects</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-30214009-SCC-SY" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="2"></transaction-type>
+   <transaction-date iso-date="2021-01-01"></transaction-date>
+   <value currency="EUR" value-date="2021-01-01">2042436</value>
+   <description>
+    <narrative xml:lang="ENG">SCC budget 2021-2025 for PAX projects</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-30214009-SCC-YE" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="2"></transaction-type>
+   <transaction-date iso-date="2021-01-01"></transaction-date>
+   <value currency="EUR" value-date="2021-01-01">1819643</value>
+   <description>
+    <narrative xml:lang="ENG">SCC budget 2021-2025 for PAX projects</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="undisclosed" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction ref="211519">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-02-08"></transaction-date>
+   <value currency="EUR" value-date="2021-02-08">200000</value>
+   <description>
+    <narrative xml:lang="ENG">SCC disbursement 2021 tr.1</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-40530953-SCC1" ref="NL-KVK-40530953" type="21">
+    <narrative xml:lang="ENG">Amnesty International The Netherlands</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction ref="211519">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-02-09"></transaction-date>
+   <value currency="EUR" value-date="2021-02-09">277654</value>
+   <description>
+    <narrative xml:lang="ENG">SCC disbursement 2021 tr.2</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-40530953-SCC1" ref="NL-KVK-40530953" type="21">
+    <narrative xml:lang="ENG">Amnesty International The Netherlands</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction ref="211519">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-02-10"></transaction-date>
+   <value currency="EUR" value-date="2021-02-10">400000</value>
+   <description>
+    <narrative xml:lang="ENG">SCC disbursement 2021 tr.3</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-40530953-SCC1" ref="NL-KVK-40530953" type="21">
+    <narrative xml:lang="ENG">Amnesty International The Netherlands</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction ref="211519">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-02-11"></transaction-date>
+   <value currency="EUR" value-date="2021-02-11">217319</value>
+   <description>
+    <narrative xml:lang="ENG">SCC disbursement 2021 tr.4</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-40530953-SCC1" ref="NL-KVK-40530953" type="21">
+    <narrative xml:lang="ENG">Amnesty International The Netherlands</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction ref="211522">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-03-18"></transaction-date>
+   <value currency="EUR" value-date="2021-03-18">280477</value>
+   <description>
+    <narrative xml:lang="ENG">SCC disbursement 2021 tr1</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org ref="LB-MOI-497" type="22">
+    <narrative xml:lang="ENG">ABAAD &#x2013; Resource Center for Gender Equality</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction ref="211520">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-02-09"></transaction-date>
+   <value currency="EUR" value-date="2021-02-09">413531</value>
+   <description>
+    <narrative xml:lang="ENG">SCC disbursement 2021 tr1</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org ref="UG-NGO-1406" type="80">
+    <narrative xml:lang="ENG">DefendDefenders</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction ref="211522">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-03-19"></transaction-date>
+   <value currency="EUR" value-date="2021-03-19">408998</value>
+   <description>
+    <narrative xml:lang="ENG">SCC disbursement 2021 tr2</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org ref="LB-MOI-497" type="22">
+    <narrative xml:lang="ENG">ABAAD &#x2013; Resource Center for Gender Equality</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction ref="211520">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-02-16"></transaction-date>
+   <value currency="EUR" value-date="2021-02-16">413531</value>
+   <description>
+    <narrative xml:lang="ENG">SCC disbursement 2021 tr2</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org ref="UG-NGO-1406" type="80">
+    <narrative xml:lang="ENG">DefendDefenders</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction ref="211522">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-03-22"></transaction-date>
+   <value currency="EUR" value-date="2021-03-22">408998</value>
+   <description>
+    <narrative xml:lang="ENG">SCC disbursement 2021 tr3</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org ref="LB-MOI-497" type="22">
+    <narrative xml:lang="ENG">ABAAD &#x2013; Resource Center for Gender Equality</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction ref="211520">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-02-17"></transaction-date>
+   <value currency="EUR" value-date="2021-02-17">366673</value>
+   <description>
+    <narrative xml:lang="ENG">SCC disbursement 2021 tr3</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org ref="UG-NGO-1406" type="80">
+    <narrative xml:lang="ENG">DefendDefenders</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction ref="220205">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2022-01-31"></transaction-date>
+   <value currency="EUR" value-date="2022-01-31">1182686</value>
+   <description>
+    <narrative xml:lang="ENG">SCC disbursement 2022</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="NL-KVK-40530953-SCC1" ref="NL-KVK-40530953" type="21">
+    <narrative xml:lang="ENG">Amnesty International The Netherlands</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction ref="220206">
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2022-01-31"></transaction-date>
+   <value currency="EUR" value-date="2022-01-31">1136679</value>
+   <description>
+    <narrative xml:lang="ENG">SCC disbursement 2022</narrative>
+   </description>
+   <provider-org provider-activity-id="NL-KVK-30214009-C380" ref="NL-KVK-30214009" type="21">
+    <narrative xml:lang="ENG">PAX</narrative>
+   </provider-org>
+   <receiver-org ref="UG-NGO-1406" type="80">
+    <narrative xml:lang="ENG">DefendDefenders</narrative>
+   </receiver-org>
+  </transaction>
+  <result aggregation-status="1" type="2">
+   <title>
+    <narrative xml:lang="ENG"># of laws, policies blocked, adopted, improved for sustainable and inclusive development as a result of CSO engagement</narrative>
+   </title>
+   <indicator ascending="1" measure="1">
+    <title>
+     <narrative xml:lang="ENG"># of laws blocked, adopted, improved for sustainable and inclusive development as a result of CSO engagement</narrative>
+    </title>
+    <reference code="SCS021" vocabulary="99"></reference>
+    <baseline value="0" year="2021"></baseline>
+    <period>
+     <period-start iso-date="2021-01-01"></period-start>
+     <period-end iso-date="2025-12-31"></period-end>
+     <target value="1"></target>
+    </period>
+   </indicator>
+   <indicator ascending="1" measure="1">
+    <title>
+     <narrative xml:lang="ENG"># of governmental policies blocked, adopted, improved for sustainable and inclusive development as a result of CSO engagement</narrative>
+    </title>
+    <reference code="SCS022" vocabulary="99"></reference>
+    <baseline value="0" year="2021"></baseline>
+    <period>
+     <period-start iso-date="2021-01-01"></period-start>
+     <period-end iso-date="2025-12-31"></period-end>
+     <target value="1"></target>
+    </period>
+   </indicator>
+   <indicator ascending="1" measure="1">
+    <title>
+     <narrative xml:lang="ENG"># of private sector company policies blocked, adopted, improved for sustainable and inclusive development as a result of CSO engagement</narrative>
+    </title>
+    <reference code="SCS023" vocabulary="99"></reference>
+    <baseline value="0" year="2021"></baseline>
+    <period>
+     <period-start iso-date="2021-01-01"></period-start>
+     <period-end iso-date="2025-12-31"></period-end>
+     <target value="3"></target>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="1" type="2">
+   <title>
+    <narrative xml:lang="ENG"># of times that CSOs succeed in creating space for CSO demands and positions through agenda setting, influencing the debate and/or creating space to engage</narrative>
+   </title>
+   <indicator ascending="1" measure="1">
+    <title>
+     <narrative xml:lang="ENG"># of times that CSOs succeed in creating space for CSO demands and positions through agenda setting, influencing the debate and/or creating space to engage at national or international level</narrative>
+    </title>
+    <reference code="SCS031" vocabulary="99"></reference>
+    <baseline value="0" year="2021"></baseline>
+    <period>
+     <period-start iso-date="2021-01-01"></period-start>
+     <period-end iso-date="2025-12-31"></period-end>
+     <target value="24"></target>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="1" type="2">
+   <title>
+    <narrative xml:lang="ENG"># of advocacy initiatives carried out by CSOs, for, by or with their membership/constituency</narrative>
+   </title>
+   <indicator ascending="1" measure="1">
+    <title>
+     <narrative xml:lang="ENG"># of advocacy initiatives carried out by CSOs, for, by or with their membership/constituency</narrative>
+    </title>
+    <reference code="SCS041" vocabulary="99"></reference>
+    <baseline value="0" year="2021"></baseline>
+    <period>
+     <period-start iso-date="2021-01-01"></period-start>
+     <period-end iso-date="2025-12-31"></period-end>
+     <target value="91"></target>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="1" type="1">
+   <title>
+    <narrative xml:lang="ENG"># of CSOs with increased L&amp;A capacities</narrative>
+   </title>
+   <indicator ascending="1" measure="1">
+    <title>
+     <narrative xml:lang="ENG"># of youth led CSOs with increased L&amp;A capacities</narrative>
+    </title>
+    <reference code="SCS052" vocabulary="99"></reference>
+    <baseline value="0" year="2022"></baseline>
+    <period>
+     <period-start iso-date="2022-01-01"></period-start>
+     <period-end iso-date="2022-12-31"></period-end>
+     <target value="1"></target>
+    </period>
+   </indicator>
+   <indicator ascending="1" measure="1">
+    <title>
+     <narrative xml:lang="ENG"># of women led CSOs with increased L&amp;A capacities</narrative>
+    </title>
+    <reference code="SCS051" vocabulary="99"></reference>
+    <baseline value="0" year="2022"></baseline>
+    <period>
+     <period-start iso-date="2022-01-01"></period-start>
+     <period-end iso-date="2022-12-31"></period-end>
+     <target value="3"></target>
+    </period>
+   </indicator>
+   <indicator ascending="1" measure="1">
+    <title>
+     <narrative xml:lang="ENG"># of other CSOs (not youth or women led) with increased L&amp;A capacities</narrative>
+    </title>
+    <reference code="SCS053" vocabulary="99"></reference>
+    <baseline value="0" year="2022"></baseline>
+    <period>
+     <period-start iso-date="2022-01-01"></period-start>
+     <period-end iso-date="2022-12-31"></period-end>
+     <target value="3"></target>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="1" type="1">
+   <title>
+    <narrative xml:lang="ENG"># of CSOs included in the SCS programme</narrative>
+   </title>
+   <indicator ascending="1" measure="1">
+    <title>
+     <narrative xml:lang="ENG"># of youth led CSOs included in the SCS programme</narrative>
+    </title>
+    <reference code="SCS062" vocabulary="99"></reference>
+    <baseline value="1" year="2021"></baseline>
+    <period>
+     <period-start iso-date="2021-01-01"></period-start>
+     <period-end iso-date="2021-12-31"></period-end>
+     <target value="1"></target>
+     <actual value="1"></actual>
+    </period>
+    <period>
+     <period-start iso-date="2022-01-01"></period-start>
+     <period-end iso-date="2022-12-31"></period-end>
+     <target value="2"></target>
+    </period>
+   </indicator>
+   <indicator ascending="1" measure="1">
+    <title>
+     <narrative xml:lang="ENG"># of other ( not youth or women led) CSOs included in the SCS programme</narrative>
+    </title>
+    <reference code="SCS063" vocabulary="99"></reference>
+    <baseline value="22" year="2021"></baseline>
+    <period>
+     <period-start iso-date="2021-01-01"></period-start>
+     <period-end iso-date="2021-12-31"></period-end>
+     <target value="24"></target>
+     <actual value="22"></actual>
+    </period>
+    <period>
+     <period-start iso-date="2022-01-01"></period-start>
+     <period-end iso-date="2022-12-31"></period-end>
+     <target value="25"></target>
+    </period>
+   </indicator>
+   <indicator ascending="1" measure="1">
+    <title>
+     <narrative xml:lang="ENG"># of women led CSOs included in the SCS programme</narrative>
+    </title>
+    <reference code="SCS061" vocabulary="99"></reference>
+    <baseline value="5" year="2021"></baseline>
+    <period>
+     <period-start iso-date="2021-01-01"></period-start>
+     <period-end iso-date="2021-12-31"></period-end>
+     <target value="6"></target>
+     <actual value="6"></actual>
+    </period>
+    <period>
+     <period-start iso-date="2022-01-01"></period-start>
+     <period-end iso-date="2022-12-31"></period-end>
+     <target value="9"></target>
+    </period>
+   </indicator>
+  </result>
+ </iati-activity>
+ <iati-activity default-currency="EUR" dstore:dataset="tbi-activities" dstore:index="14" hierarchy="1" humanitarian="0" iati-activities:version="2.03" xml:lang="EN" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>NL-KVK-41155305-GLA2-Coord</iati-identifier>
+  <reporting-org ref="NL-KVK-41155305" type="22">
+   <narrative xml:lang="EN">Tropenbos International</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">Green Livelihoods Alliance 2 Coordination</narrative>
+  </title>
+  <description type="1">
+   <narrative xml:lang="EN">General coordination of activities and liaising with implementing partners.</narrative>
+  </description>
+  <participating-org activity-id="NL-KVK-41155305-GLA2" ref="NL-KVK-41155305" role="1" type="21">
+   <narrative xml:lang="EN">Tropenbos International</narrative>
+  </participating-org>
+  <participating-org activity-id="NL-KVK-41155305-GLA2" ref="NL-KVK-41155305" role="2" type="21">
+   <narrative xml:lang="EN">Tropenbos International</narrative>
+  </participating-org>
+  <participating-org activity-id="NL-KVK-41155305-GLA2" ref="NL-KVK-41155305" role="4" type="21">
+   <narrative xml:lang="EN">Tropenbos International</narrative>
+  </participating-org>
+  <activity-status code="2"/>
+  <activity-date iso-date="2021-01-01" type="2"/>
+  <activity-date iso-date="2025-12-31" type="3"/>
+  <recipient-region code="998" percentage="100" vocabulary="1"/>
+  <sector code="312" percentage="34" vocabulary="2"/>
+  <sector code="410" percentage="33" vocabulary="2"/>
+  <sector code="920" percentage="33" vocabulary="2"/>
+  <policy-marker code="1" significance="2" vocabulary="1"/>
+  <policy-marker code="2" significance="2" vocabulary="1"/>
+  <policy-marker code="3" significance="2" vocabulary="1"/>
+  <policy-marker code="4" significance="0" vocabulary="1"/>
+  <policy-marker code="5" significance="2" vocabulary="1"/>
+  <policy-marker code="6" significance="2" vocabulary="1"/>
+  <policy-marker code="7" significance="1" vocabulary="1"/>
+  <policy-marker code="8" significance="0" vocabulary="1"/>
+  <policy-marker code="9" significance="0" vocabulary="1"/>
+  <budget status="2">
+   <period-start iso-date="2021-01-01"/>
+   <period-end iso-date="2021-12-31"/>
+   <value currency="EUR" value-date="2021-01-01">214724</value>
+  </budget>
+  <budget status="2">
+   <period-start iso-date="2022-01-01"/>
+   <period-end iso-date="2022-12-31"/>
+   <value currency="EUR" value-date="2022-01-01">218138</value>
+  </budget>
+  <transaction ref="Incoming commitment">
+   <transaction-type code="11"/>
+   <transaction-date iso-date="2021-01-01"/>
+   <value currency="EUR" value-date="2021-01-01">599150</value>
+   <provider-org provider-activity-id="NL-KVK-41155305-GLA2"/>
+  </transaction>
+  <transaction ref="Incoming funds 2021">
+   <transaction-type code="1"/>
+   <transaction-date iso-date="2021-12-31"/>
+   <value currency="EUR" value-date="2021-12-31">279750</value>
+  </transaction>
+  <transaction ref="Expenditure 2021">
+   <transaction-type code="4"/>
+   <transaction-date iso-date="2021-12-31"/>
+   <value currency="EUR" value-date="2021-12-31">279750</value>
+  </transaction>
+  <related-activity ref="NL-KVK-41155305-GLA2" type="1"/>
+ </iati-activity>
+ <iati-activity default-currency="GBP" dstore:dataset="cafod-nigeria" dstore:index="47" hierarchy="1" iati-activities:version="2.02" xml:lang="EN" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>GB-CHC-285776-NGR476</iati-identifier>
+  <reporting-org ref="GB-CHC-285776" type="21">
+   <narrative xml:lang="EN">CAFOD</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">Linking relief, rehabilitation and Dev.  through climate sensitive livelihood in Adamawa State</narrative>
+  </title>
+  <description>
+   <narrative xml:lang="EN">Nigeria is faced with water scarcity and droughts which occur every five years, on average, with the potential to increase in frequency due to climate change. This scenario not only threatens food security, livelihoods, and productivity, but also exacerbates fragility and increases the risk of violence. Nigeria has a tropical climate with two precipitation regimes: low precipitation in the North and high precipitation in parts of the Southwest and Southeast. This can lead to aridity, drought and desertification in the north; and flooding and erosion in the South. The drying up of rivers, and particularly the shrinking of Lake Chad is attributable to the effects of climate change and is having a significant impact on conflict-affected population. Climate change poses serious threat to life in rural communities in Northeast Nigeria, particularly in conflict-affected states bordering Cameroun such as Borno and Adamawa.   
+
+Climate change and conflict in Adamawa state:
+Conflicts over resources and communal violence, mostly involving contested resources, have killed at least 10,000 Nigerians in less than a decade . A case in point is Nigeria’s frequent farmer-herder conflicts: feed scarcity and water shortages caused partly by desertification and drought have sent nomadic pastoralists, most of them ethnic Fulanis, wandering south, outside their normal grazing routes. 
+Additionally, for over a decade, the insurgency in Northeast Nigeria has caused severe population movements with large influxes of displaced population seeking safety. As of February 2022, IOM has reported a significant growth of displaced population numbers settling in Adamawa State, particularly in 12 Local Government Areas.  Adamawa has already suffered significant deforestation in recent years with the apparition of large desert areas and deforestation in the proximities of the Dambisa Forest. Agriculture is the mainstay of about 80% of the inhabitants of the State; farming activities include cultivation of root crops (e.g. sweet potatoes, yam and cassava), cereals (maize, sorghum, millet and rice), horticulture and rearing of livestock (cattle, goat, sheep, pig and poultry). In recent years, and with the increase of displaced population in the area, the area has suffered deforestation due to unsustainable charcoal production, and the use of wood for cooking and farming activities. The use of harmful farming practices including an increased use of inorganic fertiliser and chemicals (pesticides and herbicides) on farmlands has contributed to soil erosion and aridity. Rural communities have also resorted to hunting of wild animals in the forest for food, also affecting the biodiversity in the area</narrative>
+  </description>
+  <participating-org activity-id="NGR476" ref="GB-CHC-285776" role="1" type="21">
+   <narrative xml:lang="EN">Catholic Agency For Overseas Development (CAFOD)</narrative>
+  </participating-org>
+  <participating-org activity-id="NGR476" role="4" type="23">
+   <narrative xml:lang="EN">Diocese of Yola, Justice and Peace Commission</narrative>
+  </participating-org>
+  <other-identifier ref="NGR476" type="A1"/>
+  <activity-status code="2"/>
+  <activity-date iso-date="2022-04-01" type="2"/>
+  <activity-date iso-date="2023-03-31" type="3"/>
+  <contact-info>
+   <organisation>
+    <narrative xml:lang="EN">CAFOD</narrative>
+   </organisation>
+   <email>cafod@cafod.org.uk</email>
+  </contact-info>
+  <recipient-country code="NG" percentage="100"/>
+  <sector code="31130" percentage="60" vocabulary="1"/>
+  <sector code="74010" percentage="40" vocabulary="1"/>
+  <policy-marker code="2" significance="2" vocabulary="1"/>
+  <default-flow-type code="30"/>
+  <default-finance-type code="110"/>
+  <default-aid-type code="C01" vocabulary="1"/>
+  <default-tied-status code="5"/>
+  <budget status="1" type="1">
+   <period-start iso-date="2022-04-01"/>
+   <period-end iso-date="2023-03-31"/>
+   <value currency="GBP" value-date="2022-04-01">50000</value>
+  </budget>
+  <transaction ref="55886">
+   <transaction-type code="1"/>
+   <transaction-date iso-date="2022-07-06"/>
+   <value currency="GBP" value-date="2022-07-06">50000</value>
+   <provider-org provider-activity-id="GB-CHC-285776">
+    <narrative xml:lang="EN">CAFOD General Funds</narrative>
+   </provider-org>
+  </transaction>
+ </iati-activity>
+ <iati-activity default-currency="EUR" dstore:dataset="bmz-ht" dstore:index="191" hierarchy="1" iati-activities:linked-data-default="http://www.bmz.de/opendata" iati-activities:version="2.03" xml:lang="DE" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>DE-1-202033942-0</iati-identifier>
+  <reporting-org ref="DE-1" secondary-reporter="0" type="10">
+   <narrative xml:lang="DE">Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ)</narrative>
+   <narrative xml:lang="EN">Federal Ministry for Economic Cooperation and Development (BMZ)</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="DE">Nachhaltiges Management der Ökosysteme in Gemeinden im Department Nippes</narrative>
+   <narrative xml:lang="EN">Sustainable management of ecosystems in communities in the Department of Nippes</narrative>
+  </title>
+  <description type="1">
+   <narrative xml:lang="DE">Nachhaltiges Management der Ökosysteme in Gemeinden im Department Nippes</narrative>
+   <narrative xml:lang="EN">Sustainable management of ecosystems in communities in the Department of Nippes</narrative>
+  </description>
+  <description type="2">
+   <narrative xml:lang="DE">Nachhaltiges Management der Ökosysteme in Gemeinden im Department Nippes</narrative>
+   <narrative xml:lang="EN">Sustainable management of ecosystems in communities in the Department of Nippes</narrative>
+  </description>
+  <participating-org ref="DE-1" role="1" type="10">
+   <narrative xml:lang="DE">Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ)</narrative>
+   <narrative xml:lang="EN">Federal Ministry for Economic Cooperation and Development (BMZ)</narrative>
+  </participating-org>
+  <participating-org role="2">
+   <narrative xml:lang="DE">Katholische Zentralstelle für Entwicklungshilfe e.V. (KZE)</narrative>
+  </participating-org>
+  <participating-org role="3">
+   <narrative xml:lang="DE">Katholische Zentralstelle für Entwicklungshilfe e.V. (KZE)</narrative>
+  </participating-org>
+  <other-identifier ref="202033942" type="A1">
+   <owner-org ref="DE-1">
+    <narrative xml:lang="DE">Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ)</narrative>
+    <narrative xml:lang="EN">Federal Ministry for Economic Cooperation and Development</narrative>
+   </owner-org>
+  </other-identifier>
+  <activity-status code="2"/>
+  <activity-date iso-date="2021-01-01" type="1"/>
+  <activity-date iso-date="2021-01-01" type="2"/>
+  <activity-date iso-date="2024-12-31" type="3"/>
+  <contact-info type="1">
+   <organisation>
+    <narrative xml:lang="DE">Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ)</narrative>
+   </organisation>
+   <email>RL511@bmz.bund.de</email>
+   <website>http://www.bmz.de</website>
+   <mailing-address>
+    <narrative xml:lang="DE">Dahlmannstraße 4, 53113 Bonn, Deutschland</narrative>
+   </mailing-address>
+  </contact-info>
+  <recipient-country code="HT" percentage="100">
+   <narrative xml:lang="DE">Haiti</narrative>
+  </recipient-country>
+  <location>
+   <location-reach code="1"/>
+   <location-id code="3718426" vocabulary="G1"/>
+   <name>
+    <narrative xml:lang="DE">Port-au-Prince</narrative>
+   </name>
+   <description>
+    <narrative xml:lang="DE">capital</narrative>
+   </description>
+   <activity-description>
+    <narrative xml:lang="DE">Location of central agreement and coordination with partner government</narrative>
+   </activity-description>
+   <administrative code="PPLC" level="1" vocabulary="G1"/>
+   <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+    <pos>18.54349 -72.33881</pos>
+   </point>
+   <exactness code="2"/>
+   <location-class code="1"/>
+   <feature-designation code="PPLC"/>
+  </location>
+  <sector code="31120" percentage="100" vocabulary="1"/>
+  <policy-marker code="1" significance="1" vocabulary="1"/>
+  <policy-marker code="2" significance="2" vocabulary="1"/>
+  <policy-marker code="3" significance="2" vocabulary="1"/>
+  <policy-marker code="4" significance="0" vocabulary="1"/>
+  <policy-marker code="5" significance="2" vocabulary="1"/>
+  <policy-marker code="6" significance="0" vocabulary="1"/>
+  <policy-marker code="7" significance="2" vocabulary="1"/>
+  <policy-marker code="8" significance="1" vocabulary="1"/>
+  <policy-marker code="9" significance="0" vocabulary="1"/>
+  <default-flow-type code="10"/>
+  <default-tied-status code="3"/>
+  <budget status="2" type="2">
+   <period-start iso-date="2020-01-01"/>
+   <period-end iso-date="2020-12-31"/>
+   <value currency="EUR" value-date="2022-10-31">315000</value>
+  </budget>
+  <transaction>
+   <transaction-type code="2"/>
+   <transaction-date iso-date="2020-12-03"/>
+   <value currency="EUR" value-date="2020-12-03">315000</value>
+  </transaction>
+  <transaction>
+   <transaction-type code="4"/>
+   <transaction-date iso-date="2022-10-31"/>
+   <value currency="EUR" value-date="2022-10-31">195021.39</value>
+  </transaction>
+  <conditions attached="1">
+   <condition type="1">
+    <narrative xml:lang="DE">0</narrative>
+   </condition>
+  </conditions>
+ </iati-activity>
+  <iati-activity default-currency="EUR" dstore:dataset="jass-jass-pu-activitydataset" dstore:index="1" hierarchy="1" iati-activities:version="2.03" xml:lang="EN" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://iatistandard.org/203/schema/downloads/iati-activities-schema.xsd">
+  <iati-identifier>US-EIN-06-1597-668-PU1-GL</iati-identifier>
+  <reporting-org ref="US-EIN-06-1597-668" type="21">
+   <narrative xml:lang="EN">Just Associates</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="EN">Power Up Global</narrative>
+  </title>
+  <description type="1">
+   <narrative xml:lang="EN">Power Up! is a consortium of women&#x2019;s rights organisations led by JASS, together with the Coalition of African Lesbians (CAL), a queer, Pan-African, feminist organisation; PEKKA, a national women-headed family empowerment network in Indonesia; and Gender at Work (G@W), an international feminist knowledge network. 
+Power Up! will engage with women human rights defenders (WHRD) and their organisations and networks, particularly those that represent constituencies that have been marginalised in their communities and social movements (LBQ3 women, HIV+ women, sex workers, women workers and rural and indigenous women). 
+Together, we will be building, organising, mobilising and transforming power on three strategic agendas: bodies, voices and resources. 
+Strategic objective: 
+Increase collective influence and impact women have on laws &amp; policies, the public discourse and social attitudes and narratives that cause social descrimination, violence and exclusion, contributing to the full realisation of women&#x2019;s rights and gender equality.</narrative>
+  </description>
+  <participating-org activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" role="2" type="21">
+   <narrative xml:lang="EN">JASS</narrative>
+  </participating-org>
+  <participating-org activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" role="4" type="21">
+   <narrative xml:lang="EN">JASS</narrative>
+  </participating-org>
+  <participating-org role="4" type="22">
+   <narrative xml:lang="EN">National Coalition of Human Rights Defenders</narrative>
+  </participating-org>
+  <participating-org role="4" type="22">
+   <narrative xml:lang="EN">Partner A global</narrative>
+  </participating-org>
+  <activity-status code="2"></activity-status>
+  <activity-date iso-date="2021-01-01" type="2"></activity-date>
+  <activity-date iso-date="2025-12-31" type="3"></activity-date>
+  <contact-info type="1">
+   <organisation>
+    <narrative xml:lang="EN">Just Associates</narrative>
+   </organisation>
+   <email>info@justassociates.org</email>
+   <website>https://justassociates.org/</website>
+   <mailing-address>
+    <narrative xml:lang="EN">1900 L Street NW Suite 504
+Washington DC 20036 United States
+Tel: +1.202.232.1211
+Fax: +1.202.232.4715</narrative>
+   </mailing-address>
+  </contact-info>
+  <recipient-region code="389" percentage="100" vocabulary="1">
+   <narrative xml:lang="EN">North &amp; Central America, regional</narrative>
+  </recipient-region>
+  <sector code="15170" percentage="100" vocabulary="1">
+   <narrative xml:lang="EN">Women&#x2019;s rights organisations and movements, and government institutions</narrative>
+  </sector>
+  <policy-marker code="1" significance="1" vocabulary="1"></policy-marker>
+  <collaboration-type code="1"></collaboration-type>
+  <default-flow-type code="30"></default-flow-type>
+  <default-finance-type code="110"></default-finance-type>
+  <default-aid-type code="C01" vocabulary="1"></default-aid-type>
+  <default-tied-status code="5"></default-tied-status>
+  <budget>
+   <period-start iso-date="2021-01-01"></period-start>
+   <period-end iso-date="2021-12-31"></period-end>
+   <value currency="EUR" value-date="2021-01-01">126771</value>
+  </budget>
+  <budget>
+   <period-start iso-date="2022-01-01"></period-start>
+   <period-end iso-date="2022-12-31"></period-end>
+   <value currency="EUR" value-date="2022-01-01">128145</value>
+  </budget>
+  <budget>
+   <period-start iso-date="2023-01-01"></period-start>
+   <period-end iso-date="2023-12-31"></period-end>
+   <value currency="EUR" value-date="2023-01-01">124544</value>
+  </budget>
+  <budget>
+   <period-start iso-date="2024-01-01"></period-start>
+   <period-end iso-date="2024-12-31"></period-end>
+   <value currency="EUR" value-date="2024-01-01">127010</value>
+  </budget>
+  <budget>
+   <period-start iso-date="2025-01-01"></period-start>
+   <period-end iso-date="2025-12-31"></period-end>
+   <value currency="EUR" value-date="2025-01-01">125607</value>
+  </budget>
+  <transaction>
+   <transaction-type code="4"></transaction-type>
+   <transaction-date iso-date="2022-03-31"></transaction-date>
+   <value currency="USD" value-date="2022-03-31">3775.28</value>
+   <description>
+    <narrative xml:lang="EN">Q1 2022 Activity cost for Global</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="4"></transaction-type>
+   <transaction-date iso-date="2022-03-31"></transaction-date>
+   <value currency="USD" value-date="2022-03-31">4043.3</value>
+   <description>
+    <narrative xml:lang="EN">Q1 2022 Indirect costs for Global</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="4"></transaction-type>
+   <transaction-date iso-date="2022-03-31"></transaction-date>
+   <value currency="USD" value-date="2022-03-31">23818.68</value>
+   <description>
+    <narrative xml:lang="EN">Q1 2022 Staff cost for Global</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="4"></transaction-type>
+   <transaction-date iso-date="2022-06-30"></transaction-date>
+   <value currency="USD" value-date="2022-06-30">22493.5</value>
+   <description>
+    <narrative xml:lang="EN">Q2 2022 Activity cost for Global</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2022-04-07"></transaction-date>
+   <value currency="USD" value-date="2022-04-07">5519.45</value>
+   <description>
+    <narrative xml:lang="EN">Q2 2022 Disbursement for Global to partner A</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org type="22">
+    <narrative xml:lang="EN">Partner A in Global</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="4"></transaction-type>
+   <transaction-date iso-date="2022-06-30"></transaction-date>
+   <value currency="USD" value-date="2022-06-30">14743.79</value>
+   <description>
+    <narrative xml:lang="EN">Q2 2022 Indirect cost for Global</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="2"></transaction-type>
+   <transaction-date iso-date="2022-04-07"></transaction-date>
+   <value currency="EUR" value-date="2022-04-07">5000</value>
+   <description>
+    <narrative xml:lang="EN">Q2 2022 Outgoing commitment Global to partner A</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org type="22">
+    <narrative xml:lang="EN">Partner A in Global</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="4"></transaction-type>
+   <transaction-date iso-date="2022-06-30"></transaction-date>
+   <value currency="USD" value-date="2022-06-30">43618.31</value>
+   <description>
+    <narrative xml:lang="EN">Q2 2022 Staff cost for Global</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="4"></transaction-type>
+   <transaction-date iso-date="2021-09-30"></transaction-date>
+   <value currency="USD" value-date="2021-09-30">20262.82</value>
+   <description>
+    <narrative xml:lang="EN">Q3 2021 Activity cost in global till Q3 2021</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2021-08-09"></transaction-date>
+   <value currency="USD" value-date="2021-09-06">6006.4</value>
+   <description>
+    <narrative xml:lang="EN">Q3 2021 Disbursement to partner A in global in 2021</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org type="22">
+    <narrative xml:lang="EN">Partner A in Global</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="4"></transaction-type>
+   <transaction-date iso-date="2021-09-30"></transaction-date>
+   <value currency="USD" value-date="2021-09-30">100</value>
+   <description>
+    <narrative xml:lang="EN">Q3 2021 Indirect cost for Global till Q3 2021</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="4"></transaction-type>
+   <transaction-date iso-date="2021-09-30"></transaction-date>
+   <value currency="USD" value-date="2021-09-30">71503.65</value>
+   <description>
+    <narrative xml:lang="EN">Q3 2021 Staff cost for Global till Q3 2021</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="2"></transaction-type>
+   <transaction-date iso-date="2021-09-23"></transaction-date>
+   <value currency="EUR" value-date="2021-09-23">5000</value>
+   <description>
+    <narrative xml:lang="EN">Q3 2021 Total outgoing commitment to partner A in Global for 2021-2025</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org type="22">
+    <narrative xml:lang="EN">Partner A in Global</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="4"></transaction-type>
+   <transaction-date iso-date="2022-09-30"></transaction-date>
+   <value currency="USD" value-date="2022-09-30">47265.39</value>
+   <description>
+    <narrative xml:lang="EN">Q3 2022 Activity costs for Global</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="4"></transaction-type>
+   <transaction-date iso-date="2022-09-30"></transaction-date>
+   <value currency="USD" value-date="2022-09-30">3880.46</value>
+   <description>
+    <narrative xml:lang="EN">Q3 2022 Indirect costs for Global</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="4"></transaction-type>
+   <transaction-date iso-date="2022-09-30"></transaction-date>
+   <value currency="USD" value-date="2022-09-30">48024.13</value>
+   <description>
+    <narrative xml:lang="EN">Q3 2022 Staff costs for Global</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="4"></transaction-type>
+   <transaction-date iso-date="2021-12-31"></transaction-date>
+   <value currency="USD" value-date="2021-12-31">60352.92</value>
+   <description>
+    <narrative xml:lang="EN">Q4 2021 Activity cost for Global</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="4"></transaction-type>
+   <transaction-date iso-date="2021-12-31"></transaction-date>
+   <value currency="USD" value-date="2021-12-31">21239.2</value>
+   <description>
+    <narrative xml:lang="EN">Q4 2021 Indirect costs for Global</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="3"></transaction-type>
+   <transaction-date iso-date="2022-01-09"></transaction-date>
+   <value currency="USD" value-date="2022-01-09">20000</value>
+   <description>
+    <narrative xml:lang="EN">Q4 2021 National Coalition of HuHondurasn Rights Defenders-Kenya: Q1 2022 Commitment for Global</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org type="22">
+    <narrative xml:lang="EN">National Coalition of Human Rights Defenders</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="2"></transaction-type>
+   <transaction-date iso-date="2021-12-31"></transaction-date>
+   <value currency="USD" value-date="2021-12-31">20000</value>
+   <description>
+    <narrative xml:lang="EN">Q4 2021 National Coalition of Rights Defenders-Kenya: Commitment for Global</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org type="22">
+    <narrative xml:lang="EN">National Coalition of Human Rights Defenders</narrative>
+   </receiver-org>
+  </transaction>
+  <transaction>
+   <transaction-type code="4"></transaction-type>
+   <transaction-date iso-date="2021-12-31"></transaction-date>
+   <value currency="USD" value-date="2021-12-31">2951.58</value>
+   <description>
+    <narrative xml:lang="EN">Q4 2021 Staff cost for Global</narrative>
+   </description>
+   <provider-org provider-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </provider-org>
+   <receiver-org receiver-activity-id="US-EIN-06-1597-668-PU1-GL" ref="US-EIN-06-1597-668" type="21">
+    <narrative xml:lang="EN">JASS</narrative>
+   </receiver-org>
+  </transaction>
+  <related-activity ref="US-EIN-06-1597-668-PU1" type="1"></related-activity>
+  <result aggregation-status="1" type="1">
+   <title>
+    <narrative xml:lang="EN">5.3. Increased feminist solidarity and urgent action responses</narrative>
+   </title>
+   <indicator ascending="1" measure="1">
+    <title>
+     <narrative xml:lang="EN">5.3.1 # solidarity/urgent actions supported by PU!</narrative>
+    </title>
+    <reference code="WRG045" indicator-uri="https://helpdesk-opendata-minbuza.nl/wp-content/uploads/2021/06/SCS-IATI-indicator-guidelines-PoV-with-the-exception-of-partnerships-focusing-on-WRGE.pdf" vocabulary="99"></reference>
+    <baseline value="0" year="2021">
+     <comment>
+      <narrative xml:lang="EN">As the indicator measures any new values occurring since the start of the intervention, the baseline value is set at 0. Specific details regarding the situation at the start can be found in the narrative baseline report.</narrative>
+     </comment>
+    </baseline>
+    <period>
+     <period-start iso-date="2021-01-01"></period-start>
+     <period-end iso-date="2021-12-31"></period-end>
+     <target value="2">
+      <comment>
+       <narrative xml:lang="EN">Target is annual, will increase each period</narrative>
+      </comment>
+     </target>
+     <actual value="2">
+      <comment>
+       <narrative xml:lang="EN">1.        A solidarity statement on Columbia that was facing violent protests and crackdown in early-2021, https://www.instagram.com/p/CPRHR36g-qF/  2. Solidarity statement with the supporting the people of Palestine in the long fight for their freedom from Israeli apartheid state. The solidarity statement is available here - https://www.instagram.com/p/CPTKh7jAFr6/</narrative>
+      </comment>
+     </actual>
+    </period>
+    <period>
+     <period-start iso-date="2022-01-01"></period-start>
+     <period-end iso-date="2022-12-31"></period-end>
+     <target value="1">
+      <comment>
+       <narrative xml:lang="EN">Target is annual, will increase each period</narrative>
+      </comment>
+     </target>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="1" type="1">
+   <title>
+    <narrative xml:lang="EN">6.2 Increased visibility of women&apos;s experiences, leadership, perspectives, solutions and demands</narrative>
+   </title>
+   <indicator ascending="1" measure="1">
+    <title>
+     <narrative xml:lang="EN">6.2.1 # of times women&#x2019;s experiences, leadership perspectives, solutions and demands reflected in Power Up! communication products.</narrative>
+    </title>
+    <reference code="SCS041" indicator-uri="https://helpdesk-opendata-minbuza.nl/wp-content/uploads/2021/06/SCS-IATI-indicator-guidelines-PoV-with-the-exception-of-partnerships-focusing-on-WRGE.pdf" vocabulary="99"></reference>
+    <baseline value="0" year="2021">
+     <comment>
+      <narrative xml:lang="EN">As the indicator measures any new values occurring since the start of the intervention, the baseline value is set at 0. Specific details regarding the situation at the start can be found in the narrative baseline report.</narrative>
+     </comment>
+    </baseline>
+    <period>
+     <period-start iso-date="2021-01-01"></period-start>
+     <period-end iso-date="2023-06-30"></period-end>
+     <actual value="5">
+      <comment>
+       <narrative xml:lang="EN">1.        New JASS website  https://justassociates.org/ launched in English and Spanish sharing key feminist concepts, research and amplifying women&apos;s solutions to crisis. 2. www.feministhikingcollective.org/buildingwe
+3. Loud and Proud: Resisting Authoritarianism in the Philippines
+https://justassociates.org/blog/loud-and-proud-resisting-authoritarianism-philippines/ 4. Feminism, Power and Liberation - conversation with Shereen Essof by Feminist Hiking Collective - the interview was published here https://feministhikingcollective.org/semillas-blog/f/feminism-power-and-liberation---conversation-with-shereen-essof  5. https://www.facebook.com/JASS4justice/videos/jass-2020-year-in-review/1060832404381316/</narrative>
+      </comment>
+     </actual>
+    </period>
+    <period>
+     <period-start iso-date="2021-01-01"></period-start>
+     <period-end iso-date="2025-12-31"></period-end>
+     <target value="15">
+      <comment>
+       <narrative xml:lang="EN">The midline target is set at 50% of the endline target.</narrative>
+      </comment>
+     </target>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="1" type="1">
+   <title>
+    <narrative xml:lang="EN">4.3 Women are equipped with tools, methods, research, evidence and learning from practice to inform strategy and action</narrative>
+   </title>
+   <indicator ascending="1" measure="1">
+    <title>
+     <narrative xml:lang="EN">4.3.1b # of feminist knowledge products (including tools and methodologies) on power, feminist movement building strategy and feminist analysis of bodies, voices and resources created by PU! to women (non-youth)</narrative>
+    </title>
+    <reference code="WRG049ny" indicator-uri="https://helpdesk-opendata-minbuza.nl/wp-content/uploads/2021/06/SCS-IATI-indicator-guidelines-PoV-with-the-exception-of-partnerships-focusing-on-WRGE.pdf" vocabulary="99"></reference>
+    <baseline value="0" year="2021">
+     <comment>
+      <narrative xml:lang="EN">As the indicator measures any new values occurring since the start of the intervention, the baseline value is set at 0. Specific details regarding the situation at the start can be found in the narrative baseline report.</narrative>
+     </comment>
+    </baseline>
+    <period>
+     <period-start iso-date="2021-01-01"></period-start>
+     <period-end iso-date="2021-12-31"></period-end>
+     <target value="3">
+      <comment>
+       <narrative xml:lang="EN">Target is annual, will increase each period</narrative>
+      </comment>
+     </target>
+     <actual value="3">
+      <comment>
+       <narrative xml:lang="EN">1. Research report on feminist governance (through subgrant). 2. Global movement for Black lives: A conversation between Awino Okech and Shereen Essof - https://journals.sagepub.com/doi/10.1177/1350506820978903. 3. Strategic Resourcing: Voices from the Frontlines - https://www.youtube.com/watch?v=FmQf6anyNFc&amp;list=PLwpLzlBl8HCG22OWoRpasO7HtNmGkDxSc&amp;index=9&amp;t=17s</narrative>
+      </comment>
+     </actual>
+    </period>
+    <period>
+     <period-start iso-date="2022-01-01"></period-start>
+     <period-end iso-date="2022-12-31"></period-end>
+     <target value="1">
+      <comment>
+       <narrative xml:lang="EN">Target is annual, will increase each period</narrative>
+      </comment>
+     </target>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="1" type="1">
+   <title>
+    <narrative xml:lang="EN">5.1.  Strengthened and new collaborations with diverse (cross-movement) alliances to support women&apos;s leadership and feminist agendas</narrative>
+   </title>
+   <indicator ascending="1" measure="1">
+    <title>
+     <narrative xml:lang="EN">5.1.1 #  of new/diverse alliances created by PU!</narrative>
+    </title>
+    <reference code="WRG047" indicator-uri="https://helpdesk-opendata-minbuza.nl/wp-content/uploads/2021/06/SCS-IATI-indicator-guidelines-PoV-with-the-exception-of-partnerships-focusing-on-WRGE.pdf" vocabulary="99"></reference>
+    <baseline value="0" year="2021">
+     <comment>
+      <narrative xml:lang="EN">As the indicator measures any new values occurring since the start of the intervention, the baseline value is set at 0. Specific details regarding the situation at the start can be found in the narrative baseline report.</narrative>
+     </comment>
+    </baseline>
+    <period>
+     <period-start iso-date="2021-01-01"></period-start>
+     <period-end iso-date="2021-12-31"></period-end>
+     <target value="3">
+      <comment>
+       <narrative xml:lang="EN">Target is annual, will increase each period</narrative>
+      </comment>
+     </target>
+     <actual value="10">
+      <comment>
+       <narrative xml:lang="EN">JASS cultivated 10  new allies (names withheld to ensure safety).</narrative>
+      </comment>
+     </actual>
+    </period>
+    <period>
+     <period-start iso-date="2022-01-01"></period-start>
+     <period-end iso-date="2022-12-31"></period-end>
+     <target value="2">
+      <comment>
+       <narrative xml:lang="EN">Target is annual, will increase each period</narrative>
+      </comment>
+     </target>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="1" type="1">
+   <title>
+    <narrative xml:lang="EN">4.1 Increased leadership capacity and organising skills of women to bring about change in their lives and communities</narrative>
+   </title>
+   <indicator ascending="1" measure="1">
+    <title>
+     <narrative xml:lang="EN">4.1.1b # women (non-youth) who report increased confidence, political skills and consciousness as a result of PU! interventions</narrative>
+    </title>
+    <reference code="WRG049ny" indicator-uri="https://helpdesk-opendata-minbuza.nl/wp-content/uploads/2021/06/SCS-IATI-indicator-guidelines-PoV-with-the-exception-of-partnerships-focusing-on-WRGE.pdf" vocabulary="99"></reference>
+    <baseline value="0" year="2021">
+     <comment>
+      <narrative xml:lang="EN">As the indicator measures any new values occurring since the start of the intervention, the baseline value is set at 0. Specific details regarding the situation at the start can be found in the narrative baseline report.</narrative>
+     </comment>
+    </baseline>
+    <period>
+     <period-start iso-date="2021-01-01"></period-start>
+     <period-end iso-date="2021-12-31"></period-end>
+     <target value="100">
+      <comment>
+       <narrative xml:lang="EN">Target is annual, will increase each period</narrative>
+      </comment>
+     </target>
+     <actual value="1030">
+      <comment>
+       <narrative xml:lang="EN">JASS facilitated feminist movement building workshops and dialogues to build the confidence, political skills and consciouness of women reaching 1030 globally. This includes 4 events at the  EDGE Annual Conference &#x201C;Building Collective Power for Change&#x201D; 1. &#x201C;The intersecting crisis of our times&#x201D;. keynote address at the Edge Conference. 2. Virtual dialogue Movement Lessons: The Strategic Resourcing of Feminist Movements in Times of Crisis&#x201D; at the EDge Conference. 3. Heart-mind-body session (well-being for activists) at the Edge Conference. 4. Movement Building School for Activists  and Donors. It also includes a cross-regional exchange between Malawi (Our Bodies, Our LIves Movement) and Indonesia involving Power Up! partner PEKKA  to learn about its award winning women&apos;s savings and loan cooperative- an alternative to micro-credit that enables women to generate and control their income. - &quot; I found so many similarities in the stories of PEKKA and OBOL related to women&apos;s prosperity and health and engagements with the government, I am excited by OBOL women&apos;s spirit and determination to learn best practices from PEKKA and change their conditions for a better future - Women leader, PEKKA.&quot;</narrative>
+      </comment>
+     </actual>
+    </period>
+    <period>
+     <period-start iso-date="2022-01-01"></period-start>
+     <period-end iso-date="2022-12-31"></period-end>
+     <target value="200">
+      <comment>
+       <narrative xml:lang="EN">Target is annual, will increase each period</narrative>
+      </comment>
+     </target>
+    </period>
+   </indicator>
+  </result>
+  <result aggregation-status="1" type="1">
+   <title>
+    <narrative xml:lang="EN">4.2. Enhanced capacity of WROs to design and implement effective strategies and articulate collective political agendas</narrative>
+   </title>
+   <indicator ascending="1" measure="1">
+    <title>
+     <narrative xml:lang="EN">4.2.1. # of WROs&apos; (political and technical capacities) strengthened by PU!</narrative>
+    </title>
+    <reference code="WRG047" indicator-uri="https://helpdesk-opendata-minbuza.nl/wp-content/uploads/2021/06/SCS-IATI-indicator-guidelines-PoV-with-the-exception-of-partnerships-focusing-on-WRGE.pdf" vocabulary="99"></reference>
+    <baseline value="0" year="2021">
+     <comment>
+      <narrative xml:lang="EN">As the indicator measures any new values occurring since the start of the intervention, the baseline value is set at 0. Specific details regarding the situation at the start can be found in the narrative baseline report.</narrative>
+     </comment>
+    </baseline>
+    <period>
+     <period-start iso-date="2021-01-01"></period-start>
+     <period-end iso-date="2021-12-31"></period-end>
+     <target value="0">
+      <comment>
+       <narrative xml:lang="EN">Target is annual, will increase each period</narrative>
+      </comment>
+     </target>
+     <actual value="1">
+      <comment>
+       <narrative xml:lang="EN">Subgrant to Partner (name withheld for safety reasons) to support research and knowledge production related to feminist governance.</narrative>
+      </comment>
+     </actual>
+    </period>
+    <period>
+     <period-start iso-date="2022-01-01"></period-start>
+     <period-end iso-date="2022-12-31"></period-end>
+     <target value="1">
+      <comment>
+       <narrative xml:lang="EN">Target is annual, will increase each period</narrative>
+      </comment>
+     </target>
+    </period>
+   </indicator>
+  </result>
+ </iati-activity>
+ <iati-activity default-currency="EUR" dstore:dataset="bmz-ph" dstore:index="542" hierarchy="1" iati-activities:linked-data-default="http://www.bmz.de/opendata" iati-activities:version="2.03" xml:lang="DE" xmlns:dstore="http://d-portal.org/xmlns/dstore" xmlns:iati-activities="http://d-portal.org/xmlns/iati-activities">
+  <iati-identifier>DE-1-202175768-0</iati-identifier>
+  <reporting-org ref="DE-1" secondary-reporter="0" type="10">
+   <narrative xml:lang="DE">Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ)</narrative>
+   <narrative xml:lang="EN">Federal Ministry for Economic Cooperation and Development (BMZ)</narrative>
+  </reporting-org>
+  <title>
+   <narrative xml:lang="DE">Förderung, Beratung und Empowerment lokaler Entwicklungsinitiativen in der Region Visaya, Phase 2</narrative>
+   <narrative xml:lang="EN">Reducing Food Insecurity in Selected Communities in the Visayas, phase 2</narrative>
+  </title>
+  <description type="1">
+   <narrative xml:lang="DE">Förderung, Beratung und Empowerment lokaler Entwicklungsinitiativen in der Region Visaya, Phase 2</narrative>
+   <narrative xml:lang="EN">Reducing Food Insecurity in Selected Communities in the Visayas, phase 2</narrative>
+  </description>
+  <description type="2">
+   <narrative xml:lang="DE">Förderung, Beratung und Empowerment lokaler Entwicklungsinitiativen in der Region Visaya, Phase 2</narrative>
+   <narrative xml:lang="EN">Reducing Food Insecurity in Selected Communities in the Visayas, phase 2</narrative>
+  </description>
+  <participating-org ref="DE-1" role="1" type="10">
+   <narrative xml:lang="DE">Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ)</narrative>
+   <narrative xml:lang="EN">Federal Ministry for Economic Cooperation and Development (BMZ)</narrative>
+  </participating-org>
+  <participating-org role="2">
+   <narrative xml:lang="DE">Evangelische Zentralstelle für Entwicklungshilfe e.V. (EZE)</narrative>
+  </participating-org>
+  <participating-org role="3">
+   <narrative xml:lang="DE">Evangelische Zentralstelle für Entwicklungshilfe e.V. (EZE)</narrative>
+  </participating-org>
+  <other-identifier ref="202175768" type="A1">
+   <owner-org ref="DE-1">
+    <narrative xml:lang="DE">Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ)</narrative>
+    <narrative xml:lang="EN">Federal Ministry for Economic Cooperation and Development</narrative>
+   </owner-org>
+  </other-identifier>
+  <activity-status code="2"/>
+  <activity-date iso-date="2021-11-01" type="1"/>
+  <activity-date iso-date="2021-11-01" type="2"/>
+  <activity-date iso-date="2024-10-31" type="3"/>
+  <contact-info type="1">
+   <organisation>
+    <narrative xml:lang="DE">Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ)</narrative>
+   </organisation>
+   <email>RL511@bmz.bund.de</email>
+   <website>http://www.bmz.de</website>
+   <mailing-address>
+    <narrative xml:lang="DE">Dahlmannstraße 4, 53113 Bonn, Deutschland</narrative>
+   </mailing-address>
+  </contact-info>
+  <recipient-country code="PH" percentage="100">
+   <narrative xml:lang="DE">Philippinen</narrative>
+  </recipient-country>
+  <location>
+   <location-reach code="1"/>
+   <location-id code="1701668" vocabulary="G1"/>
+   <name>
+    <narrative xml:lang="DE">Manila</narrative>
+   </name>
+   <description>
+    <narrative xml:lang="DE">capital</narrative>
+   </description>
+   <activity-description>
+    <narrative xml:lang="DE">Location of central agreement and coordination with partner government</narrative>
+   </activity-description>
+   <administrative code="PPLC" level="1" vocabulary="G1"/>
+   <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+    <pos>14.6042 120.9822</pos>
+   </point>
+   <exactness code="2"/>
+   <location-class code="1"/>
+   <feature-designation code="PPLC"/>
+  </location>
+  <sector code="43040" percentage="100" vocabulary="1"/>
+  <policy-marker code="1" significance="1" vocabulary="1"/>
+  <policy-marker code="2" significance="2" vocabulary="1"/>
+  <policy-marker code="3" significance="2" vocabulary="1"/>
+  <policy-marker code="5" significance="1" vocabulary="1"/>
+  <policy-marker code="6" significance="0" vocabulary="1"/>
+  <policy-marker code="7" significance="1" vocabulary="1"/>
+  <policy-marker code="8" significance="0" vocabulary="1"/>
+  <policy-marker code="9" significance="0" vocabulary="1"/>
+  <default-flow-type code="10"/>
+  <default-tied-status code="3"/>
+  <budget status="2" type="2">
+   <period-start iso-date="2021-01-01"/>
+   <period-end iso-date="2021-12-31"/>
+   <value currency="EUR" value-date="2022-10-31">505000</value>
+  </budget>
+  <transaction>
+   <transaction-type code="2"/>
+   <transaction-date iso-date="2021-09-29"/>
+   <value currency="EUR" value-date="2021-09-29">505000</value>
+  </transaction>
+  <transaction>
+   <transaction-type code="4"/>
+   <transaction-date iso-date="2022-10-31"/>
+   <value currency="EUR" value-date="2022-10-31">76707</value>
+  </transaction>
+  <conditions attached="1">
+   <condition type="1">
+    <narrative xml:lang="DE">0</narrative>
+   </condition>
+  </conditions>
+ </iati-activity>
+ </iati-activities>
