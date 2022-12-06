@@ -48,10 +48,10 @@ gb-chc-1047501,Action Against Hunger,21,,,,in-mha-083781496,Action Against Hunge
 gb-chc-1047501,Action Against Hunger,21,,,,us-ein-13-3327220,Action Against Hunger USA,21,1,0,outgoing,815761
 gb-chc-1047501,Action Against Hunger,21,,,,fr-rcs-31899089200065,Action Contre la Faim,21,0,0,outgoing,1502051
 gb-chc-1047501,Action Against Hunger,21,,,,fr-rcs-31899089200065,Action Contre la Faim,21,1,0,outgoing,14777059
-gb-chc-1047501,Action Against Hunger,21,gb-gov-7,"Department for Environment, Food and Rural Affairs",10,,,,1,0,incoming,45163
 gb-chc-1047501,Action Against Hunger,21,gb-chc-1062638,Disasters Emergency Committee,22,,,,1,0,incoming,482477
 gb-chc-1047501,Action Against Hunger,21,gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,1,0,incoming,16443366
 gb-chc-1047501,Action Against Hunger,21,no-brc-977538319,Norwegian Refugee Council,23,,,,1,0,incoming,812007
+gb-chc-1047501,Action Against Hunger,21,gb-gov-7,"UK - Department for Environment, Food and Rural Affairs",10,,,,1,0,incoming,45163
 gb-chc-274467,ActionAid UK,21,,,,,ActionAid Mozambique,22,1,0,outgoing,506352
 gb-chc-274467,ActionAid UK,21,,Kingdom of Belgium,10,,,,1,0,incoming,848688
 xm-dac-46002,African Development Bank,40,,,,,GOUVERNEMENT DE CENTRAFRIQUE MINISTERE DE L'ECONOMIE ET DES FINANCES,10,0,0,outgoing,466698
@@ -67,12 +67,12 @@ xm-dac-46002,African Development Bank,40,,,,,Government Of Sierra Leone,,0,0,out
 xm-dac-46002,African Development Bank,40,,,,,Government Of Sudan,10,0,0,outgoing,412535
 xm-dac-46002,African Development Bank,40,,,,,Government of Ethiopia,,0,0,outgoing,932854
 xm-dac-46002,African Development Bank,40,,,,,INTERNATIONAL INSTITUTE OF TROPICAL AGRICULTURE IITA,,0,0,outgoing,1394306
+xm-dac-46002,African Development Bank,40,,,,nan,Jordan Water Company-Miyahuna LLC,70,0,0,outgoing,1707680
+xm-dac-46002,African Development Bank,40,,,,nan,Jordan Water Company-Miyahuna LLC,70,0,1,outgoing,262107
 xm-dac-46002,African Development Bank,40,,,,,MINISTERE DE L'AGRICULRURE ET DE L'ENVIRONNEMENT DIRECTION DE L'AMENAGEMENT,10,0,0,outgoing,500033
 xm-dac-46002,African Development Bank,40,,,,,MINISTRY OF FINANCE AND ECONOMIC PLANNING,10,0,0,outgoing,4529576
 xm-dac-46002,African Development Bank,40,,,,,Ministry of Agriculture,10,0,0,outgoing,135000
 xm-dac-46002,African Development Bank,40,,,,,SADC - Southern Africa Development Community,10,0,0,outgoing,158836
-xm-dac-46002,African Development Bank,40,,,,nan,U.S. Government - U.S. Agency for International Development,10,0,0,outgoing,1707680
-xm-dac-46002,African Development Bank,40,,,,nan,U.S. Government - U.S. Agency for International Development,10,0,1,outgoing,262107
 nl-kvk-41048542,Agriterra Foundation,22,nl-kvk-41009723,ZOA,21,,,,1,0,incoming,462491
 nl-kvk-27248417,Aqua for All,60,,,,,(Direct expenditure),,0,0,outgoing,1
 xm-dac-46004,Asian Development Bank,40,,,,,Agency for Land Reclamation and Irrigation,10,0,0,outgoing,2086878
@@ -83,7 +83,7 @@ xm-dac-46004,Asian Development Bank,40,,,,,Ministry of Emergency Situations,10,0
 xm-dac-46004,Asian Development Bank,40,,,,,Ministry of Finance,10,0,1,outgoing,75000000
 xm-dac-46004,Asian Development Bank,40,,,,,Xiangxi Tujia & Miao Autonomous Prefectural Gov't,10,0,0,outgoing,14263598
 gb-chc-1115482,BRAC UK,21,,,,,(Direct expenditure),,0,0,outgoing,812520
-gb-chc-1115482,BRAC UK,21,gb-1,DFID (The Department for International Development),10,,,,0,0,incoming,101193
+gb-chc-1115482,BRAC UK,21,gb-1,DFID,10,,,,0,0,incoming,101193
 xm-dac-46021,Banque Ouest Africaine de Développement,90,,(Unspecified org),,,,,0,0,incoming,13816926
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,ADAPTA Management Limited,,0,0,outgoing,1523040
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,AFRICSanté,,0,0,outgoing,343034
@@ -117,7 +117,6 @@ dac-1601,Bill and Melinda Gates Foundation,60,,,,,"Council on Energy, Environmen
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,E3G,,0,0,outgoing,570613
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,ETH Zürich,,0,0,outgoing,1314611
 dac-1601,Bill and Melinda Gates Foundation,60,,,,us-ein-74-2857866,Eleanor Crook Foundation,,0,0,outgoing,125000
-dac-1601,Bill and Melinda Gates Foundation,60,,,,us-ein-58-0566256,Emory University,80,0,0,outgoing,800000
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,Endeva,,0,0,outgoing,1197544
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,Equity Group Foundation,,0,0,outgoing,1200000
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,Ethiopian Agricultural Transformation Agency,,0,0,outgoing,2584156
@@ -172,9 +171,9 @@ dac-1601,Bill and Melinda Gates Foundation,60,,,,,National Primary Health Care D
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,National Veterinary Research Institute Vom Nigeria,,0,0,outgoing,385784
 dac-1601,Bill and Melinda Gates Foundation,60,,,,us-ein-82-3448737,Nature's Fynd,,0,0,outgoing,2058512
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,North-West University,,0,0,outgoing,500000
-dac-1601,Bill and Melinda Gates Foundation,60,,,,us-ein-23-7069110,OXFAM USA,10,0,0,outgoing,5839798
 dac-1601,Bill and Melinda Gates Foundation,60,,,,us-ein-81-3160991,"Open Imagery Network, Inc",,0,0,outgoing,100000
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,Organisation for Economic Co-operation and Development (OECD),,0,0,outgoing,905340
+dac-1601,Bill and Melinda Gates Foundation,60,,,,us-ein-23-7069110,Oxfam-America Inc,10,0,0,outgoing,5839798
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,Oxitec,,0,0,outgoing,1469352
 dac-1601,Bill and Melinda Gates Foundation,60,,,,us-ein-91-1157127,PATH,,0,0,outgoing,1676545
 dac-1601,Bill and Melinda Gates Foundation,60,,,,us-ein-83-0841902,Particles for Humanity,,0,0,outgoing,3600111
@@ -191,7 +190,7 @@ dac-1601,Bill and Melinda Gates Foundation,60,,,,us-ein-82-1515665,Society for I
 dac-1601,Bill and Melinda Gates Foundation,60,,,,us-ein-94-1156365,Stanford University,,0,0,outgoing,2001587
 dac-1601,Bill and Melinda Gates Foundation,60,,,,us-ein-46-3780336,Supporters of Agricultural Research Foundation,,0,0,outgoing,592700
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,Syngenta Foundation for Sustainable Agriculture,,0,0,outgoing,2757447
-dac-1601,Bill and Melinda Gates Foundation,60,,,,us-ein-13-2626135,"TechnoServe, Inc.",22,0,0,outgoing,1517051
+dac-1601,Bill and Melinda Gates Foundation,60,,,,us-ein-13-2626135,Technoserve,22,0,0,outgoing,1517051
 dac-1601,Bill and Melinda Gates Foundation,60,,,,us-ein-53-0196584,The George Washington University,,0,0,outgoing,248587
 dac-1601,Bill and Melinda Gates Foundation,60,,,,nl-kvk-76050475,The Global Center on Adaptation,,0,0,outgoing,4000000
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,The Goat Trust,,0,0,outgoing,250000
@@ -219,6 +218,7 @@ dac-1601,Bill and Melinda Gates Foundation,60,,,,,University of Pretoria,,0,0,ou
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,University of Sheffield,,0,0,outgoing,289152
 dac-1601,Bill and Melinda Gates Foundation,60,,,,us-ein-54-6001796,University of Virginia,,0,0,outgoing,316558
 dac-1601,Bill and Melinda Gates Foundation,60,,,,us-ein-94-3079432,University of Washington Foundation,,0,0,outgoing,5594692
+dac-1601,Bill and Melinda Gates Foundation,60,,,,xm-dac-51000,University/Research Institute - United States Other,80,0,0,outgoing,800000
 dac-1601,Bill and Melinda Gates Foundation,60,,,,us-ein-43-0653611,Washington University,,0,0,outgoing,3060890
 dac-1601,Bill and Melinda Gates Foundation,60,,,,,Weizmann Institute of Science,,0,0,outgoing,1654265
 dac-1601,Bill and Melinda Gates Foundation,60,,,,xm-dac-928,World Health Organization,40,0,0,outgoing,12092911
@@ -325,8 +325,8 @@ nl-kvk-41160054,Cordaid,21,,,,nl-kvk-41149486,Stichting Vluchteling,21,1,0,outgo
 nl-kvk-41160054,Cordaid,21,,,,nl-kvk-41149287,Terre des Hommes NL,21,1,0,outgoing,1073734
 nl-kvk-41160054,Cordaid,21,,,,nl-kvk-41179943,World Vision Netherlands,60,1,0,outgoing,1094678
 nl-kvk-41160054,Cordaid,21,ug-ngb-5914-129,AVSI Foundation - People for Development,21,,,,0,0,incoming,785055
-nl-kvk-41160054,Cordaid,21,nl-kvk-72849770,DRA Dutch Relief Alliance,60,,,,1,0,incoming,6577461
 nl-kvk-41160054,Cordaid,21,xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,1,0,incoming,4946023
+nl-kvk-41160054,Cordaid,21,nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,1,0,incoming,6577461
 xm-dac-21-1,DFAT / Irish Aid,10,,,,,80:20 Educating/Acting For A Better World,,0,0,outgoing,129668
 xm-dac-21-1,DFAT / Irish Aid,10,,,,action aid,Action Aid,,0,0,outgoing,657954
 xm-dac-21-1,DFAT / Irish Aid,10,,,,ie-chy-6998,CHRISTIAN AID IRELAND,,0,0,outgoing,539255
@@ -336,6 +336,7 @@ xm-dac-21-1,DFAT / Irish Aid,10,,,,eu-tf-colombia,EU-TF-Colombia,,0,0,outgoing,8
 xm-dac-21-1,DFAT / Irish Aid,10,,,,10159,EUROPEAN COMMISSION,40,0,0,outgoing,16675347
 xm-dac-21-1,DFAT / Irish Aid,10,,,,nl-kvk-41077447,European Centre for Development Policy Management (ECDPM),80,0,0,outgoing,388840
 xm-dac-21-1,DFAT / Irish Aid,10,,,,xm-dac-918-3,European Investment Bank,,0,0,outgoing,777707
+xm-dac-21-1,DFAT / Irish Aid,10,,,,41401,FAO/Food and Agriculture Organization,40,0,0,outgoing,17482280
 xm-dac-21-1,DFAT / Irish Aid,10,,,,front line- the international foundation for the,Front Line- The International Foundation for the,,0,0,outgoing,636006
 xm-dac-21-1,DFAT / Irish Aid,10,,,,gavi alliance,GAVI Alliance,70,0,0,outgoing,4740684
 xm-dac-21-1,DFAT / Irish Aid,10,,,,gb-chc-1107403,GOAL,23,0,0,outgoing,541455
@@ -344,11 +345,11 @@ xm-dac-21-1,DFAT / Irish Aid,10,,,,gb-coh-1762840,HelpAge International,21,0,0,o
 xm-dac-21-1,DFAT / Irish Aid,10,,,,21016,International Committee Of The Red Cross,,0,0,outgoing,12078506
 xm-dac-21-1,DFAT / Irish Aid,10,,,,,International Dev't Association - World Bank,,0,0,outgoing,329132
 xm-dac-21-1,DFAT / Irish Aid,10,,,,xm-dac-41108,International Fund for Agricultural Development,40,0,0,outgoing,3020418
-xm-dac-21-1,DFAT / Irish Aid,10,,,,xm-dac-47066,International Organization for Migration (IOM),40,0,0,outgoing,1215037
+xm-dac-21-1,DFAT / Irish Aid,10,,,,xm-dac-47066,International Organisation for Migration,40,0,0,outgoing,1215037
 xm-dac-21-1,DFAT / Irish Aid,10,,,,us-ein-13-5660870,International Rescue Committee Inc.,21,0,0,outgoing,706597
 xm-dac-21-1,DFAT / Irish Aid,10,,,,irish council for overseas study,Irish Council For Overseas Study,,0,0,outgoing,871595
 xm-dac-21-1,DFAT / Irish Aid,10,,,,,Irish Development Education Association,,0,0,outgoing,425615
-xm-dac-21-1,DFAT / Irish Aid,10,,,,xm-dac-41110,Joint United Nations Programme on HIV/AIDS,40,0,0,outgoing,2905217
+xm-dac-21-1,DFAT / Irish Aid,10,,,,xm-dac-41110,Joint United Nations Programme on HIV/AIDS (UNAIDS),40,0,0,outgoing,2905217
 xm-dac-21-1,DFAT / Irish Aid,10,,,,,Not Disclosed,,0,0,outgoing,228780
 xm-dac-21-1,DFAT / Irish Aid,10,,,,47080,OECD Organisation for Economic Co-operation & Deve,,0,0,outgoing,232231
 xm-dac-21-1,DFAT / Irish Aid,10,,,,oxfam ireland,Oxfam Ireland,,0,0,outgoing,462930
@@ -362,12 +363,11 @@ xm-dac-21-1,DFAT / Irish Aid,10,,,,47122,The Gavi Alliance,,0,0,outgoing,3594838
 xm-dac-21-1,DFAT / Irish Aid,10,,,,47045,The Global Fund to Fight Aids T.B. and Malaria,,0,0,outgoing,18228217
 xm-dac-21-1,DFAT / Irish Aid,10,,,,ie-chy-20009601,Trocaire,,0,0,outgoing,2776017
 xm-dac-21-1,DFAT / Irish Aid,10,,,,xm-dac-41146,UN Women,40,0,0,outgoing,2344721
-xm-dac-21-1,DFAT / Irish Aid,10,,,,41401,UN-MPTFO/Un-Multi Partner Trust Fund Office,40,0,0,outgoing,17482280
 xm-dac-21-1,DFAT / Irish Aid,10,,,,41141,UNDP- United Nations Peacebuilding Fund,,0,0,outgoing,2416334
 xm-dac-21-1,DFAT / Irish Aid,10,,,,xm-dac-41122,United Nations Children's Fund,40,0,0,outgoing,11125784
 xm-dac-21-1,DFAT / Irish Aid,10,,,,xm-dac-41114,United Nations Development Programme,40,0,0,outgoing,9466343
 xm-dac-21-1,DFAT / Irish Aid,10,,,,41305,United Nations General Trust Fund,,0,0,outgoing,1221464
-xm-dac-21-1,DFAT / Irish Aid,10,,,,xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,0,0,outgoing,11700624
+xm-dac-21-1,DFAT / Irish Aid,10,,,,xm-dac-41127,United Nations Office of Co-ordination of Humanitarian Affairs,40,0,0,outgoing,11700624
 xm-dac-21-1,DFAT / Irish Aid,10,,,,41119,United Nations Population Fund (UNFPA),40,0,0,outgoing,4228585
 xm-dac-21-1,DFAT / Irish Aid,10,,,,44000,World Bank,40,0,0,outgoing,595912
 xm-dac-21-1,DFAT / Irish Aid,10,,,,xm-dac-41140,World Food Programme,40,0,0,outgoing,2424159
@@ -376,8 +376,8 @@ xm-dac-21-1,DFAT / Irish Aid,10,,,,world vision ireland,World Vision Ireland,,0,
 xm-dac-21-1,DFAT / Irish Aid,10,,,,wto advisory law centre,Wto Advisory Law Centre,,0,0,outgoing,426517
 gb-coh-02651349,DT Global International Development UK Ltd,70,,,,,(Direct expenditure),,0,0,outgoing,29986
 gb-coh-02651349,DT Global International Development UK Ltd,70,gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,0,0,incoming,34729
-xm-dac-2-10,Directorate-general Development Cooperation and Humanitarian Aid,10,,,,41140,WFP/World Food Programme,40,0,0,outgoing,49398
-nl-kvk-41236410,Dorcas Aid International,21,nl-kvk-72849770,DRA Dutch Relief Alliance,60,,,,1,0,incoming,2755489
+xm-dac-2-10,Directorate-general Development Cooperation and Humanitarian Aid,10,,,,41140,UNICEF/United Nations Children's Fund,40,0,0,outgoing,49398
+nl-kvk-41236410,Dorcas Aid International,21,nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,1,0,incoming,2755489
 be-bce_kbo-0418015461,Entraide et Fraternité,22,,,,,(Unspecified org),,0,0,outgoing,1097132
 gb-chc-802353,Ethiopiaid,21,,,,,(Direct expenditure),,0,0,outgoing,27906
 nl-kvk-41077447,European Centre for Development Policy Management (ECDPM),80,,,,,(Direct expenditure),,0,0,outgoing,5306248
@@ -666,8 +666,8 @@ xm-dac-41301,Food and Agriculture Organization (FAO),40,xm-dac-12,United Kingdom
 xm-dac-41301,Food and Agriculture Organization (FAO),40,xm-dac-41114,United Nations Development Programme,40,,,,0,0,incoming,426414
 xm-dac-41301,Food and Agriculture Organization (FAO),40,xm-dac-41114,United Nations Development Programme,40,,,,0,1,incoming,7602098
 xm-dac-41301,Food and Agriculture Organization (FAO),40,xm-dac-41121,United Nations High Commissioner for Refugees (UNHCR),40,,,,0,0,incoming,252252
-xm-dac-41301,Food and Agriculture Organization (FAO),40,xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,,,,0,0,incoming,7704494
-xm-dac-41301,Food and Agriculture Organization (FAO),40,xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,,,,0,1,incoming,6795571
+xm-dac-41301,Food and Agriculture Organization (FAO),40,xm-dac-41127,United Nations Office of Co-ordination of Humanitarian Affairs,40,,,,0,0,incoming,7704494
+xm-dac-41301,Food and Agriculture Organization (FAO),40,xm-dac-41127,United Nations Office of Co-ordination of Humanitarian Affairs,40,,,,0,1,incoming,6795571
 xm-dac-41301,Food and Agriculture Organization (FAO),40,xm-dac-302,United States,,,,,0,0,incoming,19270000
 xm-dac-41301,Food and Agriculture Organization (FAO),40,xm-dac-302,United States,,,,,0,1,incoming,53396366
 xm-dac-41301,Food and Agriculture Organization (FAO),40,xm-dac-44000,World Bank Group,40,,,,0,1,incoming,148841305
@@ -868,7 +868,7 @@ nl-kvk-83517626,Invest International,70,,,,,FIT Ned B.V.,70,0,0,outgoing,645714
 gb-chc-328158,Islamic Relief Worldwide,21,,,,,(Direct expenditure),,0,0,outgoing,17955
 gb-chc-328158,Islamic Relief Worldwide,21,gb-chc-1062638,Disasters Emergency Committee,22,,,,0,0,incoming,1216797
 gb-chc-328158,Islamic Relief Worldwide,21,gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,0,0,incoming,31132
-xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,(Unspecified org),,1,0,outgoing,9999788
+xm-ocha-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,(Unspecified org),,1,0,outgoing,9999788
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,(Unspecified org),,1,1,outgoing,232459632
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,ALBANIA,10,1,0,outgoing,51765
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,Afghanistan government,10,1,0,outgoing,207061
@@ -889,6 +889,7 @@ xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,Governmen
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,Government of Uzbekistan,10,1,0,outgoing,10
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,Help Chad,22,1,0,outgoing,900000
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,International Islamic Relief Organization,21,1,0,outgoing,2167442
+xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,nan,Jordan Water Company-Miyahuna LLC,70,1,0,outgoing,1312123
 xm-ocha-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,Kenya Red Cross,22,1,0,outgoing,784000
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,Madagascar government,10,1,0,outgoing,104041
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,Maldives government,10,1,0,outgoing,51765
@@ -913,7 +914,6 @@ xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,The Jorda
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,The Organisation of Islamic Cooperation (OIC),21,1,0,outgoing,166666
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,The government of Côte d'Ivoire,10,1,0,outgoing,156062
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,Togo's government,10,1,0,outgoing,104041
-xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,nan,U.S. Government - U.S. Agency for International Development,10,1,0,outgoing,1312123
 xm-ocha-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,xm-dac-41122,United Nations Children's Fund,40,1,0,outgoing,10000000
 xm-ochas-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,Viet Nam Red Cross Society,22,1,0,outgoing,166666
 xm-ocha-hpc6770,King Salman Humanitarian Aid and Relief Centre,10,,,,,WESS,22,1,1,outgoing,5400000
@@ -936,7 +936,6 @@ xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,,Aga Khan Foundati
 xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,,Avsi Foundation,23,0,0,outgoing,1243473
 xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,gb-1-202615,Care International,21,0,0,outgoing,15054681
 xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,,Developing Country-Based Ngo Group,,0,0,outgoing,10327896
-xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,0,Fundacion para la innovacion Agraria - FIA,10,0,0,outgoing,37482953
 xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,30001,GAIN,30,0,0,outgoing,22750514
 xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,,GVC,23,0,0,outgoing,666017
 xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,,Gorongosa Restoration Project,30,0,0,outgoing,2044990
@@ -945,6 +944,7 @@ xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,xm-dac-41302,ILO-A
 xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,,INTERNATIONAL NGO,21,0,0,outgoing,2487272
 xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,xi-iati-iadb,Inter-American Development Bank,40,0,0,outgoing,3057889
 xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,xi-grid-grid.419346.d,International Food Policy Research Institute,80,0,0,outgoing,178654
+xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,41108,International Fund for Agricultural Development (IFAD),40,0,0,outgoing,37482953
 xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,,PCP Uganda Limited,70,0,0,outgoing,620496
 xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,61000,Private sector in provider country,70,0,0,outgoing,410584
 xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,,Royal Norwegian Ministry of Climate and Environment,10,0,0,outgoing,812465
@@ -955,7 +955,7 @@ xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,nl-kvk-09098104,St
 xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,,Swiss Agency for Development,10,0,0,outgoing,1940239
 xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,us-usagov,The federal government of the United States,10,0,0,outgoing,381341
 xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,nl-kvk-77583442,Transition International,70,0,0,outgoing,1039353
-xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,41122,UNICEF,40,0,0,outgoing,19383885
+xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,41122,UNICEF/United Nations Children's Fund,40,0,0,outgoing,19383885
 xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,41502,UNOPS,40,0,0,outgoing,3361636
 xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,,WB,,0,0,outgoing,47694361
 xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,,Wageningen Universiteit,80,0,0,outgoing,4648687
@@ -1076,7 +1076,7 @@ nl-kvk-27378529,Netherlands Enterprise Agency,10,,,,nl-kvk-59758392,Valued Chain
 nl-kvk-27378529,Netherlands Enterprise Agency,10,,,,nl-kvk-57119902,Veris Investments B.V.,71,0,0,outgoing,79848
 nl-kvk-27378529,Netherlands Enterprise Agency,10,,,,nl-kvk-30256694,VetEffect Consultancy & Recruiting B.V.,71,0,0,outgoing,29202
 nl-kvk-27378529,Netherlands Enterprise Agency,10,,,,nl-kvk-77786157,Vondeling B.V.,71,0,0,outgoing,35267
-nl-kvk-27378529,Netherlands Enterprise Agency,10,,,,nl-kvk-09215846,Wageningen Universiteit/ Wageningen University,80,0,0,outgoing,90045
+nl-kvk-27378529,Netherlands Enterprise Agency,10,,,,nl-kvk-09215846,"Wageningen University, Cultural Geography Group",80,0,0,outgoing,90045
 nl-kvk-27378529,Netherlands Enterprise Agency,10,,,,nl-kvk-34228230,Water Insight B.V.,71,0,0,outgoing,70593
 nl-kvk-27378529,Netherlands Enterprise Agency,10,,,,nl-kvk-41009723,ZOA,21,0,0,outgoing,637664
 nl-kvk-27378529,Netherlands Enterprise Agency,10,,,,nl-kvk-27180398,psps business abroad,71,0,0,outgoing,102817
@@ -1106,15 +1106,15 @@ nl-kvk-27108436,Oxfam Novib,21,,,,,PELUM Kenya,,0,0,outgoing,9886
 nl-kvk-27108436,Oxfam Novib,21,,,,,UGANDA REFUGEE & DISASTER MGT COU COUNCIL,,0,0,outgoing,47293
 nl-kvk-27108436,Oxfam Novib,21,,,,,Young Men's Christian Association M,21,0,0,outgoing,50347
 nl-kvk-27108436,Oxfam Novib,21,,,,,Youth Social Advocacy team YSAT,24,0,0,outgoing,46321
-nl-kvk-27108436,Oxfam Novib,21,00280,EUROPEAN ECONOMIC COMMUNITY,,,,,0,0,incoming,196895
+nl-kvk-27108436,Oxfam Novib,21,00280,EUROPEAN UNION,10,,,,0,0,incoming,196895
 nl-kvk-27108436,Oxfam Novib,21,,Ministry of Foreign Affairs NL,10,,,,0,0,incoming,440846
-nl-kvk-27108436,Oxfam Novib,21,us-ein-23-7069110,OXFAM USA,10,,,,0,0,incoming,50347
-nl-kvk-27108436,Oxfam Novib,21,us-ein-23-7069110,OXFAM USA,10,,,,0,1,incoming,22891
 nl-kvk-27108436,Oxfam Novib,21,,Oxfam Denmark (IBIS),10,,,,0,0,incoming,93614
+nl-kvk-27108436,Oxfam Novib,21,us-ein-23-7069110,Oxfam-America Inc,10,,,,0,0,incoming,50347
+nl-kvk-27108436,Oxfam Novib,21,us-ein-23-7069110,Oxfam-America Inc,10,,,,0,1,incoming,22891
 nl-kvk-27108436,Oxfam Novib,21,se-0,Sweden,10,,,,0,0,incoming,412430
 gb-chc-1112734,PHASE Worldwide,21,,,,,(Direct expenditure),,0,0,outgoing,26165
 gb-chc-1112734,PHASE Worldwide,21,,,,,PHASE Nepal,22,0,0,outgoing,23797
-gb-chc-1112734,PHASE Worldwide,21,gb-1,DFID (The Department for International Development),10,,,,0,0,incoming,24568
+gb-chc-1112734,PHASE Worldwide,21,gb-1,DFID,10,,,,0,0,incoming,24568
 nl-kvk-41198890,Plan International Netherlands,21,,,,,(Direct expenditure),,0,0,outgoing,23115
 nl-kvk-41198890,Plan International Netherlands,21,,,,,(Direct expenditure),,1,0,outgoing,216555
 nl-kvk-41198890,Plan International Netherlands,21,,,,nl-kvk-41160054,Cordaid,21,1,0,outgoing,370816
@@ -1126,12 +1126,12 @@ nl-kvk-41198890,Plan International Netherlands,21,,,,ss-rrc-066,Plan Internation
 nl-kvk-41198890,Plan International Netherlands,21,,,,xm-ocha-hpc8588,Plan International Sudan,22,1,0,outgoing,1166392
 nl-kvk-41198890,Plan International Netherlands,21,,,,nl-kvk-41149486,Stichting Vluchteling,21,1,0,outgoing,409850
 nl-kvk-41198890,Plan International Netherlands,21,,,,nl-kvk-41179943,World Vision Netherlands,60,1,0,outgoing,390333
-nl-kvk-41198890,Plan International Netherlands,21,nl-kvk-72849770,DRA Dutch Relief Alliance,60,,,,1,0,incoming,8644704
 nl-kvk-41198890,Plan International Netherlands,21,nl-kvk-41201463,Save the Children Netherlands,21,,,,1,0,incoming,1674126
+nl-kvk-41198890,Plan International Netherlands,21,nl-kvk-72849770,Stichting Beheer Subsidiegelden DRA,21,,,,1,0,incoming,8644704
 gb-coh-1364201,Plan International UK,21,,,,no identifier,Plan International Inc. (Nepal Country Office),21,1,0,outgoing,86474
 gb-coh-1364201,Plan International UK,21,,,,no identifier,Plan International Inc. (Nigeria Country Office),22,0,0,outgoing,6062464
 gb-coh-1364201,Plan International UK,21,,,,no identifier,Plan International Inc. (Nigeria Country Office),22,1,0,outgoing,360024
-gb-coh-1364201,Plan International UK,21,xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,,,,1,0,incoming,-360024
+gb-coh-1364201,Plan International UK,21,xm-dac-41127,United Nations Office of Co-ordination of Humanitarian Affairs,40,,,,1,0,incoming,-360024
 us-ein-030358029,Population Media Center,21,,(Unspecified org),,,,,0,0,incoming,35262
 us-ein-030358029,Population Media Center,21,,(Unspecified org),,,,,1,0,incoming,115678
 gb-coh-871954,Practical Action,21,,,,,(Direct expenditure),,0,0,outgoing,452441
@@ -1168,7 +1168,7 @@ se-0,Sweden,10,,,,,Asociatia Obsteasca Ecovisio,23,0,0,outgoing,134189
 se-0,Sweden,10,,,,,CRS/Catholic Relief Services,21,0,0,outgoing,2798214
 se-0,Sweden,10,,,,62003,Cooperative COSAMI,72,0,0,outgoing,733888
 se-0,Sweden,10,,,,,Diakonia,22,0,0,outgoing,268629
-se-0,Sweden,10,,,,41301,FAO/Food and Agriculture Organization,40,0,0,outgoing,4211287
+se-0,Sweden,10,,,,41301,FAO/Food and Agriculture Organization,40,0,0,outgoing,6543132
 se-0,Sweden,10,,,,41301,FAO/Food and Agriculture Organization,40,0,1,outgoing,1486551
 se-0,Sweden,10,,,,,Fundacion para el Desarrollo Productivo y Financiero - Fundacion PROFIN,23,0,0,outgoing,69089
 se-0,Sweden,10,,,,44001,IBRD/International Bank for Reconstruction and Development/The World Bank,40,0,0,outgoing,2331845
@@ -1181,14 +1181,12 @@ se-0,Sweden,10,,,,,SNV Netherlands Development Organisation/Servicio Holandes de
 se-0,Sweden,10,,,,,Swisscontact/Swiss Foundation for Technical Cooperation,21,0,0,outgoing,1573995
 se-0,Sweden,10,,,,,TAHA/Tanzania Horticultural Association,23,0,0,outgoing,874442
 se-0,Sweden,10,,,,,The Power of Nutrition,21,0,0,outgoing,1748884
-se-0,Sweden,10,,,,41401,UN-MPTFO/Un-Multi Partner Trust Fund Office,40,0,0,outgoing,2331845
-se-0,Sweden,10,,,,41114,UNDP,40,0,0,outgoing,7112127
-se-0,Sweden,10,,,,41122,UNICEF,40,0,0,outgoing,991034
+se-0,Sweden,10,,,,41114,UNDP/United Nations Development Programme,40,0,0,outgoing,7112127
+se-0,Sweden,10,,,,41122,UNICEF/United Nations Children's Fund,40,0,0,outgoing,13260289
 se-0,Sweden,10,,,,41123,UNIDO,40,0,0,outgoing,1002693
 se-0,Sweden,10,,,,41146,UNWOMEN/United Nations Entity for Gender Equality and the Empowerment of Women,40,0,0,outgoing,501347
 se-0,Sweden,10,,,,,"University, college or other teaching institution, research institute or think-tank",80,0,0,outgoing,3018264
 se-0,Sweden,10,,,,,"University, college or other teaching institution, research institute or think-tank",80,0,1,outgoing,570552
-se-0,Sweden,10,,,,41140,WFP/World Food Programme,40,0,0,outgoing,12269255
 se-0,Sweden,10,,,,,We Effect,22,0,0,outgoing,1585654
 se-0,Sweden,10,,,,,Welthungerhilfe,21,0,0,outgoing,2774895
 sn-ninea-500116143v0,TRUSTAFRICA,21,,,,,(Direct expenditure),,0,0,outgoing,440480
@@ -1207,7 +1205,7 @@ nl-kvk-41155305,Tropenbos International,22,,,,,(Direct expenditure),,0,0,outgoin
 nl-kvk-41155305,Tropenbos International,22,nl-kvk-40530467,Milieudefensie,22,,,,0,0,incoming,3448472
 ke-rco-201036685,UHAI EASHRI,60,us-ein-31-1812979,CREA,21,,,,0,0,incoming,406869
 xm-dac-41146,UN Women,40,,,,,(Direct expenditure),,0,0,outgoing,30919228
-xm-dac-41146,UN Women,40,10216,AGENCIA ESPANOLA DE COOPERACION INTERNACIONAL,10,,,,0,0,incoming,86018
+xm-dac-41146,UN Women,40,10216,AG. ESPANOLA DE COOPERACION INT.,10,,,,0,0,incoming,86018
 xm-dac-41146,UN Women,40,00309,AUSTRALIA NATIONAL COMMITTEE,,,,,0,0,incoming,102118
 xm-dac-41146,UN Women,40,00017,African Development Bank,40,,,,0,0,incoming,92662
 xm-dac-41146,UN Women,40,13428,Ascential Events (Europe) Ltd.,,,,,0,0,incoming,54000
@@ -1225,6 +1223,7 @@ xm-dac-41146,UN Women,40,00110,GOVERNMENT OF FINLAND,,,,,0,0,incoming,3310704
 xm-dac-41146,UN Women,40,00112,GOVERNMENT OF FRANCE,,,,,0,0,incoming,498049
 xm-dac-41146,UN Women,40,00141,GOVERNMENT OF JAPAN,,,,,0,0,incoming,1483904
 xm-dac-41146,UN Women,40,00182,GOVERNMENT OF NETHERLANDS,,,,,0,0,incoming,502847
+xm-dac-41146,UN Women,40,00187,GOVERNMENT OF NORWAY,10,,,,0,0,incoming,2196003
 xm-dac-41146,UN Women,40,00204,GOVERNMENT OF REPUBLIC OF KOREA,,,,,0,0,incoming,112965
 xm-dac-41146,UN Women,40,00231,GOVERNMENT OF SWEDEN,,,,,0,0,incoming,312929
 xm-dac-41146,UN Women,40,00117,Germany - Federal Foreign Office,10,,,,0,0,incoming,483008
@@ -1240,7 +1239,6 @@ xm-dac-41146,UN Women,40,12270,MPTF-SDG Fund,,,,,0,0,incoming,125219
 xm-dac-41146,UN Women,40,13007,MPTF-Spotlight Initiative Fund,,,,,0,0,incoming,3314846
 xm-dac-41146,UN Women,40,13556,MPTF-UN COVID-19 Response Rcvy,,,,,0,0,incoming,178371
 xm-dac-41146,UN Women,40,11278,Multi-Donor Trust Fund Office,,,,,0,0,incoming,7340329
-xm-dac-41146,UN Women,40,00187,Norad - Norwegian Agency for Development Cooperation,10,,,,0,0,incoming,2196003
 xm-dac-41146,UN Women,40,11363,Peacebuilding Fund,,,,,0,0,incoming,1609104
 xm-dac-41146,UN Women,40,00324,SINGAPORE NATIONAL COMMITTEE,,,,,0,0,incoming,2452
 xm-dac-41146,UN Women,40,00540,SWEDEN NATIONAL COMMITTEE,,,,,0,0,incoming,7649
@@ -1260,8 +1258,8 @@ xm-dac-41146,UN Women,40,00031,United Nations Population Fund,40,,,,0,0,incoming
 xm-dac-41146,UN Women,40,11611,United nations resident coordinator offi,,,,,0,0,incoming,6420
 xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41301,Food and Agriculture Organization (FAO),40,1,0,outgoing,46646710
 xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41301,Food and Agriculture Organization (FAO),40,1,1,outgoing,23546449
-xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-47066,International Organization for Migration (IOM),40,1,0,outgoing,3000000
-xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-47066,International Organization for Migration (IOM),40,1,1,outgoing,1200000
+xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-47066,International Organisation for Migration,40,1,0,outgoing,3000000
+xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-47066,International Organisation for Migration,40,1,1,outgoing,1200000
 xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41146,UN Women,40,1,0,outgoing,8000001
 xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41122,United Nations Children's Fund,40,1,0,outgoing,15830983
 xm-ocha-cerf,UNOCHA - Central Emergency Response Fund (CERF),40,,,,xm-dac-41122,United Nations Children's Fund,40,1,1,outgoing,13900031
@@ -1302,7 +1300,7 @@ xm-dac-30010,Unitaid,40,,,,xm-dac-928,World Health Organization,40,0,0,outgoing,
 xm-dac-30010,Unitaid,40,,,,,"World Health Organization UNDP-UNFPA.UNICEF, WHO, World Bank Special Programme of Research, Development and research training in Human Reproduction (HRP)",40,0,0,outgoing,106700
 xm-dac-41114,United Nations Development Programme,40,,,,,(Direct expenditure),,0,0,outgoing,1472820
 xm-dac-41114,United Nations Development Programme,40,,,,,Government of Afghanistan,10,0,0,outgoing,193495
-xm-dac-41114,United Nations Development Programme,40,10216,AGENCIA ESPANOLA DE COOPERACION INTERNACIONAL,10,,,,0,0,incoming,132794
+xm-dac-41114,United Nations Development Programme,40,10216,AG. ESPANOLA DE COOPERACION INT.,10,,,,0,0,incoming,132794
 xm-dac-41114,United Nations Development Programme,40,xm-dac-47045,"GLOBAL FUND TO FIGHT AIDS, TUBERCULOSIS",,,,,0,0,incoming,4000000
 xm-dac-41114,United Nations Development Programme,40,dk-1,GOVERNMENT OF DENMARK,10,,,,0,0,incoming,8665673
 xm-dac-41114,United Nations Development Programme,40,00157,GOVERNMENT OF MALAYSIA,10,,,,0,0,incoming,3463243
@@ -1319,11 +1317,9 @@ us-gov-1,United States Agency for International Development (USAID),10,,,,,"Adva
 us-gov-1,United States Agency for International Development (USAID),10,,,,,"Advanced Information Network Systems, Inc.",70,0,0,outgoing,202707
 us-gov-1,United States Agency for International Development (USAID),10,,,,ke-ngc-663,Adventist Development and Relief Agency International,22,1,0,outgoing,437581
 us-gov-1,United States Agency for International Development (USAID),10,,,,,African Agricultural Technology Foundation,23,0,0,outgoing,3559978
-us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-850465217,African Union,40,0,0,outgoing,130922
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-501c3-522318905,Aga Khan Development Network,23,0,0,outgoing,20000
 us-gov-1,United States Agency for International Development (USAID),10,,,,fr-siret-4028868160030,Agency for Technical Cooperation and Development,23,0,0,outgoing,161286
 us-gov-1,United States Agency for International Development (USAID),10,,,,fr-siret-4028868160030,Agency for Technical Cooperation and Development,23,1,0,outgoing,-106233
-us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-083510842,Agriculture Cooperative Development International/Volunteers in Overseas Cooperative Assistance,22,0,0,outgoing,749999
 us-gov-1,United States Agency for International Development (USAID),10,,,,mz-moj-203d,"Alfalit International, Inc.",22,0,0,outgoing,9116
 us-gov-1,United States Agency for International Development (USAID),10,,,,,American Bar Association,22,0,0,outgoing,363500
 us-gov-1,United States Agency for International Development (USAID),10,,,,,American College of Greece,80,0,0,outgoing,345609
@@ -1354,7 +1350,6 @@ us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-13-5563422,Catholic Relief Services,22,1,0,outgoing,217980180
 us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-193195278,Center for Victims of Torture,22,0,0,outgoing,299059
 us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-639718873,Centre for the Study of Violence and Reconciliation,23,0,0,outgoing,979088
-us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-52-2145827,"Chemonics International, Inc.",70,0,0,outgoing,687706
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-54-0536100,Christian Children's Fund,22,0,0,outgoing,33056
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-54-0536100,Christian Children's Fund,22,1,0,outgoing,531756
 us-gov-1,United States Agency for International Development (USAID),10,,,,,"Citigroup, Inc.",70,0,0,outgoing,1093
@@ -1376,6 +1371,8 @@ us-gov-1,United States Agency for International Development (USAID),10,,,,,"DKW 
 us-gov-1,United States Agency for International Development (USAID),10,,,,,"DLT Solutions, LLC",70,0,0,outgoing,20588
 us-gov-1,United States Agency for International Development (USAID),10,,,,gb-coh-02651349,DT Global International Development UK Ltd,70,0,0,outgoing,785879
 us-gov-1,United States Agency for International Development (USAID),10,,,,gb-coh-02651349,DT Global International Development UK Ltd,70,1,0,outgoing,1219187
+us-gov-1,United States Agency for International Development (USAID),10,,,,dk-cvr-20699310,Danish Refugee Council,23,0,0,outgoing,1033054
+us-gov-1,United States Agency for International Development (USAID),10,,,,dk-cvr-20699310,Danish Refugee Council,23,1,0,outgoing,5205017
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Davis Management Group,70,0,0,outgoing,30000
 us-gov-1,United States Agency for International Development (USAID),10,,,,,"Dell, Inc.",70,0,0,outgoing,302000
 us-gov-1,United States Agency for International Development (USAID),10,,,,in-mca-aae-8458,Deloitte Touche Tohmatsu Limited,70,0,0,outgoing,766957
@@ -1389,10 +1386,7 @@ us-gov-1,United States Agency for International Development (USAID),10,,,,,"ESRI
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Eagle Harbor Solutions,,0,0,outgoing,522090
 us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-832875335,"Edesia, LLC",22,0,0,outgoing,26118
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Emergent LLC,70,0,0,outgoing,254420
-us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-58-0566256,Emory University,80,0,0,outgoing,286226
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Evangelical Christian Humanitarian Outreach for Cuba,22,0,0,outgoing,65000
-us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-237413005,Family Health International,22,0,0,outgoing,10864738
-us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-237413005,Family Health International,22,1,0,outgoing,234670
 us-gov-1,United States Agency for International Development (USAID),10,,,,,FedEx Corporation,,0,0,outgoing,5634
 us-gov-1,United States Agency for International Development (USAID),10,,,,,"Feinberg Graduate School, Weizmann Institute of Science",80,0,0,outgoing,18182
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Financial Services Volunteer Corps,22,0,0,outgoing,250000
@@ -1412,13 +1406,13 @@ us-gov-1,United States Agency for International Development (USAID),10,,,,xi-dun
 us-gov-1,United States Agency for International Development (USAID),10,,,,,GovConnection Incorporated,70,0,0,outgoing,171638
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Government of El Salvador,,0,0,outgoing,2932
 us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-315868729,Government of Germany - Deutsche Gesellschaft fr Internationale Zusammenarbeit,23,0,0,outgoing,-44668
+us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-63000,Government of Jordan,10,0,0,outgoing,98696014
+us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-63000,Government of Jordan,10,1,0,outgoing,8661382
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Habitat for Humanity International,22,0,0,outgoing,43661
 us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-068236546,Hadassah,22,0,0,outgoing,975172
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-30-0739799,Heartland Alliance,22,1,0,outgoing,879
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Highlight Technologies LLC,70,0,0,outgoing,1391781
 us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-41302,ILO-Assessed,40,0,0,outgoing,2000000
-us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-63000,Instiglio Inc.,22,0,0,outgoing,98696014
-us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-63000,Instiglio Inc.,22,1,0,outgoing,8661382
 us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-079572985,Institute for Development Impact,70,0,0,outgoing,190668
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-gov-21,Inter-American Foundation,10,0,0,outgoing,274193
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-13-3287064,InterAction,22,1,0,outgoing,274043
@@ -1431,8 +1425,8 @@ us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac
 us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-21018,International Federation of Red Cross and Red Crescent Societies,40,1,0,outgoing,4881190
 us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-41108,International Fund for Agricultural Development,40,0,0,outgoing,105000
 us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-47063,International Livestock Research Institute,40,1,0,outgoing,143223
-us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-47066,International Organization for Migration (IOM),40,0,0,outgoing,1436194
-us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-47066,International Organization for Migration (IOM),40,1,0,outgoing,3583961
+us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-47066,International Organisation for Migration,40,0,0,outgoing,1436194
+us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-47066,International Organisation for Migration,40,1,0,outgoing,3583961
 us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-038275199,International Partnership for Human Development,22,0,0,outgoing,17566
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-13-5660870,International Rescue Committee Inc.,21,0,0,outgoing,1923565
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-13-5660870,International Rescue Committee Inc.,21,1,0,outgoing,2551056
@@ -1443,9 +1437,12 @@ us-gov-1,United States Agency for International Development (USAID),10,,,,,Invit
 us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-603130550,"J.E. Austin Associates, Inc.",70,0,0,outgoing,528773
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-52-0595110,Johns Hopkins University,80,0,0,outgoing,742032
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-52-0595110,Johns Hopkins University,80,1,0,outgoing,453366
+us-gov-1,United States Agency for International Development (USAID),10,,,,nan,Jordan Water Company-Miyahuna LLC,70,0,0,outgoing,1875073571
+us-gov-1,United States Agency for International Development (USAID),10,,,,nan,Jordan Water Company-Miyahuna LLC,70,0,1,outgoing,3206392
+us-gov-1,United States Agency for International Development (USAID),10,,,,nan,Jordan Water Company-Miyahuna LLC,70,1,0,outgoing,24025377
+us-gov-1,United States Agency for International Development (USAID),10,,,,nan,Jordan Water Company-Miyahuna LLC,70,1,1,outgoing,2068797
 us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-170101567,Kaizen Company,70,0,0,outgoing,529421
 us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-929773554,Kansas State University,80,0,0,outgoing,2068610
-us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-962473729,"MANA Nutritive Aid Products, Inc.",22,0,0,outgoing,2096580
 us-gov-1,United States Agency for International Development (USAID),10,,,,,"Macfadden & Associates, Inc.",70,0,0,outgoing,1584436
 us-gov-1,United States Agency for International Development (USAID),10,,,,,"Macfadden & Associates, Inc.",70,1,0,outgoing,153478
 us-gov-1,United States Agency for International Development (USAID),10,,,,,"Management Concepts, Inc.",70,0,0,outgoing,3383
@@ -1453,7 +1450,7 @@ us-gov-1,United States Agency for International Development (USAID),10,,,,,Manag
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Massachusetts General Hospital,22,0,0,outgoing,890859
 us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-001425594,Massachusetts Institute of Technology,80,0,0,outgoing,865331
 us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-156475279,Medical Teams International,22,0,0,outgoing,7412
-us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-91-1148123,Mercy Corps,22,0,0,outgoing,3385937
+us-gov-1,United States Agency for International Development (USAID),10,,,,gb-sc-sc030289,Mercy Corps,22,0,0,outgoing,3385937
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-91-1148123,Mercy Corps,22,1,0,outgoing,654194
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-38-6005984,Michigan State University,80,0,0,outgoing,946696
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Microsoft Corporation,70,0,0,outgoing,80
@@ -1473,6 +1470,7 @@ us-gov-1,United States Agency for International Development (USAID),10,,,,gb-chc
 us-gov-1,United States Agency for International Development (USAID),10,,,,,PM Consulting Group,70,0,0,outgoing,646973
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-13-2702768,Pact,22,0,0,outgoing,4110901
 us-gov-1,United States Agency for International Development (USAID),10,,,,,"Page After Page Business Systems, Inc.",,0,0,outgoing,2643
+us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-077811172,Pan-American Development Foundation,22,0,0,outgoing,444770
 us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-935124511,Participacion Ciudadana,23,0,0,outgoing,737335
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Penn State University,80,0,0,outgoing,864744
 us-gov-1,United States Agency for International Development (USAID),10,,,,cz-ico-25755277,People in Need (Czech Republic),23,0,0,outgoing,213133
@@ -1489,7 +1487,7 @@ us-gov-1,United States Agency for International Development (USAID),10,,,,be-bce
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Square One Armoring Services Co.,70,0,0,outgoing,26913
 us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-008106689,St Boniface Haiti Foundation Inc.,22,0,0,outgoing,12425
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Swish Data Corporation,70,0,0,outgoing,118930
-us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-13-2626135,"TechnoServe, Inc.",22,0,0,outgoing,511950
+us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-13-2626135,Technoserve,22,0,0,outgoing,511950
 us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-21062,The Nature Conservancy,22,1,0,outgoing,696940
 us-gov-1,United States Agency for International Development (USAID),10,,,,,The Regents of the University of California,80,0,0,outgoing,350
 us-gov-1,United States Agency for International Development (USAID),10,,,,21033,Transparency International,23,0,0,outgoing,200000
@@ -1499,9 +1497,7 @@ us-gov-1,United States Agency for International Development (USAID),10,,,,,U.S. 
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-gov-16,U.S. Government - Department of Commerce,10,0,0,outgoing,117265
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-gov-7,U.S. Government - Department of Defense,10,0,0,outgoing,617513
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-gov-20,U.S. Government - Department of Energy,10,0,0,outgoing,56181
-us-gov-1,United States Agency for International Development (USAID),10,,,,us-gov-14,U.S. Government - Department of Health and Human Services,10,0,0,outgoing,446904
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-gov-19,U.S. Government - Department of Homeland Security,10,0,0,outgoing,458270
-us-gov-1,United States Agency for International Development (USAID),10,,,,us-gov-9,U.S. Government - Department of Interior,10,0,0,outgoing,1785250
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-gov-15,U.S. Government - Department of Justice,10,0,0,outgoing,27554
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-gov-17,U.S. Government - Department of Labor,,0,0,outgoing,3177654
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-gov-6,U.S. Government - Department of Treasury,10,0,0,outgoing,132949
@@ -1515,10 +1511,6 @@ us-gov-1,United States Agency for International Development (USAID),10,,,,,U.S. 
 us-gov-1,United States Agency for International Development (USAID),10,,,,,U.S. Government - Other,10,0,0,outgoing,185205
 us-gov-1,United States Agency for International Development (USAID),10,,,,,U.S. Government - Other,10,1,0,outgoing,30299
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-gov-10,U.S. Government - Peace Corps,10,1,0,outgoing,197894
-us-gov-1,United States Agency for International Development (USAID),10,,,,nan,U.S. Government - U.S. Agency for International Development,10,0,0,outgoing,1885350179
-us-gov-1,United States Agency for International Development (USAID),10,,,,nan,U.S. Government - U.S. Agency for International Development,10,0,1,outgoing,3206392
-us-gov-1,United States Agency for International Development (USAID),10,,,,us-irs-95-3202116,U.S. Government - U.S. Agency for International Development,22,1,0,outgoing,34106171
-us-gov-1,United States Agency for International Development (USAID),10,,,,nan,U.S. Government - U.S. Agency for International Development,10,1,1,outgoing,2068797
 us-gov-1,United States Agency for International Development (USAID),10,,,,,U.S. Government - U.S. Institute for Peace,10,0,0,outgoing,519016
 us-gov-1,United States Agency for International Development (USAID),10,,,,,U.S. Government - United States Postal Service,,0,0,outgoing,13584
 us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-144868457,UCP Wheels for Humanity,22,0,0,outgoing,882487
@@ -1530,7 +1522,7 @@ us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac
 us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-41114,United Nations Development Programme,40,1,0,outgoing,457146
 us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-41315,United Nations Office for Disaster Risk Reduction,40,0,0,outgoing,1070341
 us-gov-1,United States Agency for International Development (USAID),10,,,,41aaa,United Nations Office for Project Services,40,0,0,outgoing,4995527
-us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-41127,United Nations Office for the Coordination of Humanitarian Affairs,40,0,0,outgoing,28750
+us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-41127,United Nations Office of Co-ordination of Humanitarian Affairs,40,0,0,outgoing,28750
 us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-41305,United Nations Organisation,40,1,0,outgoing,37557
 us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-41119,United Nations Population Fund,40,0,0,outgoing,924086
 us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-372733030,Universit catholique de Louvain,23,1,0,outgoing,253886
@@ -1547,13 +1539,15 @@ us-gov-1,United States Agency for International Development (USAID),10,,,,,Unive
 us-gov-1,United States Agency for International Development (USAID),10,,,,,University of Pittsburgh,80,0,0,outgoing,3880
 us-gov-1,United States Agency for International Development (USAID),10,,,,,University of Washington,80,0,0,outgoing,1675
 us-gov-1,United States Agency for International Development (USAID),10,,,,,University of Wisconsin,80,0,0,outgoing,4500
-us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-51000,University/Research Institute - Non United States Other,80,0,0,outgoing,30063
+us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-51000,University/Research Institute - United States Other,80,0,0,outgoing,316289
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Unspecified Vendors - Benin,,0,0,outgoing,9329
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Unspecified Vendors - Ghana,,0,0,outgoing,232271
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Unspecified Vendors - Kosovo,,0,0,outgoing,351920
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Unspecified Vendors - Philippines,,0,0,outgoing,520841
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Unspecified Vendors - Timor-Leste,,1,0,outgoing,99
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Virginia State University,80,0,0,outgoing,2000
+us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-61000,WORLD BICYCLE RELIEF,22,0,0,outgoing,24270795
+us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-61000,WORLD BICYCLE RELIEF,22,1,0,outgoing,2167551
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Washington Metropolitan Area Transit Authority,10,0,0,outgoing,18147
 us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-44000,World Bank Group,40,0,0,outgoing,8502867988
 us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-41140,World Food Programme,40,0,0,outgoing,81550888
@@ -1561,6 +1555,8 @@ us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac
 us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-928,World Health Organization,40,0,0,outgoing,18061373
 us-gov-1,United States Agency for International Development (USAID),10,,,,xm-dac-928,World Health Organization,40,1,0,outgoing,178152
 us-gov-1,United States Agency for International Development (USAID),10,,,,us-ein-521257057,World Resources Institute,22,0,0,outgoing,1080000
+us-gov-1,United States Agency for International Development (USAID),10,,,,us-irs-95-3202116,World Vision,22,0,0,outgoing,1290089
+us-gov-1,United States Agency for International Development (USAID),10,,,,us-irs-95-3202116,World Vision,22,1,0,outgoing,2942896
 us-gov-1,United States Agency for International Development (USAID),10,,,,,"XL Associates, Inc.",70,0,0,outgoing,1742538
 us-gov-1,United States Agency for International Development (USAID),10,,,,,Xerox Corporation,,0,0,outgoing,244135
 us-gov-1,United States Agency for International Development (USAID),10,,,,xi-duns-809168102,ZemiTek,70,0,0,outgoing,2626079
@@ -1576,7 +1572,7 @@ xm-dac-41140,World Food Programme,40,xm-dac-6-4,AICS - Italian Agency for Cooper
 xm-dac-41140,World Food Programme,40,aus,AUSTRIA,,,,,0,0,incoming,662657
 xm-dac-41140,World Food Programme,40,au-5,Australia - Department of Foreign Affairs and Trade,,,,,0,0,incoming,386148
 xm-dac-41140,World Food Programme,40,cha,CHINA,,,,,0,0,incoming,2277930
-xm-dac-41140,World Food Programme,40,ca,Canada,10,,,,0,0,incoming,568524
+xm-dac-41140,World Food Programme,40,xm-dac-301,Canada,10,,,,0,0,incoming,568524
 xm-dac-41140,World Food Programme,40,els,EL SALVADOR,,,,,0,0,incoming,758544
 xm-dac-41140,World Food Programme,40,fin,FINLAND,,,,,0,0,incoming,42500
 xm-dac-41140,World Food Programme,40,de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,0,0,incoming,649663
@@ -1585,7 +1581,7 @@ xm-dac-41140,World Food Programme,40,fr-6,France - Ministry for Europe and Forei
 xm-dac-41140,World Food Programme,40,xm-dac-5,Germany,70,,,,0,0,incoming,42964
 xm-dac-41140,World Food Programme,40,ins,INDONESIA,,,,,0,0,incoming,3140575
 xm-dac-41140,World Food Programme,40,xm-dac-701,Japan,70,,,,0,0,incoming,195523
-xm-dac-41140,World Food Programme,40,xm-dac-41110,Joint United Nations Programme on HIV/AIDS,40,,,,0,0,incoming,177582
+xm-dac-41140,World Food Programme,40,xm-dac-41110,Joint United Nations Programme on HIV/AIDS (UNAIDS),40,,,,0,0,incoming,177582
 xm-dac-41140,World Food Programme,40,kor,KOREA REP. OF,,,,,0,0,incoming,49555
 xm-dac-41140,World Food Programme,40,mnc,MONACO,,,,,0,0,incoming,16665
 xm-dac-41140,World Food Programme,40,xm-dac-701-2,Ministry of Foreign Affairs of Japan,,,,,0,0,incoming,3899463
@@ -1629,8 +1625,8 @@ nl-kvk-41009723,ZOA,21,,,,nl-kvk-27195046,VNG International,15,0,0,outgoing,2413
 nl-kvk-41009723,ZOA,21,xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,0,0,incoming,6565065
 nl-kvk-41009723,ZOA,21,xm-dac-7,Ministry of Foreign Affairs of the Netherlands,10,,,,1,0,incoming,6998770
 gb-coh-rc000749,Zoological Society of London,21,,,,gb-gov-07,(Direct expenditure),10,0,0,outgoing,1607967
-gb-coh-rc000749,Zoological Society of London,21,,,,gb-gov-7,"Department for Environment, Food and Rural Affairs",10,0,0,outgoing,586867
 gb-coh-rc000749,Zoological Society of London,21,,,,gb-gov-1,"Foreign, Commonwealth and Development Office",10,0,0,outgoing,350494
-gb-coh-rc000749,Zoological Society of London,21,gb-gov-7,"Department for Environment, Food and Rural Affairs",10,,,,0,0,incoming,2259397
+gb-coh-rc000749,Zoological Society of London,21,,,,gb-gov-7,"UK - Department for Environment, Food and Rural Affairs",10,0,0,outgoing,586867
 gb-coh-rc000749,Zoological Society of London,21,gb-gov-1,"Foreign, Commonwealth and Development Office",10,,,,0,0,incoming,555545
+gb-coh-rc000749,Zoological Society of London,21,gb-gov-7,"UK - Department for Environment, Food and Rural Affairs",10,,,,0,0,incoming,2259397
 gb-coh-rc000749,Zoological Society of London,21,gb-gov-22,Welsh Assembly Government,10,,,,0,0,incoming,72921
