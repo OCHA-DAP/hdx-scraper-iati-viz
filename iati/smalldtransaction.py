@@ -50,9 +50,7 @@ def get_transaction_is_strict(dactivity, activity_is_strict, dtransaction):
                 Lookups.checks.has_desired_sector(dtransaction)
                 or (
                     dtransaction.description
-                    and Lookups.checks.is_desired_narrative(
-                        dtransaction.description.narratives
-                    )
+                    and Lookups.checks.is_desired_narrative(dtransaction.description)
                 )
             )
             else False

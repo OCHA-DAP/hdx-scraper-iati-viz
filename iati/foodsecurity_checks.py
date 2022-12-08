@@ -49,9 +49,9 @@ class FoodSecurityChecks(BaseChecks):
         }
         self.relevant_words = ("food security", "food insecurity")
 
-    def is_desired_narrative(self, narratives):
+    def has_desired_text(self, narrativetext):
         # Check a dict of different-language text for the string "Food Security" or "Food Insecurity" (case-insensitive)
-        for lang, text in narratives.items():
+        for lang, text in narrativetext.narratives.items():
             if any(x in text.lower() for x in ("food security", "food insecurity")):
                 return True
         return False

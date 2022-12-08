@@ -40,7 +40,7 @@ def get_activity_is_strict(dactivity):
                 or Lookups.checks.has_desired_marker(dactivity)
                 or Lookups.checks.has_desired_tag(dactivity)
                 or Lookups.checks.has_desired_sector(dactivity)
-                or Lookups.checks.is_desired_narrative(dactivity.title.narratives)
+                or Lookups.checks.has_desired_text(dactivity.title)
             )
             else False
         )

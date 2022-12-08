@@ -58,7 +58,7 @@ class BaseChecks(Exclusions):
     def has_desired_sector(self, dactivity):
         return False
 
-    def is_desired_narrative(self, narratives):
+    def has_desired_text(self, narrativetext):
         return False
 
     def should_skip_transaction(self, dactivity, dtransaction, transaction_date):

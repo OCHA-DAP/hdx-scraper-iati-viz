@@ -12,9 +12,9 @@ class ClimateChecks(BaseChecks):
                 return True
         return False
 
-    def is_desired_narrative(self, narratives):
+    def has_desired_text(self, narrativetext):
         """Check a dict of different-language text for the string "climate finance" (case-insensitive)"""
-        for lang, text in narratives.items():
+        for lang, text in narrativetext.narratives.items():
             if "climate finance" in text.lower():
                 return True
         return False
