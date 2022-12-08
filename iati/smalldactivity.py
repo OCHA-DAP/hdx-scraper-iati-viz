@@ -31,26 +31,6 @@ class SmallDActivity:
         ]
 
 
-def get_activity_is_strict(dactivity):
-    try:
-        return (
-            True
-            if (
-                Lookups.checks.has_desired_scope(dactivity)
-                or Lookups.checks.has_desired_marker(dactivity)
-                or Lookups.checks.has_desired_tag(dactivity)
-                or Lookups.checks.has_desired_sector(dactivity)
-                or Lookups.checks.has_desired_text(dactivity.title)
-            )
-            else False
-        )
-    except AttributeError:
-        Lookups.checks.errors_on_exit.add(
-            f"Activity {dactivity.identifier} is_strict call failed!"
-        )
-        return False
-
-
 def create_small_dactivity(dactivity):
-    activity_is_strict = get_activity_is_strict(dactivity)
+    activity_is_strict = Lookups.checks.get_activity_is_strict(dactivity)
     return SmallDActivity(dactivity, activity_is_strict)

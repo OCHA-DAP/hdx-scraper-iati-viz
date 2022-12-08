@@ -42,28 +42,6 @@ class SmallDTransaction:
         self.should_skip_transaction = should_skip_transaction
 
 
-def get_transaction_is_strict(dactivity, activity_is_strict, dtransaction):
-    try:
-        is_strict = (
-            True
-            if (
-                Lookups.checks.has_desired_sector(dtransaction)
-                or (
-                    dtransaction.description
-                    and Lookups.checks.is_desired_narrative(dtransaction.description)
-                )
-            )
-            else False
-        )
-    except AttributeError:
-        Lookups.checks.errors_on_exit.add(
-            f"Activity {dactivity.identifier} transaction with usd value {dtransaction.usd_value} is_strict call failed!"
-        )
-        is_strict = False
-    is_strict = is_strict or activity_is_strict
-    return 1 if is_strict else 0
-
-
 def create_small_transaction(dactivity, activity_is_strict, dtransaction):
     # The transaction date is ideally the tranasction's date but falls back on value date
     transaction_date = get_date_with_fallback(
@@ -71,7 +49,7 @@ def create_small_transaction(dactivity, activity_is_strict, dtransaction):
     )
     # For valuation, we use the value date falling back on transaction date
     valuation_date = get_date_with_fallback(dtransaction.value_date, dtransaction.date)
-    transaction_is_strict = get_transaction_is_strict(
+    transaction_is_strict = Lookups.checks.get_transaction_is_strict(
         dactivity, activity_is_strict, dtransaction
     )
     should_skip_transaction = Lookups.checks.should_skip_transaction(
