@@ -9,7 +9,6 @@ class SmallDActivity:
         "reporting_org",
         "sectors",
         "humanitarian",
-        "is_strict",
         "recipient_countries",
         "recipient_regions",
         "participating_orgs",
@@ -22,7 +21,6 @@ class SmallDActivity:
         self.reporting_org = flatten(dactivity.reporting_org)
         self.sectors = flatten(dactivity.sectors)
         self.humanitarian = dactivity.humanitarian
-        self.is_strict = activity_is_strict
         self.recipient_countries = flatten(dactivity.recipient_countries)
         self.recipient_regions = flatten(dactivity.recipient_regions)
         self.participating_orgs = flatten(dactivity.participating_orgs)

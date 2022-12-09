@@ -137,7 +137,7 @@ class Activity:
             for sector, sector_percentage in sector_splits.items():
 
                 if Lookups.checks.exclude_split_transaction(
-                    self.dactivity.is_strict, sector, vocabulary_code
+                    transaction.is_strict, sector, vocabulary_code
                 ):
                     continue
                 sector_name = Lookups.sector_lookups.get_sector_group_name(sector)

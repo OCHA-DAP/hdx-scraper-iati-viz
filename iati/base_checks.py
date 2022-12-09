@@ -108,5 +108,5 @@ class BaseChecks(Exclusions):
         is_strict = is_strict or activity_is_strict
         return 1 if is_strict else 0
 
-    def exclude_split_transaction(self, activity_is_strict, sector, vocabulary_code):
+    def exclude_split_transaction(self, is_strict, sector, vocabulary_code):
         return False
