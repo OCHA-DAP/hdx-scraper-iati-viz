@@ -58,18 +58,18 @@ class CalculateSplits:
         for sector in sectors:
             code = sector.code
             if sector.vocabulary == vocabulary_code and code:
-                splits[code.upper()] = (
+                splits[code] = (
                     float(sector.percentage if sector.percentage else 100.0) / 100.0
                 )
 
         if splits:
             # we have actual splits to return
-            return splits
+            return splits, vocabulary_code
         elif default_splits is not None:
             # return the default splits
             return default_splits
         else:
             # default to 100% for unknown sector
             if default_sector is None:
-                return {cls.default_sector: 1.0}
-            return {default_sector: 1.0}
+                return {cls.default_sector: 1.0}, vocabulary_code
+            return {default_sector: 1.0}, vocabulary_code

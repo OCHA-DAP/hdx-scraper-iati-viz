@@ -68,7 +68,9 @@ class FoodSecurityChecks(BaseChecks):
             return True
         return False
 
-    # def exclude_split_transaction(self, dactivity, sector):
-    #     if self.is_irrelevant_sector((sector,)) and not dactivity.has_desired_text:
-    #         return True
-    #     return False
+    def exclude_split_transaction(self, dactivity, sector, vocabulary_code):
+        if not dactivity.has_desired_text:
+            sectors_for_vocabulary = self.relevant_sectors.get(vocabulary_code)
+            if sectors_for_vocabulary and sector not in sectors_for_vocabulary:
+                return True
+        return False

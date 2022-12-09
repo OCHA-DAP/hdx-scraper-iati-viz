@@ -127,14 +127,18 @@ class Activity:
         country_splits = transaction.make_country_or_region_splits(
             self.countryregion_splits
         )
-        sector_splits = transaction.make_sector_splits(self.sector_splits)
+        sector_splits, vocabulary_code = transaction.make_sector_splits(
+            self.sector_splits
+        )
 
         # Apply the country and sector percentage splits to the transaction
         # generate multiple split transactions
         for country, country_percentage in country_splits.items():
             for sector, sector_percentage in sector_splits.items():
 
-                if Lookups.checks.exclude_split_transaction(self.dactivity, sector):
+                if Lookups.checks.exclude_split_transaction(
+                    self.dactivity, sector, vocabulary_code
+                ):
                     continue
                 sector_name = Lookups.sector_lookups.get_sector_group_name(sector)
                 country_name = Lookups.get_country_region_name(country)
