@@ -68,8 +68,45 @@ class FoodSecurityChecks(BaseChecks):
             return True
         return False
 
-    def exclude_split_transaction(self, dactivity, sector, vocabulary_code):
-        if not dactivity.has_desired_text:
+    def get_activity_is_strict(self, dactivity):
+        try:
+            return (
+                True
+                if (
+                    self.has_desired_text(dactivity.title)
+                    or (
+                        dactivity.description
+                        and self.has_desired_text(dactivity.description)
+                    )
+                )
+                else False
+            )
+        except AttributeError:
+            self.errors_on_exit.add(
+                f"Activity {dactivity.identifier} is_strict call failed!"
+            )
+            return False
+
+    def get_transaction_is_strict(self, dactivity, activity_is_strict, dtransaction):
+        try:
+            is_strict = (
+                True
+                if (
+                    dtransaction.description
+                    and self.has_desired_text(dtransaction.description)
+                )
+                else False
+            )
+        except AttributeError:
+            self.errors_on_exit.add(
+                f"Activity {dactivity.identifier} transaction with usd value {dtransaction.usd_value} is_strict call failed!"
+            )
+            is_strict = False
+        is_strict = is_strict or activity_is_strict
+        return 1 if is_strict else 0
+
+    def exclude_split_transaction(self, activity_is_strict, sector, vocabulary_code):
+        if not activity_is_strict:
             sectors_for_vocabulary = self.relevant_sectors.get(vocabulary_code)
             if sectors_for_vocabulary and sector not in sectors_for_vocabulary:
                 return True

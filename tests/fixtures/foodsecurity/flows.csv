@@ -1,6 +1,6 @@
 Reporting org id,Reporting org name,Reporting org type,Provider org id,Provider org name,Provider org type,Receiver org id,Receiver org name,Receiver org type,Humanitarian?,Strict?,Transaction direction,Total money
 #org+id+reporting,#org+name+reporting,#org+reporting+type,#org+id+provider,#org+name+provider,#org+type+provider,#org+id+receiver,#org+name+receiver,#org+type+receiver,#indicator+bool+humanitarian,#indicator+bool+strict,#x_transaction_direction,#value+total
-gb-chc-285776,CAFOD,21,,CAFOD General Funds,,,,,0,0,incoming,59746
+gb-chc-285776,CAFOD,21,,CAFOD General Funds,,,,,0,1,incoming,59746
 xi-iati-ec_intpa,European Commission - International Partnerships,15,,,,,Agence Commerciale Industrielle Etagricole (Acia) Sas*,,0,0,outgoing,119703
 de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,,(Direct expenditure),,0,0,outgoing,194144
 de-1,Federal Ministry for Economic Cooperation and Development (BMZ),10,,,,,(Direct expenditure),,0,1,outgoing,76362
