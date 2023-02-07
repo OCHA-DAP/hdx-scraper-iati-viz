@@ -47,7 +47,6 @@ class FoodSecurityChecks(BaseChecks):
             ),
             "2": ("311", "312", "313"),
         }
-        self.relevant_words = ("food security", "food insecurity")
 
     def has_desired_text(self, narrativetext):
         # Check a dict of different-language text for the string "Food Security" or "Food Insecurity" (case-insensitive)

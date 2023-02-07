@@ -4,6 +4,7 @@ from iati import BaseSectorLookups
 class FoodSecuritySectorLookups(BaseSectorLookups):
     def __init__(self, retriever, configuration):
         super().__init__(retriever, configuration, sector_data="foodsecurity")
+        self.default_lookup = BaseSectorLookups(retriever, configuration)
         sector_info = self.sector_info
         self.sector_info = dict()
         for info in sector_info["data"]:
@@ -13,8 +14,7 @@ class FoodSecuritySectorLookups(BaseSectorLookups):
         """Look up a group name for a 5-digit sector code."""
         if code in self.sector_info:
             return self.sector_info[code]
-        else:
-            return self.default_sector
+        return self.default_lookup.get_sector_group_name(code)
 
     @staticmethod
     def get_vocabulary_code(sectors):
