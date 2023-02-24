@@ -105,8 +105,7 @@ class FoodSecurityChecks(BaseChecks):
         return 1 if is_strict else 0
 
     def exclude_split_transaction(self, is_strict, sector, vocabulary_code):
-        if not is_strict:
-            sectors_for_vocabulary = self.relevant_sectors.get(vocabulary_code)
-            if sectors_for_vocabulary and sector not in sectors_for_vocabulary:
-                return True
+        sectors_for_vocabulary = self.relevant_sectors.get(vocabulary_code)
+        if sectors_for_vocabulary and sector not in sectors_for_vocabulary:
+            return True
         return False
