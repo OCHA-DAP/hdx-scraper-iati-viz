@@ -77,22 +77,29 @@ def start(
     no_query_activities = 0
     no_removed_activities = 0
     no_removed_transactions = 0
-    for dactivity in xmliterator:
-        no_query_activities += 1
-        if no_query_activities % 1000 == 0:
-            logger.info(f"Read {no_query_activities} activities")
-        exclude, removed_transactions = Lookups.checks.exclude_activity(dactivity)
-        if exclude:
+
+    while True:
+        try:
+            dactivity = next(xmliterator)
+            no_query_activities += 1
+            if no_query_activities % 1000 == 0:
+                logger.info(f"Read {no_query_activities} activities")
+            exclude, removed_transactions = Lookups.checks.exclude_activity(dactivity)
+            if exclude:
+                del dactivity
+                no_removed_activities += 1
+                continue
+            no_removed_transactions += len(removed_transactions)
+            activity_node = dactivity.node
+            transaction_nodes = dactivity.get_nodes("transaction")
+            for i in removed_transactions:
+                activity_node.removeChild(transaction_nodes[i])
+            writer.write(activity_node.toxml())
             del dactivity
-            no_removed_activities += 1
-            continue
-        no_removed_transactions += len(removed_transactions)
-        activity_node = dactivity.node
-        transaction_nodes = dactivity.get_nodes("transaction")
-        for i in removed_transactions:
-            activity_node.removeChild(transaction_nodes[i])
-        writer.write(activity_node.toxml())
-        del dactivity
+        except StopIteration:
+            break
+        except Exception as ex:
+            logger.exception(ex)
     writer.write("\n</iati-activities>")
     writer.close()
     del xmliterator  # Maybe this helps garbage collector?
